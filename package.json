@@ -1,5 +1,5 @@
 {
-  "name": "learn-starter",
+  "name": "boris-kirov",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -8,8 +8,14 @@
     "start": "next start"
   },
   "dependencies": {
+    "framer-motion": "^1.10.3",
     "next": "9.3.5",
+    "next-images": "^1.4.0",
     "react": "16.13.1",
-    "react-dom": "16.13.1"
+    "react-dom": "16.13.1",
+    "styled-components": "^5.1.0"
+  },
+  "devDependencies": {
+    "@svgr/webpack": "^5.4.0"
   }
 }
