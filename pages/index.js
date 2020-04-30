@@ -221,12 +221,12 @@ function Home() {
             color: inherit;
             cursor: ne-resize;
             transition: background-color .3s ease;
-            text-decoration: none;
+            text-decoration: underline;
           }
 
           a:hover,
           a:focus {
-            text-decoration: underline;
+            text-decoration: none;
             color: #3f53d9;
           }
 
