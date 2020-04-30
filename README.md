@@ -1,1 +1,2 @@
-This is a starter template for [Learn Next.js](https://nextjs.org/learn).# boris-kirov-portfolio
+Portfolio Boris Kirov
+Using: React, NextJS, Zeit, Framer Motion, Lighthouse
