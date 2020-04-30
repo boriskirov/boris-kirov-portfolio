@@ -5,7 +5,6 @@ import { ThemeProvider } from 'styled-components';
 import { lightTheme, darkTheme } from '../components/theme';
 import { GlobalStyles } from '../components/global';
 import ToggleWrapper from '../components/toggle';
-import Footer from '../components/footer';
 import { motion } from "framer-motion"
 
 
@@ -111,7 +110,34 @@ function Home() {
             </section>
           </div>
         </main>
-        <Footer/>
+        <footer>
+          <a
+            href="https://miro.com/app/board/o9J_kulYeX0=/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Get Resume 2020 © {' '}
+          </a>
+          <div>
+          <ul className="listing">
+              <li className="liElement">
+                <span className="emoji">👨‍💻</span><a href="https://github.com/sboriskirov" target="_blank" rel="noopener noreferrer">GitHub</a>
+              </li>
+              <li className="liElement">
+                <span className="emoji">📝</span><a href="https://medium.com/@bkirov" target="_blank" rel="noopener noreferrer">Medium</a>
+              </li>
+              <li className="liElement">
+                <span className="emoji">🐙</span><a href="https://dribbble.com/boriskirov" target="_blank" rel="noopener noreferrer">Dribbble</a>
+              </li>
+              <li className="liElement">
+                <span className="emoji">🐦</span><a href="https://twitter.com/boris_a_kirov" target="_blank" rel="noopener noreferrer">Twitter</a>
+              </li>
+              <li className="liElement">
+                <span className="emoji">🔗</span><a href="https://www.linkedin.com/in/boris-kirov-b6b110a4/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+              </li>
+            </ul>
+          </div>
+        </footer>
         <style jsx>{`
           .container {
             min-height: 100vh;
@@ -132,7 +158,7 @@ function Home() {
             width: 100%;
           }
 
-            header {
+          header, footer {
             width: 100%;
             height: 30px;
             display: flex;
@@ -141,6 +167,29 @@ function Home() {
             padding: 1vw 12.5vw;
             margin-bottom: 2vw;
             margin-top: .5vw;
+          }
+
+          footer img {
+            margin-left: 0.5rem;    
+          }  
+          
+          footer a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+    
+          footer ul {
+            display: flex;
+          }
+    
+          footer ul li {
+            padding-right: 16px;
+            display: flex;
+          }
+    
+          footer ul li:last-child{
+            padding-right: 0px
           }
 
           li {
@@ -246,9 +295,25 @@ function Home() {
               flex-direction: column;
             }
 
-            main, header{
+            main, header, footer{
               padding: 10vw 10vw;
               height: 100%;
+            }
+
+            footer {
+              display: flex;
+              flex-direction: column;
+              align-items: flex-start;
+            }
+
+            footer ul {
+              display: flex;
+              flex-direction: column;
+              align-items: flex-start;
+            }
+    
+            footer ul li {
+              margin: 8px 0 8px 0;
             }
 
             .titleTwo {

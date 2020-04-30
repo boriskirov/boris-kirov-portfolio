@@ -11,26 +11,26 @@ const StyledFooter = styled.footer`
     margin-bottom: 2vw;
     margin-top: .5vw;
 
-    img {
+    footer img {
         margin-left: 0.5rem;    
     }
 
-    a {
+    footer a {
         display: flex;
         justify-content: center;
         align-items: center;
     }
 
-    ul {
+    footer ul {
         display: flex;
     }
 
-    ul li {
+    footer ul li {
         padding-right: 16px;
         display: flex;
       }
 
-    ul li:last-child{
+    footer ul li:last-child{
         padding-right: 0px
     }
 
@@ -60,47 +60,16 @@ const StyledFooter = styled.footer`
         flex-direction: column;
         align-items: flex-start;
 
-        ul {
+        footer ul {
           display: flex;
           flex-direction: column;
           align-items: flex-start;
         }
 
-        ul li {
+        footer ul li {
           margin: 8px 0 8px 0;
         }
 
 `
-
-const Footer = () => (
-    <StyledFooter>
-          <a
-            href="https://miro.com/app/board/o9J_kulYeX0=/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Get Resume 2020 © {' '}
-          </a>
-          <div>
-          <ul className="listing">
-              <li className="liElement">
-                <span className="emoji">👨‍💻</span><a href="https://github.com/sboriskirov" target="_blank" rel="noopener noreferrer">GitHub</a>
-              </li>
-              <li className="liElement">
-                <span className="emoji">📝</span><a href="https://medium.com/@bkirov" target="_blank" rel="noopener noreferrer">Medium</a>
-              </li>
-              <li className="liElement">
-                <span className="emoji">🐙</span><a href="https://dribbble.com/boriskirov" target="_blank" rel="noopener noreferrer">Dribbble</a>
-              </li>
-              <li className="liElement">
-                <span className="emoji">🐦</span><a href="https://twitter.com/boris_a_kirov" target="_blank" rel="noopener noreferrer">Twitter</a>
-              </li>
-              <li className="liElement">
-                <span className="emoji">🔗</span><a href="https://www.linkedin.com/in/boris-kirov-b6b110a4/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-              </li>
-            </ul>
-          </div>
-    </StyledFooter>
-)
 
 export default Footer
