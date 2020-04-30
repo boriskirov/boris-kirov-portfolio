@@ -17,7 +17,7 @@ export const GlobalStyles = createGlobalStyle`
     padding: 0;
     margin: 0;
     font-family: Inter, sans-serif;
-    font-size: 16px;
+    font-size: 18px;
     background-color: ${({ theme }) => theme.body};
     color: ${({ theme }) => theme.text};
     transition: all 0.75s ease-in-out;
