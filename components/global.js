@@ -8,8 +8,8 @@ export const GlobalStyles = createGlobalStyle`
   }
   
   ::selection {
-    background-color: #FFCF00;
-    color: #07003B;
+    background-color: ${({ theme }) => theme.selection};
+    color: ${({ theme }) => theme.selectionText};
   }
   
   html,

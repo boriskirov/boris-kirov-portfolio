@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import Time from '../components/time'
 import React, {useState} from 'react';
 import { ThemeProvider } from 'styled-components';
 import { lightTheme, darkTheme } from '../components/theme';
@@ -26,7 +25,7 @@ function Home() {
       exit={{ opacity: 0 }} 
       initial={{ opacity: 0}} 
       animate={{ opacity : 1}}
-      transition= {{ duration: 2.5 }}>
+      transition= {{ duration: 1.25 }}>
       <div className="container">
         <GlobalStyles />
         <Head>
@@ -49,7 +48,6 @@ function Home() {
         </Head>
 
         <header>
-          <Time/> 
           <ToggleWrapper darkTheme={isDark} onClick={toggleTheme}>
             <img src="/ToggleLight.svg" alt="Light Toggler" title="Light Side" className="logo" />
             <img src="/Toggle.svg" alt="Dark Toggler" title="Dark Side" className="logo" />
@@ -72,10 +70,10 @@ function Home() {
 
           <div className="grid">
             <section>
-              <h3 className="titleThird">Currently</h3>
+              <h3 className="titleThird">NOW</h3>
               <ul className="listing">
                 <li className="liElement">
-                  <a href="https://miro.com/index/" target="_blank" rel="noopener noreferrer">MIRO</a>
+                  Digital whiteboard tool <a href="https://miro.com/index/" target="_blank" rel="noopener noreferrer">MIRO</a>
                 </li>
                 <li className="liElement">
                   Typographic library <a href="https://www.fluiditype.com/" target="_blank" rel="noopener noreferrer">Fluiditype</a>
@@ -86,7 +84,7 @@ function Home() {
               </ul>
             </section>
             <section>
-              <h3 className="titleThird">Previously</h3>
+              <h3 className="titleThird">BEFORE</h3>
               <ul className="listing">
                 <li className="liElement">
                   <a href="https://www.info.nl/" target="_blank" rel="noopener noreferrer">INFO</a>
@@ -100,7 +98,7 @@ function Home() {
               </ul>
             </section>
             <section>
-              <h3 className="titleThird">Interested</h3>
+              <h3 className="titleThird">ALWAYS</h3>
               <ul className="listing">
                 <li className="liElement">
                   Design and prototype in the browser 
@@ -163,7 +161,7 @@ function Home() {
           }
 
           main {
-            padding: 5vw 12.5vw;;
+            padding: 6vw 12.5vw 2vw 12.5vw;
             flex: 1;
             display: flex;
             flex-direction: column;
@@ -176,11 +174,15 @@ function Home() {
             width: 100%;
             height: 30px;
             display: flex;
-            justify-content: space-between;
+            justify-content: flex-end;
             align-items: center;
             padding: 1vw 12.5vw;
             margin-bottom: 1.5vw;
             margin-top: 1vw;
+          }
+
+          footer {
+            justify-content: space-between;
           }
 
           footer img {
@@ -219,7 +221,7 @@ function Home() {
             color: inherit;
             cursor: ne-resize;
             transition: background-color .3s ease;
-            text-decoration: underline;
+            text-decoration: none;
           }
 
           a:hover,
@@ -229,7 +231,7 @@ function Home() {
           }
 
           a:active {
-            background-color: #ffd02f;
+            background-color: #FFCF00;
             color: #3f53d9;
           }
 
@@ -243,8 +245,9 @@ function Home() {
           .titleTwo {
             margin: 0;
             line-height: 1.15;
-            font-size: 4vw;
-            font-weight: 400;
+            font-size: 3.5vw;
+            font-weight: 300;
+            letter-spacing: 0.1vw;
           }
 
           .titleTwo a {
@@ -252,8 +255,10 @@ function Home() {
           }
 
           .titleThird {
-            font-size: 1.5vw;
-            margin: 32px 0 16px 0;
+            font-size: 1.25vw;
+            margin: 16px 0 16px 0;
+            opacity: 0.75;
+            text-transform: uppercase;
           }
 
           .title,
@@ -273,7 +278,7 @@ function Home() {
             flex-wrap: wrap;
 
             max-width: 960px;
-            margin-top: 1vw;
+            margin-top: 5vw;
           }
 
           section:nth-child(2) {
@@ -288,10 +293,6 @@ function Home() {
           .logo {
             height: 1.5rem;
             cursor: sw-resize;
-          }
-
-          .title-third {
-            margin-bottom: 16px;
           }
 
           .listing {
@@ -329,7 +330,7 @@ function Home() {
             }
 
             .title {
-              font-size: 12vw;
+              font-size: 11vw;
             }
 
             .titleTwo {
