@@ -127,7 +127,6 @@ function Home() {
           </div>
         </main>
         <footer>
-        <small>Crafted in Amsterdam ♥️</small>
           <div>
           <ul className="listing">
               <li className="liElement">
@@ -147,6 +146,7 @@ function Home() {
               </li>
             </ul>
           </div>
+          <small>Crafted in Amsterdam ♥️</small>
         </footer>
         <style jsx>{`
           .container {
