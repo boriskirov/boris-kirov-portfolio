@@ -48,6 +48,13 @@ function Home() {
         </Head>
 
         <header>
+        <a
+            href="https://miro.com/app/board/o9J_kulYeX0=/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Get Resume 2020 © {' '}
+          </a>
           <ToggleWrapper darkTheme={isDark} onClick={toggleTheme}>
             <img src="/ToggleLight.svg" alt="Light Toggler" title="Light Side" className="logo" />
             <img src="/Toggle.svg" alt="Dark Toggler" title="Dark Side" className="logo" />
@@ -70,21 +77,18 @@ function Home() {
 
           <div className="grid">
             <section>
-              <h3 className="titleThird">NOW</h3>
+              <h3 className="titleThird">Currently</h3>
               <ul className="listing">
                 <li className="liElement">
-                  Digital whiteboard tool <a href="https://miro.com/index/" target="_blank" rel="noopener noreferrer">MIRO</a>
+                  Product designer at <a href="https://miro.com/index/" target="_blank" rel="noopener noreferrer">MIRO</a>
                 </li>
                 <li className="liElement">
-                  Typographic library <a href="https://www.fluiditype.com/" target="_blank" rel="noopener noreferrer">Fluiditype</a>
-                </li>
-                <li className="liElement">
-                  Color naming tool
+                  Creator & contributor at <a href="https://www.fluiditype.com/" target="_blank" rel="noopener noreferrer">Fluiditype</a>
                 </li>
               </ul>
             </section>
             <section>
-              <h3 className="titleThird">BEFORE</h3>
+              <h3 className="titleThird">Previously</h3>
               <ul className="listing">
                 <li className="liElement">
                   <a href="https://www.info.nl/" target="_blank" rel="noopener noreferrer">INFO</a>
@@ -98,7 +102,7 @@ function Home() {
               </ul>
             </section>
             <section>
-              <h3 className="titleThird">ALWAYS</h3>
+              <h3 className="titleThird">Interested in</h3>
               <ul className="listing">
                 <li className="liElement">
                   Design and prototype in the browser 
@@ -107,13 +111,13 @@ function Home() {
                   Fluid typography
                 </li>
                 <li className="liElement">
-                  Maintenance & experiment with design and experience consistency 
+                  Maintenance & experiments with design and experience consistency 
                 </li>
                 <li className="liElement">
-                  Git and Terminal
+                  Working with Git and Terminal 
                 </li>
                 <li className="liElement">
-                  Animation and visualization
+                  Animation and visualization 
                 </li>
                 <li className="liElement">
                   Content design and copy
@@ -123,29 +127,23 @@ function Home() {
           </div>
         </main>
         <footer>
-          <a
-            href="https://miro.com/app/board/o9J_kulYeX0=/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Get Resume 2020 © {' '}
-          </a>
+        <small>Crafted in Amsterdam ♥️</small>
           <div>
           <ul className="listing">
               <li className="liElement">
-                <span className="emoji">👨‍💻</span><a href="https://github.com/sboriskirov" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <small><span className="emoji">👨‍💻</span><a href="https://github.com/sboriskirov" target="_blank" rel="noopener noreferrer">GitHub</a></small>
               </li>
               <li className="liElement">
-                <span className="emoji">📝</span><a href="https://medium.com/@bkirov" target="_blank" rel="noopener noreferrer">Medium</a>
+                <small><span className="emoji">📝</span><a href="https://medium.com/@bkirov" target="_blank" rel="noopener noreferrer">Medium</a></small>
               </li>
               <li className="liElement">
-                <span className="emoji">🐙</span><a href="https://dribbble.com/boriskirov" target="_blank" rel="noopener noreferrer">Dribbble</a>
+                <small><span className="emoji">🐙</span><a href="https://dribbble.com/boriskirov" target="_blank" rel="noopener noreferrer">Dribbble</a></small>
               </li>
               <li className="liElement">
-                <span className="emoji">🐦</span><a href="https://twitter.com/boris_a_kirov" target="_blank" rel="noopener noreferrer">Twitter</a>
+                <small><span className="emoji">🐦</span><a href="https://twitter.com/boris_a_kirov" target="_blank" rel="noopener noreferrer">Twitter</a></small>
               </li>
               <li className="liElement">
-                <span className="emoji">🔗</span><a href="https://www.linkedin.com/in/boris-kirov-b6b110a4/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                <small><span className="emoji">🔗</span><a href="https://www.linkedin.com/in/boris-kirov-b6b110a4/" target="_blank" rel="noopener noreferrer">LinkedIn</a></small>
               </li>
             </ul>
           </div>
@@ -174,7 +172,7 @@ function Home() {
             width: 100%;
             height: 30px;
             display: flex;
-            justify-content: flex-end;
+            justify-content: space-between;
             align-items: center;
             padding: 1vw 12.5vw;
             margin-bottom: 1.5vw;
@@ -202,6 +200,10 @@ function Home() {
     
           footer ul li {
             padding-right: 16px;
+            display: flex;
+          }
+
+          small {
             display: flex;
           }
     
