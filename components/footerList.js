@@ -5,7 +5,6 @@ const StyledFooterList = styled.ul`
     padding-left: 0px;
     padding-right: 16px;
     margin: 4px 0 0 0;
-    list-style: square;
 
     li {
         display: flex;

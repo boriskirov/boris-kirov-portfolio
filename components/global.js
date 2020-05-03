@@ -41,4 +41,21 @@ export const GlobalStyles = createGlobalStyle`
     color: #3f53d9;
   }
   
+  small {
+    display: flex;
+  }
+
+  ul {
+    padding-left: 12px;
+    list-style: square;
+  }
+
+  li {
+    margin-bottom: 8px;
+  }
+
+  ul a {
+    font-weight: 600;
+  }
+  
   `;

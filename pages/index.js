@@ -5,9 +5,13 @@ import { lightTheme, darkTheme } from '../components/theme';
 import { GlobalStyles } from '../components/global';
 import ToggleWrapper from '../components/toggle';
 import { motion } from "framer-motion";
+
+import MainWrapper from '../components/mainWrapper'
+import Main from '../components/main'
 import StyledFooter from '../components/footer';
-import StyledFooterList from '../components/footer-list';
+import StyledFooterList from '../components/footerList';
 import StyledHeader from '../components/header';
+import Grid from '../components/grid';
 
 
 function Home() {
@@ -29,7 +33,7 @@ function Home() {
       initial={{ opacity: 0}} 
       animate={{ opacity : 1}}
       transition= {{ duration: 1.25 }}>
-      <div className="container">
+      <MainWrapper>
         <GlobalStyles />
         <Head>
           <title>Boris Kirov - Product Designer</title>
@@ -58,7 +62,7 @@ function Home() {
           </ToggleWrapper>
         </StyledHeader>  
         
-        <main>
+        <Main>
 
           <h1 className="title">
             BORIS KIROV
@@ -72,7 +76,7 @@ function Home() {
           </h2>
 
 
-          <div className="grid">
+          <Grid>
             <section>
               <h3 className="titleThird">Currently</h3>
               <ul className="listing">
@@ -121,8 +125,8 @@ function Home() {
                 </li>
               </ul>
             </section>
-          </div>
-        </main>
+          </Grid>
+        </Main>
         <StyledFooter>
           <a
             href="https://miro.com/app/board/o9J_kulYeX0=/"
@@ -153,41 +157,6 @@ function Home() {
         </StyledFooter>
 
         <style jsx>{`
-          .container {
-            min-height: 100vh;
-            padding: 0 0.5rem;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-          }
-
-          main {
-            padding: 6vw 12.5vw 2vw 12.5vw;
-            flex: 1;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: flex-start;
-            width: 100%;
-          }
-
-          small {
-            display: flex;
-          }
-    
-          footer ul li:last-child{
-            padding-right: 0px
-          }
-
-          li {
-            margin-bottom: 8px;
-          }
-
-          ul a {
-            font-weight: 600;
-          }
-
           .title {
             margin: 0;
             line-height: 0.9;
@@ -214,19 +183,8 @@ function Home() {
             text-transform: uppercase;
           }
 
-          .title,
-          .description {
+          .title {
             text-align: left;
-          }
-
-          .grid {
-            display: grid;
-            align-items: flex-start;
-            justify-content: center;
-            flex-wrap: wrap;
-
-            max-width: 960px;
-            margin-top: 5vw;
           }
 
           section:nth-child(2) {
@@ -243,29 +201,14 @@ function Home() {
             cursor: sw-resize;
           }
 
-          .listing {
-            padding-left: 12px;
-          }
-
           @media (max-width: 600px) {
-            .grid {
-              display: flex;
-              width: 100%;
-              flex-direction: column;
-            }
-
-            main {
-              padding: 10vw 10vw;
-              height: 100%;
-            }
-
             .title {
-              font-size: 11vw;
+              font-size: 10vw;
             }
 
             .titleTwo {
               margin-top: 8px;
-              font-size: 2.8vh;
+              font-size: 8vw;
             }
 
             .titleThird {
@@ -278,7 +221,7 @@ function Home() {
           }
 
         `}</style>
-      </div>
+      </MainWrapper>
       </motion.div> 
     </>
     </ThemeProvider>
