@@ -4,7 +4,10 @@ import { ThemeProvider } from 'styled-components';
 import { lightTheme, darkTheme } from '../components/theme';
 import { GlobalStyles } from '../components/global';
 import ToggleWrapper from '../components/toggle';
-import { motion } from "framer-motion"
+import { motion } from "framer-motion";
+import StyledFooter from '../components/footer';
+import StyledFooterList from '../components/footer-list';
+import StyledHeader from '../components/header';
 
 
 function Home() {
@@ -47,13 +50,13 @@ function Home() {
           <link rel="apple-touch-icon" href="/favicon.png" />
         </Head>
 
-        <header>
+        <StyledHeader>
           <small>Crafted in Amsterdam ♥️</small>
           <ToggleWrapper darkTheme={isDark} onClick={toggleTheme}>
             <img src="/ToggleLight.svg" alt="Light Toggler" title="Light Side" className="logo" />
             <img src="/Toggle.svg" alt="Dark Toggler" title="Dark Side" className="logo" />
           </ToggleWrapper>
-        </header>  
+        </StyledHeader>  
         
         <main>
 
@@ -120,7 +123,7 @@ function Home() {
             </section>
           </div>
         </main>
-        <footer>
+        <StyledFooter>
           <a
             href="https://miro.com/app/board/o9J_kulYeX0=/"
             target="_blank"
@@ -129,7 +132,7 @@ function Home() {
             Get Resume 2020 © {' '}
           </a>
           <div>
-          <ul className="listing">
+          <StyledFooterList>
               <li className="liElement">
                 <small><span className="emoji">👨‍💻</span><a href="https://github.com/sboriskirov" target="_blank" rel="noopener noreferrer">GitHub</a></small>
               </li>
@@ -145,9 +148,10 @@ function Home() {
               <li className="liElement">
                 <small><span className="emoji">🔗</span><a href="https://www.linkedin.com/in/boris-kirov-b6b110a4/" target="_blank" rel="noopener noreferrer">LinkedIn</a></small>
               </li>
-            </ul>
+            </StyledFooterList>
           </div>
-        </footer>
+        </StyledFooter>
+
         <style jsx>{`
           .container {
             min-height: 100vh;
@@ -168,41 +172,6 @@ function Home() {
             width: 100%;
           }
 
-          header, footer {
-            width: 100%;
-            height: 30px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 1vw 12.5vw;
-            margin-bottom: 1.5vw;
-            margin-top: 1vw;
-          }
-
-          footer {
-            justify-content: space-between;
-          }
-
-          footer img {
-            margin-left: 0.5rem;    
-          }  
-          
-          footer a {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-          }
-    
-          footer ul {
-            display: flex;
-            padding-left: 0px;
-          }
-    
-          footer ul li {
-            padding-right: 16px;
-            display: flex;
-          }
-
           small {
             display: flex;
           }
@@ -217,24 +186,6 @@ function Home() {
 
           ul a {
             font-weight: 600;
-          }
-
-          a {
-            color: inherit;
-            cursor: ne-resize;
-            transition: background-color .3s ease;
-            text-decoration: underline;
-          }
-
-          a:hover,
-          a:focus {
-            text-decoration: none;
-            color: #3f53d9;
-          }
-
-          a:active {
-            background-color: #FFCF00;
-            color: #3f53d9;
           }
 
           .title {
@@ -268,11 +219,6 @@ function Home() {
             text-align: left;
           }
 
-          .emoji {
-            font-size: 18px;
-            margin-right: 4px;
-          }
-
           .grid {
             display: grid;
             align-items: flex-start;
@@ -298,9 +244,7 @@ function Home() {
           }
 
           .listing {
-            padding-left: 16px;
-            margin: 4px 0 0 0;
-            list-style: square;
+            padding-left: 12px;
           }
 
           @media (max-width: 600px) {
@@ -310,25 +254,9 @@ function Home() {
               flex-direction: column;
             }
 
-            main, header, footer{
+            main {
               padding: 10vw 10vw;
               height: 100%;
-            }
-
-            footer {
-              display: flex;
-              flex-direction: column;
-              align-items: flex-start;
-            }
-
-            footer ul {
-              display: flex;
-              flex-direction: column;
-              align-items: flex-start;
-            }
-    
-            footer ul li {
-              margin: 8px 0 8px 0;
             }
 
             .title {
@@ -348,6 +276,7 @@ function Home() {
               grid-column-start: 1;
             }
           }
+
         `}</style>
       </div>
       </motion.div> 
