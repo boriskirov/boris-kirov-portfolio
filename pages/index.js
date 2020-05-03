@@ -48,13 +48,7 @@ function Home() {
         </Head>
 
         <header>
-        <a
-            href="https://miro.com/app/board/o9J_kulYeX0=/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Get Resume 2020 © {' '}
-          </a>
+          <small>Crafted in Amsterdam ♥️</small>
           <ToggleWrapper darkTheme={isDark} onClick={toggleTheme}>
             <img src="/ToggleLight.svg" alt="Light Toggler" title="Light Side" className="logo" />
             <img src="/Toggle.svg" alt="Dark Toggler" title="Dark Side" className="logo" />
@@ -127,6 +121,13 @@ function Home() {
           </div>
         </main>
         <footer>
+          <a
+            href="https://miro.com/app/board/o9J_kulYeX0=/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Get Resume 2020 © {' '}
+          </a>
           <div>
           <ul className="listing">
               <li className="liElement">
@@ -146,7 +147,6 @@ function Home() {
               </li>
             </ul>
           </div>
-          <small>Crafted in Amsterdam ♥️</small>
         </footer>
         <style jsx>{`
           .container {
