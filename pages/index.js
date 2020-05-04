@@ -91,13 +91,13 @@ function Home() {
             <section>
               <h3 className="titleThird">Previously</h3>
               <ul className="listing">
-                <li className="liElement">
+                <li>
                   <a href="https://www.info.nl/" target="_blank" rel="noopener noreferrer">INFO</a>
                 </li>
-                <li className="liElement">
+                <li>
                   <a href="https://www.softserveinc.com/en-us" target="_blank" rel="noopener noreferrer">SoftServe</a>
                 </li>
-                <li className="liElement">
+                <li>
                   <a href="https://despark.com/" target="_blank" rel="noopener noreferrer">Despark</a>
                 </li>
               </ul>
@@ -105,22 +105,22 @@ function Home() {
             <section>
               <h3 className="titleThird">Interested in</h3>
               <ul className="listing">
-                <li className="liElement">
+                <li>
                   Design and prototype in the browser 
                 </li>
-                <li className="liElement">
+                <li>
                   Fluid typography
                 </li>
-                <li className="liElement">
+                <li>
                   Maintenance & experiments with design and experience consistency 
                 </li>
-                <li className="liElement">
+                <li>
                   Working with Git and Terminal 
                 </li>
-                <li className="liElement">
+                <li>
                   Animation and visualization 
                 </li>
-                <li className="liElement">
+                <li>
                   Content design and copy
                 </li>
               </ul>
@@ -137,19 +137,19 @@ function Home() {
           </a>
           <div>
           <StyledFooterList>
-              <li className="liElement">
+              <li>
                 <small><span className="emoji">👨‍💻</span><a href="https://github.com/sboriskirov" target="_blank" rel="noopener noreferrer">GitHub</a></small>
               </li>
-              <li className="liElement">
+              <li>
                 <small><span className="emoji">📝</span><a href="https://medium.com/@bkirov" target="_blank" rel="noopener noreferrer">Medium</a></small>
               </li>
-              <li className="liElement">
+              <li>
                 <small><span className="emoji">🐙</span><a href="https://dribbble.com/boriskirov" target="_blank" rel="noopener noreferrer">Dribbble</a></small>
               </li>
-              <li className="liElement">
+              <li>
                 <small><span className="emoji">🐦</span><a href="https://twitter.com/boris_a_kirov" target="_blank" rel="noopener noreferrer">Twitter</a></small>
               </li>
-              <li className="liElement">
+              <li>
                 <small><span className="emoji">🔗</span><a href="https://www.linkedin.com/in/boris-kirov-b6b110a4/" target="_blank" rel="noopener noreferrer">LinkedIn</a></small>
               </li>
             </StyledFooterList>
@@ -178,9 +178,13 @@ function Home() {
 
           .titleThird {
             font-size: 1.25vw;
-            margin: 16px 0 16px 0;
+            margin: 16px 0 4px 0;
             opacity: 0.75;
             text-transform: uppercase;
+          }
+
+          ul {
+            margin: 8px 0px 0px 4px;
           }
 
           .title {
