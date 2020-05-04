@@ -4,7 +4,14 @@ import { ThemeProvider } from 'styled-components';
 import { lightTheme, darkTheme } from '../components/theme';
 import { GlobalStyles } from '../components/global';
 import ToggleWrapper from '../components/toggle';
-import { motion } from "framer-motion"
+import { motion } from "framer-motion";
+
+import MainWrapper from '../components/mainWrapper'
+import Main from '../components/main'
+import StyledFooter from '../components/footer';
+import StyledFooterList from '../components/footerList';
+import StyledHeader from '../components/header';
+import Grid from '../components/grid';
 
 
 function Home() {
@@ -26,7 +33,7 @@ function Home() {
       initial={{ opacity: 0}} 
       animate={{ opacity : 1}}
       transition= {{ duration: 1.25 }}>
-      <div className="container">
+      <MainWrapper>
         <GlobalStyles />
         <Head>
           <title>Boris Kirov - Product Designer</title>
@@ -47,15 +54,15 @@ function Home() {
           <link rel="apple-touch-icon" href="/favicon.png" />
         </Head>
 
-        <header>
+        <StyledHeader>
           <small>Crafted in Amsterdam ♥️</small>
           <ToggleWrapper darkTheme={isDark} onClick={toggleTheme}>
             <img src="/ToggleLight.svg" alt="Light Toggler" title="Light Side" className="logo" />
             <img src="/Toggle.svg" alt="Dark Toggler" title="Dark Side" className="logo" />
           </ToggleWrapper>
-        </header>  
+        </StyledHeader>  
         
-        <main>
+        <Main>
 
           <h1 className="title">
             BORIS KIROV
@@ -69,7 +76,7 @@ function Home() {
           </h2>
 
 
-          <div className="grid">
+          <Grid>
             <section>
               <h3 className="titleThird">Currently</h3>
               <ul className="listing">
@@ -84,13 +91,13 @@ function Home() {
             <section>
               <h3 className="titleThird">Previously</h3>
               <ul className="listing">
-                <li className="liElement">
+                <li>
                   <a href="https://www.info.nl/" target="_blank" rel="noopener noreferrer">INFO</a>
                 </li>
-                <li className="liElement">
+                <li>
                   <a href="https://www.softserveinc.com/en-us" target="_blank" rel="noopener noreferrer">SoftServe</a>
                 </li>
-                <li className="liElement">
+                <li>
                   <a href="https://despark.com/" target="_blank" rel="noopener noreferrer">Despark</a>
                 </li>
               </ul>
@@ -98,29 +105,29 @@ function Home() {
             <section>
               <h3 className="titleThird">Interested in</h3>
               <ul className="listing">
-                <li className="liElement">
+                <li>
                   Design and prototype in the browser 
                 </li>
-                <li className="liElement">
+                <li>
                   Fluid typography
                 </li>
-                <li className="liElement">
+                <li>
                   Maintenance & experiments with design and experience consistency 
                 </li>
-                <li className="liElement">
+                <li>
                   Working with Git and Terminal 
                 </li>
-                <li className="liElement">
+                <li>
                   Animation and visualization 
                 </li>
-                <li className="liElement">
+                <li>
                   Content design and copy
                 </li>
               </ul>
             </section>
-          </div>
-        </main>
-        <footer>
+          </Grid>
+        </Main>
+        <StyledFooter>
           <a
             href="https://miro.com/app/board/o9J_kulYeX0=/"
             target="_blank"
@@ -129,114 +136,27 @@ function Home() {
             Get Resume 2020 © {' '}
           </a>
           <div>
-          <ul className="listing">
-              <li className="liElement">
+          <StyledFooterList>
+              <li>
                 <small><span className="emoji">👨‍💻</span><a href="https://github.com/sboriskirov" target="_blank" rel="noopener noreferrer">GitHub</a></small>
               </li>
-              <li className="liElement">
+              <li>
                 <small><span className="emoji">📝</span><a href="https://medium.com/@bkirov" target="_blank" rel="noopener noreferrer">Medium</a></small>
               </li>
-              <li className="liElement">
+              <li>
                 <small><span className="emoji">🐙</span><a href="https://dribbble.com/boriskirov" target="_blank" rel="noopener noreferrer">Dribbble</a></small>
               </li>
-              <li className="liElement">
+              <li>
                 <small><span className="emoji">🐦</span><a href="https://twitter.com/boris_a_kirov" target="_blank" rel="noopener noreferrer">Twitter</a></small>
               </li>
-              <li className="liElement">
+              <li>
                 <small><span className="emoji">🔗</span><a href="https://www.linkedin.com/in/boris-kirov-b6b110a4/" target="_blank" rel="noopener noreferrer">LinkedIn</a></small>
               </li>
-            </ul>
+            </StyledFooterList>
           </div>
-        </footer>
+        </StyledFooter>
+
         <style jsx>{`
-          .container {
-            min-height: 100vh;
-            padding: 0 0.5rem;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-          }
-
-          main {
-            padding: 6vw 12.5vw 2vw 12.5vw;
-            flex: 1;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: flex-start;
-            width: 100%;
-          }
-
-          header, footer {
-            width: 100%;
-            height: 30px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 1vw 12.5vw;
-            margin-bottom: 1.5vw;
-            margin-top: 1vw;
-          }
-
-          footer {
-            justify-content: space-between;
-          }
-
-          footer img {
-            margin-left: 0.5rem;    
-          }  
-          
-          footer a {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-          }
-    
-          footer ul {
-            display: flex;
-            padding-left: 0px;
-          }
-    
-          footer ul li {
-            padding-right: 16px;
-            display: flex;
-          }
-
-          small {
-            display: flex;
-          }
-    
-          footer ul li:last-child{
-            padding-right: 0px
-          }
-
-          li {
-            margin-bottom: 8px;
-          }
-
-          ul a {
-            font-weight: 600;
-          }
-
-          a {
-            color: inherit;
-            cursor: ne-resize;
-            transition: background-color .3s ease;
-            text-decoration: underline;
-          }
-
-          a:hover,
-          a:focus {
-            text-decoration: none;
-            color: #3f53d9;
-          }
-
-          a:active {
-            background-color: #FFCF00;
-            color: #3f53d9;
-          }
-
           .title {
             margin: 0;
             line-height: 0.9;
@@ -258,29 +178,17 @@ function Home() {
 
           .titleThird {
             font-size: 1.25vw;
-            margin: 16px 0 16px 0;
+            margin: 16px 0 4px 0;
             opacity: 0.75;
             text-transform: uppercase;
           }
 
-          .title,
-          .description {
+          ul {
+            margin: 8px 0px 0px 4px;
+          }
+
+          .title {
             text-align: left;
-          }
-
-          .emoji {
-            font-size: 18px;
-            margin-right: 4px;
-          }
-
-          .grid {
-            display: grid;
-            align-items: flex-start;
-            justify-content: center;
-            flex-wrap: wrap;
-
-            max-width: 960px;
-            margin-top: 5vw;
           }
 
           section:nth-child(2) {
@@ -297,47 +205,14 @@ function Home() {
             cursor: sw-resize;
           }
 
-          .listing {
-            padding-left: 16px;
-            margin: 4px 0 0 0;
-            list-style: square;
-          }
-
           @media (max-width: 600px) {
-            .grid {
-              display: flex;
-              width: 100%;
-              flex-direction: column;
-            }
-
-            main, header, footer{
-              padding: 10vw 10vw;
-              height: 100%;
-            }
-
-            footer {
-              display: flex;
-              flex-direction: column;
-              align-items: flex-start;
-            }
-
-            footer ul {
-              display: flex;
-              flex-direction: column;
-              align-items: flex-start;
-            }
-    
-            footer ul li {
-              margin: 8px 0 8px 0;
-            }
-
             .title {
-              font-size: 11vw;
+              font-size: 10vw;
             }
 
             .titleTwo {
               margin-top: 8px;
-              font-size: 2.8vh;
+              font-size: 8vw;
             }
 
             .titleThird {
@@ -348,8 +223,9 @@ function Home() {
               grid-column-start: 1;
             }
           }
+
         `}</style>
-      </div>
+      </MainWrapper>
       </motion.div> 
     </>
     </ThemeProvider>
