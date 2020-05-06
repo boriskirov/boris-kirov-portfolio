@@ -18,7 +18,6 @@ import Dropcap from '../../components/dropcap';
 import HeadingMain from '../../components/headingMain';
 import HeadingThree from '../../components/headingThree';
 import BlockQuote from '../../components/blockquote';
-import ImgWrapper from '../../components/ImageWrapper';
 
 function Tripscout() {
   const [theme, toggleTheme] = useDarkMode();
@@ -92,10 +91,10 @@ function Tripscout() {
               <HeadingThree>Conclusion</HeadingThree>
               <p>Every team should create their own documentation by implementing the fundamentals of a systematic language. Using methods from code and the knowledge that I gathered from the Atomic design practices I was able to execute a information documentation which led then to a faster shipment of new features and more time for prototypes. Our first workshop took 14 days, the second one was done for just 6 days. We did not loose time to create new components, using the current one we were able to spend more time on prototyping and testing out our ideas.</p>
               <img src="/tripscout-app-4.png"/>
-              <ImgWrapper>
+              
                 <img src="/tripscout-app-5.gif"/>
                 <img src="/tripscout-app-6.gif"/>
-              </ImgWrapper>
+              
               <BlockQuote>
                 <HeadingThree>Refferal</HeadingThree>
                 <p>Boris a fantastic strategist and designer and was highly impactful on the end-to-end design of a critical feature set for our app. He has the ability to quickly understand both the user and the business and create simple and elegant, yet highly-functional designs. He is highly receptive to feedback but not afraid to speak the truth when suggestions defy what is best for the user. On top of all of that, he's generally pleasant, has a great sense of humor, and not afraid of hard work. I'd gladly work with Boris again and recommend him to anyone that needs to solve a complex design problem."
