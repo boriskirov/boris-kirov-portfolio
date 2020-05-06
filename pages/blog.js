@@ -67,37 +67,37 @@ function Blog() {
 
 
           <Grid>
-          <Card href="/blog">
+          <Card href="/posts">
                 <div>
                     <HeadingThree>Defining design system</HeadingThree>
                 </div>
                 <small>Article</small>
             </Card>
-            <Card href="/blog">
+            <Card href="/posts">
                 <div>
                     <HeadingThree>2019 in 365</HeadingThree>
                 </div>
                 <small>Article</small>
             </Card>
-            <Card href="/blog/great-wall-of-development">
+            <Card href="/posts/great-wall-of-development">
                 <div>
                     <HeadingThree>Wall of development</HeadingThree>
                 </div>
                 <small>Case study</small>
             </Card>
-            <Card href="/blog/tripscout">
+            <Card href="/posts/tripscout">
                 <div>
                     <HeadingThree>Working with TripScout</HeadingThree>
                 </div>
                 <small>Case study</small>
             </Card>
-            <Card href="/blog/nda">
+            <Card href="/posts/nda">
                 <div>
                     <HeadingThree>How to implement design system thinking to a product</HeadingThree>
                 </div>
                 <small>Case study</small>
             </Card>
-            <Card href="/blog/improve-impatience">
+            <Card href="/posts/improve-impatience">
                 <div>
                     <HeadingThree>Improve Impatience</HeadingThree>
                 </div>
