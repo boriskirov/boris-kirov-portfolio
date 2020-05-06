@@ -1,38 +1,35 @@
-import Head from 'next/head'
-import React, {useState} from 'react';
+import React from 'react';
 import { ThemeProvider } from 'styled-components';
+import { useDarkMode } from '../components/useDarkMode';
 import { lightTheme, darkTheme } from '../components/theme';
 import { GlobalStyles } from '../components/global';
-import ToggleWrapper from '../components/toggle';
+import Toggle from '../components/toggle';
 import { motion } from "framer-motion";
 
-import MainWrapper from '../components/mainWrapper'
-import Main from '../components/main'
-import StyledFooter from '../components/footer';
-import StyledFooterList from '../components/footerList';
+import Head from 'next/head';
+import MainWrapper from '../components/mainWrapper';
+import Link from 'next/link';
+import Main from '../components/main';
+import Footer from '../components/footer';
 import StyledHeader from '../components/header';
 import Grid from '../components/grid';
+import HeadingMain from '../components/headingMain';
+import HeadingTwo from '../components/headingTwo'
+import HeadingThree from '../components/headingThree'
 
 
 function Home() {
-  const [theme, setTheme] = useState('dark');
-  const isDark = theme === 'dark';
-  const toggleTheme = () => {
-      if (theme === 'dark') {
-      setTheme('light');
-      } else {
-      setTheme('dark');
-      }
-  }
+  const [theme, toggleTheme] = useDarkMode();
+  const themeMode = theme === 'light' ? lightTheme : darkTheme;
 
   return (
-    <ThemeProvider theme={theme === 'dark' ? darkTheme : lightTheme} >
+    <ThemeProvider theme={themeMode} >
     <>
     <motion.div  
       exit={{ opacity: 0 }} 
       initial={{ opacity: 0}} 
       animate={{ opacity : 1}}
-      transition= {{ duration: 1.25 }}>
+      transition= {{ duration: 1.15 }}>
       <MainWrapper>
         <GlobalStyles />
         <Head>
@@ -56,41 +53,41 @@ function Home() {
 
         <StyledHeader>
           <small>Crafted in Amsterdam ♥️</small>
-          <ToggleWrapper darkTheme={isDark} onClick={toggleTheme}>
-            <img src="/ToggleLight.svg" alt="Light Toggler" title="Light Side" className="logo" />
-            <img src="/Toggle.svg" alt="Dark Toggler" title="Dark Side" className="logo" />
-          </ToggleWrapper>
+          <Toggle theme={theme} toggleTheme={toggleTheme} />
         </StyledHeader>  
         
         <Main>
 
-          <h1 className="title">
+          <HeadingMain>
             BORIS KIROV
-          </h1>
+          </HeadingMain>
 
-          <h2 className="titleTwo">
+          <HeadingTwo>
             is getting things done at <a 
             target="_blank"
             rel="noopener noreferrer"
             href="https://miro.com/index/">MIRO</a>
-          </h2>
+          </HeadingTwo>
 
 
           <Grid>
             <section>
-              <h3 className="titleThird">Currently</h3>
-              <ul className="listing">
-                <li className="liElement">
+              <HeadingThree>Currently</HeadingThree>
+              <ul>
+                <li>
                   Product designer at <a href="https://miro.com/index/" target="_blank" rel="noopener noreferrer">MIRO</a>
                 </li>
-                <li className="liElement">
+                <li>
                   Creator & contributor at <a href="https://www.fluiditype.com/" target="_blank" rel="noopener noreferrer">Fluiditype</a>
+                </li>
+                <li className="blog">
+                  Check the <Link href="/blog">Blog</Link>
                 </li>
               </ul>
             </section>
             <section>
-              <h3 className="titleThird">Previously</h3>
-              <ul className="listing">
+              <HeadingThree>Previously</HeadingThree>
+              <ul>
                 <li>
                   <a href="https://www.info.nl/" target="_blank" rel="noopener noreferrer">INFO</a>
                 </li>
@@ -103,8 +100,8 @@ function Home() {
               </ul>
             </section>
             <section>
-              <h3 className="titleThird">Interested in</h3>
-              <ul className="listing">
+              <HeadingThree>Interested in</HeadingThree>
+              <ul>
                 <li>
                   Design and prototype in the browser 
                 </li>
@@ -127,103 +124,18 @@ function Home() {
             </section>
           </Grid>
         </Main>
-        <StyledFooter>
-          <a
-            href="https://miro.com/app/board/o9J_kulYeX0=/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Get Resume 2020 © {' '}
-          </a>
-          <div>
-          <StyledFooterList>
-              <li>
-                <small><span className="emoji">👨‍💻</span><a href="https://github.com/sboriskirov" target="_blank" rel="noopener noreferrer">GitHub</a></small>
-              </li>
-              <li>
-                <small><span className="emoji">📝</span><a href="https://medium.com/@bkirov" target="_blank" rel="noopener noreferrer">Medium</a></small>
-              </li>
-              <li>
-                <small><span className="emoji">🐙</span><a href="https://dribbble.com/boriskirov" target="_blank" rel="noopener noreferrer">Dribbble</a></small>
-              </li>
-              <li>
-                <small><span className="emoji">🐦</span><a href="https://twitter.com/boris_a_kirov" target="_blank" rel="noopener noreferrer">Twitter</a></small>
-              </li>
-              <li>
-                <small><span className="emoji">🔗</span><a href="https://www.linkedin.com/in/boris-kirov-b6b110a4/" target="_blank" rel="noopener noreferrer">LinkedIn</a></small>
-              </li>
-            </StyledFooterList>
-          </div>
-        </StyledFooter>
+        <Footer/>
 
         <style jsx>{`
-          .title {
-            margin: 0;
-            line-height: 0.9;
-            font-size: 9vw;
-            font-weight: 600;
-          }
 
-          .titleTwo {
-            margin: 0;
-            line-height: 1.15;
-            font-size: 3.5vw;
-            font-weight: 300;
-            letter-spacing: 0.1vw;
-          }
+        section {
+          width: 100%;
+          margin-bottom: 16px;
+        }
 
-          .titleTwo a {
-            font-weight: 600;
-          }
-
-          .titleThird {
-            font-size: 1.25vw;
-            margin: 16px 0 4px 0;
-            opacity: 0.75;
-            text-transform: uppercase;
-          }
-
-          ul {
+        ul {
             margin: 8px 0px 0px 4px;
-          }
-
-          .title {
-            text-align: left;
-          }
-
-          section:nth-child(2) {
-            grid-column-start: 3;
-          }
-
-          section:last-child {
-            grid-column-start: 1;
-            grid-column-end: 3;
-          }
-
-          .logo {
-            height: 1.5rem;
-            cursor: sw-resize;
-          }
-
-          @media (max-width: 600px) {
-            .title {
-              font-size: 10vw;
-            }
-
-            .titleTwo {
-              margin-top: 8px;
-              font-size: 8vw;
-            }
-
-            .titleThird {
-              font-size: 4vw;
-            }
-
-            section {
-              grid-column-start: 1;
-            }
-          }
-
+        }
         `}</style>
       </MainWrapper>
       </motion.div> 

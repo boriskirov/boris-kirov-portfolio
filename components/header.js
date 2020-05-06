@@ -11,7 +11,7 @@ const StyledHeader = styled.header `
     margin-top: 1vw;
 
     @media (max-width: 600px) {
-        padding: 10vw 10vw;
+        padding: 10vw 2.5vw;
         height: 100%;
     }
 `

@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 const Main = styled.main `
-    padding: 6vw 12.5vw 2vw 12.5vw;
+    padding: 8vw 12vw 2vw 12vw;
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -10,11 +10,9 @@ const Main = styled.main `
     width: 100%;
 
     @media (max-width: 600px) {
-        main {
-          padding: 10vw 10vw;
-          height: 100%;
+        padding: 10vw 2.5vw;
+        height: 100%;
     }
-
 `
 
 export default Main

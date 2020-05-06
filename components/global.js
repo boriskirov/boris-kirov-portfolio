@@ -21,6 +21,7 @@ export const GlobalStyles = createGlobalStyle`
     background-color: ${({ theme }) => theme.body};
     color: ${({ theme }) => theme.text};
     transition: all 0.75s ease-in-out;
+    line-height: 1.5;
   }
 
   a {
@@ -45,6 +46,12 @@ export const GlobalStyles = createGlobalStyle`
     display: flex;
   }
 
+  p {
+    font-size: 14px;
+    line-height: 1.4;
+    margin: 8px 0 16px 0;
+  }
+
   ul {
     padding-left: 12px;
     list-style: square;
@@ -57,5 +64,9 @@ export const GlobalStyles = createGlobalStyle`
   ul a {
     font-weight: 600;
   }
-  
+
+  img {
+    width: 100%;  
+  }
+
   `;
