@@ -1,6 +1,6 @@
 import styled from "styled-components"
 
-const ImageWrapper = styled.div`
+const ImgWrapper = styled.div`
     
     display: flex;
     
@@ -9,4 +9,4 @@ const ImageWrapper = styled.div`
         margin: 0 auto;
     }
 `
-export default ImageWrapper
+export default ImgWrapper

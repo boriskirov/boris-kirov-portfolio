@@ -18,7 +18,7 @@ import Dropcap from '../../components/dropcap';
 import HeadingMain from '../../components/headingMain';
 import HeadingThree from '../../components/headingThree';
 import BlockQuote from '../../components/blockquote';
-import ImageWrapper from '../../components/imageWrapper';
+import ImgWrapper from '../../components/imageWrapper';
 
 function Impatience() {
   const [theme, toggleTheme] = useDarkMode();
@@ -99,15 +99,15 @@ function Impatience() {
                     </BlockQuote>
                     <p>Tristan’s examples are the perfect inspiration. Raising questions around the so-called ‘FOMSI’. Fear of Missing Something Important is something valuable to know, people are empowered with information. The control on the other hand is something different, we do not choose the information that we want to receive, most of the feed app users, at one point or another are swallowed by it and it becomes just spam of information with small value. That is why we get lost in it. The decision of what information is important is the key. Related to my topic on ‘improving impatience’, well you should ask yourself which information is so important. If those notifications or eternal scroll are crucial for you, well then I take my words back.
                     </p>
-                    <ImageWrapper>
+                    <ImgWrapper>
                       <img src="/improve-impatience-app-1.png"/>
-                    </ImageWrapper>
+                    </ImgWrapper>
                     <BlockQuote>I set only the most important apps on my home screen to ignore the notifications.
                     </BlockQuote>
                     <HeadingThree>Conclusion</HeadingThree>
-                    <ImageWrapper>
+                    <ImgWrapper>
                       <img src="/improve-impatience-app-2.png"/>                
-                    </ImageWrapper>
+                    </ImgWrapper>
                     <BlockQuote>My lock screen changed since I got my phone back.</BlockQuote>
                     <p>
                     You’re probably thinking by now that ignoring media is a pretty accurate and simple solution for your technology-driven behavior change. People are using internet for everything nowadays, I do it all the time. So by ignoring media, deleting social media accounts, throwing away your phone (you know I had that in mind at some point during my phoneless experience), the idea is to take control of yourself, and your personal decision making. We are part of a huge technological evolution—people try to adopt technology in everything—but the path that we follow is important. All actions that machines are supposed to do for us, all those suggestions must be based on proper choices. Conscious choices.
