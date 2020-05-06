@@ -18,7 +18,7 @@ import Dropcap from '../../components/dropcap';
 import HeadingMain from '../../components/headingMain';
 import HeadingThree from '../../components/headingThree';
 import BlockQuote from '../../components/blockquote';
-import ImageWrapper from '../../components/ImageWrapper'
+import ImageWrapper from '../../components/ImageWrapper';
 
 function Tripscout() {
   const [theme, toggleTheme] = useDarkMode();

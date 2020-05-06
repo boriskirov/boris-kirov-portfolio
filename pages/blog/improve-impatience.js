@@ -17,8 +17,8 @@ import Grid from '../../components/grid';
 import Dropcap from '../../components/dropcap';
 import HeadingMain from '../../components/headingMain';
 import HeadingThree from '../../components/headingThree';
-import BlockQuote from '../../components/blockquote'
-import ImageWrapper from '../../components/imageWrapper'
+import BlockQuote from '../../components/blockquote';
+import ImageWrapper from '../../components/imageWrapper';
 
 function Impatience() {
   const [theme, toggleTheme] = useDarkMode();

@@ -17,7 +17,7 @@ import Grid from '../../components/grid';
 import Dropcap from '../../components/dropcap';
 import HeadingMain from '../../components/headingMain';
 import HeadingThree from '../../components/headingThree';
-import BlockQuote from '../../components/blockquote'
+import BlockQuote from '../../components/blockquote';
 
 function GreatWall() {
   const [theme, toggleTheme] = useDarkMode();
