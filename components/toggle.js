@@ -1,13 +1,10 @@
 import React from 'react'
 import { func, string } from 'prop-types';
 import styled from 'styled-components';
+import styles from '../styles/header.module.css'
 
-const ToggleWrapper = styled.span`
-  background: none;
-  border: none;
-  cursor: sw-resize;
-  padding: 8px 24px;
-  
+const ToggleWrapper = styled.span`  
+
   img {
     transition: all 1.15s linear;
     height: 1.5rem;
@@ -25,7 +22,7 @@ const ToggleWrapper = styled.span`
 const Toggle = ({ theme, toggleTheme }) => {
   const isLight = theme === 'light';
   return (
-    <ToggleWrapper lightTheme={isLight} onClick={toggleTheme}>
+    <ToggleWrapper className={`${styles.iconWrapper}`} lightTheme={isLight} onClick={toggleTheme}>
         <img src="/ToggleLight.svg" alt="Light Toggler" title="Light Side"/>
         <img src="/Toggle.svg" alt="Dark Toggler" title="Dark Side"/>
     </ToggleWrapper>

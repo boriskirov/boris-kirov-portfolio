@@ -9,7 +9,6 @@ import { motion } from "framer-motion";
 import Head from 'next/head';
 import Link from 'next/link';
 import Footer from '../components/footer';
-import StyledHeader from '../components/header';
 import utilStyles from '../styles/utils.module.css'
 
 
@@ -46,10 +45,10 @@ function Home() {
           <link rel="apple-touch-icon" href="/favicon.png" />
         </Head>
 
-        <StyledHeader>
+        <header>
           <small>Crafted in Amsterdam ♥️</small>
           <Toggle theme={theme} toggleTheme={toggleTheme} />
-        </StyledHeader>  
+        </header>  
         
         <main className={`${utilStyles.innerWrapper}`}>
 

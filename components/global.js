@@ -115,6 +115,10 @@ export const GlobalStyles = createGlobalStyle`
           flex-direction: column;
           align-items: flex-start;
     }
+
+    header {
+      padding: 10vw 2.5vw;
+    }
   }
 
   `;
