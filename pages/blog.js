@@ -60,7 +60,7 @@ function Blog() {
 
 
           <div className={`${utilStyles.contentWrapper}`}>
-          <a className={`${utilStyles.mainCard}`} href="/">
+          <a className={`${utilStyles.mainCard}`} href="/blog/defining-design-systems">
                 <div>
                     <h3 className={`${utilStyles.headingL}`}>Defining design system</h3>
                 </div>
