@@ -5,18 +5,11 @@ import { lightTheme, darkTheme } from '../components/theme';
 import { GlobalStyles } from '../components/global';
 import { motion } from "framer-motion";
 
-import Head from 'next/head'
-import Link from 'next/link'
-import MainWrapper from '../components/mainWrapper'
-import Main from '../components/main'
-import Grid from '../components/grid'
-import StyledHeader from '../components/header';
-import Card from '../components/blogCard'
+import Head from 'next/head';
+import Link from 'next/link';
 import Footer from '../components/footer';
 import Toggle from '../components/toggle';
-import BackButton from '../components/backButton';
-import HeadingMain from '../components/headingMain';
-import HeadingThree from '../components/headingThree';
+import utilStyles from '../styles/utils.module.css';
 
 
 function Blog() {
@@ -31,7 +24,7 @@ function Blog() {
       initial={{ opacity: 0}} 
       animate={{ opacity : 1}}
       transition= {{ duration: 1.25 }}>
-      <MainWrapper>
+      <div className={`${utilStyles.mainWrapper}`}>
         <GlobalStyles />
         <Head>
           <title>Boris Kirov - Product Designer</title>
@@ -52,61 +45,69 @@ function Blog() {
           <link rel="apple-touch-icon" href="/favicon.png" />
         </Head>
 
-        <StyledHeader>
+        <header>
           <small>Crafted in Amsterdam ♥️</small>
           <Toggle theme={theme} toggleTheme={toggleTheme} />  
-        </StyledHeader>  
+        </header>  
         
-        <Main>
-            <Link href="/index">
-                  <BackButton>Back</BackButton>
+        <main className={`${utilStyles.innerWrapper}`}>
+            <Link href="/index" as="/index">
+                  <a className={`${utilStyles.backButton}`}>Back</a>
             </Link>
-            <HeadingMain>
+            <h1 className={`${utilStyles.heading2Xl}`}>
             BLOG
-            </HeadingMain>
+            </h1>
 
 
-          <Grid>
-          <Card href="/posts">
+          <div className={`${utilStyles.contentWrapper}`}>
+          <a className={`${utilStyles.mainCard}`} href="/">
                 <div>
-                    <HeadingThree>Defining design system</HeadingThree>
+                    <h3 className={`${utilStyles.headingL}`}>Defining design system</h3>
                 </div>
                 <small>Article</small>
-            </Card>
-            <Card href="/posts">
+            </a>
+            <a className={`${utilStyles.mainCard}`} href="/">
                 <div>
-                    <HeadingThree>2019 in 365</HeadingThree>
+                    <h3 className={`${utilStyles.headingL}`}>2019 in 365</h3>    
                 </div>
                 <small>Article</small>
-            </Card>
-            <Card href="/posts/great-wall-of-development">
-                <div>
-                    <HeadingThree>Wall of development</HeadingThree>
-                </div>
-                <small>Case study</small>
-            </Card>
-            <Card href="/posts/tripscout">
-                <div>
-                    <HeadingThree>Working with TripScout</HeadingThree>
-                </div>
-                <small>Case study</small>
-            </Card>
-            <Card href="/posts/nda">
-                <div>
-                    <HeadingThree>How to implement design system thinking to a product</HeadingThree>
-                </div>
-                <small>Case study</small>
-            </Card>
-            <Card href="/posts/improve-impatience">
-                <div>
-                    <HeadingThree>Improve Impatience</HeadingThree>
-                </div>
-                <small>Article</small>
-            </Card>
-            </Grid>
-        </Main>
+            </a>
+            
+              <a className={`${utilStyles.mainCard}`} href="/blog/great-wall-of-development">
+                  <div>
+                      <h3 className={`${utilStyles.headingL}`}>Wall of development</h3>
+                  </div>
+                  <small>Case study</small>
+              </a>
+            
+            
+              <a className={`${utilStyles.mainCard}`} href="/blog/tripscout">
+                  <div>
+                      <h3 className={`${utilStyles.headingL}`}>Working with TripScout</h3>
+                  </div>
+                  <small>Case study</small>
+              </a>
+            
+            
+              <a className={`${utilStyles.mainCard}`} href="/blog/nda">
+                  <div>
+                      <h3 className={`${utilStyles.headingL}`}>How to implement design system thinking to a product</h3>
+                  </div>
+                  <small>Case study</small>
+              </a>
+            
+            
+              <a className={`${utilStyles.mainCard}`} href="/blog/improve-impatience">
+                  <div>
+                      <h3 className={`${utilStyles.headingL}`}>Improve Impatience</h3>
+                  </div>
+                  <small>Article</small>
+              </a>
+            
+            </div>
+        </main>
         <Footer/>
-      </MainWrapper>
+      </div>
       </motion.div> 
     </>
     </ThemeProvider>

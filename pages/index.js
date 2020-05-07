@@ -7,15 +7,10 @@ import Toggle from '../components/toggle';
 import { motion } from "framer-motion";
 
 import Head from 'next/head';
-import MainWrapper from '../components/mainWrapper';
 import Link from 'next/link';
-import Main from '../components/main';
 import Footer from '../components/footer';
 import StyledHeader from '../components/header';
-import Grid from '../components/grid';
-import HeadingMain from '../components/headingMain';
-import HeadingTwo from '../components/headingTwo'
-import HeadingThree from '../components/headingThree'
+import utilStyles from '../styles/utils.module.css'
 
 
 function Home() {
@@ -30,8 +25,8 @@ function Home() {
       initial={{ opacity: 0}} 
       animate={{ opacity : 1}}
       transition= {{ duration: 1.15 }}>
-      <MainWrapper>
-        <GlobalStyles />
+      <div className={`${utilStyles.mainWrapper}`}>
+        <GlobalStyles/>
         <Head>
           <title>Boris Kirov - Product Designer</title>
           <link rel="icon" href="/favicon.png" />
@@ -56,23 +51,23 @@ function Home() {
           <Toggle theme={theme} toggleTheme={toggleTheme} />
         </StyledHeader>  
         
-        <Main>
+        <main className={`${utilStyles.innerWrapper}`}>
 
-          <HeadingMain>
+          <h1 className={`${utilStyles.heading2Xl}`}>
             BORIS KIROV
-          </HeadingMain>
+          </h1>
 
-          <HeadingTwo>
+          <h2 className={`${utilStyles.headingXl}`}>
             is getting things done at <a 
             target="_blank"
             rel="noopener noreferrer"
             href="https://miro.com/index/">MIRO</a>
-          </HeadingTwo>
+          </h2>
 
 
-          <Grid>
+          <div className={`${utilStyles.contentWrapper}`}>
             <section>
-              <HeadingThree>Currently</HeadingThree>
+              <h3 className={`${utilStyles.headingL}`}>Currently</h3>
               <ul>
                 <li>
                   Product designer at <a href="https://miro.com/index/" target="_blank" rel="noopener noreferrer">MIRO</a>
@@ -81,12 +76,12 @@ function Home() {
                   Creator & contributor at <a href="https://www.fluiditype.com/" target="_blank" rel="noopener noreferrer">Fluiditype</a>
                 </li>
                 <li className="blog">
-                  Check the <Link href="/blog">Blog</Link>
+                  Check the <Link href="/blog" as="/blog"><a>Blog</a></Link>
                 </li>
               </ul>
             </section>
             <section>
-              <HeadingThree>Previously</HeadingThree>
+              <h3 className={`${utilStyles.headingL}`}>Previously</h3>
               <ul>
                 <li>
                   <a href="https://www.info.nl/" target="_blank" rel="noopener noreferrer">INFO</a>
@@ -100,7 +95,7 @@ function Home() {
               </ul>
             </section>
             <section>
-              <HeadingThree>Interested in</HeadingThree>
+              <h3 className={`${utilStyles.headingL}`}>Interested in</h3>
               <ul>
                 <li>
                   Design and prototype in the browser 
@@ -122,22 +117,10 @@ function Home() {
                 </li>
               </ul>
             </section>
-          </Grid>
-        </Main>
+          </div>
+        </main>
         <Footer/>
-
-        <style jsx>{`
-
-        section {
-          width: 100%;
-          margin-bottom: 16px;
-        }
-
-        ul {
-            margin: 8px 0px 0px 4px;
-        }
-        `}</style>
-      </MainWrapper>
+      </div>
       </motion.div> 
     </>
     </ThemeProvider>

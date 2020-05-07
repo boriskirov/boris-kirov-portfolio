@@ -7,17 +7,10 @@ import Toggle from '../../components/toggle';
 import { motion } from "framer-motion";
 
 import Head from 'next/head';
-import MainWrapper from '../../components/mainWrapper';
 import Link from 'next/link';
-import BackButton from '../../components/backButton';
-import Main from '../../components/main';
 import Footer from '../../components/footer';
-import StyledHeader from '../../components/header';
-import Grid from '../../components/grid';
-import Dropcap from '../../components/dropcap';
-import HeadingMain from '../../components/headingMain';
-import HeadingThree from '../../components/headingThree';
-import BlockQuote from '../../components/blockquote';
+import utilStyles from '../../styles/utils.module.css';
+
 
 function GreatWall() {
   const [theme, toggleTheme] = useDarkMode();
@@ -31,7 +24,7 @@ function GreatWall() {
       initial={{ opacity: 0}} 
       animate={{ opacity : 1}}
       transition= {{ duration: 1.15 }}>
-      <MainWrapper>
+      <div className={`${utilStyles.mainWrapper}`}>
         <GlobalStyles />
         <Head>
           <title>Boris Kirov - Product Designer</title>
@@ -52,30 +45,30 @@ function GreatWall() {
           <link rel="apple-touch-icon" href="/favicon.png" />
         </Head>
 
-        <StyledHeader>
+        <header>
           <small>Crafted in Amsterdam ♥️</small>
           <Toggle theme={theme} toggleTheme={toggleTheme} />
-        </StyledHeader>  
+        </header>  
         
-        <Main>
+        <main className={`${utilStyles.innerWrapper}`}>
             <Link href="/blog">
-                    <BackButton>Back</BackButton>
+              <a className={`${utilStyles.backButton}`}>Back</a>
             </Link>
-            <HeadingMain>
+            <h1 className={`${utilStyles.heading2Xl}`}>
                 GREAT WALL OF DEVELOPMENT
-            </HeadingMain>
-            <info daTetime="2018-07-24">Jul 24, 2019</info>
+            </h1>
+            <info dateTime="2018-07-24">Jul 24, 2019</info>
           
-            <Grid>
+            <div className={`${utilStyles.contentWrapper}`}>
                 <section>
                     <img src="/wall-of-development-app-1.png"/>
                     <p>
-                    <Dropcap>T</Dropcap>his is not an article about “Should designers code?” neither about designer titles nor about what UI/UX stands for. However, there is a problem out there with so many titles and misconceptions. They create tension, making everything even more complex especially for people who are not involved in the production process. At the end, of course, it all goes to one pool.
+                    <span className={`${utilStyles.dropCap}`}>T</span> his is not an article about “Should designers code?” neither about designer titles nor about what UI/UX stands for. However, there is a problem out there with so many titles and misconceptions. They create tension, making everything even more complex especially for people who are not involved in the production process. At the end, of course, it all goes to one pool.
                     </p> 
-                    <BlockQuote>
+                    <blockquote>
                         What type of knowledge should production-oriented designers possess in order to be a vital part of every product team?
-                    </BlockQuote>
-                    <HeadingThree>Frameworks as a ladder to the top of the wall</HeadingThree>
+                    </blockquote>
+                    <h3 className={`${utilStyles.headingL}`}>Frameworks as a ladder to the top of the wall</h3>
                     <p>
                         The first step of every project would be to learn the frameworks and technologies that are used. This is a good stepping stone for you as a Product-oriented designer, so you know how and where to focus your skillset. Frameworks are one of the best things that ever happened to designers. I don’t believe that being constrained by a framework, ruins your creative or design process. It is way more challenging and interesting when you have the constraints, you have to find your way with and around them, in order to come up with a solution. This is the real production design here. The end result is so rewarding, knowing you connected all the dots.
                     </p>
@@ -91,27 +84,27 @@ function GreatWall() {
                     </p>
                     <p>So for that specific case of alerts, I will share some insights about how the design team took up that challenge and improved it.
                     </p>
-                    <HeadingThree>Reviewing the Github documentation.</HeadingThree> 
+                    <h3 className={`${utilStyles.headingL}`}>Reviewing the Github documentation.</h3> 
                     <p>Start by reading carefully the whole documentation, so many handy things are hidden behind the words of the well-written Github repo.
                     </p>
                     <ul>
                         <li>Read about the properties
                             <img src="/wall-of-development-app-3.png"/>
-                            <BlockQuote>Learn about the structure and functionality of your library. That way you will know how it was built and what purpose it should serve.</BlockQuote>
+                            <blockquote>Learn about the structure and functionality of your library. That way you will know how it was built and what purpose it should serve.</blockquote>
                         </li>
                         <li>Read about styling
                             <img src="/wall-of-development-app-4.png"/>
-                            <BlockQuote>Test it to see what and how it works. You can jump straight up with the DevTools.</BlockQuote>
+                            <blockquote>Test it to see what and how it works. You can jump straight up with the DevTools.</blockquote>
                         </li>
                     </ul>
                     <p>The fear of the designer to read documentations is true, but everyone should handle those situations with passion and also have the courage to ask. The developers helped me set up an environment, so I can actually have full control over the alert library and see what it is capable of. That’s how we found out that there is more behind the alerts, more functionalities that can help usability and create a better experience of our application.
                     </p>
                     <img src="/wall-of-development-app-5.png"/>
-                    <BlockQuote>We found more about the flexibility of delays and prominent messaging.</BlockQuote>
+                    <blockquote>We found more about the flexibility of delays and prominent messaging.</blockquote>
                     <p>An actual scenario can be:</p>
-                    <BlockQuote>If a user creates a request and should be educated where to look when the request is handled and ready to be used, he should go to a different page outside the current one. We put the autoDismiss property to 0 and added a link which redirects to the page where the pending requests live. This way we make all the focus to the alert and educate where the user can find specific things across the application.
-                    </BlockQuote>
-                    <HeadingThree>Identify where the styles.js file lives</HeadingThree>
+                    <blockquote>If a user creates a request and should be educated where to look when the request is handled and ready to be used, he should go to a different page outside the current one. We put the autoDismiss property to 0 and added a link which redirects to the page where the pending requests live. This way we make all the focus to the alert and educate where the user can find specific things across the application.
+                    </blockquote>
+                    <h3 className={`${utilStyles.headingL}`}>Identify where the styles.js file lives</h3>
                     <p>The styling of every library is held in a CSS file. In the case of react-notification-system it was in a 
                         <a href="https://github.com/igorprado/react-notification-system/blob/master/src/styles.js">styles.js</a>. 
                         It is even part of the documentation that we just reviewed.
@@ -120,18 +113,18 @@ function GreatWall() {
                     <p>Once we find that, we can start experimenting both inside the browser (via Inspect elements from the DevTools panel) and in the text editor. That way we can come to a conclusion what are the best styles and features for the cases we are trying to solve.     
                     </p>
                     <img src="/wall-of-development-app-7.gif"/>
-                    <HeadingThree>Show off and share your styles</HeadingThree>
+                    <h3 className={`${utilStyles.headingL}`}>Show off and share your styles</h3>
                     <img src="/wall-of-development-app-8.png"/>
-                    <BlockQuote>Proper visual communication and balance of the composition are stepping stones for well-executed user experience 🤓.
-                    </BlockQuote>
+                    <blockquote>Proper visual communication and balance of the composition are stepping stones for well-executed user experience 🤓.
+                    </blockquote>
                     <p>Once all the styles are overridden or added they should live in the styles.js in your version of the library. By committing the styles you can easily hand over to the developer responsible for that feature to review and continue working on it. This is such an organic way for a designer to get involved in the production and actually make interface decisions, which most of the time are left to be done by him either way.
                     </p>
-                    <HeadingThree>Everything is just a building block</HeadingThree>
+                    <h3 className={`${utilStyles.headingL}`}>Everything is just a building block</h3>
                     <p>Now designers have the chance to make a real difference on how the interface looks like and behaves. Meeting the business goals, creating a consistent experience and handling cases with care to details while having a real architecture in mind. Not everything is Dribbble material and this would be the best way for you to understand that. I always appreciate articles like Responsive deliverables, so they can remind me how simple and yet complex the design discipline can be in the terms of Interface creation.
                     </p>
                     <img src="/wall-of-development-app-9.gif"/>
-                    <BlockQuote>The top of the Dribbble homepage is a header, nav with unordered lists and wrappers of ordered lists for the posts.
-                    </BlockQuote>
+                    <blockquote>The top of the Dribbble homepage is a header, nav with unordered lists and wrappers of ordered lists for the posts.
+                    </blockquote>
                     <p>If you want to read more on the subject I would recommend:
                     </p>
                     <ul>
@@ -146,18 +139,10 @@ function GreatWall() {
                     </ul>
                    <p>This article was published in <a href="https://uxdesign.cc/the-great-wall-of-development-f705ca982e58" target="_blank">Medium</a></p>
                 </section>
-            </Grid>
-        </Main>
+            </div>
+        </main>
         <Footer/>
-
-        <style jsx>{`
-
-        section {
-          width: 100%;
-        }
-
-        `}</style>
-      </MainWrapper>
+      </div>
       </motion.div> 
     </>
     </ThemeProvider>

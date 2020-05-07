@@ -1,0 +1,160 @@
+.heading2Xl {
+    margin: 0;
+    line-height: 0.9;
+    font-size: 9vw;
+    font-weight: 600;
+    text-align: left;
+}
+
+.headingXl {
+    margin: 0;
+    line-height: 1.15;
+    font-size: 3.5vw;
+    font-weight: 300;
+    letter-spacing: 0.1vw;
+}
+
+.headingXl a {
+    font-weight: 600;
+}
+
+.headingL{
+    font-size: 1.75vw;
+    margin: 8px 0 4px 0;
+    opacity: 0.75;
+    text-transform: uppercase;
+}
+
+.mainWrapper {
+    min-height: 100vh;
+    padding: 0 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.innerWrapper {
+    padding: 8vw 12vw 2vw 12vw;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.contentWrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+
+    max-width: 960px;
+    margin-top: 5vw;
+}
+
+.mainCard {
+    width: 100%;
+    color: inherit;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: 500;
+    text-shadow: none;
+    text-decoration: none;
+    padding: 8px 16px;
+    margin: 8px 0;
+    background-color: #5454541a;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+a.mainCard:hover, a.mainCard:active, a.mainCard:focus {
+    text-decoration: none;
+    color: inherit;
+    background-color: #5454541a;
+}
+
+.mainCard[href] h3{
+    padding: 4px 4px 0px 4px;
+}
+
+.mainCard[href]:hover h3  {
+    background-color: #FFCF00;
+    color: #3f53d9;
+}
+
+.mainCard[href]:active h3 {
+    background-color: #FFCF00;
+    color: #3f53d9;
+}
+
+.mainCard[href]:focus h3 {
+    background-color: #FFCF00;
+    color: #3f53d9;
+}
+
+.mainCard small {
+    padding: 24px;
+} 
+
+.backButton {
+    cursor: w-resize;
+    margin-bottom: 24px;
+}
+
+.dropCap {
+    font-size: 5vw;
+    font-weight: 900;
+    float: left;
+    line-height: 0.75;
+    margin-right: 8px;
+    padding-top: 6px;
+}
+
+@media (max-width: 768px) {
+    .headingL {
+        font-size: 4vw;
+    }   
+}
+
+@media (max-width: 600px) {
+    .innerWrapper{
+        padding: 10vw 2.5vw;
+        height: 100%;
+    }
+
+    .contentWrapper{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .headingXl {
+        margin-top: 8px;    
+        font-size: 6vw;
+    }
+
+    .headingL{
+        font-size: 4vw;
+    }
+
+    .mainCard {
+        align-items: baseline;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .mainCard small {
+        padding: 4px 4px 16px 4px;
+    }
+
+    .dropCap {
+        font-size: 9vw;
+        line-height: 1.25;
+        margin-right: 0.25em;
+    }
+}
+
