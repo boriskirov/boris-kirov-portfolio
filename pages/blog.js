@@ -85,7 +85,7 @@ function Blog() {
             
               <a className={`${utilStyles.mainCard}`} href="/blog/nda">
                   <div>
-                      <h3 className={`${utilStyles.headingL}`}>How to implement design system thinking to a product</h3>
+                      <h3 className={`${utilStyles.headingL}`}>Implementing design system thinking</h3>
                   </div>
                   <small>Case study</small>
               </a>
