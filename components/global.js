@@ -80,8 +80,9 @@ export const GlobalStyles = createGlobalStyle`
   }
 
   ol {
-    padding-left: 0;
+    padding-left: 8px;
     margin: 8px 0px 0px 4px;
+    list-style-position: outside;
   }
 
   li {
