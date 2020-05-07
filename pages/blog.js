@@ -66,12 +66,6 @@ function Blog() {
                 </div>
                 <small>Article</small>
             </a>
-            <a className={`${utilStyles.mainCard}`} href="/">
-                <div>
-                    <h3 className={`${utilStyles.headingL}`}>2019 in 365</h3>    
-                </div>
-                <small>Article</small>
-            </a>
             
               <a className={`${utilStyles.mainCard}`} href="/blog/great-wall-of-development">
                   <div>

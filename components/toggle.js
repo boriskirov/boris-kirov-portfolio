@@ -7,7 +7,7 @@ const ToggleWrapper = styled.span`
 
   img {
     transition: all 1.15s ease;
-    height: 1.5rem;
+    
 
     &:first-child {
       display: ${({ lightTheme }) => lightTheme ? 'none' : 'initial'};

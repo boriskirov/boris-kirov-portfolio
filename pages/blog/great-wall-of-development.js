@@ -138,6 +138,12 @@ function GreatWall() {
                         </li>
                     </ul>
                    <p>This article was published in <a href="https://uxdesign.cc/the-great-wall-of-development-f705ca982e58" target="_blank">Medium</a></p>
+                   <a className={`${utilStyles.mainCard}`} href="/blog/nda">
+                        <div>
+                            <h3 className={`${utilStyles.headingL}`}>How to implement design system thinking to a product</h3>
+                        </div>
+                        <small>Read more</small>
+                    </a>
                 </section>
             </div>
         </main>

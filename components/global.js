@@ -30,14 +30,14 @@ export const GlobalStyles = createGlobalStyle`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1vw 12.5vw;
+    padding: 1vw 16vw;
     margin-bottom: 1.5vw;
     margin-top: 1vw;
   }
 
   section {
-          width: 100%;
-          margin-bottom: 16px;
+    width: 100%;
+    margin-bottom: 16px;
   }
 
   a {
@@ -57,6 +57,10 @@ export const GlobalStyles = createGlobalStyle`
     background-color: #FFCF00;
     color: #3f53d9;
   }
+
+  h4 {
+    margin: 4px 0;
+  }
   
   small {
     display: flex;
@@ -66,7 +70,7 @@ export const GlobalStyles = createGlobalStyle`
   p {
     font-size: 16px;
     line-height: 1.4;
-    margin: 8px 0 24px 0;
+    margin: 16px 0 24px 0;
   }
 
   ul {
@@ -83,6 +87,10 @@ export const GlobalStyles = createGlobalStyle`
     font-weight: 600;
   }
 
+  li a {
+    margin-left: 4px;
+  }
+
   img {
     width: 100%;  
   }
@@ -90,7 +98,7 @@ export const GlobalStyles = createGlobalStyle`
   blockquote {
     margin: 8px 0;
     padding: 16px;
-    background-color: #5454541a;
+    background-color: #5454540f;
     border-left: 2px solid;
     font-style: italic;
     font-size: 16px;

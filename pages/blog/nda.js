@@ -57,7 +57,7 @@ function NDA() {
           <h1 className={`${utilStyles.heading2Xl}`}>
             🙊🙈🙉
           </h1>
-          <info daTetime="2018-01-28">Jan 28, 2018</info>
+          <info dateTime="2018-01-28">Jan 28, 2018</info>
           
           <div className={`${utilStyles.contentWrapper}`}>
             <section>
@@ -96,6 +96,13 @@ I found out that I should love the process, the communication supporting my deci
               <h3 className={`${utilStyles.headingL}`}>Conclusion</h3>
               <p>All those parts of the whole picture are the things that matter, at the end the most important goal is the product. By accepting other people opinions and knowledge on the product, by understanding feedback coming from users, by having in mind the constrains coming from the business side you can push changes and improvements which could take long time. The almighty misconception that designers are ego-centric and narcissistic is a common thing in the internet. While working on big projects those assumptions are completely wrong and must be set aside. Design is not personal and is not suppose to be personal while working in a team. By the end of my involvement the design system methodology was accepted as a best solution in order to develop new features. </p>
               <p>This article was published on <a href="https://uxdesign.cc/how-to-implement-design-system-thinking-to-a-product-1fc6e0fc5a9f" target="_blank">Medium</a></p>
+              <p>👉 You can download the emoji library for Sketch from <a href="https://www.sketchappsources.com/free-source/3786-emojis-builder-sketch-freebie-resource.html" target="_blank">SketchResources</a></p>
+              <a className={`${utilStyles.mainCard}`} href="/blog/tripscout">
+                  <div>
+                      <h3 className={`${utilStyles.headingL}`}>Working with TripScout</h3>
+                  </div>
+                  <small>Read more</small>
+              </a>
             </section>
           </div>
         </main>

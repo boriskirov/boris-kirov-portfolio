@@ -92,20 +92,25 @@ function Impatience() {
                     <p>Tristan’s examples are the perfect inspiration. Raising questions around the so-called ‘FOMSI’. Fear of Missing Something Important is something valuable to know, people are empowered with information. The control on the other hand is something different, we do not choose the information that we want to receive, most of the feed app users, at one point or another are swallowed by it and it becomes just spam of information with small value. That is why we get lost in it. The decision of what information is important is the key. Related to my topic on ‘improving impatience’, well you should ask yourself which information is so important. If those notifications or eternal scroll are crucial for you, well then I take my words back.
                     </p>
                     
-                      <img src="/improve-impatience-app-1.png"/>
+                      <img className={`${utilStyles.imgVertical}`} src="/improve-impatience-app-1.png"/>
                     
                     <blockquote>I set only the most important apps on my home screen to ignore the notifications.
                     </blockquote>
                     <h3 className={`${utilStyles.headingL}`}>Conclusion</h3>
                     
-                      <img src="/improve-impatience-app-2.png"/>                
+                      <img className={`${utilStyles.imgVertical}`}  src="/improve-impatience-app-2.png"/>                
                     
                     <blockquote>My lock screen changed since I got my phone back.</blockquote>
                     <p>
                     You’re probably thinking by now that ignoring media is a pretty accurate and simple solution for your technology-driven behavior change. People are using internet for everything nowadays, I do it all the time. So by ignoring media, deleting social media accounts, throwing away your phone (you know I had that in mind at some point during my phoneless experience), the idea is to take control of yourself, and your personal decision making. We are part of a huge technological evolution—people try to adopt technology in everything—but the path that we follow is important. All actions that machines are supposed to do for us, all those suggestions must be based on proper choices. Conscious choices.
                     </p>
                     <p>This article was published on <a href="https://despark.com/blog/ux-designer-without-phone" target="_blank">Despark's official blog</a></p>
-
+                    <a className={`${utilStyles.mainCard}`} href="/blog/great-wall-of-development">
+                        <div>
+                            <h3 className={`${utilStyles.headingL}`}>Wall of development</h3>
+                        </div>
+                        <small>Read more</small>
+                    </a>
                 </section>
             </div>
         </main>

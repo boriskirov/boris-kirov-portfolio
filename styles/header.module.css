@@ -8,6 +8,5 @@
 .iconSize{
     height: 24px;
     max-width: 24px;
-    display: flex;
     transition: all 1.15s ease;
 }
