@@ -74,13 +74,14 @@ export const GlobalStyles = createGlobalStyle`
   }
 
   ul {
-    padding-left: 12px;
+    padding-left: 0;
     list-style: square;
     margin: 8px 0px 0px 4px;
   }
 
   li {
     margin-bottom: 8px;
+    margin-left: 12px;
   }
 
   ul a {
@@ -102,6 +103,10 @@ export const GlobalStyles = createGlobalStyle`
     border-left: 2px solid;
     font-style: italic;
     font-size: 16px;
+  }
+
+  info {
+    margin-top: 8px;
   }
 
   @media (max-width: 600px) {

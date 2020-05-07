@@ -75,7 +75,7 @@ function Home() {
                   Creator & contributor at <a href="https://www.fluiditype.com/" target="_blank" rel="noopener noreferrer">Fluiditype</a>
                 </li>
                 <li className="blog">
-                  Check the <Link href="/blog" as="/blog"><a>Blog</a></Link>
+                  Check the <Link href="/blog" as="/blog"><a className={`${utilStyles.internalPassage}`}>Blog</a></Link>
                 </li>
               </ul>
             </section>

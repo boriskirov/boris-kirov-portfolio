@@ -55,7 +55,7 @@ function Blog() {
                   <a className={`${utilStyles.backButton}`}>Back</a>
             </Link>
             <h1 className={`${utilStyles.heading2Xl}`}>
-            BLOG
+              BLOG
             </h1>
 
 

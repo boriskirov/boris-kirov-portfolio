@@ -88,14 +88,16 @@ function GreatWall() {
                     <p>Start by reading carefully the whole documentation, so many handy things are hidden behind the words of the well-written Github repo.
                     </p>
                     <ul>
-                        <li>Read about the properties
-                            <img src="/wall-of-development-app-3.png"/>
-                            <blockquote>Learn about the structure and functionality of your library. That way you will know how it was built and what purpose it should serve.</blockquote>
+                        <li>
+                            Read about the properties                            
                         </li>
-                        <li>Read about styling
-                            <img src="/wall-of-development-app-4.png"/>
-                            <blockquote>Test it to see what and how it works. You can jump straight up with the DevTools.</blockquote>
+                        <img src="/wall-of-development-app-3.png"/>
+                        <blockquote>Learn about the structure and functionality of your library. That way you will know how it was built and what purpose it should serve.</blockquote>
+                        <li>
+                            Read about styling
                         </li>
+                        <img src="/wall-of-development-app-4.png"/>
+                        <blockquote>Test it to see what and how it works. You can jump straight up with the DevTools.</blockquote>
                     </ul>
                     <p>The fear of the designer to read documentations is true, but everyone should handle those situations with passion and also have the courage to ask. The developers helped me set up an environment, so I can actually have full control over the alert library and see what it is capable of. That’s how we found out that there is more behind the alerts, more functionalities that can help usability and create a better experience of our application.
                     </p>
@@ -140,7 +142,7 @@ function GreatWall() {
                    <p>This article was published in <a href="https://uxdesign.cc/the-great-wall-of-development-f705ca982e58" target="_blank">Medium</a></p>
                    <a className={`${utilStyles.mainCard}`} href="/blog/nda">
                         <div>
-                            <h3 className={`${utilStyles.headingL}`}>How to implement design system thinking to a product</h3>
+                            <h3 className={`${utilStyles.headingL}`}>Implementing design system thinking to a product</h3>
                         </div>
                         <small>Read more</small>
                     </a>
