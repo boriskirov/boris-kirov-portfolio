@@ -24,18 +24,7 @@ export const GlobalStyles = createGlobalStyle`
     max-width: 1440px;
   }
 
-  header {
-    width: 100%;
-    height: 30px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1vw 12.5vw;
-    margin-bottom: 1.5vw;
-    margin-top: 1vw;
-  }
-
-  footer {
+  header, footer {
     width: 100%;
     height: 30px;
     display: flex;
