@@ -146,9 +146,13 @@ a.mainCard:hover, a.mainCard:active, a.mainCard:focus {
         flex-direction: column;
     }
 
+    .heading2Xl {
+        font-size: 7.5vw;
+    }
+
     .headingXl {
         margin-top: 8px;    
-        font-size: 7vw;
+        font-size: 6vw;
     }
 
     .headingL{
