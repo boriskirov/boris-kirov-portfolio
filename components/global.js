@@ -79,6 +79,11 @@ export const GlobalStyles = createGlobalStyle`
     margin: 8px 0px 0px 4px;
   }
 
+  ol {
+    padding-left: 0;
+    margin: 8px 0px 0px 4px;
+  }
+
   li {
     margin-bottom: 8px;
     margin-left: 12px;
@@ -120,6 +125,10 @@ export const GlobalStyles = createGlobalStyle`
 
     header {
       padding: 10vw 2.5vw;
+    }
+
+    p{
+      font-size: 18px;
     }
   }
 
