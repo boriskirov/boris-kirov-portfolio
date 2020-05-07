@@ -6,7 +6,7 @@ import styles from '../styles/header.module.css'
 const ToggleWrapper = styled.span`  
 
   img {
-    transition: all 1.15s linear;
+    transition: all 1.15s ease;
     height: 1.5rem;
 
     &:first-child {
@@ -23,8 +23,8 @@ const Toggle = ({ theme, toggleTheme }) => {
   const isLight = theme === 'light';
   return (
     <ToggleWrapper className={`${styles.iconWrapper}`} lightTheme={isLight} onClick={toggleTheme}>
-        <img src="/ToggleLight.svg" alt="Light Toggler" title="Light Side"/>
-        <img src="/Toggle.svg" alt="Dark Toggler" title="Dark Side"/>
+        <img className={`${styles.iconSize}`} src="/ToggleLight.svg" alt="Light Toggler" title="Light Side"/>
+        <img className={`${styles.iconSize}`} src="/Toggle.svg" alt="Dark Toggler" title="Dark Side"/>
     </ToggleWrapper>
   );
 };

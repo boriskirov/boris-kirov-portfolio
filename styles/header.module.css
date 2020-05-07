@@ -4,3 +4,8 @@
     cursor: sw-resize;
     padding: 8px 24px;
 }
+
+.iconSize{
+    height: 1.5rem;
+    transition: all 1.15s ease;
+}
