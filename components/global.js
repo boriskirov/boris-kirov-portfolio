@@ -114,6 +114,14 @@ export const GlobalStyles = createGlobalStyle`
     margin-top: 8px;
   }
 
+  @media (max-width: 768px) {
+    footer {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+
   @media (max-width: 600px) {
     footer {
           padding: 10vw 2.5vw;

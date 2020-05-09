@@ -17,6 +17,16 @@ li.footerLi:last-child {
     margin-right: 4px;
 }
 
+@media (max-width: 768px) { 
+    .footerList {
+        margin: 0;
+    }
+
+    .footerLi {
+        margin: 16px 0;
+    }
+}
+
 @media (max-width: 600px) {
     .footerList {
         display: flex;
