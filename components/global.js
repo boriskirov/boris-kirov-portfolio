@@ -35,6 +35,13 @@ export const GlobalStyles = createGlobalStyle`
     margin-top: 1vw;
   }
 
+  footer {
+    height: 100%;
+    margin-bottom: 0;
+    padding-bottom: 1.5vw;
+    border-bottom: 16px solid;
+  }
+
   section {
     width: 100%;
     margin-bottom: 16px;
@@ -114,8 +121,15 @@ export const GlobalStyles = createGlobalStyle`
     margin-top: 8px;
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 834px) {
+
+    header {
+      padding: 10vw 2.5vw;
+    }
+
     footer {
+      padding: 10vw 2.5vw;
+      height: 100%;
       display: flex;
       flex-direction: column;
       align-items: flex-start;

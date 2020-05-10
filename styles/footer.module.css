@@ -17,7 +17,7 @@ li.footerLi:last-child {
     margin-right: 4px;
 }
 
-@media (max-width: 768px) { 
+@media (max-width: 834px) { 
     .footerList {
         margin: 0;
     }

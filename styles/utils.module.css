@@ -33,7 +33,6 @@
 
 .mainWrapper {
     min-height: 100vh;
-    padding: 0 0.5rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -134,10 +133,28 @@ a.mainCard:hover, a.mainCard:active, a.mainCard:focus {
     margin: 0 auto;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 834px) {
+    .innerWrapper{
+        padding: 10vw 2.5vw;
+        height: 100%;
+    }
+
+    .contentWrapper{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+    }
+
     .headingL {
         font-size: 3vw;
-    }   
+    } 
+    
+    .dropCap {
+        font-size: 11vw;
+        line-height: 0.6;
+        margin-right: 0.15em;
+        padding-top: 16px;
+    }
 
     .flexWrapper {
         flex-direction: column;
