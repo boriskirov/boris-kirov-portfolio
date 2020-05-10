@@ -39,7 +39,7 @@ export const GlobalStyles = createGlobalStyle`
     height: 100%;
     margin-bottom: 0;
     padding-bottom: 1.5vw;
-    border-bottom: 16px solid;
+    border-bottom: 8px solid;
   }
 
   section {
