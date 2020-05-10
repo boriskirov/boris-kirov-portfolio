@@ -15,13 +15,13 @@ export const GlobalStyles = createGlobalStyle`
   html,
   body {
     padding: 0;
-    margin: 0;
+    margin: 0 auto;
     font-family: Inter, sans-serif;
     background-color: ${({ theme }) => theme.body};
     color: ${({ theme }) => theme.text};
     transition: all 0.75s ease-in-out;
     line-height: 1.5;
-    max-width: 1440px;
+    max-width: 1792px;
   }
 
   header, footer {
