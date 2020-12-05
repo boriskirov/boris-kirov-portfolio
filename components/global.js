@@ -16,7 +16,7 @@ export const GlobalStyles = createGlobalStyle`
   body {
     padding: 0;
     margin: 0 auto;
-    font-family: Inter, sans-serif;
+    font-family: SFMono-Regular, Consolas, "Liberation Mono", Menlo, Courier, monospace;
     background-color: ${({ theme }) => theme.body};
     color: ${({ theme }) => theme.text};
     transition: all 0.75s ease-in-out;

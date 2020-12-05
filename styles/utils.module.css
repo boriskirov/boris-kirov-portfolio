@@ -1,6 +1,6 @@
 .heading2Xl {
     margin: 0;
-    line-height: 0.9;
+    line-height: 1.4;
     font-size: 9vw;
     font-weight: 600;
     text-align: left;
@@ -8,8 +8,8 @@
 
 .headingXl {
     margin: 0;
-    line-height: 1.15;
-    font-size: 4vw;
+    line-height: 1.4;
+    font-size: 3.15vw;
     font-weight: 300;
     letter-spacing: 0.1vw;
 }
@@ -21,7 +21,7 @@
 
 .headingL{
     font-size: 1.75vw;
-    margin: 16px 0 8px 0;
+    margin: 64px 0 8px;
     text-transform: uppercase;
 }
 
@@ -68,7 +68,7 @@
     text-shadow: none;
     text-decoration: none;
     padding: 8px 16px;
-    margin: 8px 0;
+    margin: 64px 0 0 0;
     background-color: #5454541a;
     display: flex;
     align-items: center;
@@ -120,7 +120,7 @@ a.mainCard:hover, a.mainCard:active, a.mainCard:focus {
     font-size: 5vw;
     font-weight: 900;
     float: left;
-    line-height: 0.75;
+    line-height: 0.45;
     margin-right: 8px;
     padding-top: 16px;
 }

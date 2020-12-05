@@ -60,7 +60,7 @@ function Home() {
             is getting things done at <a 
             target="_blank"
             rel="noopener noreferrer"
-            href="https://miro.com/index/">MIRO</a>
+            href="https://miro.com/index/">Miro</a>
           </h2>
 
 
@@ -69,7 +69,7 @@ function Home() {
               <h3 className={`${utilStyles.headingL}`}>Currently</h3>
               <ul>
                 <li>
-                  Product designer at <a href="https://miro.com/index/" target="_blank" rel="noopener noreferrer">MIRO</a>
+                  Product designer at <a href="https://miro.com/index/" target="_blank" rel="noopener noreferrer">Miro</a>
                 </li>
                 <li>
                   Creator & contributor at <a href="https://www.fluiditype.com/" target="_blank" rel="noopener noreferrer">Fluiditype</a>
