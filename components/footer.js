@@ -12,7 +12,7 @@ const Footer = () => (
           <div>
           <ul className={`${styles.footerList }`}>
               <li className={`${styles.footerLi}`}>
-                <small><span className={`${styles.emoji}`}>👨‍💻</span><a href="https://github.com/sboriskirov" target="_blank" rel="noopener noreferrer">GitHub</a></small>
+                <small><span className={`${styles.emoji}`}>👨‍💻</span><a href="https://github.com/boriskirov" target="_blank" rel="noopener noreferrer">GitHub</a></small>
               </li>
               <li className={`${styles.footerLi}`}>
                 <small><span className={`${styles.emoji}`}>📝</span><a href="https://medium.com/@bkirov" target="_blank" rel="noopener noreferrer">Medium</a></small>
