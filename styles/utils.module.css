@@ -59,6 +59,11 @@
     margin-top: 5vw;
 }
 
+.notReadyWrapper{
+    display: grid;
+    margin: 0 auto;
+}
+
 .mainCard {
     width: 100%;
     color: inherit;

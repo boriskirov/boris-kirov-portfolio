@@ -119,6 +119,7 @@ export const GlobalStyles = createGlobalStyle`
 
   info {
     margin-top: 8px;
+    text-align: center;
   }
 
   @media (max-width: 834px) {
