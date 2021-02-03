@@ -11,6 +11,7 @@
     line-height: 1.4;
     font-size: 9vw;
     font-weight: 600;
+    text-align: center;
 }
 
 .headingXl {
@@ -117,6 +118,57 @@ a.mainCard:hover, a.mainCard:active, a.mainCard:focus {
 .mainCard small {
     padding: 24px;
     line-height: 1.4;
+    opacity: 0.7;
+} 
+
+
+.externalPassage {
+    width: 100%;
+    color: inherit;
+    cursor: ne-resize;
+    text-decoration: none;
+    font-weight: 500;
+    text-shadow: none;
+    text-decoration: none;
+    padding: 8px 16px;
+    margin: 24px 0 0 0;
+    background-color: #5454541a;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+a.externalPassage:hover, a.externalPassage:active, a.externalPassage:focus {
+    text-decoration: none;
+    color: inherit;
+    background-color: #5454541a;
+}
+
+.externalPassage[href] h3{
+    padding: 4px 4px 0px 4px;
+    margin: 8px 0;
+}
+
+.externalPassage[href]:hover h3  {
+    background-color: #FFCF00;
+    color: #3f53d9;
+}
+
+.externalPassage[href]:active h3 {
+    background-color: #FFCF00;
+    color: #3f53d9;
+}
+
+.externalPassage[href]:focus h3 {
+    background-color: #FFCF00;
+    color: #3f53d9;
+}
+
+.externalPassage small {
+    padding: 24px;
+    line-height: 1.4;
+    opacity: 0.7;
 } 
 
 .backButton {
@@ -218,6 +270,18 @@ a.mainCard:hover, a.mainCard:active, a.mainCard:focus {
         padding: 4px 4px 16px 4px;
     }
 
+
+    .externalPassage {
+        align-items: baseline;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .externalPassage small {
+        padding: 4px 4px 16px 4px;
+    }
+
+    
     .dropCap {
         font-size: 12vw;
         line-height: 0.75;

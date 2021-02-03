@@ -60,35 +60,35 @@ function Playground() {
 
 
         <div className={`${utilStyles.contentWrapper}`}>
-            <a className={`${utilStyles.mainCard}`} href="/playground/mirotone">
+            <a className={`${utilStyles.externalPassage}`} href="/playground/mirotone">
                 <div>
                     <h3 className={`${utilStyles.headingL}`}>Mirotone</h3>
                 </div>
                 <small>Not ready</small>
             </a>
 
-            <a className={`${utilStyles.mainCard}`} href="https://www.fluiditype.com/" target="_blank" rel="noopener noreferrer">
+            <a className={`${utilStyles.externalPassage}`} href="https://www.fluiditype.com/" target="_blank" rel="noopener noreferrer">
                 <div>
                     <h3 className={`${utilStyles.headingL}`}>Fluiditype </h3>
                 </div>
                 <small>Package</small>
             </a>
 
-            <a className={`${utilStyles.mainCard}`} href="https://fluidigrid.com/" target="_blank" rel="noopener noreferrer">
+            <a className={`${utilStyles.externalPassage}`} href="https://fluidigrid.com/" target="_blank" rel="noopener noreferrer">
                 <div>
                     <h3 className={`${utilStyles.headingL}`}>Fluidigrid </h3>
                 </div>
                 <small>Package</small>
             </a>
 
-            <a className={`${utilStyles.mainCard}`} href="https://github.com/boriskirov/git-commands" target="_blank" rel="noopener noreferrer">
+            <a className={`${utilStyles.externalPassage}`} href="https://github.com/boriskirov/git-commands" target="_blank" rel="noopener noreferrer">
                 <div>
                     <h3 className={`${utilStyles.headingL}`}>Git commands </h3>
                 </div>
                 <small>Helper doc</small>
             </a>
 
-            <a className={`${utilStyles.mainCard}`} href="https://github.com/boriskirov/figma-commands" target="_blank" rel="noopener noreferrer">
+            <a className={`${utilStyles.externalPassage}`} href="https://github.com/boriskirov/figma-commands" target="_blank" rel="noopener noreferrer">
                 <div>
                     <h3 className={`${utilStyles.headingL}`}>Figma commands</h3>
                 </div>
