@@ -22,6 +22,7 @@ export const GlobalStyles = createGlobalStyle`
     transition: all 0.75s ease-in-out;
     line-height: 1.5;
     max-width: 1792px;
+    scroll-behavior: smooth;
   }
 
   header, footer {
