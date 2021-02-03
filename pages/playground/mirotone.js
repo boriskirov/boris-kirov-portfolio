@@ -56,7 +56,7 @@ function Mirotone() {
             </Link>
           
             <div className={`${utilStyles.notReadyWrapper}`}>
-              <h1 className={`${utilStyles.heading2Xl}`}>
+              <h1 className={`${utilStyles.heading2XlNotReady}`}>
                 (·_·)
               </h1>
               <info dateTime="">Sorry, I am currently working on it</info>
