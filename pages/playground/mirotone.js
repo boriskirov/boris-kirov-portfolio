@@ -57,10 +57,10 @@ function Mirotone() {
             <h1 className={`${utilStyles.heading2Xl}`}>
                 MIROTONE
             </h1>
-            <info dateTime="">Currently working on it</info>
+            <info dateTime="">Mirotone still requires some work to be done. I was wondering what to add here, and Pokemon Leaf Green edition seemed like an interesting idea, why because for me this game is too personal. It was one of the first games I played when I used to be 12 years old, not knowing anything about design, interaction and experience. That game created a world for me which I am super thankful for.</info>
           
             <div className={`${utilStyles.contentWrapper}`}>
-
+              <iframe src="https://static.arcadespot.com/retroemulator.php?system=gba&amp;game=2015/12/pokemon-leafgreen.zip.zip" className="pokemon" width="100%" height="640px"></iframe> 
             </div>
         </main>
         <Footer/>
@@ -72,3 +72,5 @@ function Mirotone() {
 }
 
 export default Mirotone;
+
+
