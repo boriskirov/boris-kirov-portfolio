@@ -1,18 +1,18 @@
 import React from 'react';
 import { ThemeProvider } from 'styled-components';
-import { useDarkMode } from '../components/useDarkMode';
-import { lightTheme, darkTheme } from '../components/theme';
-import { GlobalStyles } from '../components/global';
+import { useDarkMode } from '../../components/useDarkMode';
+import { lightTheme, darkTheme } from '../../components/theme';
+import { GlobalStyles } from '../../components/global';
+import Toggle from '../../components/toggle';
 import { motion } from "framer-motion";
 
 import Head from 'next/head';
 import Link from 'next/link';
-import Footer from '../components/footer';
-import Toggle from '../components/toggle';
-import utilStyles from '../styles/utils.module.css';
+import Footer from '../../components/footer';
+import utilStyles from '../../styles/utils.module.css';
 
 
-function Blog() {
+function Mirotone() {
   const [theme, toggleTheme] = useDarkMode();
   const themeMode = theme === 'light' ? lightTheme : darkTheme;
 
@@ -23,7 +23,7 @@ function Blog() {
       exit={{ opacity: 0 }} 
       initial={{ opacity: 0}} 
       animate={{ opacity : 1}}
-      transition= {{ duration: 1.25 }}>
+      transition= {{ duration: 1.15 }}>
       <div className={`${utilStyles.mainWrapper}`}>
         <GlobalStyles />
         <Head>
@@ -47,58 +47,20 @@ function Blog() {
 
         <header>
           <small>Crafted in Amsterdam ♥️</small>
-          <Toggle theme={theme} toggleTheme={toggleTheme} />  
+          <Toggle theme={theme} toggleTheme={toggleTheme} />
         </header>  
         
         <main className={`${utilStyles.innerWrapper}`}>
-            <Link href="/">
-                  <a className={`${utilStyles.backButton}`}>Back</a>
+            <Link href="/playground">
+              <a className={`${utilStyles.backButton}`}>Back</a>
             </Link>
             <h1 className={`${utilStyles.heading2Xl}`}>
-              BLOG
+                MIROTONE
             </h1>
+            <info dateTime="">Currently working on it</info>
+          
+            <div className={`${utilStyles.contentWrapper}`}>
 
-
-          <div className={`${utilStyles.contentWrapper}`}>
-
-          <a className={`${utilStyles.mainCard}`} href="/blog/defining-design-systems">
-                <div>
-                    <h3 className={`${utilStyles.headingL}`}>Defining design system</h3>
-                </div>
-                <small>Article</small>
-            </a>
-            
-              <a className={`${utilStyles.mainCard}`} href="/blog/great-wall-of-development">
-                  <div>
-                      <h3 className={`${utilStyles.headingL}`}>Wall of development</h3>
-                  </div>
-                  <small>Case study</small>
-              </a>
-            
-            
-              <a className={`${utilStyles.mainCard}`} href="/blog/tripscout">
-                  <div>
-                      <h3 className={`${utilStyles.headingL}`}>Working with TripScout</h3>
-                  </div>
-                  <small>Case study</small>
-              </a>
-            
-            
-              <a className={`${utilStyles.mainCard}`} href="/blog/nda">
-                  <div>
-                      <h3 className={`${utilStyles.headingL}`}>Implementing design system thinking</h3>
-                  </div>
-                  <small>Case study</small>
-              </a>
-            
-            
-              <a className={`${utilStyles.mainCard}`} href="/blog/improve-impatience">
-                  <div>
-                      <h3 className={`${utilStyles.headingL}`}>Improve Impatience</h3>
-                  </div>
-                  <small>Article</small>
-              </a>
-            
             </div>
         </main>
         <Footer/>
@@ -109,4 +71,4 @@ function Blog() {
   );
 }
 
-export default Blog;
+export default Mirotone;

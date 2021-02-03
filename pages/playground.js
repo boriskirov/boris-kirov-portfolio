@@ -12,7 +12,7 @@ import Toggle from '../components/toggle';
 import utilStyles from '../styles/utils.module.css';
 
 
-function Blog() {
+function Playground() {
   const [theme, toggleTheme] = useDarkMode();
   const themeMode = theme === 'light' ? lightTheme : darkTheme;
 
@@ -55,51 +55,47 @@ function Blog() {
                   <a className={`${utilStyles.backButton}`}>Back</a>
             </Link>
             <h1 className={`${utilStyles.heading2Xl}`}>
-              BLOG
+              PLAYGROUND
             </h1>
 
 
-          <div className={`${utilStyles.contentWrapper}`}>
-
-          <a className={`${utilStyles.mainCard}`} href="/blog/defining-design-systems">
+        <div className={`${utilStyles.contentWrapper}`}>
+            <a className={`${utilStyles.mainCard}`} href="/playground/mirotone">
                 <div>
-                    <h3 className={`${utilStyles.headingL}`}>Defining design system</h3>
+                    <h3 className={`${utilStyles.headingL}`}>Mirotone</h3>
                 </div>
-                <small>Article</small>
+                <small>Not ready</small>
             </a>
-            
-              <a className={`${utilStyles.mainCard}`} href="/blog/great-wall-of-development">
-                  <div>
-                      <h3 className={`${utilStyles.headingL}`}>Wall of development</h3>
-                  </div>
-                  <small>Case study</small>
-              </a>
-            
-            
-              <a className={`${utilStyles.mainCard}`} href="/blog/tripscout">
-                  <div>
-                      <h3 className={`${utilStyles.headingL}`}>Working with TripScout</h3>
-                  </div>
-                  <small>Case study</small>
-              </a>
-            
-            
-              <a className={`${utilStyles.mainCard}`} href="/blog/nda">
-                  <div>
-                      <h3 className={`${utilStyles.headingL}`}>Implementing design system thinking</h3>
-                  </div>
-                  <small>Case study</small>
-              </a>
-            
-            
-              <a className={`${utilStyles.mainCard}`} href="/blog/improve-impatience">
-                  <div>
-                      <h3 className={`${utilStyles.headingL}`}>Improve Impatience</h3>
-                  </div>
-                  <small>Article</small>
-              </a>
-            
-            </div>
+
+            <a className={`${utilStyles.mainCard}`} href="https://www.fluiditype.com/" target="_blank" rel="noopener noreferrer">
+                <div>
+                    <h3 className={`${utilStyles.headingL}`}>Fluiditype </h3>
+                </div>
+                <small>Package</small>
+            </a>
+
+            <a className={`${utilStyles.mainCard}`} href="https://fluidigrid.com/" target="_blank" rel="noopener noreferrer">
+                <div>
+                    <h3 className={`${utilStyles.headingL}`}>Fluidigrid </h3>
+                </div>
+                <small>Package</small>
+            </a>
+
+            <a className={`${utilStyles.mainCard}`} href="https://github.com/boriskirov/git-commands" target="_blank" rel="noopener noreferrer">
+                <div>
+                    <h3 className={`${utilStyles.headingL}`}>Git commands </h3>
+                </div>
+                <small>Helper doc</small>
+            </a>
+
+            <a className={`${utilStyles.mainCard}`} href="https://github.com/boriskirov/figma-commands" target="_blank" rel="noopener noreferrer">
+                <div>
+                    <h3 className={`${utilStyles.headingL}`}>Figma commands</h3>
+                </div>
+                <small>Helper doc</small>
+            </a>
+
+        </div>
         </main>
         <Footer/>
       </div>
@@ -109,4 +105,4 @@ function Blog() {
   );
 }
 
-export default Blog;
+export default Playground;
