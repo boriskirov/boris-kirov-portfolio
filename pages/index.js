@@ -100,7 +100,7 @@ function Home() {
                   Design and prototype in the browser 
                 </li>
                 <li>
-                  Fluididty
+                  Fluidity
                 </li>
                 <li>
                   Maintenance & experiments with design and experience consistency 
