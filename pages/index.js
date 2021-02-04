@@ -72,7 +72,7 @@ function Home() {
                   Product designer at <a href="https://miro.com/index/" target="_blank" rel="noopener noreferrer">Miro</a>
                 </li>
                 <li className="blog">
-                  Explore my <Link href="/playground" as="/playground"><a className={`${utilStyles.internalPassage}`}>Playground</a></Link>
+                  Explore the <Link href="/playground" as="/playground"><a className={`${utilStyles.internalPassage}`}>Playground</a></Link>
                 </li>
                 <li className="blog">
                   Check the <Link href="/blog" as="/blog"><a className={`${utilStyles.internalPassage}`}>Blog</a></Link>

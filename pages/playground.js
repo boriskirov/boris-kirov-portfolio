@@ -60,7 +60,13 @@ function Playground() {
 
 
         <div className={`${utilStyles.contentWrapper}`}>
-            <a className={`${utilStyles.externalPassage}`} href="/playground/mirotone">
+            <a className={`${utilStyles.externalPassage}`} href="/playground/mirotone"
+            >
+              <style jsx>{`
+                a {
+                  cursor: wait;                  
+                }
+              `}</style>
                 <div>
                     <h3 className={`${utilStyles.headingL}`}>Mirotone</h3>
                 </div>
@@ -79,6 +85,13 @@ function Playground() {
                     <h3 className={`${utilStyles.headingL}`}>Fluidigrid </h3>
                 </div>
                 <small>Package</small>
+            </a>
+
+            <a className={`${utilStyles.externalPassage}`} href="https://www.sketchappsources.com/free-source/3786-emojis-builder-sketch-freebie-resource.html" target="_blank" rel="noopener noreferrer">
+                <div>
+                    <h3 className={`${utilStyles.headingL}`}>Emoji builder </h3>
+                </div>
+                <small>Sketch library</small>
             </a>
 
             <a className={`${utilStyles.externalPassage}`} href="https://github.com/boriskirov/git-commands" target="_blank" rel="noopener noreferrer">
