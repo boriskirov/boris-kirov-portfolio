@@ -197,11 +197,6 @@ a.externalPassage:hover, a.externalPassage:active, a.externalPassage:focus {
     margin: 0 auto;
 }
 
-.pokemon {
-    width: 100%;
-    height: 640px;
-}
-
 @media (max-width: 834px) {
     .innerWrapper{
         padding: 10vw 2.5vw;
