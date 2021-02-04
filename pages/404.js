@@ -57,9 +57,33 @@ function fourOfour() {
           
             <div className={`${utilStyles.notReadyWrapper}`}>
               <h1 className={`${utilStyles.heading2XlNotReady}`}>
-                ¯\_(ツ)_/¯
-              </h1>
-              <info dateTime="">Sorry, this page does not exists, but you can check my <Link href="/playground" as="/playground"><a className={`${utilStyles.internalPassage}`}>Playground</a></Link> 🕹</info>
+<pre>
+░░░░░▄▄▀▀▀▀▀▀▀▀▀▄▄░░░░░
+</pre>
+<pre>
+░░░░█░░░░░░░░░░░░░█░░░░
+</pre>
+<pre>
+░░░█░░░░░░░░░░▄▄▄░░█░░░
+</pre>
+<pre>
+░░░█░░▄▄▄░░▄░░███░░█░░░
+</pre>
+<pre>
+░░░▄█░▄░░░▀▀▀░░░▄░█▄░░░
+</pre>
+<pre>
+░░░█░░▀█▀█▀█▀█▀█▀░░█░░░
+</pre>
+<pre>
+░░░▄██▄▄▀▀▀▀▀▀▀▄▄██▄░░░
+</pre>
+<pre>
+░▄█░█▀▀█▀▀▀█▀▀▀█▀▀█░█▄░
+</pre>
+
+            </h1>
+                <info>Sorry, this page does not exists, but you can check my <Link href="/playground" as="/playground"><a className={`${utilStyles.internalPassage}`}>Playground</a></Link> 🕹</info>
             </div>
 
         </main>

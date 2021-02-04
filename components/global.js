@@ -81,6 +81,10 @@ export const GlobalStyles = createGlobalStyle`
     margin: 16px 0 24px 0;
   }
 
+  pre{
+    margin: 0;
+  }
+
   ul {
     padding-left: 0;
     list-style: square;

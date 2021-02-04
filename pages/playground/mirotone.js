@@ -59,7 +59,7 @@ function Mirotone() {
               <h1 className={`${utilStyles.heading2XlNotReady}`}>
                 (·_·)
               </h1>
-              <info dateTime="">Sorry, I am currently working on it</info>
+              <info dateTime="">This is currently being build, I will share a project story here soon.</info>
             </div>
         </main>
         <Footer/>
