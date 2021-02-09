@@ -72,14 +72,25 @@ function Mirotone() {
                 <a className={`${utilStyles.backButton}`}>Back</a>
               </Link>
 
-              <div className={`${utilStyles.notReadyWrapper}`}>
-                <h1 className={`${utilStyles.heading2XlNotReady}`}>
-                  <pre>(·_·)</pre>
-                </h1>
-                <info dateTime="">
-                  This is currently being build, I will share a project story
-                  here soon.
-                </info>
+              <h1 className={`${utilStyles.heading2Xl}`}>NPM CARD</h1>
+              <info dateTime="2020-12-09">Dec 09, 2020</info>
+              <div className={`${utilStyles.contentWrapper}`}>
+                <section>
+                  <img src="/npx-boriskirov.gif" />
+                  <blockquote>
+                    Run <code>npx boriskirov</code> in your terminal.
+                  </blockquote>
+                  <p>
+                    {" "}
+                    Check the repo for more details.{" "}
+                    <a
+                      href="https://github.com/boriskirov/boriskirov"
+                      target="_blank"
+                    >
+                      Github repo
+                    </a>
+                  </p>
+                </section>
               </div>
             </main>
             <Footer />
