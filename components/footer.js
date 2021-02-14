@@ -25,6 +25,18 @@ const Footer = () => (
         </li>
         <li className={`${styles.footerLi}`}>
           <small>
+            <span className={`${styles.emoji}`}>👾</span>
+            <a
+              href="https://figma.com/@boriskirov"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Figma
+            </a>
+          </small>
+        </li>
+        <li className={`${styles.footerLi}`}>
+          <small>
             <span className={`${styles.emoji}`}>📝</span>
             <a
               href="https://medium.com/@bkirov"
