@@ -1,0 +1,30 @@
+version: 2
+updates:
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: daily
+    time: "04:00"
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: framer-motion
+    versions:
+    - 3.10.3
+    - 3.10.5
+    - 3.5.2
+    - 3.6.2
+    - 3.6.7
+    - 3.9.0
+    - 4.0.2
+    - 4.1.5
+    - 4.1.6
+    - 4.1.9
+  - dependency-name: next
+    versions:
+    - 10.0.8
+    - 10.0.9
+    - 10.1.1
+    - 10.1.2
+  - dependency-name: styled-components
+    versions:
+    - 5.2.2
