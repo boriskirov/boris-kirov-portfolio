@@ -1,5 +1,6 @@
 import React from "react";
-import { func, string } from "prop-types";
+import func from "prop-types";
+import string from "prop-types";
 import styled from "styled-components";
 import styles from "../styles/header.module.css";
 

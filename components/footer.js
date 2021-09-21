@@ -12,76 +12,40 @@ const Footer = () => (
     <div>
       <ul className={`${styles.footerList}`}>
         <li className={`${styles.footerLi}`}>
-          <small>
-            <span className={`${styles.emoji}`}>👨‍💻</span>
-            <a
-              href="https://github.com/boriskirov"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              GitHub
-            </a>
-          </small>
+          <a
+            href="https://github.com/boriskirov"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            GitHub
+          </a>
         </li>
         <li className={`${styles.footerLi}`}>
-          <small>
-            <span className={`${styles.emoji}`}>👾</span>
-            <a
-              href="https://figma.com/@boriskirov"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Figma
-            </a>
-          </small>
+          <a
+            href="https://figma.com/@boriskirov"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Figma
+          </a>
         </li>
         <li className={`${styles.footerLi}`}>
-          <small>
-            <span className={`${styles.emoji}`}>📝</span>
-            <a
-              href="https://medium.com/@bkirov"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Medium
-            </a>
-          </small>
+          <a
+            href="https://twitter.com/boris_a_kirov"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Twitter
+          </a>
         </li>
         <li className={`${styles.footerLi}`}>
-          <small>
-            <span className={`${styles.emoji}`}>🐙</span>
-            <a
-              href="https://dribbble.com/boriskirov"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Dribbble
-            </a>
-          </small>
-        </li>
-        <li className={`${styles.footerLi}`}>
-          <small>
-            <span className={`${styles.emoji}`}>🐦</span>
-            <a
-              href="https://twitter.com/boris_a_kirov"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Twitter
-            </a>
-          </small>
-        </li>
-        <li className={`${styles.footerLi}`}>
-          <small>
-            <span className={`${styles.emoji}`}>🔗</span>
-            <a
-              href="https://www.linkedin.com/in/boris-kirov-b6b110a4/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              LinkedIn
-            </a>
-          </small>
+          <a
+            href="https://www.linkedin.com/in/boris-kirov-b6b110a4/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            LinkedIn
+          </a>
         </li>
       </ul>
     </div>

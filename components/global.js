@@ -31,7 +31,7 @@ export const GlobalStyles = createGlobalStyle`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1vw 16vw;
+    padding: 1vw 20vw;
     margin-bottom: 1.5vw;
     margin-top: 1vw;
   }
@@ -99,10 +99,6 @@ export const GlobalStyles = createGlobalStyle`
   li {
     margin-bottom: 8px;
     margin-left: 12px;
-  }
-
-  ul a {
-    font-weight: 600;
   }
 
   li a {

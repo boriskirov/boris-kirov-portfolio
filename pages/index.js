@@ -68,10 +68,12 @@ function Home() {
             </header>
 
             <main className={`${utilStyles.innerWrapper}`}>
-              <h1 className={`${utilStyles.heading2Xl}`}>BORIS KIROV</h1>
+              <h1 className={`${utilStyles.heading2Xl}`}>
+                Hey, I'm BORIS KIROV
+              </h1>
 
-              <h2 className={`${utilStyles.headingXl}`}>
-                is getting things done at{" "}
+              <p>
+                and I'm getting things done at{" "}
                 <a
                   target="_blank"
                   rel="noopener noreferrer"
@@ -79,24 +81,12 @@ function Home() {
                 >
                   Miro
                 </a>
-              </h2>
+              </p>
 
               <div className={`${utilStyles.contentWrapper}`}>
                 <section>
-                  <h3 className={`${utilStyles.headingL}`}>Currently</h3>
                   <ul>
-                    <li>
-                      Product designer at{" "}
-                      <a
-                        href="https://miro.com/index/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        Miro
-                      </a>
-                    </li>
                     <li className="blog">
-                      Explore the{" "}
                       <Link href="/playground" as="/playground">
                         <a className={`${utilStyles.internalPassage}`}>
                           Playground
@@ -104,42 +94,9 @@ function Home() {
                       </Link>
                     </li>
                     <li className="blog">
-                      Check the{" "}
                       <Link href="/blog" as="/blog">
                         <a className={`${utilStyles.internalPassage}`}>Blog</a>
                       </Link>
-                    </li>
-                  </ul>
-                </section>
-                <section>
-                  <h3 className={`${utilStyles.headingL}`}>Previously</h3>
-                  <ul>
-                    <li>
-                      <a
-                        href="https://www.info.nl/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        INFO
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="https://www.softserveinc.com/en-us"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        SoftServe
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="https://despark.com/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        Despark
-                      </a>
                     </li>
                   </ul>
                 </section>
