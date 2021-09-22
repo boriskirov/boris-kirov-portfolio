@@ -94,7 +94,6 @@ function Mirotone() {
                 </section>
               </div>
             </main>
-            <Footer />
           </div>
         </motion.div>
       </>

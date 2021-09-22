@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 
 import Head from "next/head";
 import Link from "next/link";
-import Footer from "../components/footer";
+
 import Toggle from "../components/toggle";
 import utilStyles from "../styles/utils.module.css";
 
@@ -94,7 +94,6 @@ function fourOfour() {
                 </info>
               </div>
             </main>
-            <Footer />
           </div>
         </motion.div>
       </>
