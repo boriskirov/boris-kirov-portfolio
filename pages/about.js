@@ -71,7 +71,7 @@ function Blog() {
               <Link href="/">
                 <a className={`${utilStyles.backButton}`}>Back</a>
               </Link>
-              <h1 className={`${utilStyles.heading2Xl}`}>Здравей,</h1>
+              <h1 className={`${utilStyles.heading2Xl}`}>Здрасти,</h1>
 
               <div className={`${utilStyles.contentWrapper}`}>
                 <section>
