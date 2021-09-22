@@ -1,17 +1,17 @@
 import React from "react";
 import { ThemeProvider } from "styled-components";
-import { useDarkMode } from "../../components/useDarkMode";
-import { lightTheme, darkTheme } from "../../components/theme";
-import { GlobalStyles } from "../../components/global";
-import Toggle from "../../components/toggle";
+import { useDarkMode } from "../components/useDarkMode";
+import { lightTheme, darkTheme } from "../components/theme";
+import { GlobalStyles } from "../components/global";
 import { motion } from "framer-motion";
 
 import Head from "next/head";
 import Link from "next/link";
-import Footer from "../../components/footer";
-import utilStyles from "../../styles/utils.module.css";
+import Footer from "../components/footer";
+import Toggle from "../components/toggle";
+import utilStyles from "../styles/utils.module.css";
 
-function Mirotone() {
+function Blog() {
   const [theme, toggleTheme] = useDarkMode();
   const themeMode = theme === "light" ? lightTheme : darkTheme;
 
@@ -22,7 +22,7 @@ function Mirotone() {
           exit={{ opacity: 0 }}
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ duration: 1.15 }}
+          transition={{ duration: 1.25 }}
         >
           <div className={`${utilStyles.mainWrapper}`}>
             <GlobalStyles />
@@ -64,32 +64,51 @@ function Mirotone() {
 
             <header>
               <small>Crafted in Amsterdam ♥️</small>
-
               <Toggle theme={theme} toggleTheme={toggleTheme} />
             </header>
 
             <main className={`${utilStyles.innerWrapper}`}>
-              <Link href="/playground">
+              <Link href="/">
                 <a className={`${utilStyles.backButton}`}>Back</a>
               </Link>
+              <h1 className={`${utilStyles.heading2Xl}`}>Здравей,</h1>
 
-              <h1 className={`${utilStyles.heading2Xl}`}>NPM CARD</h1>
-              <info dateTime="2020-12-09">Dec 09, 2020</info>
               <div className={`${utilStyles.contentWrapper}`}>
                 <section>
-                  <img src="/npx-boriskirov.gif" />
-                  <blockquote>
-                    Run <code>npx boriskirov</code> in your terminal.
-                  </blockquote>
+                  <img src="/me.png" />
                   <p>
-                    {" "}
-                    Check the repo for more details.{" "}
-                    <a
-                      href="https://github.com/boriskirov/boriskirov"
-                      target="_blank"
-                    >
-                      Github repo
-                    </a>
+                    <span className={`${utilStyles.dropCap}`}>M</span> y name is
+                    Boris Kirov. I'm a Bulgarian designer living in Amsterdam,
+                    The Netherlands. I use technology to express myself and I'm
+                    currently building the Platform experience for Miro.
+                  </p>
+                  <p>
+                    Before joining Miro I used to work with different companies
+                    like INFO & Despark and clients like Disney, BNP Paribas,
+                    Graydon and others. In my spare time, I enjoy exploring
+                    technology and building tools to empower others to build and
+                    progress. That's how Fluiditype, Mirotone & Fluidigrid came
+                    to live. I am also fascinated by programs and how they can
+                    communicate between eachother and with us. My passion for
+                    constant experimentation in the realm of design and
+                    experience consistency keeps my busy and always hungry.
+                  </p>
+                  <p>
+                    Leaving time for sports like running, cycling and jump rope
+                    is essential and important for me from physical and mental
+                    health point of view. But the most important one is the time
+                    for long walks with our lovely Dory. She is an amazingly
+                    smart and incredibly responsive adopted mixed-breed dog.
+                  </p>
+                  <img src="/dory.png" />
+                  <p>
+                    Photography also is a passion of mine, with which I keep my
+                    creative juices flowing. I am fascinated by film photography
+                    and all the magic which is hidden behind it. Currently I'm
+                    into drone photography, you can check some of my
+                    flickaronies on my Instagram. Before I used to collaborate
+                    with clients like Tea House Sofia, FITC Amsterdam and
+                    others.{" "}
                   </p>
                 </section>
               </div>
@@ -102,4 +121,4 @@ function Mirotone() {
   );
 }
 
-export default Mirotone;
+export default Blog;

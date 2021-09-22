@@ -7,7 +7,7 @@ const Footer = () => (
       target="_blank"
       rel="noopener noreferrer"
     >
-      Get Resume 2020 ©{" "}
+      Get Resume 2021 ©{" "}
     </a>
     <div>
       <ul className={`${styles.footerList}`}>

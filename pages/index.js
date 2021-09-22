@@ -87,6 +87,11 @@ function Home() {
                 <section>
                   <ul>
                     <li className="blog">
+                      <Link href="/about" as="/about">
+                        <a className={`${utilStyles.internalPassage}`}>About</a>
+                      </Link>
+                    </li>
+                    <li className="blog">
                       <Link href="/playground" as="/playground">
                         <a className={`${utilStyles.internalPassage}`}>
                           Playground
@@ -98,20 +103,6 @@ function Home() {
                         <a className={`${utilStyles.internalPassage}`}>Blog</a>
                       </Link>
                     </li>
-                  </ul>
-                </section>
-                <section>
-                  <h3 className={`${utilStyles.headingL}`}>Interested in</h3>
-                  <ul>
-                    <li>Design and prototype in the browser</li>
-                    <li>Fluidity</li>
-                    <li>
-                      Maintenance & experiments with design and experience
-                      consistency
-                    </li>
-                    <li>Working with Git and Terminal</li>
-                    <li>Animation and visualization</li>
-                    <li>Content design and copy</li>
                   </ul>
                 </section>
               </div>
