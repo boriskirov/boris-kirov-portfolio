@@ -98,7 +98,7 @@ function Playground() {
                   <div>
                     <h3 className={`${utilStyles.headingL}`}>Handoff Notes </h3>
                   </div>
-                  <small>Plugin</small>
+                  <small>Figma plugin</small>
                 </a>
 
                 <a
