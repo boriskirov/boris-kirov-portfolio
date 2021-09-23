@@ -100,7 +100,9 @@ function Home() {
                     </li>
                     <li className="blog">
                       <Link href="/blog" as="/blog">
-                        <a className={`${utilStyles.internalPassage}`}>Blog</a>
+                        <a className={`${utilStyles.internalPassage}`}>
+                          Writings
+                        </a>
                       </Link>
                     </li>
                   </ul>

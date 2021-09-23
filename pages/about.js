@@ -91,7 +91,19 @@ function Blog() {
                     to live. I am also fascinated by programs and how they can
                     communicate between eachother and with us. My passion for
                     constant experimentation in the realm of design and
-                    experience consistency keeps my busy and always hungry.
+                    experience consistency keeps my busy and always hungry. You
+                    can always reach me via{" "}
+                    <a href="https://twitter.com/sboriskirov" target="_blank">
+                      Twitter
+                    </a>{" "}
+                    or through booking a session on my{" "}
+                    <a
+                      href="https://www.adplist.org/mentors/boris-kirov"
+                      target="_blank"
+                    >
+                      ADPList profile
+                    </a>
+                    .
                   </p>
                   <p>
                     Leaving time for sports like running, cycling and jump rope
@@ -106,9 +118,12 @@ function Blog() {
                     creative juices flowing. I am fascinated by film photography
                     and all the magic which is hidden behind it. Currently I'm
                     into drone photography, you can check some of my
-                    flickaronies on my Instagram. Before I used to collaborate
-                    with clients like Tea House Sofia, FITC Amsterdam and
-                    others.{" "}
+                    flickaronies on my{" "}
+                    <a href="https://instagram.com/yng.blds" target="_blank">
+                      Instagram
+                    </a>
+                    . Before I used to collaborate with clients like Tea House
+                    Sofia, FITC Amsterdam and others.{" "}
                   </p>
                 </section>
               </div>
