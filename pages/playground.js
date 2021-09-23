@@ -91,6 +91,18 @@ function Playground() {
 
                 <a
                   className={`${utilStyles.externalPassage}`}
+                  href="https://www.figma.com/community/plugin/943057200269205449/Handoff-notes"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <div>
+                    <h3 className={`${utilStyles.headingL}`}>Handoff Notes </h3>
+                  </div>
+                  <small>Plugin</small>
+                </a>
+
+                <a
+                  className={`${utilStyles.externalPassage}`}
                   href="/playground/npx-boriskirov"
                   rel="noopener noreferrer"
                 >
