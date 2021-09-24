@@ -68,7 +68,7 @@ function DefineDesignSystems() {
             </header>
 
             <main className={`${utilStyles.innerWrapper}`}>
-              <Link href="/blog">
+              <Link href="/writings">
                 <a className={`${utilStyles.backButton}`}>Back</a>
               </Link>
               <h1 className={`${utilStyles.heading2Xl}`}>
@@ -491,7 +491,7 @@ function DefineDesignSystems() {
                     </a>
                   </p>
 
-                  <a className={`${utilStyles.mainCard}`} href="/blog/nda">
+                  <a className={`${utilStyles.mainCard}`} href="/writings/nda">
                     <div>
                       <h3 className={`${utilStyles.headingL}`}>
                         Implementing design system thinking to a product

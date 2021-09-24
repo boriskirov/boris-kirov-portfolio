@@ -67,7 +67,7 @@ function Tripscout() {
             </header>
 
             <main className={`${utilStyles.innerWrapper}`}>
-              <Link href="/blog">
+              <Link href="/writings">
                 <a className={`${utilStyles.backButton}`}>Back</a>
               </Link>
               <h1 className={`${utilStyles.heading2Xl}`}>TRIPSCOUT</h1>
@@ -181,7 +181,7 @@ function Tripscout() {
                   </blockquote>
                   <a
                     className={`${utilStyles.mainCard}`}
-                    href="/blog/defining-design-systems"
+                    href="/writings/defining-design-systems"
                   >
                     <div>
                       <h3 className={`${utilStyles.headingL}`}>

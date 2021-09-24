@@ -68,7 +68,7 @@ function Impatience() {
             </header>
 
             <main className={`${utilStyles.innerWrapper}`}>
-              <Link href="/blog">
+              <Link href="/writings">
                 <a className={`${utilStyles.backButton}`}>Back</a>
               </Link>
               <h1 className={`${utilStyles.heading2Xl}`}>
@@ -273,7 +273,7 @@ function Impatience() {
                   <p>
                     This article was published on{" "}
                     <a
-                      href="https://despark.com/blog/ux-designer-without-phone"
+                      href="https://despark.com/writings/ux-designer-without-phone"
                       target="_blank"
                     >
                       Despark's official blog
@@ -281,7 +281,7 @@ function Impatience() {
                   </p>
                   <a
                     className={`${utilStyles.mainCard}`}
-                    href="/blog/great-wall-of-development"
+                    href="/writings/great-wall-of-development"
                   >
                     <div>
                       <h3 className={`${utilStyles.headingL}`}>

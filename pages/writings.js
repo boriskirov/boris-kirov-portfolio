@@ -71,12 +71,12 @@ function Blog() {
               <Link href="/">
                 <a className={`${utilStyles.backButton}`}>Back</a>
               </Link>
-              <h1 className={`${utilStyles.heading2Xl}`}>BLOG</h1>
+              <h1 className={`${utilStyles.heading2Xl}`}>WRITINGS</h1>
 
               <div className={`${utilStyles.contentWrapper}`}>
                 <a
                   className={`${utilStyles.mainCard}`}
-                  href="/blog/defining-design-systems"
+                  href="/writings/defining-design-systems"
                 >
                   <div>
                     <h3 className={`${utilStyles.headingL}`}>
@@ -88,7 +88,7 @@ function Blog() {
 
                 <a
                   className={`${utilStyles.mainCard}`}
-                  href="/blog/great-wall-of-development"
+                  href="/writings/great-wall-of-development"
                 >
                   <div>
                     <h3 className={`${utilStyles.headingL}`}>
@@ -98,7 +98,10 @@ function Blog() {
                   <small>Case study</small>
                 </a>
 
-                <a className={`${utilStyles.mainCard}`} href="/blog/tripscout">
+                <a
+                  className={`${utilStyles.mainCard}`}
+                  href="/writings/tripscout"
+                >
                   <div>
                     <h3 className={`${utilStyles.headingL}`}>
                       Working with TripScout
@@ -107,7 +110,7 @@ function Blog() {
                   <small>Case study</small>
                 </a>
 
-                <a className={`${utilStyles.mainCard}`} href="/blog/nda">
+                <a className={`${utilStyles.mainCard}`} href="/writings/nda">
                   <div>
                     <h3 className={`${utilStyles.headingL}`}>
                       Implementing design system thinking
@@ -118,7 +121,7 @@ function Blog() {
 
                 <a
                   className={`${utilStyles.mainCard}`}
-                  href="/blog/improve-impatience"
+                  href="/writings/improve-impatience"
                 >
                   <div>
                     <h3 className={`${utilStyles.headingL}`}>

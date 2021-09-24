@@ -29,7 +29,10 @@ function Blog() {
             <Head>
               <title>Boris Kirov - Product Designer</title>
               <link rel="icon" href="/favicon.png" />
-              <meta name="description" content="Product designer" />
+              <meta
+                name="description"
+                content="Boris Kirov - Product designer"
+              />
               <meta property="og:type" content="website" />
               <meta
                 name="og:title"

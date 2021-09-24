@@ -31,7 +31,7 @@ export const GlobalStyles = createGlobalStyle`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1vw 20vw;
+    padding: 1vw 24vw;
     margin-bottom: 1.5vw;
     margin-top: 1vw;
   }

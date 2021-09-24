@@ -68,7 +68,7 @@ function NDA() {
             </header>
 
             <main className={`${utilStyles.innerWrapper}`}>
-              <Link href="/blog">
+              <Link href="/writings">
                 <a className={`${utilStyles.backButton}`}>Back</a>
               </Link>
               <h1 className={`${utilStyles.heading2Xl}`}>🙊🙈🙉</h1>
@@ -317,7 +317,7 @@ function NDA() {
                   </p>
                   <a
                     className={`${utilStyles.mainCard}`}
-                    href="/blog/tripscout"
+                    href="/writings/tripscout"
                   >
                     <div>
                       <h3 className={`${utilStyles.headingL}`}>

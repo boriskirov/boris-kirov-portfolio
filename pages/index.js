@@ -99,7 +99,7 @@ function Home() {
                       </Link>
                     </li>
                     <li className="blog">
-                      <Link href="/blog" as="/blog">
+                      <Link href="/writings" as="/writings">
                         <a className={`${utilStyles.internalPassage}`}>
                           Writings
                         </a>

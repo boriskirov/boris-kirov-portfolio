@@ -68,7 +68,7 @@ function GreatWall() {
             </header>
 
             <main className={`${utilStyles.innerWrapper}`}>
-              <Link href="/blog">
+              <Link href="/writings">
                 <a className={`${utilStyles.backButton}`}>Back</a>
               </Link>
               <h1 className={`${utilStyles.heading2Xl}`}>
@@ -113,7 +113,7 @@ function GreatWall() {
                     I got triggered to share some insights around design and
                     “The Great Wall of Development”, because of what Brad Frost
                     shared around alerts in his recent{" "}
-                    <a href="https://bradfrost.com/blog/post/frontend-design-react-and-a-bridge-over-the-great-divide/">
+                    <a href="https://bradfrost.com/writings/post/frontend-design-react-and-a-bridge-over-the-great-divide/">
                       blog post
                     </a>
                     . I will share examples around how we handled some alert
@@ -258,7 +258,7 @@ function GreatWall() {
                   </p>
                   <ul>
                     <li>
-                      <a href="https://bradfrost.com/blog/post/frontend-design-react-and-a-bridge-over-the-great-divide/">
+                      <a href="https://bradfrost.com/writings/post/frontend-design-react-and-a-bridge-over-the-great-divide/">
                         “Frontend design, react, and a bridge over the great
                         divide”
                       </a>
@@ -283,7 +283,7 @@ function GreatWall() {
                       Medium
                     </a>
                   </p>
-                  <a className={`${utilStyles.mainCard}`} href="/blog/nda">
+                  <a className={`${utilStyles.mainCard}`} href="/writings/nda">
                     <div>
                       <h3 className={`${utilStyles.headingL}`}>
                         Implementing design system thinking to a product
