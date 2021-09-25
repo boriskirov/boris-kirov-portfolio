@@ -87,15 +87,23 @@ function Blog() {
                   </p>
                   <p>
                     Before joining Miro I used to work with different companies
-                    like INFO & Despark and clients like Disney, BNP Paribas,
-                    Graydon and others. In my spare time, I enjoy exploring
-                    technology and building tools to empower others to build and
-                    progress. That's how Fluiditype, Mirotone & Fluidigrid came
-                    to live. I am also fascinated by programs and how they can
-                    communicate between eachother and with us. My passion for
-                    constant experimentation in the realm of design and
-                    experience consistency keeps my busy and always hungry. You
-                    can always reach me via{" "}
+                    like{" "}
+                    <a href="https://info.nl/" target="_blank">
+                      INFO
+                    </a>{" "}
+                    &{" "}
+                    <a href="https://despark.com/" target="_blank">
+                      Despark
+                    </a>{" "}
+                    and clients like Disney, BNP Paribas, Graydon, Tripscout and
+                    others. In my spare time, I enjoy exploring technology and
+                    building tools to empower others to build and progress.
+                    That's how Fluiditype, Mirotone & Fluidigrid came to life. I
+                    am also fascinated by programs and how they can communicate
+                    between eachother and with us. My passion for constant
+                    experimentation in the realm of design and experience
+                    consistency keeps my busy and always hungry. You can always
+                    reach me via{" "}
                     <a href="https://twitter.com/sboriskirov" target="_blank">
                       Twitter
                     </a>{" "}

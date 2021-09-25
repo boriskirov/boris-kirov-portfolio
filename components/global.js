@@ -66,6 +66,11 @@ export const GlobalStyles = createGlobalStyle`
     color: #3f53d9;
   }
 
+  a:focus-visible {
+    outline: none;
+    box-shadow: 0 0 0 4px #3f53d9;
+  }
+
   h4 {
     margin: 4px 0;
   }
