@@ -76,17 +76,14 @@ function Playground() {
               <div className={`${utilStyles.contentWrapper}`}>
                 <a
                   className={`${utilStyles.externalPassage}`}
-                  href="/playground/mirotone"
+                  href="https://www.mirotone.xyz"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
-                  <style jsx>{`
-                    a {
-                      cursor: wait;
-                    }
-                  `}</style>
                   <div>
                     <h3 className={`${utilStyles.headingL}`}>Mirotone</h3>
                   </div>
-                  <small>Not ready</small>
+                  <small>Package</small>
                 </a>
 
                 <a
