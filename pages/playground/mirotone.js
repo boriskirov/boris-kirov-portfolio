@@ -22,7 +22,7 @@ function Mirotone() {
           exit={{ opacity: 0 }}
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ duration: 1.15 }}
+          transition={{ duration: 0.15 }}
         >
           <div className={`${utilStyles.mainWrapper}`}>
             <GlobalStyles />

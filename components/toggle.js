@@ -28,15 +28,15 @@ const Toggle = ({ theme, toggleTheme }) => {
     >
       <img
         className={`${styles.iconSize}`}
-        src="/Toggle.svg"
-        alt="Dark Toggler"
-        title="Dark Side"
-      />
-      <img
-        className={`${styles.iconSize}`}
         src="/ToggleLight.svg"
         alt="Light Toggler"
         title="Light Side"
+      />
+      <img
+        className={`${styles.iconSize}`}
+        src="/Toggle.svg"
+        alt="Dark Toggler"
+        title="Dark Side"
       />
     </ToggleWrapper>
   );
