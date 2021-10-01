@@ -100,6 +100,22 @@ function Playground() {
 
                 <a
                   className={`${utilStyles.externalPassage}`}
+                  href="/playground/my-stack"
+                  rel="noopener noreferrer"
+                >
+                  <style jsx>{`
+                    a {
+                      cursor: e-resize;
+                    }
+                  `}</style>
+                  <div>
+                    <h3 className={`${utilStyles.headingL}`}> Stack </h3>
+                  </div>
+                  <small>Tools & Software</small>
+                </a>
+
+                <a
+                  className={`${utilStyles.externalPassage}`}
                   href="/playground/npx-boriskirov"
                   rel="noopener noreferrer"
                 >
