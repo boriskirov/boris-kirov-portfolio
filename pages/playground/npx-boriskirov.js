@@ -18,12 +18,7 @@ function Mirotone() {
   return (
     <ThemeProvider theme={themeMode}>
       <>
-        <motion.div
-          exit={{ opacity: 0 }}
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.15 }}
-        >
+        <motion.div>
           <div className={`${utilStyles.mainWrapper}`}>
             <GlobalStyles />
             <Head>
@@ -65,7 +60,7 @@ function Mirotone() {
             <header>
               <small>Crafted in Amsterdam ♥️</small>
 
-              <Toggle theme={theme} toggleTheme={toggleTheme} />
+              {/* <Toggle theme={theme} toggleTheme={toggleTheme} /> */}
             </header>
 
             <main className={`${utilStyles.innerWrapper}`}>
