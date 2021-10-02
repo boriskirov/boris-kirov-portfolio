@@ -36,7 +36,7 @@
 
 .headingM {
   font-size: 1.5vw;
-  margin: 64px 0 8px;
+  margin: 8px 0 8px;
   text-transform: uppercase;
 }
 
@@ -184,6 +184,27 @@ a.stackCard:focus {
   width: 48px;
   height: 48px;
   border-radius: 8px;
+}
+
+.dicCard {
+  width: 100%;
+  color: inherit;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: 500;
+  text-shadow: none;
+  text-decoration: none;
+  padding: 16px 16px;
+  margin: 24px 0 0 0;
+  background-color: #5454541a;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.dicCard summary {
+  font-weight: bold;
 }
 
 .externalPassage {

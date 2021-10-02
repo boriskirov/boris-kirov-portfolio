@@ -83,6 +83,22 @@ function Playground() {
 
                 <a
                   className={`${utilStyles.externalPassage}`}
+                  href="/playground/my-dictionary"
+                  rel="noopener noreferrer"
+                >
+                  <style jsx>{`
+                    a {
+                      cursor: e-resize;
+                    }
+                  `}</style>
+                  <div>
+                    <h3 className={`${utilStyles.headingL}`}> Dictionary </h3>
+                  </div>
+                  <small>Methods & WOW</small>
+                </a>
+
+                <a
+                  className={`${utilStyles.externalPassage}`}
                   href="https://www.figma.com/community/plugin/943057200269205449/Handoff-notes"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -104,7 +120,7 @@ function Playground() {
                     }
                   `}</style>
                   <div>
-                    <h3 className={`${utilStyles.headingL}`}> Stack </h3>
+                    <h3 className={`${utilStyles.headingL}`}> Toolbox </h3>
                   </div>
                   <small>Tools & Software</small>
                 </a>

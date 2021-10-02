@@ -66,10 +66,12 @@ function Mirotone() {
                 <a className={`${utilStyles.backButton}`}>Back</a>
               </Link>
 
-              <h1 className={`${utilStyles.heading2Xl}`}>My Stack</h1>
+              <h1 className={`${utilStyles.heading2Xl}`}>TOOLBOX</h1>
               <p>
                 List of tools & software I use daily to support my interest and
-                hunger on the journey of designing software.
+                hunger on the journey of designing software. The list can
+                constantly change as I try to experiment with new solutions and
+                methods.
               </p>
               <div className={`${utilStyles.contentWrapper}`}>
                 <section>
