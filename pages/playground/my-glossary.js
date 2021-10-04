@@ -77,52 +77,13 @@ function Mirotone() {
                       aria-haspopup="true"
                       className={`${utilStyles.headingM}`}
                     >
-                      Socratic method
+                      Analytical thinking
                     </summary>
                     <p>
-                      The Socratic method (also known as method of Elenchus,
-                      elenctic method, or Socratic debate) is a form of
-                      cooperative argumentative dialogue between individuals,
-                      based on asking and answering questions to stimulate
-                      critical thinking and to draw out ideas and underlying
-                      presuppositions.
-                    </p>
-                  </details>
-
-                  <details className={`${utilStyles.dicCard}`}>
-                    <summary
-                      aria-haspopup="true"
-                      className={`${utilStyles.headingM}`}
-                    >
-                      Human Centered Design
-                    </summary>
-                    <p>
-                      Human-centered design is a creative approach to problem
-                      solving. It’s a process that starts with the people you’re
-                      designing for and ends with new solutions that are tailor
-                      made to suit their needs. Human-centered design is all
-                      about building a deep empathy with the people you’re
-                      designing for; generating tons of ideas; building a bunch
-                      of prototypes; sharing what you’ve made with the people
-                      you’re designing for; and eventually putting your
-                      innovative new solution out in the world.
-                    </p>
-                  </details>
-
-                  <details className={`${utilStyles.dicCard}`}>
-                    <summary
-                      aria-haspopup="true"
-                      className={`${utilStyles.headingM}`}
-                    >
-                      System Thinking
-                    </summary>
-                    <p>
-                      Systems thinking is a holistic approach to analysis that
-                      focuses on the way that a system's constituent parts
-                      interrelate and how systems work over time and within the
-                      context of larger systems. The systems thinking approach
-                      contrasts with traditional analysis, which studies systems
-                      by breaking them down into their separate elements.
+                      Analytical thinking is the ability to tackle complicated
+                      issues by evaluating information you’ve gathered and
+                      organized. Analytical thinkers can detect patterns between
+                      datasets that often lead to creative solutions.
                     </p>
                   </details>
 
@@ -163,13 +124,35 @@ function Mirotone() {
                       aria-haspopup="true"
                       className={`${utilStyles.headingM}`}
                     >
-                      Analytical thinking
+                      Human Centered Design
                     </summary>
                     <p>
-                      Analytical thinking is the ability to tackle complicated
-                      issues by evaluating information you’ve gathered and
-                      organized. Analytical thinkers can detect patterns between
-                      datasets that often lead to creative solutions.
+                      Human-centered design is a creative approach to problem
+                      solving. It’s a process that starts with the people you’re
+                      designing for and ends with new solutions that are tailor
+                      made to suit their needs. Human-centered design is all
+                      about building a deep empathy with the people you’re
+                      designing for; generating tons of ideas; building a bunch
+                      of prototypes; sharing what you’ve made with the people
+                      you’re designing for; and eventually putting your
+                      innovative new solution out in the world.
+                    </p>
+                  </details>
+
+                  <details className={`${utilStyles.dicCard}`}>
+                    <summary
+                      aria-haspopup="true"
+                      className={`${utilStyles.headingM}`}
+                    >
+                      Modularity
+                    </summary>
+                    <p>
+                      Modular design is a design approach that creates things
+                      out of independent parts with standard interfaces. This
+                      allows designs to be customized, upgraded, repaired and
+                      for parts to be. A well known example of modular design
+                      are LEGO plastic construction toys and Ikea the
+                      Scandinavian-founded, worldwide furniture store.
                     </p>
                   </details>
 
@@ -194,6 +177,40 @@ function Mirotone() {
                       aria-haspopup="true"
                       className={`${utilStyles.headingM}`}
                     >
+                      Socratic method
+                    </summary>
+                    <p>
+                      The Socratic method (also known as method of Elenchus,
+                      elenctic method, or Socratic debate) is a form of
+                      cooperative argumentative dialogue between individuals,
+                      based on asking and answering questions to stimulate
+                      critical thinking and to draw out ideas and underlying
+                      presuppositions.
+                    </p>
+                  </details>
+
+                  <details className={`${utilStyles.dicCard}`}>
+                    <summary
+                      aria-haspopup="true"
+                      className={`${utilStyles.headingM}`}
+                    >
+                      System Thinking
+                    </summary>
+                    <p>
+                      Systems thinking is a holistic approach to analysis that
+                      focuses on the way that a system's constituent parts
+                      interrelate and how systems work over time and within the
+                      context of larger systems. The systems thinking approach
+                      contrasts with traditional analysis, which studies systems
+                      by breaking them down into their separate elements.
+                    </p>
+                  </details>
+
+                  <details className={`${utilStyles.dicCard}`}>
+                    <summary
+                      aria-haspopup="true"
+                      className={`${utilStyles.headingM}`}
+                    >
                       Path of least resistance
                     </summary>
                     <p>
@@ -202,6 +219,42 @@ function Mirotone() {
                       when your goal is narrow such that you miss the bigger
                       picture by doing things the easy way. The following are
                       illustrative examples of the path of least resistance.
+                    </p>
+                  </details>
+
+                  <details className={`${utilStyles.dicCard}`}>
+                    <summary
+                      aria-haspopup="true"
+                      className={`${utilStyles.headingM}`}
+                    >
+                      Pokayoke
+                    </summary>
+                    <p>
+                      Is a Japanese design term that can be translated mistake
+                      proofing. Japanese business culture has a minor obsession
+                      with preventing human error through design. Pokayoke
+                      applies to both the design of production techniques and
+                      end products for consumers (e.g. Microwave doors typically
+                      can't be open when the microwave is operating).
+                    </p>
+                  </details>
+
+                  <details className={`${utilStyles.dicCard}`}>
+                    <summary
+                      aria-haspopup="true"
+                      className={`${utilStyles.headingM}`}
+                    >
+                      Principle Of Least Astonishment
+                    </summary>
+                    <p>
+                      Is a rule of thumb that states that user interfaces are
+                      best when they aren't surprising. That is to say, that
+                      when a user first sees your design they aren't surprised
+                      by how it works. This lowers the learning curve for users
+                      and tends to generate positive emotions. When users need
+                      to invest in learning a design, they may feel that they
+                      are bending to technology as opposed to technology bending
+                      to them.
                     </p>
                   </details>
                 </section>
