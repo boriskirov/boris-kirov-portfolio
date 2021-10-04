@@ -3,7 +3,6 @@ import { ThemeProvider } from "styled-components";
 import { useDarkMode } from "../../components/useDarkMode";
 import { lightTheme, darkTheme } from "../../components/theme";
 import { GlobalStyles } from "../../components/global";
-import Toggle from "../../components/toggle";
 import { motion } from "framer-motion";
 
 import Head from "next/head";
@@ -66,10 +65,10 @@ function Mirotone() {
                 <a className={`${utilStyles.backButton}`}>Back</a>
               </Link>
 
-              <h1 className={`${utilStyles.heading2Xl}`}>DICTIONARY</h1>
+              <h1 className={`${utilStyles.heading2Xl}`}>GLOSSARY</h1>
               <p>
-                This is my personal resource that lists the methods and ways of
-                working I follow in design.
+                This is my personal resource that lists the methods, practices
+                and ways of working I follow in design.
               </p>
               <div className={`${utilStyles.contentWrapper}`}>
                 <section>

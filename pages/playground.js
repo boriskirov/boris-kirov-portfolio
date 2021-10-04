@@ -83,7 +83,7 @@ function Playground() {
 
                 <a
                   className={`${utilStyles.externalPassage}`}
-                  href="/playground/my-dictionary"
+                  href="/playground/my-glossary"
                   rel="noopener noreferrer"
                 >
                   <style jsx>{`
@@ -92,9 +92,9 @@ function Playground() {
                     }
                   `}</style>
                   <div>
-                    <h3 className={`${utilStyles.headingL}`}> Dictionary </h3>
+                    <h3 className={`${utilStyles.headingL}`}> Glossary </h3>
                   </div>
-                  <small>Methods & WOW</small>
+                  <small>Methods & Practices</small>
                 </a>
 
                 <a
