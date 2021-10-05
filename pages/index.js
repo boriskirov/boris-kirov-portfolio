@@ -69,11 +69,7 @@ function Home() {
 
               <p>
                 and I'm getting things done at{" "}
-                <a
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  href="https://miro.com/index/"
-                >
+                <a className={`${utilStyles.internalPassage}`} href="/miro">
                   Miro
                 </a>
               </p>

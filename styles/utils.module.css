@@ -36,14 +36,27 @@
 
 .headingM {
   font-size: 1.5vw;
-  margin: 8px 0 8px;
+  margin: 8px 8px;
   text-transform: uppercase;
+}
+
+.listStyleCircle {
+  list-style-type: circle;
+}
+
+.flex {
+  display: flex;
+  align-items: end;
 }
 
 .flexWrapper {
   display: flex;
   margin: 0 auto;
   padding: 16px;
+}
+
+.iFrameStyles {
+  width: 100%;
 }
 
 .mainWrapper {

@@ -428,6 +428,48 @@ function Mirotone() {
                     </div>
                     <small>Security</small>
                   </a>
+
+                  <a
+                    className={`${utilStyles.stackCard}`}
+                    href="https://muzzleapp.com/"
+                  >
+                    <div>
+                      <img
+                        className={`${utilStyles.stackCardImg}`}
+                        src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fstatic.macupdate.com%2Fproducts%2F59729%2Fm%2Fmuzzle-logo.png%3Fv%3D1568337187&f=1&nofb=1"
+                      />
+                      <h3 className={`${utilStyles.headingM}`}>Muzzle</h3>
+                    </div>
+                    <small>Productivity</small>
+                  </a>
+
+                  <a
+                    className={`${utilStyles.stackCard}`}
+                    href="https://getkap.co/"
+                  >
+                    <div>
+                      <img
+                        className={`${utilStyles.stackCardImg}`}
+                        src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.electronjs.org%2Fimages%2Fapp-img%2Fkap%2Fkap-icon-128.c58588670646bfcd6b63f2b00b20b855.png&f=1&nofb=1"
+                      />
+                      <h3 className={`${utilStyles.headingM}`}>Kap</h3>
+                    </div>
+                    <small>Productivity</small>
+                  </a>
+
+                  <a
+                    className={`${utilStyles.stackCard}`}
+                    href="https://getkap.co/"
+                  >
+                    <div>
+                      <img
+                        className={`${utilStyles.stackCardImg}`}
+                        src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fis4-ssl.mzstatic.com%2Fimage%2Fthumb%2FPurple113%2Fv4%2Ffe%2F1b%2F81%2Ffe1b8145-46b7-7abd-e5c5-56fe424d3eca%2Fsource%2F1000x1000bb.jpg&f=1&nofb=1"
+                      />
+                      <h3 className={`${utilStyles.headingM}`}>DuckDuckGo</h3>
+                    </div>
+                    <small>Security</small>
+                  </a>
                 </section>
               </div>
             </main>
