@@ -71,6 +71,18 @@ function Blog() {
               <div className={`${utilStyles.contentWrapper}`}>
                 <a
                   className={`${utilStyles.mainCard}`}
+                  href="/writings/the-history-of-the-browser"
+                >
+                  <div>
+                    <h3 className={`${utilStyles.headingL}`}>
+                      The history of the browser
+                    </h3>
+                  </div>
+                  <small>Article</small>
+                </a>
+
+                <a
+                  className={`${utilStyles.mainCard}`}
                   href="/writings/defining-design-systems"
                 >
                   <div>
