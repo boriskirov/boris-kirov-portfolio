@@ -143,10 +143,8 @@ function DefineDesignSystems() {
                   <blockquote>
                     <small>:body.</small>
                     <small>:h1. Hello, I'm Boris</small>
-                    <small>
-                      :p. Bulgarian Product designer, currently living in
-                      Amsterdam, The Netherlands
-                    </small>
+                    <small>:p. Bulgarian Product designer, currently</small>
+                    <small>living in Amsterdam, The Netherlands</small>
                     <small>:ul. My interests are</small>
                     <small>:li. Technology</small>
                     <small>:li. Sofware</small>
