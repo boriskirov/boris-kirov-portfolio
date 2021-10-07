@@ -1,5 +1,3 @@
-import styles from "../styles/footer.module.css";
-
 const Footer = () => (
   <footer>
     <a
@@ -10,8 +8,8 @@ const Footer = () => (
       Get Resume 2021 ©{" "}
     </a>
     <div>
-      <ul className={`${styles.footerList}`}>
-        <li className={`${styles.footerLi}`}>
+      <ul className="footerList">
+        <li className="footerLi">
           <a
             href="https://github.com/boriskirov"
             target="_blank"
@@ -20,7 +18,7 @@ const Footer = () => (
             GitHub
           </a>
         </li>
-        <li className={`${styles.footerLi}`}>
+        <li className="footerLi">
           <a
             href="https://figma.com/@boriskirov"
             target="_blank"
@@ -29,7 +27,7 @@ const Footer = () => (
             Figma
           </a>
         </li>
-        <li className={`${styles.footerLi}`}>
+        <li className="footerLi">
           <a
             href="https://twitter.com/boris_a_kirov"
             target="_blank"
@@ -38,7 +36,7 @@ const Footer = () => (
             Twitter
           </a>
         </li>
-        <li className={`${styles.footerLi}`}>
+        <li className="footerLi">
           <a
             href="https://www.linkedin.com/in/boris-kirov-b6b110a4/"
             target="_blank"

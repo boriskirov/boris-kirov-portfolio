@@ -1,207 +1,157 @@
 import React from "react";
-import { ThemeProvider } from "styled-components";
-import { useDarkMode } from "../components/useDarkMode";
-import { lightTheme, darkTheme } from "../components/theme";
-import { GlobalStyles } from "../components/global";
+
 import { motion } from "framer-motion";
 
-import Head from "next/head";
+import HeadData from "../components/head-data";
 import Link from "next/link";
+import Header from "../components/header";
 
-import Toggle from "../components/toggle";
-import utilStyles from "../styles/utils.module.css";
-
-function fourOfour() {
-  const [theme, toggleTheme] = useDarkMode();
-  const themeMode = theme === "light" ? lightTheme : darkTheme;
-
+function Miro() {
   return (
-    <ThemeProvider theme={themeMode}>
-      <>
-        <motion.div>
-          <div className={`${utilStyles.mainWrapper}`}>
-            <GlobalStyles />
-            <Head>
-              <title>Boris Kirov - Product Designer</title>
-              <link rel="icon" href="/favicon.png" />
-              <meta name="description" content="Product designer" />
-              <meta property="og:type" content="website" />
-              <meta
-                name="og:title"
-                property="og:title"
-                content="Boris Kirov - Product Designer"
+    <>
+      <motion.div
+        initial={{
+          y: 25,
+          opacity: 0,
+        }}
+        animate={{
+          y: [25, 1],
+          opacity: 1,
+        }}
+        transition={{ ease: "easeOut", duration: 0.5 }}
+      >
+        <div className="mainWrapper">
+          <HeadData />
+
+          <Header />
+
+          <main className="innerWrapper">
+            <Link href="/">
+              <a className="backButton">Back</a>
+            </Link>
+            <div className="flex">
+              <img
+                className="stackCardImg"
+                src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimages.saasworthy.com%2Fmiro_3781_logo_1598617687_dsfet.png&f=1&nofb=1"
               />
-              <meta
-                name="og:description"
-                property="og:description"
-                content="Technical designer interested in systems, front-end, open source and collaborative design."
-              />
-              <meta
-                property="og:site_name"
-                content="Boris Kirov - Product designer"
-              />
-              <meta property="og:url" content="https://www.boriskirov.com" />
-              <meta property="og:image" content="/favicon.png" />
-              <meta name="twitter:card" content="summary" />
-              <meta
-                name="twitter:title"
-                content="Boris Kirov - Product Designer"
-              />
-              <meta
-                name="twitter:description"
-                content="Technical designer interested in systems, front-end, open source and collaborative design."
-              />
-              <meta name="twitter:site" content="https://www.boriskirov.com" />
-              <meta name="twitter:creator" content="Boris Kirov" />
-              <meta name="twitter:image" content="/favicon.png" />
-              <link rel="apple-touch-icon" href="/favicon.png" />
-            </Head>
+            </div>
+            <p>
+              Miro is a leading collaborative whiteboarding solution. Where
+              distributed teams get work done. Together, online. The work that's
+              listed below was done in close collaboration with my fellow
+              Mironeers.{" "}
+              <a
+                href="https://www.miro.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Go to Miro
+              </a>
+            </p>
 
-            <header>
-              <small>Crafted in Amsterdam ♥️</small>
-              {/* <Toggle theme={theme} toggleTheme={toggleTheme} /> */}
-            </header>
+            <ul>
+              <li>
+                <ul>
+                  <h2>Design system</h2>
 
-            <main className={`${utilStyles.innerWrapper}`}>
-              <Link href="/">
-                <a className={`${utilStyles.backButton}`}>Back</a>
-              </Link>
-              <div className={`${utilStyles.flex}`}>
-                <img
-                  className={`${utilStyles.stackCardImg}`}
-                  src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimages.saasworthy.com%2Fmiro_3781_logo_1598617687_dsfet.png&f=1&nofb=1"
-                />
-              </div>
-              <p>
-                Miro is a leading collaborative whiteboarding solution. Where
-                distributed teams get work done. Together, online. The work
-                that's listed below was done in close collaboration with my
-                fellow Mironeers.{" "}
-                <a
-                  href="https://www.miro.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Go to Miro
-                </a>
-              </p>
+                  <li className="listStyleCircle">Grower and advocate</li>
+                  <li className="listStyleCircle">
+                    Ways of working, contribution models and stream
+                    collaboration processes
+                  </li>
+                  <li className="listStyleCircle">Onboarding members</li>
+                  <li className="listStyleCircle">
+                    Collaborate and contribute with production-ready code
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <ul>
+                  <h2>Accessibility</h2>
 
-              <ul>
-                <li>
-                  <ul>
-                    <h2>Design system</h2>
+                  <li className="listStyleCircle">
+                    <a
+                      href="https://miro.com/accessibility-statement/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Miro Accessibility
+                    </a>
+                  </li>
+                  <li className="listStyleCircle">
+                    Design improvements based on the
+                    <a
+                      href="https://www.w3.org/TR/WCAG21/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      WCAG 2.1
+                    </a>
+                  </li>
+                  <li className="listStyleCircle">
+                    Collaborate and contribute with production-ready code
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <ul>
+                  <h2>Developer Experience</h2>
+                  <li className="listStyleCircle">
+                    <a
+                      href="https://developers.miro.com/docs"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Miro Developers
+                    </a>
+                  </li>
+                  <li className="listStyleCircle">
+                    <a
+                      href="https://mirotone.xyz"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      mirotone design system
+                    </a>
+                  </li>
+                  <li className="listStyleCircle">Getting started app</li>
+                  <li className="listStyleCircle">Your apps redesign</li>
+                  <li className="listStyleCircle">
+                    Developers comms template design
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <ul>
+                  <h2>Application Experience</h2>
 
-                    <li className={`${utilStyles.listStyleCircle}`}>
-                      Grower and advocate
-                    </li>
-                    <li className={`${utilStyles.listStyleCircle}`}>
-                      Ways of working, contribution models and stream
-                      collaboration processes
-                    </li>
-                    <li className={`${utilStyles.listStyleCircle}`}>
-                      Onboarding members
-                    </li>
-                    <li className={`${utilStyles.listStyleCircle}`}>
-                      Collaborate and contribute with production-ready code
-                    </li>
-                  </ul>
-                </li>
-                <li>
-                  <ul>
-                    <h2>Accessibility</h2>
-
-                    <li className={`${utilStyles.listStyleCircle}`}>
-                      <a
-                        href="https://miro.com/accessibility-statement/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        Miro Accessibility
-                      </a>
-                    </li>
-                    <li className={`${utilStyles.listStyleCircle}`}>
-                      Design improvements based on the
-                      <a
-                        href="https://www.w3.org/TR/WCAG21/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        WCAG 2.1
-                      </a>
-                    </li>
-                    <li className={`${utilStyles.listStyleCircle}`}>
-                      Collaborate and contribute with production-ready code
-                    </li>
-                  </ul>
-                </li>
-                <li>
-                  <ul>
-                    <h2>Developer Experience</h2>
-                    <li className={`${utilStyles.listStyleCircle}`}>
-                      <a
-                        href="https://developers.miro.com/docs"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        Miro Developers
-                      </a>
-                    </li>
-                    <li className={`${utilStyles.listStyleCircle}`}>
-                      <a
-                        href="https://mirotone.xyz"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        mirotone design system
-                      </a>
-                    </li>
-                    <li className={`${utilStyles.listStyleCircle}`}>
-                      Getting started app
-                    </li>
-                    <li className={`${utilStyles.listStyleCircle}`}>
-                      Your apps redesign
-                    </li>
-                    <li className={`${utilStyles.listStyleCircle}`}>
-                      Developers comms template design
-                    </li>
-                  </ul>
-                </li>
-                <li>
-                  <ul>
-                    <h2>Application Experience</h2>
-
-                    <li className={`${utilStyles.listStyleCircle}`}>
-                      Installation & Authorization logic
-                    </li>
-                    <li className={`${utilStyles.listStyleCircle}`}>
-                      App submission & reviews
-                    </li>
-                    <li className={`${utilStyles.listStyleCircle}`}>
-                      Enterprise app experience
-                    </li>
-                  </ul>
-                </li>
-                <li>
-                  <ul>
-                    <h2>Side projects</h2>
-                    <li className={`${utilStyles.listStyleCircle}`}>
-                      <a
-                        href="https://miroshortcuts.vercel.app/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        Miro Shortcuts
-                      </a>
-                    </li>
-                  </ul>
-                </li>
-              </ul>
-            </main>
-          </div>
-        </motion.div>
-      </>
-    </ThemeProvider>
+                  <li className="listStyleCircle">
+                    Installation & Authorization logic
+                  </li>
+                  <li className="listStyleCircle">App submission & reviews</li>
+                  <li className="listStyleCircle">Enterprise app experience</li>
+                </ul>
+              </li>
+              <li>
+                <ul>
+                  <h2>Side projects</h2>
+                  <li className="listStyleCircle">
+                    <a
+                      href="https://miroshortcuts.vercel.app/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Miro Shortcuts
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </main>
+        </div>
+      </motion.div>
+    </>
   );
 }
 
-export default fourOfour;
+export default Miro;

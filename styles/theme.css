@@ -1,0 +1,25 @@
+.theme-toggle {
+  background-image: url("../public/dark-mode.svg");
+  background-repeat: no-repeat;
+  width: 32px;
+  height: 32px;
+  background-position-x: 4px;
+  background-position-y: 4px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transform: rotate(-360deg);
+  outline: none;
+}
+
+.dark .theme-toggle {
+  background-image: url("../public/light-mode.svg");
+  transform: rotate(0deg);
+}
+
+html,
+.dark body {
+  background-color: #131313;
+  color: #e2e2e2;
+}
