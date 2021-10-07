@@ -2,7 +2,7 @@ import React from "react";
 
 import { motion } from "framer-motion";
 
-import HeadData from "../components/head-data";
+import HeadData from "../components/headata";
 import Link from "next/link";
 import Header from "../components/header";
 
@@ -22,7 +22,6 @@ function Blog() {
       >
         <div className="mainWrapper">
           <HeadData />
-
           <Header />
 
           <main className="innerWrapper">
