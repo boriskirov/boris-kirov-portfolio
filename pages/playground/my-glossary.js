@@ -2,8 +2,9 @@ import React from "react";
 
 import { motion } from "framer-motion";
 
-import HeadData from "../components/headata";
+import HeadData from "../../components/headata";
 import Link from "next/link";
+import Header from "../../components/header";
 
 function Mirotone() {
   return (
@@ -22,9 +23,7 @@ function Mirotone() {
         <div className="mainWrapper">
           <HeadData />
 
-          <header>
-            <small>Crafted in Amsterdam ♥️</small>
-          </header>
+          <Header />
 
           <main className="innerWrapper">
             <Link href="/playground">

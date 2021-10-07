@@ -2,9 +2,9 @@ import React from "react";
 
 import { motion } from "framer-motion";
 
-import HeadData from "../components/headata";
+import HeadData from "../../components/headata";
 import Link from "next/link";
-import Header from "../components/header";
+import Header from "../../components/header";
 
 function DefineDesignSystems() {
   return (
