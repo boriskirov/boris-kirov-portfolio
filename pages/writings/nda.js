@@ -11,11 +11,11 @@ function NDA() {
     <>
       <motion.div
         initial={{
-          y: 25,
+          y: 5,
           opacity: 0,
         }}
         animate={{
-          y: [25, 1],
+          y: [5, 1],
           opacity: 1,
         }}
         transition={{ ease: "easeOut", duration: 0.5 }}
@@ -43,7 +43,7 @@ function NDA() {
                   insights on design process that will motivate everyone to
                   improve and keep on working on big complex data projects.
                 </p>
-                <h3 className="headingL">Challenge</h3>
+                <h6 className="headingL">Challenge</h6>
                 <p>
                   ne of the most challenging parts of the product was how to
                   incorporate a design process in an already developed platform
@@ -58,7 +58,7 @@ function NDA() {
                   integrating a correct design process as instrument for
                   development in the product's future.
                 </p>
-                <h3 className="headingL">Process</h3>
+                <h6 className="headingL">Process</h6>
                 <h4>1. Design is just another tool for communication. </h4>
                 <p>
                   The process is all that matters at the end, not your designs.
@@ -231,7 +231,7 @@ function NDA() {
                   order to layout the logic behind every role and the
                   connectivity between them.
                 </blockquote>
-                <h3 className="headingL">Conclusion</h3>
+                <h6 className="headingL">Conclusion</h6>
                 <p>
                   All those parts of the whole picture are the things that
                   matter, at the end the most important goal is the product. By
@@ -265,12 +265,15 @@ function NDA() {
                     SketchResources
                   </a>
                 </p>
-                <a className="mainCard" href="/writings/tripscout">
-                  <div>
-                    <h3 className="headingL">Working with TripScout</h3>
-                  </div>
-                  <small>Read more</small>
-                </a>
+
+                <Link href="/writings/tripscout">
+                  <a className="mainCard">
+                    <div>
+                      <h6 className="headingL">Working with TripScout</h6>
+                    </div>
+                    <small>Read more</small>
+                  </a>
+                </Link>
               </section>
             </div>
           </main>

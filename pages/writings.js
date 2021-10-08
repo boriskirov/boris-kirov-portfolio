@@ -11,11 +11,11 @@ function Blog() {
     <>
       <motion.div
         initial={{
-          y: 25,
+          y: 5,
           opacity: 0,
         }}
         animate={{
-          y: [25, 1],
+          y: [5, 1],
           opacity: 1,
         }}
         transition={{ ease: "easeOut", duration: 0.5 }}
@@ -34,7 +34,7 @@ function Blog() {
               <Link href="/writings/the-history-of-the-browser">
                 <a className="mainCard">
                   <div>
-                    <h3 className="headingL">The history of the browser</h3>
+                    <h6 className="headingL">The history of the browser</h6>
                   </div>
                   <small>Article</small>
                 </a>
@@ -43,7 +43,7 @@ function Blog() {
               <Link href="/writings/defining-design-systems">
                 <a className="mainCard">
                   <div>
-                    <h3 className="headingL">Defining design system</h3>
+                    <h6 className="headingL">Defining design system</h6>
                   </div>
                   <small>Article</small>
                 </a>
@@ -52,7 +52,7 @@ function Blog() {
               <Link href="/writings/great-wall-of-development">
                 <a className="mainCard">
                   <div>
-                    <h3 className="headingL">Wall of development</h3>
+                    <h6 className="headingL">Wall of development</h6>
                   </div>
                   <small>Case study</small>
                 </a>
@@ -61,7 +61,7 @@ function Blog() {
               <Link href="/writings/tripscout">
                 <a className="mainCard">
                   <div>
-                    <h3 className="headingL">Working with TripScout</h3>
+                    <h6 className="headingL">Working with TripScout</h6>
                   </div>
                   <small>Case study</small>
                 </a>
@@ -70,9 +70,9 @@ function Blog() {
               <Link href="/writings/nda">
                 <a className="mainCard">
                   <div>
-                    <h3 className="headingL">
+                    <h6 className="headingL">
                       Implementing design system thinking
-                    </h3>
+                    </h6>
                   </div>
                   <small>Case study</small>
                 </a>
@@ -81,7 +81,7 @@ function Blog() {
               <Link href="/writings/improve-impatience">
                 <a className="mainCard">
                   <div>
-                    <h3 className="headingL">Improve Impatience</h3>
+                    <h6 className="headingL">Improve Impatience</h6>
                   </div>
                   <small>Article</small>
                 </a>

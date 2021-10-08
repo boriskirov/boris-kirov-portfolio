@@ -5,7 +5,7 @@ const Footer = () => (
       target="_blank"
       rel="noopener noreferrer"
     >
-      Get Resume 2021 ©{" "}
+      <small>Get Resume 2021 © </small>
     </a>
     <div>
       <ul className="footerList">
@@ -15,7 +15,7 @@ const Footer = () => (
             target="_blank"
             rel="noopener noreferrer"
           >
-            GitHub
+            <small>GitHub </small>
           </a>
         </li>
         <li className="footerLi">
@@ -24,7 +24,7 @@ const Footer = () => (
             target="_blank"
             rel="noopener noreferrer"
           >
-            Figma
+            <small>Figma </small>
           </a>
         </li>
         <li className="footerLi">
@@ -33,7 +33,7 @@ const Footer = () => (
             target="_blank"
             rel="noopener noreferrer"
           >
-            Twitter
+            <small>Twitter </small>
           </a>
         </li>
         <li className="footerLi">
@@ -42,7 +42,7 @@ const Footer = () => (
             target="_blank"
             rel="noopener noreferrer"
           >
-            LinkedIn
+            <small>LinkedIn </small>
           </a>
         </li>
       </ul>

@@ -11,11 +11,11 @@ function Impatience() {
     <>
       <motion.div
         initial={{
-          y: 25,
+          y: 5,
           opacity: 0,
         }}
         animate={{
-          y: [25, 1],
+          y: [5, 1],
           opacity: 1,
         }}
         transition={{ ease: "easeOut", duration: 0.5 }}
@@ -54,7 +54,7 @@ function Impatience() {
                   interesting results and food for thought that I decided to
                   share.
                 </p>
-                <h3 className="headingL">People and our lack of patience</h3>
+                <h6 className="headingL">People and our lack of patience</h6>
                 <p>
                   I know everyone has that friend, who is just flipping his
                   phone from time to time to see if everything is in place. If
@@ -71,9 +71,9 @@ function Impatience() {
                   manner we have a fast way out. Where we can easily find
                   something to hold our attention for a while.
                 </p>
-                <h3 className="headingL">
+                <h6 className="headingL">
                   How I started to be on point and on time
-                </h3>
+                </h6>
                 <p>
                   I missed a couple of meetings, deadlines, project and dates
                   because of my phone and the lack of the Reminder app. I used
@@ -92,7 +92,7 @@ function Impatience() {
                   commitments more before answering, just to be on the safe
                   side.
                 </p>
-                <h3 className="headingL">What made my phone return</h3>
+                <h6 className="headingL">What made my phone return</h6>
                 <p>
                   People acted strange when they heard that I hadn’t used a
                   phone for а couple of months. There was this one time that I
@@ -114,7 +114,7 @@ function Impatience() {
                   can easily ask questions and get direct answers, which is
                   important for normal communication between people.
                 </p>
-                <h3 className="headingL">Is software guilty?</h3>
+                <h6 className="headingL">Is software guilty?</h6>
                 <p>
                   I spend some time reading and listening to{" "}
                   <a href="https://medium.com/@tristanharris">Tristan Harris</a>{" "}
@@ -191,7 +191,7 @@ function Impatience() {
                   I set only the most important apps on my home screen to ignore
                   the notifications.
                 </blockquote>
-                <h3 className="headingL">Conclusion</h3>
+                <h6 className="headingL">Conclusion</h6>
 
                 <img
                   className="imgVertical"
@@ -224,15 +224,14 @@ function Impatience() {
                     Despark's official blog
                   </a>
                 </p>
-                <a
-                  className="mainCard"
-                  href="/writings/great-wall-of-development"
-                >
-                  <div>
-                    <h3 className="headingL">Wall of development</h3>
-                  </div>
-                  <small>Read more</small>
-                </a>
+                <Link href="/writings/great-wall-of-development">
+                  <a className="mainCard">
+                    <div>
+                      <h6 className="headingL">Wall of development</h6>
+                    </div>
+                    <small>Read more</small>
+                  </a>
+                </Link>
               </section>
             </div>
           </main>

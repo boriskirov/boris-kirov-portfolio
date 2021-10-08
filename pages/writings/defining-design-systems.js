@@ -11,11 +11,11 @@ function DefineDesignSystems() {
     <>
       <motion.div
         initial={{
-          y: 25,
+          y: 5,
           opacity: 0,
         }}
         animate={{
-          y: [25, 1],
+          y: [5, 1],
           opacity: 1,
         }}
         transition={{ ease: "easeOut", duration: 0.5 }}
@@ -56,7 +56,7 @@ function DefineDesignSystems() {
                 </p>
                 <img src="/defining-design-systems-app-1.jpeg" />
 
-                <h3 className="headingL">1. Human by design</h3>
+                <h6 className="headingL">1. Human by design</h6>
                 <p>
                   Design has always been a human act. Designers are here to
                   help, create, plan, and execute ideas, which at the end should
@@ -211,7 +211,7 @@ function DefineDesignSystems() {
                   give a definition of what a system is.
                 </p>
 
-                <h3 className="headingL">2. What is a system?</h3>
+                <h6 className="headingL">2. What is a system?</h6>
                 <p>
                   I am a fan of knowing what I use, every word has its own
                   meaning and sometimes the meaning gets blurred in order to
@@ -277,7 +277,7 @@ function DefineDesignSystems() {
                   communication in a comprehensive way.
                 </p>
 
-                <h3 className="headingL">3. Methods and processes</h3>
+                <h6 className="headingL">3. Methods and processes</h6>
                 <p>
                   A system is there to connect, unify, and communicate
                   processes. A design system then should be something to connect
@@ -337,9 +337,9 @@ function DefineDesignSystems() {
                   different cases we are trying to cover.
                 </p>
 
-                <h3 className="headingL">
+                <h6 className="headingL">
                   4. There is one design system in the end
-                </h3>
+                </h6>
                 <p>
                   Design systems are inclusive. Тhey involve every part of the
                   product, the organization, the service, the business, the
@@ -407,7 +407,7 @@ function DefineDesignSystems() {
                 </p>
                 <img src="/defining-design-systems-app-4.jpeg" />
 
-                <h3 className="headingL">Design system definition</h3>
+                <h6 className="headingL">Design system definition</h6>
                 <p>
                   As humans, we are chains of systems that are constantly
                   communicating with each other, and we try to humanize
@@ -431,15 +431,16 @@ function DefineDesignSystems() {
                     Pirate Jazzy
                   </a>
                 </p>
-
-                <a className="mainCard" href="/writings/nda">
-                  <div>
-                    <h3 className="headingL">
-                      Implementing design system thinking to a product
-                    </h3>
-                  </div>
-                  <small>Read more</small>
-                </a>
+                <Link href="/writings/nda">
+                  <a className="mainCard">
+                    <div>
+                      <h6 className="headingL">
+                        Implementing design system thinking to a product
+                      </h6>
+                    </div>
+                    <small>Read more</small>
+                  </a>
+                </Link>
               </section>
             </div>
           </main>

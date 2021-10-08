@@ -11,11 +11,11 @@ function Mirotone() {
     <>
       <motion.div
         initial={{
-          y: 25,
+          y: 5,
           opacity: 0,
         }}
         animate={{
-          y: [25, 1],
+          y: [5, 1],
           opacity: 1,
         }}
         transition={{ ease: "easeOut", duration: 0.5 }}

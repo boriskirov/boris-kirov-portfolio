@@ -11,11 +11,11 @@ function GreatWall() {
     <>
       <motion.div
         initial={{
-          y: 25,
+          y: 5,
           opacity: 0,
         }}
         animate={{
-          y: [25, 1],
+          y: [5, 1],
           opacity: 1,
         }}
         transition={{ ease: "easeOut", duration: 0.5 }}
@@ -48,9 +48,9 @@ function GreatWall() {
                   What type of knowledge should production-oriented designers
                   possess in order to be a vital part of every product team?
                 </blockquote>
-                <h3 className="headingL">
+                <h6 className="headingL">
                   Frameworks as a ladder to the top of the wall
-                </h3>
+                </h6>
                 <p>
                   The first step of every project would be to learn the
                   frameworks and technologies that are used. This is a good
@@ -101,9 +101,9 @@ function GreatWall() {
                   insights about how the design team took up that challenge and
                   improved it.
                 </p>
-                <h3 className="headingL">
+                <h6 className="headingL">
                   Reviewing the Github documentation.
-                </h3>
+                </h6>
                 <p>
                   Start by reading carefully the whole documentation, so many
                   handy things are hidden behind the words of the well-written
@@ -149,9 +149,9 @@ function GreatWall() {
                   all the focus to the alert and educate where the user can find
                   specific things across the application.
                 </blockquote>
-                <h3 className="headingL">
+                <h6 className="headingL">
                   Identify where the styles.js file lives
-                </h3>
+                </h6>
                 <p>
                   The styling of every library is held in a CSS file. In the
                   case of react-notification-system it was in a
@@ -169,7 +169,7 @@ function GreatWall() {
                   solve.
                 </p>
                 <img src="/wall-of-development-app-7.gif" />
-                <h3 className="headingL">Show off and share your styles</h3>
+                <h6 className="headingL">Show off and share your styles</h6>
                 <img src="/wall-of-development-app-8.png" />
                 <blockquote>
                   Proper visual communication and balance of the composition are
@@ -184,9 +184,9 @@ function GreatWall() {
                   in the production and actually make interface decisions, which
                   most of the time are left to be done by him either way.
                 </p>
-                <h3 className="headingL">
+                <h6 className="headingL">
                   Everything is just a building block
-                </h3>
+                </h6>
                 <p>
                   Now designers have the chance to make a real difference on how
                   the interface looks like and behaves. Meeting the business
@@ -232,14 +232,16 @@ function GreatWall() {
                     Medium
                   </a>
                 </p>
-                <a className="mainCard" href="/writings/nda">
-                  <div>
-                    <h3 className="headingL">
-                      Implementing design system thinking to a product
-                    </h3>
-                  </div>
-                  <small>Read more</small>
-                </a>
+                <Link href="/writings/nda">
+                  <a className="mainCard" href="/writings/nda">
+                    <div>
+                      <h6 className="headingL">
+                        Implementing design system thinking to a product
+                      </h6>
+                    </div>
+                    <small>Read more</small>
+                  </a>
+                </Link>
               </section>
             </div>
           </main>

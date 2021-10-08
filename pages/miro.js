@@ -11,11 +11,11 @@ function Miro() {
     <>
       <motion.div
         initial={{
-          y: 25,
+          y: 5,
           opacity: 0,
         }}
         animate={{
-          y: [25, 1],
+          y: [5, 1],
           opacity: 1,
         }}
         transition={{ ease: "easeOut", duration: 0.5 }}
@@ -52,7 +52,7 @@ function Miro() {
             <ul>
               <li>
                 <ul>
-                  <h2>Design system</h2>
+                  <h3>Design system</h3>
 
                   <li className="listStyleCircle">Grower and advocate</li>
                   <li className="listStyleCircle">
@@ -67,7 +67,7 @@ function Miro() {
               </li>
               <li>
                 <ul>
-                  <h2>Accessibility</h2>
+                  <h3>Accessibility</h3>
 
                   <li className="listStyleCircle">
                     <a
@@ -95,7 +95,7 @@ function Miro() {
               </li>
               <li>
                 <ul>
-                  <h2>Developer Experience</h2>
+                  <h3>Developer Experience</h3>
                   <li className="listStyleCircle">
                     <a
                       href="https://developers.miro.com/docs"
@@ -123,7 +123,7 @@ function Miro() {
               </li>
               <li>
                 <ul>
-                  <h2>Application Experience</h2>
+                  <h3>Application Experience</h3>
 
                   <li className="listStyleCircle">
                     Installation & Authorization logic
@@ -134,7 +134,7 @@ function Miro() {
               </li>
               <li>
                 <ul>
-                  <h2>Side projects</h2>
+                  <h3>Side projects</h3>
                   <li className="listStyleCircle">
                     <a
                       href="https://miroshortcuts.vercel.app/"

@@ -11,11 +11,11 @@ function DefineDesignSystems() {
     <>
       <motion.div
         initial={{
-          y: 25,
+          y: 5,
           opacity: 0,
         }}
         animate={{
-          y: [25, 1],
+          y: [5, 1],
           opacity: 1,
         }}
         transition={{ ease: "easeOut", duration: 0.5 }}
@@ -80,7 +80,7 @@ function DefineDesignSystems() {
                   came from. The need for the web browser.
                 </p>
 
-                <h3 className="headingL">The race for science</h3>
+                <h6 className="headingL">The race for science</h6>
                 <p>
                   The end of WWII was a historical moment for the human race,
                   which generated a wave of scientific interest in nuclear
@@ -168,7 +168,7 @@ function DefineDesignSystems() {
                   could be used by more than one application.
                 </p>
 
-                <h3 className="headingL">The need for a shared library</h3>
+                <h6 className="headingL">The need for a shared library</h6>
                 <p>
                   Organizations were now growing and the main goal was to ensure
                   that everybody in the team is up-to-date with the information,
@@ -255,7 +255,7 @@ function DefineDesignSystems() {
                   and Sons of Paternoster Square in London.
                 </small>
 
-                <h3 className="headingL">Something was missing</h3>
+                <h6 className="headingL">Something was missing</h6>
                 <p>
                   The hypertext application were running all around, but
                   something was wrong and Tim had to go back to CERN for his
@@ -307,13 +307,7 @@ function DefineDesignSystems() {
                   {" "}
                   <source src="/line-mode.mp4" type="video/mp4"></source>
                 </video>
-                <small>
-                  The line mode browser can be seen here:
-                  <a href="https://line-mode.cern.ch/www/hypertext/WWW/TheProject.html">
-                    {" "}
-                    https://line-mode.cern.ch/www/hypertext/WWW/TheProject.html
-                  </a>
-                </small>
+                <small>The line mode browser.</small>
 
                 <p>
                   This new browser WWW was running on HTML. HTML was based on
@@ -435,15 +429,16 @@ function DefineDesignSystems() {
                     </li>
                   </ul>
                 </details>
-
-                <a className="mainCard" href="/writings/nda">
-                  <div>
-                    <h3 className="headingL">
-                      Implementing design system thinking to a product
-                    </h3>
-                  </div>
-                  <small>Read more</small>
-                </a>
+                <Link href="/writings/nda">
+                  <a className="mainCard">
+                    <div>
+                      <h6 className="headingL">
+                        Implementing design system thinking to a product
+                      </h6>
+                    </div>
+                    <small>Read more</small>
+                  </a>
+                </Link>
               </section>
             </div>
           </main>

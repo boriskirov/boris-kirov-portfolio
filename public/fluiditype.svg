@@ -1,0 +1,23 @@
+    <svg class="svg-icon-hover" width="50px" height="50px" viewBox="0 0 50 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Fluiditype</title>
+        <g id="baseTwo" transform="translate(0.000000, 11.000000)">
+            <path d="M24.8242185,0 C35.3500863,0 44.5661789,5.60781414 49.6478297,13.9987757 C44.5669131,22.3917391 35.3505056,28 24.8242185,28 C14.2983506,28 5.082258,22.3921859 0.000607227972,14.0012243 C5.08152379,5.6082609 14.2979314,0 24.8242185,0 Z" id="base" fill="#FB5D5D">
+            </path>
+            <circle id="inner-black" fill="#000000" cx="24.5" cy="14.5" r="9.5">
+            </circle>
+            <circle id="inner-white-hover" fill="#FCFCFF" cx="24.5" cy="14.5" r="3.5">
+            </circle>
+        </g>
+        <animate
+                xlink:href="#inner-white-hover" 
+                attributeName="r" 
+                from="3" 
+                to="7" 
+                dur="2s" 
+                repeatCount="indefinite"
+       
+                values="3; 7; 3;"
+                keyTimes="0 ; 0.2 ; 1;"
+                keySplines="0.99 0 0.47 0.42;"
+        />
+    </svg>

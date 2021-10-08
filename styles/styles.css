@@ -10,9 +10,12 @@
 }
 
 :root {
-  --heading-font: Spoof, sans-serif;
-  --body-font: Formular, sans-serif;
-  --code-font: Monaco, monospace;
+  --heading-font: SFMono-Regular, Consolas, "Liberation Mono", Menlo, Courier,
+    monospace;
+  --body-font: SFMono-Regular, Consolas, "Liberation Mono", Menlo, Courier,
+    monospace;
+  --code-font: SFMono-Regular, Consolas, "Liberation Mono", Menlo, Courier,
+    monospace;
   --dark-color: rgb(4, 3, 19);
   --dark-color-line-color: var(--whiteAlpha20);
   --light-color: rgba(240, 240, 243, 1);
@@ -88,10 +91,10 @@ h4 {
 small {
   display: flex;
   align-items: center;
+  font-size: 14px;
 }
 
 p {
-  font-size: 20px;
   line-height: 1.4;
   margin: 16px 0 24px 0;
 }
@@ -130,7 +133,6 @@ blockquote {
   background-color: #5454540f;
   border-left: 2px solid;
   font-style: italic;
-  font-size: 16px;
 }
 
 info {
@@ -172,7 +174,6 @@ info {
   }
 
   p {
-    font-size: 18px;
   }
 }
 
@@ -235,14 +236,14 @@ li.footerLi:last-child {
 .heading2Xl {
   margin: 0;
   line-height: 1.4;
-  font-size: 3.5vw;
+
   font-weight: 600;
   text-align: left;
 }
 
 .heading2XlNotReady {
   margin: 0;
-  font-size: 3.5vw;
+
   font-weight: 600;
   text-align: center;
   line-height: 1;
@@ -252,7 +253,7 @@ li.footerLi:last-child {
 .headingXl {
   margin: 0;
   line-height: 1.4;
-  font-size: 2vw;
+
   font-weight: 300;
   letter-spacing: 0.1vw;
 }
@@ -263,13 +264,11 @@ li.footerLi:last-child {
 }
 
 .headingL {
-  font-size: 24px;
   margin: 64px 0 8px;
   text-transform: uppercase;
 }
 
 .headingM {
-  font-size: 1.5vw;
   margin: 8px 8px;
   text-transform: uppercase;
 }
@@ -351,22 +350,22 @@ a.mainCard:focus {
   background-color: #5454541a;
 }
 
-.mainCard[href] h3 {
+.mainCard[href] h6 {
   padding: 4px 4px 0px 4px;
   margin: 8px 0;
 }
 
-.mainCard[href]:hover h3 {
+.mainCard[href]:hover h6 {
   background-color: #ffcf00;
   color: #3f53d9;
 }
 
-.mainCard[href]:active h3 {
+.mainCard[href]:active h6 {
   background-color: #ffcf00;
   color: #3f53d9;
 }
 
-.mainCard[href]:focus h3 {
+.mainCard[href]:focus h6 {
   background-color: #ffcf00;
   color: #3f53d9;
 }
@@ -407,22 +406,22 @@ a.stackCard:focus {
   background-color: #5454541a;
 }
 
-.stackCard[href] h3 {
+.stackCard[href] h6 {
   padding: 4px 2px;
   margin: 8px 8px;
 }
 
-.stackCard[href]:hover h3 {
+.stackCard[href]:hover h6 {
   background-color: #ffcf00;
   color: #3f53d9;
 }
 
-.stackCard[href]:active h3 {
+.stackCard[href]:active h6 {
   background-color: #ffcf00;
   color: #3f53d9;
 }
 
-.stackCard[href]:focus h3 {
+.stackCard[href]:focus h6 {
   background-color: #ffcf00;
   color: #3f53d9;
 }
@@ -484,22 +483,22 @@ a.externalPassage:focus {
   background-color: #5454541a;
 }
 
-.externalPassage[href] h3 {
+.externalPassage[href] h6 {
   padding: 4px 4px 0px 4px;
   margin: 8px 0;
 }
 
-.externalPassage[href]:hover h3 {
+.externalPassage[href]:hover h6 {
   background-color: #ffcf00;
   color: #3f53d9;
 }
 
-.externalPassage[href]:active h3 {
+.externalPassage[href]:active h6 {
   background-color: #ffcf00;
   color: #3f53d9;
 }
 
-.externalPassage[href]:focus h3 {
+.externalPassage[href]:focus h6 {
   background-color: #ffcf00;
   color: #3f53d9;
 }
@@ -508,6 +507,7 @@ a.externalPassage:focus {
   padding: 24px;
   line-height: 1.4;
   opacity: 0.7;
+  font-size: 14px;
 }
 
 .backButton {
@@ -523,7 +523,7 @@ a.externalPassage:focus {
   font-size: 5vw;
   font-weight: 900;
   float: left;
-  line-height: 0.65;
+  line-height: 0.55;
   margin-right: 8px;
   padding-top: 16px;
 }
@@ -546,14 +546,6 @@ a.externalPassage:focus {
     display: flex;
     width: 100%;
     flex-direction: column;
-  }
-
-  .headingL {
-    font-size: 3vw;
-  }
-
-  .headingM {
-    font-size: 3vw;
   }
 
   .dropCap {
@@ -582,20 +574,20 @@ a.externalPassage:focus {
 
   .heading2XlNotReady {
     text-align: center;
-    font-size: 6.5vw;
+    :6.5vw ;
   }
 
   .heading2Xl {
-    font-size: 7vw;
+    :7vw ;
   }
 
   .headingXl {
     margin-top: 8px;
-    font-size: 6vw;
+    :6vw ;
   }
 
   .headingL {
-    font-size: 4vw;
+    :4vw ;
   }
 
   .mainCard {

@@ -11,11 +11,11 @@ function Tripscout() {
     <>
       <motion.div
         initial={{
-          y: 25,
+          y: 5,
           opacity: 0,
         }}
         animate={{
-          y: [25, 1],
+          y: [5, 1],
           opacity: 1,
         }}
         transition={{ ease: "easeOut", duration: 0.5 }}
@@ -40,7 +40,7 @@ function Tripscout() {
                   application with more than 100,000 users created by exciting
                   people who are eager to travel and learn about new places.
                 </p>
-                <h3 className="headingL">Challenge</h3>
+                <h6 className="headingL">Challenge</h6>
                 <p>
                   1. How to introduce new features for creating trips and
                   itinerary maintenance, while keeping the flow smooth and
@@ -50,7 +50,7 @@ function Tripscout() {
                   2. How the new features should keep the application visuals
                   consistent.{" "}
                 </p>
-                <h3 className="headingL">Process</h3>
+                <h6 className="headingL">Process</h6>
                 <p>
                   The product team provided user stories and feedback
                   documentation, which showed that an urgent need for adding new
@@ -92,7 +92,7 @@ function Tripscout() {
                   between our teams to be smoother. It was like we spoke the
                   same language.{" "}
                 </p>
-                <h3 className="headingL">Conclusion</h3>
+                <h6 className="headingL">Conclusion</h6>
                 <p>
                   Every team should create their own documentation by
                   implementing the fundamentals of a systematic language. Using
@@ -130,15 +130,14 @@ function Tripscout() {
                     <strong>- TripScout Co-founder | Andy Acs</strong>
                   </p>
                 </blockquote>
-                <a
-                  className="mainCard"
-                  href="/writings/defining-design-systems"
-                >
-                  <div>
-                    <h3 className="headingL">Defining Design Systems</h3>
-                  </div>
-                  <small>Read more</small>
-                </a>
+                <Link href="/writings/defining-design-systems">
+                  <a className="mainCard">
+                    <div>
+                      <h6 className="headingL">Defining Design Systems</h6>
+                    </div>
+                    <small>Read more</small>
+                  </a>
+                </Link>
               </section>
             </div>
           </main>

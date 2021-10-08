@@ -12,11 +12,11 @@ function Blog() {
     <>
       <motion.div
         initial={{
-          y: 25,
+          y: 5,
           opacity: 0,
         }}
         animate={{
-          y: [25, 1],
+          y: [5, 1],
           opacity: 1,
         }}
         transition={{ ease: "easeOut", duration: 0.5 }}
@@ -92,7 +92,7 @@ function Blog() {
                 </p>
               </section>
               <section>
-                <h3 className="headingM">This site works because of</h3>
+                <h6 className="headingM">This site works because of</h6>
                 <a
                   className="stackCard"
                   href="https://nextjs.org/"
@@ -104,7 +104,7 @@ function Blog() {
                       className="stackCardImg"
                       src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.asapdevelopers.com%2Fwp-content%2Fuploads%2F2019%2F04%2Fnext_js.png&f=1&nofb=1"
                     />
-                    <h3 className="headingM">Next.js</h3>
+                    <h6 className="headingM">Next.js</h6>
                   </div>
                 </a>
 
@@ -119,7 +119,7 @@ function Blog() {
                       className="stackCardImg"
                       src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimages.saasworthy.com%2Fvercel_7966_logo_1591610946_s90wa.png&f=1&nofb=1"
                     />
-                    <h3 className="headingM">Vercel</h3>
+                    <h6 className="headingM">Vercel</h6>
                   </div>
                 </a>
 
@@ -134,7 +134,19 @@ function Blog() {
                       className="stackCardImg"
                       src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fappjoy.org%2Fwp-content%2Fuploads%2F2016%2F09%2FFramer-Framerjs-logo.jpg&f=1&nofb=1"
                     />
-                    <h3 className="headingM">Framer Motion</h3>
+                    <h6 className="headingM">Framer Motion</h6>
+                  </div>
+                </a>
+
+                <a
+                  className="stackCard"
+                  href="https//:www.fluiditype.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <div>
+                    <img className="stackCardImg" src="/fluiditype.svg" />
+                    <h6 className="headingM">Fluiditype</h6>
                   </div>
                 </a>
               </section>

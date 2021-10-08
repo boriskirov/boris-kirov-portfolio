@@ -11,11 +11,11 @@ function Playground() {
     <>
       <motion.div
         initial={{
-          y: 25,
+          y: 5,
           opacity: 0,
         }}
         animate={{
-          y: [25, 1],
+          y: [5, 1],
           opacity: 1,
         }}
         transition={{ ease: "easeOut", duration: 0.5 }}
@@ -38,7 +38,7 @@ function Playground() {
                 rel="noopener noreferrer"
               >
                 <div>
-                  <h3 className="headingL">Mirotone</h3>
+                  <h6 className="headingL">Mirotone</h6>
                 </div>
                 <small>Package</small>
               </a>
@@ -55,7 +55,7 @@ function Playground() {
                     }
                   `}</style>
                   <div>
-                    <h3 className="headingL"> Glossary </h3>
+                    <h6 className="headingL"> Glossary </h6>
                   </div>
                   <small>Methods & Practices</small>
                 </a>
@@ -68,7 +68,7 @@ function Playground() {
                 rel="noopener noreferrer"
               >
                 <div>
-                  <h3 className="headingL">Handoff Notes </h3>
+                  <h6 className="headingL">Handoff Notes </h6>
                 </div>
                 <small>Figma plugin</small>
               </a>
@@ -85,7 +85,7 @@ function Playground() {
                     }
                   `}</style>
                   <div>
-                    <h3 className="headingL"> Toolbox </h3>
+                    <h6 className="headingL"> Toolbox </h6>
                   </div>
                   <small>Tools & Software</small>
                 </a>
@@ -102,7 +102,7 @@ function Playground() {
                   }
                 `}</style>
                 <div>
-                  <h3 className="headingL">NPX Boriskirov </h3>
+                  <h6 className="headingL">NPX Boriskirov </h6>
                 </div>
                 <small>NPM Business Card </small>
               </a>
@@ -114,7 +114,7 @@ function Playground() {
                 rel="noopener noreferrer"
               >
                 <div>
-                  <h3 className="headingL">Fluidigrid </h3>
+                  <h6 className="headingL">Fluidigrid </h6>
                 </div>
                 <small>Package</small>
               </a>
@@ -126,7 +126,7 @@ function Playground() {
                 rel="noopener noreferrer"
               >
                 <div>
-                  <h3 className="headingL">Fluiditype </h3>
+                  <h6 className="headingL">Fluiditype </h6>
                 </div>
                 <small>Package</small>
               </a>
@@ -138,7 +138,7 @@ function Playground() {
                 rel="noopener noreferrer"
               >
                 <div>
-                  <h3 className="headingL">Emoji builder </h3>
+                  <h6 className="headingL">Emoji builder </h6>
                 </div>
                 <small>Sketch library</small>
               </a>
@@ -150,7 +150,7 @@ function Playground() {
                 rel="noopener noreferrer"
               >
                 <div>
-                  <h3 className="headingL">Git commands </h3>
+                  <h6 className="headingL">Git commands </h6>
                 </div>
                 <small>Helper doc</small>
               </a>
@@ -162,7 +162,7 @@ function Playground() {
                 rel="noopener noreferrer"
               >
                 <div>
-                  <h3 className="headingL">Figma commands</h3>
+                  <h6 className="headingL">Figma commands</h6>
                 </div>
                 <small>Helper doc</small>
               </a>
