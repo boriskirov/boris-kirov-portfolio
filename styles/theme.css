@@ -8,9 +8,14 @@
   border: none;
   background-color: transparent;
   cursor: pointer;
-  transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transition: all 0.75s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   transform: rotate(-360deg);
   outline: none;
+}
+
+.theme-toggle:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 4px #3f53d9;
 }
 
 .dark .theme-toggle {

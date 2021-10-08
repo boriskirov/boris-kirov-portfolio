@@ -99,6 +99,11 @@ p {
   margin: 16px 0 24px 0;
 }
 
+video:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 4px #3f53d9;
+}
+
 pre {
   margin: 0;
 }
@@ -450,7 +455,7 @@ a.stackCard:focus {
 }
 
 .dicCard summary {
-  font-weight: bold;
+  font-size: calc(var(--font-size) * 1);
 }
 
 details.dicCard summary:focus-visible {
