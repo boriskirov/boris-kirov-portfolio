@@ -11,6 +11,15 @@ const Footer = () => (
       <ul className="footerList">
         <li className="footerLi">
           <a
+            href="https://www.polywork.com/boriskirov"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <small>Polywork</small>
+          </a>
+        </li>
+        <li className="footerLi">
+          <a
             href="https://github.com/boriskirov"
             target="_blank"
             rel="noopener noreferrer"
