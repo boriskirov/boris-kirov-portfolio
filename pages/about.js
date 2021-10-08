@@ -140,7 +140,7 @@ function Blog() {
 
                 <a
                   className="stackCard"
-                  href="https//:www.fluiditype.com/"
+                  href="https://www.fluiditype.com/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
