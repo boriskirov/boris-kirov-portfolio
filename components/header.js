@@ -27,7 +27,12 @@ function DarkMode() {
   };
 
   return (
-    <button type="button" className="theme-toggle" onClick={onClick}></button>
+    <button
+      type="button"
+      aria-label="Theme toggle"
+      className="theme-toggle"
+      onClick={onClick}
+    ></button>
   );
 }
 const Header = () => (
