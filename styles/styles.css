@@ -31,9 +31,7 @@ body {
     monospace;
   background-color: #e2e2e2;
   color: #050038;
-  transition: all 0.75s ease-in-out;
   line-height: 1.5;
-  max-width: 1792px;
   scroll-behavior: smooth;
 }
 
