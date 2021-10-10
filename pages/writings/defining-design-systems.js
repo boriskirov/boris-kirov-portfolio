@@ -2,7 +2,7 @@ import React from "react";
 
 import { motion } from "framer-motion";
 
-import HeadData from "../../components/headata";
+import Metadata from "../../components/metadata";
 import Link from "next/link";
 import Header from "../../components/header";
 
@@ -21,7 +21,7 @@ function DefineDesignSystems() {
         transition={{ ease: "easeOut", duration: 0.5 }}
       >
         <div className="mainWrapper">
-          <HeadData />
+          <Metadata title="Defining a design system - " />
 
           <Header />
 
