@@ -28,7 +28,7 @@ const Home = () => (
 
         <p>
           and I'm getting things done at{" "}
-          <Link href="/miro" as="/about">
+          <Link href="/miro" as="/miro">
             <a className="internalPassage">Miro</a>
           </Link>
         </p>
