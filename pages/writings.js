@@ -27,6 +27,10 @@ const Writings = () => (
           <a className="backButton">Back</a>
         </Link>
         <h1 className="heading2Xl">WRITINGS</h1>
+        <p>
+          My small space where I try to think out loud about everything related
+          to design, software and technology.
+        </p>
 
         <div className="contentWrapper">
           <Link href="/writings/the-history-of-the-browser">

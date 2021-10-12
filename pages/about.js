@@ -33,6 +33,9 @@ const About = () => (
         <div className="contentWrapper">
           <section>
             <img src="/me.png" />
+            <small>`npx boriskirov`</small>
+          </section>
+          <section>
             <p>
               <span className="dropCap">M</span> y name is Boris Kirov. I'm a
               Bulgarian designer living in Amsterdam, The Netherlands. I use

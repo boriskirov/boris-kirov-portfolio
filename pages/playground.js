@@ -27,6 +27,11 @@ const Playground = () => (
           <a className="backButton">Back</a>
         </Link>
         <h1 className="heading2Xl">PLAYGROUND</h1>
+        <p>
+          Welcome to my playground, where I try to explore the functional,
+          visual and collaborative side of design. Feel free to browse through
+          the projects and experiment with them.
+        </p>
 
         <div className="contentWrapper">
           <a
@@ -103,22 +108,6 @@ const Playground = () => (
 
           <a
             className="externalPassage"
-            href="/playground/npx-boriskirov"
-            rel="noopener noreferrer"
-          >
-            <style jsx>{`
-              a {
-                cursor: e-resize;
-              }
-            `}</style>
-            <div>
-              <h6 className="headingL">NPX Boriskirov </h6>
-            </div>
-            <small>NPM Business Card </small>
-          </a>
-
-          <a
-            className="externalPassage"
             href="https://fluidigrid.com/"
             target="_blank"
             rel="noopener noreferrer"
@@ -173,6 +162,18 @@ const Playground = () => (
           >
             <div>
               <h6 className="headingL">Figma commands</h6>
+            </div>
+            <small>Helper doc</small>
+          </a>
+
+          <a
+            className="externalPassage"
+            href="https://github.com/boriskirov/shell-commands"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div>
+              <h6 className="headingL">Shell commands</h6>
             </div>
             <small>Helper doc</small>
           </a>
