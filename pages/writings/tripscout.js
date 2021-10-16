@@ -1,28 +1,16 @@
 import React from "react";
 
-import { motion } from "framer-motion";
-
+import Motion from "../../components/motion";
 import Metadata from "../../components/metadata";
 import Link from "next/link";
-import Header from "../../components/header";
+import MainWrapper from "../../components/mainWrapper";
+import Main from "../../components/innerWrapper";
 
 const Tripscout = () => (
-  <motion.div
-    initial={{
-      y: 5,
-      opacity: 0,
-    }}
-    animate={{
-      y: [5, 1],
-      opacity: 1,
-    }}
-    transition={{ ease: "easeOut", duration: 0.5 }}
-  >
-    <div className="mainWrapper">
+  <Motion>
+    <MainWrapper>
       <Metadata title="Tripscout - " />
-
-      <Header />
-      <main className="innerWrapper">
+      <Main>
         <Link href="/writings">
           <a className="backButton">Back</a>
         </Link>
@@ -132,9 +120,9 @@ const Tripscout = () => (
             </Link>
           </section>
         </div>
-      </main>
-    </div>
-  </motion.div>
+      </Main>
+    </MainWrapper>
+  </Motion>
 );
 
 export default Tripscout;

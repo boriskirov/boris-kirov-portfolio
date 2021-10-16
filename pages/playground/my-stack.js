@@ -1,28 +1,15 @@
 import React from "react";
-
-import { motion } from "framer-motion";
-
+import Motion from "../../components/motion";
+import MainWrapper from "../../components/mainWrapper";
 import Metadata from "../../components/metadata";
+import Main from "../../components/innerWrapper";
 import Link from "next/link";
-import Header from "../../components/header";
 
 const Toolbox = () => (
-  <motion.div
-    initial={{
-      y: 5,
-      opacity: 0,
-    }}
-    animate={{
-      y: [5, 1],
-      opacity: 1,
-    }}
-    transition={{ ease: "easeOut", duration: 0.5 }}
-  >
-    <div className="mainWrapper">
+  <Motion>
+    <MainWrapper>
       <Metadata title="Toolbox - " />
-      <Header />
-
-      <main className="innerWrapper">
+      <Main>
         <Link href="/playground">
           <a className="backButton">Back</a>
         </Link>
@@ -419,9 +406,9 @@ const Toolbox = () => (
             </a>
           </section>
         </div>
-      </main>
-    </div>
-  </motion.div>
+      </Main>
+    </MainWrapper>
+  </Motion>
 );
 
 export default Toolbox;
