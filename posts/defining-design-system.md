@@ -12,7 +12,7 @@ In this post, I will try to give a definition of a design system and how the sys
 
 ![Defining Design system](../../defining-design-systems-app-1.jpeg)
 
-#### 1. Human by design
+##### 1. Human by design
 
 Design has always been a human act. Designers are here to help, create, plan, and execute ideas, which at the end should serve a purpose. Designers are so much more than before, so much more involved in every level of the business and the organization’s body.
 
@@ -53,7 +53,7 @@ So you see this is how we work, we are a chain of systems that work together. Ev
 
 Let’s try to think about design systems now, and how they fit in the context of the stated above. But first let’s try to give a definition of what a system is.
 
-#### 2. What is a system?
+##### 2. What is a system?
 
 I am a fan of knowing what I use, every word has its own meaning and sometimes the meaning gets blurred in order to correspond to the situations we are in. But to give a definition of what a design system is, first we have to look through the core definition and then try to translate it in the context of design. Here are some definitions of what a system is, a system is:
 
@@ -74,7 +74,7 @@ So we can see every source has its own way of defining what a system is but in t
 
 Systems are all about connection, unification and communication in a comprehensive way.
 
-#### 3. Methods and processes
+##### 3. Methods and processes
 
 A system is there to connect, unify, and communicate processes. A design system then should be something to connect and unify the process of creation, delivery and handover of а products or services from a design perspective.
 
@@ -94,7 +94,7 @@ We feel the future is brought by those big services and products that are expand
 
 Having one design system which actually works with other small micro-design systems would be the best solution to the many different cases we are trying to cover.
 
-#### 4. There is one design system in the end
+##### 4. There is one design system in the end
 
 Design systems are inclusive. Тhey involve every part of the product, the organization, the service, the business, the visual design, the code, the process. But then what about some questions that come right away like:
 
@@ -119,7 +119,7 @@ In the end, it all comes to one thing — it is a process, a service, a way of w
 
 ![Defining Design system](../../defining-design-systems-app-4.jpeg)
 
-#### Design system definition
+##### Design system definition
 
 As humans, we are chains of systems that are constantly communicating with each other, and we try to humanize everything we do. We use systems as tools to communicate complex processes and connect them in a unified and comprehensive way. So by saying all this we should be able to give a definition for design system:
 

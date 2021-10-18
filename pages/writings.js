@@ -30,21 +30,20 @@ export default function Writings({ allPostsData }) {
             My small space where I try to think out loud about everything
             related to design, software and technology.
           </p>
-
-          {/* Add this <section> tag below the existing <section> tag */}
-
-          {allPostsData.map(({ id, type, title }) => (
-            <a className="mainCard" key={id}>
-              <Link href={`/posts/${id}`}>
-                <h6 className="headingL">{title}</h6>
-              </Link>
-              <small>{type}</small>
-            </a>
-          ))}
-
-          {/* Add this <section> tag below the existing <section> tag */}
-
           <div className="contentWrapper">
+            {/* Add this <section> tag below the existing <section> tag */}
+
+            {allPostsData.map(({ id, type, title }) => (
+              <Link href={`/posts/${id}`}>
+                <a className="mainCard" key={id}>
+                  <h6 className="headingL">{title}</h6>
+                  <small>{type}</small>
+                </a>
+              </Link>
+            ))}
+
+            {/* Add this <section> tag below the existing <section> tag */}
+            {/* 
             <Link href="/writings/the-history-of-the-browser">
               <a className="mainCard">
                 <div>
@@ -99,7 +98,7 @@ export default function Writings({ allPostsData }) {
                 </div>
                 <small>Article</small>
               </a>
-            </Link>
+            </Link> */}
           </div>
         </Main>
       </MainWrapper>

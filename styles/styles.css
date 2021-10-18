@@ -115,7 +115,7 @@ ul {
 
 ol {
   padding-left: 0px;
-  margin: 8px 0px 0px 4px;
+  margin: 8px 0px 0px 24px;
 }
 
 li {
@@ -142,6 +142,11 @@ blockquote {
 info {
   margin-top: 8px;
   text-align: center;
+}
+
+h6 {
+  margin: 64px 0 8px;
+  text-transform: uppercase;
 }
 
 @media (max-width: 834px) {
@@ -224,19 +229,6 @@ li.footerLi:last-child {
   }
 }
 
-.iconWrapper {
-  background: none;
-  border: none;
-  cursor: sw-resize;
-  height: 24px;
-}
-
-.iconSize {
-  height: 24px;
-  max-width: 24px;
-  transition: all 1.15s ease;
-}
-
 .heading2Xl {
   margin: 0;
   line-height: 1.4;
@@ -247,29 +239,10 @@ li.footerLi:last-child {
 
 .heading2XlNotReady {
   margin: 0;
-
   font-weight: 600;
   text-align: center;
   line-height: 1;
   margin-bottom: 24px;
-}
-
-.headingXl {
-  margin: 0;
-  line-height: 1.4;
-
-  font-weight: 300;
-  letter-spacing: 0.1vw;
-}
-
-.headingXl a {
-  font-weight: 600;
-  padding: 4px 4px 0px 4px;
-}
-
-.headingL {
-  margin: 8px 0;
-  text-transform: uppercase;
 }
 
 .headingM {
@@ -578,20 +551,6 @@ a.externalPassage:focus {
 
   .heading2XlNotReady {
     text-align: center;
-    :6.5vw ;
-  }
-
-  .heading2Xl {
-    :7vw ;
-  }
-
-  .headingXl {
-    margin-top: 8px;
-    :6vw ;
-  }
-
-  .headingL {
-    :4vw ;
   }
 
   .mainCard {

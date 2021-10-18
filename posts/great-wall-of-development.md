@@ -10,7 +10,7 @@ This is not an article about “Should designers code?” neither about designer
 
 > What type of knowledge should production-oriented designers possess in order to be a vital part of every product team?
 
-#### Frameworks as a ladder to the top of the wall
+##### Frameworks as a ladder to the top of the wall
 
 The first step of every project would be to learn the frameworks and technologies that are used. This is a good stepping stone for you as a Product-oriented designer, so you know how and where to focus your skillset. Frameworks are one of the best things that ever happened to designers. I don’t believe that being constrained by a framework, ruins your creative or design process. It is way more challenging and interesting when you have the constraints, you have to find your way with and around them, in order to come up with a solution. This is the real production design here. The end result is so rewarding, knowing you connected all the dots.
 
@@ -26,7 +26,7 @@ Those types of examples are perfect for backing up that statement about framewor
 
 So for that specific case of alerts, I will share some insights about how the design team took up that challenge and improved it.
 
-#### Reviewing the Github documentation.
+##### Reviewing the Github documentation.
 
 Start by reading carefully the whole documentation, so many handy things are hidden behind the words of the well-written Github repo.
 
@@ -52,7 +52,7 @@ An actual scenario can be:
 
 > If a user creates a request and should be educated where to look when the request is handled and ready to be used, he should go to a different page outside the current one. We put the autoDismiss property to 0 and added a link which redirects to the page where the pending requests live. This way we make all the focus to the alert and educate where the user can find specific things across the application.
 
-#### Identify where the styles.js file lives
+##### Identify where the styles.js file lives
 
 The styling of every library is held in a CSS file. In the case of react-notification-system it was in astyles.js. It is even part of the documentation that we just reviewed.
 
@@ -62,7 +62,7 @@ Once we find that, we can start experimenting both inside the browser (via Inspe
 
 ![Wall of Development](../../wall-of-development-app-7.gif)
 
-#### Show off and share your styles
+##### Show off and share your styles
 
 ![Wall of Development](../../wall-of-development-app-8.png)
 
@@ -70,7 +70,7 @@ Once we find that, we can start experimenting both inside the browser (via Inspe
 
 Once all the styles are overridden or added they should live in the styles.js in your version of the library. By committing the styles you can easily hand over to the developer responsible for that feature to review and continue working on it. This is such an organic way for a designer to get involved in the production and actually make interface decisions, which most of the time are left to be done by him either way.
 
-#### Everything is just a building block
+##### Everything is just a building block
 
 Now designers have the chance to make a real difference on how the interface looks like and behaves. Meeting the business goals, creating a consistent experience and handling cases with care to details while having a real architecture in mind. Not everything is Dribbble material and this would be the best way for you to understand that. I always appreciate articles like Responsive deliverables, so they can remind me how simple and yet complex the design discipline can be in the terms of Interface creation.
 
