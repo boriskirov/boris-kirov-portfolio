@@ -20,7 +20,7 @@
     "react-is": "^17.0.1",
     "remark": "^13.0.0",
     "remark-html": "^13.0.2",
-    "styled-components": "^5.2.1",
+    "styled-components": "^5.3.1",
     "styled-jsx": "^4.0.1",
     "svgo": "^2.7.0"
   },
