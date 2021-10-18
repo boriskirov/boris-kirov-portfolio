@@ -92,7 +92,7 @@ Keep changing the workflow. People would appreciate dedication and understanding
 
 One of the most challenging parts of being an in-house dedicated designer is that at some point you will become the referee, the judge and the collider between the business and the development. They will communicate through you. Learn that, accept it, understand it and embrace it.
 
-###### 2###### 2. Find room to focus
+###### 22. Find room to focus
 
 Every product team is dedicated to one goal, to get the job done and to create an amazing journey for the customer/user. But note that every piece of the puzzle requires its own devotion and precision. Prioritize your work and know when you can handle something alone or you need help from someone. Value the time of every team member.
 

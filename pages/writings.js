@@ -43,62 +43,6 @@ export default function Writings({ allPostsData }) {
             ))}
 
             {/* Add this <section> tag below the existing <section> tag */}
-            {/* 
-            <Link href="/writings/the-history-of-the-browser">
-              <a className="mainCard">
-                <div>
-                  <h6 className="headingL">The history of the browser</h6>
-                </div>
-                <small>Article</small>
-              </a>
-            </Link>
-
-            <Link href="/writings/defining-design-systems">
-              <a className="mainCard">
-                <div>
-                  <h6 className="headingL">Defining design system</h6>
-                </div>
-                <small>Article</small>
-              </a>
-            </Link>
-
-            <Link href="/writings/great-wall-of-development">
-              <a className="mainCard">
-                <div>
-                  <h6 className="headingL">Wall of development</h6>
-                </div>
-                <small>Case study</small>
-              </a>
-            </Link>
-
-            <Link href="/writings/tripscout">
-              <a className="mainCard">
-                <div>
-                  <h6 className="headingL">Working with TripScout</h6>
-                </div>
-                <small>Case study</small>
-              </a>
-            </Link>
-
-            <Link href="/writings/nda">
-              <a className="mainCard">
-                <div>
-                  <h6 className="headingL">
-                    Implementing design system thinking
-                  </h6>
-                </div>
-                <small>Case study</small>
-              </a>
-            </Link>
-
-            <Link href="/writings/improve-impatience">
-              <a className="mainCard">
-                <div>
-                  <h6 className="headingL">Improving Impatience</h6>
-                </div>
-                <small>Article</small>
-              </a>
-            </Link> */}
           </div>
         </Main>
       </MainWrapper>

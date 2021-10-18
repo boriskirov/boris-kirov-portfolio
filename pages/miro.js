@@ -36,50 +36,7 @@ const Miro = () => (
         <ul>
           <li>
             <ul>
-              <h3>Design system</h3>
-
-              <li className="listStyleCircle">Grower and advocate</li>
-              <li className="listStyleCircle">
-                Ways of working, contribution models and stream collaboration
-                processes
-              </li>
-              <li className="listStyleCircle">Onboarding members</li>
-              <li className="listStyleCircle">
-                Collaborate and contribute with production-ready code
-              </li>
-            </ul>
-          </li>
-          <li>
-            <ul>
-              <h3>Accessibility</h3>
-
-              <li className="listStyleCircle">
-                <a
-                  href="https://miro.com/accessibility-statement/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Miro Accessibility
-                </a>
-              </li>
-              <li className="listStyleCircle">
-                Design improvements based on the
-                <a
-                  href="https://www.w3.org/TR/WCAG21/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  WCAG 2.1
-                </a>
-              </li>
-              <li className="listStyleCircle">
-                Collaborate and contribute with production-ready code
-              </li>
-            </ul>
-          </li>
-          <li>
-            <ul>
-              <h3>Developer Experience</h3>
+              <h5>Platform Experience</h5>
               <li className="listStyleCircle">
                 <a
                   href="https://developers.miro.com/docs"
@@ -103,12 +60,6 @@ const Miro = () => (
               <li className="listStyleCircle">
                 Developers comms template design
               </li>
-            </ul>
-          </li>
-          <li>
-            <ul>
-              <h3>Application Experience</h3>
-
               <li className="listStyleCircle">
                 Installation & Authorization logic
               </li>
@@ -118,7 +69,42 @@ const Miro = () => (
           </li>
           <li>
             <ul>
-              <h3>Side projects</h3>
+              <h5>Design system & Accessibility</h5>
+
+              <li className="listStyleCircle">Grower and advocate</li>
+              <li className="listStyleCircle">
+                Ways of working, contribution models and stream collaboration
+                processes
+              </li>
+              <li className="listStyleCircle">Onboarding members</li>
+              <li className="listStyleCircle">
+                Collaborate and contribute with production-ready code
+              </li>
+              <li className="listStyleCircle">
+                <a
+                  href="https://miro.com/accessibility-statement/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Miro Accessibility
+                </a>
+              </li>
+              <li className="listStyleCircle">
+                Design improvements based on the
+                <a
+                  href="https://www.w3.org/TR/WCAG21/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  WCAG 2.1
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <li>
+            <ul>
+              <h5>Side projects</h5>
               <li className="listStyleCircle">
                 <a
                   href="https://miroshortcuts.vercel.app/"
