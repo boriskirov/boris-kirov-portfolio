@@ -1,5 +1,5 @@
 ---
-title: "24 THINGS I LEARNED AS PRODUCT DESIGNER"
+title: "24 THINGS I LEARNED AS A PRODUCT DESIGNER"
 date: "Jan 28, 2020"
 type: "Blog post"
 ---
