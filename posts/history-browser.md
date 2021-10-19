@@ -1,7 +1,8 @@
 ---
 title: "HISTORY OF THE WEB BROWSER"
-date: "Oct 12, 2021"
-type: "Article"
+description: "The web browser today is an amazingly powerful piece of software, limiting in its own ways but still powerful enough to bear things like progressive apps, this post is trying to understand how did it came to that point and why."
+date: "10-12-2021"
+type: "Blog post"
 ---
 
 ![History of the browser](../../cover.png)

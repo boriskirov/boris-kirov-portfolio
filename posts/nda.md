@@ -1,6 +1,7 @@
 ---
 title: "IMPLEMENTING SYSTEM THINKING"
-date: "Jul 24, 2019"
+description: "Case study story of the experience being a single designer in a developer focused product about media analysis and annotations."
+date: "06-24-2019"
 type: "Case study"
 ---
 

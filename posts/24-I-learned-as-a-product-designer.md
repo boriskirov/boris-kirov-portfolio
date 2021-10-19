@@ -1,6 +1,7 @@
 ---
 title: "24 THINGS I LEARNED AS A PRODUCT DESIGNER"
-date: "Jan 28, 2020"
+description: "My thoughts on the switch from multi-client to dedicated inhouse designer after 365 days."
+date: "02-25-2020"
 type: "Blog post"
 ---
 

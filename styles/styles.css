@@ -314,9 +314,8 @@ li.footerLi:last-child {
   margin: 24px 0 0 0;
   background-color: #5454541a;
   display: flex;
-  align-items: center;
-  flex-direction: row;
-  justify-content: space-between;
+  align-items: baseline;
+  flex-direction: column;
 }
 
 a.mainCard:hover,
@@ -348,7 +347,7 @@ a.mainCard:focus {
 }
 
 .mainCard small {
-  padding: 24px;
+  padding: 4px 4px 12px 4px;
   line-height: 1.4;
   opacity: 0.7;
 }
@@ -551,16 +550,6 @@ a.externalPassage:focus {
 
   .heading2XlNotReady {
     text-align: center;
-  }
-
-  .mainCard {
-    align-items: baseline;
-    flex-direction: column;
-    width: 100%;
-  }
-
-  .mainCard small {
-    padding: 4px 4px 16px 4px;
   }
 
   .externalPassage {
