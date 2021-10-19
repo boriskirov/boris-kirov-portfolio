@@ -1,6 +1,5 @@
 ---
 title: "Working with Tripscout"
-description: "Applying knowledge about architecture, information hierarchy, patterns, systems and animation with the amazing people at Tripscout."
 date: "Jan 28, 2018"
 type: "Case study"
 ---

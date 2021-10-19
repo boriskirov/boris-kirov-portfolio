@@ -1,6 +1,5 @@
 ---
 title: "DEFINING A DESIGN SYSTEM"
-description: "Exploration article about the connection of systems, systems in the human body and systems that we use everyday to design better software."
 date: "Jul 24, 2019"
 type: "Article"
 ---
