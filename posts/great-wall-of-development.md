@@ -1,6 +1,6 @@
 ---
 title: "GREAT WALL OF DEVELOPMENT"
-description: "Case study story about how I was able to integrate design changes in the normal product development cycle, while actually improving speed, communication and inbetween discipline collaborations."
+description: "Case study story about how to integrate design changes in the normal product development cycle, while actually improving speed, communication and inbetween discipline collaborations."
 date: "Jul 24, 2019"
 type: "Article"
 ---
