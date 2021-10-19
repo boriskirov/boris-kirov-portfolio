@@ -9,7 +9,7 @@ import Main from "../components/innerWrapper";
 const Error = () => (
   <Motion>
     <MainWrapper>
-      <Metadata title="404 - " />
+      <Metadata title="404" />
       <Main>
         <Link href="/playground">
           <a className="backButton">Back</a>

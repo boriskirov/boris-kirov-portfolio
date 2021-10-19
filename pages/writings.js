@@ -20,7 +20,7 @@ export default function Writings({ allPostsData }) {
   return (
     <Motion>
       <MainWrapper>
-        <Metadata title="Writings - " />
+        <Metadata title="Writings" />
         <Main>
           <Link href="/">
             <a className="backButton">Back</a>

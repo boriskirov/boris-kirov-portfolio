@@ -3,7 +3,7 @@ import Head from "next/head";
 const Metadata = ({ title }) => {
   return (
     <Head>
-      <title>{title} Boris Kirov</title>
+      <title>{title}</title>
       <link rel="icon" href="/favicon.png" />
       <meta name="description" content="Product designer" />
       <meta property="og:type" content="website" />

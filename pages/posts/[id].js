@@ -1,7 +1,7 @@
 import Link from "next/dist/client/link";
 import MainWrapper from "../../components/mainWrapper";
 import Main from "../../components/innerWrapper";
-import Head from "next/head";
+import Metadata from "../../components/metadata";
 import { getAllPostIds, getPostData } from "../../lib/posts";
 
 export async function getStaticProps({ params }) {
@@ -24,9 +24,7 @@ export async function getStaticPaths() {
 export default function Post({ postData }) {
   return (
     <MainWrapper>
-      <Head>
-        <title>{postData.title}</title>
-      </Head>
+      <Metadata title={postData.title}></Metadata>
       <Main>
         <Link href="/writings">
           <a className="backButton">Back</a>

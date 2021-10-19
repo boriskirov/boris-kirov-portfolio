@@ -9,7 +9,7 @@ import Footer from "../components/footer";
 const About = () => (
   <Motion>
     <MainWrapper>
-      <Metadata title="About - " />
+      <Metadata title="About" />
       <Main>
         <Link href="/">
           <a className="backButton">Back</a>

@@ -9,7 +9,7 @@ import Main from "../components/innerWrapper";
 const Miro = () => (
   <Motion>
     <MainWrapper>
-      <Metadata title="Miro - " />
+      <Metadata title="Miro" />
       <Main>
         <Link href="/">
           <a className="backButton">Back</a>
