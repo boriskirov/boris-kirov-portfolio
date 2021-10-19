@@ -1,5 +1,5 @@
 ---
-title: "DEFINING A DESIGN SYSTEM"
+title: "Defining a design system"
 description: "Exploration article about the connection of systems, systems in the human body and systems that we use everyday to design better software."
 date: "04-27-2020"
 type: "Blog post"

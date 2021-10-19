@@ -1,5 +1,5 @@
 ---
-title: "GREAT WALL OF DEVELOPMENT"
+title: "The Great Wall of Development"
 description: "Case study story about how to integrate design changes in the normal product development cycle, while actually improving speed, communication and inbetween discipline collaborations."
 date: "11-24-2019"
 type: "Case study"

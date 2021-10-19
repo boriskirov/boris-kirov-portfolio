@@ -31,7 +31,7 @@ export default function Post({ postData }) {
         <Link href="/writings">
           <a className="backButton">Back</a>
         </Link>{" "}
-        <h1 className="heading2Xl">{postData.title}</h1>
+        <h1 className="blogTitle">{postData.title}</h1>
         <small>{postData.type}</small>
         <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
       </Main>
