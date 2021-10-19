@@ -33,11 +33,12 @@ export default function Writings({ allPostsData }) {
           <div className="contentWrapper">
             {/* Add this <section> tag below the existing <section> tag */}
 
-            {allPostsData.map(({ id, type, title }) => (
+            {allPostsData.map(({ id, description, date, title }) => (
               <Link href={`/posts/${id}`}>
                 <a className="mainCard" key={id}>
                   <h6 className="headingL">{title}</h6>
-                  <small>{type}</small>
+                  <small>{description}</small>
+                  <small>{date}</small>
                 </a>
               </Link>
             ))}

@@ -1,5 +1,6 @@
 ---
 title: "HISTORY OF THE WEB BROWSER"
+description: "The web browser today is an amazingly powerful piece of software, limiting in its own ways but still powerful enough to bear things like progressive apps, this post is trying to understand how did it came to that point and why."
 date: "Oct 12, 2021"
 type: "Article"
 ---

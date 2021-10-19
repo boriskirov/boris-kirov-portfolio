@@ -1,6 +1,7 @@
 ---
 title: "IMPROVING IMPATIENCE"
 date: "Jan 28, 2018"
+description: "Sharing the experience of no phone policy for 6 months, while working on mobile apps as a UX designer."
 type: "Blog post"
 ---
 
