@@ -9,7 +9,7 @@ import Main from "../../components/innerWrapper";
 const Glossary = () => (
   <Motion>
     <MainWrapper>
-      <Metadata title="Glossary - " />
+      <Metadata title="Glossary" />
       <Main>
         <Link href="/playground">
           <a className="backButton">Back</a>
