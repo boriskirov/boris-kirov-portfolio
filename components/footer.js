@@ -1,10 +1,6 @@
 const Footer = () => (
   <footer>
-    <a
-      href="https://miro.com/app/board/o9J_kulYeX0=/"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
+    <a href="../BorisKirov_Resume.pdf" rel="noopener noreferrer">
       <small>Get Resume 2021 © </small>
     </a>
     <div>

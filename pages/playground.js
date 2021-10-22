@@ -54,18 +54,6 @@ const Playground = () => (
 
           <a
             className="externalPassage"
-            href="https://www.polywork.com/boriskirov"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <div>
-              <h6 className="headingL">Changelog</h6>
-            </div>
-            <small>Tracker</small>
-          </a>
-
-          <a
-            className="externalPassage"
             href="https://www.figma.com/community/plugin/943057200269205449/Handoff-notes"
             target="_blank"
             rel="noopener noreferrer"
