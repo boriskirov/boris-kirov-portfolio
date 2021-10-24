@@ -10,7 +10,12 @@ import CurrentlyListening from "../components/currentlyListening";
 const About = () => (
   <Motion>
     <MainWrapper>
-      <Metadata title="About" />
+      <Metadata
+        title="About"
+        description="Technical designer interested in systems, front-end, open source and collaborative design."
+        image="/me.png"
+        name="Boris Kirov"
+      />
       <Main>
         <Link href="/">
           <a className="backButton">Back</a>
