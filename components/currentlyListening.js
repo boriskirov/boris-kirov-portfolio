@@ -12,7 +12,7 @@ export default function CurrentlyListening() {
       href={
         data?.isPlaying
           ? data.songUrl
-          : "https://open.spotify.com/user/erence21?si=yTsrZT5JSHOp7tn3ist7Ig"
+          : "https://open.spotify.com/user/11180743946"
       }
     >
       <div className="currentlyListeningCardInner">
