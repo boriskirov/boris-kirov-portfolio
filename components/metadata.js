@@ -8,8 +8,13 @@ const Metadata = ({ title, description, image, name }) => {
       <link rel="icon" href="/favicon.png" />
       <link rel="apple-touch-icon" href="/favicon.png" />
       <meta name="title" content={title} />
-      <meta name="description" content={description} />
+      <meta
+        name="description"
+        property="og:description"
+        content={description}
+      />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta name="author" content={title} />
 
       {/* Open Graph */}
       <meta property="og:type" content="website" />
@@ -21,7 +26,7 @@ const Metadata = ({ title, description, image, name }) => {
       />
       <meta property="og:site_name" content="Boris Kirov - Product designer" />
       <meta property="og:url" content="https://www.boriskirov.com" />
-      <meta property="og:image" content={image} />
+      <meta name="image" property="og:image" content={image} />
       {/* Twitter */}
       <meta name="twitter:card" content="summary" />
       <meta name="twitter:title" content={title} />
