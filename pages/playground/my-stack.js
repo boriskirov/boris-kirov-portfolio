@@ -4,7 +4,6 @@ import MainWrapper from "../../components/mainWrapper";
 import Metadata from "../../components/metadata";
 import Main from "../../components/innerWrapper";
 import Link from "next/link";
-import CurrentlyListening from "../../components/currentlyListening";
 
 const Toolbox = () => (
   <Motion>
@@ -361,6 +360,8 @@ const Toolbox = () => (
 
             <a
               className="stackCard"
+              href="https://www.figma.com"
+              target="_blank"
               href="https://www.mozilla.org/en-US/firefox/lockwise/"
             >
               <div>
@@ -373,7 +374,12 @@ const Toolbox = () => (
               <small>Security</small>
             </a>
 
-            <a className="stackCard" href="https://muzzleapp.com/">
+            <a
+              className="stackCard"
+              href="https://www.figma.com"
+              target="_blank"
+              href="https://muzzleapp.com/"
+            >
               <div>
                 <img
                   className="stackCardImg"
@@ -384,7 +390,12 @@ const Toolbox = () => (
               <small>Productivity</small>
             </a>
 
-            <a className="stackCard" href="https://getkap.co/">
+            <a
+              className="stackCard"
+              href="https://www.figma.com"
+              target="_blank"
+              href="https://getkap.co/"
+            >
               <div>
                 <img
                   className="stackCardImg"
@@ -395,7 +406,12 @@ const Toolbox = () => (
               <small>Productivity</small>
             </a>
 
-            <a className="stackCard" href="https://getkap.co/">
+            <a
+              className="stackCard"
+              href="https://www.figma.com"
+              target="_blank"
+              href="https://duckduckgo.com/"
+            >
               <div>
                 <img
                   className="stackCardImg"
@@ -404,6 +420,19 @@ const Toolbox = () => (
                 <h6 className="headingM">DuckDuckGo</h6>
               </div>
               <small>Security</small>
+            </a>
+
+            <a
+              className="stackCard"
+              href="https://www.figma.com"
+              target="_blank"
+              href="https://www.raycast.com/"
+            >
+              <div>
+                <img className="stackCardImg" src="/raycast.png" />
+                <h6 className="headingM">Raycast</h6>
+              </div>
+              <small>Productivity</small>
             </a>
           </section>
         </div>
