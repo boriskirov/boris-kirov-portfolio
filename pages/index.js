@@ -12,7 +12,7 @@ const Home = () => (
       <Metadata
         title="Boris Kirov"
         description="Technical designer interested in systems, front-end, open source and collaborative design."
-        image="/main-meta-tag-image.png"
+        image="https://www.boriskirov.me/main-meta-tag-image.png"
         name="Boris Kirov"
       />
       <Main>
