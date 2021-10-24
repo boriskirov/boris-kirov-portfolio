@@ -12,7 +12,7 @@ const Miro = () => (
       <Metadata
         title="Miro"
         description="The things I am getting done in Miro."
-        image="/meta-tag-miro.png"
+        image="https://www.boriskirov.me/meta-tag-miro.png"
         name="Boris Kirov"
       />
       <Main>

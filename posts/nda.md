@@ -3,7 +3,7 @@ title: "Implementing system thinking"
 description: "Case study story of the experience being a single designer in a developer focused product about media analysis and annotations."
 date: "06-24-2019"
 type: "Case study"
-image: "../../nda-app-5.png"
+image: "https://www.boriskirov.me/nda-app-5.png"
 ---
 
 I spent part of 2017 working on a self-service online platform in which media is segmented and annotated through a series of discrete tasks assigned to remote workers. Due to NDA I am not able to share insights around the design work. On the other hand I will share some insights on design process that will motivate everyone to improve and keep on working on big complex data projects.

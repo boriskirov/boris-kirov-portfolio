@@ -23,7 +23,7 @@ export default function Writings({ allPostsData }) {
         <Metadata
           title="Writings"
           description="My small space where I try to think out loud about everything related to design, software and technology."
-          image="/meta-tag-writings.png"
+          image="https://www.boriskirov.me/meta-tag-writings.png"
           name="Boris Kirov"
         />
         <Main>

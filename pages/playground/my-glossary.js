@@ -12,7 +12,7 @@ const Glossary = () => (
       <Metadata
         title="Glossary"
         description="This is my personal resource that lists the methods, practices and ways of working I follow in design."
-        image="../../meta-tag-glossary.png"
+        image="https://www.boriskirov.me/meta-tag-glossary.png"
         name="Boris Kirov"
       />
       <Main>

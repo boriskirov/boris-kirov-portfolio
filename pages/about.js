@@ -13,7 +13,7 @@ const About = () => (
       <Metadata
         title="About"
         description="Technical designer interested in systems, front-end, open source and collaborative design."
-        image="/me.png"
+        image="https://www.boriskirov.me/me.png"
         name="Boris Kirov"
       />
       <Main>

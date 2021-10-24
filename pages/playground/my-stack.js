@@ -11,7 +11,7 @@ const Toolbox = () => (
       <Metadata
         title="Toolbox"
         description="List of tools & software I use daily to support my interest and hunger on the journey of designing software."
-        image="../../meta-tag-toolbox.png"
+        image="https://www.boriskirov.me/meta-tag-toolbox.png"
         name="Boris Kirov"
       />
       <Main>

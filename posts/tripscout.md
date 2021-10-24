@@ -3,7 +3,7 @@ title: "Working with Tripscout"
 description: "Applying knowledge about architecture, information hierarchy, patterns, systems and animation with the amazing people at Tripscout."
 date: "01-28-2018"
 type: "Case study"
-image: "../../tripscout-app-2.png"
+image: "https://www.boriskirov.me/tripscout-app-2.png"
 ---
 
 A while ago me and my teammate at Despark were approached by TripScout to add some new features in their working application. TripScout is a trip application with more than 100,000 users created by exciting people who are eager to travel and learn about new places.

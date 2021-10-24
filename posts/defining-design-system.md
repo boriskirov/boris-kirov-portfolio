@@ -3,7 +3,7 @@ title: "Defining a design system"
 description: "Exploration article about the connection of systems, systems in the human body and systems that we use everyday to design better software."
 date: "04-27-2020"
 type: "Blog post"
-image: "../../defining-design-systems-app-1.jpeg"
+image: "https://www.boriskirov.me/defining-design-systems-app-1.jpeg"
 ---
 
 > System is “the whole creation, the universe,” from Late Latin systema “an arrangement, system,” from Greek systema “organized whole, a whole compounded of parts”.
