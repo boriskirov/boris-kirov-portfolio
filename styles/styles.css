@@ -92,20 +92,6 @@ small {
   font-size: 14px;
 }
 
-p {
-  line-height: 1.4;
-  margin: 16px 0 24px 0;
-}
-
-video:focus-visible {
-  outline: none;
-  box-shadow: 0 0 0 4px #3f53d9;
-}
-
-pre {
-  margin: 0;
-}
-
 ul {
   width: 100%;
   padding-left: 0;
@@ -351,7 +337,8 @@ a.mainCard:focus {
   opacity: 0.7;
 }
 
-.stackCard {
+.stackCard,
+.currentlyListeningCard {
   width: 100%;
   color: inherit;
   cursor: ne-resize;
@@ -375,7 +362,10 @@ a.mainCard:focus {
 
 a.stackCard:hover,
 a.stackCard:active,
-a.stackCard:focus {
+a.stackCard:focus,
+a.currentlyListeningCard:hover,
+a.currentlyListeningCard:active,
+a.currentlyListeningCard:focus {
   text-decoration: none;
   color: inherit;
   background-color: #5454541a;
@@ -386,17 +376,20 @@ a.stackCard:focus {
   margin: 8px 8px;
 }
 
-.stackCard[href]:hover h6 {
+.stackCard[href]:hover h6,
+.currentlyListeningCard[href]:hover p {
   background-color: #ffcf00;
   color: #3f53d9;
 }
 
-.stackCard[href]:active h6 {
+.stackCard[href]:active h6,
+.currentlyListeningCard[href]:active p {
   background-color: #ffcf00;
   color: #3f53d9;
 }
 
-.stackCard[href]:focus h6 {
+.stackCard[href]:focus h6,
+.currentlyListeningCard[href]:focus p {
   background-color: #ffcf00;
   color: #3f53d9;
 }
@@ -407,6 +400,28 @@ a.stackCard:focus {
   border-radius: 8px;
 }
 
+.currentlyListeningImg {
+  width: 96px;
+  height: 96px;
+  border-radius: 8px;
+}
+
+.currentlyListeningContent {
+  display: flex;
+  flex-direction: column;
+  align-items: self-start;
+  margin: 0 16px;
+}
+
+.currentlyListeningContent > p {
+  padding: 0px;
+  margin: 0px;
+}
+
+.currentlyListeningCardInner {
+  display: flex;
+  align-items: center;
+}
 .dicCard {
   width: 100%;
   color: inherit;

@@ -4,6 +4,7 @@ import MainWrapper from "../../components/mainWrapper";
 import Metadata from "../../components/metadata";
 import Main from "../../components/innerWrapper";
 import Link from "next/link";
+import CurrentlyListening from "../../components/currentlyListening";
 
 const Toolbox = () => (
   <Motion>

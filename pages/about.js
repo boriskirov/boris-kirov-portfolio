@@ -5,6 +5,7 @@ import Link from "next/link";
 import MainWrapper from "../components/mainWrapper";
 import Main from "../components/innerWrapper";
 import Footer from "../components/footer";
+import CurrentlyListening from "../components/currentlyListening";
 
 const About = () => (
   <Motion>
@@ -18,7 +19,7 @@ const About = () => (
         <div className="contentWrapper">
           <section>
             <img src="/me.png" />
-            <small>`npx boriskirov`</small>
+            <CurrentlyListening />
           </section>
           <section>
             <p>
