@@ -3,6 +3,7 @@ title: "Improving impatience"
 date: "01-28-2018"
 description: "Sharing the experience of no phone policy for 6 months, while working on mobile apps as a UX designer."
 type: "Blog post"
+image: "../../improve-impatience-app-2.png"
 ---
 
 > You don’t want any more statistics telling you how much time people are spending on their phones. How much time they spent on Facebook during work and out of work. About all the fake news and social media manipulation. This is something way, way simpler. It is a story about going without a phone for four months, whilst working as a digital producer at a company which creates mobile and web products.

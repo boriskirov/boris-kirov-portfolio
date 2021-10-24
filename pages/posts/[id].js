@@ -24,7 +24,12 @@ export async function getStaticPaths() {
 export default function Post({ postData }) {
   return (
     <MainWrapper>
-      <Metadata title={postData.title}></Metadata>
+      <Metadata
+        title={postData.title}
+        description={postData.description}
+        image={postData.image}
+        name="Boris Kirov"
+      />
       <Main>
         <Link href="/writings">
           <a className="backButton">Back</a>
