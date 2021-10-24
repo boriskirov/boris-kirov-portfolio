@@ -28,13 +28,16 @@ const Metadata = ({ title, description, image, name }) => {
       <meta property="og:url" content="https://www.boriskirov.com" />
       <meta name="image" property="og:image" content={image} />
       {/* Twitter */}
+      <meta name="twitter:image" content={image} />
       <meta name="twitter:card" content="summary" />
       <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:card" content="photo" />
+      <meta name="twitter:card" content="gallery" />
+      <meta name="twitter:card" content="app" />
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={description} />
       <meta name="twitter:site" content="https://www.boriskirov.me" />
       <meta name="twitter:creator" content={name} />
-      <meta name="twitter:image" content={image} />
     </Head>
   );
 };
