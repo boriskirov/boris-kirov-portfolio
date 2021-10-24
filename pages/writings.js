@@ -20,7 +20,12 @@ export default function Writings({ allPostsData }) {
   return (
     <Motion>
       <MainWrapper>
-        <Metadata title="Writings" />
+        <Metadata
+          title="Writings"
+          description="My small space where I try to think out loud about everything related to design, software and technology."
+          image="/meta-tag-writings.png"
+          name="Boris Kirov"
+        />
         <Main>
           <Link href="/">
             <a className="backButton">Back</a>

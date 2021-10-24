@@ -11,8 +11,8 @@ const Miro = () => (
     <MainWrapper>
       <Metadata
         title="Miro"
-        description="The things I am getting done in Miro"
-        image="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimages.saasworthy.com%2Fmiro_3781_logo_1598617687_dsfet.png&f=1&nofb=1"
+        description="The things I am getting done in Miro."
+        image="/meta-tag-miro.png"
         name="Boris Kirov"
       />
       <Main>

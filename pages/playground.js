@@ -9,7 +9,13 @@ import Main from "../components/innerWrapper";
 const Playground = () => (
   <Motion>
     <MainWrapper>
-      <Metadata title="Playground" />
+      <Metadata
+        title="Playground"
+        description="My playground, the place where I explore the functional, visual and collaborative side of design."
+        image="/meta-tag-playground.png"
+        name="Boris Kirov"
+      />
+
       <Main>
         <Link href="/">
           <a className="backButton">Back</a>

@@ -9,7 +9,12 @@ import MainWrapper from "../components/mainWrapper";
 const Home = () => (
   <Motion>
     <MainWrapper>
-      <Metadata />
+      <Metadata
+        title="Boris Kirov"
+        description="Technical designer interested in systems, front-end, open source and collaborative design."
+        image="main-meta-tag-image.png"
+        name="Boris Kirov"
+      />
       <Main>
         <h1 className="heading2Xl">Hi, I'm Boris </h1>
         <p>

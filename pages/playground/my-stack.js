@@ -8,7 +8,12 @@ import Link from "next/link";
 const Toolbox = () => (
   <Motion>
     <MainWrapper>
-      <Metadata title="Toolbox" />
+      <Metadata
+        title="Toolbox"
+        description="List of tools & software I use daily to support my interest and hunger on the journey of designing software."
+        image="../../meta-tag-toolbox.png"
+        name="Boris Kirov"
+      />
       <Main>
         <Link href="/playground">
           <a className="backButton">Back</a>
