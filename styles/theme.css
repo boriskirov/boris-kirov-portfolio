@@ -25,6 +25,6 @@
 
 html,
 .dark body {
-  background-color: #131313;
-  color: #e2e2e2;
+  background-color: var(--dark-color-bg);
+  color: var(--light-color-text);
 }
