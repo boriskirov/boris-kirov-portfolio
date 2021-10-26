@@ -90,6 +90,9 @@ small {
   display: flex;
   align-items: center;
   font-size: 14px;
+  line-height: 1.4;
+  margin: 4px 0 8px 0;
+  padding: 0 4px;
 }
 
 ul {
@@ -331,12 +334,6 @@ a.mainCard:focus {
   color: #3f53d9;
 }
 
-.mainCard small {
-  padding: 4px 4px 12px 4px;
-  line-height: 1.4;
-  opacity: 0.7;
-}
-
 .stackCard,
 .currentlyListeningCard {
   width: 100%;
@@ -448,6 +445,17 @@ details.dicCard summary:focus-visible {
   box-shadow: 0 0 0 4px #3f53d9;
 }
 
+.external {
+  cursor: ne-resize;
+}
+
+.tag {
+  margin: 16px 0;
+  padding: 4px 8px;
+  background-color: #54545428;
+  line-height: 1.4;
+}
+
 .externalPassage {
   width: 100%;
   color: inherit;
@@ -491,13 +499,6 @@ a.externalPassage:focus {
 .externalPassage[href]:focus h6 {
   background-color: #ffcf00;
   color: #3f53d9;
-}
-
-.externalPassage small {
-  padding: 24px;
-  line-height: 1.4;
-  opacity: 0.7;
-  font-size: 14px;
 }
 
 .backButton {

@@ -5,6 +5,7 @@ import Metadata from "../components/metadata";
 import Link from "next/link";
 import MainWrapper from "../components/mainWrapper";
 import Main from "../components/innerWrapper";
+import Card from "../components/card";
 
 const Playground = () => (
   <Motion>
@@ -28,137 +29,95 @@ const Playground = () => (
         </p>
 
         <div className="contentWrapper">
-          <a
-            className="externalPassage"
-            href="https://www.mirotone.xyz"
+          <Card
+            link="https://www.mirotone.xyz"
+            className="external mainCard"
+            title="Mirotone"
+            description="Mirotone is a small & lightweight design system kit that tries to match Miro styles for helping you design, build and integrate apps."
+            type="Package"
             target="_blank"
-            rel="noopener noreferrer"
-          >
-            <div>
-              <h6 className="headingL">Mirotone</h6>
-            </div>
-            <small>Package</small>
-          </a>
+          />
 
-          <Link
-            href="/playground/my-glossary"
-            rel="noopener noreferrer"
-            as="/playground/my-glossary"
-          >
-            <a className="externalPassage">
-              <style jsx>{`
-                a {
-                  cursor: e-resize;
-                }
-              `}</style>
-              <div>
-                <h6 className="headingL"> Glossary </h6>
-              </div>
-              <small>Methods & Practices</small>
-            </a>
-          </Link>
+          <Card
+            link="/playground/my-glossary"
+            className="mainCard"
+            title="Glossary"
+            description="My personal resource that lists the methods, practices and ways of working I follow in design."
+            type="Methods & Practices"
+            target=""
+          />
 
-          <a
-            className="externalPassage"
-            href="https://www.figma.com/community/plugin/943057200269205449/Handoff-notes"
+          <Card
+            link="https://www.figma.com/community/plugin/943057200269205449/Handoff-notes"
+            className="external mainCard"
+            title="Handoff notes"
+            description="Prepare your work for handoff. Generate a note frame below each screen explain it and help others to understand the static designs better."
+            type="Figma plugin"
             target="_blank"
-            rel="noopener noreferrer"
-          >
-            <div>
-              <h6 className="headingL">Handoff Notes </h6>
-            </div>
-            <small>Figma plugin</small>
-          </a>
+          />
 
-          <Link
-            href="/playground/my-stack"
-            rel="noopener noreferrer"
-            as="/playground/my-stack"
-          >
-            <a className="externalPassage">
-              <style jsx>{`
-                a {
-                  cursor: e-resize;
-                }
-              `}</style>
-              <div>
-                <h6 className="headingL"> Toolbox </h6>
-              </div>
-              <small>Tools & Software</small>
-            </a>
-          </Link>
+          <Card
+            link="/playground/my-stack"
+            className="mainCard"
+            title="Toolbox"
+            description="List of tools & software I use daily to support my interest and hunger on the journey of designing software. The list can constantly change as I try to experiment with new solutions and methods."
+            type="Tools & Software"
+            target=""
+          />
 
-          <a
-            className="externalPassage"
-            href="https://fluidigrid.com/"
+          <Card
+            link="https://fluidigrid.com/"
+            className="external mainCard"
+            title="Fluidigrid"
+            description="Simple and lightweight CSS helper for building quick and efficient layouts."
+            type="Package"
             target="_blank"
-            rel="noopener noreferrer"
-          >
-            <div>
-              <h6 className="headingL">Fluidigrid </h6>
-            </div>
-            <small>Package</small>
-          </a>
+          />
 
-          <a
-            className="externalPassage"
-            href="https://www.fluiditype.com/"
+          <Card
+            link="https://www.fluiditype.com/"
+            className="external mainCard"
+            title="Fluiditype"
+            description="CSS library that focuses on responsive web and pure fluidity."
+            type="Package"
             target="_blank"
-            rel="noopener noreferrer"
-          >
-            <div>
-              <h6 className="headingL">Fluiditype </h6>
-            </div>
-            <small>Package</small>
-          </a>
+          />
 
-          <a
-            className="externalPassage"
-            href="https://www.sketchappsources.com/free-source/3786-emojis-builder-sketch-freebie-resource.html"
+          <Card
+            link="https://www.sketchappsources.com/free-source/3786-emojis-builder-sketch-freebie-resource.html"
+            className="external mainCard"
+            title="Emoji builder"
+            description="An emoji library, created by nested symbols and components to ease the creation of emoji. It is an open file which can be built onto. Use your creativity to create new emojis and bring new emotions. "
+            type="Sketch library"
             target="_blank"
-            rel="noopener noreferrer"
-          >
-            <div>
-              <h6 className="headingL">Emoji builder </h6>
-            </div>
-            <small>Sketch library</small>
-          </a>
+          />
 
-          <a
-            className="externalPassage"
-            href="https://github.com/boriskirov/git-commands"
+          <Card
+            link="https://github.com/boriskirov/git-commands"
+            className="external mainCard"
+            title="Git commands"
+            description="List of handy git commands for efficient and fast way of working."
+            type="Helper doc"
             target="_blank"
-            rel="noopener noreferrer"
-          >
-            <div>
-              <h6 className="headingL">Git commands </h6>
-            </div>
-            <small>Helper doc</small>
-          </a>
+          />
 
-          <a
-            className="externalPassage"
-            href="https://github.com/boriskirov/figma-commands"
+          <Card
+            link="https://github.com/boriskirov/figma-commands"
+            className="external mainCard"
+            title="Figma commands"
+            description="List of custom figma shorcuts and specific plugins for efficient way of working."
+            type="Helper doc"
             target="_blank"
-            rel="noopener noreferrer"
-          >
-            <div>
-              <h6 className="headingL">Figma commands</h6>
-            </div>
-            <small>Helper doc</small>
-          </a>
+          />
 
-          <a
-            className="externalPassage"
-            href="https://github.com/boriskirov/shell-commands"
+          <Card
+            link="https://github.com/boriskirov/shell-commands"
+            className="external mainCard"
+            title="Shell commands"
+            description="A list of command line operations for working."
+            type="Helper doc"
             target="_blank"
-            rel="noopener noreferrer"
-          >
-            <div>
-              <h6 className="headingL">Shell commands</h6>
-            </div>
-            <small>Helper doc</small>
-          </a>
+          />
         </div>
       </Main>
     </MainWrapper>

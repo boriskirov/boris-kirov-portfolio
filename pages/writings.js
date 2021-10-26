@@ -4,6 +4,7 @@ import Metadata from "../components/metadata";
 import Link from "next/link";
 import MainWrapper from "../components/mainWrapper";
 import Main from "../components/innerWrapper";
+import Card from "../components/card";
 
 import { getSortedPostsData } from "../lib/posts";
 
@@ -36,19 +37,20 @@ export default function Writings({ allPostsData }) {
             related to design, software and technology.
           </p>
           <div className="contentWrapper">
-            {/* Add this <section> tag below the existing <section> tag */}
+            {/* Post component start */}
 
             {allPostsData.map(({ id, type, description, title }) => (
-              <Link href={`/posts/${id}`}>
-                <a className="mainCard" key={id}>
-                  <h6 className="headingL">{title}</h6>
-                  <small>{description}</small>
-                  <small>{type}</small>
-                </a>
-              </Link>
+              <Card
+                link={`/posts/${id}`}
+                className="mainCard"
+                title={title}
+                description={description}
+                type={type}
+                target=""
+              />
             ))}
 
-            {/* Add this <section> tag below the existing <section> tag */}
+            {/* Post component end */}
           </div>
         </Main>
       </MainWrapper>
