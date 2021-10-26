@@ -40,7 +40,7 @@ const Toolbox = () => (
                 />
                 <h6 className="headingM">Miro</h6>
               </div>
-              <small>Collaboration</small>
+              <small className="tag">Collaboration</small>
             </a>
 
             <a
@@ -56,7 +56,7 @@ const Toolbox = () => (
                 />
                 <h6 className="headingM">Figma</h6>
               </div>
-              <small>Design</small>
+              <small className="tag">Design</small>
             </a>
 
             <a
@@ -72,7 +72,7 @@ const Toolbox = () => (
                 />
                 <h6 className="headingM">1.1.1.1</h6>
               </div>
-              <small>Security</small>
+              <small className="tag">Security</small>
             </a>
 
             <a
@@ -88,7 +88,7 @@ const Toolbox = () => (
                 />
                 <h6 className="headingM">Things</h6>
               </div>
-              <small>Productivity</small>
+              <small className="tag">Productivity</small>
             </a>
 
             <a
@@ -104,7 +104,7 @@ const Toolbox = () => (
                 />
                 <h6 className="headingM">Notion</h6>
               </div>
-              <small>Writing</small>
+              <small className="tag">Writing</small>
             </a>
 
             <a
@@ -120,7 +120,7 @@ const Toolbox = () => (
                 />
                 <h6 className="headingM">Spotify</h6>
               </div>
-              <small>Productivity</small>
+              <small className="tag">Productivity</small>
             </a>
 
             <a
@@ -136,7 +136,7 @@ const Toolbox = () => (
                 />
                 <h6 className="headingM">Github</h6>
               </div>
-              <small>Collaboration</small>
+              <small className="tag">Collaboration</small>
             </a>
 
             <a
@@ -152,7 +152,7 @@ const Toolbox = () => (
                 />
                 <h6 className="headingM">VSCO</h6>
               </div>
-              <small>Design</small>
+              <small className="tag">Design</small>
             </a>
 
             <a
@@ -168,7 +168,7 @@ const Toolbox = () => (
                 />
                 <h6 className="headingM">BlockBear</h6>
               </div>
-              <small>Security</small>
+              <small className="tag">Security</small>
             </a>
 
             <a
@@ -184,7 +184,7 @@ const Toolbox = () => (
                 />
                 <h6 className="headingM">Twitter</h6>
               </div>
-              <small>Communication</small>
+              <small className="tag">Communication</small>
             </a>
 
             <a
@@ -200,7 +200,7 @@ const Toolbox = () => (
                 />
                 <h6 className="headingM">Dependabot</h6>
               </div>
-              <small>Development</small>
+              <small className="tag">Development</small>
             </a>
 
             <a
@@ -216,7 +216,7 @@ const Toolbox = () => (
                 />
                 <h6 className="headingM">Obsidian</h6>
               </div>
-              <small>Productivity</small>
+              <small className="tag">Productivity</small>
             </a>
 
             <a
@@ -232,7 +232,7 @@ const Toolbox = () => (
                 />
                 <h6 className="headingM">Loom</h6>
               </div>
-              <small>Productivity</small>
+              <small className="tag">Productivity</small>
             </a>
 
             <a
@@ -248,7 +248,7 @@ const Toolbox = () => (
                 />
                 <h6 className="headingM">Next.js</h6>
               </div>
-              <small>Development</small>
+              <small className="tag">Development</small>
             </a>
 
             <a
@@ -264,7 +264,7 @@ const Toolbox = () => (
                 />
                 <h6 className="headingM">Vercel</h6>
               </div>
-              <small>Development</small>
+              <small className="tag">Development</small>
             </a>
 
             <a
@@ -280,7 +280,7 @@ const Toolbox = () => (
                 />
                 <h6 className="headingM">Spark</h6>
               </div>
-              <small>Productivity</small>
+              <small className="tag">Productivity</small>
             </a>
 
             <a
@@ -296,7 +296,7 @@ const Toolbox = () => (
                 />
                 <h6 className="headingM">Terminal</h6>
               </div>
-              <small>Development</small>
+              <small className="tag">Development</small>
             </a>
 
             <a
@@ -312,7 +312,7 @@ const Toolbox = () => (
                 />
                 <h6 className="headingM">VScode</h6>
               </div>
-              <small>Development</small>
+              <small className="tag">Development</small>
             </a>
 
             <a
@@ -328,7 +328,7 @@ const Toolbox = () => (
                 />
                 <h6 className="headingM">Firefox Dev Edition</h6>
               </div>
-              <small>Productivity</small>
+              <small className="tag">Productivity</small>
             </a>
 
             <a
@@ -344,7 +344,7 @@ const Toolbox = () => (
                 />
                 <h6 className="headingM">Google Chrome Canary</h6>
               </div>
-              <small>Development</small>
+              <small className="tag">Development</small>
             </a>
 
             <a
@@ -360,7 +360,7 @@ const Toolbox = () => (
                 />
                 <h6 className="headingM">Protonmail</h6>
               </div>
-              <small>Security</small>
+              <small className="tag">Security</small>
             </a>
 
             <a
@@ -376,7 +376,7 @@ const Toolbox = () => (
                 />
                 <h6 className="headingM">Lockwise</h6>
               </div>
-              <small>Security</small>
+              <small className="tag">Security</small>
             </a>
 
             <a
@@ -392,7 +392,7 @@ const Toolbox = () => (
                 />
                 <h6 className="headingM">Muzzle</h6>
               </div>
-              <small>Productivity</small>
+              <small className="tag">Productivity</small>
             </a>
 
             <a
@@ -408,7 +408,7 @@ const Toolbox = () => (
                 />
                 <h6 className="headingM">Kap</h6>
               </div>
-              <small>Productivity</small>
+              <small className="tag">Productivity</small>
             </a>
 
             <a
@@ -424,7 +424,7 @@ const Toolbox = () => (
                 />
                 <h6 className="headingM">DuckDuckGo</h6>
               </div>
-              <small>Security</small>
+              <small className="tag">Security</small>
             </a>
 
             <a
@@ -437,7 +437,7 @@ const Toolbox = () => (
                 <img className="stackCardImg" src="/raycast.png" />
                 <h6 className="headingM">Raycast</h6>
               </div>
-              <small>Productivity</small>
+              <small className="tag">Productivity</small>
             </a>
           </section>
         </div>
