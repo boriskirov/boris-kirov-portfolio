@@ -13,7 +13,6 @@
   --dark-color-text: #050038;
   --selection-color-bg: #3f53d9;
   --selection-color-text: #ffd707;
-  --invert-filter-color: brightness(0) invert(1);
   --link-color-text: #3f53d9;
   --link-color-bg: #ffcf00;
 
@@ -23,6 +22,8 @@
   --space-medium: 12px;
   --space-large: 16px;
   --space-xlarge: 24px;
+
+  --border-radius-small: 8px;
 }
 
 ::selection {
@@ -155,11 +156,6 @@ h6 {
 
 li.footerLi:last-child {
   padding-right: 0px;
-}
-
-.emoji {
-  font-size: 16px;
-  margin-right: var(--space-xsmall);
 }
 
 .heading2Xl {
@@ -328,13 +324,13 @@ a.currentlyListeningCard:focus {
 .stackCardImg {
   width: 48px;
   height: 48px;
-  border-radius: 8px;
+  border-radius: var(--border-radius-small);
 }
 
 .currentlyListeningImg {
   width: 96px;
   height: 96px;
-  border-radius: 8px;
+  border-radius: var(--border-radius-small);
 }
 
 .currentlyListeningContent {

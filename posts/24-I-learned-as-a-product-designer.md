@@ -1,7 +1,7 @@
 ---
 title: "24 Things I learned as a Product Designer"
 description: "My thoughts on the switch from multi-client to dedicated inhouse designer after 365 days."
-date: "02-25-2020"
+date: "25-02-2020"
 type: "Blog post"
 image: "https://www.boriskirov.me/24-things-1.png"
 ---

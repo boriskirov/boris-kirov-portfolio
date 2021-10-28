@@ -1,6 +1,6 @@
 ---
 title: "Improving impatience"
-date: "01-28-2018"
+date: "28-01-2018"
 description: "Sharing the experience of no phone policy for 6 months, while working on mobile apps as a UX designer."
 type: "Blog post"
 image: "https://www.boriskirov.me/improve-impatience-app-2.png"
