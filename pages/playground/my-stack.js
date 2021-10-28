@@ -429,13 +429,27 @@ const Toolbox = () => (
 
             <a
               className="stackCard"
-              href="https://www.figma.com"
               target="_blank"
               href="https://www.raycast.com/"
             >
               <div>
                 <img className="stackCardImg" src="/raycast.png" />
                 <h6 className="headingM">Raycast</h6>
+              </div>
+              <small className="tag">Productivity</small>
+            </a>
+
+            <a
+              className="stackCard"
+              target="_blank"
+              href="https://cleanshot.com"
+            >
+              <div>
+                <img
+                  className="stackCardImg"
+                  src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.solberg.is%2Fblog%2Fcleanshot.png&f=1&nofb=1"
+                />
+                <h6 className="headingM">CleanShot</h6>
               </div>
               <small className="tag">Productivity</small>
             </a>
