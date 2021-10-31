@@ -15,6 +15,8 @@
   --selection-color-text: #ffd707;
   --link-color-text: #3f53d9;
   --link-color-bg: #ffcf00;
+  --card-color-bg: #5454541a;
+  --tag-color-bg: #54545428;
 
   --space-xxsmall: 2px;
   --space-xsmall: 4px;
@@ -24,6 +26,19 @@
   --space-xlarge: 24px;
 
   --border-radius-small: 8px;
+}
+
+@media (color-gamut: p3) {
+  :root {
+    --dark-color-bg: color(display-p3 0.053 0.064 0.096 / 1);
+    --light-color-text: color(display-p3 0.768 0.754 0.764 / 1);
+    --light-color-bg: color(display-p3 0.768 0.754 0.764 / 1);
+    --dark-color-text: color(display-p3 0.053 0.064 0.096 / 1);
+    --selection-color-bg: color(display-p3 0.287 0.179 1 / 1);
+    --selection-color-text: color(display-p3 1 0.773 0.09 / 1);
+    --link-color-text: color(display-p3 0.194 0.183 0.794 / 1);
+    --link-color-bg: color(display-p3 1 0.773 0.09 / 1);
+  }
 }
 
 ::selection {
@@ -230,7 +245,7 @@ li.footerLi:last-child {
   text-decoration: none;
   padding: var(--space-small) var(--space-large);
   margin: var(--space-xlarge) 0 0 0;
-  background-color: #5454541a;
+  background-color: var(--card-color-bg);
   display: flex;
   align-items: baseline;
   flex-direction: column;
@@ -241,7 +256,7 @@ a.mainCard:active,
 a.mainCard:focus {
   text-decoration: none;
   color: inherit;
-  background-color: #5454541a;
+  background-color: var(--card-color-bg);
 }
 
 .mainCard[href] h6 {
@@ -250,18 +265,18 @@ a.mainCard:focus {
 }
 
 .mainCard[href]:hover h6 {
-  background-color: #ffcf00;
-  color: #3f53d9;
+  background-color: var(--link-color-bg);
+  color: var(--link-color-text);
 }
 
 .mainCard[href]:active h6 {
-  background-color: #ffcf00;
-  color: #3f53d9;
+  background-color: var(--link-color-bg);
+  color: var(--link-color-text);
 }
 
 .mainCard[href]:focus h6 {
-  background-color: #ffcf00;
-  color: #3f53d9;
+  background-color: var(--link-color-bg);
+  color: var(--link-color-text);
 }
 
 .stackCard,
@@ -275,7 +290,7 @@ a.mainCard:focus {
   text-decoration: none;
   padding: var(--space-small) var(--space-large);
   margin: var(--space-xlarge) 0 0 0;
-  background-color: #5454541a;
+  background-color: var(--card-color-bg);
   display: flex;
   align-items: center;
   flex-direction: row;
@@ -295,7 +310,7 @@ a.currentlyListeningCard:active,
 a.currentlyListeningCard:focus {
   text-decoration: none;
   color: inherit;
-  background-color: #5454541a;
+  background-color: var(--card-color-bg);
 }
 
 .stackCard[href] h6 {
@@ -305,20 +320,20 @@ a.currentlyListeningCard:focus {
 
 .stackCard[href]:hover h6,
 .currentlyListeningCard[href]:hover p {
-  background-color: #ffcf00;
-  color: #3f53d9;
+  background-color: var(--link-color-bg);
+  color: var(--link-color-text);
 }
 
 .stackCard[href]:active h6,
 .currentlyListeningCard[href]:active p {
-  background-color: #ffcf00;
-  color: #3f53d9;
+  background-color: var(--link-color-bg);
+  color: var(--link-color-text);
 }
 
 .stackCard[href]:focus h6,
 .currentlyListeningCard[href]:focus p {
-  background-color: #ffcf00;
-  color: #3f53d9;
+  background-color: var(--link-color-bg);
+  color: var(--link-color-text);
 }
 
 .stackCardImg {
@@ -360,7 +375,7 @@ a.currentlyListeningCard:focus {
   text-decoration: none;
   padding: var(--space-large);
   margin: var(--space-xlarge) 0 0 0;
-  background-color: #5454541a;
+  background-color: var(--card-color-bg);
   display: flex;
   align-items: center;
   flex-direction: row;
@@ -373,7 +388,7 @@ a.currentlyListeningCard:focus {
 
 details.dicCard summary:focus-visible {
   outline: none;
-  box-shadow: 0 0 0 4px #3f53d9;
+  box-shadow: 0 0 0 4px var(--link-color-text);
 }
 
 .external {
@@ -383,7 +398,7 @@ details.dicCard summary:focus-visible {
 .tag {
   margin: var(--space-large) 0;
   padding: var(--space-xsmall) var(--space-small);
-  background-color: #54545428;
+  background-color: var(--tag-color-bg);
   line-height: 1.4;
 }
 

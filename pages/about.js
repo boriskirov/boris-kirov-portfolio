@@ -98,7 +98,6 @@ const About = () => (
                 <h6 className="headingM">Next.js</h6>
               </div>
             </a>
-
             <a
               className="stackCard"
               href="https://vercel.com/"
@@ -113,7 +112,6 @@ const About = () => (
                 <h6 className="headingM">Vercel</h6>
               </div>
             </a>
-
             <a
               className="stackCard"
               href="https://www.framer.com/motion/"
@@ -128,7 +126,6 @@ const About = () => (
                 <h6 className="headingM">Framer Motion</h6>
               </div>
             </a>
-
             <a
               className="stackCard"
               href="https://www.fluiditype.com/"
@@ -138,6 +135,17 @@ const About = () => (
               <div>
                 <img className="stackCardImg" src="/fluiditype.svg" />
                 <h6 className="headingM">Fluiditype</h6>
+              </div>
+            </a>
+            <a
+              className="stackCard"
+              href="https://p3colorpicker.cool"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div>
+                <img className="stackCardImg" src="/p3-picker.png" />
+                <h6 className="headingM">DCI-P3</h6>
               </div>
             </a>
           </section>
