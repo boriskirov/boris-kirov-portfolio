@@ -24,7 +24,12 @@ const About = () => (
         <h1 className="heading2Xl">Здрасти,</h1>
         <div className="contentWrapper">
           <section>
-            <Image src="/me.png" alt="About me photo" />
+            <Image
+              src="/me.png"
+              alt="About me photo"
+              width={1080}
+              height={720}
+            />
             <CurrentlyListening />
           </section>
           <section>
@@ -78,6 +83,8 @@ const About = () => (
             <Image
               src="/dory.png"
               alt="Dory the Mozilla firefox-looking adopted mixed-breed dog"
+              width={1080}
+              height={720}
             />
             <p>
               Photography also is a passion of mine, with which I keep my
@@ -107,7 +114,9 @@ const About = () => (
                 <Image
                   alt="stack card image"
                   className="stackCardImg"
-                  src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.asapdevelopers.com%2Fwp-content%2Fuploads%2F2019%2F04%2Fnext_js.png&f=1&nofb=1"
+                  src="/nextjs.png"
+                  width={48}
+                  height={48}
                 />
                 <h6 className="headingM">Next.js</h6>
               </div>
@@ -122,7 +131,9 @@ const About = () => (
                 <Image
                   alt="stack card image"
                   className="stackCardImg"
-                  src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimages.saasworthy.com%2Fvercel_7966_logo_1591610946_s90wa.png&f=1&nofb=1"
+                  src="/vercel.png"
+                  width={48}
+                  height={48}
                 />
                 <h6 className="headingM">Vercel</h6>
               </div>
@@ -137,7 +148,9 @@ const About = () => (
                 <Image
                   alt="stack card image"
                   className="stackCardImg"
-                  src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fappjoy.org%2Fwp-content%2Fuploads%2F2016%2F09%2FFramer-Framerjs-logo.jpg&f=1&nofb=1"
+                  src="/framer.png"
+                  width={48}
+                  height={48}
                 />
                 <h6 className="headingM">Framer Motion</h6>
               </div>
@@ -153,6 +166,8 @@ const About = () => (
                   alt="stack card image"
                   className="stackCardImg"
                   src="/fluiditype.svg"
+                  width={48}
+                  height={48}
                 />
                 <h6 className="headingM">Fluiditype</h6>
               </div>
@@ -168,6 +183,8 @@ const About = () => (
                   alt="stack card image"
                   className="stackCardImg"
                   src="/p3-picker.png"
+                  width={48}
+                  height={48}
                 />
                 <h6 className="headingM">DCI-P3</h6>
               </div>

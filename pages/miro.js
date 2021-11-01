@@ -23,8 +23,10 @@ const Miro = () => (
         <div className="flex">
           <Image
             className="stackCardImg"
-            src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimages.saasworthy.com%2Fmiro_3781_logo_1598617687_dsfet.png&f=1&nofb=1"
+            src="/miro.png"
             alt="Miro logo"
+            width={48}
+            height={48}
           />
         </div>
         <p>
