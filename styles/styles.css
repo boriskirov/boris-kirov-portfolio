@@ -159,6 +159,11 @@ h6 {
   text-transform: uppercase;
 }
 
+pre {
+  background-color: var(--card-color-bg);
+  padding: var(--space-xlarge);
+}
+
 .footerList {
   display: flex;
 }
