@@ -1,5 +1,6 @@
 import useSWR from "swr";
 import Equalizer from "./equalizer";
+import Image from "next/image";
 
 export default function CurrentlyListening() {
   const fetcher = (url) => fetch(url).then((r) => r.json());
@@ -8,7 +9,7 @@ export default function CurrentlyListening() {
     <a
       className="currentlyListeningCard"
       target="_blank"
-      rel="noopener noreferer"
+      rel="noreferrer"
       href={
         data?.isPlaying
           ? data.songUrl
@@ -17,15 +18,16 @@ export default function CurrentlyListening() {
     >
       <div className="currentlyListeningCardInner">
         {data?.isPlaying ? (
-          <img
+          <Image
             className="currentlyListeningImg"
             src={data?.albumImageUrl}
             alt={data?.album}
           />
         ) : (
-          <img
+          <Image
             className="currentlyListeningImg"
             src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcollegian.com%2Fwp-content%2Fuploads%2F2017%2F08%2Fspotify-1759471_1280.jpg&f=1&nofb=1"
+            alt="Spotify logo"
           />
         )}
 

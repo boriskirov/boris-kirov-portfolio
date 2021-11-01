@@ -41,6 +41,7 @@ export default function Writings({ allPostsData }) {
 
             {allPostsData.map(({ id, type, description, title }) => (
               <Card
+                key={Card.id}
                 link={`/posts/${id}`}
                 className="mainCard"
                 title={title}

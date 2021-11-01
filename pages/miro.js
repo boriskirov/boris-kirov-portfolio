@@ -5,6 +5,7 @@ import Metadata from "../components/metadata";
 import Link from "next/link";
 import MainWrapper from "../components/mainWrapper";
 import Main from "../components/innerWrapper";
+import Image from "next/image";
 
 const Miro = () => (
   <Motion>
@@ -20,9 +21,10 @@ const Miro = () => (
           <a className="backButton">Back</a>
         </Link>
         <div className="flex">
-          <img
+          <Image
             className="stackCardImg"
             src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimages.saasworthy.com%2Fmiro_3781_logo_1598617687_dsfet.png&f=1&nofb=1"
+            alt="Miro logo"
           />
         </div>
         <p>

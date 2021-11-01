@@ -6,6 +6,7 @@ import MainWrapper from "../components/mainWrapper";
 import Main from "../components/innerWrapper";
 import Footer from "../components/footer";
 import CurrentlyListening from "../components/currentlyListening";
+import Image from "next/image";
 
 const About = () => (
   <Motion>
@@ -23,7 +24,7 @@ const About = () => (
         <h1 className="heading2Xl">Здрасти,</h1>
         <div className="contentWrapper">
           <section>
-            <img src="/me.png" />
+            <Image src="/me.png" alt="About me photo" />
             <CurrentlyListening />
           </section>
           <section>
@@ -36,11 +37,11 @@ const About = () => (
             </p>
             <p>
               Before joining Miro I used to work with different companies like{" "}
-              <a href="https://info.nl/" target="_blank">
+              <a href="https://info.nl/" target="_blank" rel="noreferrer">
                 INFO
               </a>{" "}
               &{" "}
-              <a href="https://despark.com/" target="_blank">
+              <a href="https://despark.com/" target="_blank" rel="noreferrer">
                 Despark
               </a>{" "}
               and clients like Disney, BNP Paribas, Graydon & Tripscout. In my
@@ -50,13 +51,18 @@ const About = () => (
               My passion for constant experimentation in the realm of design and
               experience consistency keeps me busy and always hungry. You can
               always reach me via{" "}
-              <a href="https://twitter.com/sboriskirov" target="_blank">
+              <a
+                href="https://twitter.com/sboriskirov"
+                target="_blank"
+                rel="noreferrer"
+              >
                 Twitter
               </a>{" "}
               or by booking a session on my{" "}
               <a
                 href="https://www.adplist.org/mentors/boris-kirov"
                 target="_blank"
+                rel="noreferrer"
               >
                 ADPList
               </a>{" "}
@@ -69,13 +75,20 @@ const About = () => (
               monochromatic, Mozilla firefox-looking, Dory. She is an amazing,
               smart, and incredibly responsive adopted mixed-breed dog.
             </p>
-            <img src="/dory.png" />
+            <Image
+              src="/dory.png"
+              alt="Dory the Mozilla firefox-looking adopted mixed-breed dog"
+            />
             <p>
               Photography also is a passion of mine, with which I keep my
               creative juices flowing. I am fascinated by film photography and
               currently, I'm also deep into drone photography. You can check
               some of my flickaronies on{" "}
-              <a href="https://instagram.com/yng.blds" target="_blank">
+              <a
+                href="https://instagram.com/yng.blds"
+                target="_blank"
+                rel="noreferrer"
+              >
                 Instagram
               </a>
               . Before I used to collaborate with clients like Tea House Sofia,
@@ -88,10 +101,11 @@ const About = () => (
               className="stackCard"
               href="https://nextjs.org/"
               target="_blank"
-              rel="noopener noreferrer"
+              rel="noreferrer"
             >
               <div>
-                <img
+                <Image
+                  alt="stack card image"
                   className="stackCardImg"
                   src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.asapdevelopers.com%2Fwp-content%2Fuploads%2F2019%2F04%2Fnext_js.png&f=1&nofb=1"
                 />
@@ -102,10 +116,11 @@ const About = () => (
               className="stackCard"
               href="https://vercel.com/"
               target="_blank"
-              rel="noopener noreferrer"
+              rel="noreferrer"
             >
               <div>
-                <img
+                <Image
+                  alt="stack card image"
                   className="stackCardImg"
                   src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimages.saasworthy.com%2Fvercel_7966_logo_1591610946_s90wa.png&f=1&nofb=1"
                 />
@@ -116,10 +131,11 @@ const About = () => (
               className="stackCard"
               href="https://www.framer.com/motion/"
               target="_blank"
-              rel="noopener noreferrer"
+              rel="noreferrer"
             >
               <div>
-                <img
+                <Image
+                  alt="stack card image"
                   className="stackCardImg"
                   src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fappjoy.org%2Fwp-content%2Fuploads%2F2016%2F09%2FFramer-Framerjs-logo.jpg&f=1&nofb=1"
                 />
@@ -130,10 +146,14 @@ const About = () => (
               className="stackCard"
               href="https://www.fluiditype.com/"
               target="_blank"
-              rel="noopener noreferrer"
+              rel="noreferrer"
             >
               <div>
-                <img className="stackCardImg" src="/fluiditype.svg" />
+                <Image
+                  alt="stack card image"
+                  className="stackCardImg"
+                  src="/fluiditype.svg"
+                />
                 <h6 className="headingM">Fluiditype</h6>
               </div>
             </a>
@@ -141,10 +161,14 @@ const About = () => (
               className="stackCard"
               href="https://p3colorpicker.cool"
               target="_blank"
-              rel="noopener noreferrer"
+              rel="noreferrer"
             >
               <div>
-                <img className="stackCardImg" src="/p3-picker.png" />
+                <Image
+                  alt="stack card image"
+                  className="stackCardImg"
+                  src="/p3-picker.png"
+                />
                 <h6 className="headingM">DCI-P3</h6>
               </div>
             </a>
