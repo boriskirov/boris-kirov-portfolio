@@ -405,6 +405,10 @@ details.dicCard summary:focus-visible {
   line-height: 1.4;
 }
 
+.time {
+  text-transform: uppercase;
+}
+
 .backButton {
   cursor: w-resize;
   margin-bottom: var(--space-xlarge);

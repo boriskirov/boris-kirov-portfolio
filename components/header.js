@@ -35,9 +35,23 @@ function DarkMode() {
     ></button>
   );
 }
+
+export function Time() {
+  const time = new Date().toLocaleString([], {
+    hour: "2-digit",
+    minute: "2-digit",
+    hour12: true,
+  });
+  return <small className="time">{time},</small>;
+}
+
 const Header = () => (
   <header>
-    <small>Crafted in Amsterdam ♥️</small>
+    <div className="flex">
+      <Time />
+      <small>Amsterdam</small>
+    </div>
+    {/* <small>Crafted in Amsterdam ♥️</small> */}
     <DarkMode />
   </header>
 );

@@ -22,8 +22,8 @@ export default function CurrentlyListening() {
             className="currentlyListeningImg"
             src={data?.albumImageUrl}
             alt={data?.album}
-            width={96}
-            height={96}
+            width={72}
+            height={72}
           />
         ) : (
           <Image
