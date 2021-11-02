@@ -22,22 +22,23 @@ export default function CurrentlyListening() {
             className="currentlyListeningImg"
             src={data?.albumImageUrl}
             alt={data?.album}
+            width={96}
+            height={96}
           />
         ) : (
           <Image
             className="currentlyListeningImg"
             src="/spotify.png"
             alt="Spotify logo"
-            width={96}
-            height={96}
+            width={48}
+            height={48}
           />
         )}
-
         <div className="currentlyListeningContent">
-          <p>
-            {data?.isPlaying ? data.title : "Not listening Spotify right now"}
-          </p>
-          <small>{data?.isPlaying ? data.artist : ""}</small>
+          <small>{data?.isPlaying ? data.title : ""}</small>
+          <small>
+            {data?.isPlaying ? data.artist : "Not listening Spotify right now"}
+          </small>
         </div>
       </div>
       {data?.isPlaying ? <Equalizer /> : ""}

@@ -36,7 +36,7 @@ export const getNowPlaying = async () => {
   });
 };
 
-export const Playing = async (_, res) => {
+export default async (_, res) => {
   const response = await getNowPlaying();
 
   if (response.status === 204 || response.status > 400) {
