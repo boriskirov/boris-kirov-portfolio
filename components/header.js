@@ -36,19 +36,19 @@ function DarkMode() {
   );
 }
 
-export function Time() {
-  const time = new Date().toLocaleString([], {
-    hour: "2-digit",
-    minute: "2-digit",
-    hour12: true,
-  });
-  return <small className="time">{time},</small>;
-}
+// export function Time() {
+//   const time = new Date().toLocaleString([], {
+//     hour: "2-digit",
+//     minute: "2-digit",
+//     hour12: true,
+//   });
+//   return <small className="time">{time},</small>;
+// }
 
 const Header = () => (
   <header>
     <div className="flex">
-      <Time />
+      {/* <Time /> */}
       <small>Amsterdam</small>
     </div>
     {/* <small>Crafted in Amsterdam ♥️</small> */}
