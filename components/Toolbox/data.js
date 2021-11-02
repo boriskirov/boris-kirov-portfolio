@@ -1,4 +1,4 @@
-export default [
+const ToolboxList = [
   {
     name: "Miro",
     url: "https://miro.com",
@@ -162,3 +162,5 @@ export default [
     category: "Productivity",
   },
 ];
+
+export default ToolboxList;
