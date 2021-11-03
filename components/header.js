@@ -37,34 +37,34 @@ function DarkMode() {
   );
 }
 
-function WeatherInAmsterdam() {
-  const [weather, setWeather] = useState({});
+export function Amsterdam() {
+  const [weather, setTime] = useState({});
   useEffect(() => {
-    const fetchWeather = async (city) => {
+    const fetchTime = async (city) => {
       try {
         const weatherReq = await fetch(
           `https://api.weatherapi.com/v1/forecast.json?key=ee94006c9bb74ce892f181126211305&q=${city}&days=1&aqi=no&alerts=no`
         );
-        const weatherData = await weatherReq.json();
-        setWeather({
-          temperature: weatherData.current.temp_c + "°C",
+        const timeData = await weatherReq.json();
+        setTime({
+          time:
+            timeData.location.localtime +
+            " " +
+            timeData.location.name +
+            ", " +
+            timeData.location.country,
         });
       } catch {}
     };
-    fetchWeather("Amsterdam");
+    fetchTime("Amsterdam");
   }, []);
-  return (
-    <div className="flex">
-      <small>{weather.temperature},</small>
-    </div>
-  );
+  return <small>{weather.time}</small>;
 }
 
 const Header = () => (
   <header>
     <div className="flex">
-      <WeatherInAmsterdam />
-      <small>Amsterdam</small>
+      <Amsterdam />
     </div>
 
     <DarkMode />
