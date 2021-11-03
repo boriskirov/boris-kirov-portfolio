@@ -4,6 +4,19 @@
   box-sizing: border-box;
 }
 
+@media (color-gamut: p3) {
+  :root {
+    --dark-color-bg: color(display-p3 0.053 0.064 0.096 / 1);
+    --light-color-text: color(display-p3 0.768 0.754 0.764 / 1);
+    --light-color-bg: color(display-p3 0.768 0.754 0.764 / 1);
+    --dark-color-text: color(display-p3 0.053 0.064 0.096 / 1);
+    --selection-color-bg: color(display-p3 0.287 0.179 1 / 1);
+    --selection-color-text: color(display-p3 1 0.773 0.09 / 1);
+    --link-color-text: color(display-p3 0.194 0.183 0.794 / 1);
+    --link-color-bg: color(display-p3 1 0.773 0.09 / 1);
+  }
+}
+
 :root {
   --font-family: SFMono-Regular, Consolas, "Liberation Mono", Menlo, Courier,
     monospace;
@@ -26,19 +39,6 @@
   --space-xlarge: 24px;
 
   --border-radius-small: 8px;
-}
-
-@media (color-gamut: p3) {
-  :root {
-    --dark-color-bg: color(display-p3 0.053 0.064 0.096 / 1);
-    --light-color-text: color(display-p3 0.768 0.754 0.764 / 1);
-    --light-color-bg: color(display-p3 0.768 0.754 0.764 / 1);
-    --dark-color-text: color(display-p3 0.053 0.064 0.096 / 1);
-    --selection-color-bg: color(display-p3 0.287 0.179 1 / 1);
-    --selection-color-text: color(display-p3 1 0.773 0.09 / 1);
-    --link-color-text: color(display-p3 0.194 0.183 0.794 / 1);
-    --link-color-bg: color(display-p3 1 0.773 0.09 / 1);
-  }
 }
 
 ::selection {

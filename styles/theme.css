@@ -28,11 +28,3 @@ html,
   background-color: var(--dark-color-bg);
   color: var(--light-color-text);
 }
-
-@media (color-gamut: p3) {
-  html,
-  .dark body {
-    background-color: color(display-p3 0.053 0.064 0.096 / 1);
-    color: color(display-p3 0.768 0.754 0.764 / 1);
-  }
-}
