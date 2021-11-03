@@ -29,17 +29,6 @@ Check the screenshots for the final result:
 Here is the CSS simple snippet of how to add the display-p3 support for your website:
 
 ```
-:root {
-  --dark-color-bg: #131313;
-  --light-color-text: #e2e2e2;
-  --light-color-bg: #e2e2e2;
-  --dark-color-text: #050038;
-  --selection-color-bg: #3f53d9;
-  --selection-color-text: #ffd707;
-  --link-color-text: #3f53d9;
-  --link-color-bg: #ffcf00;
-}
-
 @media (color-gamut: p3) {
   :root {
     --dark-color-bg: color(display-p3 0.053 0.064 0.096 / 1);
@@ -51,10 +40,21 @@ Here is the CSS simple snippet of how to add the display-p3 support for your web
     --link-color-text: color(display-p3 0.194 0.183 0.794 / 1);
     --link-color-bg: color(display-p3 1 0.773 0.09 / 1);
   }
+
+  :root {
+    --dark-color-bg: #131313;
+    --light-color-text: #e2e2e2;
+    --light-color-bg: #e2e2e2;
+    --dark-color-text: #050038;
+    --selection-color-bg: #3f53d9;
+    --selection-color-text: #ffd707;
+    --link-color-text: #3f53d9;
+    --link-color-bg: #ffcf00;
+  }
 }
 ```
 
-Want to read more about the Display P3?
+Want to read more about the Display P3? Check those amazing resources
 
 - [https://webkit.org/blog/10042/wide-gamut-color-in-css-with-display-p3/](https://webkit.org/blog/10042/wide-gamut-color-in-css-with-display-p3/)
 - [https://webkit.org/blog/6682/improving-color-on-the-web/](https://webkit.org/blog/6682/improving-color-on-the-web/)

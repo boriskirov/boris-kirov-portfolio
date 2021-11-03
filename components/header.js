@@ -47,12 +47,7 @@ export function Amsterdam() {
         );
         const timeData = await weatherReq.json();
         setTime({
-          time:
-            timeData.location.localtime +
-            " " +
-            timeData.location.name +
-            ", " +
-            timeData.location.country,
+          time: timeData.location.localtime + " " + timeData.location.name,
         });
       } catch {}
     };

@@ -50,7 +50,7 @@ blockquote {
 }
 
 code {
-  font-size: calc(var(--font-size) * 1.1);
+  font-size: calc(var(--font-size) * 0.85);
   line-height: var(--line-height);
   letter-spacing: var(--letter-spacing);
   font-weight: calc(var(--font-weight) * 1.33);
