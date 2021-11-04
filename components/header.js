@@ -1,5 +1,4 @@
-import { identity } from "lodash";
-import React, { useState, useEffect } from "react";
+import React from "react";
 
 function DarkMode() {
   const [mode, setMode] = React.useState("light");
@@ -37,29 +36,21 @@ function DarkMode() {
   );
 }
 
-export function Amsterdam() {
-  const [weather, setTime] = useState({});
-  useEffect(() => {
-    const fetchTime = async (city) => {
-      try {
-        const weatherReq = await fetch(
-          `https://api.weatherapi.com/v1/forecast.json?key=ee94006c9bb74ce892f181126211305&q=${city}&days=1&aqi=no&alerts=no`
-        );
-        const timeData = await weatherReq.json();
-        setTime({
-          time: timeData.location.localtime + " " + timeData.location.name,
-        });
-      } catch {}
-    };
-    fetchTime("Amsterdam");
-  }, []);
-  return <small>{weather.time}</small>;
+export function AmsterdamTime() {
+  const TimeFomatter = new Intl.DateTimeFormat("en-GB", {
+    timeZone: "Europe/Amsterdam",
+    hour: "numeric",
+    minute: "numeric",
+    weekday: "short",
+    hour12: false,
+  }).format();
+  return <small>{TimeFomatter}, Amsterdam</small>;
 }
 
 const Header = () => (
   <header>
     <div className="flex">
-      <Amsterdam />
+      <AmsterdamTime />
     </div>
 
     <DarkMode />

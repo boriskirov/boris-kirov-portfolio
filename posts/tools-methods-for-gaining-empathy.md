@@ -14,15 +14,17 @@ Through this case study blog post I'll guide you through the internal tools and 
 
 Being paired with a Product Manager on an initiative is a common practice in Miro. It's like a small start-up, in a start-up. We do everything together to push things forward. Once the area of work is clear, we can begin digging into the problem space to define how and where we can start.
 
+![Unstructured problem space](../../empathy-tools-1.png)
+
 We take multiple problems and try to arrange and group them in a way that makes sense from experience, implementation, and investment points of view. Generating the first problem definition is serving us as a stepping stone in the problem area.
 
-![Empahty tools image 1](../../empathy-tools-1.png)
+![Structured problem space](../../empathy-tools-1.1.png)
 
-##### Problem area
+##### Problem space
 
 Enterprise admins do not have enough management and control features over applications in their organization.
 
-##### Problem definition
+##### Problem definition (#)
 
 Organization and team admins lack app management controls that are needed for secure app installation and usage.
 
@@ -36,7 +38,7 @@ Gaining empathy will give us more insights into the emotional and practical spec
 
 But how do you build that persona? In the same way as with everything unknown, we start asking questions. You see the screenshot below of the questions that I generated only regarding the admins in the context of app management.
 
-![Empahty tools image 1](../../empathy-tools-4.jpg)
+![Empahty tools image 4](../../empathy-tools-4.jpg)
 
 ##### Help Center
 
@@ -45,6 +47,8 @@ On the general questions, I always advise going through the Help Center of your 
 ##### Go through the tables
 
 Once the general questions are toggled, we can go to the qualitative unknowns. In Miro, that's quite easy. Collaboration with a Product Analyst may quickly draw up a Looker table with all relevant data. Looker is a Business Intelligence and Data Analytics Platform. With it, we start to understand the scale at which we are supposed to work. Knowing that certain organization may have more than 2000 teams and 10000 accounts put your design and controls in a different direction. We should look for scalable controls which allow proper selection, sorting, and filtration to be accessible.
+
+![Empahty tools image 5](../../empathy-tools-5.png)
 
 ##### Connect with the CSM
 
