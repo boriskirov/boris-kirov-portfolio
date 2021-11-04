@@ -1,0 +1,27 @@
+import data from "./footer-data";
+
+const Footer = () => (
+  <footer>
+    <a href="../BorisKirov_Resume.pdf" rel="noopener noreferrer">
+      <small>Get Resume 2021 © </small>
+    </a>
+    <div>
+      <ul className="footerList">
+        {data.map((footer) => (
+          <li className="footerLi" key={footer.id}>
+            <a
+              rel="noopener noreferrer"
+              href={footer.url}
+              target="_blank"
+              rel="noreferrer"
+            >
+              <small>{footer.name}</small>
+            </a>
+          </li>
+        ))}
+      </ul>
+    </div>
+  </footer>
+);
+
+export default Footer;

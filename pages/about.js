@@ -4,7 +4,7 @@ import Metadata from "../components/metadata";
 import Link from "next/link";
 import MainWrapper from "../components/mainWrapper";
 import Main from "../components/innerWrapper";
-import Footer from "../components/footer";
+import Footer from "../components/footer/footer";
 import CurrentlyListening from "../components/currentlyListening";
 import Image from "next/image";
 
