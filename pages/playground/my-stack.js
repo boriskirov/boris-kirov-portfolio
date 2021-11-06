@@ -5,6 +5,8 @@ import Metadata from "../../components/metadata";
 import Main from "../../components/innerWrapper";
 import Link from "next/link";
 import Toolbox from "../../components/Toolbox/toolbox";
+import Card from "../../components/card";
+import FeedbackForm from "../../components/feedbackForm";
 
 const MyStack = () => (
   <Motion>
@@ -27,6 +29,11 @@ const MyStack = () => (
           as I try to experiment with new solutions and methods.
         </p>
         <Toolbox />
+        <FeedbackForm
+          description={
+            "You have some interesting and helpful tools to test? Send them my way on Twitter."
+          }
+        />
       </Main>
     </MainWrapper>
   </Motion>

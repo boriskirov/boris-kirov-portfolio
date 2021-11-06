@@ -7,6 +7,7 @@ import Main from "../components/innerWrapper";
 import Footer from "../components/footer/footer";
 import CurrentlyListening from "../components/currentlyListening";
 import Image from "next/image";
+import FeedbackForm from "../components/feedbackForm";
 
 const About = () => (
   <Motion>
@@ -189,6 +190,11 @@ const About = () => (
                 <h6 className="headingM">DCI-P3</h6>
               </div>
             </a>
+            <FeedbackForm
+              description={
+                "You want to share or reach out regarding something I wrote, or you want to have a friendly chat with me? Send me a DM in Twitter."
+              }
+            />
           </section>
         </div>
       </Main>

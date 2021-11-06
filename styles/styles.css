@@ -353,7 +353,7 @@ a.currentlyListeningCard:focus {
 
 .currentlyListeningContent {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: self-start;
   margin: 0 var(--space-large);
 }
