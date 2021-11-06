@@ -9,12 +9,7 @@ const Footer = () => (
       <ul className="footerList">
         {data.map((footer) => (
           <li className="footerLi" key={footer.id}>
-            <a
-              rel="noopener noreferrer"
-              href={footer.url}
-              target="_blank"
-              rel="noreferrer"
-            >
+            <a rel="noopener noreferrer" href={footer.url} target="_blank">
               <small>{footer.name}</small>
             </a>
           </li>
