@@ -107,6 +107,12 @@ h4 {
   margin: var(--space-xsmall) 0;
 }
 
+hr {
+  color: inherit;
+  width: 100%;
+  opacity: 0.1;
+}
+
 small {
   display: flex;
   align-items: center;
