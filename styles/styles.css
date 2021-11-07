@@ -222,6 +222,7 @@ li.footerLi:last-child {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 0 24px;
 }
 
 .innerWrapper {
@@ -438,7 +439,7 @@ details.dicCard summary:focus-visible {
 
 @media (max-width: 834px) {
   header {
-    padding: 10vw 2.5vw;
+    padding: 10vw 0;
   }
 
   footer {
@@ -449,7 +450,7 @@ details.dicCard summary:focus-visible {
     align-items: flex-start;
   }
   .innerWrapper {
-    padding: 10vw 2.5vw;
+    padding: 10vw 0;
     height: 100%;
   }
 
@@ -484,7 +485,7 @@ details.dicCard summary:focus-visible {
   }
 
   header {
-    padding: 10vw 2.5vw;
+    padding: 10vw 0;
   }
 
   ol {
@@ -493,7 +494,7 @@ details.dicCard summary:focus-visible {
     list-style-position: outside;
   }
   .innerWrapper {
-    padding: 10vw 2.5vw;
+    padding: 10vw 0;
     height: 100%;
   }
 
