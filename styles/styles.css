@@ -413,6 +413,7 @@ details.dicCard summary:focus-visible {
   padding: var(--space-xsmall) var(--space-small);
   background-color: var(--tag-color-bg);
   line-height: 1.4;
+  word-break: keep-all;
 }
 
 .time {
