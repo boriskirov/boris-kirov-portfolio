@@ -26,7 +26,7 @@ const ToolboxList = [
   {
     name: "Notion",
     url: "https://notion.so",
-    image: "/Notion.png",
+    image: "/notion.png",
     category: "Writing",
   },
   {

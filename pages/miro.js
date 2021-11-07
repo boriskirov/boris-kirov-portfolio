@@ -45,7 +45,8 @@ const Miro = () => (
         <ul>
           <li>
             <ul>
-              <h5>Platform Experience</h5>
+              <h6>Platform Experience</h6>
+              <hr />
               <li className="listStyleCircle">
                 <a
                   href="https://developers.miro.com/docs"
@@ -78,8 +79,8 @@ const Miro = () => (
           </li>
           <li>
             <ul>
-              <h5>Design system & Accessibility</h5>
-
+              <h6>Design system & Accessibility</h6>
+              <hr />
               <li className="listStyleCircle">Grower and advocate</li>
               <li className="listStyleCircle">
                 Ways of working, contribution models and stream collaboration
@@ -113,7 +114,8 @@ const Miro = () => (
 
           <li>
             <ul>
-              <h5>Side projects</h5>
+              <h6>Side projects</h6>
+              <hr />
               <li className="listStyleCircle">
                 <a
                   href="https://miroshortcuts.vercel.app/"

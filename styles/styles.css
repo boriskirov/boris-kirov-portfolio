@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+@import url("https://rsms.me/inter/inter.css");
+@supports (font-variation-settings: normal) {
+}
+
 @media (color-gamut: p3) {
   :root {
     --dark-color-bg: color(display-p3 0.053 0.064 0.096 / 1);
@@ -18,8 +22,7 @@
 }
 
 :root {
-  --font-family: SFMono-Regular, Consolas, "Liberation Mono", Menlo, Courier,
-    monospace;
+  --font-family: "Inter", sans-serif;
   --dark-color-bg: #131313;
   --light-color-text: #e2e2e2;
   --light-color-bg: #e2e2e2;
@@ -251,7 +254,6 @@ li.footerLi:last-child {
   color: inherit;
   cursor: e-resize;
   text-decoration: none;
-  font-weight: 500;
   text-shadow: none;
   text-decoration: none;
   padding: var(--space-small) var(--space-large);
@@ -273,6 +275,7 @@ a.mainCard:focus {
 .mainCard[href] h6 {
   padding: var(--space-xsmall) var(--space-xsmall) 0px var(--space-xsmall);
   margin: var(--space-small) 0;
+  font-weight: normal;
 }
 
 .mainCard[href]:hover h6 {
