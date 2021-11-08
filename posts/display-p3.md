@@ -29,28 +29,30 @@ Check the screenshots for the final result:
 Here is the CSS simple snippet of how to add the display-p3 support for your website:
 
 ```
-@media (color-gamut: p3) {
-  :root {
-    --dark-color-bg: color(display-p3 0.053 0.064 0.096 / 1);
-    --light-color-text: color(display-p3 0.768 0.754 0.764 / 1);
-    --light-color-bg: color(display-p3 0.768 0.754 0.764 / 1);
-    --dark-color-text: color(display-p3 0.053 0.064 0.096 / 1);
-    --selection-color-bg: color(display-p3 0.287 0.179 1 / 1);
-    --selection-color-text: color(display-p3 1 0.773 0.09 / 1);
-    --link-color-text: color(display-p3 0.194 0.183 0.794 / 1);
-    --link-color-bg: color(display-p3 1 0.773 0.09 / 1);
-  }
+:root {
+  --dark-color-bg: #131313;
+  --dark-color-bg: color(display-p3 0.053 0.064 0.096 / 1);
 
-  :root {
-    --dark-color-bg: #131313;
-    --light-color-text: #e2e2e2;
-    --light-color-bg: #e2e2e2;
-    --dark-color-text: #050038;
-    --selection-color-bg: #3f53d9;
-    --selection-color-text: #ffd707;
-    --link-color-text: #3f53d9;
-    --link-color-bg: #ffcf00;
-  }
+  --light-color-text: #e2e2e2;
+  --light-color-text: color(display-p3 0.768 0.754 0.764 / 1);
+
+  --light-color-bg: #e2e2e2;
+  --light-color-bg: color(display-p3 0.768 0.754 0.764 / 1);
+
+  --dark-color-text: #050038;
+  --dark-color-text: color(display-p3 0.053 0.064 0.096 / 1);
+
+  --selection-color-bg: #3f53d9;
+  --selection-color-bg: color(display-p3 0.287 0.179 1 / 1);
+
+  --selection-color-text: #ffd707;
+  --selection-color-text: color(display-p3 1 0.773 0.09 / 1);
+
+  --link-color-text: #3f53d9;
+  --link-color-text: color(display-p3 0.194 0.183 0.794 / 1);
+
+  --link-color-bg: #ffcf00;
+  --link-color-bg: color(display-p3 1 0.773 0.09 / 1);
 }
 ```
 

@@ -8,29 +8,41 @@
 @supports (font-variation-settings: normal) {
 }
 
-@media (color-gamut: p3) {
-  :root {
-    --dark-color-bg: color(display-p3 0.053 0.064 0.096 / 1);
-    --light-color-text: color(display-p3 0.768 0.754 0.764 / 1);
-    --light-color-bg: color(display-p3 0.768 0.754 0.764 / 1);
-    --dark-color-text: color(display-p3 0.053 0.064 0.096 / 1);
-    --selection-color-bg: color(display-p3 0.287 0.179 1 / 1);
-    --selection-color-text: color(display-p3 1 0.773 0.09 / 1);
-    --link-color-text: color(display-p3 0.194 0.183 0.794 / 1);
-    --link-color-bg: color(display-p3 1 0.773 0.09 / 1);
-  }
+:root {
+  --p3-blue-bg: color(display-p3 0.655 0.64 1);
+  --p3-red-bg: color(display-p3 1 0.79 0.79);
+  --p3-purple-bg: color(display-p3 1 0.79 0.992);
+  --p3-agua-bg: color(display-p3 0.79 0.886 1);
+  --p3-green-bg: color(display-p3 0.785 1 0.805);
+  --p3-orange-bg: color(display-p3 1 0.749 0.6);
 }
 
 :root {
   --font-family: "Inter", sans-serif;
   --dark-color-bg: #131313;
+  --dark-color-bg: color(display-p3 0 0.038 0.09);
+
   --light-color-text: #e2e2e2;
+  --light-color-text: color(display-p3 0.768 0.754 0.764 / 1);
+
   --light-color-bg: #e2e2e2;
+  --light-color-bg: color(display-p3 0.768 0.754 0.764 / 1);
+
   --dark-color-text: #050038;
+  --dark-color-text: color(display-p3 0.053 0.064 0.096 / 1);
+
   --selection-color-bg: #3f53d9;
+  --selection-color-bg: color(display-p3 0.287 0.179 1 / 1);
+
   --selection-color-text: #ffd707;
+  --selection-color-text: color(display-p3 1 0.773 0.09 / 1);
+
   --link-color-text: #3f53d9;
+  --link-color-text: color(display-p3 0.194 0.183 0.794 / 1);
+
   --link-color-bg: #ffcf00;
+  --link-color-bg: color(display-p3 1 0.773 0.09 / 1);
+
   --card-color-bg: #5454541a;
   --tag-color-bg: #54545428;
 

@@ -8,7 +8,7 @@ const Footer = () => (
     <div>
       <ul className="footerList">
         {data.map((footer) => (
-          <li className="footerLi" key={footer.id}>
+          <li className="footerLi" key={footer.name}>
             <a rel="noopener noreferrer" href={footer.url} target="_blank">
               <small>{footer.name}</small>
             </a>
