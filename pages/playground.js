@@ -23,9 +23,9 @@ const Playground = () => (
         </Link>
         <h1 className="heading2Xl">PLAYGROUND</h1>
         <p>
-          Welcome to my playground, where I try to explore the functional,
-          visual and collaborative side of design. Feel free to browse through
-          the projects and experiment with them.
+          Welcome to my playground, where I explore the functional, visual and
+          collaborative side of design. Feel free to browse through the
+          projects, tools, case studies & experiments.
         </p>
 
         <div className="contentWrapper">
@@ -93,30 +93,12 @@ const Playground = () => (
           />
 
           <Card
-            link="https://github.com/boriskirov/git-commands"
-            className="external mainCard"
-            title="Git commands"
-            description="List of handy git commands for efficient and fast way of working."
-            type="Helper doc"
-            target="_blank"
-          />
-
-          <Card
-            link="https://github.com/boriskirov/figma-commands"
-            className="external mainCard"
-            title="Figma commands"
-            description="List of custom figma shorcuts and specific plugins for efficient way of working."
-            type="Helper doc"
-            target="_blank"
-          />
-
-          <Card
-            link="https://github.com/boriskirov/shell-commands"
-            className="external mainCard"
-            title="Shell commands"
-            description="A list of command line operations for working."
-            type="Helper doc"
-            target="_blank"
+            link="/playground/cheatsheets"
+            className="mainCard"
+            title="Cheatsheets"
+            description="Working with speed and efficiency is essential when you spend your day designing and coding. This section of my website is dedicated to commands & shortcuts, so my day can be fun and productive."
+            type="Helpers"
+            target=""
           />
         </div>
       </Main>
