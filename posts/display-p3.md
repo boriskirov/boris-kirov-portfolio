@@ -51,6 +51,8 @@ Here is the CSS simple snippet of how to add the display-p3 support for your web
     --selection-color-text: color(display-p3 0.945 0.676 0.17);
     --link-color-text: color(display-p3 0.255 0.147 0.98);
     --link-color-bg: color(display-p3 0.945 0.676 0.17);
+    --card-color-bg: color(display-p3 0.44 0.495 1 / 0.08);
+    --tag-color-bg: color(display-p3 0.44 0.495 1 / 0.24);
   }
 }
 ```
