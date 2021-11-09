@@ -19,29 +19,30 @@
 
 :root {
   --font-family: "Inter", sans-serif;
-  --dark-color-bg: #131313;
+
   --dark-color-bg: color(display-p3 0 0.038 0.09);
+  --dark-color-bg: #131313;
 
-  --light-color-text: #e2e2e2;
   --light-color-text: color(display-p3 0.768 0.754 0.764 / 1);
+  --light-color-text: #e2e2e2;
 
-  --light-color-bg: #e2e2e2;
   --light-color-bg: color(display-p3 0.768 0.754 0.764 / 1);
+  --light-color-bg: #e2e2e2;
 
-  --dark-color-text: #050038;
   --dark-color-text: color(display-p3 0.053 0.064 0.096 / 1);
+  --dark-color-text: #050038;
 
-  --selection-color-bg: #3f53d9;
   --selection-color-bg: color(display-p3 0.287 0.179 1 / 1);
+  --selection-color-bg: #3f53d9;
 
-  --selection-color-text: #ffd707;
   --selection-color-text: color(display-p3 1 0.773 0.09 / 1);
+  --selection-color-text: #ffd707;
 
-  --link-color-text: #3f53d9;
   --link-color-text: color(display-p3 0.194 0.183 0.794 / 1);
+  --link-color-text: #3f53d9;
 
-  --link-color-bg: #ffcf00;
   --link-color-bg: color(display-p3 1 0.773 0.09 / 1);
+  --link-color-bg: #ffcf00;
 
   --card-color-bg: #5454541a;
   --tag-color-bg: #54545428;
@@ -234,7 +235,6 @@ li.footerLi:last-child {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 0 24px;
 }
 
 .innerWrapper {
@@ -452,7 +452,7 @@ details.dicCard summary:focus-visible {
 
 @media (max-width: 834px) {
   header {
-    padding: 10vw 0;
+    padding: 10vw 24px;
   }
 
   footer {
@@ -463,7 +463,7 @@ details.dicCard summary:focus-visible {
     align-items: flex-start;
   }
   .innerWrapper {
-    padding: 10vw 0;
+    padding: 10vw 24px;
     height: 100%;
   }
 
@@ -498,7 +498,7 @@ details.dicCard summary:focus-visible {
   }
 
   header {
-    padding: 10vw 0;
+    padding: 10vw 24px;
   }
 
   ol {
@@ -507,7 +507,7 @@ details.dicCard summary:focus-visible {
     list-style-position: outside;
   }
   .innerWrapper {
-    padding: 10vw 0;
+    padding: 10vw 24px;
     height: 100%;
   }
 
