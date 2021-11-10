@@ -432,7 +432,7 @@ details.dicCard summary:focus-visible {
 }
 
 .dropCap {
-  font-size: 5vw;
+  font-size: 4.2vw;
   font-weight: 900;
   float: left;
   line-height: 0.55;
@@ -464,7 +464,7 @@ details.dicCard summary:focus-visible {
   }
 
   .dropCap {
-    font-size: 11vw;
+    font-size: 10.5vw;
     line-height: 0.6;
     margin-right: 0.15em;
     padding-top: var(--space-large);
@@ -512,8 +512,8 @@ details.dicCard summary:focus-visible {
   }
 
   .dropCap {
-    font-size: 20vw;
-    line-height: 0.6;
+    font-size: 15vw;
+    line-height: 0.65;
     margin-right: 0.15em;
     padding-top: var(--space-medium);
   }

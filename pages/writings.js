@@ -34,7 +34,8 @@ export default function Writings({ allPostsData }) {
           <h1 className="heading2Xl">WRITINGS</h1>
           <p>
             My small space where I try to think out loud about everything
-            related to design, software and technology.
+            related to design, software and technology. Feel free to read
+            through.{" "}
           </p>
           <div className="contentWrapper">
             {/* Post component start */}

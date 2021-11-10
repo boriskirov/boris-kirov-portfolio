@@ -25,7 +25,7 @@ const Playground = () => (
         <p>
           Welcome to my playground, where I explore the functional, visual and
           collaborative side of design. Feel free to browse through the
-          projects, tools, case studies & experiments.
+          projects, tools & experiments.
         </p>
 
         <div className="contentWrapper">

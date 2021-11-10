@@ -190,6 +190,40 @@ const About = () => (
                 <h6 className="headingM">DCI-P3</h6>
               </div>
             </a>
+            <a
+              className="stackCard"
+              href="https://rsms.me/inter/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <div>
+                <Image
+                  alt="stack card image"
+                  className="stackCardImg"
+                  src="/inter-logo.png"
+                  width={48}
+                  height={48}
+                />
+                <h6 className="headingM">Inter</h6>
+              </div>
+            </a>
+            <a
+              className="stackCard"
+              href="https://phosphoricons.com/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <div>
+                <Image
+                  alt="stack card image"
+                  className="stackCardImg"
+                  src="/phosphor.png"
+                  width={48}
+                  height={48}
+                />
+                <h6 className="headingM">Phosphor icons</h6>
+              </div>
+            </a>
             <FeedbackForm
               description={
                 "You want to share or reach out regarding something I wrote, or you want to have a friendly chat with me? Send me a DM in Twitter."
