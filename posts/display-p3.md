@@ -22,6 +22,7 @@ Improving the colors of your portfolio with the P3 gamut is easy. But the questi
 The Display P3 is a superset of the sRGB so you will have a wider range of colors to express yourself. You can play around with Safari's DevTools, they actually show you the wider range of colors that the browser is supporting.
 
 Check the screenshots for the final result:
+
 ![DCI P3 example](../../DCI-P3-2.png)
 
 ![DCI P3 example](../../DCI-P3-3.png)

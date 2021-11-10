@@ -28,6 +28,7 @@
   --space-medium: 12px;
   --space-large: 16px;
   --space-xlarge: 24px;
+
   --border-radius-small: 8px;
 }
 
@@ -166,9 +167,14 @@ info {
   text-align: center;
 }
 
+h5 {
+  margin: var(--space-small) 0;
+}
+
 h6 {
-  margin: 64px 0 var(--space-small);
+  margin: var(--space-xlarge) 0 var(--space-small);
   text-transform: uppercase;
+  font-weight: normal;
 }
 
 pre {
@@ -210,8 +216,12 @@ li.footerLi:last-child {
   text-transform: uppercase;
 }
 
-.listStyleCircle {
+.list-style-circle {
   list-style-type: circle;
+}
+
+.list-style-none {
+  list-style: none;
 }
 
 .flex {
@@ -252,7 +262,7 @@ li.footerLi:last-child {
   margin: 0 auto;
 }
 
-.mainCard {
+.main-card {
   width: 100%;
   color: inherit;
   cursor: e-resize;
@@ -267,36 +277,36 @@ li.footerLi:last-child {
   flex-direction: column;
 }
 
-a.mainCard:hover,
-a.mainCard:active,
-a.mainCard:focus {
+a.main-card:hover,
+a.main-card:active,
+a.main-card:focus {
   text-decoration: none;
   color: inherit;
   background-color: var(--card-color-bg);
 }
 
-.mainCard[href] h6 {
+.main-card[href] h6 {
   padding: var(--space-xsmall) var(--space-xsmall) 0px var(--space-xsmall);
   margin: var(--space-small) 0;
   font-weight: normal;
 }
 
-.mainCard[href]:hover h6 {
+.main-card[href]:hover h6 {
   background-color: var(--link-color-bg);
   color: var(--link-color-text);
 }
 
-.mainCard[href]:active h6 {
+.main-card[href]:active h6 {
   background-color: var(--link-color-bg);
   color: var(--link-color-text);
 }
 
-.mainCard[href]:focus h6 {
+.main-card[href]:focus h6 {
   background-color: var(--link-color-bg);
   color: var(--link-color-text);
 }
 
-.stackCard,
+.stack-card,
 .currentlyListeningCard {
   width: 100%;
   color: inherit;
@@ -314,14 +324,14 @@ a.mainCard:focus {
   justify-content: space-between;
 }
 
-.stackCard > div {
+.stack-card > div {
   display: flex;
   align-items: center;
 }
 
-a.stackCard:hover,
-a.stackCard:active,
-a.stackCard:focus,
+a.stack-card:hover,
+a.stack-card:active,
+a.stack-card:focus,
 a.currentlyListeningCard:hover,
 a.currentlyListeningCard:active,
 a.currentlyListeningCard:focus {
@@ -330,30 +340,30 @@ a.currentlyListeningCard:focus {
   background-color: var(--card-color-bg);
 }
 
-.stackCard[href] h6 {
+.stack-card[href] h6 {
   padding: var(--space-xsmall) var(--space-xxsmall);
   margin: var(--space-small);
 }
 
-.stackCard[href]:hover h6,
+.stack-card[href]:hover h6,
 .currentlyListeningCard[href]:hover p {
   background-color: var(--link-color-bg);
   color: var(--link-color-text);
 }
 
-.stackCard[href]:active h6,
+.stack-card[href]:active h6,
 .currentlyListeningCard[href]:active p {
   background-color: var(--link-color-bg);
   color: var(--link-color-text);
 }
 
-.stackCard[href]:focus h6,
+.stack-card[href]:focus h6,
 .currentlyListeningCard[href]:focus p {
   background-color: var(--link-color-bg);
   color: var(--link-color-text);
 }
 
-.stackCardImg {
+.stack-card-img {
   border-radius: var(--border-radius-small);
 }
 
@@ -380,7 +390,7 @@ a.currentlyListeningCard:focus {
   align-items: center;
 }
 
-.dicCard {
+.dic-card {
   width: 100%;
   color: inherit;
   cursor: pointer;
@@ -397,13 +407,19 @@ a.currentlyListeningCard:focus {
   justify-content: space-between;
 }
 
-.dicCard summary {
+.dic-card summary {
   font-size: calc(var(--font-size) * 1);
 }
 
-details.dicCard summary:focus-visible {
+details.dic-card summary:focus-visible {
   outline: none;
   box-shadow: 0 0 0 4px var(--link-color-text);
+}
+
+.list-style {
+  background-color: var(--card-color-bg);
+  padding: var(--space-large) var(--space-xlarge);
+  margin: var(--space-xlarge) 0;
 }
 
 .external {

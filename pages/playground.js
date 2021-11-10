@@ -31,7 +31,7 @@ const Playground = () => (
         <div className="contentWrapper">
           <Card
             link="https://www.mirotone.xyz"
-            className="external mainCard"
+            className="external main-card"
             title="Mirotone"
             description="Mirotone is a small & lightweight design system kit that tries to match Miro styles for helping you design, build and integrate apps."
             type="Package"
@@ -40,7 +40,7 @@ const Playground = () => (
 
           <Card
             link="/playground/my-glossary"
-            className="mainCard"
+            className="main-card"
             title="Glossary"
             description="My personal resource that lists the methods, practices and ways of working I follow in design."
             type="Methods & Practices"
@@ -49,7 +49,7 @@ const Playground = () => (
 
           <Card
             link="https://www.figma.com/community/plugin/943057200269205449/Handoff-notes"
-            className="external mainCard"
+            className="external main-card"
             title="Handoff notes"
             description="Prepare your work for handoff. Generate a note frame below each screen explain it and help others to understand the static designs better."
             type="Figma plugin"
@@ -58,7 +58,7 @@ const Playground = () => (
 
           <Card
             link="/playground/my-stack"
-            className="mainCard"
+            className="main-card"
             title="Toolbox"
             description="List of tools & software I use daily to support my interest and hunger on the journey of designing software. The list can constantly change as I try to experiment with new solutions and methods."
             type="Tools & Software"
@@ -67,7 +67,7 @@ const Playground = () => (
 
           <Card
             link="https://fluidigrid.com/"
-            className="external mainCard"
+            className="external main-card"
             title="Fluidigrid"
             description="Simple and lightweight CSS helper for building quick and efficient layouts."
             type="Package"
@@ -76,7 +76,7 @@ const Playground = () => (
 
           <Card
             link="https://www.fluiditype.com/"
-            className="external mainCard"
+            className="external main-card"
             title="Fluiditype"
             description="CSS library that focuses on responsive web and pure fluidity."
             type="Package"
@@ -85,7 +85,7 @@ const Playground = () => (
 
           <Card
             link="https://www.sketchappsources.com/free-source/3786-emojis-builder-sketch-freebie-resource.html"
-            className="external mainCard"
+            className="external main-card"
             title="Emoji builder"
             description="An emoji library, created by nested symbols and components to ease the creation of emoji. It is an open file which can be built onto. Use your creativity to create new emojis and bring new emotions. "
             type="Sketch library"
@@ -94,7 +94,7 @@ const Playground = () => (
 
           <Card
             link="/playground/cheatsheets"
-            className="mainCard"
+            className="main-card"
             title="Cheatsheets"
             description="Working with speed and efficiency is essential when you spend your day designing and coding. This section of my website is dedicated to commands & shortcuts, so my day can be fun and productive."
             type="Helpers"

@@ -8,7 +8,7 @@ const Toolbox = () => {
       {data.map((tooblox) => (
         <a
           key={tooblox.id}
-          className="stackCard"
+          className="stack-card"
           href={tooblox.url}
           target="_blank"
           rel="noreferrer"
@@ -18,7 +18,7 @@ const Toolbox = () => {
               width={48}
               height={48}
               alt={tooblox.name}
-              className="stackCardImg"
+              className="stack-card-img"
               src={tooblox.image}
             />
             <h6 className="headingM">{tooblox.name}</h6>

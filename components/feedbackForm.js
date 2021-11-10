@@ -6,7 +6,7 @@ const FeedbackForm = ({ description }) => {
       <hr />
       <Card
         link="https://twitter.com/sboriskirov"
-        className="external mainCard"
+        className="external main-card"
         title="Feedback"
         description={description}
         type="Twitter"

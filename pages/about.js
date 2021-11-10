@@ -106,7 +106,7 @@ const About = () => (
           <section>
             <h6 className="headingM">This site works because of</h6>
             <a
-              className="stackCard"
+              className="stack-card"
               href="https://nextjs.org/"
               target="_blank"
               rel="noreferrer"
@@ -114,7 +114,7 @@ const About = () => (
               <div>
                 <Image
                   alt="stack card image"
-                  className="stackCardImg"
+                  className="stack-card-img"
                   src="/nextjs.png"
                   width={48}
                   height={48}
@@ -123,7 +123,7 @@ const About = () => (
               </div>
             </a>
             <a
-              className="stackCard"
+              className="stack-card"
               href="https://vercel.com/"
               target="_blank"
               rel="noreferrer"
@@ -131,7 +131,7 @@ const About = () => (
               <div>
                 <Image
                   alt="stack card image"
-                  className="stackCardImg"
+                  className="stack-card-img"
                   src="/vercel.png"
                   width={48}
                   height={48}
@@ -140,7 +140,7 @@ const About = () => (
               </div>
             </a>
             <a
-              className="stackCard"
+              className="stack-card"
               href="https://www.framer.com/motion/"
               target="_blank"
               rel="noreferrer"
@@ -148,7 +148,7 @@ const About = () => (
               <div>
                 <Image
                   alt="stack card image"
-                  className="stackCardImg"
+                  className="stack-card-img"
                   src="/framer.png"
                   width={48}
                   height={48}
@@ -157,7 +157,7 @@ const About = () => (
               </div>
             </a>
             <a
-              className="stackCard"
+              className="stack-card"
               href="https://www.fluiditype.com/"
               target="_blank"
               rel="noreferrer"
@@ -165,7 +165,7 @@ const About = () => (
               <div>
                 <Image
                   alt="stack card image"
-                  className="stackCardImg"
+                  className="stack-card-img"
                   src="/fluiditype.svg"
                   width={48}
                   height={48}
@@ -174,7 +174,7 @@ const About = () => (
               </div>
             </a>
             <a
-              className="stackCard"
+              className="stack-card"
               href="https://p3colorpicker.cool"
               target="_blank"
               rel="noreferrer"
@@ -182,7 +182,7 @@ const About = () => (
               <div>
                 <Image
                   alt="stack card image"
-                  className="stackCardImg"
+                  className="stack-card-img"
                   src="/p3-picker.png"
                   width={48}
                   height={48}
@@ -191,7 +191,7 @@ const About = () => (
               </div>
             </a>
             <a
-              className="stackCard"
+              className="stack-card"
               href="https://rsms.me/inter/"
               target="_blank"
               rel="noreferrer"
@@ -199,7 +199,7 @@ const About = () => (
               <div>
                 <Image
                   alt="stack card image"
-                  className="stackCardImg"
+                  className="stack-card-img"
                   src="/inter-logo.png"
                   width={48}
                   height={48}
@@ -208,7 +208,7 @@ const About = () => (
               </div>
             </a>
             <a
-              className="stackCard"
+              className="stack-card"
               href="https://phosphoricons.com/"
               target="_blank"
               rel="noreferrer"
@@ -216,7 +216,7 @@ const About = () => (
               <div>
                 <Image
                   alt="stack card image"
-                  className="stackCardImg"
+                  className="stack-card-img"
                   src="/phosphor.png"
                   width={48}
                   height={48}

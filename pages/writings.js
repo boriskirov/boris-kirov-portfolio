@@ -44,7 +44,7 @@ export default function Writings({ allPostsData }) {
               <Card
                 key={Card.title}
                 link={`/posts/${id}`}
-                className="mainCard"
+                className="main-card"
                 title={title}
                 description={description}
                 type={type}

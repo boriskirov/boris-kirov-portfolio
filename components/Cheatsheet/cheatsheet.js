@@ -7,7 +7,7 @@ const Cheatsheet = () => {
       {data.map((cheatsheet) => (
         <a
           key={cheatsheet.name}
-          className=" external mainCard"
+          className=" external main-card"
           href={cheatsheet.url}
           target="_blank"
           rel="noreferrer"

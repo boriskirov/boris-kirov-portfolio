@@ -22,7 +22,7 @@ const Miro = () => (
         </Link>
         <div className="flex">
           <Image
-            className="stackCardImg"
+            className="stack-card-img"
             src="/miro.png"
             alt="Miro logo"
             width={48}
@@ -43,20 +43,25 @@ const Miro = () => (
         </p>
 
         <ul>
-          <li>
+          <li className="list-style-none list-style">
             <ul>
               <h6>Platform Experience</h6>
-              <hr />
-              <li className="listStyleCircle">
+              <p>
+                As a core member of the Platform stream in Miro I care deeply
+                about Developer Experience, App Experience, API & SDK
+                Experience. Listed below you can see some of the honorable
+                mentions where I collaborate and contribute to.
+              </p>
+              <li className="list-style-circle">
                 <a
                   href="https://developers.miro.com/docs"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Miro Developers
+                  miro Developers
                 </a>
               </li>
-              <li className="listStyleCircle">
+              <li className="list-style-circle">
                 <a
                   href="https://mirotone.xyz"
                   target="_blank"
@@ -65,32 +70,39 @@ const Miro = () => (
                   mirotone design system
                 </a>
               </li>
-              <li className="listStyleCircle">Getting started app</li>
-              <li className="listStyleCircle">Your apps redesign</li>
-              <li className="listStyleCircle">
+              <li className="list-style-circle">Getting started app</li>
+              <li className="list-style-circle">Your apps redesign</li>
+              <li className="list-style-circle">
                 Developers comms template design
               </li>
-              <li className="listStyleCircle">
+              <li className="list-style-circle">
                 Installation & Authorization logic
               </li>
-              <li className="listStyleCircle">App submission & reviews</li>
-              <li className="listStyleCircle">Enterprise app experience</li>
+              <li className="list-style-circle">App submission & reviews</li>
+              <li className="list-style-circle">Enterprise app experience</li>
             </ul>
           </li>
-          <li>
+
+          <li className="list-style-none list-style">
             <ul>
               <h6>Design system & Accessibility</h6>
-              <hr />
-              <li className="listStyleCircle">Grower and advocate</li>
-              <li className="listStyleCircle">
+              <p>
+                System design is something I always find interesting and
+                challenging because of the multilayer complexity it gives to the
+                design discipline. Design system in miro started as a initiative
+                and grew to a way of working. Check some of the things I am
+                doing for it below.
+              </p>
+              <li className="list-style-circle">Grower and advocate</li>
+              <li className="list-style-circle">
                 Ways of working, contribution models and stream collaboration
                 processes
               </li>
-              <li className="listStyleCircle">Onboarding members</li>
-              <li className="listStyleCircle">
+              <li className="list-style-circle">Onboarding members</li>
+              <li className="list-style-circle">
                 Collaborate and contribute with production-ready code
               </li>
-              <li className="listStyleCircle">
+              <li className="list-style-circle">
                 <a
                   href="https://miro.com/accessibility-statement/"
                   target="_blank"
@@ -99,7 +111,7 @@ const Miro = () => (
                   Miro Accessibility
                 </a>
               </li>
-              <li className="listStyleCircle">
+              <li className="list-style-circle">
                 Design improvements based on the
                 <a
                   href="https://www.w3.org/TR/WCAG21/"
@@ -112,11 +124,17 @@ const Miro = () => (
             </ul>
           </li>
 
-          <li>
+          <li className="list-style-none list-style">
             <ul>
               <h6>Side projects</h6>
-              <hr />
-              <li className="listStyleCircle">
+              <p>
+                I like exploring the area and the product in depth, what I
+                really love out of it is the journey where you learn and you
+                also contribute to the bigger purpose. Some of the sideprojects
+                became actual iniatiaves and projects and this makes me so
+                happy.
+              </p>
+              <li className="list-style-circle">
                 <a
                   href="https://miroshortcuts.vercel.app/"
                   target="_blank"

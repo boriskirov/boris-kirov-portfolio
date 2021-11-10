@@ -26,7 +26,7 @@ const Glossary = () => (
         </p>
         <div className="contentWrapper">
           <section>
-            <details className="dicCard">
+            <details className="dic-card">
               <summary aria-haspopup="true" className="headingM">
                 Analytical thinking
               </summary>
@@ -38,7 +38,7 @@ const Glossary = () => (
               </p>
             </details>
 
-            <details className="dicCard">
+            <details className="dic-card">
               <summary aria-haspopup="true" className="headingM">
                 Bootstrapping
               </summary>
@@ -51,7 +51,7 @@ const Glossary = () => (
               </p>
             </details>
 
-            <details className="dicCard">
+            <details className="dic-card">
               <summary aria-haspopup="true" className="headingM">
                 Feedback loop
               </summary>
@@ -63,7 +63,7 @@ const Glossary = () => (
               </p>
             </details>
 
-            <details className="dicCard">
+            <details className="dic-card">
               <summary aria-haspopup="true" className="headingM">
                 Human Centered Design
               </summary>
@@ -79,7 +79,7 @@ const Glossary = () => (
               </p>
             </details>
 
-            <details className="dicCard">
+            <details className="dic-card">
               <summary aria-haspopup="true" className="headingM">
                 Modularity
               </summary>
@@ -93,7 +93,7 @@ const Glossary = () => (
               </p>
             </details>
 
-            <details className="dicCard">
+            <details className="dic-card">
               <summary aria-haspopup="true" className="headingM">
                 Nudge Theory
               </summary>
@@ -106,7 +106,7 @@ const Glossary = () => (
               </p>
             </details>
 
-            <details className="dicCard">
+            <details className="dic-card">
               <summary aria-haspopup="true" className="headingM">
                 Socratic method
               </summary>
@@ -119,7 +119,7 @@ const Glossary = () => (
               </p>
             </details>
 
-            <details className="dicCard">
+            <details className="dic-card">
               <summary aria-haspopup="true" className="headingM">
                 System Thinking
               </summary>
@@ -133,7 +133,7 @@ const Glossary = () => (
               </p>
             </details>
 
-            <details className="dicCard">
+            <details className="dic-card">
               <summary aria-haspopup="true" className="headingM">
                 Path of least resistance
               </summary>
@@ -146,7 +146,7 @@ const Glossary = () => (
               </p>
             </details>
 
-            <details className="dicCard">
+            <details className="dic-card">
               <summary aria-haspopup="true" className="headingM">
                 Pokayoke
               </summary>
@@ -160,7 +160,7 @@ const Glossary = () => (
               </p>
             </details>
 
-            <details className="dicCard">
+            <details className="dic-card">
               <summary aria-haspopup="true" className="headingM">
                 Principle Of Least Astonishment
               </summary>
