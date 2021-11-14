@@ -447,6 +447,10 @@ details.dic-card summary:focus-visible {
   cursor: e-resize;
 }
 
+.zoom-in {
+  cursor: zoom-in;
+}
+
 .dropCap {
   font-size: 4.2vw;
   font-weight: 900;
