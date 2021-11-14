@@ -1,6 +1,7 @@
 import React from "react";
+import { useKBar } from "kbar";
 
-function DarkMode() {
+export function DarkMode() {
   const [mode, setMode] = React.useState("light");
 
   React.useEffect(() => {
@@ -47,13 +48,27 @@ export function AmsterdamTime() {
   return <small>{TimeFomatter}, Amsterdam</small>;
 }
 
+export function CmdButton() {
+  const { query } = useKBar();
+  return (
+    <button
+      type="button"
+      aria-label="Command button"
+      className="cmd-button"
+      onClick={query.toggle}
+    ></button>
+  );
+}
+
 const Header = () => (
   <header>
     <div className="flex">
       <AmsterdamTime />
     </div>
-
-    <DarkMode />
+    <div className="flex">
+      <DarkMode />
+      <CmdButton />
+    </div>
   </header>
 );
 

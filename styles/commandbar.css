@@ -1,0 +1,111 @@
+.cmd-button {
+  background-image: url("../public/cmd-button.svg");
+  background-repeat: no-repeat;
+  width: 32px;
+  height: 32px;
+  background-position-x: 4px;
+  background-position-y: 4px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  outline: none;
+  margin: 0 var(--space-large);
+}
+
+.cmd-button:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 4px #3f53d9;
+}
+
+.cmd-card {
+  width: 100%;
+  color: inherit;
+  cursor: pointer;
+  font-weight: 500;
+  text-shadow: none;
+  text-decoration: none;
+  padding: var(--space-xsmall) var(--space-large);
+  background-color: var(--card-color-bg);
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+a.cmd-card:hover,
+a.cmd-card:active,
+a.cmd-card:focus {
+  text-decoration: none;
+  color: inherit;
+  background-color: var(--card-color-bg);
+}
+
+.cmd-card small {
+  padding: var(--space-xsmall) var(--space-xsmall) 0px var(--space-xsmall);
+  margin: var(--space-small) 0;
+  font-weight: normal;
+}
+
+.cmd-card:hover small {
+  background-color: var(--link-color-bg);
+  color: var(--link-color-text);
+}
+
+.cmd-card:active small {
+  background-color: var(--link-color-bg);
+  color: var(--link-color-text);
+}
+
+.cmd-card:focus small {
+  background-color: var(--link-color-bg);
+  color: var(--link-color-text);
+}
+
+.cmd-action {
+  margin: var(--space-medium) 0;
+}
+
+.kbar-blur {
+  max-width: 640px;
+  width: 100%;
+  background: var(--dark-color-bg);
+  border: 1px solid var(--card-color-bg);
+}
+
+.cmd-category {
+  margin: var(--space-xsmall) 0;
+  padding: var(--space-small);
+  text-transform: uppercase;
+  opacity: 0.4;
+  font-size: 12px;
+}
+
+#kbar-listbox > div {
+  position: none;
+  top: 220px;
+  left: 0px;
+  width: 100%;
+  transform: translateY(0px);
+}
+
+.kbar-input {
+  width: 100%;
+  padding: var(--space-large);
+  background: var(--card-color-bg);
+  color: var(--light-color-text);
+  border: none;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.kbar-input:focus {
+  outline: none;
+}
+
+.cmd-key {
+  padding: var(--space-small) var(--space-medium);
+  border: 1px solid var(--red);
+  margin: 0 var(--space-xsmall);
+  -moz-font-feature-settings: normal;
+  font-feature-settings: normal;
+}

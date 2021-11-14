@@ -56,7 +56,7 @@
 html,
 body {
   padding: 0;
-  margin: 0 auto;
+  margin: 0;
   font-family: var(--font-family);
   background-color: var(--light-color-bg);
   color: var(--dark-color-text);
