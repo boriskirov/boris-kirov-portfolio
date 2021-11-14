@@ -23,10 +23,6 @@
   transform: rotate(0deg);
 }
 
-.dark .cmd-button {
-  background-image: url("../public/cmd-button-light.svg");
-}
-
 html,
 .dark body {
   background-color: var(--dark-color-bg);

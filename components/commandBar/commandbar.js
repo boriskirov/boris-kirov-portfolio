@@ -46,6 +46,14 @@ export default function CommandBar(props) {
       section: "Section",
       perform: () => router.push("/playground/my-stack"),
     },
+    {
+      id: "writings",
+      name: "Writings",
+      shortcut: ["g", "w"],
+      keywords: "go-writings",
+      section: "Section",
+      perform: () => router.push("/writings"),
+    },
   ];
 
   return (
@@ -95,7 +103,7 @@ function RenderResults() {
 
 const ResultItem = React.forwardRef(({ action, active }, ref) => {
   return (
-    <div ref={ref} className="cmd-card">
+    <div ref={ref} className="cmd-card" tabindex="0">
       <small className="cmd-action">{action.name}</small>
       {action.shortcut?.length ? (
         <div>

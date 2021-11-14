@@ -44,18 +44,11 @@ a.cmd-card:focus {
   padding: var(--space-xsmall) var(--space-xsmall) 0px var(--space-xsmall);
   margin: var(--space-small) 0;
   font-weight: normal;
+  color: var(--dark-color-text);
 }
 
-.cmd-card:hover small {
-  background-color: var(--link-color-bg);
-  color: var(--link-color-text);
-}
-
-.cmd-card:active small {
-  background-color: var(--link-color-bg);
-  color: var(--link-color-text);
-}
-
+.cmd-card:hover small,
+.cmd-card:active small,
 .cmd-card:focus small {
   background-color: var(--link-color-bg);
   color: var(--link-color-text);
@@ -68,8 +61,10 @@ a.cmd-card:focus {
 .kbar-blur {
   max-width: 640px;
   width: 100%;
-  background: var(--dark-color-bg);
   border: 1px solid var(--card-color-bg);
+  background: var(--light-color-bg);
+  color: var(--light-color-text);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.05), 0 10px 10px rgba(0, 0, 0, 0.12);
 }
 
 .cmd-category {
@@ -78,6 +73,7 @@ a.cmd-card:focus {
   text-transform: uppercase;
   opacity: 0.4;
   font-size: 12px;
+  color: var(--dark-color-text);
 }
 
 #kbar-listbox > div {
@@ -92,7 +88,7 @@ a.cmd-card:focus {
   width: 100%;
   padding: var(--space-large);
   background: var(--card-color-bg);
-  color: var(--light-color-text);
+  color: var(--dark-color-text);
   border: none;
   font-size: 14px;
   line-height: 1.4;
@@ -103,9 +99,35 @@ a.cmd-card:focus {
 }
 
 .cmd-key {
-  padding: var(--space-small) var(--space-medium);
+  padding: var(--space-xsmall) var(--space-small);
   border: 1px solid var(--red);
   margin: 0 var(--space-xsmall);
   -moz-font-feature-settings: normal;
   font-feature-settings: normal;
+}
+
+.cmd-key > code {
+  font-size: 12px;
+}
+
+/* Dark mode */
+
+.dark .cmd-button {
+  background-image: url("../public/cmd-button-light.svg");
+}
+
+.dark .kbar-blur {
+  background: var(--dark-color-bg);
+}
+
+.dark .kbar-input {
+  color: var(--light-color-text);
+}
+
+.dark .cmd-category {
+  color: var(--light-color-text);
+}
+
+.dark .cmd-card small {
+  color: var(--light-color-text);
 }
