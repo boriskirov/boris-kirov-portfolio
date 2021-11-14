@@ -7,7 +7,7 @@ const Toolbox = () => {
     <div className="contentWrapper">
       {data.map((tooblox) => (
         <a
-          key={tooblox.id}
+          key={tooblox.name}
           className="stack-card"
           href={tooblox.url}
           target="_blank"
