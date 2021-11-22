@@ -23,7 +23,6 @@
   transform: rotate(0deg);
 }
 
-html,
 .dark body {
   background-color: var(--dark-color-bg);
   color: var(--light-color-text);
