@@ -3,6 +3,7 @@ import Motion from "../components/motion";
 import Metadata from "../components/metadata";
 import Link from "next/link";
 import Main from "../components/innerWrapper";
+import Image from "next/dist/client/image";
 
 import MainWrapper from "../components/mainWrapper";
 
@@ -45,6 +46,81 @@ const Home = () => (
           </section>
         </div>
       </Main>
+      {/* Dock test */}
+
+      {/* <div className="dock">
+        <ul className="appList">
+          <li className="appItem">
+            <a className="" href="/" target="_blank" rel="noreferrer">
+              <Image width={48} height={48} src="/miro.png" />
+              <small className="apptag">Miro</small>
+            </a>
+          </li>
+          <li className="appItem">
+            <a className="" href="/" target="_blank" rel="noreferrer">
+              <Image width={48} height={48} src="/miro.png" />
+              <small className="apptag">Miro</small>
+            </a>
+          </li>
+          <li className="appItem">
+            <a className="" href="/" target="_blank" rel="noreferrer">
+              <Image width={48} height={48} src="/miro.png" />
+              <small className="apptag">Miro</small>
+            </a>
+          </li>
+          <li className="appItem">
+            <a className="" href="/" target="_blank" rel="noreferrer">
+              <Image width={48} height={48} src="/miro.png" />
+              <small className="apptag">Miro</small>
+            </a>
+          </li>
+          <li className="appItem">
+            <a className="" href="/" target="_blank" rel="noreferrer">
+              <Image width={48} height={48} src="/miro.png" />
+              <small className="apptag">Miro</small>
+            </a>
+          </li>
+          <li className="appItem">
+            <a className="" href="/" target="_blank" rel="noreferrer">
+              <Image width={48} height={48} src="/miro.png" />
+              <small className="apptag">Miro</small>
+            </a>
+          </li>
+        </ul>
+      </div> */}
+
+      <div className="dock">
+        <div className="appItem">
+          <a className="" href="/" target="_blank" rel="noreferrer">
+            <Image width={48} height={48} src="/miro.png" />
+            <small className="apptag">Miro</small>
+          </a>
+        </div>
+        <div className="appItem">
+          <a className="" href="/" target="_blank" rel="noreferrer">
+            <Image width={48} height={48} src="/miro.png" />
+            <small className="apptag">Miro</small>
+          </a>
+        </div>
+        <div className="appItem">
+          <a className="" href="/" target="_blank" rel="noreferrer">
+            <Image width={48} height={48} src="/miro.png" />
+            <small className="apptag">Miro</small>
+          </a>
+        </div>
+        <div className="appItem">
+          <a className="" href="/" target="_blank" rel="noreferrer">
+            <Image width={48} height={48} src="/miro.png" />
+            <small className="apptag">Miro</small>
+          </a>
+        </div>
+        <div className="appItem">
+          <a className="" href="/" target="_blank" rel="noreferrer">
+            <Image width={48} height={48} src="/miro.png" />
+            <small className="apptag">Miro</small>
+          </a>
+        </div>
+      </div>
     </MainWrapper>
   </Motion>
 );

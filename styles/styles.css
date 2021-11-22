@@ -549,3 +549,142 @@ details.dic-card summary:focus-visible {
     margin: var(--space-small) 0 var(--space-small) 0;
   }
 }
+
+/* DockCSS */
+
+.dock {
+  position: fixed;
+  background: red;
+  bottom: 16px;
+  border-radius: 16px;
+  width: 48px;
+  height: 48px;
+}
+/* 
+.appList {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: var(--space-large);
+}
+
+.appItem {
+  margin: 0;
+  padding: var(--space-xsmall);
+}
+
+.appItem a {
+  margin: 0;
+}
+
+.apptag {
+  display: none;
+}
+
+li:hover .apptag {
+  display: block;
+}
+
+.dock li:hover img {
+  -webkit-transform: scale(2);
+  margin: 0 2em;
+}
+.dock li:hover + li img,
+.dock li.prev img {
+  -webkit-transform: scale(1.5);
+  margin: 0 1.5em;
+} */
+
+.appItem {
+  display: inline-block;
+  position: absolute;
+  bottom: 0;
+  width: 48px;
+  height: 48px;
+  transition: all ease 0.3s;
+}
+
+/* The float animation, excuse the odd numbers, mostly trial and error (Multiples for each browser) */
+@-webkit-keyframes item-1 {
+  100% {
+    bottom: 60px;
+    opacity: 1;
+    -webkit-transform: rotate(1deg);
+  }
+}
+@-webkit-keyframes item-2 {
+  100% {
+    bottom: 137px;
+    left: 5px;
+    opacity: 1;
+    -webkit-transform: rotate(3deg);
+  }
+}
+@-webkit-keyframes item-3 {
+  100% {
+    bottom: 205px;
+    left: 12px;
+    opacity: 1;
+    -webkit-transform: rotate(5deg);
+  }
+}
+@-webkit-keyframes item-4 {
+  100% {
+    bottom: 273px;
+    left: 22px;
+    opacity: 1;
+    -webkit-transform: rotate(7deg);
+  }
+}
+@-webkit-keyframes item-5 {
+  100% {
+    bottom: 340px;
+    left: 37px;
+    opacity: 1;
+    -webkit-transform: rotate(9deg);
+  }
+}
+@-webkit-keyframes item-6 {
+  100% {
+    bottom: 427px;
+    left: 42px;
+    opacity: 1;
+    -webkit-transform: rotate(11deg);
+  }
+}
+
+/* Initiate the animations */
+.dock:hover > div:nth-of-type(1) {
+  -webkit-animation: item-1 0.5s forwards;
+  -ms-animation: item-1 0.5s forwards;
+  -moz-animation: item-1 0.5s forwards;
+}
+.dock:hover > div:nth-of-type(2) {
+  -webkit-animation: item-2 0.5s forwards;
+  -ms-animation: item-2 0.5s forwards;
+  -moz-animation: item-2 0.5s forwards;
+}
+.dock:hover > div:nth-of-type(3) {
+  -webkit-animation: item-3 0.5s forwards;
+  -ms-animation: item-3 0.5s forwards;
+  -moz-animation: item-3 0.5s forwards;
+}
+.dock:hover > div:nth-of-type(4) {
+  -webkit-animation: item-4 0.5s forwards;
+  -ms-animation: item-4 0.5s forwards;
+  -moz-animation: item-4 0.5s forwards;
+}
+.dock:hover > div:nth-of-type(5) {
+  -webkit-animation: item-5 0.5s forwards;
+  -ms-animation: item-5 0.5s forwards;
+  -moz-animation: item-5 0.5s forwards;
+}
+.dock:hover > div:nth-of-type(6) {
+  -webkit-animation: item-6 0.5s forwards;
+  -ms-animation: item-6 0.5s forwards;
+  -moz-animation: item-6 0.5s forwards;
+}
+
+.apptag {
+  display: none;
+}
