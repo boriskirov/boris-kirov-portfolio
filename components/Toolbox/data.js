@@ -161,6 +161,12 @@ const ToolboxList = [
     image: "/clearshot.png",
     category: "Productivity",
   },
+  {
+    name: "f.lux",
+    url: "https://justgetflux.com/",
+    image: "/flux.png",
+    category: "Productivity",
+  },
 ];
 
 export default ToolboxList;
