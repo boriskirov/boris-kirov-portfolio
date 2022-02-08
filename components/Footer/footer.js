@@ -2,9 +2,14 @@ import data from "./footer-data";
 
 const Footer = () => (
   <footer>
-    <a href="../BorisKirov_Resume.pdf" rel="noopener noreferrer">
-      <small>Get Resume 2021 © </small>
-    </a>
+    <div>
+      <a href="../BorisKirov_Resume.pdf" rel="noopener noreferrer">
+        <small>Get Resume 2021 © </small>
+      </a>
+      <a href="../boris.json" rel="noopener noreferrer">
+        <small>JSON card</small>
+      </a>
+    </div>
     <div>
       <ul className="footerList">
         {data.map((footer) => (
