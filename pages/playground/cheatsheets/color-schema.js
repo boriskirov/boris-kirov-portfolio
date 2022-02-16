@@ -7,16 +7,6 @@ import MainWrapper from "../../../components/mainWrapper";
 import Main from "../../../components/innerWrapper";
 import ColorData from "../../../components/color-schema-data";
 
-function CopyToClipboard() {
-  /* Get the text field */
-  var copyText = document.getElementById("colorCode");
-  /* Select the text field */
-  copyText.select();
-  copyText.setSelectionRange(0, 99999); /* For mobile devices */
-  /* Copy the text inside the text field */
-  navigator.clipboard.writeText(copyText.value);
-}
-
 const ColorPalette = () => (
   <Motion>
     <MainWrapper>
@@ -58,5 +48,16 @@ const ColorPalette = () => (
     </MainWrapper>
   </Motion>
 );
+
+function CopyToClipboard() {
+  var colorschema = ["#123", "#321"];
+  /* Get the text field */
+  var copyText = document.getElementById(colorschema);
+  /* Select the text field */
+  copyText.select();
+  copyText.setSelectionRange(0, 99999); /* For mobile devices */
+  /* Copy the text inside the text field */
+  navigator.clipboard.writeText(copyText.value);
+}
 
 export default ColorPalette;
