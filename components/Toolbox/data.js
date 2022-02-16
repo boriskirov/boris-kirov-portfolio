@@ -167,6 +167,12 @@ const ToolboxList = [
     image: "/flux.png",
     category: "Productivity",
   },
+  {
+    name: "Cron",
+    url: "https://cron.com/",
+    image: "/cron.png",
+    category: "Productivity",
+  },
 ];
 
 export default ToolboxList;
