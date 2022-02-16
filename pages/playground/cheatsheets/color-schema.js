@@ -5,7 +5,7 @@ import Metadata from "../../../components/metadata";
 import Link from "next/link";
 import MainWrapper from "../../../components/mainWrapper";
 import Main from "../../../components/innerWrapper";
-import ColorSchema from "./color-schema-data";
+import ColorData from "../../../components/color-schema-data";
 
 function CopyToClipboard() {
   /* Get the text field */
@@ -37,7 +37,7 @@ const ColorPalette = () => (
         </p>
         <div className="contentWrapper">
           <section>
-            {ColorSchema.map((colorschema) => (
+            {ColorData.map((colorschema) => (
               <div
                 className={colorschema.name}
                 key={colorschema.name}

@@ -1,4 +1,4 @@
-const ColorSchema = [
+const ColorData = [
   {
     name: "color-wrapper green-1",
     code: "#6bf4c8",
@@ -80,5 +80,4 @@ const ColorSchema = [
     class: "color-code dark",
   },
 ];
-
-export default ColorSchema;
+export default ColorData;
