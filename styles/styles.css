@@ -467,6 +467,7 @@ details.dic-card summary:focus-visible {
   padding: var(--space-large);
   transition: all 0.2s ease-in-out;
   cursor: pointer;
+  margin: var(--space-xsmall);
 }
 
 .color-wrapper .color-code {
@@ -478,7 +479,14 @@ details.dic-card summary:focus-visible {
   height: 120px;
 }
 
-.color-wrapper:hover .color-code {
+.color-wrapper:focus-visible {
+  height: 120px;
+  outline: none;
+  box-shadow: 0 0 0 4px var(--link-color-text);
+}
+
+.color-wrapper:hover .color-code,
+.color-wrapper:focus-visible .color-code {
   opacity: 1;
 }
 
