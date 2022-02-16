@@ -6,9 +6,8 @@ const Cheatsheet = () => {
   return (
     <div className="contentWrapper">
       {data.map((cheatsheet) => (
-        <Link href={cheatsheet.url}>
+        <Link href={cheatsheet.url} key={cheatsheet.name}>
           <a
-            key={cheatsheet.name}
             className={cheatsheet.class}
             target={cheatsheet.target}
             rel="noreferrer"
