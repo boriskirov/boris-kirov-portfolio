@@ -38,7 +38,11 @@ const ColorPalette = () => (
         <div className="contentWrapper">
           <section>
             {ColorSchema.map((colorschema) => (
-              <div className={colorschema.name} key={colorschema.name}>
+              <div
+                className={colorschema.name}
+                key={colorschema.name}
+                tabIndex="0"
+              >
                 <input
                   className={colorschema.class}
                   type="text"
