@@ -7,6 +7,27 @@ import MainWrapper from "../../../components/mainWrapper";
 import Main from "../../../components/innerWrapper";
 import ColorData from "../../../components/color-schema-data";
 
+function CopyToClipboard() {
+  var colorschema = ["#123", "#321"];
+  /* Get the text field */
+  var copyText = document.getElementById(colorschema);
+  /* Select the text field */
+  copyText.select();
+  copyText.setSelectionRange(0, 99999); /* For mobile devices */
+  /* Copy the text inside the text field */
+  navigator.clipboard.writeText(copyText.value);
+}
+
+// This is a function which returns a function
+// the idea here that the first function will create a scope which will hold the value
+// so by the time the inner function is called it will have access to value inside
+function copyHex(hex) {
+  return function () {
+    navigator.clipboard.writeText(`${hex}`);
+    alert(`Copied ${hex}`);
+  };
+}
+
 const ColorPalette = () => (
   <Motion>
     <MainWrapper>
@@ -27,37 +48,27 @@ const ColorPalette = () => (
         </p>
         <div className="contentWrapper">
           <section>
-            {ColorData.map((colorschema) => (
-              <div
-                className={colorschema.name}
-                key={colorschema.name}
-                tabIndex="0"
-              >
-                <input
-                  className={colorschema.class}
-                  type="text"
-                  defaultValue={colorschema.code}
-                  id={colorschema.code}
-                ></input>
-                {/* <button onClick={CopyToClipboard}>Copy</button> */}
-              </div>
-            ))}
+            {ColorData.map((colorschema) => {
+              return (
+                <button
+                  className="color-wrapper"
+                  type="button"
+                  style={{
+                    backgroundColor: colorschema.code,
+                  }}
+                  // onClick needs a function, so we call our function
+                  // which will the return a function to be used by onClick
+                  onClick={copyHex(colorschema.code)}
+                >
+                  <span className="color-code">{colorschema.code}</span>
+                </button>
+              );
+            })}
           </section>
         </div>
       </Main>
     </MainWrapper>
   </Motion>
 );
-
-function CopyToClipboard() {
-  var colorschema = ["#123", "#321"];
-  /* Get the text field */
-  var copyText = document.getElementById(colorschema);
-  /* Select the text field */
-  copyText.select();
-  copyText.setSelectionRange(0, 99999); /* For mobile devices */
-  /* Copy the text inside the text field */
-  navigator.clipboard.writeText(copyText.value);
-}
 
 export default ColorPalette;
