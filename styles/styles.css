@@ -237,6 +237,12 @@ li.footerLi:last-child {
   width: 100%;
   align-items: center;
   flex-direction: column;
+  background-color: var(--tag-color-bg);
+  padding: var(--space-xlarge);
+}
+
+.error > p {
+  text-align: center;
 }
 
 .mainWrapper {
