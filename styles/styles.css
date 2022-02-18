@@ -61,6 +61,7 @@ body {
   color: var(--dark-color-text);
   line-height: 1.4;
   scroll-behavior: smooth;
+  word-break: normal;
 }
 
 header,
