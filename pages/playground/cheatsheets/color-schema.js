@@ -23,14 +23,27 @@ const ColorPalette = () => (
         <h1 className="heading2Xl">COLOR SCHEMA</h1>
         <p>
           My personal color schema for creating visual schemas and architecture,
-          inspired by the P3 color space. Feel free to explore and use them.
+          inspired by the P3 color space.
         </p>
-        <Link
-          href="https://gist.github.com/boriskirov/8f146a2ea71dc3f6502e720cc7f24ca8"
-          target="_blank"
-        >
-          <a className="">Github Gist</a>
-        </Link>
+        <p>
+          There are multiple ways of how to get the colors and use them for your
+          projects:
+        </p>
+        <ul>
+          <li>copy a color from the palette below</li>
+          <li>
+            <Link href="https://gist.github.com/boriskirov/8f146a2ea71dc3f6502e720cc7f24ca8">
+              <a target="_blank">Github Gist</a>
+            </Link>
+          </li>
+          <li>
+            <Link href="../../color-palette.svg">
+              <a target="_blank">SVG string</a>
+            </Link>{" "}
+            which you can paste in Figma for example
+          </li>
+        </ul>
+
         <Colors />
       </Main>
     </MainWrapper>
