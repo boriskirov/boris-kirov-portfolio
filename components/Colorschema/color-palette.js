@@ -27,7 +27,7 @@ const Colors = () => (
           // which will the return a function to be used by onClick
           onClick={copyHex(colorschema.code)}
         >
-          <span className="tag">{colorschema.code}</span>
+          <span className={colorschema.tag}>{colorschema.code}</span>
         </button>
       );
     })}

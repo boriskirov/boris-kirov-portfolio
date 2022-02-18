@@ -6,7 +6,6 @@ import Link from "next/link";
 import MainWrapper from "../../../components/mainWrapper";
 import Main from "../../../components/innerWrapper";
 import Colors from "../../../components/Colorschema/color-palette";
-import Card from "../../../components/card";
 
 const ColorPalette = () => (
   <Motion>
