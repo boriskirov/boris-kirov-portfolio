@@ -15,7 +15,7 @@
     "lodash": "^4.17.21",
     "next": "^12.0.8",
     "next-images": "^1.8.4",
-    "npm": "^8.5.0",
+    "npm": "^8.5.1",
     "prop-types": "^15.8.1",
     "querystring": "^0.2.1",
     "react": "17.0.2",
@@ -30,7 +30,7 @@
   "devDependencies": {
     "@svgr/webpack": "^6.2.0",
     "eslint": "8.9.0",
-    "eslint-config-next": "12.0.8",
+    "eslint-config-next": "12.1.0",
     "set-value": "^4.1.0"
   }
 }
