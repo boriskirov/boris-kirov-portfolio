@@ -5,28 +5,8 @@ import Metadata from "../../../components/metadata";
 import Link from "next/link";
 import MainWrapper from "../../../components/mainWrapper";
 import Main from "../../../components/innerWrapper";
-import ColorData from "../../../components/color-schema-data";
-
-function CopyToClipboard() {
-  var colorschema = ["#123", "#321"];
-  /* Get the text field */
-  var copyText = document.getElementById(colorschema);
-  /* Select the text field */
-  copyText.select();
-  copyText.setSelectionRange(0, 99999); /* For mobile devices */
-  /* Copy the text inside the text field */
-  navigator.clipboard.writeText(copyText.value);
-}
-
-// This is a function which returns a function
-// the idea here that the first function will create a scope which will hold the value
-// so by the time the inner function is called it will have access to value inside
-function copyHex(hex) {
-  return function () {
-    navigator.clipboard.writeText(`${hex}`);
-    alert(`Copied ${hex}`);
-  };
-}
+import Colors from "../../../components/Colorschema/color-palette";
+import Card from "../../../components/card";
 
 const ColorPalette = () => (
   <Motion>
@@ -44,29 +24,15 @@ const ColorPalette = () => (
         <h1 className="heading2Xl">COLOR SCHEMA</h1>
         <p>
           My personal color schema for creating visual schemas and architecture,
-          inspired by the P3 color space. Feel free to explore and use it.
+          inspired by the P3 color space. Feel free to explore and use them.
         </p>
-        <div className="contentWrapper">
-          <section>
-            {ColorData.map((colorschema) => {
-              return (
-                <button
-                  className="color-wrapper"
-                  type="button"
-                  key={colorschema.code}
-                  style={{
-                    backgroundColor: colorschema.code,
-                  }}
-                  // onClick needs a function, so we call our function
-                  // which will the return a function to be used by onClick
-                  onClick={copyHex(colorschema.code)}
-                >
-                  <span className="color-code">{colorschema.code}</span>
-                </button>
-              );
-            })}
-          </section>
-        </div>
+        <Link
+          href="https://gist.github.com/boriskirov/8f146a2ea71dc3f6502e720cc7f24ca8"
+          target="_blank"
+        >
+          <a className="">Github Gist</a>
+        </Link>
+        <Colors />
       </Main>
     </MainWrapper>
   </Motion>

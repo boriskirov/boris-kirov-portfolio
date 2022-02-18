@@ -429,6 +429,14 @@ details.dic-card summary:focus-visible {
   cursor: ne-resize;
 }
 
+.light-text {
+  color: var(--light-color-text);
+}
+
+.dark-text {
+  color: var(--dark-color-text);
+}
+
 .tag {
   margin: var(--space-large) 0;
   padding: var(--space-xsmall) var(--space-small);
@@ -475,7 +483,7 @@ details.dic-card summary:focus-visible {
   margin: var(--space-xsmall);
 }
 
-.color-wrapper .color-code {
+.color-wrapper .tag {
   opacity: 0;
   transition: all 0.1s ease-in-out;
 }
@@ -490,23 +498,9 @@ details.dic-card summary:focus-visible {
   box-shadow: 0 0 0 4px var(--link-color-text);
 }
 
-.color-wrapper:hover .color-code,
-.color-wrapper:focus-visible .color-code {
+.color-wrapper:hover .tag,
+.color-wrapper:focus-visible .tag {
   opacity: 1;
-}
-
-.color-code {
-  border: none;
-  background: none;
-  cursor: pointer;
-  width: 140px;
-  margin: var(--space-small);
-  font-family: var(--font-family-code);
-  font-size: calc(var(--font-size) * 0.85);
-  line-height: var(--line-height);
-  letter-spacing: var(--letter-spacing);
-  font-weight: calc(var(--font-weight) * 1.33);
-  font-feature-settings: normal;
 }
 
 @media (max-width: 834px) {
