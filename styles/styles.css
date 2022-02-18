@@ -232,6 +232,12 @@ li.footerLi:last-child {
   align-items: flex-end;
 }
 
+.error {
+  width: 100%;
+  align-items: center;
+  flex-direction: column;
+}
+
 .mainWrapper {
   min-height: 100vh;
   display: flex;
@@ -258,11 +264,6 @@ li.footerLi:last-child {
   width: 100%;
   max-width: 1220px;
   margin-top: 5vw;
-}
-
-.notReadyWrapper {
-  display: grid;
-  margin: 0 auto;
 }
 
 .main-card {
@@ -568,10 +569,6 @@ details.dic-card summary:focus-visible {
     display: flex;
     width: 100%;
     flex-direction: column;
-  }
-
-  .heading2XlNotReady {
-    text-align: center;
   }
 
   .dropCap {

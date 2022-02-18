@@ -41,6 +41,11 @@ const Home = () => (
                   <a className="internalPassage">Writings</a>
                 </Link>
               </li>
+              <li className="blog">
+                <Link href="/photography" as="/photography">
+                  <a className="internalPassage">Photography</a>
+                </Link>
+              </li>
             </ul>
           </section>
         </div>
