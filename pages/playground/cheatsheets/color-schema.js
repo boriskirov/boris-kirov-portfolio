@@ -53,6 +53,7 @@ const ColorPalette = () => (
                 <button
                   className="color-wrapper"
                   type="button"
+                  key={colorschema.code}
                   style={{
                     backgroundColor: colorschema.code,
                   }}
