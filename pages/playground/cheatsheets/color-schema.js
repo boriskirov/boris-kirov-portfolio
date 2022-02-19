@@ -37,7 +37,7 @@ const ColorPalette = () => (
             </Link>
           </li>
           <li>
-            <Link href="../../color-palette.svg">
+            <Link href="/../../color-palette.svg">
               <a target="_blank">SVG string</a>
             </Link>{" "}
             which you can paste in Figma for example
@@ -46,6 +46,7 @@ const ColorPalette = () => (
 
         <Colors />
       </Main>
+      <div id="snackbar">Copied</div>
     </MainWrapper>
   </Motion>
 );

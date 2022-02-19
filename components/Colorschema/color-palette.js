@@ -9,10 +9,15 @@ function copyHex(hex) {
   return async function () {
     try {
       await navigator.clipboard.writeText(`${hex}`);
-      alert(`Copied ${hex}`);
+      // alert(`Copied ${hex}`);
     } catch (err) {
-      console.error("Failed to copy: ", err);
+      alert("Failed to copy.", err);
     }
+    var x = document.getElementById("snackbar");
+    x.className = "show";
+    setTimeout(function () {
+      x.className = x.className.replace("show", "");
+    }, 1400);
   };
 }
 

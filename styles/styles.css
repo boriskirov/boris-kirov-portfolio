@@ -596,3 +596,21 @@ details.dic-card summary:focus-visible {
     margin: var(--space-small) 0 var(--space-small) 0;
   }
 }
+
+#snackbar {
+  visibility: hidden;
+  position: sticky;
+  min-width: 96px;
+  background-color: var(--dark-color-bg);
+  color: var(--light-color-text);
+  text-align: center;
+  border-radius: 2px;
+  padding: var(--space-medium);
+  z-index: 1;
+  left: 50%;
+  bottom: var(--space-xlarge);
+}
+
+#snackbar.show {
+  visibility: visible;
+}

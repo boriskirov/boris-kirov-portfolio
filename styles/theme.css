@@ -27,3 +27,8 @@
   background-color: var(--dark-color-bg);
   color: var(--light-color-text);
 }
+
+.dark #snackbar {
+  background-color: var(--light-color-bg);
+  color: var(--dark-color-text);
+}
