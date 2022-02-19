@@ -20,17 +20,16 @@ const ColorPalette = () => (
         <Link href="/playground/cheatsheets">
           <a className="backButton">Back</a>
         </Link>
-        <h1 className="heading2Xl">COLOR SCHEMA</h1>
+        <h1 className="heading2Xl">COLOR PALETTE</h1>
         <p>
           My personal color schema for creating visual schemas and architecture,
           inspired by the P3 color space.
         </p>
         <p>
-          There are multiple ways of how to get the colors and use them for your
-          projects:
+          You can either copy each of the colors from the palette below or get
+          them for your projects via:
         </p>
         <ul>
-          <li>copy a color from the palette below</li>
           <li>
             <Link href="https://gist.github.com/boriskirov/8f146a2ea71dc3f6502e720cc7f24ca8">
               <a target="_blank">Github Gist</a>
