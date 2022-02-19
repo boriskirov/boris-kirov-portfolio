@@ -44,8 +44,8 @@ const ColorPalette = () => (
         </ul>
 
         <Colors />
+        <div id="snackbar">Copied</div>
       </Main>
-      <div id="snackbar">Copied</div>
     </MainWrapper>
   </Motion>
 );
