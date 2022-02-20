@@ -497,6 +497,7 @@ details.dic-card summary:focus-visible {
 }
 
 .color-wrapper:hover,
+.color-wrapper:focus,
 .color-wrapper:active {
   height: 120px;
 }
