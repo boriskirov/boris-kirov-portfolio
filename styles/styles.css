@@ -506,6 +506,7 @@ details.dic-card summary:focus-visible {
   height: 120px;
   outline: none;
   box-shadow: 0 0 0 4px var(--link-color-text);
+  -webkit-tap-highlight-color: 0 0 0 4px var(--link-color-text);
 }
 
 .color-wrapper:hover .tag,
