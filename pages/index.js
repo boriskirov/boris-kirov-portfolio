@@ -18,7 +18,7 @@ const Home = () => (
       <Main>
         <h1 className="heading2Xl">Hi, I'm Boris </h1>
         <p>
-          and I'm getting things done at{" "}
+          and used to get things done at{" "}
           <Link href="/miro" as="/miro">
             <a className="internalPassage">Miro</a>
           </Link>

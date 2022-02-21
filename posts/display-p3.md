@@ -1,7 +1,7 @@
 ---
 title: "Display-P3 color uplift"
 description: "Improving the colors with the P3 gamut is easy. But the question is why? Well there a few reason of going in that direction."
-date: "01-11-2021"
+date: "11-01-2021"
 type: "Code snippet"
 image: "https://www.boriskirov.me/DCI-P3-1.png"
 ---
