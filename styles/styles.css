@@ -509,6 +509,8 @@ details.dic-card summary:focus-visible {
 }
 
 .color-wrapper:hover .tag,
+.color-wrapper:active .tag,
+.color-wrapper:focus .tag,
 .color-wrapper:focus-visible .tag {
   opacity: 1;
 }
