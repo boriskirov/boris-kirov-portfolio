@@ -38,11 +38,14 @@ const About = () => (
               <span className="dropCap">M</span>y name is Boris Kirov. I'm a
               Bulgarian designer living in Amsterdam, The Netherlands. My care
               for form and function makes me express myself with technology.
-              Currently, I'm building the Miro Platform experience and Design
-              system.
             </p>
             <p>
-              Before joining Miro I used to work with different companies like{" "}
+              My previous experience was as a Platform designer in{" "}
+              <a href="https://www.miro.com" target="_blank" rel="noreferrer">
+                Miro
+              </a>
+              , the Whiteboard Platform. Before that I used to work with
+              different companies like{" "}
               <a href="https://info.nl/" target="_blank" rel="noreferrer">
                 INFO
               </a>{" "}
@@ -52,11 +55,14 @@ const About = () => (
               </a>{" "}
               and clients like Disney, BNP Paribas, Graydon & Tripscout. In my
               spare time, I enjoy exploring technology and building tools to
-              empower others to build and progress. I am also fascinated by
-              programs and how they can communicate with each other and with us.
-              My passion for constant experimentation in the realm of design and
-              experience consistency keeps me busy and always hungry. You can
-              always reach me via{" "}
+              empower others to build and progress.
+            </p>
+            <p>
+              {" "}
+              I am also fascinated by programs and how they can communicate with
+              each other and with us. My passion for constant experimentation in
+              the realm of design and experience consistency keeps me busy and
+              always hungry. You can always reach me via{" "}
               <a
                 href="https://twitter.com/sboriskirov"
                 target="_blank"
