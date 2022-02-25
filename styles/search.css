@@ -1,0 +1,23 @@
+.sui-result {
+  padding: var(--space-xlarge);
+  list-style: none;
+  font-size: 24px;
+  font-weight: 700;
+  background-color: var(--tag-color-bg);
+  margin: var(--space-xlarge) 0;
+}
+
+.sui-result__details > li {
+  display: flex;
+  flex-direction: column;
+}
+
+.sui-result__key {
+  font-size: 14px;
+  font-family: var(--font-family-code);
+}
+
+.sui-result__value {
+  font-size: 16px;
+  font-family: var(--font-family-code);
+}
