@@ -16,19 +16,27 @@ form {
 
 .button {
   margin: 0 0 0 var(--space-small);
-  border: none;
+  border: 2px solid currentColor;
+  background-color: transparent;
+  color: currentColor;
   padding: 0 var(--space-xlarge);
-  background-color: var(--blue-1);
   font-size: 16px;
   font-family: var(--font-family);
 }
 
 .button:hover {
   background-color: var(--blue-2);
+  cursor: pointer;
 }
 
 .button:active {
-  background-color: orange;
+  background-color: var(--blue-2);
+}
+
+.button:focus,
+.button:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 4px var(--link-color-text);
 }
 
 .sui-search-box__text-input {
@@ -36,22 +44,32 @@ form {
   width: 100%;
   font-size: 14px;
   font-family: var(--font-family);
+  border-radius: 0;
+  border: 2px solid currentColor;
+}
+
+.sui-search-box__text-input:focus,
+.sui-search-box__text-input:active {
+  outline: none;
+  box-shadow: 0 0 0 4px var(--link-color-text);
 }
 
 .sui-result {
   padding: var(--space-xlarge);
   list-style: none;
   background-color: var(--tag-color-bg);
-  margin: var(--space-xlarge) 0;
+  margin: var(--space-small) 0 var(--space-xlarge) 0;
 }
 
 .sui-result__title-link {
-  color: var(--blue-2);
+  background-color: var(--selection-color-bg);
+  color: var(--selection-color-text);
 }
 
 .sui-result__title > em,
 em {
-  color: var(--blue-2);
+  background-color: var(--selection-color-bg);
+  color: var(--selection-color-text);
   font-style: inherit;
 }
 
@@ -68,8 +86,14 @@ em {
   /* display: none; */
 }
 
-.sui-result__value {
+.sui-result__value,
+.sui-paging-info,
+.sui-paging-info > strong {
   font-size: 16px;
   font-family: var(--font-family);
   line-height: 22px;
+}
+
+.sui-paging-info {
+  padding: var(--space-xlarge) 0 0 0;
 }

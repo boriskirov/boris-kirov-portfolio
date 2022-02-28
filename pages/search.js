@@ -6,7 +6,7 @@ import Main from "../components/innerWrapper";
 
 import MainWrapper from "../components/mainWrapper";
 import AppSearchAPIConnector from "@elastic/search-ui-app-search-connector";
-import { SearchProvider, Results, SearchBox } from "@elastic/react-search-ui";
+import { SearchProvider, Results, SearchBox, PagingInfo } from "@elastic/react-search-ui";
 
 const connector = new AppSearchAPIConnector({
   searchKey: "",
@@ -18,11 +18,11 @@ const configurationOptions = {
   apiConnector: connector,
   searchQuery: {
     search_fields: {
-      // 1. Search by name of video game.
+      // 1. Search by title of document.
       title: {},
       body_content: {},
     },
-    // 2. Results: name of the video game, its genre, publisher, scores, and platform.
+    // 2. Results: title of the document, with body content and url addded.
     result_fields: {
       title: {
         // A snippet means that matching search terms will be highlighted via <em> tags.
@@ -33,13 +33,13 @@ const configurationOptions = {
       },
       body_content: {
         snippet: {
-          size: 160,
+          size: 240,
           fallback: true,
-        }
+        },
       },
       url: {
-        raw: {}
-      }
+        raw: {},
+      },
     },
   },
 };
@@ -50,12 +50,23 @@ export default function App() {
         <Metadata
           title="Boris Kirov"
           description="Technical designer interested in systems, front-end, open source and collaborative design."
-          image="https://www.boriskirov.me/main-meta-tag-image.png"
+          image="https://www.boriskirov.me/meta-tag-search.png"
           name="Boris Kirov"
         />
         <Main>
+          <Link href="/playground">
+            <a className="backButton">Back</a>
+          </Link>
+
+          <h1 className="heading2Xl">SEARCH</h1>
+          <p>
+            Experimental page to experience how a basic search through documents
+            on my web app would allow for faster navigation. The search is build
+            with Elastic App Search and Elastic Search UI.
+          </p>
           <SearchProvider config={configurationOptions}>
-            <SearchBox />
+            <SearchBox inputProps={{ placeholder: "Search for something" }} searchAsYouType="true" debounceLength="300"/>
+            <PagingInfo />
             <Results titleField="title" urlField="url" />
           </SearchProvider>
         </Main>
