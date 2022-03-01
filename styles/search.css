@@ -66,6 +66,10 @@ form {
   color: var(--selection-color-text);
 }
 
+.sui-result__title-link:hover {
+  color: var(--selection-color-text); 
+}
+
 .sui-result__title > em,
 em {
   background-color: var(--selection-color-bg);
@@ -83,7 +87,7 @@ em {
   font-size: 12px;
   color: var(--tag-color-text);
   font-family: var(--font-family-code);
-  /* display: none; */
+  display: none;
 }
 
 .sui-result__value,

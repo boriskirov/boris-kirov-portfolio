@@ -65,7 +65,7 @@ export default function App() {
             with Elastic App Search and Elastic Search UI.
           </p>
           <SearchProvider config={configurationOptions}>
-            <SearchBox inputProps={{ placeholder: "Search for something" }} searchAsYouType="true" debounceLength="300"/>
+            <SearchBox inputProps={{ placeholder: "Search for something" }}/>
             <PagingInfo />
             <Results titleField="title" urlField="url" />
           </SearchProvider>
