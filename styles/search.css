@@ -46,6 +46,7 @@ form {
   font-family: var(--font-family);
   border-radius: 0;
   border: 2px solid currentColor;
+  background-color: var(--light-color-bg); 
 }
 
 .sui-search-box__text-input:focus,

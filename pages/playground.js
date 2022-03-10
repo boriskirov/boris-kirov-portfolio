@@ -33,7 +33,7 @@ const Playground = () => (
             link="../../search"
             className="main-card"
             title="Search with Elastic"
-            description=" Experimental page to experience how a basic search through my website would work, thanks to Elastic App Search & Elastic Search UI."
+            description="Experimental page to explore and experience how a basic search function through my website would work, thanks to Elastic App Search & Elastic Search UI."
             type="Experimental"
             target=""
           />

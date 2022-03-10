@@ -9,9 +9,9 @@ import AppSearchAPIConnector from "@elastic/search-ui-app-search-connector";
 import { SearchProvider, Results, SearchBox, PagingInfo } from "@elastic/react-search-ui";
 
 const connector = new AppSearchAPIConnector({
-  searchKey: "",
+  searchKey: "search-nax7j3jwzstw49xdtaotnm6o",
   engineName: "boriskirov",
-  endpointBase: "",
+  endpointBase: "https://boriskirov.ent.us-central1.gcp.cloud.es.io",
   cacheResponses: false,
 });
 const configurationOptions = {
@@ -60,9 +60,7 @@ export default function App() {
 
           <h1 className="heading2Xl">SEARCH</h1>
           <p>
-            Experimental page to experience how a basic search through documents
-            on my web app would allow for faster navigation. The search is build
-            with Elastic App Search and Elastic Search UI.
+            Searching is an essential part of our way of experiencing information. Understanding how to interact with something simple as a search input may allow us to understand the results we get and the knowledge we gain. This search is build with Elastic App Search and Elastic Search UI.
           </p>
           <SearchProvider config={configurationOptions}>
             <SearchBox inputProps={{ placeholder: "Search for something" }}/>

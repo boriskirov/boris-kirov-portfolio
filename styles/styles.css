@@ -269,8 +269,7 @@ li.footerLi:last-child {
   justify-content: flex-start;
   flex-wrap: wrap;
   width: 100%;
-  max-width: 1220px;
-  margin-top: 5vw;
+  margin-top: 2vw;
 }
 
 .main-card {
