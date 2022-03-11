@@ -38,6 +38,12 @@ const About = () => (
               <span className="dropCap">M</span>y name is Boris Kirov. I'm a
               Bulgarian designer living in Amsterdam, The Netherlands. My care
               for form and function makes me express myself with technology.
+              Currently I'm working at{" "}
+              <a href="https://www.elastic.co" target="_blank" rel="noreferrer">
+                Elastic
+              </a>
+              , the company behind the Elastic Stack, where we help people
+              explore and analyze data, while using the power of search.
             </p>
             <p>
               My previous experience was as a Platform designer in{" "}
