@@ -3,7 +3,7 @@ title: Life at Miro
 description: "Working as a leading platform designer for Miro on topics like frameworks, core, developer experience, app experience and design system & accesibility during their hypergrowht of 2020-2022."
 date: "02-21-2022"
 type: "Case study"
-image: "https://www.boriskirov.me/DCI-P3-1.png"
+image: "https://www.boriskirov.me/meta-tag-miro.png"
 ---
 
 [Miro](https://www.miro.com) is an online collaborative whiteboard platform, a canvas-based product that focuses on collaboration and teamwork. As of today, Miro is an established leader in visual collaboration. My work there stretches from all aspects of design, from product definition, strategy alignment, feature releases, and launches to experimentation and research.
