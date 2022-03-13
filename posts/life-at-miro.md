@@ -59,7 +59,7 @@ Later on we also used this method to uplift our Developer relations by re-design
 
 ![App monthly digest](../../app-montly-digest.png)
 
-Asynchronous critiques are scalable, effective, and powerful when prepared in a good way. Writing makes the product knowledge durable, and help for the structure of the thought. It's important to underline that it requires time for preparation and patience for the collaboration. 
+Asynchronous critiques are scalable, effective, and powerful when prepared in a good way. Writing makes the product knowledge durable, and help for the structure of the thought. It's important to underline that it requires time for preparation and patience for the collaboration.
 
 #### Designing for the community
 
