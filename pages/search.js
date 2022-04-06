@@ -6,14 +6,20 @@ import Main from "../components/innerWrapper";
 
 import MainWrapper from "../components/mainWrapper";
 import AppSearchAPIConnector from "@elastic/search-ui-app-search-connector";
-import { SearchProvider, Results, SearchBox, PagingInfo } from "@elastic/react-search-ui";
+import {
+  SearchProvider,
+  Results,
+  SearchBox,
+  PagingInfo,
+} from "@elastic/react-search-ui";
 
 const connector = new AppSearchAPIConnector({
-  searchKey: "search-nax7j3jwzstw49xdtaotnm6o",
-  engineName: "boriskirov",
-  endpointBase: "https://boriskirov.ent.us-central1.gcp.cloud.es.io",
+  searchKey: "",
+  engineName: "boriskirov-me",
+  endpointBase: "",
   cacheResponses: false,
 });
+
 const configurationOptions = {
   apiConnector: connector,
   searchQuery: {
@@ -60,10 +66,14 @@ export default function App() {
 
           <h1 className="heading2Xl">SEARCH</h1>
           <p>
-            Searching is an essential part of our way of experiencing information. Understanding how to interact with something simple as a search input may allow us to understand the results we get and the knowledge we gain. This search is build with Elastic App Search and Elastic Search UI.
+            Searching is an essential part of our way of experiencing
+            information. Understanding how to interact with something simple as
+            a search input may allow us to understand the results we get and the
+            knowledge we gain. This search is build with Elastic App Search and
+            Elastic Search UI.
           </p>
           <SearchProvider config={configurationOptions}>
-            <SearchBox inputProps={{ placeholder: "Search for something" }}/>
+            <SearchBox inputProps={{ placeholder: "Search for something" }} />
             <PagingInfo />
             <Results titleField="title" urlField="url" />
           </SearchProvider>
