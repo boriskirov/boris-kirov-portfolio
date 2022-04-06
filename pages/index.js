@@ -20,7 +20,9 @@ const Home = () => (
         <p>
           and I'm getting things done at{" "}
           <Link href="https://www.elastic.co">
-            <a className="external" target="_blank">Elastic</a>
+            <a className="external" target="_blank">
+              Elastic
+            </a>
           </Link>
         </p>
         <div className="contentWrapper">
