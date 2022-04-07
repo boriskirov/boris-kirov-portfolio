@@ -11,6 +11,12 @@
   "twitter": "@sboriskirov",
   "experience": [
     {
+      "company": "Elastic",
+      "role": "Senior Product Designer",
+      "work": "www.elastic.co",
+      "dates": "March 2022 - Present"
+    },
+    {
       "company": "Miro",
       "role": "Platform Product designer",
       "work": "www.boriskirov.me/miro",
