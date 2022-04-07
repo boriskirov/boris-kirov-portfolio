@@ -5,7 +5,7 @@
 }
 
 .font-toggle {
-  background-image: url("../public/sans-serif-icon.svg");
+  background-image: url("/sans-serif-icon.svg");
   background-repeat: no-repeat;
   width: 32px;
   height: 32px;
@@ -25,7 +25,7 @@
 }
 
 .monospace .font-toggle {
-  background-image: url("../public/monospace-icon.svg");
+  background-image: url("/monospace-icon.svg");
   /* transform: rotate(-360deg); */
 }
 
