@@ -14,9 +14,9 @@ import {
 } from "@elastic/react-search-ui";
 
 const connector = new AppSearchAPIConnector({
-  searchKey: "",
+  searchKey: "search-jegb4yy85giwe3bssadnvu7r",
   engineName: "boriskirov-me",
-  endpointBase: "",
+  endpointBase: "https://boriskirov.ent.europe-west4.gcp.elastic-cloud.com",
   cacheResponses: false,
 });
 
