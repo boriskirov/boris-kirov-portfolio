@@ -1,0 +1,16 @@
+{
+  "name": "Boris Kirov Website",
+  "short_name": "Personal space of Boris Kirov Product Designer",
+  "theme_color": "#E8E9FF",
+  "background_color": "#D8DBFF",
+  "display": "standalone",
+  "scope": "/",
+  "lang": "en-US",
+  "orientation": "portrait-primary",
+  "start_url": "/index.html",
+  "icons": [
+  {
+    "src":"/favicon.png",
+    "sizes": "any"
+  }
+}

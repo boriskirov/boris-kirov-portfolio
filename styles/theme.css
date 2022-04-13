@@ -32,3 +32,15 @@
   background-color: var(--light-color-bg);
   color: var(--dark-color-text);
 }
+
+.dark .font-toggle {
+  background-image: url("../public/sans-serif-icon-light.svg");
+}
+
+.dark .monospace .font-toggle {
+  background-image: url("../public/monospace-icon-light.svg");
+}
+
+.dark .monospace .font-toggle {
+  background-image: url("../public/monospace-icon-light.svg");
+}

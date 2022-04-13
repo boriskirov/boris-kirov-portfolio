@@ -10,7 +10,6 @@
 
 :root {
   --font-family: "Inter", sans-serif;
-
   --dark-color-bg: rgb(19, 19, 19);
   --light-color-text: rgb(226, 226, 226);
   --light-color-bg: rgb(226, 226, 226);
@@ -269,7 +268,7 @@ li.footerLi:last-child {
   justify-content: flex-start;
   flex-wrap: wrap;
   width: 100%;
-  margin-top: 2vw;
+  margin-top: 5vw;
 }
 
 .main-card {
@@ -463,10 +462,6 @@ details.dic-card summary:focus-visible {
 
 .internalPassage {
   cursor: e-resize;
-}
-
-.zoom-in {
-  cursor: zoom-in;
 }
 
 .dropCap {
