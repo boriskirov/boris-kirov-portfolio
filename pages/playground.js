@@ -30,6 +30,15 @@ const Playground = () => (
 
         <div className="contentWrapper">
           <Card
+            link="../../search"
+            className="main-card"
+            title="Search with Elastic"
+            description="Experimental page to explore and experience how a basic search function through my website would work, thanks to Elastic App Search & Elastic Search UI."
+            type="Experimental"
+            target=""
+          />
+
+          <Card
             link="https://www.mirotone.xyz"
             className="external main-card"
             title="Mirotone"

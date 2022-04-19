@@ -18,8 +18,8 @@ const Home = () => (
       <Main>
         <h1 className="heading2Xl">Hi, I'm Boris </h1>
         <p>
-          and I'm getting things done at{" "}
-          <Link href="https://www.elastic.co">
+          and I'm geting things done at{" "}
+          <Link href="https://elastic.co">
             <a className="external" target="_blank">
               Elastic
             </a>
