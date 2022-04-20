@@ -67,12 +67,12 @@ export default function App() {
           <h1 className="heading2Xl">SEARCH</h1>
           <p>
             Searching is one of the most important skills we must obtain when
-            talking about experiencing and using the web. An eternal source of
-            information is linked together and hosted on servers. But how do we
-            find and access those links. Understanding how a search input works,
-            allow us to understand the results we get and the knowledge we gain.
-            This search is build with Elastic, and would be a never ending
-            journey of experimentation.
+            interacting with the web. An eternal source of information is linked
+            together and hosted on servers. But how do we find and access those
+            links. Understanding how a search input works, allows us to
+            understand the results we get and the knowledge we gain. This search
+            is built with Elastic, and would be a never-ending journey of
+            experimentation.
           </p>
           <SearchProvider config={configurationOptions}>
             <SearchBox inputProps={{ placeholder: "Search for something" }} />
