@@ -173,6 +173,12 @@ const ToolboxList = [
     image: "/cron.png",
     category: "Productivity",
   },
+  {
+    name: "rectangle",
+    url: "https://rectangleapp.com/",
+    image: "/rectangle.png",
+    category: "Productivity",
+  },
 ];
 
 export default ToolboxList;
