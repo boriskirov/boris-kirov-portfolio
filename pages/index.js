@@ -6,6 +6,24 @@ import Main from "../components/innerWrapper";
 
 import MainWrapper from "../components/mainWrapper";
 
+const { APM_SERVER_URL: server_url, APM_SECRET_TOKEN: apm_token } = process.env;
+
+// Add this to the VERY top of the first file loaded in your app
+var apm = require("elastic-apm-node").start({
+  // Override the service name from package.json
+  // Allowed characters: a-z, A-Z, 0-9, -, _, and space
+  serviceName: "Boris & Casper Service name",
+
+  // Use if APM Server requires a secret token
+  secretToken: { apm_token },
+
+  // Set the custom APM Server URL (default: http://localhost:8200)
+  serverUrl: { server_url },
+
+  // Set the service environment
+  environment: "production",
+});
+
 const Home = () => (
   <Motion>
     <MainWrapper>
