@@ -44,6 +44,11 @@ const Home = () => (
                 </Link>
               </li>
               <li className="blog">
+                <Link href="/talks" as="/talks">
+                  <a className="internalPassage">Talks</a>
+                </Link>
+              </li>
+              <li className="blog">
                 <Link href="/photography" as="/photography">
                   <a className="internalPassage">Photography</a>
                 </Link>
