@@ -30,12 +30,12 @@ const Playground = () => (
 
         <div className="contentWrapper">
           <Card
-            link="#"
+            link="https://devxconf.org/"
             className="main-card"
             title="Designing for Developers"
             description="A journey of what it takes to design for developers, by walking through programming, web fundamentals and designs methods and practices to gain empathy."
             type="DevXconf"
-            target=""
+            target="_blank"
           />
         </div>
       </Main>
