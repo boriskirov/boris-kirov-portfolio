@@ -66,6 +66,7 @@ body {
 header,
 footer {
   width: 100%;
+  max-width: 2240px;
   height: 32px;
   display: flex;
   justify-content: space-between;
@@ -260,6 +261,7 @@ li.footerLi:last-child {
   justify-content: center;
   align-items: flex-start;
   width: 100%;
+  max-width: 2240px;
 }
 
 .contentWrapper {
