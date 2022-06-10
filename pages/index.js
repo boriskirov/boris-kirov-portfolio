@@ -16,7 +16,7 @@ const Home = () => (
         name="Boris Kirov"
       />
       <Main>
-        <div>
+        <div className="w100">
           <h1 className="heading2Xl">Boris Kirov</h1>
           <p>
             Building polished software and experiences in the digital world. I
@@ -50,52 +50,52 @@ const Home = () => (
             </Link>
           </p>
         </div>
-        <div>
+        <div className="w100">
           <h4>Work</h4>
           <ul>
-            <li>
+            <li className="list-item">
               {" "}
               <Link href="https://elastic.co">
                 <a className="external" target="_blank">
                   Elastic
                 </a>
               </Link>
-              <span> --------------------- </span>
-              <strong> 2022 -</strong>
+              <span> </span>
+              <p> 2022 - Present</p>
             </li>
-            <li>
+            <li className="list-item">
               {" "}
               <Link href="https://elastic.co">
                 <a className="external" target="_blank">
                   Miro
                 </a>
               </Link>
-              <span> --------------------- </span>
-              <strong> 2020 - 2022</strong>
+              <span> </span>
+              <p> 2020 - 2022</p>
             </li>
-            <li>
+            <li className="list-item">
               {" "}
               <Link href="https://elastic.co">
                 <a className="external" target="_blank">
                   INFO
                 </a>
               </Link>
-              <span> --------------------- </span>
-              <strong> 2019 - 2020</strong>
+              <span> </span>
+              <p> 2019 - 2020</p>
             </li>
-            <li>
+            <li className="list-item">
               {" "}
               <Link href="https://elastic.co">
                 <a className="external" target="_blank">
                   Despark
                 </a>
               </Link>
-              <span> --------------------- </span>
-              <strong> 2016 - 2019</strong>
+              <span> </span>
+              <p> 2016 - 2019</p>
             </li>
           </ul>
         </div>
-        <div>
+        <div className="w100">
           <h4>Writing</h4>
           <ul>
             <li>
@@ -142,27 +142,27 @@ const Home = () => (
             </li>
           </ul>
         </div>
-        <div>
+        <div className="w100">
           <h4>Building</h4>
           <ul>
-            <li>
+            <li className="list-item">
               <strong>Searching with Elastic</strong>{" "}
               <span className="tag">Experiment</span>
             </li>
-            <li>
+            <li className="list-item">
               <strong>Mirotone</strong> <span className="tag">Library</span>
             </li>
-            <li>
-              <strong>Mirotone</strong>{" "}
+            <li className="list-item">
+              <strong>Handoff notes</strong>{" "}
               <span className="tag">Figma plugin</span>
             </li>
-            <li>
+            <li className="list-item">
               <strong>Fluiditype</strong> <span className="tag">Library</span>
             </li>
-            <li>
+            <li className="list-item">
               <strong>Fluidigrid</strong> <span className="tag">Library</span>
             </li>
-            <li>
+            <li className="list-item">
               {" "}
               <Link href="https://elastic.co">
                 <a className="external" target="_blank">
@@ -172,7 +172,7 @@ const Home = () => (
             </li>
           </ul>
         </div>
-        <div>
+        <div className="w100">
           <h4>Documenting</h4>
           <ul>
             <li>Glossary</li>
@@ -180,13 +180,13 @@ const Home = () => (
             <li>Cheatsheets</li>
           </ul>
         </div>
-        <div>
+        <div className="w100">
           <h4>Speaking</h4>
           <ul>
             <li>Designing for developers</li>
           </ul>
         </div>
-        <div>
+        <div className="w100">
           <h4>Connect</h4>
           <p>If you are around Amsterdam feel free to reach out for a walk.</p>
           <ul>

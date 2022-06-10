@@ -19,7 +19,7 @@
 }
 
 .dark .theme-toggle {
-  background-image: url("../public/light-mode.svg");
+  background-image: url("../public/rainbow-logo.svg");
   transform: rotate(0deg);
 }
 

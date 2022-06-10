@@ -16,3 +16,31 @@
   --white-1: #fefefe;
   --white-2: #f2f2f2;
 }
+
+.bg-green-1 {
+  background-color: var(--green-1);
+}
+
+.bg-green-2 {
+  background-color: var(--green-2);
+}
+
+.bg-green-3 {
+  background-color: var(--green-3);
+}
+
+.bg-yellow {
+  background-color: var(--green);
+}
+
+.bg-orange {
+  background-color: var(--orange);
+}
+
+.bg-red-1 {
+  background-color: var(--red-1);
+}
+
+.bg-red-2 {
+  background-color: var(--red-2);
+}
