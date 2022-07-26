@@ -8,7 +8,12 @@ export default function StravaStats() {
   const RideDistance = (data?.countRides.distance / 1000).toFixed(2);
   const SwimDistance = (data?.countSwims.distance / 1000).toFixed(2);
   return (
-    <a className="ApiCard" href="https://www.strava.com" target="_blank">
+    <a
+      className="ApiCard"
+      href="https://www.strava.com"
+      target="_blank"
+      rel="noreferrer"
+    >
       <div className="flexCentered">
         <Image src="/strava.png" alt="Strava logo" width={48} height={48} />
         <div className="flexCentered">
