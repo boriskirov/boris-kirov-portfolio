@@ -81,6 +81,7 @@ const About = () => (
               </a>{" "}
               profile.
             </p>
+            <StravaStats />
             <p>
               Leaving time for sports like running, cycling, and jump rope is
               essential for my physical and mental health. But the most
@@ -88,7 +89,6 @@ const About = () => (
               monochromatic, Mozilla firefox-looking, Dory. She is an amazing,
               smart, and incredibly responsive adopted mixed-breed dog.
             </p>
-            <StravaStats />
             <Image
               src="/dory.png"
               alt="Dory the Mozilla firefox-looking adopted mixed-breed dog"
