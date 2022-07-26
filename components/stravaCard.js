@@ -1,7 +1,7 @@
 import useSWR from "swr";
 import Image from "next/image";
 
-export default function StravaStats() {
+const StravaStats = () => {
   const fetcher = (url) => fetch(url).then((r) => r.json());
   const { data, error } = useSWR("/api/strava", fetcher);
   const RunDistance = (data?.countRuns.distance / 1000).toFixed(2);
@@ -32,4 +32,6 @@ export default function StravaStats() {
       </div>
     </a>
   );
-}
+};
+
+export default StravaStats;
