@@ -7,7 +7,7 @@ export default function CurrentlyListening() {
   const { data } = useSWR("/api/spotify", fetcher);
   return (
     <a
-      className="currentlyListeningCard"
+      className="ApiCard"
       target="_blank"
       rel="noreferrer"
       href={
@@ -16,7 +16,7 @@ export default function CurrentlyListening() {
           : "https://open.spotify.com/user/11180743946"
       }
     >
-      <div className="currentlyListeningCardInner">
+      <div className="flexCentered">
         {data?.isPlaying ? (
           <Image
             className="currentlyListeningImg"

@@ -27,12 +27,13 @@ export default async (req, res) => {
       reAuthJson.access_token
   );
   const json = await response.json();
-  const { count, distance } = json.all_run_totals;
-  const movingTime = json.all_run_totals.moving_time;
+  const countRuns = json.all_run_totals;
+  const countSwims = json.all_swim_totals;
+  const countRides = json.all_ride_totals;
 
   return res.status(200).json({
-    count,
-    distance,
-    movingTime,
+    countRuns,
+    countSwims,
+    countRides,
   });
 };

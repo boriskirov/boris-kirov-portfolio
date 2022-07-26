@@ -8,6 +8,7 @@ import Footer from "../components/Footer/footer";
 import CurrentlyListening from "../components/currentlyListening";
 import Image from "next/image";
 import FeedbackForm from "../components/feedbackForm";
+import StravaStats from "../components/stravaCard";
 
 const About = () => (
   <Motion>
@@ -24,15 +25,9 @@ const About = () => (
         </Link>
         <h1 className="heading2Xl">Здрасти,</h1>
         <div className="contentWrapper">
-          <section>
-            <Image
-              src="/me.png"
-              alt="About me photo"
-              width={1080}
-              height={720}
-            />
-            <CurrentlyListening />
-          </section>
+          <Image src="/me.png" alt="About me photo" width={1080} height={720} />
+          <CurrentlyListening />
+
           <section>
             <p>
               <span className="dropCap">M</span>y name is Boris Kirov. I'm a
@@ -93,6 +88,7 @@ const About = () => (
               monochromatic, Mozilla firefox-looking, Dory. She is an amazing,
               smart, and incredibly responsive adopted mixed-breed dog.
             </p>
+            <StravaStats />
             <Image
               src="/dory.png"
               alt="Dory the Mozilla firefox-looking adopted mixed-breed dog"
