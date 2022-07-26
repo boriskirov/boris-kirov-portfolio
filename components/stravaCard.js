@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function StravaStats() {
   const fetcher = (url) => fetch(url).then((r) => r.json());
-  const { data } = useSWR("/api/strava", fetcher);
+  const { data, error } = useSWR("/api/strava", fetcher);
   const RunDistance = (data?.countRuns.distance / 1000).toFixed(2);
   const RideDistance = (data?.countRides.distance / 1000).toFixed(2);
   const SwimDistance = (data?.countSwims.distance / 1000).toFixed(2);
