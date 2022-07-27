@@ -397,6 +397,11 @@ a.ApiCard:focus {
 .flexCentered {
   display: flex;
   align-items: center;
+  width: 100%;
+}
+
+.ApiCard > .flexCentered > .flexCentered {
+  justify-content: space-around;
 }
 
 .dic-card {
@@ -451,9 +456,12 @@ details.dic-card summary:focus-visible {
   word-break: keep-all;
 }
 
-.ApiCard > .flexCentered > .flexCentered > .tag {
-  margin: var(--space-large) var(--space-medium) var(--space-large)
-    var(--space-medium);
+.distance {
+  margin: 0;
+}
+
+.count {
+  margin: 0;
 }
 
 .time {

@@ -17,17 +17,26 @@ const StravaStats = () => {
       <div className="flexCentered">
         <Image src="/strava.png" alt="Strava logo" width={48} height={48} />
         <div className="flexCentered">
-          <small className="tag dark-text">
-            {data?.countRuns.count} runs {""}
-            {RunDistance} km
-          </small>
-          <small className="tag dark-text">
-            {data?.countRides.count} rides {""}
-            {RideDistance} km
-          </small>
-          <small className="tag dark-text">
-            {data?.countSwims.count} swims {""} {SwimDistance} km
-          </small>
+          <div>
+            <p className="distance">
+              <strong>{RunDistance} km</strong>
+            </p>
+            <small className="count">{data?.countRuns.count} runs</small>
+          </div>
+          <div>
+            <p className="distance">
+              {" "}
+              <strong> {RideDistance} km</strong>
+            </p>
+            <small className="count">{data?.countRides.count} rides</small>
+          </div>
+          <div>
+            <p className="distance">
+              {" "}
+              <strong>{SwimDistance} km</strong>
+            </p>
+            <small className="count">{data?.countSwims.count} swims</small>
+          </div>
         </div>
       </div>
     </a>
