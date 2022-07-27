@@ -14,8 +14,8 @@ const StravaStats = () => {
       target="_blank"
       rel="noreferrer"
     >
+      <Image src="/strava.png" alt="Strava logo" width={48} height={48} />
       <div className="flexCentered">
-        <Image src="/strava.png" alt="Strava logo" width={48} height={48} />
         <div className="flexCentered">
           <div>
             <p className="distance">
