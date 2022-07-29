@@ -171,7 +171,6 @@ h5 {
 }
 
 h6 {
-  margin: var(--space-xlarge) 0 var(--space-small);
   text-transform: uppercase;
   font-weight: normal;
 }
@@ -324,7 +323,7 @@ a.main-card:focus {
   font-weight: 500;
   text-shadow: none;
   text-decoration: none;
-  padding: var(--space-small) var(--space-large);
+  padding: var(--space-large) var(--space-large);
   margin: var(--space-xlarge) 0 var(--space-large) 0;
   background-color: var(--card-color-bg);
   display: flex;
