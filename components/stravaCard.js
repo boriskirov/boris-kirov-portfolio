@@ -31,13 +31,13 @@ const StravaStats = () => {
             <div className="stravaPil">
               <p>Distance</p>
               <p className="distance">
-                <strong>{RunDistance} km</strong>
+                <h5>{RunDistance} km</h5>
               </p>
             </div>
             <div className="stravaPil">
               <p>Count</p>
               <div className="distance">
-                <strong className="count">{data?.countRuns.count} runs</strong>
+                <h5 className="count">{data?.countRuns.count} runs</h5>
               </div>
             </div>
           </div>
@@ -48,14 +48,14 @@ const StravaStats = () => {
               <p>Distance</p>
               <div className="distance">
                 <p className="distance">
-                  <strong> {RideDistance} km</strong>
+                  <h5> {RideDistance} km</h5>
                 </p>
               </div>
             </div>
             <div className="stravaPil">
               <p>Count</p>
               <div className="distance">
-                <strong className="count">{data?.countRides.count} runs</strong>
+                <h5 className="count">{data?.countRides.count} runs</h5>
               </div>
             </div>
           </div>
@@ -66,14 +66,14 @@ const StravaStats = () => {
               <p>Distance</p>
               <div className="distance">
                 <p className="distance">
-                  <strong>{SwimDistance} km</strong>
+                  <h5>{SwimDistance} km</h5>
                 </p>
               </div>
             </div>
             <div className="stravaPil">
               <p>Count</p>
               <div className="distance">
-                <strong className="count">{data?.countSwims.count} runs</strong>
+                <h5 className="count">{data?.countSwims.count} runs</h5>
               </div>
             </div>
           </div>
