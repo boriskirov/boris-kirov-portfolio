@@ -44,3 +44,7 @@
 .dark .monospace .font-toggle {
   background-image: url("../public/monospace-icon-light.svg");
 }
+
+.dark .stravaIcon {
+  filter: invert(100%);
+}

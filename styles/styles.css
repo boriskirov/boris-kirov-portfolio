@@ -398,6 +398,7 @@ a.ApiCard:focus {
   display: flex;
   align-items: center;
   width: 100%;
+  margin: 0 0 var(--space-large) 0;
 }
 
 .flexDirectionColumn {

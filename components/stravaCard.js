@@ -23,7 +23,7 @@ const StravaStats = () => {
         <div className="flexCentered">
           <div className="flexCentered">
             <Image src="/strava.png" alt="Strava logo" width={48} height={48} />
-            <h4 className="stravaStats">My Strava stats</h4>
+            <h6 className="stravaStats">My Strava stats</h6>
           </div>
           <small className="tag stravaTag">
             <a
@@ -35,9 +35,16 @@ const StravaStats = () => {
             </a>
           </small>
         </div>
+        <hr />
         <div className="flexCentered flexDirectionColumn">
           <div className="flexCentered justContentBetween">
-            <Image src="/run.svg" alt="Strava logo" width={48} height={48} />
+            <Image
+              className="stravaIcon"
+              src="/run.svg"
+              alt="Strava logo"
+              width={48}
+              height={48}
+            />
             <div className="stravaPil">
               <small>Distance</small>
               <p className="distance">{RunDistance} km</p>
@@ -55,7 +62,13 @@ const StravaStats = () => {
           </div>
           <hr />
           <div className="flexCentered justContentBetween">
-            <Image src="/bike.svg" alt="Strava logo" width={48} height={48} />
+            <Image
+              className="stravaIcon"
+              src="/bike.svg"
+              alt="Strava logo"
+              width={48}
+              height={48}
+            />
             <div className="stravaPil">
               <small>Distance</small>
               <p className="distance">{RideDistance} km</p>
@@ -73,7 +86,13 @@ const StravaStats = () => {
           </div>
           <hr />
           <div className="flexCentered justContentBetween">
-            <Image src="/swim.svg" alt="Strava logo" width={48} height={48} />
+            <Image
+              className="stravaIcon"
+              src="/swim.svg"
+              alt="Strava logo"
+              width={48}
+              height={48}
+            />
 
             <div className="stravaPil">
               <small>Distance</small>
