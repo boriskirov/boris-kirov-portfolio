@@ -16,7 +16,11 @@ const StravaStats = () => {
             <h5 className="stravaStats">My Strava stats</h5>
           </div>
           <small className="tag stravaTag">
-            <a href="www.strava.com" target="_blank" rel="noreferrer">
+            <a
+              href="https://www.strava.com/athletes/40093533"
+              target="_blank"
+              rel="noreferrer"
+            >
               Follow
             </a>
           </small>
