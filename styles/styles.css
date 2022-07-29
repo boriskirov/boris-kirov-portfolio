@@ -634,4 +634,12 @@ details.dic-card summary:focus-visible {
   .footerLi {
     margin: var(--space-small) 0 var(--space-small) 0;
   }
+
+  .flexCentered .justContentBetween {
+    flex-direction: column;
+  }
+
+  .stravaPil {
+    min-width: auto;
+  }
 }
