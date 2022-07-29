@@ -35,7 +35,7 @@ export default function CurrentlyListening() {
           />
         )}
         <div className="currentlyListeningContent">
-          <small>{data?.isPlaying ? data.title : ""}</small>
+          {/* <small>{data?.isPlaying ? data.title : ""}</small> */}
           <h6>
             {data?.isPlaying ? data.artist : "Not listening Spotify right now"}
           </h6>
