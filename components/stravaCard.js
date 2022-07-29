@@ -37,71 +37,56 @@ const StravaStats = () => {
         </div>
         <div className="flexCentered flexDirectionColumn">
           <div className="flexCentered justContentBetween">
-            <Image src="/run.svg" alt="Strava logo" width={64} height={64} />
+            <Image src="/run.svg" alt="Strava logo" width={48} height={48} />
             <div className="stravaPil">
               <small>Distance</small>
-              <p className="distance">
-                <h5>{RunDistance} km</h5>
-              </p>
+              <p className="distance">{RunDistance} km</p>
             </div>
             <div className="stravaPil">
               <small>Count</small>
-              <div className="distance">
-                <h5 className="count">{data?.countRuns.count} runs</h5>
-              </div>
+              <p className="count">{data?.countRuns.count} runs</p>
             </div>
             <div className="stravaPil">
               <small>Moving time</small>
               <p className="distance">
-                <h5>{timeConvert(data?.countRuns.moving_time)}</h5>
+                {timeConvert(data?.countRuns.moving_time)}
               </p>
             </div>
           </div>
           <hr />
           <div className="flexCentered justContentBetween">
-            <Image src="/bike.svg" alt="Strava logo" width={64} height={64} />
+            <Image src="/bike.svg" alt="Strava logo" width={48} height={48} />
             <div className="stravaPil">
               <small>Distance</small>
-              <div className="distance">
-                <p className="distance">
-                  <h5> {RideDistance} km</h5>
-                </p>
-              </div>
+              <p className="distance">{RideDistance} km</p>
             </div>
             <div className="stravaPil">
               <small>Count</small>
-              <div className="distance">
-                <h5 className="count">{data?.countRides.count} runs</h5>
-              </div>
+              <p className="count">{data?.countRides.count} runs</p>
             </div>
             <div className="stravaPil">
               <small>Moving time</small>
               <p className="distance">
-                <h5>{timeConvert(data?.countRides.moving_time)}</h5>
+                {timeConvert(data?.countRides.moving_time)}
               </p>
             </div>
           </div>
           <hr />
           <div className="flexCentered justContentBetween">
             <Image src="/swim.svg" alt="Strava logo" width={48} height={48} />
+
             <div className="stravaPil">
               <small>Distance</small>
-              <div className="distance">
-                <p className="distance">
-                  <h5>{SwimDistance} km</h5>
-                </p>
-              </div>
+              <p className="distance">{SwimDistance} km</p>
             </div>
             <div className="stravaPil">
               <small>Count</small>
-              <div className="distance">
-                <h5 className="count">{data?.countSwims.count} runs</h5>
-              </div>
+              <p className="count">{data?.countSwims.count} runs</p>
             </div>
             <div className="stravaPil">
               <small>Moving time</small>
               <p className="distance">
-                <h5>{timeConvert(data?.countSwims.moving_time)}</h5>
+                {timeConvert(data?.countSwims.moving_time)}
               </p>
             </div>
           </div>
