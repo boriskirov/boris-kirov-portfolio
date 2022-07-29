@@ -400,8 +400,12 @@ a.ApiCard:focus {
   width: 100%;
 }
 
-.ApiCard > .flexCentered > .flexCentered {
-  justify-content: space-around;
+.flexDirectionColumn {
+  flex-direction: column;
+}
+
+.justContentBetween {
+  justify-content: space-between;
 }
 
 .dic-card {
@@ -454,6 +458,27 @@ details.dic-card summary:focus-visible {
   background-color: var(--tag-color-bg);
   line-height: 1.4;
   word-break: keep-all;
+}
+
+// Strava styles
+
+.strava {
+  padding: var(--space-small) var(--space-large);
+  margin: var(--space-xlarge) 0 var(--space-large) 0;
+  background-color: var(--card-color-bg);
+}
+
+.stravaStats {
+  margin: 0 0 0 var(--space-large);
+}
+
+.stravaPil {
+  margin: 0 var(--space-small) 0 0;
+}
+
+.stravaTag {
+  background-color: var(--orange);
+  color: var(--white);
 }
 
 .distance {
