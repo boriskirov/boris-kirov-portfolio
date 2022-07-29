@@ -117,6 +117,7 @@ hr {
   color: inherit;
   width: 100%;
   opacity: 0.1;
+  margin: var(--space-large) 0;
 }
 
 small {
@@ -173,6 +174,7 @@ h5 {
 h6 {
   text-transform: uppercase;
   font-weight: normal;
+  margin: 0;
 }
 
 pre {
@@ -397,7 +399,6 @@ a.ApiCard:focus {
   display: flex;
   align-items: center;
   width: 100%;
-  margin: 0 0 var(--space-large) 0;
 }
 
 .flexDirectionColumn {
@@ -480,6 +481,10 @@ details.dic-card summary:focus-visible {
 .stravaTag {
   background-color: var(--orange);
   color: var(--white);
+}
+
+.stravaIcon {
+  background: var(--card-color-bg);
 }
 
 .distance {
