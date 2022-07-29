@@ -7,13 +7,23 @@ const StravaStats = () => {
   const RunDistance = (data?.countRuns.distance / 1000).toFixed(2);
   const RideDistance = (data?.countRides.distance / 1000).toFixed(2);
   const SwimDistance = (data?.countSwims.distance / 1000).toFixed(2);
+
+  function timeConvert(num) {
+    // const seconds = Math.floor(num % 60);
+    const minutes = Math.floor((num % 3600) / 60);
+    const hours = Math.floor((num % (3600 * 24)) / 3600);
+    const days = Math.floor(num / (3600 * 24));
+
+    return days + "d" + " " + hours + "h" + " " + minutes + "min";
+  }
+
   return (
     <div>
       <div className="strava">
         <div className="flexCentered">
           <div className="flexCentered">
             <Image src="/strava.png" alt="Strava logo" width={48} height={48} />
-            <h5 className="stravaStats">My Strava stats</h5>
+            <h4 className="stravaStats">My Strava stats</h4>
           </div>
           <small className="tag stravaTag">
             <a
@@ -27,25 +37,31 @@ const StravaStats = () => {
         </div>
         <div className="flexCentered flexDirectionColumn">
           <div className="flexCentered justContentBetween">
-            <Image src="/run.svg" alt="Strava logo" width={48} height={48} />
+            <Image src="/run.svg" alt="Strava logo" width={64} height={64} />
             <div className="stravaPil">
-              <p>Distance</p>
+              <small>Distance</small>
               <p className="distance">
                 <h5>{RunDistance} km</h5>
               </p>
             </div>
             <div className="stravaPil">
-              <p>Count</p>
+              <small>Count</small>
               <div className="distance">
                 <h5 className="count">{data?.countRuns.count} runs</h5>
               </div>
             </div>
+            <div className="stravaPil">
+              <small>Moving time</small>
+              <p className="distance">
+                <h5>{timeConvert(data?.countRuns.moving_time)}</h5>
+              </p>
+            </div>
           </div>
           <hr />
           <div className="flexCentered justContentBetween">
-            <Image src="/bike.svg" alt="Strava logo" width={48} height={48} />
+            <Image src="/bike.svg" alt="Strava logo" width={64} height={64} />
             <div className="stravaPil">
-              <p>Distance</p>
+              <small>Distance</small>
               <div className="distance">
                 <p className="distance">
                   <h5> {RideDistance} km</h5>
@@ -53,17 +69,23 @@ const StravaStats = () => {
               </div>
             </div>
             <div className="stravaPil">
-              <p>Count</p>
+              <small>Count</small>
               <div className="distance">
                 <h5 className="count">{data?.countRides.count} runs</h5>
               </div>
+            </div>
+            <div className="stravaPil">
+              <small>Moving time</small>
+              <p className="distance">
+                <h5>{timeConvert(data?.countRides.moving_time)}</h5>
+              </p>
             </div>
           </div>
           <hr />
           <div className="flexCentered justContentBetween">
             <Image src="/swim.svg" alt="Strava logo" width={48} height={48} />
             <div className="stravaPil">
-              <p>Distance</p>
+              <small>Distance</small>
               <div className="distance">
                 <p className="distance">
                   <h5>{SwimDistance} km</h5>
@@ -71,10 +93,16 @@ const StravaStats = () => {
               </div>
             </div>
             <div className="stravaPil">
-              <p>Count</p>
+              <small>Count</small>
               <div className="distance">
                 <h5 className="count">{data?.countSwims.count} runs</h5>
               </div>
+            </div>
+            <div className="stravaPil">
+              <small>Moving time</small>
+              <p className="distance">
+                <h5>{timeConvert(data?.countSwims.moving_time)}</h5>
+              </p>
             </div>
           </div>
         </div>
