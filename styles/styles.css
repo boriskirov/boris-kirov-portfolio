@@ -475,7 +475,7 @@ details.dic-card summary:focus-visible {
 
 .stravaPil {
   margin: 0 var(--space-small) 0 0;
-  min-width: 140px;
+  min-width: 150px;
 }
 
 .stravaTag {
@@ -645,5 +645,8 @@ details.dic-card summary:focus-visible {
 
   .stravaPil {
     min-width: auto;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
   }
 }
