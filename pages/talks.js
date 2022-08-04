@@ -31,7 +31,7 @@ const Playground = () => (
         <div className="contentWrapper">
           <Card
             link="https://www.figma.com/community/file/1129497070884323883"
-            className="main-card"
+            className="main-card external"
             title="Design like a developer"
             description="A talk with https://uilearn.com/ on how to build your own ideas in order to collaborate better with engineers."
             type="Academic talk"
@@ -39,7 +39,7 @@ const Playground = () => (
           />
           <Card
             link="https://devxconf.org/"
-            className="main-card"
+            className="main-card external"
             title="Designing for Developers"
             description="A journey of what it takes to design for developers, by walking through programming, web fundamentals and designs methods and practices to gain empathy."
             type="Conference talk"
