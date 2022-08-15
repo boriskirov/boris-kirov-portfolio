@@ -31,7 +31,7 @@ const StravaStats = () => {
               target="_blank"
               rel="noreferrer"
             >
-              Follow
+              <small>Follow</small>
             </a>
           </small>
         </div>
