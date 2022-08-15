@@ -35,9 +35,9 @@ const StravaStats = () => {
             </a>
           </small>
         </div>
-        <hr />
+
         <div className="flexCentered flexDirectionColumn">
-          <div className="flexCentered justContentBetween">
+          <div className="flexCentered justContentBetween strava">
             <Image
               className="stravaIcon"
               src="/run.svg"
@@ -60,8 +60,8 @@ const StravaStats = () => {
               </p>
             </div>
           </div>
-          <hr />
-          <div className="flexCentered justContentBetween">
+
+          <div className="flexCentered justContentBetween strava">
             <Image
               className="stravaIcon"
               src="/bike.svg"
@@ -84,8 +84,8 @@ const StravaStats = () => {
               </p>
             </div>
           </div>
-          <hr />
-          <div className="flexCentered justContentBetween">
+
+          <div className="flexCentered justContentBetween strava">
             <Image
               className="stravaIcon"
               src="/swim.svg"

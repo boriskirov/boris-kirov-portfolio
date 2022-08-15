@@ -465,7 +465,7 @@ details.dic-card summary:focus-visible {
 
 .strava {
   padding: var(--space-xlarge);
-  margin: var(--space-xlarge) 0 var(--space-large) 0;
+  margin: var(--space-small) 0 var(--space-small) 0;
   background-color: var(--card-color-bg);
 }
 
@@ -475,7 +475,7 @@ details.dic-card summary:focus-visible {
 
 .stravaPil {
   margin: 0 var(--space-small) 0 0;
-  min-width: 150px;
+  max-width: 150px;
 }
 
 .stravaTag {
