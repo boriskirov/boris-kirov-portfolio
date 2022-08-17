@@ -36,24 +36,22 @@
       "dates": "Aug 2016 - Dec 2018"
     }
   ],
-  "colorSchema": [
-    {
-      "green": "#6bf4c8",
-      "green-2": "#5debac",
-      "green-3": "#66ed7f",
-      "yellow": "#ffd253",
-      "orange": "#ff7253",
-      "red": "#f0696a",
-      "pink": "#f06a8b",
-      "pink-2": "#ff9cb4",
-      "purple": "#b66afe",
-      "blue": "#6ac9f5",
-      "blue-2": "#62acfe",
-      "blue-3": "#686afe",
-      "black": "#00091b",
-      "indigo": "#011438",
-      "white": "#fefefe",
-      "white-2": "#f2f2f2"
-    }
-  ]
+  "colorSchema": {
+    "green": "#6bf4c8",
+    "green-2": "#5debac",
+    "green-3": "#66ed7f",
+    "yellow": "#ffd253",
+    "orange": "#ff7253",
+    "red": "#f0696a",
+    "pink": "#f06a8b",
+    "pink-2": "#ff9cb4",
+    "purple": "#b66afe",
+    "blue": "#6ac9f5",
+    "blue-2": "#62acfe",
+    "blue-3": "#686afe",
+    "black": "#00091b",
+    "indigo": "#011438",
+    "white": "#fefefe",
+    "white-2": "#f2f2f2"
+  }
 }
