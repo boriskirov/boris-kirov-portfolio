@@ -21,10 +21,10 @@ const HomePageFooter = () => (
       style={{
         justifyContent: "space-evenly",
         backgroundColor: "var(--card-color-bg)",
-        padding: "12px 12px",
-        margin: "15% 0px",
+        padding: "12px",
+        margin: "20% 0px",
         border: "0",
-        borderRadius: "5px",
+        borderRadius: "60px",
         display: "flex",
         flexDirection: "row",
         border: "2px solid var(--card-color-bg)",
@@ -39,8 +39,8 @@ const HomePageFooter = () => (
           title="About"
           className="footer-button"
           style={{
-            padding: "12px",
-            borderRadius: "10%",
+            padding: "8px",
+            borderRadius: "60px",
             cursor: "pointer",
             display: "flex",
             flexDirection: "column",
@@ -48,7 +48,7 @@ const HomePageFooter = () => (
             backgroundColor: "var(--card-color-bg)",
             border: "2px solid var(--card-color-bg)",
             transition: "all 0.3s ease-in-out",
-            margin: "6px",
+            margin: "2px",
           }}
         >
           <Image
@@ -64,8 +64,8 @@ const HomePageFooter = () => (
           title="Playground"
           className="footer-button"
           style={{
-            padding: "12px",
-            borderRadius: "10%",
+            padding: "8px",
+            borderRadius: "60px",
             cursor: "pointer",
             display: "flex",
             flexDirection: "column",
@@ -73,7 +73,7 @@ const HomePageFooter = () => (
             backgroundColor: "var(--card-color-bg)",
             border: "2px solid var(--card-color-bg)",
             transition: "all 0.3s ease-in-out",
-            margin: "6px",
+            margin: "2px",
           }}
         >
           <Image
@@ -89,8 +89,8 @@ const HomePageFooter = () => (
           title="Writings"
           className="footer-button"
           style={{
-            padding: "12px",
-            borderRadius: "10%",
+            padding: "8px",
+            borderRadius: "60px",
             cursor: "pointer",
             display: "flex",
             flexDirection: "column",
@@ -98,7 +98,7 @@ const HomePageFooter = () => (
             backgroundColor: "var(--card-color-bg)",
             border: "2px solid var(--card-color-bg)",
             transition: "all 0.3s ease-in-out",
-            margin: "6px",
+            margin: "2px",
           }}
         >
           <Image
@@ -114,8 +114,8 @@ const HomePageFooter = () => (
           title="Talks"
           className="footer-button"
           style={{
-            padding: "12px",
-            borderRadius: "10%",
+            padding: "8px",
+            borderRadius: "60px",
             cursor: "pointer",
             display: "flex",
             flexDirection: "column",
@@ -123,7 +123,7 @@ const HomePageFooter = () => (
             backgroundColor: "var(--card-color-bg)",
             border: "2px solid var(--card-color-bg)",
             transition: "all 0.3s ease-in-out",
-            margin: "6px",
+            margin: "2px",
           }}
         >
           <Image
@@ -139,8 +139,8 @@ const HomePageFooter = () => (
           title="Photography"
           className="footer-button"
           style={{
-            padding: "12px",
-            borderRadius: "10%",
+            padding: "8px",
+            borderRadius: "60px",
             cursor: "pointer",
             display: "flex",
             flexDirection: "column",
@@ -148,7 +148,7 @@ const HomePageFooter = () => (
             backgroundColor: "var(--card-color-bg)",
             border: "2px solid var(--card-color-bg)",
             transition: "all 0.3s ease-in-out",
-            margin: "6px",
+            margin: "2px",
           }}
         >
           <Image
@@ -163,8 +163,8 @@ const HomePageFooter = () => (
         title="Dark mode"
         className="footer-button"
         style={{
-          padding: "12px",
-          borderRadius: "10%",
+          padding: "8px",
+          borderRadius: "60px",
           cursor: "pointer",
           display: "flex",
           flexDirection: "column",
@@ -172,7 +172,7 @@ const HomePageFooter = () => (
           backgroundColor: "var(--card-color-bg)",
           border: "2px solid var(--card-color-bg)",
           transition: "all 0.3s ease-in-out",
-          margin: "6px",
+          margin: "2px",
         }}
       >
         <DarkMode />
@@ -181,8 +181,8 @@ const HomePageFooter = () => (
         title="Font swap"
         className="footer-button"
         style={{
-          padding: "12px",
-          borderRadius: "10%",
+          padding: "8px",
+          borderRadius: "60px",
           cursor: "pointer",
           display: "flex",
           flexDirection: "column",
@@ -190,7 +190,7 @@ const HomePageFooter = () => (
           backgroundColor: "var(--card-color-bg)",
           border: "2px solid var(--card-color-bg)",
           transition: "all 0.3s ease-in-out",
-          margin: "6px",
+          margin: "2px",
         }}
       >
         <FontSwap />
