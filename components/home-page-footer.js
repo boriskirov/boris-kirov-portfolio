@@ -22,7 +22,7 @@ const HomePageFooter = () => (
         justifyContent: "space-evenly",
         backgroundColor: "var(--card-color-bg)",
         padding: "12px 12px",
-        margin: "40px 0px",
+        margin: "15% 0px",
         border: "0",
         borderRadius: "5px",
         display: "flex",
