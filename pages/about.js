@@ -9,6 +9,7 @@ import CurrentlyListening from "../components/currentlyListening";
 import Image from "next/image";
 import FeedbackForm from "../components/feedbackForm";
 import StravaStats from "../components/stravaCard";
+import HomePageFooter from "../components/home-page-footer";
 
 const About = () => (
   <Motion>
