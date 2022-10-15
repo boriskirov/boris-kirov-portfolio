@@ -510,10 +510,10 @@ details.dic-card summary:focus-visible {
 }
 
 .dropCap {
-  font-size: 4.2vw;
+  font-size: 8.2vw;
   font-weight: 900;
   float: left;
-  line-height: 0.55;
+  line-height: 0.45;
   margin-right: var(--space-small);
   padding-top: var(--space-large);
 }

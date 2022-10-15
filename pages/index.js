@@ -20,9 +20,9 @@ const Home = () => (
       <Header />
       <Main>
         <div>
-          <h1 className="heading2Xl">Hi, I'm Boris </h1>
+          <h1 className="heading2Xl">Boris Kirov </h1>
           <p>
-            Currently I'm geting things done at{" "}
+            Designer, currently geting things done at{" "}
             <Link href="https://elastic.co">
               <a className="external" target="_blank">
                 Elastic
@@ -35,37 +35,6 @@ const Home = () => (
               </a>
             </Link>
           </p>
-        </div>
-        <div className="contentWrapper">
-          <section>
-            {/* <ul>
-              <li className="blog">
-                <Link href="/about" as="/about">
-                  <a className="internalPassage">About</a>
-                </Link>
-              </li>
-              <li className="blog">
-                <Link href="/playground" as="/playground">
-                  <a className="internalPassage">Playground</a>
-                </Link>
-              </li>
-              <li className="blog">
-                <Link href="/writings" as="/writings">
-                  <a className="internalPassage">Writings</a>
-                </Link>
-              </li>
-              <li className="blog">
-                <Link href="/talks" as="/talks">
-                  <a className="internalPassage">Talks</a>
-                </Link>
-              </li>
-              <li className="blog">
-                <Link href="/photography" as="/photography">
-                  <a className="internalPassage">Photography</a>
-                </Link>
-              </li>
-            </ul> */}
-          </section>
         </div>
       </Main>
       <HomePageFooter />
