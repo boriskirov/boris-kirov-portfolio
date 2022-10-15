@@ -30,3 +30,25 @@
 .dark .footer-button {
   filter: invert(100%);
 }
+
+@media (prefers-color-scheme: dark) {
+  .dark .theme-toggle {
+    background-image: url("../public/light-mode.svg");
+    transform: rotate(0deg);
+  }
+
+  .dark body {
+    background-color: var(--dark-color-bg);
+    color: var(--light-color-text);
+  }
+
+  .dark #snackbar {
+    background-color: var(--light-color-bg);
+    color: var(--dark-color-text);
+  }
+
+  .dark .stravaIcon,
+  .dark .footer-button {
+    filter: invert(100%);
+  }
+}
