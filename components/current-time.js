@@ -3,10 +3,11 @@ import React from "react";
 export default function AmsterdamTime() {
   const TimeFomatter = new Intl.DateTimeFormat("en-GB", {
     timeZone: "Europe/Amsterdam",
-    hour: "numeric",
-    minute: "numeric",
-    weekday: "short",
-    hour12: false,
+    dateStyle: "full",
   }).format();
-  return <small>{TimeFomatter}, Amsterdam</small>;
+  return (
+    <div>
+      <small>{TimeFomatter} • 🇳🇱 Amsterdam, The Netherlands</small>
+    </div>
+  );
 }

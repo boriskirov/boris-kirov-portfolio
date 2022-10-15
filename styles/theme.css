@@ -1,10 +1,9 @@
 .theme-toggle {
   background-image: url("../public/dark-mode.svg");
   background-repeat: no-repeat;
-  width: 32px;
-  height: 32px;
-  background-position-x: 4px;
-  background-position-y: 4px;
+  width: 24px;
+  height: 24px;
+
   border: none;
   background-color: transparent;
   cursor: pointer;
@@ -33,18 +32,7 @@
   color: var(--dark-color-text);
 }
 
-.dark .font-toggle {
-  background-image: url("../public/sans-serif-icon-light.svg");
-}
-
-.dark .monospace .font-toggle {
-  background-image: url("../public/monospace-icon-light.svg");
-}
-
-.dark .monospace .font-toggle {
-  background-image: url("../public/monospace-icon-light.svg");
-}
-
-.dark .stravaIcon {
+.dark .stravaIcon,
+.dark .footer-button {
   filter: invert(100%);
 }

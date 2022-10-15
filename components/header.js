@@ -8,10 +8,6 @@ const Header = () => (
     <div className="flex">
       <AmsterdamTime />
     </div>
-    <div className="flex">
-      <DarkMode />
-      <FontSwap />
-    </div>
   </header>
 );
 

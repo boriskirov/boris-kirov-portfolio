@@ -7,13 +7,13 @@ const Footer = () => (
         <li className="footerLi">
           {" "}
           <a href="../BorisKirov_Resume.pdf" rel="noopener noreferrer">
-            <small>Get Resume 2021 © </small>
+            <small>Resume 2021 © </small>
           </a>
         </li>
         <li className="footerLi">
           {" "}
           <a href="../boris.json" rel="noopener noreferrer">
-            <small>JSON card</small>
+            <small>JSON me</small>
           </a>
         </li>
       </ul>

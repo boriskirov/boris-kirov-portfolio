@@ -7,10 +7,8 @@
 .font-toggle {
   background-image: url("/sans-serif-icon.svg");
   background-repeat: no-repeat;
-  width: 32px;
-  height: 32px;
-  background-position-x: 4px;
-  background-position-y: 4px;
+  width: 24px;
+  height: 24px;
   border: none;
   background-color: transparent;
   cursor: pointer;

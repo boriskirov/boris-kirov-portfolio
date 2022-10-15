@@ -3,8 +3,10 @@ import Motion from "../components/motion";
 import Metadata from "../components/metadata";
 import Link from "next/link";
 import Main from "../components/innerWrapper";
+import Header from "../components/header";
 
 import MainWrapper from "../components/mainWrapper";
+import HomePageFooter from "../components/home-page-footer";
 
 const Home = () => (
   <Motion>
@@ -15,19 +17,28 @@ const Home = () => (
         image="https://www.boriskirov.me/main-meta-tag-image.png"
         name="Boris Kirov"
       />
+      <Header />
       <Main>
-        <h1 className="heading2Xl">Hi, I'm Boris </h1>
-        <p>
-          and I'm geting things done at{" "}
-          <Link href="https://elastic.co">
-            <a className="external" target="_blank">
-              Elastic
-            </a>
-          </Link>
-        </p>
+        <div>
+          <h1 className="heading2Xl">Hi, I'm Boris </h1>
+          <p>
+            Currently I'm geting things done at{" "}
+            <Link href="https://elastic.co">
+              <a className="external" target="_blank">
+                Elastic
+              </a>
+            </Link>
+            . Previously at{" "}
+            <Link href="https://miro.com">
+              <a className="external" target="_blank">
+                Miro
+              </a>
+            </Link>
+          </p>
+        </div>
         <div className="contentWrapper">
           <section>
-            <ul>
+            {/* <ul>
               <li className="blog">
                 <Link href="/about" as="/about">
                   <a className="internalPassage">About</a>
@@ -53,10 +64,11 @@ const Home = () => (
                   <a className="internalPassage">Photography</a>
                 </Link>
               </li>
-            </ul>
+            </ul> */}
           </section>
         </div>
       </Main>
+      <HomePageFooter />
     </MainWrapper>
   </Motion>
 );
