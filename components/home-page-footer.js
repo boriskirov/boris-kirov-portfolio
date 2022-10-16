@@ -16,7 +16,7 @@ const HomePageFooter = () => (
       opacity: 1,
     }}
     transition={{ ease: "easeOut", duration: 0.5 }}
-    style={{ position: "fixed", bottom: "0" }}
+    style={{ position: "fixed", bottom: "40px" }}
   >
     <footer
       style={{

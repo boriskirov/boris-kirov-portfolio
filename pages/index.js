@@ -22,7 +22,7 @@ const Home = () => (
         <div>
           <h1 className="heading2Xl">Boris Kirov </h1>
           <p>
-            Designer, currently geting things done at{" "}
+            Software designer. Currently geting things done at{" "}
             <Link href="https://elastic.co">
               <a className="external" target="_blank">
                 Elastic
@@ -31,7 +31,7 @@ const Home = () => (
             . Previously at{" "}
             <Link href="https://miro.com">
               <a className="external" target="_blank">
-                Miro
+                Miro.
               </a>
             </Link>
           </p>
