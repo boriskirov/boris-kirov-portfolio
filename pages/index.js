@@ -19,7 +19,7 @@ const Home = () => (
       />
       <Header />
       <Main>
-        <div>
+        <div style={{ marginBottom: "300px" }}>
           <h1 className="heading2Xl">Boris Kirov </h1>
           <p>
             Software designer. Currently geting things done at{" "}
