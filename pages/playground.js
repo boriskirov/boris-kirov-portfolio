@@ -30,6 +30,15 @@ const Playground = () => (
 
         <div className="contentWrapper">
           <Card
+            link="https://github.com/boriskirov/text-string"
+            className="main-card"
+            title="Strings"
+            description="A Figma plugin to generate different data fields for faster and more effective process in Elastic o11y use case."
+            type="Figma plugin"
+            target="_blank"
+          />
+
+          <Card
             link="../../search"
             className="main-card"
             title="Search with Elastic"
