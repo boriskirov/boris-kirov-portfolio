@@ -205,6 +205,7 @@ li.footerLi:last-child {
   line-height: 1.4;
   font-weight: 600;
   text-align: left;
+  width: 100%;
 }
 
 .blogTitle {
@@ -555,8 +556,34 @@ details.dic-card summary:focus-visible {
   opacity: 1;
 }
 
-.footer-button:hover {
-  transform: translateY(-4px) scale(1.1);
+.footer-button {
+  padding: 8px;
+  border-radius: 60px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--card-color-bg);
+  border: 2px solid var(--card-color-bg);
+  transition: all 0.3s ease-in-out;
+  margin: 2px;
+}
+
+.footer-button:hover,
+.footer-button:focus-visible {
+  transform: translateY(-2px) scale(1.05);
+  cursor: pointer;
+}
+
+.modal-content {
+  background-color: var(--light-color-bg);
+  width: 50%;
+  height: 70%;
+  overflow-y: scroll;
+  padding: var(--space-xlarge);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
 
 @media (max-width: 834px) {
@@ -594,6 +621,11 @@ details.dic-card summary:focus-visible {
 
   .footerLi {
     margin: var(--space-large) 0;
+  }
+
+  .modal-content {
+    width: 90%;
+    height: 90%;
   }
 }
 

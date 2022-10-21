@@ -27,11 +27,11 @@ export default function FontSwap() {
   };
 
   return (
-    <button
+    <a
       type="button"
       aria-label="Font toggle"
       className="font-toggle"
       onClick={onClick}
-    ></button>
+    ></a>
   );
 }

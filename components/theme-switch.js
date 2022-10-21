@@ -27,11 +27,11 @@ export default function DarkMode() {
   };
 
   return (
-    <button
+    <a
       type="button"
       aria-label="Theme toggle"
       className="theme-toggle"
       onClick={onClick}
-    ></button>
+    ></a>
   );
 }

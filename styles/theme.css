@@ -16,7 +16,8 @@
   transform: rotate(0deg);
 }
 
-.dark body {
+.dark body,
+.dark .modal-content {
   background-color: var(--dark-color-bg);
   color: var(--light-color-text);
 }
