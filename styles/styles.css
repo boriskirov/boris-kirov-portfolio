@@ -579,7 +579,7 @@ details.dic-card summary:focus-visible {
   background-color: var(--light-color-bg);
   width: 50%;
   height: 70%;
-  overflow-y: scroll;
+  overflow-y: auto;
   padding: var(--space-xlarge);
   display: flex;
   flex-direction: column;
