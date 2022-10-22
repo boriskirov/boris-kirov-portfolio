@@ -47,12 +47,10 @@ const configurationOptions = {
 };
 export default function SearchApp() {
   return (
-    <div>
-      <SearchProvider config={configurationOptions}>
-        <SearchBox inputProps={{ placeholder: "Search for something" }} />
-        <PagingInfo />
-        <Results titleField="title" urlField="url" />
-      </SearchProvider>
-    </div>
+    <SearchProvider config={configurationOptions}>
+      <SearchBox inputProps={{ placeholder: "Search for something" }} />
+      <PagingInfo />
+      <Results titleField="title" urlField="url" />
+    </SearchProvider>
   );
 }

@@ -32,6 +32,11 @@
   filter: invert(100%);
 }
 
+.dark .sui-search-box__text-input {
+  background-color: var(--dark-color-bg);
+  color: var(--light-color-text);
+}
+
 @media (prefers-color-scheme: dark) {
   .dark .theme-toggle {
     background-image: url("../public/light-mode.svg");

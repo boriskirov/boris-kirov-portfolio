@@ -2,12 +2,17 @@ form {
   width: 100%;
 }
 
+.modal-content > div {
+  width: 100%;
+}
+
 .sui-search-box {
   display: flex;
 }
 
 .sui-search-box__wrapper {
   width: 100%;
+  margin: 0 var(--space-medium) 0 0;
 }
 
 .button {
@@ -18,6 +23,15 @@ form {
   padding: 0 var(--space-xlarge);
   font-size: 16px;
   font-family: var(--font-family);
+  border-radius: 60px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--card-color-bg);
+  border: 2px solid var(--card-color-bg);
+  transition: all 0.3s ease-in-out;
+  margin: 2px;
 }
 
 .button:hover {
@@ -36,13 +50,23 @@ form {
 }
 
 .sui-search-box__text-input {
-  padding: var(--space-small);
+  padding: var(--space-xlarge);
   width: 100%;
+  height: 52px;
   font-size: 14px;
   font-family: var(--font-family);
   border-radius: 0;
   border: 2px solid currentColor;
   background-color: var(--light-color-bg);
+  color: var(--dark-color-bg);
+  border-radius: 60px;
+  cursor: text;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--card-color-bg);
+  border: 2px solid var(--card-color-bg);
+  transition: all 0.3s ease-in-out;
 }
 
 .sui-search-box__text-input:focus,
