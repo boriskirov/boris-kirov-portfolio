@@ -18,7 +18,7 @@ export default function Header() {
             {" "}
             <Image
               src="/elastic.svg"
-              alt="An SVG of an eye"
+              alt="Elastic logo"
               width={24}
               height={24}
             />

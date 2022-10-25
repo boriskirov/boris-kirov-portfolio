@@ -584,6 +584,17 @@ details.dic-card summary:focus-visible {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+  justify-content: space-between;
+}
+
+.modal-body {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.modal-input {
+  width: 100%;
 }
 
 @media (max-width: 834px) {

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import ReactDOM from "react-dom";
 import Image from "next/image";
+import Link from "next/link";
 
 const Modal = ({ show, onClose, children, title, body }) => {
   const [isBrowser, setIsBrowser] = useState(false);
@@ -30,12 +31,31 @@ const Modal = ({ show, onClose, children, title, body }) => {
       }}
     >
       <div className="modal-content">
-        <a className="footer-button" href="#" onClick={handleCloseClick}>
-          <Image src="/close.svg" alt="close-button" width={24} height={24} />
-        </a>
-        {title && <h1 className="heading2Xl">{title}</h1>}
-        {body && <p>{body}</p>}
-        <div>{children}</div>
+        <div className="modal-body">
+          <Link href="#" onClick={handleCloseClick}>
+            <a className="footer-button" href="#" onClick={handleCloseClick}>
+              <Image
+                src="/close.svg"
+                alt="close-button"
+                width={24}
+                height={24}
+              />
+            </a>
+          </Link>
+          {title && <h1 className="heading2Xl">{title}</h1>}
+          {body && <p>{body}</p>}
+          <div className="modal-input">{children}</div>
+        </div>
+        <div className="flexCentered">
+          <small>powered by Elastic </small>
+          <Image
+            className="icon"
+            src="/elastic.svg"
+            alt="An SVG of an eye"
+            width={18}
+            height={18}
+          />
+        </div>
       </div>
     </div>
   ) : null;

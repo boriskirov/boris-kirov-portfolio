@@ -28,7 +28,8 @@
 }
 
 .dark .stravaIcon,
-.dark .footer-button {
+.dark .footer-button,
+.dark .icon {
   filter: invert(100%);
 }
 
