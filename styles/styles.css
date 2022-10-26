@@ -287,6 +287,7 @@ li.footerLi:last-child {
   display: flex;
   align-items: baseline;
   flex-direction: column;
+  border-radius: 8px;
 }
 
 a.main-card:hover,
@@ -334,6 +335,7 @@ a.main-card:focus {
   align-items: center;
   flex-direction: row;
   justify-content: space-between;
+  border-radius: 12px;
 }
 
 .stack-card > div {
@@ -457,10 +459,11 @@ details.dic-card summary:focus-visible {
 
 .tag {
   margin: var(--space-large) var(--space-medium) var(--space-large) 0;
-  padding: var(--space-xsmall) var(--space-small);
+  padding: var(--space-xsmall) var(--space-medium);
   background-color: var(--tag-color-bg);
   line-height: 1.4;
   word-break: keep-all;
+  border-radius: 12px;
 }
 
 // Strava styles
@@ -469,6 +472,7 @@ details.dic-card summary:focus-visible {
   padding: var(--space-xlarge);
   margin: var(--space-small) 0 var(--space-small) 0;
   background-color: var(--card-color-bg);
+  border-radius: 12px;
 }
 
 .stravaStats {
@@ -487,6 +491,7 @@ details.dic-card summary:focus-visible {
 
 .stravaIcon {
   background: var(--card-color-bg);
+  border-radius: 24px;
 }
 
 .distance {
