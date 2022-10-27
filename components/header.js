@@ -16,12 +16,7 @@ export default function Header() {
         <Motion>
           <a className="footer-button" onClick={() => setShowModal(true)}>
             {" "}
-            <Image
-              src="/elastic.svg"
-              alt="Elastic logo"
-              width={24}
-              height={24}
-            />
+            <Image src="/search.svg" alt="Search" width={24} height={24} />
           </a>
           <Modal
             onClose={() => setShowModal(false)}
