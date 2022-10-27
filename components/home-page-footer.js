@@ -18,21 +18,7 @@ const HomePageFooter = () => (
     transition={{ ease: "easeOut", duration: 0.5 }}
     style={{ position: "fixed", bottom: "40px" }}
   >
-    <footer
-      style={{
-        justifyContent: "space-evenly",
-        backgroundColor: "var(--card-color-bg)",
-        padding: "12px",
-        margin: "10% 0px",
-        border: "0",
-        borderRadius: "60px",
-        display: "flex",
-        flexDirection: "row",
-        border: "2px solid var(--card-color-bg)",
-        maxWidth: "498px",
-        boxShadow: "0px 0px 16px var(--tag-color-bg)",
-      }}
-    >
+    <footer className="dock-menu">
       <Link href="./about">
         <a title="About" className="footer-button">
           <Image
