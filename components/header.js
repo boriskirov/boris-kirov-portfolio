@@ -8,14 +8,39 @@ import Motion from "./motion";
 
 export default function Header() {
   const [showModal, setShowModal] = useState(false);
+
+  function Shorcut() {
+    // handle what happens on key press
+    const handleKeyPress = useCallback((event) => {
+      if (event.ctrlKey === true && event.key === "f") {
+        setShowModal(true);
+        // console.log(event.altKey, event.key, event.keyCode);
+      }
+      if (event.key === "Escape") {
+        setShowModal(false);
+      }
+    }, []);
+
+    useEffect(() => {
+      // attach the event listener
+      document.addEventListener("keydown", handleKeyPress);
+
+      // remove the event listener
+      return () => {
+        document.removeEventListener("keydown", handleKeyPress);
+      };
+    }, [handleKeyPress]);
+  }
+
   return (
     <header>
       <AmsterdamTime />
 
+      <Shorcut />
+
       <div id="modal-root">
         <Motion>
           <a className="footer-button" onClick={() => setShowModal(true)}>
-            {" "}
             <Image src="/search.svg" alt="Search" width={24} height={24} />
           </a>
           <Modal

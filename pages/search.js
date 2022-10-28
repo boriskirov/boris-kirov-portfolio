@@ -48,7 +48,9 @@ const configurationOptions = {
 export default function SearchApp() {
   return (
     <SearchProvider config={configurationOptions}>
-      <SearchBox inputProps={{ placeholder: "Search for something" }} />
+      <SearchBox
+        inputProps={{ placeholder: "Search for something", autofocus: "on" }}
+      />
       <PagingInfo />
       <Results titleField="title" urlField="url" />
     </SearchProvider>

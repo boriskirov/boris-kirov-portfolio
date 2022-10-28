@@ -51,7 +51,7 @@ const Modal = ({ show, onClose, children, title, body }) => {
           <Image
             className="icon"
             src="/elastic.svg"
-            alt="An SVG of an eye"
+            alt="Elastic logo"
             width={18}
             height={18}
           />
