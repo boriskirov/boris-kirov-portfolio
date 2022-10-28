@@ -1,7 +1,6 @@
 import React from "react";
 import AmsterdamTime from "../components/current-time";
 import Modal from "./modal";
-
 import SearchApp from "../pages/search";
 import Image from "next/image";
 import Motion from "./motion";

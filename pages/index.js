@@ -22,7 +22,7 @@ const Home = () => (
         <div style={{ marginBottom: "300px" }}>
           <h1 className="heading2Xl">Boris Kirov </h1>
           <p>
-            Software designer. Currently geting things done at{" "}
+            Software designer. Currently getting things done at{" "}
             <Link href="https://elastic.co">
               <a className="external" target="_blank">
                 Elastic
