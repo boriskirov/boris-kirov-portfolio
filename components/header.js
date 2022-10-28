@@ -12,7 +12,8 @@ export default function Header() {
   function Shorcut() {
     // handle what happens on key press
     const handleKeyPress = useCallback((event) => {
-      if (event.altKey === true && event.key === "f") {
+      // keyCode is not dependant on the combination changes that may happen with the primary key
+      if (event.altKey === true && event.keyCode === 70) {
         setShowModal(true);
         // console.log(event.altKey, event.key, event.keyCode);
       }
