@@ -1,10 +1,11 @@
 import React from "react";
 import AmsterdamTime from "../components/current-time";
 import Modal from "./modal";
-import { useState } from "react";
+
 import SearchApp from "../pages/search";
 import Image from "next/image";
 import Motion from "./motion";
+import { useCallback, useState, useEffect } from "react";
 
 export default function Header() {
   const [showModal, setShowModal] = useState(false);
