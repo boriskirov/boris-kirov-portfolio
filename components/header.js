@@ -12,7 +12,7 @@ export default function Header() {
   function Shorcut() {
     // handle what happens on key press
     const handleKeyPress = useCallback((event) => {
-      if (event.ctrlKey === true && event.key === "f") {
+      if (event.altKey === true && event.key === "f") {
         setShowModal(true);
         // console.log(event.altKey, event.key, event.keyCode);
       }
@@ -40,7 +40,11 @@ export default function Header() {
 
       <div id="modal-root">
         <Motion>
-          <a className="footer-button" onClick={() => setShowModal(true)}>
+          <a
+            className="footer-button"
+            title="Search with ⌥ + F"
+            onClick={() => setShowModal(true)}
+          >
             <Image src="/search.svg" alt="Search" width={24} height={24} />
           </a>
           <Modal
