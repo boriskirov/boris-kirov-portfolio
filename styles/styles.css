@@ -604,7 +604,7 @@ details.dic-card summary:focus-visible {
   justify-content: space-evenly;
   background-color: var(--tag-color-bg);
   padding: 12px;
-  margin: 10% 0px;
+  margin: 25% 0px;
   border-radius: 60px;
   display: flex;
   flex-direction: row;
@@ -665,8 +665,9 @@ details.dic-card summary:focus-visible {
     align-items: flex-start;
   }
 
-  header {
-    padding: 10vw 24px;
+  header,
+  .index-body-container {
+    padding: 6vw var(--space-xlarge);
   }
 
   ol {

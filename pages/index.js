@@ -19,7 +19,7 @@ const Home = () => (
       />
 
       <Header />
-      <div style={{ maxWidth: "672px" }}>
+      <div className="index-body-container" style={{ maxWidth: "672px" }}>
         <h1 className="heading2Xl">Boris Kirov </h1>
         <p>
           Software designer. Currently getting things done at{" "}
