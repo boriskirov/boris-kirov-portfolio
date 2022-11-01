@@ -16,7 +16,7 @@ const HomePageFooter = () => (
       opacity: 1,
     }}
     transition={{ ease: "easeOut", duration: 0.5 }}
-    style={{ position: "fixed", bottom: "40px" }}
+    style={{ position: "fixed", bottom: "10px" }}
   >
     <footer className="dock-menu">
       <Link href="./about">

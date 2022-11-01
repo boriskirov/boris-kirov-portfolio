@@ -252,6 +252,7 @@ li.footerLi:last-child {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 0 0 var(--space-xlarge) 0;
 }
 
 .innerWrapper {
@@ -262,7 +263,7 @@ li.footerLi:last-child {
   align-items: flex-start;
   max-width: 672px;
   width: 100%;
-  padding: 10vw 0;
+  padding: 10vw 0 0 0;
 }
 
 .contentWrapper {
