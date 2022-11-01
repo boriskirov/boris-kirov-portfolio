@@ -17,26 +17,25 @@ const Home = () => (
         image="https://www.boriskirov.me/main-meta-tag-image.png"
         name="Boris Kirov"
       />
+
       <Header />
-      <Main>
-        <div style={{ marginBottom: "300px" }}>
-          <h1 className="heading2Xl">Boris Kirov </h1>
-          <p>
-            Software designer. Currently getting things done at{" "}
-            <Link href="https://elastic.co">
-              <a className="external" target="_blank">
-                Elastic
-              </a>
-            </Link>
-            . Previously at{" "}
-            <Link href="https://miro.com">
-              <a className="external" target="_blank">
-                Miro.
-              </a>
-            </Link>
-          </p>
-        </div>
-      </Main>
+      <div style={{ maxWidth: "672px" }}>
+        <h1 className="heading2Xl">Boris Kirov </h1>
+        <p>
+          Software designer. Currently getting things done at{" "}
+          <Link href="https://elastic.co">
+            <a className="external" target="_blank">
+              Elastic
+            </a>
+          </Link>
+          . Previously at{" "}
+          <Link href="https://miro.com">
+            <a className="external" target="_blank">
+              Miro.
+            </a>
+          </Link>
+        </p>
+      </div>
       <HomePageFooter />
     </MainWrapper>
   </Motion>
