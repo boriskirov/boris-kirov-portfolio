@@ -1,4 +1,5 @@
 import React from "react";
+import { useCallback, useEffect } from "react";
 
 export default function FontSwap() {
   const [mode, setMode] = React.useState("sans-serif");
@@ -26,12 +27,34 @@ export default function FontSwap() {
     });
   };
 
+  function Shorcut() {
+    // handle what happens on key press
+    const handleKeyPress = useCallback((event) => {
+      // keyCode is not dependant on the combination changes that may happen with the primary key
+      if (event.altKey === true && event.keyCode === 83) {
+        onClick(true);
+      }
+    }, []);
+
+    useEffect(() => {
+      // attach the event listener
+      document.addEventListener("keydown", handleKeyPress);
+
+      // remove the event listener
+      return () => {
+        document.removeEventListener("keydown", handleKeyPress);
+      };
+    }, [handleKeyPress]);
+  }
+
   return (
     <a
       type="button"
       aria-label="Font toggle"
       className="font-toggle"
       onClick={onClick}
-    ></a>
+    >
+      <Shorcut />
+    </a>
   );
 }

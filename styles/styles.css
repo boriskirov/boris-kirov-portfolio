@@ -461,7 +461,12 @@ details.dic-card summary:focus-visible {
   background-color: var(--tag-color-bg);
   line-height: 1.4;
   word-break: keep-all;
-  border-radius: 12px;
+  border-radius: 8px;
+}
+
+.shortcut {
+  height: 40px;
+  border: 2px solid var(--card-color-bg);
 }
 
 // Strava styles
@@ -653,6 +658,10 @@ details.dic-card summary:focus-visible {
   .modal-content {
     width: 90%;
     height: 90%;
+  }
+
+  .shortcut {
+    display: none;
   }
 }
 

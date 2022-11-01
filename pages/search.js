@@ -49,7 +49,7 @@ export default function SearchApp() {
   return (
     <SearchProvider config={configurationOptions}>
       <SearchBox
-        inputProps={{ placeholder: "Search for something", autofocus: "on" }}
+        inputProps={{ placeholder: "Search for something", autoFocus: "on" }}
       />
       <PagingInfo />
       <Results titleField="title" urlField="url" />

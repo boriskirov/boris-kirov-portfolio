@@ -2,7 +2,7 @@ import React from "react";
 import Motion from "../components/motion";
 import Metadata from "../components/metadata";
 import Link from "next/link";
-import Main from "../components/innerWrapper";
+
 import Header from "../components/header";
 
 import MainWrapper from "../components/mainWrapper";
@@ -35,6 +35,11 @@ const Home = () => (
             </a>
           </Link>
         </p>
+        <div className="flex">
+          <small className="tag shortcut">⌥ + D == Dark Mode</small>
+          <small className="tag shortcut">⌥ + S == Font Swap</small>
+          <small className="tag shortcut">⌥ + F == Search</small>
+        </div>
       </div>
       <HomePageFooter />
     </MainWrapper>
