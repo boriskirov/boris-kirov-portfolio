@@ -36,8 +36,8 @@ const Home = () => (
           </Link>
         </p>
         <div className="flex">
-          <small className="tag shortcut">⌥ + D == Dark Mode</small>
-          <small className="tag shortcut">⌥ + S == Font Swap</small>
+          <small className="tag shortcut">⌥ + D == Theme</small>
+          <small className="tag shortcut">⌥ + S == Fonts</small>
           <small className="tag shortcut">⌥ + F == Search</small>
         </div>
       </div>
