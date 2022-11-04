@@ -16,6 +16,7 @@
     "gray-matter": "^4.0.3",
     "lodash": "^4.17.21",
     "next": "^12.2.3",
+    "next-axiom": "^0.15.0",
     "next-images": "^1.8.4",
     "npm": "^8.19.2",
     "prop-types": "^15.8.1",

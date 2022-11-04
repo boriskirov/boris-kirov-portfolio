@@ -6,6 +6,8 @@ import Image from "next/image";
 import Motion from "./motion";
 import { useCallback, useState, useEffect } from "react";
 
+import { log } from `next-axiom`;
+
 export default function Header() {
   const [showModal, setShowModal] = useState(false);
 
@@ -16,6 +18,7 @@ export default function Header() {
       if (event.altKey === true && event.keyCode === 70) {
         setShowModal(true);
         // console.log(event.altKey, event.key, event.keyCode);
+        log.debug(event.altKey,event.keyCode) 
       }
       if (event.key === "Escape") {
         setShowModal(false);

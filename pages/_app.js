@@ -10,3 +10,5 @@ import "../styles/search.css";
 export default function MyApp({ Component, pageProps }) {
   return <Component {...pageProps} />;
 }
+
+export { reportWebVitals } from "next-axiom";
