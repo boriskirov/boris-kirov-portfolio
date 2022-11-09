@@ -1,12 +1,12 @@
 import React from "react";
 import AmsterdamTime from "../components/current-time";
 import Modal from "./modal";
-import SearchApp from "../pages/search";
+import SearchApp from "../pages/api/search";
 import Image from "next/image";
 import Motion from "./motion";
 import { useCallback, useState, useEffect } from "react";
 
-import { log } from `next-axiom`;
+import { log } from "next-axiom";
 
 export default function Header() {
   const [showModal, setShowModal] = useState(false);
@@ -18,7 +18,7 @@ export default function Header() {
       if (event.altKey === true && event.keyCode === 70) {
         setShowModal(true);
         // console.log(event.altKey, event.key, event.keyCode);
-        log.debug(event.altKey,event.keyCode) 
+        log.debug(event.altKey, event.keyCode);
       }
       if (event.key === "Escape") {
         setShowModal(false);

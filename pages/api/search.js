@@ -1,5 +1,4 @@
 import React from "react";
-import Motion from "../components/motion";
 
 import AppSearchAPIConnector from "@elastic/search-ui-app-search-connector";
 import {
