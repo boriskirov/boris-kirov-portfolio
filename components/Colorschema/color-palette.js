@@ -28,8 +28,8 @@ function Colors() {
         return (
           <button
             className="color-wrapper dark-text"
-        	type="button"
-		role="button"
+            type="button"
+            role="button"
             key={colorschema.code}
             style={{
               backgroundColor: colorschema.code,
