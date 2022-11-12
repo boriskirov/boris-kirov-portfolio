@@ -37,16 +37,6 @@ const Playground = () => (
             type="Figma plugin"
             target="_blank"
           />
-
-          {/* <Card
-            link="../../search"
-            className="main-card"
-            title="Search with Elastic"
-            description="Experimental page to explore and experience how a basic search function through my website would work, thanks to Elastic App Search & Elastic Search UI."
-            type="Experimental"
-            target=""
-          /> */}
-
           <Card
             link="https://www.mirotone.xyz"
             className="external main-card"
@@ -55,7 +45,6 @@ const Playground = () => (
             type="Package"
             target="_blank"
           />
-
           <Card
             link="/playground/my-glossary"
             className="main-card"
@@ -64,7 +53,6 @@ const Playground = () => (
             type="Methods & Practices"
             target=""
           />
-
           <Card
             link="https://www.figma.com/community/plugin/943057200269205449/Handoff-notes"
             className="external main-card"
@@ -73,7 +61,6 @@ const Playground = () => (
             type="Figma plugin"
             target="_blank"
           />
-
           <Card
             link="/playground/my-stack"
             className="main-card"
@@ -82,7 +69,6 @@ const Playground = () => (
             type="Tools & Software"
             target=""
           />
-
           <Card
             link="https://fluidigrid.com/"
             className="external main-card"
@@ -91,7 +77,6 @@ const Playground = () => (
             type="Package"
             target="_blank"
           />
-
           <Card
             link="https://www.fluiditype.com/"
             className="external main-card"
@@ -100,7 +85,6 @@ const Playground = () => (
             type="Package"
             target="_blank"
           />
-
           <Card
             link="https://www.sketchappsources.com/free-source/3786-emojis-builder-sketch-freebie-resource.html"
             className="external main-card"
@@ -109,7 +93,6 @@ const Playground = () => (
             type="Sketch library"
             target="_blank"
           />
-
           <Card
             link="/playground/cheatsheets"
             className="main-card"

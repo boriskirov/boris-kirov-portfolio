@@ -336,7 +336,8 @@ a.main-card:focus {
   border-radius: 12px;
 }
 
-.stack-card > div {
+.stack-card > div,
+.ApiCard > div {
   display: flex;
   align-items: center;
 }
@@ -507,6 +508,12 @@ details.dic-card summary:focus-visible {
 
 .time {
   text-transform: uppercase;
+}
+
+// NPM Stats
+
+.npm-downloads {
+  padding: 0 var(--space-large);
 }
 
 .backButton {

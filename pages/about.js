@@ -9,7 +9,8 @@ import CurrentlyListening from "../components/currentlyListening";
 import Image from "next/image";
 import FeedbackForm from "../components/feedbackForm";
 import StravaStats from "../components/stravaCard";
-import HomePageFooter from "../components/home-page-footer";
+import Npmstats from "../components/npmstats";
+import gitStats from "../components/githubstats";
 
 const About = () => (
   <Motion>
@@ -28,6 +29,8 @@ const About = () => (
         <div className="contentWrapper">
           <Image src="/me.png" alt="About me photo" width={1080} height={720} />
           <CurrentlyListening />
+          <Npmstats />
+          <gitStats />
 
           <section>
             <p>
