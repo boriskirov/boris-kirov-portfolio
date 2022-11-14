@@ -15,7 +15,7 @@
     "framer-motion": "^7.5.3",
     "gray-matter": "^4.0.3",
     "lodash": "^4.17.21",
-    "next": "^12.2.3",
+    "next": "^13.0.3",
     "next-axiom": "^0.15.0",
     "next-images": "^1.8.4",
     "npm": "^8.19.2",
