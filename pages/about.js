@@ -10,7 +10,7 @@ import Image from "next/image";
 import FeedbackForm from "../components/feedbackForm";
 import StravaStats from "../components/stravaCard";
 import Npmstats from "../components/npmstats";
-import gitStats from "../components/githubstats";
+import GitStats from "../components/githubstats";
 
 const About = () => (
   <Motion>
@@ -30,7 +30,7 @@ const About = () => (
           <Image src="/me.png" alt="About me photo" width={1080} height={720} />
           <CurrentlyListening />
           <Npmstats />
-          <gitStats />
+          <GitStats />
 
           <section>
             <p>
