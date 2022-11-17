@@ -5,7 +5,7 @@ const GitStats = () => {
   const fetcher = (url) => fetch(url).then((r) => r.json());
   const { data } = useSWR("/api/github", fetcher);
 
-  const publicRepos = (data?.githubRepos).toLocaleString("en-US");
+  const publicRepos = data?.githubRepos;
   return (
     <div className="ApiCard">
       <div className="flex">

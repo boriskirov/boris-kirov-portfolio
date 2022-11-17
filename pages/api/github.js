@@ -1,4 +1,4 @@
-async function gitHub(res) {
+async function gitHub(req, res) {
   const github = await fetch("https://api.github.com/users/boriskirov");
 
   const json = await github.json();
