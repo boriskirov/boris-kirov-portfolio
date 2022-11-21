@@ -100,7 +100,7 @@ function Commands() {
         >
           <Image
             src="/commands.svg"
-            alt="An SVG of an eye"
+            alt="Commands icon"
             width={24}
             height={24}
           />
