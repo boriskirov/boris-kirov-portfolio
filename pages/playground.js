@@ -30,8 +30,15 @@ const Playground = () => (
 
         <div className="contentWrapper">
           <Card
-            link="https://github.com/boriskirov/text-string"
+            link="/playground/my-dashboard"
             className="main-card"
+            title="Personal Dashboard"
+            description="Various API calls from different systems and platforms to generate a personal dashboard with metrics and stats."
+            type="Experimental"
+          />
+          <Card
+            link="https://github.com/boriskirov/text-string"
+            className="external main-card"
             title="Strings"
             description="A Figma plugin to generate different data fields for faster and more effective process in Elastic o11y use case."
             type="Figma plugin"
