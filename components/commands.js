@@ -94,7 +94,7 @@ function Commands() {
       <Shorcut />
       <div id="modal-root">
         <a
-          title="Commands"
+          title="Commands (⌥ + /)"
           className="footer-button"
           onClick={() => setShowCommandModal(true)}
         >
