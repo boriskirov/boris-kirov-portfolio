@@ -33,6 +33,8 @@ const Dashboard = () => (
           width={1440}
           height={96}
         />
+        {/* <Npmstats />
+        <GitStats /> */}
       </Main>
     </MainWrapper>
   </Motion>

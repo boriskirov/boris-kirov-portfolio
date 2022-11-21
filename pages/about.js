@@ -29,8 +29,6 @@ const About = () => (
         <div className="contentWrapper">
           <Image src="/me.png" alt="About me photo" width={1080} height={720} />
           <CurrentlyListening />
-          {/* <Npmstats />
-          <GitStats /> */}
 
           <section>
             <p>
