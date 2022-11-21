@@ -4,9 +4,11 @@ import Modal from "./modal";
 import SearchApp from "../pages/api/search";
 import Image from "next/image";
 import Motion from "./motion";
+import Link from "next/link";
 import { useCallback, useState, useEffect } from "react";
 
 import { log } from "next-axiom";
+import Commands from "./commands";
 
 export default function Header() {
   const [showModal, setShowModal] = useState(false);
@@ -39,29 +41,32 @@ export default function Header() {
   return (
     <header>
       <AmsterdamTime />
+      <div className="flex">
+        <Shorcut />
+        <Commands />
 
-      <Shorcut />
+        <div id="modal-root">
+          <Motion>
+            <a
+              className="footer-button"
+              title="Search with ⌥ + F"
+              onClick={() => setShowModal(true)}
+            >
+              <Image src="/search.svg" alt="Search" width={24} height={24} />
+            </a>
 
-      <div id="modal-root">
-        <Motion>
-          <a
-            className="footer-button"
-            title="Search with ⌥ + F"
-            onClick={() => setShowModal(true)}
-          >
-            <Image src="/search.svg" alt="Search" width={24} height={24} />
-          </a>
-          <Modal
-            onClose={() => setShowModal(false)}
-            show={showModal}
-            title="SEARCH"
-            body="      
+            <Modal
+              onClose={() => setShowModal(false)}
+              show={showModal}
+              title="SEARCH"
+              body="      
             Looking for something I've done in the past, just enter the keyword in
             the search box."
-          >
-            <SearchApp />
-          </Modal>
-        </Motion>
+            >
+              <SearchApp />
+            </Modal>
+          </Motion>
+        </div>
       </div>
     </header>
   );
