@@ -147,6 +147,14 @@ function Commands() {
                   </small>
                 </td>
               </tr>
+              <tr>
+                <td width="326">Open commands panel</td>
+                <td width="225">
+                  <small>
+                    <kbd className="tag shortcut">⌥ + /</kbd>
+                  </small>
+                </td>
+              </tr>
             </tbody>
           </table>
         </Modal>
