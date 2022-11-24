@@ -22,8 +22,8 @@ const About = () => (
         name="Boris Kirov"
       />
       <Main>
-        <Link href="/">
-          <a className="backButton">Back</a>
+        <Link href="/" className="backButton">
+          Back
         </Link>
         <h1 className="heading2Xl">Здрасти,</h1>
         <div className="contentWrapper">

@@ -23,16 +23,16 @@ const Home = () => (
         <h1 className="heading2Xl">Boris Kirov </h1>
         <p>
           Software designer. Currently getting things done at{" "}
-          <Link href="https://elastic.co">
-            <a className="external" target="_blank">
+          <Link href="https://elastic.co" className="external" target="_blank">
+            
               Elastic
-            </a>
+            
           </Link>
           . Previously at{" "}
-          <Link href="https://miro.com">
-            <a className="external" target="_blank">
+          <Link href="https://miro.com" className="external" target="_blank">
+            
               Miro.
-            </a>
+            
           </Link>
         </p>
       </div>

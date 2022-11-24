@@ -17,8 +17,8 @@ const Dashboard = () => (
         name="Boris Kirov"
       />
       <Main>
-        <Link href="/playground">
-          <a className="backButton">Back</a>
+        <Link href="/playground" className="backButton">
+          Back
         </Link>
         <h1 className="heading2Xl">DASHBOARD</h1>
         <p>

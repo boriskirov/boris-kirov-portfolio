@@ -35,15 +35,15 @@ function Commands() {
         <Shorcut />
         <div className="modal-content">
           <div className="modal-body">
-            <Link href="#" onClick={handleCloseClick}>
-              <a className="footer-button" href="#" onClick={handleCloseClick}>
-                <Image
-                  src="/close.svg"
-                  alt="close-button"
-                  width={24}
-                  height={24}
-                />
-              </a>
+            <Link href="#" onClick={handleCloseClick} className="footer-button">
+
+              <Image
+                src="/close.svg"
+                alt="close-button"
+                width={24}
+                height={24}
+              />
+
             </Link>
             {title && <h1 className="heading2Xl">{title}</h1>}
             {body && <p>{body}</p>}

@@ -17,8 +17,8 @@ const ColorPalette = () => (
         name="Boris Kirov"
       />
       <Main>
-        <Link href="/playground/cheatsheets">
-          <a className="backButton">Back</a>
+        <Link href="/playground/cheatsheets" className="backButton">
+          Back
         </Link>
         <h1 className="heading2Xl">COLOR PALETTE</h1>
         <p>
@@ -31,13 +31,16 @@ const ColorPalette = () => (
         </p>
         <ul>
           <li>
-            <Link href="https://gist.github.com/boriskirov/8f146a2ea71dc3f6502e720cc7f24ca8">
-              <a target="_blank">Github Gist</a>
+            <Link
+              href="https://gist.github.com/boriskirov/8f146a2ea71dc3f6502e720cc7f24ca8"
+              target="_blank"
+            >
+              Github Gist
             </Link>
           </li>
           <li>
-            <Link href="/../../color-palette.svg">
-              <a target="_blank">SVG string</a>
+            <Link href="/../../color-palette.svg" target="_blank">
+              SVG string
             </Link>{" "}
             which you can paste in Figma for example
           </li>

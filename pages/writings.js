@@ -28,8 +28,8 @@ export default function Writings({ allPostsData }) {
           name="Boris Kirov"
         />
         <Main>
-          <Link href="/">
-            <a className="backButton">Back</a>
+          <Link href="/" className="backButton">
+            Back
           </Link>
           <h1 className="heading2Xl">WRITINGS</h1>
           <p>

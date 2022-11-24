@@ -18,8 +18,8 @@ const Playground = () => (
       />
 
       <Main>
-        <Link href="/">
-          <a className="backButton">Back</a>
+        <Link href="/" className="backButton">
+          Back
         </Link>
         <h1 className="heading2Xl">PLAYGROUND</h1>
         <p>

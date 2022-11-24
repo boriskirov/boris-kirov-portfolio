@@ -24,8 +24,8 @@ const Error = () => (
 
           <p>
             Sorry, this page doesn't exist, but you can check my{" "}
-            <Link href="/playground" as="/playground">
-              <a className="internalPassage">Playground</a>
+            <Link href="/playground" as="/playground" className="internalPassage">
+              Playground
             </Link>
             .{" "}
           </p>

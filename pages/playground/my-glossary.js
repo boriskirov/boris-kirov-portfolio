@@ -16,8 +16,8 @@ const Glossary = () => (
         name="Boris Kirov"
       />
       <Main>
-        <Link href="/playground">
-          <a className="backButton">Back</a>
+        <Link href="/playground" className="backButton">
+          Back
         </Link>
         <h1 className="heading2Xl">GLOSSARY</h1>
         <p>
