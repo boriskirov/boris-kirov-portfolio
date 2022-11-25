@@ -35,21 +35,15 @@ function Commands() {
         <Shorcut />
         <div className="modal-content">
           <div className="modal-body">
-            <Link
-              href="#"
-              onClick={handleCloseClick}
-              className="footer-button"
-              legacyBehavior>
-
+            <a href="#" onClick={handleCloseClick} className="footer-button">
               <Image
                 src="/close.svg"
                 alt="close-button"
                 width={24}
                 height={24}
               />
-
-            </Link>
-            {title && <h1 className="heading2Xl">{title}</h1>}
+            </a>
+            {title && <h3 className="headingM"> {title}</h3>}
             {body && <p>{body}</p>}
             <div className="modal-input">{children}</div>
           </div>
@@ -121,42 +115,50 @@ function Commands() {
             <tbody>
               <tr>
                 <td width="326" height="56">
-                  <small>Action</small>
+                  <p>Action</p>
                 </td>
                 <td width="326" height="56">
-                  <small>Shortcut</small>
+                  <p>Shortcut</p>
                 </td>
               </tr>
               <tr>
-                <td width="326">Change theme</td>
+                <td width="326">
+                  <p>Change theme</p>
+                </td>
                 <td width="225">
-                  <small>
+                  <p>
                     <kbd className="tag shortcut">⌥ + d</kbd>
-                  </small>
+                  </p>
                 </td>
               </tr>
               <tr>
-                <td width="326">Change fonts</td>
+                <td width="326">
+                  <p>Change fonts</p>
+                </td>
                 <td width="225">
-                  <small>
+                  <p>
                     <kbd className="tag shortcut">⌥ + s</kbd>
-                  </small>
+                  </p>
                 </td>
               </tr>
               <tr>
-                <td width="326">Search for content through all pages</td>
+                <td width="326">
+                  <p>Search for content</p>
+                </td>
                 <td width="225">
-                  <small>
+                  <p>
                     <kbd className="tag shortcut">⌥ + f</kbd>
-                  </small>
+                  </p>
                 </td>
               </tr>
               <tr>
-                <td width="326">Open commands panel</td>
+                <td width="326">
+                  <p>Open commands panel</p>
+                </td>
                 <td width="225">
-                  <small>
+                  <p>
                     <kbd className="tag shortcut">⌥ + /</kbd>
-                  </small>
+                  </p>
                 </td>
               </tr>
             </tbody>

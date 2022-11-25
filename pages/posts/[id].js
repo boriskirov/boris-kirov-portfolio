@@ -32,8 +32,8 @@ export default function Post({ postData }) {
         name="Boris Kirov"
       />
       <Main>
-        <Link href="/writings">
-          <a className="backButton">Back</a>
+        <Link href="/writings" className="backButton">
+          Back
         </Link>{" "}
         <h1 className="blogTitle">{postData.title}</h1>
         <small>{postData.type}</small>

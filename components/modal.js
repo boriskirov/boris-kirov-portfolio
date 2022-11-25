@@ -32,20 +32,9 @@ const Modal = ({ show, onClose, children, title, body }) => {
     >
       <div className="modal-content">
         <div className="modal-body">
-          <Link
-            href="#"
-            onClick={handleCloseClick}
-            className="footer-button"
-            legacyBehavior>
-
-            <Image
-              src="/close.svg"
-              alt="close-button"
-              width={24}
-              height={24}
-            />
-
-          </Link>
+          <a href="#" onClick={handleCloseClick} className="footer-button">
+            <Image src="/close.svg" alt="close-button" width={24} height={24} />
+          </a>
           {title && <h1 className="heading2Xl">{title}</h1>}
           {body && <p>{body}</p>}
           <div className="modal-input">{children}</div>

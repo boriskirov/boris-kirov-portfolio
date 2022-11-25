@@ -27,20 +27,16 @@ const About = () => (
         </Link>
         <h1 className="heading2Xl">Здрасти,</h1>
         <div className="contentWrapper">
-          <Image src="/me.png" alt="About me photo" width={1080} height={720} />
+          <Image src="/me.png" alt="About me photo" width={670} height={480} />
           <CurrentlyListening />
-
           <section>
             <p>
               <span className="dropCap">M</span>y name is Boris Kirov. I'm a
               Bulgarian designer living in Amsterdam, The Netherlands. My care
               for form and function makes me express myself with technology.
-              Currently I'm working at{" "}
-              <a href="https://www.elastic.co" target="_blank" rel="noreferrer">
-                Elastic
-              </a>
-              , the company behind the Elastic Stack, where we help people
-              explore and analyze data, while using the power of search.
+              Currently I'm working at , the company behind the Elastic Stack,
+              where we help people explore and analyze data, while using the
+              power of search.
             </p>
             <p>
               My previous experience was as a Platform designer in{" "}
@@ -115,7 +111,7 @@ const About = () => (
           </section>
           <section>
             <h6 className="headingM">This site works because of</h6>
-            <a
+            <Link
               className="stack-card"
               href="https://nextjs.org/"
               target="_blank"
@@ -131,7 +127,7 @@ const About = () => (
                 />
                 <h6 className="headingM">Next.js</h6>
               </div>
-            </a>
+            </Link>
             <a
               className="stack-card"
               href="https://vercel.com/"
@@ -239,7 +235,7 @@ const About = () => (
                 "You want to share or reach out regarding something I wrote, or you want to have a friendly chat with me? Send me a DM in Twitter."
               }
             />
-          </section>
+          </section>{" "}
         </div>
       </Main>
       <Footer />

@@ -6,6 +6,7 @@ import Link from "next/link";
 import Image from "next/image";
 import MainWrapper from "../../components/mainWrapper";
 import Main from "../../components/innerWrapper";
+import StravaStats from "../../components/stravaCard";
 
 const Dashboard = () => (
   <Motion>
@@ -35,6 +36,7 @@ const Dashboard = () => (
         />
         {/* <Npmstats />
         <GitStats /> */}
+        {/* <StravaStats /> */}
       </Main>
     </MainWrapper>
   </Motion>

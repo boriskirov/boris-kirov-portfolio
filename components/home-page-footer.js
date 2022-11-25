@@ -18,69 +18,52 @@ const HomePageFooter = () => (
     transition={{ ease: "easeOut", duration: 0.5 }}
   >
     <footer className="dock-menu">
-      <Link href="./about" title="About" className="footer-button" legacyBehavior>
-
-        <Image
-          src="/about.svg"
-          alt="An SVG of an eye"
-          width={24}
-          height={24}
-        />
-
-      </Link>
-      <Link
+      <a href="./about" title="About" className="footer-button" legacyBehavior>
+        <Image src="/about.svg" alt="An SVG of an eye" width={24} height={24} />
+      </a>
+      <a
         href="./playground"
         title="Playground"
         className="footer-button"
-        legacyBehavior>
-
+        legacyBehavior
+      >
         <Image
           src="/playground.svg"
           alt="An SVG of an eye"
           width={24}
           height={24}
         />
-
-      </Link>
-      <Link
+      </a>
+      <a
         href="./writings"
         title="Writings"
         className="footer-button"
-        legacyBehavior>
-
+        legacyBehavior
+      >
         <Image
           src="/writings.svg"
           alt="An SVG of an eye"
           width={24}
           height={24}
         />
-
-      </Link>
-      <Link href="./talks" title="Talks" className="footer-button" legacyBehavior>
-
-        <Image
-          src="/talks.svg"
-          alt="An SVG of an eye"
-          width={24}
-          height={24}
-        />
-
-      </Link>
-      <Link
+      </a>
+      <a href="./talks" title="Talks" className="footer-button" legacyBehavior>
+        <Image src="/talks.svg" alt="An SVG of an eye" width={24} height={24} />
+      </a>
+      <a
         href="./photography"
         title="Photography"
         className="footer-button"
         type="button"
-        legacyBehavior>
-
+        legacyBehavior
+      >
         <Image
           src="/photography.svg"
           alt="An SVG of an eye"
           width={24}
           height={24}
         />
-
-      </Link>
+      </a>
       <button title="Dark mode ⌥+D" className="footer-button">
         <DarkMode />
       </button>
