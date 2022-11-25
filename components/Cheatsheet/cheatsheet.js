@@ -6,19 +6,18 @@ const Cheatsheet = () => {
   return (
     <div className="contentWrapper">
       {data.map((cheatsheet) => (
-        (<Link
-        href={cheatsheet.url}
-        key={cheatsheet.name}
-        className={cheatsheet.class}
-        target={cheatsheet.target}
-        rel="noreferrer"
-        legacyBehavior>
-
+        <Link
+          href={cheatsheet.url}
+          key={cheatsheet.name}
+          className={cheatsheet.class}
+          target={cheatsheet.target}
+          rel="noreferrer"
+          legacyBehavior
+        >
           <h6 className="headingM">{cheatsheet.name}</h6>
           <small>{cheatsheet.description}</small>
           <small className="tag">{cheatsheet.category}</small>
-
-        </Link>)
+        </Link>
       ))}
     </div>
   );
