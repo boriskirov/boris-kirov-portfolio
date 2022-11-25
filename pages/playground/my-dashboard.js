@@ -7,6 +7,7 @@ import Image from "next/image";
 import MainWrapper from "../../components/mainWrapper";
 import Main from "../../components/innerWrapper";
 import StravaStats from "../../components/stravaCard";
+import boris from "../../public/boris.json";
 
 import GitStats from "../../components/githubstats";
 
@@ -36,9 +37,16 @@ const Dashboard = () => (
           width={640}
           height={32}
         />
-        {/* <Npmstats /> */}
+
+        {/* <p>
+          {boris.firstName} {""}
+          {boris.familyName} {""}
+          {boris.profession}
+        </p>
+
+        <Npmstats />
         <GitStats />
-        <StravaStats />
+        <StravaStats /> */}
       </Main>
     </MainWrapper>
   </Motion>
