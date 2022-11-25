@@ -182,6 +182,11 @@ button {
   border: none;
 }
 
+img {
+  width: -webkit-fill-available;
+  width: -moz-available;
+}
+
 .footerList {
   display: flex;
 }
@@ -491,6 +496,10 @@ details.dic-card summary:focus-visible {
   color: var(--white);
 }
 
+.Logo {
+  width: auto;
+}
+
 .stravaIcon {
   background: var(--card-color-bg);
   border-radius: 24px;
@@ -582,6 +591,7 @@ details.dic-card summary:focus-visible {
   border: 2px solid var(--card-color-bg);
   transition: all 0.3s ease-in-out;
   margin: 2px;
+  width: 44px;
 }
 
 .footer-button:hover,

@@ -22,7 +22,13 @@ const StravaStats = () => {
       <div className="strava">
         <div className="flexCentered">
           <div className="flexCentered">
-            <Image src="/strava.png" alt="Strava logo" width={48} height={48} />
+            <Image
+              src="/strava.png"
+              className="Logo"
+              alt="Strava logo"
+              width={48}
+              height={48}
+            />
             <h6 className="stravaStats">My Strava stats</h6>
           </div>
           <small className="tag stravaTag">

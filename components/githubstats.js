@@ -9,7 +9,13 @@ const GitStats = () => {
   return (
     <div className="ApiCard">
       <div className="flex">
-        <Image src="/github.png" width={48} height={48} alt="github" />
+        <Image
+          src="/github.png"
+          className="Logo"
+          width={48}
+          height={48}
+          alt="github"
+        />
         <small className="github-repos">{publicRepos} repos</small>
       </div>
     </div>
