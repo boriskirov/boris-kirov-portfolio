@@ -32,8 +32,8 @@ export default function Photography() {
           <Image
             src="/under-construction.gif"
             alt="Under construction"
-            width={1440}
-            height={96}
+            width={640}
+            height={32}
           />
 
           <div className="contentWrapper"></div>

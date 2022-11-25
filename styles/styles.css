@@ -150,10 +150,6 @@ li a {
   margin-left: var(--space-xsmall);
 }
 
-img {
-  width: 100%;
-}
-
 blockquote {
   margin: var(--space-small) 0;
   padding: var(--space-large);
@@ -498,6 +494,7 @@ details.dic-card summary:focus-visible {
 .stravaIcon {
   background: var(--card-color-bg);
   border-radius: 24px;
+  width: fit-content;
 }
 
 .distance {
@@ -521,6 +518,7 @@ details.dic-card summary:focus-visible {
 .backButton {
   cursor: w-resize;
   margin-bottom: var(--space-xlarge);
+  width: fit-content;
 }
 
 .internalPassage {

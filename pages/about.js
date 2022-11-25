@@ -27,7 +27,7 @@ const About = () => (
         </Link>
         <h1 className="heading2Xl">Здрасти,</h1>
         <div className="contentWrapper">
-          <Image src="/me.png" alt="About me photo" width={670} height={480} />
+          <Image src="/me.png" alt="About me photo" width={672} height={460} />
           <CurrentlyListening />
           <section>
             <p>
@@ -90,8 +90,8 @@ const About = () => (
             <Image
               src="/dory.png"
               alt="Dory the Mozilla firefox-looking adopted mixed-breed dog"
-              width={1080}
-              height={720}
+              width={672}
+              height={460}
             />
             <p>
               Photography also is a passion of mine, with which I keep my
