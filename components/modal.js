@@ -32,7 +32,11 @@ const Modal = ({ show, onClose, children, title, body }) => {
     >
       <div className="modal-content">
         <div className="modal-body">
-          <Link href="#" onClick={handleCloseClick} className="footer-button">
+          <Link
+            href="#"
+            onClick={handleCloseClick}
+            className="footer-button"
+            legacyBehavior>
 
             <Image
               src="/close.svg"

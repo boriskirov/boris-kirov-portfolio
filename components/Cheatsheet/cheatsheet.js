@@ -7,11 +7,12 @@ const Cheatsheet = () => {
     <div className="contentWrapper">
       {data.map((cheatsheet) => (
         (<Link
-          href={cheatsheet.url}
-          key={cheatsheet.name}
-          className={cheatsheet.class}
-          target={cheatsheet.target}
-          rel="noreferrer">
+        href={cheatsheet.url}
+        key={cheatsheet.name}
+        className={cheatsheet.class}
+        target={cheatsheet.target}
+        rel="noreferrer"
+        legacyBehavior>
 
           <h6 className="headingM">{cheatsheet.name}</h6>
           <small>{cheatsheet.description}</small>
