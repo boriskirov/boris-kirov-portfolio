@@ -18,52 +18,56 @@ const HomePageFooter = () => (
     transition={{ ease: "easeOut", duration: 0.5 }}
   >
     <footer className="dock-menu">
-      <a href="./about" title="About" className="footer-button" legacyBehavior>
-        <Image src="/about.svg" alt="An SVG of an eye" width={24} height={24} />
-      </a>
-      <a
-        href="./playground"
-        title="Playground"
-        className="footer-button"
-        legacyBehavior
-      >
-        <Image
-          src="/playground.svg"
-          alt="An SVG of an eye"
-          width={24}
-          height={24}
-        />
-      </a>
-      <a
-        href="./writings"
-        title="Writings"
-        className="footer-button"
-        legacyBehavior
-      >
-        <Image
-          src="/writings.svg"
-          alt="An SVG of an eye"
-          width={24}
-          height={24}
-        />
-      </a>
-      <a href="./talks" title="Talks" className="footer-button" legacyBehavior>
-        <Image src="/talks.svg" alt="An SVG of an eye" width={24} height={24} />
-      </a>
-      <a
-        href="./photography"
-        title="Photography"
-        className="footer-button"
-        type="button"
-        legacyBehavior
-      >
-        <Image
-          src="/photography.svg"
-          alt="An SVG of an eye"
-          width={24}
-          height={24}
-        />
-      </a>
+      <Link href="./about" title="About">
+        <div className="footer-button">
+          <Image
+            src="/about.svg"
+            alt="An SVG of an eye"
+            width={24}
+            height={24}
+          />
+        </div>
+      </Link>
+      <Link href="./playground" title="Playground">
+        <div className="footer-button">
+          <Image
+            src="/playground.svg"
+            alt="An SVG of an eye"
+            width={24}
+            height={24}
+          />
+        </div>
+      </Link>
+      <Link href="./writings" title="Writings">
+        <div className="footer-button">
+          <Image
+            src="/writings.svg"
+            alt="An SVG of an eye"
+            width={24}
+            height={24}
+          />
+        </div>
+      </Link>
+      <Link href="./talks" title="Talks">
+        <div className="footer-button">
+          <Image
+            src="/talks.svg"
+            alt="An SVG of an eye"
+            width={24}
+            height={24}
+          />
+        </div>
+      </Link>
+      <Link href="./photography" title="Photography" type="button">
+        <div className="footer-button">
+          <Image
+            src="/photography.svg"
+            alt="An SVG of an eye"
+            width={24}
+            height={24}
+          />
+        </div>
+      </Link>
       <button title="Dark mode ⌥+D" className="footer-button">
         <DarkMode />
       </button>
