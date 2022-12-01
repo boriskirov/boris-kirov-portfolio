@@ -12,7 +12,13 @@ const Npmstats = () => {
   return (
     <div className="ApiCard">
       <div className="flex">
-        <Image src="/npm.png" width={48} height={48} alt="npm" />
+        <Image
+          src="/npm.png"
+          className="stack-card-img"
+          width={48}
+          height={48}
+          alt="npm"
+        />
         <small className="npm-downloads">{totalDownloads} downloads</small>
       </div>
     </div>

@@ -8,8 +8,9 @@ import MainWrapper from "../../components/mainWrapper";
 import Main from "../../components/innerWrapper";
 import StravaStats from "../../components/stravaCard";
 import boris from "../../public/boris.json";
-
+import Npmstats from "../../components/npmstats";
 import GitStats from "../../components/githubstats";
+import Figmastats from "../../components/figmastats";
 
 const Dashboard = () => (
   <Motion>
@@ -46,7 +47,8 @@ const Dashboard = () => (
 
         <Npmstats />
         <GitStats />
-        <StravaStats /> */}
+        <StravaStats />
+        <Figmastats /> */}
       </Main>
     </MainWrapper>
   </Motion>
