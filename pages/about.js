@@ -9,6 +9,7 @@ import CurrentlyListening from "../components/currentlyListening";
 import Image from "next/image";
 import FeedbackForm from "../components/feedbackForm";
 import StravaStats from "../components/stravaCard";
+import WebStack from "../components/Webstack/webstack";
 
 const About = () => (
   <Motion>
@@ -109,125 +110,7 @@ const About = () => (
           </section>
           <section>
             <h6 className="headingM">This site works because of</h6>
-            <Link
-              className="stack-card"
-              href="https://nextjs.org/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <div>
-                <Image
-                  alt="stack card image"
-                  className="stack-card-img"
-                  src="/nextjs.png"
-                  width={48}
-                  height={48}
-                />
-                <h6 className="headingM">Next.js</h6>
-              </div>
-            </Link>
-            <a
-              className="stack-card"
-              href="https://vercel.com/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <div>
-                <Image
-                  alt="stack card image"
-                  className="stack-card-img"
-                  src="/vercel.png"
-                  width={48}
-                  height={48}
-                />
-                <h6 className="headingM">Vercel</h6>
-              </div>
-            </a>
-            <a
-              className="stack-card"
-              href="https://www.framer.com/motion/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <div>
-                <Image
-                  alt="stack card image"
-                  className="stack-card-img"
-                  src="/framer.png"
-                  width={48}
-                  height={48}
-                />
-                <h6 className="headingM">Framer Motion</h6>
-              </div>
-            </a>
-            <a
-              className="stack-card"
-              href="https://www.fluiditype.com/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <div>
-                <Image
-                  alt="stack card image"
-                  className="stack-card-img"
-                  src="/fluiditype.svg"
-                  width={48}
-                  height={48}
-                />
-                <h6 className="headingM">Fluiditype</h6>
-              </div>
-            </a>
-            <a
-              className="stack-card"
-              href="https://p3colorpicker.cool"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <div>
-                <Image
-                  alt="stack card image"
-                  className="stack-card-img"
-                  src="/p3-picker.png"
-                  width={48}
-                  height={48}
-                />
-                <h6 className="headingM">DCI-P3</h6>
-              </div>
-            </a>
-            <a
-              className="stack-card"
-              href="https://rsms.me/inter/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <div>
-                <Image
-                  alt="stack card image"
-                  className="stack-card-img"
-                  src="/inter-logo.png"
-                  width={48}
-                  height={48}
-                />
-                <h6 className="headingM">Inter</h6>
-              </div>
-            </a>
-            <a
-              className="stack-card"
-              href="https://phosphoricons.com/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <div>
-                <Image
-                  alt="stack card image"
-                  className="stack-card-img"
-                  src="/phosphor.png"
-                  width={48}
-                  height={48}
-                />
-                <h6 className="headingM">Phosphor icons</h6>
-              </div>
-            </a>
+            <WebStack />
             <FeedbackForm
               description={
                 "You want to share or reach out regarding something I wrote, or you want to have a friendly chat with me? Send me a DM in Twitter."

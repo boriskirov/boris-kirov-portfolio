@@ -370,6 +370,8 @@ a.ApiCard:focus {
 
 .stack-card-img {
   border-radius: var(--border-radius-small);
+  aspect-ratio: 1/1;
+  width: 48px;
 }
 
 .currentlyListeningImg {
