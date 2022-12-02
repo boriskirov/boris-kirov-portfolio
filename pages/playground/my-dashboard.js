@@ -9,11 +9,18 @@ import Main from "../../components/innerWrapper";
 import StravaStats from "../../components/stravaCard";
 import boris from "../../public/boris.json";
 import Npmstats from "../../components/npmstats";
-import GitStats from "../../components/githubstats";
 import Figmastats from "../../components/figmastats";
 import CurrentlyListening from "../../components/currentlyListening";
 
-const Dashboard = () => (
+import {
+  ApolloClient,
+  InMemoryCache,
+  gql,
+  createHttpLink,
+} from "@apollo/client";
+import { setContext } from "@apollo/client/link/context";
+
+const Dashboard = ({ data }) => (
   <Motion>
     <MainWrapper>
       <Metadata
@@ -39,22 +46,115 @@ const Dashboard = () => (
           width={640}
           height={32}
         />
+        {/* <div>
+          <p>
+            {boris.firstName} {""}
+            {boris.familyName} {""}
+            {boris.profession} {""}
+            {boris.location.city}
+          </p>
 
-        {/* <p>
-          {boris.firstName} {""}
-          {boris.familyName} {""}
-          {boris.profession}
-        </p>
+          <Npmstats />
 
-        <Npmstats />
-        <GitStats />
-        
-        <Figmastats /> */}
-        <CurrentlyListening />
-        <StravaStats />
+          <Figmastats />
+          <CurrentlyListening />
+
+          <div className="ApiCard">
+            <div className="flex">
+              <Image
+                src="/github.png"
+                className="stack-card-img"
+                width={48}
+                height={48}
+                alt="npm"
+              />
+              <small className="npm-downloads">
+                {
+                  data.user.contributionsCollection.contributionCalendar
+                    .totalContributions
+                }
+                {""} contributions this year
+              </small>
+              <small className="npm-downloads">
+                {" "}
+                {data.user.repositories.totalCount} repos
+              </small>
+              <small className="npm-downloads">
+                {data.user.followers.totalCount} followers
+              </small>
+            </div>
+          </div>
+          <StravaStats />
+        </div> */}
       </Main>
     </MainWrapper>
   </Motion>
 );
 
 export default Dashboard;
+
+export async function getStaticProps() {
+  const httpLink = createHttpLink({
+    uri: "https://api.github.com/graphql",
+  });
+
+  const authLink = setContext((_, { headers }) => {
+    return {
+      headers: {
+        ...headers,
+        authorization: `Bearer ${process.env.GITHUB_TOKEN}`,
+      },
+    };
+  });
+
+  const client = new ApolloClient({
+    link: authLink.concat(httpLink),
+    cache: new InMemoryCache(),
+  });
+
+  const { data } = await client.query({
+    query: gql`
+      {
+        user(login: "boriskirov") {
+          name
+          company
+          bio
+          location
+          createdAt
+          repositories {
+            totalCount
+          }
+          pullRequests {
+            totalCount
+          }
+          repositoriesContributedTo {
+            totalCount
+          }
+          followers {
+            totalCount
+          }
+          contributionsCollection {
+            contributionCalendar {
+              colors
+              totalContributions
+              weeks {
+                contributionDays {
+                  color
+                  contributionCount
+                  date
+                  weekday
+                }
+                firstDay
+              }
+            }
+          }
+        }
+      }
+    `,
+  });
+  return {
+    props: {
+      data,
+    },
+  };
+}

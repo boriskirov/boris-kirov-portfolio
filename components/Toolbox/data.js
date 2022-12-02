@@ -66,12 +66,6 @@ const ToolboxList = [
     category: "Development",
   },
   {
-    name: "Obsidian",
-    url: "https://obsidian.md",
-    image: "/obsidian.png",
-    category: "Productivity",
-  },
-  {
     name: "Loom",
     url: "https://loom.com",
     image: "/loom.png",
@@ -88,12 +82,6 @@ const ToolboxList = [
     url: "https://vercel.com",
     image: "/vercel.png",
     category: "Development",
-  },
-  {
-    name: "Spark",
-    url: "https://sparkmailapp.com",
-    image: "/spark.png",
-    category: "Productivity",
   },
   {
     name: "Terminal",
@@ -138,22 +126,10 @@ const ToolboxList = [
     category: "Productivity",
   },
   {
-    name: "Kap",
-    url: "https://getkap.co/",
-    image: "/kap.png",
-    category: "Productivity",
-  },
-  {
     name: "DuckDuckGo",
     url: "https://duckduckgo.com/",
     image: "/ddg.png",
     category: "Security",
-  },
-  {
-    name: "Raycast",
-    url: "https://raycast.com/",
-    image: "/raycast.png",
-    category: "Productivity",
   },
   {
     name: "CleanShot",

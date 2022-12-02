@@ -5,9 +5,7 @@ const Npmstats = () => {
   const fetcher = (url) => fetch(url).then((r) => r.json());
   const { data } = useSWR("/api/npm", fetcher);
 
-  const totalDownloads = (
-    data?.mirotoneDownloads + data?.fluiditypeDownloads
-  ).toLocaleString("en-US");
+  const totalDownloads = data?.fluiditypeDownloads;
 
   return (
     <div className="ApiCard">

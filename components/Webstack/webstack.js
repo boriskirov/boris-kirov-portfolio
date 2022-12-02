@@ -1,12 +1,17 @@
 import * as React from "react";
 import Image from "next/image";
 import data from "./data";
+import { motion } from "framer-motion";
 
 const WebStack = () => {
   return (
     <div>
       {data.map((webstack) => (
-        <a
+        <motion.a
+          whileHover={{
+            scale: 1.025,
+            transition: { duration: 0.23 },
+          }}
           key={webstack.name}
           className="stack-card"
           href={webstack.url}
@@ -23,7 +28,7 @@ const WebStack = () => {
             />
             <h6 className="headingM">{webstack.name}</h6>
           </div>
-        </a>
+        </motion.a>
       ))}
     </div>
   );
