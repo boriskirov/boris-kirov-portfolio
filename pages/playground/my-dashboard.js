@@ -11,6 +11,7 @@ import boris from "../../public/boris.json";
 import Npmstats from "../../components/npmstats";
 import GitStats from "../../components/githubstats";
 import Figmastats from "../../components/figmastats";
+import CurrentlyListening from "../../components/currentlyListening";
 
 const Dashboard = () => (
   <Motion>
@@ -47,8 +48,10 @@ const Dashboard = () => (
 
         <Npmstats />
         <GitStats />
-        <StravaStats />
+        
         <Figmastats /> */}
+        <CurrentlyListening />
+        <StravaStats />
       </Main>
     </MainWrapper>
   </Motion>
