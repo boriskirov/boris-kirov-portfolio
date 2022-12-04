@@ -116,7 +116,6 @@ const About = () => (
             </p>
           </section>
           <section>
-            <h6 className="headingM">This site works because of</h6>
             <WebStack />
             <FeedbackForm
               description={

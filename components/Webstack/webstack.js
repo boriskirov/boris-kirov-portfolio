@@ -7,7 +7,7 @@ const WebStack = () => {
   return (
     <details className="dic-card">
       <summary aria-haspopup="true" className="headingM">
-        Analytical thinking
+        This site works because of
       </summary>
 
       {data.map((webstack) => (

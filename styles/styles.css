@@ -425,6 +425,7 @@ a.ApiCard:focus {
 
 .dic-card summary {
   font-size: calc(var(--font-size) * 1);
+  font-weight: calc(var(--font-weight) * 1.33);
 }
 
 details.dic-card summary:focus-visible {
