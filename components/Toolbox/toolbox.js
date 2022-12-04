@@ -9,7 +9,7 @@ const Toolbox = () => {
       {data.map((tooblox) => (
         <motion.a
           whileHover={{
-            scale: 1.025,
+            scale: 1.015,
             transition: { duration: 0.23 },
           }}
           key={tooblox.name}

@@ -8,7 +8,7 @@ const FeedbackForm = ({ description }) => {
       <motion.div
         style={{ width: "100%" }}
         whileHover={{
-          scale: 1.025,
+          scale: 1.015,
           transition: { duration: 0.23 },
         }}
       >

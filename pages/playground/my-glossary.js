@@ -5,6 +5,7 @@ import Metadata from "../../components/metadata";
 import Link from "next/link";
 import MainWrapper from "../../components/mainWrapper";
 import Main from "../../components/innerWrapper";
+import { motion } from "framer-motion";
 
 const Glossary = () => (
   <Motion>
@@ -26,7 +27,10 @@ const Glossary = () => (
         </p>
         <div className="contentWrapper">
           <section>
-            <details className="dic-card">
+            <motion.details
+              className="dic-card"
+              whileHover={{ scale: 1.015, transition: { duration: 0.23 } }}
+            >
               <summary aria-haspopup="true" className="headingM">
                 Analytical thinking
               </summary>
@@ -36,9 +40,12 @@ const Glossary = () => (
                 Analytical thinkers can detect patterns between datasets that
                 often lead to creative solutions.
               </p>
-            </details>
+            </motion.details>
 
-            <details className="dic-card">
+            <motion.details
+              className="dic-card"
+              whileHover={{ scale: 1.015, transition: { duration: 0.23 } }}
+            >
               <summary aria-haspopup="true" className="headingM">
                 Bootstrapping
               </summary>
@@ -49,9 +56,12 @@ const Glossary = () => (
                 an analogy for the impossible, bootstrapping is considered a
                 useful technique in several areas.
               </p>
-            </details>
+            </motion.details>
 
-            <details className="dic-card">
+            <motion.details
+              className="dic-card"
+              whileHover={{ scale: 1.015, transition: { duration: 0.23 } }}
+            >
               <summary aria-haspopup="true" className="headingM">
                 Feedback loop
               </summary>
@@ -61,9 +71,12 @@ const Glossary = () => (
                 followed by measurement of results that ultimately leads to a
                 fully optimized strategy.
               </p>
-            </details>
+            </motion.details>
 
-            <details className="dic-card">
+            <motion.details
+              className="dic-card"
+              whileHover={{ scale: 1.015, transition: { duration: 0.23 } }}
+            >
               <summary aria-haspopup="true" className="headingM">
                 Human Centered Design
               </summary>
@@ -77,9 +90,12 @@ const Glossary = () => (
                 with the people you’re designing for; and eventually putting
                 your innovative new solution out in the world.
               </p>
-            </details>
+            </motion.details>
 
-            <details className="dic-card">
+            <motion.details
+              className="dic-card"
+              whileHover={{ scale: 1.015, transition: { duration: 0.23 } }}
+            >
               <summary aria-haspopup="true" className="headingM">
                 Modularity
               </summary>
@@ -91,9 +107,12 @@ const Glossary = () => (
                 toys and Ikea the Scandinavian-founded, worldwide furniture
                 store.
               </p>
-            </details>
+            </motion.details>
 
-            <details className="dic-card">
+            <motion.details
+              className="dic-card"
+              whileHover={{ scale: 1.015, transition: { duration: 0.23 } }}
+            >
               <summary aria-haspopup="true" className="headingM">
                 Nudge Theory
               </summary>
@@ -104,9 +123,12 @@ const Glossary = () => (
                 marketing, leadership and any other domain that relies on social
                 influence.
               </p>
-            </details>
+            </motion.details>
 
-            <details className="dic-card">
+            <motion.details
+              className="dic-card"
+              whileHover={{ scale: 1.015, transition: { duration: 0.23 } }}
+            >
               <summary aria-haspopup="true" className="headingM">
                 Socratic method
               </summary>
@@ -117,9 +139,12 @@ const Glossary = () => (
                 answering questions to stimulate critical thinking and to draw
                 out ideas and underlying presuppositions.
               </p>
-            </details>
+            </motion.details>
 
-            <details className="dic-card">
+            <motion.details
+              className="dic-card"
+              whileHover={{ scale: 1.015, transition: { duration: 0.23 } }}
+            >
               <summary aria-haspopup="true" className="headingM">
                 System Thinking
               </summary>
@@ -131,9 +156,12 @@ const Glossary = () => (
                 analysis, which studies systems by breaking them down into their
                 separate elements.
               </p>
-            </details>
+            </motion.details>
 
-            <details className="dic-card">
+            <motion.details
+              className="dic-card"
+              whileHover={{ scale: 1.015, transition: { duration: 0.23 } }}
+            >
               <summary aria-haspopup="true" className="headingM">
                 Path of least resistance
               </summary>
@@ -144,9 +172,12 @@ const Glossary = () => (
                 things the easy way. The following are illustrative examples of
                 the path of least resistance.
               </p>
-            </details>
+            </motion.details>
 
-            <details className="dic-card">
+            <motion.details
+              className="dic-card"
+              whileHover={{ scale: 1.015, transition: { duration: 0.23 } }}
+            >
               <summary aria-haspopup="true" className="headingM">
                 Pokayoke
               </summary>
@@ -158,9 +189,12 @@ const Glossary = () => (
                 consumers (e.g. Microwave doors typically can't be open when the
                 microwave is operating).
               </p>
-            </details>
+            </motion.details>
 
-            <details className="dic-card">
+            <motion.details
+              className="dic-card"
+              whileHover={{ scale: 1.015, transition: { duration: 0.23 } }}
+            >
               <summary aria-haspopup="true" className="headingM">
                 Principle Of Least Astonishment
               </summary>
@@ -173,7 +207,7 @@ const Glossary = () => (
                 design, they may feel that they are bending to technology as
                 opposed to technology bending to them.
               </p>
-            </details>
+            </motion.details>
           </section>
         </div>
       </Main>
