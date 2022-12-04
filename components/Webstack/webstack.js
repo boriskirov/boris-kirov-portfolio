@@ -5,11 +5,15 @@ import { motion } from "framer-motion";
 
 const WebStack = () => {
   return (
-    <div>
+    <details className="dic-card">
+      <summary aria-haspopup="true" className="headingM">
+        Analytical thinking
+      </summary>
+
       {data.map((webstack) => (
         <motion.a
           whileHover={{
-            scale: 1.025,
+            scale: 1.0125,
             transition: { duration: 0.23 },
           }}
           key={webstack.name}
@@ -30,7 +34,7 @@ const WebStack = () => {
           </div>
         </motion.a>
       ))}
-    </div>
+    </details>
   );
 };
 

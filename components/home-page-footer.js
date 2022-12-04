@@ -58,7 +58,7 @@ const HomePageFooter = () => (
           />
         </div>
       </Link>
-      <Link href="./photography" title="Photography" type="button">
+      {/* <Link href="./photography" title="Photography" type="button">
         <div className="footer-button">
           <Image
             src="/photography.svg"
@@ -67,7 +67,7 @@ const HomePageFooter = () => (
             height={24}
           />
         </div>
-      </Link>
+      </Link> */}
       <button title="Dark mode ⌥+D" className="footer-button">
         <DarkMode />
       </button>
