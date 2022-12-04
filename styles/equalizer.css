@@ -1,6 +1,6 @@
 .equilizer {
-  height: 48px;
-  width: 48px;
+  height: 24px;
+  width: 24px;
   transform: rotate(180deg);
   margin: 0 24px;
 }
