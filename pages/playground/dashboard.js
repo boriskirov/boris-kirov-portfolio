@@ -25,9 +25,9 @@ const Dashboard = ({ data }) => (
   <Motion>
     <MainWrapper>
       <Metadata
-        title="Glossary"
-        description="This is my personal resource that lists the methods, practices and ways of working I follow in design."
-        image="https://www.boriskirov.me/meta-tag-glossary.png"
+        title="Dashboard"
+        description="This is my personal dashboard with metrics and statistics from different platforms and tools."
+        image="https://www.boriskirov.me/meta-tag-dashboard.png"
         name="Boris Kirov"
       />
       <Main>
