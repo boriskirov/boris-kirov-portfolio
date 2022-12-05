@@ -496,7 +496,7 @@ details[open] summary {
   background-color: var(--tag-color-bg);
   word-break: keep-all;
   border-radius: 8px;
-  margin: var(--space-large) var(--space-medium) var(--space-large) 0;
+  margin: var(--space-large) 0 var(--space-large) 0;
   padding: var(--space-large) var(--space-xlarge);
 }
 
