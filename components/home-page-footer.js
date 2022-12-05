@@ -20,19 +20,14 @@ const HomePageFooter = () => (
     <footer className="dock-menu">
       <Link href="./about" title="About">
         <div className="footer-button">
-          <Image
-            src="/about.svg"
-            alt="An SVG of an eye"
-            width={24}
-            height={24}
-          />
+          <Image src="/about.svg" alt="About me icon" width={24} height={24} />
         </div>
       </Link>
       <Link href="./playground" title="Playground">
         <div className="footer-button">
           <Image
             src="/playground.svg"
-            alt="An SVG of an eye"
+            alt="Playground icon"
             width={24}
             height={24}
           />
@@ -42,7 +37,7 @@ const HomePageFooter = () => (
         <div className="footer-button">
           <Image
             src="/writings.svg"
-            alt="An SVG of an eye"
+            alt="Writings icons"
             width={24}
             height={24}
           />
@@ -50,24 +45,19 @@ const HomePageFooter = () => (
       </Link>
       <Link href="./talks" title="Talks">
         <div className="footer-button">
+          <Image src="/talks.svg" alt="Talks icon" width={24} height={24} />
+        </div>
+      </Link>
+      <Link href="./playground/my-dashboard" title="Dashboard" type="button">
+        <div className="footer-button">
           <Image
-            src="/talks.svg"
-            alt="An SVG of an eye"
+            src="/dashboard.svg"
+            alt="Dashboard icon"
             width={24}
             height={24}
           />
         </div>
       </Link>
-      {/* <Link href="./photography" title="Photography" type="button">
-        <div className="footer-button">
-          <Image
-            src="/photography.svg"
-            alt="An SVG of an eye"
-            width={24}
-            height={24}
-          />
-        </div>
-      </Link> */}
       <button title="Dark mode ⌥+D" className="footer-button">
         <DarkMode />
       </button>

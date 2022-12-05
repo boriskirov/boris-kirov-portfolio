@@ -23,7 +23,7 @@ export default function Writings({ allPostsData }) {
       <MainWrapper>
         <Metadata
           title="Writings"
-          description="My small space where I try to think out loud about everything related to design, software and technology."
+          description="My small space where I try to think out loud about everything related to design, software and technology. You'll find case studies, tutorials and blog posts here."
           image="https://www.boriskirov.me/meta-tag-writings.png"
           name="Boris Kirov"
         />
@@ -34,12 +34,11 @@ export default function Writings({ allPostsData }) {
           <h1 className="heading2Xl">WRITINGS</h1>
           <p>
             My small space where I try to think out loud about everything
-            related to design, software and technology. Feel free to read
-            through.{" "}
+            related to design, software and technology. You'll find case
+            studies, tutorials and blog posts here.
           </p>
           <div className="contentWrapper">
             {/* Post component start */}
-
             {allPostsData.map(({ id, type, description, title }) => (
               <Card
                 key={Card.title}
@@ -51,7 +50,6 @@ export default function Writings({ allPostsData }) {
                 target=""
               />
             ))}
-
             {/* Post component end */}
           </div>
         </Main>

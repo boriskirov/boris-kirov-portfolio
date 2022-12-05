@@ -83,7 +83,7 @@ By teaming up with some of my fellow Developer experience engineers, we created 
 
 ![Mirotone](../../mirotone-1.png)
 
-Mirotone has +9K downloads on NPM today and keeps growing daily, a dedicated team, and an additional [Figma plugin](https://www.figma.com/community/plugin/1040629471915005702/Mirotone-icons) to try to close the funnel and to allow for a delightful experience while building.
+Mirotone has +9K downloads on NPM today and keeps growing daily, a dedicated team, and an additional [Figma plugin](https://www.figma.com/community/plugin/1040629471915005702/Mirotone-icons) to try to close the funnel and to allow for a delightful experience while building. Mirotone was acquired by Miro and now is the official design documentation for their creation for plugins and apps.
 
 ![Mirotone](../../mirotone-2.png)
 

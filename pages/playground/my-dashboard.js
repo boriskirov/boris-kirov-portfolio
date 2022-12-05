@@ -47,12 +47,11 @@ const Dashboard = ({ data }) => (
             {boris.familyName} {""}
             {boris.profession} {""}
             {boris.location.city}
-          </p>
+          </p> */}
 
-          <Npmstats />
+          {/* <Npmstats /> */}
 
           <Figmastats />
-          <CurrentlyListening />
 
           <div className="ApiCard">
             <div className="flex">
@@ -78,10 +77,11 @@ const Dashboard = ({ data }) => (
                 {data.user.followers.totalCount} followers
               </small>
             </div>
-          </div> */}
+          </div>
           <GithubMap />
 
-          {/* <StravaStats /> */}
+          <StravaStats />
+          <CurrentlyListening />
         </div>
       </Main>
     </MainWrapper>
