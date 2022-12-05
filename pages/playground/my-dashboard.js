@@ -11,6 +11,7 @@ import boris from "../../public/boris.json";
 import Npmstats from "../../components/npmstats";
 import Figmastats from "../../components/figmastats";
 import CurrentlyListening from "../../components/currentlyListening";
+import GithubMap from "../../components/githubmap";
 
 import {
   ApolloClient,
@@ -40,14 +41,8 @@ const Dashboard = ({ data }) => (
           display and visualise performance and involvement in various projects
           during my career.
         </p>
-        <Image
-          src="/under-construction.gif"
-          alt="Under construction"
-          width={640}
-          height={32}
-        />
-        {/* <div>
-          <p>
+        <div>
+          {/* <p>
             {boris.firstName} {""}
             {boris.familyName} {""}
             {boris.profession} {""}
@@ -83,9 +78,11 @@ const Dashboard = ({ data }) => (
                 {data.user.followers.totalCount} followers
               </small>
             </div>
-          </div>
-          <StravaStats />
-        </div> */}
+          </div> */}
+          <GithubMap />
+
+          {/* <StravaStats /> */}
+        </div>
       </Main>
     </MainWrapper>
   </Motion>

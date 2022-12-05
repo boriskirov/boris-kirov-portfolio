@@ -4,7 +4,6 @@ import Modal from "./modal";
 import SearchApp from "../pages/api/search";
 import Image from "next/image";
 import Motion from "./motion";
-import Link from "next/link";
 import { useCallback, useState, useEffect } from "react";
 
 import { log } from "next-axiom";
