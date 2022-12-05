@@ -10,7 +10,7 @@ const Figmastats = () => {
   const totalLikes = data?.figmaLikes.toLocaleString("en-US");
 
   return (
-    <div className="metric tag">
+    <div className="metric">
       <div className="flex flex-center metric-header">
         <Image
           src="/figma.svg"

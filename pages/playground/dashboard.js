@@ -53,7 +53,7 @@ const Dashboard = ({ data }) => (
 
           <Figmastats />
 
-          <div className="metric tag">
+          <div className="metric">
             <div className="flex flex-center metric-header">
               <Image
                 src="/github.svg"
