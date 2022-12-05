@@ -37,7 +37,10 @@ export default function Post({ postData }) {
         </Link>{" "}
         <h1 className="blogTitle">{postData.title}</h1>
         <small>{postData.type}</small>
-        <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
+        <div
+          dangerouslySetInnerHTML={{ __html: postData.contentHtml }}
+          className="contentWrapper"
+        />
         <FeedbackForm
           description={
             "You want to share or reach out regarding something I wrote? Send it my way on Twitter."

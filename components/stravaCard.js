@@ -19,101 +19,147 @@ const StravaStats = () => {
 
   return (
     <div>
-      <div className="strava">
-        <div className="flexCentered">
-          <div className="flexCentered">
-            <Image
-              src="/strava.png"
-              className="Logo"
-              alt="Strava logo"
-              width={48}
-              height={48}
-            />
-            <h6 className="stravaStats">My Strava stats</h6>
-          </div>
-          <small className="tag stravaTag">
-            <a
-              href="https://www.strava.com/athletes/40093533"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <small>Follow</small>
-            </a>
-          </small>
+      <div className="metric tag">
+        <div className="flex flex-center metric-header">
+          <Image
+            src="/strava.png"
+            className="metric-logo"
+            width={24}
+            height={24}
+            alt="npm"
+          />
+          <h6>Sport stats</h6>
         </div>
-
-        <div className="flexCentered flexDirectionColumn">
-          <div className="flexCentered justContentBetween strava">
-            <Image
-              className="stravaIcon"
-              src="/run.svg"
-              alt="Strava logo"
-              width={48}
-              height={48}
-            />
-            <div className="stravaPil">
-              <small>Distance</small>
-              <p className="distance">{RunDistance} km</p>
-            </div>
-            <div className="stravaPil">
-              <small>Count</small>
-              <p className="count">{data?.countRuns.count} runs</p>
-            </div>
-            <div className="stravaPil">
-              <small>Moving time</small>
-              <p className="distance">
-                {timeConvert(data?.countRuns.moving_time)}
-              </p>
-            </div>
+        <div className="flex space-between tag">
+          <div className="metric-pill">
+            <small>
+              {" "}
+              <Image
+                className="metric-logo"
+                src="/run.svg"
+                alt="Strava logo"
+                width={24}
+                height={24}
+              />
+              Distance
+            </small>
+            <h5>{RunDistance} km</h5>
           </div>
-
-          <div className="flexCentered justContentBetween strava">
-            <Image
-              className="stravaIcon"
-              src="/bike.svg"
-              alt="Strava logo"
-              width={48}
-              height={48}
-            />
-            <div className="stravaPil">
-              <small>Distance</small>
-              <p className="distance">{RideDistance} km</p>
-            </div>
-            <div className="stravaPil">
-              <small>Count</small>
-              <p className="count">{data?.countRides.count} rides</p>
-            </div>
-            <div className="stravaPil">
-              <small>Moving time</small>
-              <p className="distance">
-                {timeConvert(data?.countRides.moving_time)}
-              </p>
-            </div>
+          <div className="metric-pill">
+            <small>
+              {" "}
+              <Image
+                className="metric-logo"
+                src="/run.svg"
+                alt="Strava logo"
+                width={24}
+                height={24}
+              />
+              Count
+            </small>
+            <h5>{data?.countRuns.count} runs</h5>
           </div>
-
-          <div className="flexCentered justContentBetween strava">
-            <Image
-              className="stravaIcon"
-              src="/swim.svg"
-              alt="Strava logo"
-              width={48}
-              height={48}
-            />
-
-            <div className="stravaPil">
-              <small>Distance</small>
-              <p className="distance">{SwimDistance} km</p>
-            </div>
-            <div className="stravaPil">
-              <small>Count</small>
-              <p className="count">{data?.countSwims.count} swims</p>
-            </div>
-            <div className="stravaPil">
-              <small>Moving time</small>
-              <p className="distance">
-                {timeConvert(data?.countSwims.moving_time)}
-              </p>
-            </div>
+          <div className="metric-pill">
+            <small>
+              {" "}
+              <Image
+                className="metric-logo"
+                src="/run.svg"
+                alt="Strava logo"
+                width={24}
+                height={24}
+              />
+              Moving time
+            </small>
+            <h5>{timeConvert(data?.countRuns.moving_time)} </h5>
+          </div>
+        </div>
+        <div className="flex space-between tag">
+          <div className="metric-pill">
+            <small>
+              {" "}
+              <Image
+                className="metric-logo"
+                src="/bike.svg"
+                alt="Strava logo"
+                width={24}
+                height={24}
+              />
+              Distance
+            </small>
+            <h5>{RideDistance} km</h5>
+          </div>
+          <div className="metric-pill">
+            <small>
+              {" "}
+              <Image
+                className="metric-logo"
+                src="/bike.svg"
+                alt="Strava logo"
+                width={24}
+                height={24}
+              />
+              Count
+            </small>
+            <h5>{data?.countRides.count} rides</h5>
+          </div>
+          <div className="metric-pill">
+            <small>
+              {" "}
+              <Image
+                className="metric-logo"
+                src="/bike.svg"
+                alt="Strava logo"
+                width={24}
+                height={24}
+              />
+              Moving time
+            </small>
+            <h5>{timeConvert(data?.countRides.moving_time)} </h5>
+          </div>
+        </div>
+        <div className="flex space-between tag">
+          <div className="metric-pill">
+            <small>
+              {" "}
+              <Image
+                className="metric-logo"
+                src="/swim.svg"
+                alt="Strava logo"
+                width={24}
+                height={24}
+              />
+              Distance
+            </small>
+            <h5>{SwimDistance} km</h5>
+          </div>
+          <div className="metric-pill">
+            <small>
+              {" "}
+              <Image
+                className="metric-logo"
+                src="/swim.svg"
+                alt="Strava logo"
+                width={24}
+                height={24}
+              />
+              Count
+            </small>
+            <h5>{data?.countSwims.count} swims</h5>
+          </div>
+          <div className="metric-pill">
+            <small>
+              {" "}
+              <Image
+                className="metric-logo"
+                src="/swim.svg"
+                alt="Strava logo"
+                width={24}
+                height={24}
+              />
+              Moving time
+            </small>
+            <h5>{timeConvert(data?.countSwims.moving_time)} </h5>
           </div>
         </div>
       </div>

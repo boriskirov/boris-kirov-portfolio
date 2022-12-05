@@ -99,6 +99,10 @@ a:focus {
   color: var(--link-color-text);
 }
 
+p {
+  margin: 0;
+}
+
 h4 {
   margin: var(--space-xsmall) 0;
 }
@@ -115,8 +119,6 @@ small {
   align-items: center;
   font-size: 12px;
   line-height: 1.4;
-  margin: var(--space-xsmall) 0 var(--space-small) 0;
-  padding: 0 var(--space-xsmall);
 }
 
 ul {
@@ -158,8 +160,6 @@ h5 {
 }
 
 h6 {
-  text-transform: uppercase;
-  font-weight: normal;
   margin: 0;
 }
 
@@ -222,7 +222,14 @@ li.footerLi:last-child {
 
 .flex {
   display: flex;
-  align-items: flex-end;
+}
+
+.flex-center {
+  align-items: center;
+}
+
+.space-between {
+  justify-content: space-between;
 }
 
 .error {
@@ -288,7 +295,6 @@ a.main-card:focus {
 }
 
 .main-card[href] h6 {
-  padding: var(--space-xsmall) var(--space-xsmall) 0px var(--space-xsmall);
   margin: var(--space-small) 0;
   font-weight: normal;
 }
@@ -484,6 +490,30 @@ details[open] summary {
   height: 40px;
   border: 2px solid var(--card-color-bg);
   padding: var(--space-small) var(--space-medium);
+}
+
+.metric {
+  background-color: var(--tag-color-bg);
+  word-break: keep-all;
+  border-radius: 8px;
+  margin: var(--space-large) var(--space-medium) var(--space-large) 0;
+  padding: var(--space-large) var(--space-xlarge);
+}
+
+.metric-header {
+  margin: var(--space-small) 0 var(--space-small) 0;
+}
+
+.metric-header > * {
+  margin: 0 var(--space-small) 0 0;
+}
+
+.metric-logo {
+  width: 24px;
+}
+
+.metric-pill {
+  width: 200px;
 }
 
 // Strava styles

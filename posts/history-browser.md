@@ -54,7 +54,7 @@ By 1969 one of the research teams of IBM led by Charles Goldfarb, Ed Mosher, and
 
 This was the first time when tagging of elements was hierarchical and would allow you to start and end a certain type of text. GML used the symbols colon ":" and fullstop "." as tag delimiters but used h1 to define major headings, p for paragraph, ol for an order list, and li for a list element. For those with a knowledge of HTML, these should be quite familiar. However, end tags did not use the ":/ol." notation for the end tag but had ":eol.". GML had demonstrated that it was possible to markup information in a generic way so that it could be used by more than one application.
 
-###### The need for a shared library
+##### The need for a shared library
 
 Organizations were now growing and the main goal was to ensure that everybody in the team is up-to-date with the information, especially when we talk about energy, nuclear power, and research. This distributed way of working and developing combined with the complexity of the topic meant that hundreds of computers networked together. They needed to be connected and communicate with each other, so experiments can be done faster, more efficiently, and with more control in order to collect data. The need for an application that could store and allow accessing this data was born. The need for a browser was here.
 

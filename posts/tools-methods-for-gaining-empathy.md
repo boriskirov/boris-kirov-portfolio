@@ -10,7 +10,7 @@ The more we stay in the realm of Product design, the more we understand the impo
 
 Through this case study blog post I'll guide you through the internal tools and methods you can use, to feed your ideas with qualitative and quantitative backup. You will be able to generate directional motives which will guide you through your design process and help answer any question.
 
-#### Start with the problem
+##### Start with the problem
 
 Being paired with a Product Manager on an initiative is a common practice in Miro. It's like a small start-up, in a start-up. We do everything together to push things forward. Once the area of work is clear, we can begin digging into the problem space to define how and where we can start.
 
@@ -30,7 +30,7 @@ Organization and team admins lack app management controls that are needed for se
 
 How do you start designing from those two statements? Going blindly in the admin space and providing some basic controls for app management, doesn't give confidence to us, the stakeholders, and the users that we are aiming for the right things. We need to gain some empathy for our admins, by creating a persona.
 
-#### Define the persona
+##### Define the persona
 
 Gaining empathy will give us more insights into the emotional and practical spectrum of what the daily lives of admins are. Here is a persona definition:
 

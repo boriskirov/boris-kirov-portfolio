@@ -53,32 +53,39 @@ const Dashboard = ({ data }) => (
 
           <Figmastats />
 
-          <div className="ApiCard">
-            <div className="flex">
+          <div className="metric tag">
+            <div className="flex flex-center metric-header">
               <Image
                 src="/github.png"
-                className="stack-card-img"
-                width={48}
-                height={48}
+                className="metric-logo"
+                width={24}
+                height={24}
                 alt="npm"
               />
-              <small className="npm-downloads">
-                {
-                  data.user.contributionsCollection.contributionCalendar
-                    .totalContributions
-                }
-                {""} contributions this year
-              </small>
-              <small className="npm-downloads">
-                {" "}
-                {data.user.repositories.totalCount} repos
-              </small>
-              <small className="npm-downloads">
-                {data.user.followers.totalCount} followers
-              </small>
+              <h6>Github stats</h6>
             </div>
+            <div className="flex space-between">
+              <div className="metric-pill">
+                <small>Contributions this year</small>
+                <h5>
+                  {" "}
+                  {
+                    data.user.contributionsCollection.contributionCalendar
+                      .totalContributions
+                  }
+                </h5>
+              </div>
+              <div className="metric-pill">
+                <small>Repos</small>
+                <h5> {data.user.repositories.totalCount}</h5>
+              </div>
+              <div className="metric-pill">
+                <small>Followers</small>
+                <h5>{data.user.followers.totalCount}</h5>
+              </div>
+            </div>
+            <GithubMap />
           </div>
-          <GithubMap />
 
           <StravaStats />
           <CurrentlyListening />
