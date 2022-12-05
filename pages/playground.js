@@ -30,7 +30,7 @@ const Playground = () => (
 
         <div className="contentWrapper">
           <Card
-            link="/playground/my-dashboard"
+            link="/playground/dashboard"
             className="main-card"
             title="Personal Dashboard"
             description="Various API calls from different systems and platforms to generate a personal dashboard with metrics and stats."
