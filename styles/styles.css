@@ -489,8 +489,8 @@ details[open] summary {
 // Strava styles
 
 .strava {
-  padding: var(--space-xlarge);
-  margin: var(--space-small) 0 var(--space-small) 0;
+  padding: var(--space-large);
+  margin: var(--space-xsmall) 0 var(--space-xsmall) 0;
   background-color: var(--card-color-bg);
   border-radius: 12px;
 }
