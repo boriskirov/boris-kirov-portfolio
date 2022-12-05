@@ -516,51 +516,6 @@ details[open] summary {
   width: 200px;
 }
 
-// Strava styles
-
-.strava {
-  padding: var(--space-large);
-  margin: var(--space-xsmall) 0 var(--space-xsmall) 0;
-  background-color: var(--card-color-bg);
-  border-radius: 12px;
-}
-
-.stravaStats {
-  margin: 0 0 0 var(--space-large);
-}
-
-.stravaPil {
-  margin: 0 var(--space-small) 0 0;
-  max-width: 150px;
-}
-
-.stravaTag {
-  background-color: var(--orange);
-  color: var(--white);
-}
-
-.Logo {
-  width: auto;
-}
-
-.stravaIcon {
-  background: var(--card-color-bg);
-  border-radius: 24px;
-  width: fit-content;
-}
-
-.distance {
-  margin: 0;
-}
-
-.count {
-  margin: 0;
-}
-
-.time {
-  text-transform: uppercase;
-}
-
 // NPM Stats
 
 .npm-downloads {
@@ -771,13 +726,6 @@ details[open] summary {
   }
 
   .flexCentered .justContentBetween {
-    flex-direction: column;
-  }
-
-  .stravaPil {
-    min-width: auto;
-    align-items: center;
-    display: flex;
     flex-direction: column;
   }
 }

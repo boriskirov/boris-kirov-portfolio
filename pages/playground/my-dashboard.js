@@ -56,32 +56,32 @@ const Dashboard = ({ data }) => (
           <div className="metric tag">
             <div className="flex flex-center metric-header">
               <Image
-                src="/github.png"
+                src="/github.svg"
                 className="metric-logo"
                 width={24}
                 height={24}
                 alt="npm"
               />
-              <h6>Github stats</h6>
+              <h6>Github stats in 2022</h6>
             </div>
             <div className="flex space-between">
               <div className="metric-pill">
-                <small>Contributions this year</small>
-                <h5>
+                <small>Contributions</small>
+                <h6>
                   {" "}
                   {
                     data.user.contributionsCollection.contributionCalendar
                       .totalContributions
                   }
-                </h5>
+                </h6>
               </div>
               <div className="metric-pill">
                 <small>Repos</small>
-                <h5> {data.user.repositories.totalCount}</h5>
+                <h6> {data.user.repositories.totalCount}</h6>
               </div>
               <div className="metric-pill">
                 <small>Followers</small>
-                <h5>{data.user.followers.totalCount}</h5>
+                <h6>{data.user.followers.totalCount}</h6>
               </div>
             </div>
             <GithubMap />

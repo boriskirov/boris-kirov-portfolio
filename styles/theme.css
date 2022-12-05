@@ -27,7 +27,7 @@
   color: var(--dark-color-text);
 }
 
-.dark .stravaIcon,
+.dark .metric-logo,
 .dark .footer-button,
 .dark .icon {
   filter: invert(100%);

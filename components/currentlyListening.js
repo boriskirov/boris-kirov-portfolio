@@ -27,8 +27,8 @@ export default function CurrentlyListening() {
           />
         ) : (
           <Image
-            className="currentlyListeningImg"
-            src="/spotify.png"
+            className="currentlyListeningImg metric-logo"
+            src="/spotify.svg"
             alt="Spotify logo"
             width={24}
             height={24}
