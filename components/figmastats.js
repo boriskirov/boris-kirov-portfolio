@@ -8,6 +8,7 @@ const Figmastats = () => {
   const totalRuns = data?.figmaRuns.toLocaleString("en-US");
   const totalViews = data?.figmaViews.toLocaleString("en-US");
   const totalLikes = data?.figmaLikes.toLocaleString("en-US");
+  const totalInstalls = data?.figmaInstalls.toLocaleString("en-US");
 
   return (
     <div className="metric">
@@ -33,6 +34,10 @@ const Figmastats = () => {
         <div className="metric-pill">
           <small>Likes</small>
           <h6>{totalLikes}</h6>
+        </div>
+        <div className="metric-pill">
+          <small>Installs</small>
+          <h6>{totalInstalls}</h6>
         </div>
       </div>
     </div>
