@@ -66,6 +66,14 @@ const Dashboard = ({ data }) => (
             </div>
             <div className="flex space-between">
               <div className="metric-pill">
+                <small>Repos</small>
+                <h6> {data.user.repositories.totalCount}</h6>
+              </div>
+              <div className="metric-pill">
+                <small>Pull requestes</small>
+                <h6> {data.user.pullRequests.totalCount}</h6>
+              </div>
+              <div className="metric-pill">
                 <small>Contributions</small>
                 <h6>
                   {" "}
@@ -74,10 +82,6 @@ const Dashboard = ({ data }) => (
                       .totalContributions
                   }
                 </h6>
-              </div>
-              <div className="metric-pill">
-                <small>Repos</small>
-                <h6> {data.user.repositories.totalCount}</h6>
               </div>
               <div className="metric-pill">
                 <small>Followers</small>
@@ -127,6 +131,7 @@ export async function getStaticProps() {
           createdAt
           repositories {
             totalCount
+            totalDiskUsage
           }
           pullRequests {
             totalCount
