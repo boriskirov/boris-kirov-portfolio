@@ -1,5 +1,6 @@
 import useSWR from "swr";
 import Image from "next/image";
+import Metric from "./metric";
 
 const StravaStats = () => {
   const fetcher = (url) => fetch(url).then((r) => r.json());
@@ -43,11 +44,11 @@ const StravaStats = () => {
               />
               Runs
             </small>
-            <h6>{data?.countRuns.count} </h6>
+            <Metric metric={data?.countRuns.count} />
           </div>
           <div className="metric-pill">
-            <small>Distance</small>
-            <h6>{RunDistance} km</h6>
+            <small>Distance (km)</small>
+            <Metric metric={RunDistance} />
           </div>
           <div className="metric-pill">
             <small>Time</small>
@@ -70,8 +71,8 @@ const StravaStats = () => {
             <h6>{data?.countRides.count} </h6>
           </div>
           <div className="metric-pill">
-            <small>Distance</small>
-            <h6>{RideDistance} km</h6>
+            <small>Distance (km)</small>
+            <Metric metric={RideDistance} />
           </div>
           <div className="metric-pill">
             <small>Time</small>
@@ -91,7 +92,7 @@ const StravaStats = () => {
               />
               Swims
             </small>
-            <h6>{data?.countSwims.count}</h6>
+            <Metric metric={data?.countSwims.count} />
           </div>
           <div className="metric-pill">
             <small>Distance</small>

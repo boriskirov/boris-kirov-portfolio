@@ -1,14 +1,15 @@
 import useSWR from "swr";
 import Image from "next/image";
+import Metric from "./metric";
 
 const Figmastats = () => {
   const fetcher = (url) => fetch(url).then((r) => r.json());
   const { data } = useSWR("/api/figma", fetcher);
 
-  const totalRuns = data?.figmaRuns.toLocaleString("en-US");
-  const totalViews = data?.figmaViews.toLocaleString("en-US");
-  const totalLikes = data?.figmaLikes.toLocaleString("en-US");
-  const totalInstalls = data?.figmaInstalls.toLocaleString("en-US");
+  const totalRuns = data?.figmaRuns;
+  const totalViews = data?.figmaViews;
+  const totalLikes = data?.figmaLikes;
+  const totalInstalls = data?.figmaInstalls;
 
   return (
     <div className="metric">
@@ -25,19 +26,19 @@ const Figmastats = () => {
       <div className="flex space-between">
         <div className="metric-pill">
           <small>Runs</small>
-          <h6>{totalRuns}</h6>
+          <Metric metric={totalRuns} />
         </div>
         <div className="metric-pill">
           <small>Views</small>
-          <h6>{totalViews}</h6>
+          <Metric metric={totalViews} />
         </div>
         <div className="metric-pill">
           <small>Likes</small>
-          <h6>{totalLikes}</h6>
+          <Metric metric={totalLikes} />
         </div>
         <div className="metric-pill">
           <small>Installs</small>
-          <h6>{totalInstalls}</h6>
+          <Metric metric={totalInstalls} />
         </div>
       </div>
     </div>

@@ -12,6 +12,7 @@ import Npmstats from "../../components/npmstats";
 import Figmastats from "../../components/figmastats";
 import CurrentlyListening from "../../components/currentlyListening";
 import GithubMap from "../../components/githubmap";
+import Metric from "../../components/metric";
 
 import {
   ApolloClient,
@@ -67,25 +68,24 @@ const Dashboard = ({ data }) => (
             <div className="flex space-between">
               <div className="metric-pill">
                 <small>Repos</small>
-                <h6> {data.user.repositories.totalCount}</h6>
+                <Metric metric={data.user.repositories.totalCount} />
               </div>
               <div className="metric-pill">
                 <small>Pull requestes</small>
-                <h6> {data.user.pullRequests.totalCount}</h6>
+                <Metric metric={data.user.pullRequests.totalCount} />
               </div>
               <div className="metric-pill">
                 <small>Contributions</small>
-                <h6>
-                  {" "}
-                  {
+                <Metric
+                  metric={
                     data.user.contributionsCollection.contributionCalendar
                       .totalContributions
                   }
-                </h6>
+                />
               </div>
               <div className="metric-pill">
                 <small>Followers</small>
-                <h6>{data.user.followers.totalCount}</h6>
+                <Metric metric={data.user.followers.totalCount} />
               </div>
             </div>
             <GithubMap />
