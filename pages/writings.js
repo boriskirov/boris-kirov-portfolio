@@ -5,19 +5,27 @@ import Link from "next/link";
 import MainWrapper from "../components/mainWrapper";
 import Main from "../components/innerWrapper";
 import Card from "../components/card";
+import { Tab } from "@headlessui/react";
 
 import { getSortedPostsData } from "../lib/posts";
 
+import { getSortedCasesData } from "../lib/cases";
+import { getSortedCodesData } from "../lib/code-snippets";
+
 export async function getStaticProps() {
   const allPostsData = getSortedPostsData();
+  const allCasesData = getSortedCasesData();
+  const allCodesData = getSortedCodesData();
   return {
     props: {
       allPostsData,
+      allCasesData,
+      allCodesData,
     },
   };
 }
 
-export default function Writings({ allPostsData }) {
+export default function Writings({ allPostsData, allCasesData, allCodesData }) {
   return (
     <Motion>
       <MainWrapper>
@@ -38,19 +46,63 @@ export default function Writings({ allPostsData }) {
             studies, tutorials and blog posts here.
           </p>
           <div className="contentWrapper">
-            {/* Post component start */}
-            {allPostsData.map(({ id, type, description, title }) => (
-              <Card
-                key={Card.title}
-                link={`/posts/${id}`}
-                className="main-card"
-                title={title}
-                description={description}
-                type={type}
-                target=""
-              />
-            ))}
-            {/* Post component end */}
+            <Tab.Group defaultIndex={0}>
+              <Tab.List className="flex">
+                <Tab className="button">Blog posts</Tab>
+                <Tab className="button">Case studies</Tab>
+                <Tab className="button">Code snippets</Tab>
+              </Tab.List>
+              <Tab.Panels>
+                <Tab.Panel>
+                  {" "}
+                  {/* Post component start */}
+                  {allPostsData.map(({ id, type, description, title }) => (
+                    <Card
+                      key={Card.title}
+                      link={`/posts/${id}`}
+                      className="main-card"
+                      title={title}
+                      description={description}
+                      type={type}
+                      target=""
+                    />
+                  ))}
+                  {/* Post component end */}
+                </Tab.Panel>
+                <Tab.Panel>
+                  {" "}
+                  {/* Post component start */}
+                  {allCasesData.map(({ id, type, description, title }) => (
+                    <Card
+                      key={Card.title}
+                      link={`/cases/${id}`}
+                      className="main-card"
+                      title={title}
+                      description={description}
+                      type={type}
+                      target=""
+                    />
+                  ))}
+                  {/* Post component end */}
+                </Tab.Panel>
+                <Tab.Panel>
+                  {" "}
+                  {/* Post component start */}
+                  {allCodesData.map(({ id, type, description, title }) => (
+                    <Card
+                      key={Card.title}
+                      link={`/code-snippets/${id}`}
+                      className="main-card"
+                      title={title}
+                      description={description}
+                      type={type}
+                      target=""
+                    />
+                  ))}
+                  {/* Post component end */}
+                </Tab.Panel>
+              </Tab.Panels>
+            </Tab.Group>
           </div>
         </Main>
       </MainWrapper>

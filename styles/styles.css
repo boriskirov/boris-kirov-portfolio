@@ -618,6 +618,7 @@ details[open] summary {
 }
 
 .modal-input {
+  margin: var(--space-xlarge) 0;
   width: 100%;
 }
 

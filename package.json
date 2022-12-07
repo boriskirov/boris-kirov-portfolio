@@ -12,6 +12,7 @@
     "@apollo/client": "^3.7.1",
     "@elastic/react-search-ui": "^1.9.0",
     "@elastic/search-ui-app-search-connector": "^1.18.3",
+    "@headlessui/react": "^1.7.4",
     "css-select": "^5.1.0",
     "framer-motion": "^7.6.19",
     "graphql": "^16.6.0",
