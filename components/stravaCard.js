@@ -18,6 +18,10 @@ const StravaStats = () => {
     return days + "d" + " " + hours + "h" + " " + minutes + "m";
   }
 
+  const totalRuns = timeConvert(data?.countRuns.moving_time);
+  const totalRides = timeConvert(data?.countRides.moving_time);
+  const totalSwims = timeConvert(data?.countSwims.moving_time);
+
   return (
     <div>
       <div className="metric">
@@ -52,7 +56,7 @@ const StravaStats = () => {
           </div>
           <div className="metric-pill">
             <small>Time</small>
-            <h6>{timeConvert(data?.countRuns.moving_time)} </h6>
+            <h6>{totalRuns}</h6>
           </div>
         </div>
         <div className="flex space-between flex-center tag">
@@ -68,7 +72,7 @@ const StravaStats = () => {
               />
               Rides
             </small>
-            <h6>{data?.countRides.count} </h6>
+            <Metric metric={data?.countRides.count} />
           </div>
           <div className="metric-pill">
             <small>Distance (km)</small>
@@ -76,7 +80,7 @@ const StravaStats = () => {
           </div>
           <div className="metric-pill">
             <small>Time</small>
-            <h6>{timeConvert(data?.countRides.moving_time)} </h6>
+            <h6>{totalRides}</h6>
           </div>
         </div>
         <div className="flex space-between tag flex-center">
@@ -95,12 +99,12 @@ const StravaStats = () => {
             <Metric metric={data?.countSwims.count} />
           </div>
           <div className="metric-pill">
-            <small>Distance</small>
-            <h6>{SwimDistance} km</h6>
+            <small>Distance (km)</small>
+            <Metric metric={SwimDistance} />
           </div>
           <div className="metric-pill">
             <small>Time</small>
-            <h6>{timeConvert(data?.countSwims.moving_time)} </h6>
+            <h6>{totalSwims}</h6>
           </div>
         </div>
       </div>
