@@ -21,6 +21,7 @@
   --link-color-text: rgb(63, 83, 217);
   --link-color-bg: rgb(255, 207, 0);
   --card-color-bg: rgba(84, 84, 84, 0.15);
+  --card-color-hover: rgba(142, 142, 142, 0.15);
   --tag-color-bg: rgba(84, 84, 84, 0.15);
 
   --space-xxsmall: 2px;
