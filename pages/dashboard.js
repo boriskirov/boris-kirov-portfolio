@@ -32,7 +32,7 @@ const Dashboard = ({ data }) => (
         name="Boris Kirov"
       />
       <Main>
-        <Link href="/playground" className="backButton">
+        <Link href="/" className="backButton">
           Back
         </Link>
         <h1 className="heading2Xl">Dashboard</h1>
