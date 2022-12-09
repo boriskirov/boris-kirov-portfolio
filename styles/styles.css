@@ -36,16 +36,21 @@
 /* Display-P3 color, when supported. */
 @supports (color: color(display-p3 1 1 1)) {
   :root {
-    --light-color-bg: color(display-p3 0.845 0.858 1);
-    --dark-color-text: color(display-p3 0.001 0.019 0.09);
-    --dark-color-bg: color(display-p3 0.001 0.025 0.105);
-    --light-color-text: color(display-p3 0.84 0.978 1);
+    --light-color-bg: color(display-p3 0 0.016 0.07);
+    --dark-color-text: color(display-p3 0.945 0.948 1);
+
+    --dark-color-bg: color(display-p3 0.965 0.966 0.98);
+    --light-color-text: color(display-p3 0.001 0.019 0.09);
+
     --selection-color-bg: color(display-p3 0.255 0.147 0.98);
     --selection-color-text: color(display-p3 0.945 0.676 0.17);
+
     --link-color-text: color(display-p3 0.255 0.147 0.98);
     --link-color-bg: color(display-p3 0.945 0.676 0.17);
-    --card-color-bg: color(display-p3 0.44 0.495 1 / 0.08);
-    --tag-color-bg: color(display-p3 0.44 0.495 1 / 0.24);
+
+    --card-color-bg: color(display-p3 0.424 0.424 0.43 / 0.08);
+    --card-color-hover: color(display-p3 0.424 0.424 0.43 / 0.28);
+    --tag-color-bg: color(display-p3 0.98 0.982 1 / 0.12);
   }
 }
 
@@ -300,7 +305,7 @@ a.main-card:active,
 a.main-card:focus {
   text-decoration: none;
   color: inherit;
-  background-color: rgba(200, 200, 200, 0.15);
+  background-color: var(--card-color-hover);
 }
 
 .main-card[href] h6 {
@@ -342,7 +347,7 @@ a.ApiCard:active,
 a.ApiCard:focus {
   text-decoration: none;
   color: inherit;
-  background-color: var(--card-color-bg);
+  background-color: var(--card-color-hover);
 }
 
 .stack-card[href] h6 {
@@ -490,12 +495,12 @@ details[open] summary {
 }
 
 .metric {
-  background-color: var(--tag-color-bg);
+  background-color: var(--card-color-bg);
   word-break: keep-all;
   border-radius: 8px;
   margin: var(--space-large) 0 var(--space-large) 0;
   padding: var(--space-large) var(--space-xlarge);
-  border: 2px solid var(--tag-color-bg);
+  border: 1px solid var(--tag-color-bg);
 }
 
 .metric-header {
@@ -591,7 +596,7 @@ details[open] summary {
 
 .footer-button:hover,
 .footer-button:focus-visible {
-  background: rgba(133, 133, 133, 0.52);
+  background-color: var(--card-color-hover);
   cursor: pointer;
 }
 
@@ -621,15 +626,14 @@ details[open] summary {
 
 .dock-menu {
   justify-content: space-evenly;
-  background-color: var(--tag-color-bg);
+  background-color: var(--card-color-bg);
   padding: 6px;
   margin: 25% 0px;
   border-radius: 60px;
   display: flex;
   flex-direction: row;
-  border: 2px solid var(--tag-color-bg);
+  border: 1px solid var(--tag-color-bg);
   max-width: 498px;
-  box-shadow: 0px 0px 16px var(--tag-color-bg);
 }
 
 @media (max-width: 834px) {

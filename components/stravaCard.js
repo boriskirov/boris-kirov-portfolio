@@ -35,7 +35,7 @@ const StravaStats = () => {
           />
           <h6>Sport stats</h6>
         </div>
-        <div className="flex space-between flex-center tag">
+        <div className="flex space-between flex-center metric">
           <div className="metric-pill">
             <small>
               {" "}
@@ -58,7 +58,7 @@ const StravaStats = () => {
             <h6>{totalRuns}</h6>
           </div>
         </div>
-        <div className="flex space-between flex-center tag">
+        <div className="flex space-between flex-center metric">
           <div className="metric-pill">
             <small>
               {" "}
@@ -81,7 +81,7 @@ const StravaStats = () => {
             <h6>{totalRides}</h6>
           </div>
         </div>
-        <div className="flex space-between tag flex-center">
+        <div className="flex space-between flex-center metric">
           <div className="metric-pill">
             <small>
               {" "}
