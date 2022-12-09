@@ -1,5 +1,5 @@
 .theme-toggle {
-  background-image: url("../public/dark-mode.svg");
+  background-image: url("../public/light-mode.svg");
   background-repeat: no-repeat;
   width: 24px;
   height: 24px;
@@ -12,7 +12,7 @@
 }
 
 .dark .theme-toggle {
-  background-image: url("../public/light-mode.svg");
+  background-image: url("../public/dark-mode.svg");
   transform: rotate(0deg);
 }
 
@@ -47,7 +47,7 @@
 
 @media (prefers-color-scheme: dark) {
   .dark .theme-toggle {
-    background-image: url("../public/light-mode.svg");
+    background-image: url("../public/dark-mode.svg");
     transform: rotate(0deg);
   }
 
