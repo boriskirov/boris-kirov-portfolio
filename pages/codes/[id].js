@@ -2,7 +2,7 @@ import Link from "next/dist/client/link";
 import MainWrapper from "../../components/mainWrapper";
 import Main from "../../components/innerWrapper";
 import Metadata from "../../components/metadata";
-import { getAllCodeIds, getCodeData } from "../../lib/code-snippets";
+import { getAllCodeIds, getCodeData } from "../../lib/codes";
 import FeedbackForm from "../../components/feedbackForm";
 
 export async function getStaticProps({ params }) {

@@ -10,7 +10,7 @@ import { Tab } from "@headlessui/react";
 import { getSortedPostsData } from "../lib/posts";
 
 import { getSortedCasesData } from "../lib/cases";
-import { getSortedCodesData } from "../lib/code-snippets";
+import { getSortedCodesData } from "../lib/codes";
 
 export async function getStaticProps() {
   const allPostsData = getSortedPostsData();
@@ -91,7 +91,7 @@ export default function Writings({ allPostsData, allCasesData, allCodesData }) {
                   {allCodesData.map(({ id, type, description, title }) => (
                     <Card
                       key={Card.title}
-                      link={`/code-snippets/${id}`}
+                      link={`/codes/${id}`}
                       className="main-card"
                       title={title}
                       description={description}
