@@ -1,18 +1,18 @@
 import React from "react";
 
-import Motion from "../../components/motion";
-import Metadata from "../../components/metadata";
+import Motion from "../components/motion";
+import Metadata from "../components/metadata";
 import Link from "next/link";
 import Image from "next/image";
-import MainWrapper from "../../components/mainWrapper";
-import Main from "../../components/innerWrapper";
-import StravaStats from "../../components/stravaCard";
-import boris from "../../public/boris.json";
-import Npmstats from "../../components/npmstats";
-import Figmastats from "../../components/figmastats";
-import CurrentlyListening from "../../components/currentlyListening";
-import GithubMap from "../../components/githubmap";
-import Metric from "../../components/metric";
+import MainWrapper from "../components/mainWrapper";
+import Main from "../components/innerWrapper";
+import StravaStats from "../components/stravaCard";
+import boris from "../public/boris.json";
+import Npmstats from "../components/npmstats";
+import Figmastats from "../components/figmastats";
+import CurrentlyListening from "../components/currentlyListening";
+import GithubMap from "../components/githubmap";
+import Metric from "../components/metric";
 
 import {
   ApolloClient,
