@@ -10,6 +10,7 @@ module.exports = withAxiom({
   images: {
     domains: [
       "i.scdn.co", // Spotify Album Art
+      "pbs.twimg.com",
     ],
   },
 });

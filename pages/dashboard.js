@@ -41,16 +41,37 @@ const Dashboard = ({ data }) => (
           different platforms and tools.
         </p>
         <hr />
+        <div className="metric">
+          <div className="flex flex-center metric-header">
+            <Image
+              src={boris.avatar}
+              className="avatar"
+              width={24}
+              height={24}
+            />
+            <h6>Personal details</h6>
+          </div>
+          <div className="flex space-between">
+            <div className="metric-pill">
+              <small>Name</small>
+              <h6>
+                {" "}
+                {boris.firstName} {""}
+                {boris.familyName}
+              </h6>
+            </div>
+            <div className="metric-pill">
+              <small>Profession</small>
+              <h6>{boris.profession}</h6>
+            </div>
+            <div className="metric-pill">
+              <small>Location</small>
+              <h6> {boris.location.city}</h6>
+            </div>
+          </div>
+        </div>
+        <Figmastats />
         <div>
-          {/* <p>
-            {boris.firstName} {""}
-            {boris.familyName} {""}
-            {boris.profession} {""}
-            {boris.location.city}
-          </p> */}
-
-          <Figmastats />
-
           <div className="metric">
             <div className="flex flex-center metric-header">
               <Image

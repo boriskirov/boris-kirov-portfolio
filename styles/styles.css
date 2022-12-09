@@ -516,6 +516,11 @@ details[open] summary {
   width: 24px;
 }
 
+.avatar {
+  width: 24px;
+  clip-path: circle(12px at center);
+}
+
 .metric-pill {
   width: 200px;
 }
