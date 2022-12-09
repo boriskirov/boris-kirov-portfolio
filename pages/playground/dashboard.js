@@ -35,13 +35,12 @@ const Dashboard = ({ data }) => (
         <Link href="/playground" className="backButton">
           Back
         </Link>
-        <h1 className="heading2Xl">DASHBOARD</h1>
+        <h1 className="heading2Xl">Dashboard</h1>
         <p>
           This is my personal dashboard with metrics and statistics from
-          different platforms and tools. The goal of this dashboard is to
-          display and visualise performance and involvement in various projects
-          during my career.
+          different platforms and tools.
         </p>
+        <hr />
         <div>
           {/* <p>
             {boris.firstName} {""}
@@ -49,8 +48,6 @@ const Dashboard = ({ data }) => (
             {boris.profession} {""}
             {boris.location.city}
           </p> */}
-
-          {/* <Npmstats /> */}
 
           <Figmastats />
 
@@ -90,7 +87,7 @@ const Dashboard = ({ data }) => (
             </div>
             <GithubMap />
           </div>
-
+          <Npmstats />
           <StravaStats />
           <CurrentlyListening />
         </div>

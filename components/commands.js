@@ -117,45 +117,45 @@ function Commands() {
                 <td width="326" height="56">
                   <p>Action</p>
                 </td>
-                <td width="326" height="56">
+                <td width="326" height="56" align="right">
                   <p>Shortcut</p>
                 </td>
               </tr>
               <tr>
-                <td width="326">
+                <td width="326" height="56">
                   <p>Change theme</p>
                 </td>
-                <td width="225">
+                <td width="225" align="right">
                   <p>
                     <kbd className="tag shortcut">⌥ + d</kbd>
                   </p>
                 </td>
               </tr>
               <tr>
-                <td width="326">
+                <td width="326" height="56">
                   <p>Change fonts</p>
                 </td>
-                <td width="225">
+                <td width="225" align="right">
                   <p>
                     <kbd className="tag shortcut">⌥ + s</kbd>
                   </p>
                 </td>
               </tr>
               <tr>
-                <td width="326">
+                <td width="326" height="56">
                   <p>Search for content</p>
                 </td>
-                <td width="225">
+                <td width="225" align="right">
                   <p>
                     <kbd className="tag shortcut">⌥ + f</kbd>
                   </p>
                 </td>
               </tr>
               <tr>
-                <td width="326">
+                <td width="326" height="56">
                   <p>Open commands panel</p>
                 </td>
-                <td width="225">
+                <td width="225" align="right">
                   <p>
                     <kbd className="tag shortcut">⌥ + /</kbd>
                   </p>

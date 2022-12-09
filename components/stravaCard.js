@@ -46,7 +46,6 @@ const StravaStats = () => {
                 width={24}
                 height={24}
               />
-              Runs
             </small>
             <Metric metric={data?.countRuns.count} />
           </div>
@@ -70,7 +69,6 @@ const StravaStats = () => {
                 width={24}
                 height={24}
               />
-              Rides
             </small>
             <Metric metric={data?.countRides.count} />
           </div>
@@ -94,7 +92,6 @@ const StravaStats = () => {
                 width={24}
                 height={24}
               />
-              Swims
             </small>
             <Metric metric={data?.countSwims.count} />
           </div>

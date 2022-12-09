@@ -56,50 +56,56 @@ export default function Writings({ allPostsData, allCasesData, allCodesData }) {
                 <Tab.Panel>
                   {" "}
                   {/* Post component start */}
-                  {allPostsData.map(({ id, type, description, title }) => (
-                    <Card
-                      key={Card.title}
-                      link={`/posts/${id}`}
-                      className="main-card"
-                      title={title}
-                      description={description}
-                      type={type}
-                      target=""
-                    />
-                  ))}
+                  <Motion>
+                    {allPostsData.map(({ id, type, description, title }) => (
+                      <Card
+                        key={Card.title}
+                        link={`/posts/${id}`}
+                        className="main-card"
+                        title={title}
+                        description={description}
+                        type={type}
+                        target=""
+                      />
+                    ))}
+                  </Motion>
                   {/* Post component end */}
                 </Tab.Panel>
                 <Tab.Panel>
                   {" "}
-                  {/* Post component start */}
-                  {allCasesData.map(({ id, type, description, title }) => (
-                    <Card
-                      key={Card.title}
-                      link={`/cases/${id}`}
-                      className="main-card"
-                      title={title}
-                      description={description}
-                      type={type}
-                      target=""
-                    />
-                  ))}
-                  {/* Post component end */}
+                  {/* Case studies component start */}
+                  <Motion>
+                    {allCasesData.map(({ id, type, description, title }) => (
+                      <Card
+                        key={Card.title}
+                        link={`/cases/${id}`}
+                        className="main-card"
+                        title={title}
+                        description={description}
+                        type={type}
+                        target=""
+                      />
+                    ))}
+                  </Motion>
+                  {/* Case studies component end */}
                 </Tab.Panel>
                 <Tab.Panel>
                   {" "}
-                  {/* Post component start */}
-                  {allCodesData.map(({ id, type, description, title }) => (
-                    <Card
-                      key={Card.title}
-                      link={`/codes/${id}`}
-                      className="main-card"
-                      title={title}
-                      description={description}
-                      type={type}
-                      target=""
-                    />
-                  ))}
-                  {/* Post component end */}
+                  {/* Code snippets component start */}
+                  <Motion>
+                    {allCodesData.map(({ id, type, description, title }) => (
+                      <Card
+                        key={Card.title}
+                        link={`/codes/${id}`}
+                        className="main-card"
+                        title={title}
+                        description={description}
+                        type={type}
+                        target=""
+                      />
+                    ))}
+                  </Motion>
+                  {/* Code snippets component end */}
                 </Tab.Panel>
               </Tab.Panels>
             </Tab.Group>
