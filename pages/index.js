@@ -7,6 +7,7 @@ import Header from "../components/header";
 
 import MainWrapper from "../components/mainWrapper";
 import HomePageFooter from "../components/home-page-footer";
+import boris from "../public/boris.json";
 
 const Home = () => (
   <Motion>
@@ -20,19 +21,17 @@ const Home = () => (
 
       <Header />
       <div className="index-body-container" style={{ maxWidth: "672px" }}>
-        <h1 className="heading2Xl">Boris Kirov </h1>
+        <h1 className="heading2Xl">
+          {boris.firstName} {""} {boris.familyName}
+        </h1>
         <p>
-          Software designer. Currently getting things done at{" "}
+          {boris.profession}. Currently getting things done at{" "}
           <Link href="https://elastic.co" className="external" target="_blank">
-            
-              Elastic
-            
+            {boris.experience[0].company}
           </Link>
           . Previously at{" "}
           <Link href="https://miro.com" className="external" target="_blank">
-            
-              Miro.
-            
+            {boris.experience[1].company}.
           </Link>
         </p>
       </div>

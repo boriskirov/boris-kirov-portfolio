@@ -10,6 +10,7 @@ import Image from "next/image";
 import FeedbackForm from "../components/feedbackForm";
 import StravaStats from "../components/stravaCard";
 import WebStack from "../components/Webstack/webstack";
+import boris from "../public/boris.json";
 
 const About = () => (
   <Motion>
@@ -36,26 +37,27 @@ const About = () => (
           <CurrentlyListening />
           <section>
             <p>
-              <span className="dropCap">M</span>y name is Boris Kirov. I'm a
-              Bulgarian designer living in Amsterdam, The Netherlands. My care
-              for form and function makes me express myself with technology.
-              Currently I'm working at , the company behind the Elastic Stack,
-              where we help people explore and analyze data, while using the
-              power of search.
+              <span className="dropCap">M</span>y name is {boris.firstName} {""}
+              {boris.familyName}. I'm a {boris.profession} living in{" "}
+              {boris.location.city}, {boris.location.country}. My care for form
+              and function makes me express myself with technology. Currently
+              I'm working at {boris.experience[0].company} , the company behind
+              the Elastic Stack, where we help people explore and analyze data,
+              while using the power of search.
             </p>
             <p>
               My previous experience was as a Platform designer in{" "}
               <a href="https://www.miro.com" target="_blank" rel="noreferrer">
-                Miro
+                {boris.experience[1].company}
               </a>
               , the Whiteboard Platform. Before that I used to work with
               different companies like{" "}
               <a href="https://info.nl/" target="_blank" rel="noreferrer">
-                INFO
+                {boris.experience[2].company}
               </a>{" "}
               &{" "}
               <a href="https://despark.com/" target="_blank" rel="noreferrer">
-                Despark
+                {boris.experience[3].company}
               </a>{" "}
               and clients like Disney, BNP Paribas, Graydon & Tripscout. In my
               spare time, I enjoy exploring technology and building tools to

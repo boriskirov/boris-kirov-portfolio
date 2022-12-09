@@ -48,6 +48,7 @@ const Dashboard = ({ data }) => (
               className="avatar"
               width={24}
               height={24}
+              alt="avatar"
             />
             <h6>Personal details</h6>
           </div>
