@@ -20,7 +20,7 @@ const ColorPalette = () => (
         <Link href="/playground/cheatsheets" className="backButton">
           Back
         </Link>
-        <h1 className="heading2Xl">COLOR PALETTE</h1>
+        <h1 className="heading2Xl">Color schema</h1>
         <p>
           My personal color schema for creating visual schemas and architecture,
           inspired by the P3 color space.

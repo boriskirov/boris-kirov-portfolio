@@ -21,7 +21,7 @@ const MyStack = () => (
           Back
         </Link>
 
-        <h1 className="heading2Xl">TOOLBOX</h1>
+        <h1 className="heading2Xl">Toolbox</h1>
         <p>
           List of tools & software I use daily to support my interest and hunger
           on the journey of designing software. The list can constantly change

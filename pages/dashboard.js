@@ -7,12 +7,13 @@ import Image from "next/image";
 import MainWrapper from "../components/mainWrapper";
 import Main from "../components/innerWrapper";
 import StravaStats from "../components/stravaCard";
-import boris from "../public/boris.json";
+
 import Npmstats from "../components/npmstats";
 import Figmastats from "../components/figmastats";
 import CurrentlyListening from "../components/currentlyListening";
 import GithubMap from "../components/githubmap";
 import Metric from "../components/metric";
+import Boris from "../components/boris-stats";
 
 import {
   ApolloClient,
@@ -41,78 +42,48 @@ const Dashboard = ({ data }) => (
           different platforms and tools.
         </p>
         <hr />
+        <Boris />
+        <CurrentlyListening />
+        <Figmastats />
+
         <div className="metric">
           <div className="flex flex-center metric-header">
             <Image
-              src={boris.avatar}
-              className="avatar"
+              src="/github.svg"
+              className="metric-logo"
               width={24}
               height={24}
-              alt="avatar"
+              alt="npm"
             />
-            <h6>Personal details</h6>
+            <h6>Github stats in 2022</h6>
           </div>
           <div className="flex space-between">
             <div className="metric-pill">
-              <small>Name</small>
-              <h6>
-                {" "}
-                {boris.firstName} {""}
-                {boris.familyName}
-              </h6>
+              <small>Repos</small>
+              <Metric metric={data.user.repositories.totalCount} />
             </div>
             <div className="metric-pill">
-              <small>Profession</small>
-              <h6>{boris.profession}</h6>
+              <small>PRs</small>
+              <Metric metric={data.user.pullRequests.totalCount} />
             </div>
             <div className="metric-pill">
-              <small>Location</small>
-              <h6> {boris.location.city}</h6>
-            </div>
-          </div>
-        </div>
-        <Figmastats />
-        <div>
-          <div className="metric">
-            <div className="flex flex-center metric-header">
-              <Image
-                src="/github.svg"
-                className="metric-logo"
-                width={24}
-                height={24}
-                alt="npm"
+              <small>Contributions</small>
+              <Metric
+                metric={
+                  data.user.contributionsCollection.contributionCalendar
+                    .totalContributions
+                }
               />
-              <h6>Github stats in 2022</h6>
             </div>
-            <div className="flex space-between">
-              <div className="metric-pill">
-                <small>Repos</small>
-                <Metric metric={data.user.repositories.totalCount} />
-              </div>
-              <div className="metric-pill">
-                <small>PRs</small>
-                <Metric metric={data.user.pullRequests.totalCount} />
-              </div>
-              <div className="metric-pill">
-                <small>Contributions</small>
-                <Metric
-                  metric={
-                    data.user.contributionsCollection.contributionCalendar
-                      .totalContributions
-                  }
-                />
-              </div>
-              <div className="metric-pill">
-                <small>Followers</small>
-                <Metric metric={data.user.followers.totalCount} />
-              </div>
+            <div className="metric-pill">
+              <small>Followers</small>
+              <Metric metric={data.user.followers.totalCount} />
             </div>
-            <GithubMap />
           </div>
-          <Npmstats />
-          <StravaStats />
-          <CurrentlyListening />
+          <GithubMap />
         </div>
+        <Npmstats />
+        <StravaStats />
       </Main>
     </MainWrapper>
   </Motion>

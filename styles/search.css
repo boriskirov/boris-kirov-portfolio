@@ -28,25 +28,22 @@ form {
   display: flex;
   align-items: center;
   background-color: var(--card-color-bg);
-  border: 2px solid var(--card-color-bg);
+  border: 1px solid var(--card-color-bg);
   transition: all 0.3s ease-in-out;
   margin: 2px;
   height: 32px;
 }
 
 .button:hover {
-  background-color: rgba(200, 200, 200, 0.15);
+  background-color: var(--card-color-hover);
   cursor: pointer;
 }
 
-.button:active {
-  background-color: var(--blue-2);
-}
-
+.button:active,
 .button:focus,
 .button:focus-visible {
+  background-color: var(--card-color-hover);
   outline: none;
-  box-shadow: 0 0 0 4px var(--link-color-text);
 }
 
 .sui-search-box__text-input {

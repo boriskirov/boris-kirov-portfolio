@@ -39,7 +39,7 @@ export default function Writings({ allPostsData, allCasesData, allCodesData }) {
           <Link href="/" className="backButton">
             Back
           </Link>
-          <h1 className="heading2Xl">WRITINGS</h1>
+          <h1 className="heading2Xl">Writings</h1>
           <p>
             My small space where I try to think out loud about everything
             related to design, software and technology. You'll find case

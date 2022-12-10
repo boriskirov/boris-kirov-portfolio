@@ -182,6 +182,7 @@ button {
 
 img {
   width: 100%;
+  border-radius: var(--border-radius-small);
 }
 
 .metric-logo,
@@ -291,7 +292,7 @@ li.footerLi:last-child {
   text-shadow: none;
   text-decoration: none;
   padding: var(--space-small) var(--space-large);
-  margin: var(--space-xlarge) 0 0 0;
+  margin: var(--space-small) 0 var(--space-small) 0;
   background-color: var(--card-color-bg);
   display: flex;
   align-items: baseline;
@@ -322,8 +323,8 @@ a.main-card:focus {
   font-weight: 500;
   text-shadow: none;
   text-decoration: none;
-  padding: var(--space-large) var(--space-large);
-  margin: var(--space-xlarge) 0 var(--space-large) 0;
+  padding: var(--space-xsmall) var(--space-large);
+  margin: var(--space-small) 0 var(--space-small) 0;
   background-color: var(--card-color-bg);
   display: flex;
   align-items: center;
@@ -355,28 +356,11 @@ a.ApiCard:focus {
   margin: var(--space-small);
 }
 
-.stack-card[href]:hover h6,
-.ApiCard[href]:hover p {
-  background-color: var(--link-color-bg);
-  color: var(--link-color-text);
-}
-
-.stack-card[href]:active h6,
-.ApiCard[href]:active p {
-  background-color: var(--link-color-bg);
-  color: var(--link-color-text);
-}
-
-.stack-card[href]:focus h6,
-.ApiCard[href]:focus p {
-  background-color: var(--link-color-bg);
-  color: var(--link-color-text);
-}
-
 .stack-card-img {
   border-radius: var(--border-radius-small);
   aspect-ratio: 1/1;
-  width: 48px;
+  width: 24px;
+  height: 24px;
 }
 
 .currentlyListeningImg {
@@ -419,8 +403,8 @@ a.ApiCard:focus {
   font-weight: 500;
   text-shadow: none;
   text-decoration: none;
-  padding: var(--space-large);
-  margin: var(--space-xlarge) 0 0 0;
+  padding: var(--space-small) var(--space-large);
+  margin: var(--space-medium) 0 0 0;
   background-color: var(--card-color-bg);
   display: flex;
   align-items: center;
@@ -498,7 +482,7 @@ details[open] summary {
   background-color: var(--card-color-bg);
   word-break: keep-all;
   border-radius: 8px;
-  margin: var(--space-large) 0 var(--space-large) 0;
+  margin: var(--space-small) 0 var(--space-small) 0;
   padding: var(--space-large) var(--space-xlarge);
   border: 1px solid var(--tag-color-bg);
 }

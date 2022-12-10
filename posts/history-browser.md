@@ -122,16 +122,16 @@ Thank you giants for doing all the hard work!
 
 ###### Resources
 
-[Line-mode browser simulation](https://line-mode.cern.ch/www/hypertext/WWW/TheProject.html)
+- [Line-mode browser simulation](https://line-mode.cern.ch/www/hypertext/WWW/TheProject.html)
 
-[Little history of the web](https://www.w3.org/History.html)
+- [Little history of the web](https://www.w3.org/History.html)
 
-[WWW Browser](https://worldwideweb.cern.ch/browser/)
+- [WWW Browser](https://worldwideweb.cern.ch/browser/)
 
-[The ENQUIRE Manual](http://infomesh.net/2001/enquire/manual)
+- [The ENQUIRE Manual](http://infomesh.net/2001/enquire/manual)
 
-[Scanned version of the ENQUIRE Manual](https://www.w3.org/History/1980/Enquire/)
+- [Scanned version of the ENQUIRE Manual](https://www.w3.org/History/1980/Enquire/)
 
-[History of the web browsers](https://www.internetadvisor.com/the-story-of-the-web-a-history-of-internet-browsers)
+- [History of the web browsers](https://www.internetadvisor.com/the-story-of-the-web-a-history-of-internet-browsers)
 
-[Visual history of the web browser](https://eylenburg.github.io/browser_engines.htm)
+- [Visual history of the web browser](https://eylenburg.github.io/browser_engines.htm)

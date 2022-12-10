@@ -21,7 +21,7 @@ const MyStack = () => (
           Back
         </Link>
 
-        <h1 className="heading2Xl">CHEATSHEET</h1>
+        <h1 className="heading2Xl">Cheatsheets</h1>
         <p>
           Working with speed and efficiency is essential when you spend your day
           designing and coding. This section of my website is dedicated to

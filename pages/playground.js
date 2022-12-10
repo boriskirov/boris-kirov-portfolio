@@ -21,7 +21,7 @@ const Playground = () => (
         <Link href="/" className="backButton">
           Back
         </Link>
-        <h1 className="heading2Xl">PLAYGROUND</h1>
+        <h1 className="heading2Xl">Playground</h1>
         <p>
           Welcome to my playground, where I explore the functional, visual and
           collaborative side of design. Feel free to browse through the

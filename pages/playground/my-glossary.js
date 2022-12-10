@@ -20,7 +20,7 @@ const Glossary = () => (
         <Link href="/playground" className="backButton">
           Back
         </Link>
-        <h1 className="heading2Xl">GLOSSARY</h1>
+        <h1 className="heading2Xl">Glossary</h1>
         <p>
           This is my personal resource that lists the methods, practices and
           ways of working I follow in design.
