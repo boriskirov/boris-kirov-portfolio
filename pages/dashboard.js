@@ -90,7 +90,7 @@ const Dashboard = ({ data }) => (
                 <Metric metric={data.user.repositories.totalCount} />
               </div>
               <div className="metric-pill">
-                <small>Pull requestes</small>
+                <small>PRs</small>
                 <Metric metric={data.user.pullRequests.totalCount} />
               </div>
               <div className="metric-pill">

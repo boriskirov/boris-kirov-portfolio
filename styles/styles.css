@@ -505,7 +505,7 @@ details[open] summary {
 }
 
 .metric-header {
-  margin: var(--space-small) 0 var(--space-small) 0;
+  margin: var(--space-small) 0 var(--space-large) 0;
 }
 
 .metric-header > * {
@@ -522,7 +522,7 @@ details[open] summary {
 }
 
 .metric-pill {
-  width: 200px;
+  width: 33%;
 }
 
 // NPM Stats

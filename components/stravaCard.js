@@ -11,16 +11,34 @@ const StravaStats = () => {
 
   function timeConvert(num) {
     // const seconds = Math.floor(num % 60);
-    const minutes = Math.floor((num % 3600) / 60);
+
     const hours = Math.floor((num % (3600 * 24)) / 3600);
     const days = Math.floor(num / (3600 * 24));
 
-    return days + "d" + " " + hours + "h" + " " + minutes + "m";
+    return days + "d" + " " + hours + "h";
   }
 
   const totalRuns = timeConvert(data?.countRuns.moving_time);
   const totalRides = timeConvert(data?.countRides.moving_time);
   const totalSwims = timeConvert(data?.countSwims.moving_time);
+
+  const AverageRun = (
+    data?.countRuns.distance /
+    1000 /
+    data?.countRuns.count
+  ).toFixed(2);
+
+  const AverageRide = (
+    data?.countRides.distance /
+    1000 /
+    data?.countRides.count
+  ).toFixed(2);
+
+  const AverageSwim = (
+    data?.countSwims.distance /
+    1000 /
+    data?.countSwims.count
+  ).toFixed(2);
 
   return (
     <div>
@@ -54,6 +72,10 @@ const StravaStats = () => {
             <Metric metric={RunDistance} />
           </div>
           <div className="metric-pill">
+            <small>Distance avg</small>
+            <Metric metric={AverageRun} />
+          </div>
+          <div className="metric-pill">
             <small>Time</small>
             <h6>{totalRuns}</h6>
           </div>
@@ -77,6 +99,10 @@ const StravaStats = () => {
             <Metric metric={RideDistance} />
           </div>
           <div className="metric-pill">
+            <small>Distance avg</small>
+            <Metric metric={AverageRide} />
+          </div>
+          <div className="metric-pill">
             <small>Time</small>
             <h6>{totalRides}</h6>
           </div>
@@ -98,6 +124,10 @@ const StravaStats = () => {
           <div className="metric-pill">
             <small>Distance (km)</small>
             <Metric metric={SwimDistance} />
+          </div>
+          <div className="metric-pill">
+            <small>Distance avg</small>
+            <Metric metric={AverageSwim} />
           </div>
           <div className="metric-pill">
             <small>Time</small>
