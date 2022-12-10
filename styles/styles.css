@@ -323,8 +323,8 @@ a.main-card:focus {
   font-weight: 500;
   text-shadow: none;
   text-decoration: none;
-  padding: var(--space-xsmall) var(--space-large);
-  margin: var(--space-small) 0 var(--space-small) 0;
+  padding: var(--space-medium) var(--space-large);
+  margin: var(--space-medium) 0 var(--space-small) 0;
   background-color: var(--card-color-bg);
   display: flex;
   align-items: center;

@@ -6,11 +6,11 @@
 }
 
 svg > rect {
-  fill: #3f53d9;
+  fill: var(--green-1);
 }
 
 .dark rect {
-  fill: #ffd707;
+  fill: var(--blue-2);
 }
 
 .bar {
