@@ -222,7 +222,6 @@ li.footerLi:last-child {
 
 .headingM {
   margin: var(--space-small);
-  text-transform: uppercase;
   width: 100%;
 }
 
@@ -542,7 +541,7 @@ details[open] summary {
 }
 
 .dropCap {
-  font-size: calc(var(--font-size) * 6);
+  font-size: calc(var(--font-size) * 3);
   font-weight: 900;
   float: left;
   line-height: 0.45;

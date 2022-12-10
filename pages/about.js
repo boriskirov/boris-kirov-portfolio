@@ -39,36 +39,38 @@ const About = () => (
             <p>
               <span className="dropCap">M</span>y name is {boris.firstName} {""}
               {boris.familyName}. I'm a {boris.profession} living in{" "}
-              {boris.location.city}, {boris.location.country}. My care for form
-              and function makes me express myself with technology. Currently
-              I'm working at {boris.experience[0].company} , the company behind
-              the Elastic Stack, where we help people explore and analyze data,
-              while using the power of search.
+              {boris.location.city}, {boris.location.country}. I'm developing
+              skill through doing and my care for form and function makes me
+              express myself with technology.
             </p>
+            <br />
             <p>
-              My previous experience was as a Platform designer in{" "}
+              Currently I'm working at {boris.experience[0].company} , the
+              company behind the Elastic Stack, where we help people explore and
+              analyze data, while using the power of search.
+            </p>
+            <br />
+            <p>
+              I used to help{" "}
               <a href="https://www.miro.com" target="_blank" rel="noreferrer">
                 {boris.experience[1].company}
-              </a>
-              , the Whiteboard Platform. Before that I used to work with
-              different companies like{" "}
+              </a>{" "}
+              on their Platform journey . Before that{" "}
               <a href="https://info.nl/" target="_blank" rel="noreferrer">
                 {boris.experience[2].company}
               </a>{" "}
               &{" "}
               <a href="https://despark.com/" target="_blank" rel="noreferrer">
                 {boris.experience[3].company}
-              </a>{" "}
-              and clients like Disney, BNP Paribas, Graydon & Tripscout. In my
-              spare time, I enjoy exploring technology and building tools to
-              empower others to build and progress.
+              </a>
+              .
             </p>
             <p>
               {" "}
-              I am also fascinated by programs and how they can communicate with
-              each other and with us. My passion for constant experimentation in
-              the realm of design and experience consistency keeps me busy and
-              always hungry. You can always reach me via{" "}
+              My fascination for software, programs and communciation mixed with
+              passion for constant experimentation in the realm of design and
+              experience consistency keeps me busy and always hungry. You can
+              always reach me via{" "}
               <a
                 href="https://twitter.com/sboriskirov"
                 target="_blank"
@@ -86,7 +88,7 @@ const About = () => (
               </a>{" "}
               profile.
             </p>
-            <StravaStats />
+            <br />
             <p>
               Leaving time for sports like running, cycling, and jump rope is
               essential for my physical and mental health. But the most
