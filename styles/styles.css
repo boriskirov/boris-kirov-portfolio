@@ -180,6 +180,11 @@ button {
   border: none;
 }
 
+.button-group {
+  padding: 4px;
+  margin: 0 0 var(--space-xlarge) 0;
+}
+
 img {
   width: 100%;
   border-radius: var(--border-radius-small);

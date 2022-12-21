@@ -47,7 +47,7 @@ export default function Writings({ allPostsData, allCasesData, allCodesData }) {
           </p>
           <div className="contentWrapper">
             <Tab.Group defaultIndex={0}>
-              <Tab.List className="flex">
+              <Tab.List className="flex button-group">
                 <Tab className="button">Blog posts</Tab>
                 <Tab className="button">Case studies</Tab>
                 <Tab className="button">Code snippets</Tab>
