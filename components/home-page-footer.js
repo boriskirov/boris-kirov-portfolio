@@ -1,9 +1,11 @@
 import React from "react";
+
 import DarkMode from "./theme-switch";
 import FontSwap from "./font-switch";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import { DashboardIcon } from "./dashboard-icon";
 
 const HomePageFooter = () => (
   <motion.div
@@ -63,6 +65,9 @@ const HomePageFooter = () => (
       </button>
       <button title="Font swap ⌥+S" className="footer-button">
         <FontSwap />
+      </button>
+      <button className="footer-button">
+        <DashboardIcon />
       </button>
     </footer>
   </motion.div>

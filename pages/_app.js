@@ -6,6 +6,7 @@ import "../styles/equalizer.css";
 import "../styles/colors-schema.css";
 import "../styles/toast.css";
 import "../styles/search.css";
+import "../styles/rive.css";
 import Script from "next/script";
 
 const MyApp = ({ Component, pageProps }) => {
