@@ -9,7 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@apollo/client": "^3.7.2",
+    "@apollo/client": "^3.7.3",
     "@elastic/react-search-ui": "^1.9.0",
     "@elastic/search-ui-app-search-connector": "^1.18.3",
     "@headlessui/react": "^1.7.4",
