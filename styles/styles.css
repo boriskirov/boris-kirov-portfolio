@@ -231,6 +231,11 @@ li.footerLi:last-child {
   width: 100%;
 }
 
+.smallHeading {
+  margin: var(--space-xxsmall) var(--space-small);
+  width: 100%;
+}
+
 .list-style-circle {
   list-style-type: circle;
 }

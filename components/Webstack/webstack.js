@@ -7,7 +7,7 @@ const WebStack = () => {
   return (
     <details className="dic-card">
       <summary aria-haspopup="true" className="headingM">
-        Everything here works because of
+        Techstack
       </summary>
 
       {data.map((webstack) => (
@@ -30,7 +30,7 @@ const WebStack = () => {
               className="stack-card-img"
               src={webstack.image}
             />
-            <h6 className="headingM">{webstack.name}</h6>
+            <small className="smallHeading">{webstack.name}</small>
           </div>
         </motion.a>
       ))}
