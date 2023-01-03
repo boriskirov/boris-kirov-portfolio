@@ -1,4 +1,5 @@
 import data from "./footer-data";
+import CurrentYear from "../currentYear";
 
 const Footer = () => (
   <footer>
@@ -7,7 +8,9 @@ const Footer = () => (
         <li className="footerLi">
           {" "}
           <a href="../BorisKirov_Resume.pdf" rel="noopener noreferrer">
-            <small>Resume 2021 © </small>
+            <small>
+              Resume <CurrentYear />©
+            </small>
           </a>
         </li>
         <li className="footerLi">
