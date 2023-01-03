@@ -2,16 +2,33 @@
   "firstName": "Boris",
   "familyName": "Kirov",
   "nationality": "Bulgarian",
-  "profession": "Software designer",
-  "yearsOfExperience": "8",
-  "avatar": "https://pbs.twimg.com/profile_images/1507287646133010434/Cx1ufZpO_400x400.jpg",
+  "country": "Bulgaria",
+  "city": "Sofia",
+  "shortIntro": "Boris Kirov is a Software designer developing skills through doing, and focused on creating better software, processes and communication between people and machines.",
+  "LongIntro": "Boris Kirov is a Software designer developing skills through doing, with care for form and function he expresses himself with technology. His fascination for software, programs and communciation mixed with passion for constant experimentation in the realm of design and experience consistency keeps him busy and always hungry.",
+  "education": [
+    {
+      "primaryDegree": "B.S. in Finance & Economics",
+      "secondaryDegree": "Minor in Advertising",
+      "university": "New Bulgarian University",
+      "city": "Sofia",
+      "country": "Bulgaria"
+    }
+  ],
   "location": {
     "city": "Amsterdam",
     "country": "The Netherlands",
-    "province": "Noord-Holland"
+    "province": "Noord-Holland",
+    "screenshot": "/location.png"
   },
+  "profession": "Software designer",
+  "yearsOfExperience": "8",
+  "avatar": "https://pbs.twimg.com/profile_images/1507287646133010434/Cx1ufZpO_400x400.jpg",
   "website": "www.boriskirov.me",
   "twitter": "@sboriskirov",
+  "github": "boriskirov",
+  "jobTitle": "Senior Product Designer",
+  "currentCompany": "Elastic",
   "experience": [
     {
       "id": 0,

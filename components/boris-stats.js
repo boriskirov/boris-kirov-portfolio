@@ -12,17 +12,13 @@ export default function Boris({}) {
           height={24}
           alt="avatar"
         />
-        <h6>Personal details</h6>
+        <h6>
+          {" "}
+          {boris.firstName} {""}
+          {boris.familyName}
+        </h6>
       </div>
       <div className="flex space-between">
-        <div className="metric-pill">
-          <small>Name</small>
-          <h6>
-            {" "}
-            {boris.firstName} {""}
-            {boris.familyName}
-          </h6>
-        </div>
         <div className="metric-pill">
           <small>Profession</small>
           <h6>{boris.profession}</h6>
@@ -30,6 +26,10 @@ export default function Boris({}) {
         <div className="metric-pill">
           <small>Location</small>
           <h6> {boris.location.city}</h6>
+        </div>
+        <div className="metric-pill">
+          <small>Twitter</small>
+          <h6> {boris.twitter}</h6>
         </div>
       </div>
     </div>
