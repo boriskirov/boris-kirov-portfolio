@@ -34,7 +34,6 @@ const About = () => (
             width={672}
             height={460}
           />
-          <CurrentlyListening />
           <section>
             <p>
               <span className="dropCap">M</span>y name is {boris.firstName} {""}
@@ -43,7 +42,8 @@ const About = () => (
               skill through doing and my care for form and function makes me
               express myself with technology.
             </p>
-            <br />
+          </section>
+          <section>
             <p>
               Currently I'm working at {boris.experience[0].company} , the
               company behind the Elastic Stack, where we help people explore and
@@ -88,7 +88,8 @@ const About = () => (
               </a>{" "}
               profile.
             </p>
-            <br />
+          </section>
+          <section>
             <p>
               Leaving time for sports like running, cycling, and jump rope is
               essential for my physical and mental health. But the most
@@ -118,15 +119,14 @@ const About = () => (
               . Before I used to collaborate with clients like Tea House Sofia,
               FITC Amsterdam, and others.
             </p>
-          </section>
-          <section>
             <WebStack />
-            <FeedbackForm
-              description={
-                "You want to share or reach out regarding something I wrote, or you want to have a friendly chat with me? Send me a DM in Twitter."
-              }
-            />
-          </section>{" "}
+          </section>
+
+          <FeedbackForm
+            description={
+              "You want to share or reach out regarding something I wrote, or you want to have a friendly chat with me? Send me a DM in Twitter."
+            }
+          />
         </div>
       </Main>
       <Footer />
