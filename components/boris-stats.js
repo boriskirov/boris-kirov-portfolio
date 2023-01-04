@@ -32,6 +32,17 @@ export default function Boris({}) {
           <h6> {boris.twitter}</h6>
         </div>
       </div>
+      <div>
+        <br />
+      </div>
+      <div className="location-screenshot">
+        <Image
+          src={boris.location.screenshot}
+          layout="responsive"
+          width={672}
+          height={180}
+        />
+      </div>
     </div>
   );
 }
