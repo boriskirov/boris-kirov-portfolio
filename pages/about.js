@@ -5,10 +5,8 @@ import Link from "next/link";
 import MainWrapper from "../components/mainWrapper";
 import Main from "../components/innerWrapper";
 import Footer from "../components/Footer/footer";
-import CurrentlyListening from "../components/currentlyListening";
 import Image from "next/image";
 import FeedbackForm from "../components/feedbackForm";
-import StravaStats from "../components/stravaCard";
 import WebStack from "../components/Webstack/webstack";
 import boris from "../public/boris.json";
 
@@ -25,6 +23,7 @@ const About = () => (
         <Link href="/" className="backButton">
           Back
         </Link>
+
         <h1 className="heading2Xl">Здрасти,</h1>
         <div className="contentWrapper">
           <Image
@@ -122,6 +121,42 @@ const About = () => (
             <WebStack />
           </section>
 
+          <div className="timeline-main-container">
+            <div className="timeline-wrapper">
+              <div>
+                <a className="timeline-link">
+                  <i className="timeline-icon">
+                    <Image
+                      src="/vercel.png"
+                      className="stack-card-img"
+                      width={24}
+                      height={24}
+                      alt="icon test"
+                    />
+                  </i>
+                </a>
+              </div>
+              <i className="timeline-spacer"></i>
+              <div className="timeline-details">Timeline details</div>
+            </div>
+            <div className="timeline-wrapper">
+              <div>
+                <a className="timeline-link">
+                  <i className="timeline-icon">
+                    <Image
+                      src="/vercel.png"
+                      className="stack-card-img"
+                      width={24}
+                      height={24}
+                      alt="icon test"
+                    />
+                  </i>
+                </a>
+              </div>
+              <i className="timeline-spacer"></i>
+              <div className="timeline-details">Timeline details</div>
+            </div>
+          </div>
           <FeedbackForm
             description={
               "You want to share or reach out regarding something I wrote, or you want to have a friendly chat with me? Send me a DM in Twitter."
