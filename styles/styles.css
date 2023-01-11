@@ -32,6 +32,7 @@
   --space-xlarge: 24px;
 
   --border-radius-small: 8px;
+  --border-radius-circle: 80px;
 }
 
 /* Display-P3 color, when supported. */
@@ -307,7 +308,7 @@ li.footerLi:last-child {
   display: flex;
   align-items: baseline;
   flex-direction: column;
-  border-radius: 8px;
+  border-radius: var(--border-radius-small);
   border: 1px solid var(--tag-color-bg);
 }
 
@@ -478,7 +479,7 @@ details[open] summary {
   background-color: var(--tag-color-bg);
   line-height: 1.4;
   word-break: keep-all;
-  border-radius: 8px;
+  border-radius: var(--border-radius-small);
   border: 1px solid var(--tag-color-bg);
 }
 
@@ -493,7 +494,7 @@ details[open] summary {
 .metric {
   background-color: var(--card-color-bg);
   word-break: keep-all;
-  border-radius: 8px;
+  border-radius: var(--border-radius-small);
   margin: var(--space-small) 0 var(--space-small) 0;
   padding: var(--space-large) var(--space-xlarge);
   border: 1px solid var(--tag-color-bg);
@@ -533,7 +534,7 @@ details[open] summary {
   width: 32px;
   height: 32px;
   background: var(--card-color-bg);
-  border-radius: 80px;
+  border-radius: var(--border-radius-circle);
   border: 1px solid var(--card-color-bg);
 }
 
@@ -626,7 +627,7 @@ details[open] summary {
 
 .footer-button {
   padding: 8px;
-  border-radius: 60px;
+  border-radius: var(--border-radius-circle);
   cursor: pointer;
   display: flex;
   flex-direction: column;
@@ -672,7 +673,7 @@ details[open] summary {
   background-color: var(--card-color-bg);
   padding: 6px;
   margin: 25% 0px;
-  border-radius: 60px;
+  border-radius: var(--border-radius-circle);
   display: flex;
   flex-direction: row;
   border: 1px solid var(--tag-color-bg);
