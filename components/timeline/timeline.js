@@ -1,5 +1,4 @@
-import { motion } from "framer-motion";
-import boris from "../public/boris.json";
+import boris from "../../public/boris.json";
 import Image from "next/image";
 
 const Timeline = () => {

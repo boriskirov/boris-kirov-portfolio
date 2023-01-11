@@ -10,7 +10,7 @@ import Image from "next/image";
 import FeedbackForm from "../components/feedbackForm";
 
 import boris from "../public/boris.json";
-import Timeline from "../components/timeline";
+import Timeline from "../components/timeline/timeline";
 
 const About = () => (
   <Motion>
