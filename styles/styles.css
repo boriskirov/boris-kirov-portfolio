@@ -533,6 +533,8 @@ details[open] summary {
   width: 32px;
   height: 32px;
   background: var(--card-color-bg);
+  border-radius: 80px;
+  border: 1px solid var(--card-color-bg);
 }
 
 .timeline-item {
@@ -554,6 +556,10 @@ details[open] summary {
 
 .timeline-info {
   padding: 0 var(--space-medium);
+}
+
+.timeline-opacity-half {
+  opacity: 0.5;
 }
 
 // NPM Stats

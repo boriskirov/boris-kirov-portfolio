@@ -16,7 +16,9 @@ const Timeline = () => {
             <span>
               <strong>{boris.experience[0].role}</strong>
             </span>
-            <small>{boris.experience[0].company}</small>
+            <small className="timeline-opacity-half">
+              {boris.experience[0].company}
+            </small>
             <small>{boris.experience[0].dates}</small>
           </div>
         </li>
@@ -31,7 +33,9 @@ const Timeline = () => {
             <span>
               <strong>{boris.experience[1].role}</strong>
             </span>
-            <small>{boris.experience[1].company}</small>
+            <small className="timeline-opacity-half">
+              {boris.experience[1].company}
+            </small>
             <small>{boris.experience[1].dates}</small>
           </div>
         </li>
@@ -61,7 +65,9 @@ const Timeline = () => {
             <span>
               <strong>{boris.experience[3].role}</strong>
             </span>
-            <small>{boris.experience[3].company}</small>
+            <small className="timeline-opacity-half">
+              {boris.experience[3].company}
+            </small>
             <small>{boris.experience[3].dates}</small>
           </div>
         </li>
