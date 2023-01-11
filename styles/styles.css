@@ -541,7 +541,7 @@ details[open] summary {
   align-items: flex-start;
 }
 
-li::before .timeline-item {
+.timeline-item::before {
   position: absolute;
   bottom: calc(100% - 100px);
   left: 11px;
@@ -551,7 +551,7 @@ li::before .timeline-item {
   content: "";
 }
 
-.timline-info {
+.timeline-info {
   padding: 0 var(--space-medium);
 }
 
