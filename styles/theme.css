@@ -41,7 +41,8 @@
 }
 
 .dark .footer-button,
-.dark .metric-logo {
+.dark .metric-logo,
+.dark .timeline-icon {
   filter: invert(0%);
 }
 

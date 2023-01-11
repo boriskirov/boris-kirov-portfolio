@@ -488,6 +488,8 @@ details[open] summary {
   padding: var(--space-small) var(--space-medium);
 }
 
+// Metric
+
 .metric {
   background-color: var(--card-color-bg);
   word-break: keep-all;
@@ -516,6 +518,41 @@ details[open] summary {
 
 .metric-pill {
   width: 33%;
+}
+
+// Timline
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+}
+
+.timeline-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.timeline-item {
+  margin: 0 0 48px 0px;
+  position: relative;
+  display: inline-flex;
+  align-items: flex-start;
+}
+
+li .timeline-item::before {
+  position: absolute;
+  bottom: calc(100% - 100px);
+  left: 11px;
+  width: 2px;
+  height: 70px;
+  border-left: 2px dashed var(--tag-color-bg);
+  content: "";
+}
+
+.timline-info {
+  padding: 0 var(--space-medium);
 }
 
 // NPM Stats
