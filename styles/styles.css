@@ -530,8 +530,9 @@ details[open] summary {
 }
 
 .timeline-icon {
-  width: 24px;
-  height: 24px;
+  width: 32px;
+  height: 32px;
+  background: var(--card-color-bg);
 }
 
 .timeline-item {
@@ -543,11 +544,11 @@ details[open] summary {
 
 .timeline-item::before {
   position: absolute;
-  bottom: calc(100% - 100px);
-  left: 11px;
+  bottom: calc(100% - 104px);
+  left: 14px;
   width: 2px;
   height: 70px;
-  border-left: 2px dashed var(--tag-color-bg);
+  border-left: 2px dashed var(--blue-2);
   content: "";
 }
 

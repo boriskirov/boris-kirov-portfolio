@@ -63,7 +63,8 @@
   }
 
   .footer-button,
-  .metric-logo {
+  .metric-logo,
+  .timeline-icon {
     filter: invert(100%);
   }
 }
