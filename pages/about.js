@@ -27,13 +27,7 @@ const About = () => (
         </Link>
         <h1 className="heading2Xl">Здрасти,</h1>
         <div className="contentWrapper">
-          <Image
-            src="/me.png"
-            alt="About me photo"
-            layout="responsive"
-            width={672}
-            height={460}
-          />
+          <Image src="/me.png" alt="About me photo" width={672} height={460} />
           <section>
             <p>
               <span className="dropCap">M</span>y name is {boris.firstName} {""}
