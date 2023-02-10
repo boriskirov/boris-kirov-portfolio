@@ -4,6 +4,11 @@ const HighlightsData = [
     project: "Handoff Notes",
     url: "https://www.linkedin.com/posts/boris-kirov-b6b110a4_a-list-of-the-best-figma-plugins-for-writers-activity-7026547999312879616--teA?utm_source=share&utm_medium=member_desktop",
   },
+  {
+    title: "Storage Explorer APM",
+    project: "Elastic",
+    url: "https://www.elastic.co/guide/en/kibana/master//storage-explorer.html",
+  },
   //   {
   //     title: "Mirotone 1,000,000 downloads",
   //     project: "Mirotone",
