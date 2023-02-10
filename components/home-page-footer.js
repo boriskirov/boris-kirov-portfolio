@@ -18,12 +18,12 @@ const HomePageFooter = () => (
     transition={{ ease: "easeOut", duration: 0.5 }}
   >
     <footer className="dock-menu">
-      <Link href="./about" title="About">
+      <Link href="./about" title="About" passHref>
         <div className="footer-button">
           <Image src="/about.svg" alt="About me icon" width={24} height={24} />
         </div>
       </Link>
-      <Link href="./playground" title="Playground">
+      <Link href="./playground" title="Playground" passHref>
         <div className="footer-button">
           <Image
             src="/playground.svg"
@@ -33,7 +33,7 @@ const HomePageFooter = () => (
           />
         </div>
       </Link>
-      <Link href="./writings" title="Writings">
+      <Link href="./writings" title="Writings" passHref>
         <div className="footer-button">
           <Image
             src="/writings.svg"
@@ -43,12 +43,12 @@ const HomePageFooter = () => (
           />
         </div>
       </Link>
-      <Link href="./talks" title="Talks">
+      <Link href="./talks" title="Talks" passHref>
         <div className="footer-button">
           <Image src="/talks.svg" alt="Talks icon" width={24} height={24} />
         </div>
       </Link>
-      <Link href="./dashboard" title="Dashboard" type="button">
+      <Link href="./dashboard" title="Dashboard" type="button" passHref>
         <div className="footer-button">
           <Image
             src="/dashboard.svg"

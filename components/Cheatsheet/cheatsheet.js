@@ -12,6 +12,7 @@ const Cheatsheet = () => {
           className={cheatsheet.class}
           target={cheatsheet.target}
           rel="noreferrer"
+          passHref
         >
           <h6 className="headingM">{cheatsheet.name}</h6>
           <small>{cheatsheet.description}</small>

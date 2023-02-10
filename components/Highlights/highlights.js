@@ -17,8 +17,8 @@ const Highlights = () => (
       <ul>
         {HighlightsData.map((highlights) => {
           return (
-            <div className="metric">
-              <a href={highlights.url} target="_blank">
+            <div className="metric" key={highlights.title}>
+              <a href={highlights.url} target="_blank" rel="noreferrer">
                 <small>{highlights.title}</small>
               </a>
             </div>

@@ -11,6 +11,7 @@ const Timeline = () => {
             width={24}
             height={24}
             className="timeline-icon"
+            alt="Timeline icon"
           />
           <div className="timeline-info">
             <span>
@@ -28,6 +29,7 @@ const Timeline = () => {
             width={24}
             height={24}
             className="timeline-icon"
+            alt="Timeline icon"
           />
           <div className="timeline-info">
             <span>
@@ -45,6 +47,7 @@ const Timeline = () => {
             width={24}
             height={24}
             className="timeline-icon"
+            alt="Timeline icon"
           />
           <div className="timeline-info">
             <span>
@@ -60,6 +63,7 @@ const Timeline = () => {
             width={24}
             height={24}
             className="timeline-icon"
+            alt="Timeline icon"
           />
           <div className="timeline-info">
             <span>

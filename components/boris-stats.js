@@ -41,6 +41,7 @@ export default function Boris({}) {
           layout="responsive"
           width={672}
           height={180}
+          alt="location"
         />
       </div>
     </div>

@@ -3,7 +3,7 @@ export default function GithubMap({}) {
     <div className="tag">
       <img
         src="https://ghchart.rshah.org/f06a8b/boriskirov"
-        alt="Boris Github chart 2022"
+        alt="Boris Github chart"
       ></img>
     </div>
   );
