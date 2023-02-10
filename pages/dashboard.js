@@ -8,7 +8,6 @@ import MainWrapper from "../components/mainWrapper";
 import Main from "../components/innerWrapper";
 import StravaStats from "../components/stravaCard";
 
-import Npmstats from "../components/npmstats";
 import Figmastats from "../components/figmastats";
 import CurrentlyListening from "../components/currentlyListening";
 import GithubMap from "../components/githubmap";
@@ -22,6 +21,7 @@ import {
   createHttpLink,
 } from "@apollo/client";
 import { setContext } from "@apollo/client/link/context";
+import Highlights from "../components/Highlights/highlights";
 
 const Dashboard = ({ data }) => (
   <Motion>
@@ -55,7 +55,7 @@ const Dashboard = ({ data }) => (
               height={24}
               alt="npm"
             />
-            <h6>Github stats in 2022</h6>
+            <h6>Github stats</h6>
           </div>
           <div className="flex space-between">
             <div className="metric-pill">
@@ -84,6 +84,7 @@ const Dashboard = ({ data }) => (
         </div>
         {/* <Npmstats /> */}
         <StravaStats />
+        <Highlights />
       </Main>
     </MainWrapper>
   </Motion>

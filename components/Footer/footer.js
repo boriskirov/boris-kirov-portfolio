@@ -7,7 +7,7 @@ const Footer = () => (
       <ul className="footerList">
         <li className="footerLi">
           {" "}
-          <a href="../BorisKirov_Resume.pdf" rel="noopener noreferrer">
+          <a href="../BorisKirov_Resume.pdf" rel="noopener noreferrer" download>
             <small>
               Resume <CurrentYear />©
             </small>
