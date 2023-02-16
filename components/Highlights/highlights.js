@@ -1,6 +1,5 @@
 import HighlightsData from "./highlights-data";
 import Image from "next/image";
-import Metric from "../metric";
 
 const Highlights = () => (
   <div className="metric">
@@ -19,7 +18,10 @@ const Highlights = () => (
         return (
           <div className="metric" key={highlights.title}>
             <div>
-              <small>{highlights.project}</small>
+              <div className="flex space-between">
+                <small>{highlights.project}</small>
+                <small>{highlights.date}</small>
+              </div>
               <a href={highlights.url} target="_blank" rel="noreferrer">
                 <h6>{highlights.title}</h6>
               </a>
