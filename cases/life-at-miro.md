@@ -6,7 +6,7 @@ type: "Case study"
 image: "https://www.boriskirov.me/meta-tag-miro.png"
 ---
 
-[Miro](https://www.miro.com) is an online collaborative whiteboard platform, a canvas-based product that focuses on bringing teams together. As of today, Miro is an established leader invisual collaboration. My work there stretches in all aspects of design, from product definition, strategy alignment, feature releases, and launches to experimentation and research.
+[Miro](https://www.miro.com) is an online collaborative whiteboard platform, a canvas-based product that focuses on bringing teams together. As of today, Miro is an established leader in visual collaboration. My work there stretches in all aspects of design, from product definition, strategy alignment, feature releases, and launches to experimentation and research.
 
 ##### History
 
@@ -18,14 +18,14 @@ The Miro Platform is a unique sub-service that allows for external or internal p
 
 ![Life at Miro](../../life-at-miro-1.png)
 
-You can say I became a Lead Designer for the stream. Constantly thinking about the connetiviti and stickiness between the teams. I was both designing for end users and for developers. You can break it down into canvas mechanics, developer experience, app creation, app discovery,and growth.
+You can say I became a Lead Designer for the stream. Constantly thinking about the connectivity and stickiness between the teams. I was both designing for end users and for developers. You can break it down into canvas mechanics, developer experience, app creation, app discovery,and growth.
 
 ![Life at Miro](../../platform-adoption-framework.png)
 
 ##### Panel importance
 
-One of the biggest and most important projects that I've worked on was to collaborate and contribute to the panels UX in Miro. We were looking for a scalable way to empower external & internal creators to create applications and featires in Miro, by also providing a native behavior to our end-users. Solving unlimited scenarios from gallery-focused applications supported by Drag’n’Drop API to automation and configuration of widgets or applications.
-The design was inspured by OS, where similar panels allow for control and flexible information structure. We also thought about allowing developers to configure their panel behavior for a delightful two-way app experience.
+One of the biggest and most important projects that I've worked on was to collaborate and contribute to the panels UX in Miro. We were looking for a scalable way to empower external & internal creators to create applications and features in Miro, by also providing a native behavior to our end-users. Solving unlimited scenarios from gallery-focused applications supported by Drag’n’Drop API to automation and configuration of widgets or applications.
+The design was inspired by OS, where similar panels allow for control and flexible information structure. We also thought about allowing developers to configure their panel behavior for a delightful two-way app experience.
 
 ![DCI P3 range](../../panel-ux-1.png)
 
@@ -55,7 +55,7 @@ At this point in time there wasn't enough engineering capacity for such a redesi
 
 ![Async collaboration](../../async.png)
 
-Later on we also used this method to uplift our Developer relations by re-designing our App montly Digest, which was a montly email to provide better exposure and more effective convesration with our developers.
+Later on we also used this method to uplift our Developer relations by re-designing our App montly Digest, which was a montly email to provide better exposure and more effective conversation with our developers.
 
 ![App monthly digest](../../app-montly-digest.png)
 
