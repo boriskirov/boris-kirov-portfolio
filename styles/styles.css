@@ -191,6 +191,10 @@ img {
   border-radius: var(--border-radius-small);
 }
 
+video {
+  padding: var(--space-large);
+}
+
 .metric-logo,
 .footer-button,
 .icon {
@@ -293,6 +297,10 @@ li.footerLi:last-child {
   flex-wrap: wrap;
   width: 100%;
   margin-top: 5vw;
+}
+
+.contentWrapper > p {
+  margin: var(--space-large) 0;
 }
 
 .main-card {

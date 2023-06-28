@@ -48,6 +48,16 @@ const HomePageFooter = () => (
           <Image src="/talks.svg" alt="Talks icon" width={24} height={24} />
         </div>
       </Link>
+      <Link href="./photography" title="Photography" passHref>
+        <div className="footer-button">
+          <Image
+            src="/photography.svg"
+            alt="Photography"
+            width={24}
+            height={24}
+          />
+        </div>
+      </Link>
       <Link href="./dashboard" title="Dashboard" type="button" passHref>
         <div className="footer-button">
           <Image
