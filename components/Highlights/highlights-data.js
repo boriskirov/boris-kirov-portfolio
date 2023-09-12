@@ -1,5 +1,11 @@
 const HighlightsData = [
   {
+    title: "Elastic AI Assistant and Profiling GA",
+    project: "Elastic",
+    date: "12.09.2023",
+    url: "https://www.elastic.co/blog/whats-new-elastic-observability-8-10-0",
+  },
+  {
     title: "Mirotone 1,000,000 downloads",
     project: "Mirotone",
     date: "16.02.2023",
