@@ -1,5 +1,19 @@
 const HighlightsData = [
   {
+    title: "Elastic APM for iOS and Android Native apps",
+    project: "Elastic",
+    date: "09.02.2024",
+    url: "https://www.elastic.co/blog/elastic-apm-for-ios-and-android-native-apps",
+  },
+  {
+    title:
+      "Turbo-charging AI Ops with the Elastic Observability AI Assistant: ElasticON",
+    project: "Elastic",
+    date: "11.10.2023",
+    url: "https://www.youtube.com/watch?v=L_vYMzksZPs",
+  },
+
+  {
     title: "Elastic AI Assistant and Profiling GA",
     project: "Elastic",
     date: "12.09.2023",
