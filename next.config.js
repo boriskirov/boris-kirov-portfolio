@@ -1,8 +1,5 @@
-// next.config.js - wrap your config withAxiom()
-const { withAxiom } = require("next-axiom");
-
 /* next.config.js  */
-module.exports = withAxiom({
+module.exports = {
   i18n: {
     locales: ["en"],
     defaultLocale: "en",
@@ -13,4 +10,4 @@ module.exports = withAxiom({
       "pbs.twimg.com",
     ],
   },
-});
+};
