@@ -25,7 +25,8 @@ const Home = () => (
           {boris.firstName} {""} {boris.familyName}
         </h1>
         <p>
-          {boris.profession}. Currently getting things done at{" "}
+          {boris.profession}. Prooving the value of design by getting things
+          done at{" "}
           <Link href="https://elastic.co" className="external" target="_blank">
             {boris.experience[0].company}
           </Link>
