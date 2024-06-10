@@ -14,13 +14,6 @@ import GithubMap from "../components/githubmap";
 import Metric from "../components/metric";
 import Boris from "../components/boris-stats";
 
-import {
-  ApolloClient,
-  InMemoryCache,
-  gql,
-  createHttpLink,
-} from "@apollo/client";
-import { setContext } from "@apollo/client/link/context";
 import Highlights from "../components/Highlights/highlights";
 
 const Dashboard = ({ data }) => (
@@ -91,70 +84,3 @@ const Dashboard = ({ data }) => (
 );
 
 export default Dashboard;
-
-export async function getStaticProps() {
-  const httpLink = createHttpLink({
-    uri: "https://api.github.com/graphql",
-  });
-
-  const authLink = setContext((_, { headers }) => {
-    return {
-      headers: {
-        ...headers,
-        authorization: `Bearer ${process.env.GITHUB_TOKEN}`,
-      },
-    };
-  });
-
-  const client = new ApolloClient({
-    link: authLink.concat(httpLink),
-    cache: new InMemoryCache(),
-  });
-
-  const { data } = await client.query({
-    query: gql`
-      {
-        user(login: "boriskirov") {
-          name
-          company
-          bio
-          location
-          createdAt
-          repositories {
-            totalCount
-            totalDiskUsage
-          }
-          pullRequests {
-            totalCount
-          }
-          repositoriesContributedTo {
-            totalCount
-          }
-          followers {
-            totalCount
-          }
-          contributionsCollection {
-            contributionCalendar {
-              colors
-              totalContributions
-              weeks {
-                contributionDays {
-                  color
-                  contributionCount
-                  date
-                  weekday
-                }
-                firstDay
-              }
-            }
-          }
-        }
-      }
-    `,
-  });
-  return {
-    props: {
-      data,
-    },
-  };
-}
