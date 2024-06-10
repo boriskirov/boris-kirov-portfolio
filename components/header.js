@@ -6,7 +6,6 @@ import Image from "next/image";
 import Motion from "./motion";
 import { useCallback, useState, useEffect } from "react";
 
-import { log } from "next-axiom";
 import Commands from "./commands";
 
 export default function Header() {
