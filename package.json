@@ -9,7 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@elastic/react-search-ui": "^1.9.0",
+    "@elastic/react-search-ui": "^1.21.5",
     "@elastic/search-ui-app-search-connector": "^1.18.3",
     "@headlessui/react": "^1.7.4",
     "css-select": "^5.1.0",
