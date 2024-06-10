@@ -37,7 +37,7 @@ const Dashboard = ({ data }) => (
         <hr />
         <Boris />
         <CurrentlyListening />
-        <Figmastats />
+        {/* <Figmastats />
 
         <div className="metric">
           <div className="flex flex-center metric-header">
@@ -74,7 +74,7 @@ const Dashboard = ({ data }) => (
             </div>
           </div>
           <GithubMap />
-        </div>
+        </div> */}
         {/* <Npmstats /> */}
         <StravaStats />
         <Highlights />
