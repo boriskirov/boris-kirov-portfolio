@@ -13,7 +13,7 @@
     "@elastic/search-ui-app-search-connector": "^1.18.3",
     "@headlessui/react": "^1.7.4",
     "css-select": "^5.1.0",
-    "framer-motion": "^8.0.2",
+    "framer-motion": "^11.3.30",
     "graphql": "^16.6.0",
     "gray-matter": "^4.0.3",
     "lodash": "^4.17.21",
