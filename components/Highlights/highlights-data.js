@@ -1,5 +1,12 @@
 const HighlightsData = [
   {
+    title:
+      "Elastic: A Leader in the 2024 Gartner® Magic Quadrant™ for Observability Platforms",
+    project: "Elastic",
+    date: "15.08.2024",
+    url: "https://www.elastic.co/resources/observability/analyst-report/gartner-magic-quadrant-observability-platforms",
+  },
+  {
     title: "Elastic APM for iOS and Android Native apps",
     project: "Elastic",
     date: "09.02.2024",
