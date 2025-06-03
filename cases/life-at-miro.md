@@ -1,7 +1,7 @@
 ---
 title: Life at Miro
 description: "Working as a leading platform designer for Miro on topics like frameworks, core, developer experience, app experience and design system & accesibility during their hypergrowht of 2020-2022."
-date: "02-21-2022"
+date: "2022-02-21"
 type: "Case study"
 image: "https://www.boriskirov.me/meta-tag-miro.png"
 ---

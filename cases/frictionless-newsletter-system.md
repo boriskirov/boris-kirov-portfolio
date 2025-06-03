@@ -1,7 +1,7 @@
 ---
 title: "Frictionless newsletter system"
 description: "How to build a low-friction, low-cost blogging system with NextJS, Notion & MailerLite"
-date: "06-03-2025"
+date: "2025-06-03"
 type: "Case study"
 image: "https://www.boriskirov.me/frictionless-blog.png"
 ---
@@ -133,8 +133,6 @@ In order to speed up and automate my process even more, I’m using an _alias_ o
 
 And your system for creativity is ready. You have all the tools you need to keep doing the thing you do, no gimmicks and no distractions from your tech stack. On the other hand you might learn a ton of new cool things. Hope that was both useful, interesting and a little new. Feel free to subscribe to my newsletter of course, and enjoy some occasional emails your way.
 
-Talk soon,
-
-B
+[Subscribe](https://www.boriskirov.photos/daynotes)
 
 P.S. **_MailerLite_** is an email marketing platform for small businesses, creators, and ecommerce brands, used to automate the customer journey and grow a customer list. They are super cool with an awesome team, and also support my newsletters. If you want to learn more and start using them, here is the [link](https://www.mailerlite.com/a/OtlosYMXIocS).

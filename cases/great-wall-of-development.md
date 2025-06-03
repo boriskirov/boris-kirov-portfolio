@@ -1,7 +1,7 @@
 ---
 title: "The Great Wall of Development"
 description: "Case study story about how to integrate design changes in the normal product development cycle, while actually improving speed, communication and inbetween discipline collaborations."
-date: "24-11-2019"
+date: "2019-11-24"
 type: "Case study"
 image: "https://www.boriskirov.me/wall-of-development-app-1.png"
 ---

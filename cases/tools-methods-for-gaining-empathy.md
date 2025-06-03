@@ -1,7 +1,7 @@
 ---
 title: "Internal tools and methods for gaining empathy"
 description: "Through this case study blog post I'll guide you through the internal tools and methods you can use, to feed your ideas with qualitative and quantitative backup."
-date: "11-01-2021"
+date: "2021-01-11"
 type: "Case study"
 image: "https://www.boriskirov.me/empathy-tools-3.png"
 ---

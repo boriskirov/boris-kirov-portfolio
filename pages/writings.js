@@ -72,20 +72,27 @@ export default function Writings({ allPostsData, allCasesData, allCodesData }) {
                   {/* Post component end */}
                 </Tab.Panel>
                 <Tab.Panel>
-                  {" "}
                   {/* Case studies component start */}
                   <Motion>
-                    {allCasesData.map(({ id, type, description, title }) => (
-                      <Card
-                        key={Card.title}
-                        link={`/cases/${id}`}
-                        className="main-card"
-                        title={title}
-                        description={description}
-                        type={type}
-                        target=""
-                      />
-                    ))}
+                    <div
+                      style={{
+                        display: "flex",
+                        flexDirection: "column-reverse",
+                        gap: "1rem",
+                      }}
+                    >
+                      {allCasesData.map(({ id, type, description, title }) => (
+                        <Card
+                          key={id}
+                          link={`/cases/${id}`}
+                          className="main-card"
+                          title={title}
+                          description={description}
+                          type={type}
+                          target=""
+                        />
+                      ))}
+                    </div>
                   </Motion>
                   {/* Case studies component end */}
                 </Tab.Panel>

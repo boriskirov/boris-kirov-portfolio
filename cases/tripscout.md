@@ -1,7 +1,7 @@
 ---
 title: "Working with Tripscout"
 description: "Applying knowledge about architecture, information hierarchy, patterns, systems and animation with the amazing people at Tripscout."
-date: "28-01-2018"
+date: "2018-01-28"
 type: "Case study"
 image: "https://www.boriskirov.me/tripscout-app-2.png"
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Implementing system thinking"
 description: "Case study story of the experience being a single designer in a developer focused product about media analysis and annotations."
-date: "24-06-2019"
+date: "2019-06-24"
 type: "Case study"
 image: "https://www.boriskirov.me/nda-app-5.png"
 ---
