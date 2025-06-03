@@ -285,7 +285,7 @@ li.footerLi:last-child {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  max-width: 672px;
+  max-width: 840px;
   width: 100%;
   padding: 10vw 0;
 }
