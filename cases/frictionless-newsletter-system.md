@@ -1,5 +1,5 @@
 ---
-title: "Frictionless newsletter system"
+title: "Low friction, low cost blogging system"
 description: "How to build a low-friction, low-cost blogging system with NextJS, Notion & MailerLite"
 date: "2025-06-03"
 type: "Case study"
