@@ -1,6 +1,10 @@
 import Head from "next/head";
+import { useRouter } from "next/router";
 
 const Metadata = ({ title, description, image, name }) => {
+  const router = useRouter();
+  const url = `https://www.boriskirov.me${router.asPath}`;
+
   return (
     <Head>
       {/* Primary Meta Tags */}
@@ -16,17 +20,14 @@ const Metadata = ({ title, description, image, name }) => {
         content="currentColor"
         media="(prefers-color-scheme: dark)"
       />
+
       {/* Open Graph */}
       <meta property="og:type" content="website" />
-      <meta name="og:title" property="og:title" content={title} />
-      <meta
-        name="og:description"
-        property="og:description"
-        content={description}
-      />
+      <meta property="og:title" content={title} />
+      <meta property="og:description" content={description} />
       <meta property="og:site_name" content="Boris Kirov - Product designer" />
-      <meta property="og:url" content="https://www.boriskirov.me" />
-      <meta name="image" property="og:image" content={image} />
+      <meta property="og:url" content={url} />
+      <meta property="og:image" content={image} />
 
       {/* Twitter */}
       <meta name="twitter:card" content="summary_large_image" />
@@ -34,8 +35,9 @@ const Metadata = ({ title, description, image, name }) => {
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={description} />
       <meta name="twitter:creator" content="@sboriskirov" />
-      <meta name="twitter:image:src" content={image} />
+      <meta name="twitter:image" content={image} />
     </Head>
   );
 };
+
 export default Metadata;
