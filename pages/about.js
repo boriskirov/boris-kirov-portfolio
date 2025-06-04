@@ -37,7 +37,7 @@ const About = () => (
           />
           <section>
             <p>
-              <span className="dropCap">M</span>y name is {boris.firstName} {""}
+              My name is {boris.firstName} {""}
               {boris.familyName}. I'm a {boris.profession} living in{" "}
               {boris.location.city}, {boris.location.country}.
             </p>
