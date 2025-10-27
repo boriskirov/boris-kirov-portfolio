@@ -1,4 +1,12 @@
 const HighlightsData = [
+
+  {
+    title:
+      "Streams: A set of AI-driven capabilities that enable SREs using Elastic Observability to solve problems faster by automatically parsing, compressing, and surfacing insights from unstructured data with logs",
+    project: "Elastic",
+    date: "25.10.2025",
+    url: "https://www.elastic.co/blog/whats-new-elastic-9-2-0",
+  },
   {
     title:
       "Elastic: A Leader in the 2024 Gartner® Magic Quadrant™ for Observability Platforms",
