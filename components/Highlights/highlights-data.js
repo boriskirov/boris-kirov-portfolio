@@ -1,9 +1,30 @@
 const HighlightsData = [
-
+  
+  {
+    title:
+      "Introducing Streams for Observability: Your first stop for investigations",
+    project: "Elastic Streams",
+    date: "28.10.2025",
+    url: "https://www.elastic.co/observability-labs/blog/elastic-observability-streams-ai-logs-investigations",
+  },
+  {
+    title:
+      "Elastic Redefines Observability with AI-Powered Streams",
+    project: "Elastic Streams",
+    date: "28.10.2025",
+    url: "https://ir.elastic.co/news/news-details/2025/Elastic-Redefines-Observability-with-AI-Powered-Streams/default.aspx",
+  },
+    {
+    title:
+      "Goodbye log swamp, hello Streams",
+    project: "Elastic Streams",
+    date: "28.10.2025",
+    url: "https://www.elastic.co/elasticsearch/streams",
+  },
   {
     title:
       "Streams: A set of AI-driven capabilities that enable SREs using Elastic Observability to solve problems faster by automatically parsing, compressing, and surfacing insights from unstructured data with logs",
-    project: "Elastic",
+    project: "Elastic Streams",
     date: "25.10.2025",
     url: "https://www.elastic.co/blog/whats-new-elastic-9-2-0",
   },
