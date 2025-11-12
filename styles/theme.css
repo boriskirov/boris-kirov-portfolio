@@ -42,7 +42,8 @@
 
 .dark .footer-button,
 .dark .metric-logo,
-.dark .timeline-icon {
+.dark .timeline-icon,
+.dark .side-button {
   filter: invert(0%);
 }
 

@@ -35,7 +35,7 @@ export default function Writings({ allPostsData, allCasesData, allCodesData }) {
           image="https://www.boriskirov.me/meta-tag-writings.png"
           name="Boris Kirov"
         />
-        <Main>
+        {/* <Main>
           <Link href="/" className="backButton">
             Back
           </Link>
@@ -46,78 +46,50 @@ export default function Writings({ allPostsData, allCasesData, allCodesData }) {
             studies, tutorials and blog posts here.
           </p>
           <div className="contentWrapper">
-            <Tab.Group defaultIndex={0}>
-              <Tab.List className="flex button-group">
-                <Tab className="button">Blog posts</Tab>
-                <Tab className="button">Case studies</Tab>
-                <Tab className="button">Code snippets</Tab>
-              </Tab.List>
-              <Tab.Panels>
-                <Tab.Panel>
-                  {" "}
-                  {/* Post component start */}
-                  <Motion>
-                    {allPostsData.map(({ id, type, description, title }) => (
-                      <Card
-                        key={Card.title}
-                        link={`/posts/${id}`}
-                        className="main-card"
-                        title={title}
-                        description={description}
-                        type={type}
-                        target=""
-                      />
-                    ))}
-                  </Motion>
-                  {/* Post component end */}
-                </Tab.Panel>
-                <Tab.Panel>
-                  {/* Case studies component start */}
-                  <Motion>
-                    <div
-                      style={{
-                        display: "flex",
-                        flexDirection: "column-reverse",
-                        gap: "1rem",
-                      }}
-                    >
-                      {allCasesData.map(({ id, type, description, title }) => (
-                        <Card
-                          key={id}
-                          link={`/cases/${id}`}
-                          className="main-card"
-                          title={title}
-                          description={description}
-                          type={type}
-                          target=""
-                        />
-                      ))}
-                    </div>
-                  </Motion>
-                  {/* Case studies component end */}
-                </Tab.Panel>
-                <Tab.Panel>
-                  {" "}
-                  {/* Code snippets component start */}
-                  <Motion>
-                    {allCodesData.map(({ id, type, description, title }) => (
-                      <Card
-                        key={Card.title}
-                        link={`/codes/${id}`}
-                        className="main-card"
-                        title={title}
-                        description={description}
-                        type={type}
-                        target=""
-                      />
-                    ))}
-                  </Motion>
-                  {/* Code snippets component end */}
-                </Tab.Panel>
-              </Tab.Panels>
-            </Tab.Group>
+            {allPostsData.map(({ id, type, description, title }) => (
+              <Card
+                key={Card.title}
+                link={`/posts/${id}`}
+                className="main-card"
+                title={title}
+                description={description}
+                type={type}
+                target=""
+              />
+            ))}
+            <div
+              style={{
+                display: "flex",
+                flexDirection: "column-reverse",
+                gap: "1rem",
+              }}
+            >
+              {allCasesData.map(({ id, type, description, title }) => (
+                <Card
+                  key={id}
+                  link={`/cases/${id}`}
+                  className="main-card"
+                  title={title}
+                  description={description}
+                  type={type}
+                  target=""
+                />
+              ))}
+            </div>
+
+            {allCodesData.map(({ id, type, description, title }) => (
+              <Card
+                key={Card.title}
+                link={`/codes/${id}`}
+                className="main-card"
+                title={title}
+                description={description}
+                type={type}
+                target=""
+              />
+            ))}
           </div>
-        </Main>
+        </Main> */}
       </MainWrapper>
     </Motion>
   );

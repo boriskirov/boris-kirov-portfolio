@@ -7,7 +7,6 @@ import Main from "../components/innerWrapper";
 import Footer from "../components/Footer/footer";
 
 import Image from "next/image";
-import FeedbackForm from "../components/feedbackForm";
 
 import boris from "../public/boris.json";
 import Timeline from "../components/timeline/timeline";
@@ -22,9 +21,6 @@ const About = () => (
         name="Boris Kirov"
       />
       <Main>
-        <Link href="/" className="backButton">
-          Back
-        </Link>
         <h1 className="heading2Xl">Здрасти,</h1>
         <div className="contentWrapper">
           <Image
@@ -37,9 +33,9 @@ const About = () => (
           />
           <section>
             <p>
-              My name is {boris.firstName} {""}
-              {boris.familyName}. I'm a {boris.profession} living in{" "}
-              {boris.location.city}, {boris.location.country}.
+              Hey, I'm {boris.firstName} a {boris.profession}. Working remotely,
+              currently living in {boris.location.city},{" "}
+              {boris.location.country}.
             </p>
           </section>
           <section>
@@ -49,12 +45,6 @@ const About = () => (
           <section>
             <Timeline />
           </section>
-
-          <FeedbackForm
-            description={
-              "You want to share or reach out regarding something I wrote, or you want to have a friendly chat with me? Send me a DM in Twitter."
-            }
-          />
         </div>
       </Main>
       <Footer />

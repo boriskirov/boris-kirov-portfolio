@@ -6,7 +6,6 @@ import Link from "next/link";
 import Header from "../components/header";
 
 import MainWrapper from "../components/mainWrapper";
-import HomePageFooter from "../components/home-page-footer";
 import boris from "../public/boris.json";
 
 const Home = () => (
@@ -33,10 +32,11 @@ const Home = () => (
           . Previously at{" "}
           <Link href="https://miro.com" className="external" target="_blank">
             {boris.experience[1].company}.
-          </Link>
+          </Link>{" "}
+          Always remotely.
         </p>
       </div>
-      <HomePageFooter />
+      {/* <HomePageFooter /> */}
     </MainWrapper>
   </Motion>
 );

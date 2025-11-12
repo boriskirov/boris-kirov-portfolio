@@ -1,4 +1,3 @@
-import React from "react";
 import DarkMode from "./theme-switch";
 import FontSwap from "./font-switch";
 import Image from "next/image";

@@ -26,9 +26,6 @@ const Dashboard = ({ data }) => (
         name="Boris Kirov"
       />
       <Main>
-        <Link href="/" className="backButton">
-          Back
-        </Link>
         <h1 className="heading2Xl">Dashboard</h1>
         <p>
           This is my personal dashboard with metrics and statistics from
@@ -37,7 +34,7 @@ const Dashboard = ({ data }) => (
         <hr />
         <Boris />
         <CurrentlyListening />
-        {/* <Figmastats />
+        {/* <Figmastats /> */}
 
         <div className="metric">
           <div className="flex flex-center metric-header">
@@ -48,9 +45,9 @@ const Dashboard = ({ data }) => (
               height={24}
               alt="npm"
             />
-            <h6>Github stats</h6>
+            <h6>Github contribution map</h6>
           </div>
-          <div className="flex space-between">
+          {/* <div className="flex space-between">
             <div className="metric-pill">
               <small>Repos</small>
               <Metric metric={data.user.repositories.totalCount} />
@@ -72,9 +69,9 @@ const Dashboard = ({ data }) => (
               <small>Followers</small>
               <Metric metric={data.user.followers.totalCount} />
             </div>
-          </div>
+          </div> */}
           <GithubMap />
-        </div> */}
+        </div>
         {/* <Npmstats /> */}
         {/* <StravaStats /> */}
         <Highlights />

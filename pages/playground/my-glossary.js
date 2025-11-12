@@ -17,9 +17,6 @@ const Glossary = () => (
         name="Boris Kirov"
       />
       <Main>
-        <Link href="/playground" className="backButton">
-          Back
-        </Link>
         <h1 className="heading2Xl">Glossary</h1>
         <p>
           This is my personal resource that lists the methods, practices and
@@ -34,12 +31,12 @@ const Glossary = () => (
               <summary aria-haspopup="true" className="headingM">
                 Analytical thinking
               </summary>
-              <p>
+              <span>
                 Analytical thinking is the ability to tackle complicated issues
                 by evaluating information you’ve gathered and organized.
                 Analytical thinkers can detect patterns between datasets that
                 often lead to creative solutions.
-              </p>
+              </span>
             </motion.details>
 
             <motion.details
@@ -49,13 +46,13 @@ const Glossary = () => (
               <summary aria-haspopup="true" className="headingM">
                 Bootstrapping
               </summary>
-              <p>
+              <span>
                 Bootstrapping is a term for moving ahead without external help.
                 It is based on the 19th century metaphor for a impossible task:
                 "to pull yourself up by your bootstraps." Despite being based on
                 an analogy for the impossible, bootstrapping is considered a
                 useful technique in several areas.
-              </p>
+              </span>
             </motion.details>
 
             <motion.details
@@ -65,12 +62,12 @@ const Glossary = () => (
               <summary aria-haspopup="true" className="headingM">
                 Feedback loop
               </summary>
-              <p>
+              <span>
                 A system that allows the results of your actions to be measured.
                 It is often viewed as a repeated process of strategy change
                 followed by measurement of results that ultimately leads to a
                 fully optimized strategy.
-              </p>
+              </span>
             </motion.details>
 
             <motion.details
@@ -80,7 +77,7 @@ const Glossary = () => (
               <summary aria-haspopup="true" className="headingM">
                 Human Centered Design
               </summary>
-              <p>
+              <span>
                 Human-centered design is a creative approach to problem solving.
                 It’s a process that starts with the people you’re designing for
                 and ends with new solutions that are tailor made to suit their
@@ -89,7 +86,7 @@ const Glossary = () => (
                 ideas; building a bunch of prototypes; sharing what you’ve made
                 with the people you’re designing for; and eventually putting
                 your innovative new solution out in the world.
-              </p>
+              </span>
             </motion.details>
 
             <motion.details
@@ -99,14 +96,14 @@ const Glossary = () => (
               <summary aria-haspopup="true" className="headingM">
                 Modularity
               </summary>
-              <p>
+              <span>
                 Modular design is a design approach that creates things out of
                 independent parts with standard interfaces. This allows designs
                 to be customized, upgraded, repaired and for parts to be. A well
                 known example of modular design are LEGO plastic construction
                 toys and Ikea the Scandinavian-founded, worldwide furniture
                 store.
-              </p>
+              </span>
             </motion.details>
 
             <motion.details
@@ -116,13 +113,13 @@ const Glossary = () => (
               <summary aria-haspopup="true" className="headingM">
                 Nudge Theory
               </summary>
-              <p>
+              <span>
                 The idea that subtle suggestions, choices and positive
                 reinforcement often achieve more influence than commands, rules
                 and punishment. It has implications for government, education,
                 marketing, leadership and any other domain that relies on social
                 influence.
-              </p>
+              </span>
             </motion.details>
 
             <motion.details
@@ -132,13 +129,13 @@ const Glossary = () => (
               <summary aria-haspopup="true" className="headingM">
                 Socratic method
               </summary>
-              <p>
+              <span>
                 The Socratic method (also known as method of Elenchus, elenctic
                 method, or Socratic debate) is a form of cooperative
                 argumentative dialogue between individuals, based on asking and
                 answering questions to stimulate critical thinking and to draw
                 out ideas and underlying presuppositions.
-              </p>
+              </span>
             </motion.details>
 
             <motion.details
@@ -148,14 +145,14 @@ const Glossary = () => (
               <summary aria-haspopup="true" className="headingM">
                 System Thinking
               </summary>
-              <p>
+              <span>
                 Systems thinking is a holistic approach to analysis that focuses
                 on the way that a system's constituent parts interrelate and how
                 systems work over time and within the context of larger systems.
                 The systems thinking approach contrasts with traditional
                 analysis, which studies systems by breaking them down into their
                 separate elements.
-              </p>
+              </span>
             </motion.details>
 
             <motion.details
@@ -165,13 +162,13 @@ const Glossary = () => (
               <summary aria-haspopup="true" className="headingM">
                 Path of least resistance
               </summary>
-              <p>
+              <span>
                 Path of least resistance is the easiest path to a goal. This
                 sounds like an obvious choice but can be problematic when your
                 goal is narrow such that you miss the bigger picture by doing
                 things the easy way. The following are illustrative examples of
                 the path of least resistance.
-              </p>
+              </span>
             </motion.details>
 
             <motion.details
@@ -181,14 +178,14 @@ const Glossary = () => (
               <summary aria-haspopup="true" className="headingM">
                 Pokayoke
               </summary>
-              <p>
+              <span>
                 Is a Japanese design term that can be translated mistake
                 proofing. Japanese business culture has a minor obsession with
                 preventing human error through design. Pokayoke applies to both
                 the design of production techniques and end products for
                 consumers (e.g. Microwave doors typically can't be open when the
                 microwave is operating).
-              </p>
+              </span>
             </motion.details>
 
             <motion.details
@@ -198,7 +195,7 @@ const Glossary = () => (
               <summary aria-haspopup="true" className="headingM">
                 Principle Of Least Astonishment
               </summary>
-              <p>
+              <span>
                 Is a rule of thumb that states that user interfaces are best
                 when they aren't surprising. That is to say, that when a user
                 first sees your design they aren't surprised by how it works.
@@ -206,7 +203,7 @@ const Glossary = () => (
                 positive emotions. When users need to invest in learning a
                 design, they may feel that they are bending to technology as
                 opposed to technology bending to them.
-              </p>
+              </span>
             </motion.details>
           </section>
         </div>

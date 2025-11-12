@@ -1,0 +1,177 @@
+/* ========== Side nav content layout ========== */
+.side-nav-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+/* ========== Shell: grid that adapts to secondary presence ========== */
+/* Default: 2 columns (Primary | Main) */
+.s-shell {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  min-height: 100dvh;
+}
+
+/* If a secondary rail exists: 3 columns (Primary | Secondary | Main) */
+.s-shell:has(.s-2-rail) {
+  grid-template-columns: 280px 280px 1fr;
+}
+
+/* ========== Rails ========== */
+.s-rail,
+.s-2-rail {
+  position: sticky;
+  top: 0;
+  height: 100dvh;
+  overflow: auto;
+  padding: 16px;
+  border-right: 1px solid var(--tag-color-bg);
+}
+
+/* (Optional: spacer no longer needed; keep for legacy, hidden) */
+.s-spacer {
+  display: none;
+}
+
+/* ========== Typography ========== */
+.s-title {
+  font-weight: 600;
+  font-size: 18px;
+  margin-bottom: 16px;
+}
+.s-subtitle {
+  font-weight: 600;
+  font-size: 16px;
+  margin: 12px;
+}
+
+/* ========== Lists / links ========== */
+.s-list {
+  list-style: none;
+  padding: 0;
+  margin: 12px 0;
+}
+.s-list li {
+  margin: var(--space-small) 0;
+}
+
+.s-link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 8px;
+  border-radius: 8px;
+  text-decoration: none;
+  color: inherit;
+  background: transparent;
+  cursor: pointer;
+  font-size: 14px;
+}
+.s-link:hover {
+  color: var(--white-2);
+  background-color: var(--card-color-hover);
+}
+.s-link.is-active {
+  color: var(--white-2);
+  background-color: var(--card-color-hover);
+}
+
+/* ========== Main content ========== */
+/* When there is no secondary, main sits in column 2. When secondary exists, it shifts to column 3. */
+.s-main {
+  grid-column: 2;
+  padding: 24px;
+  overflow: auto;
+  width: 100%;
+}
+.s-shell:has(.s-2-rail) .s-main {
+  grid-column: 3;
+}
+
+/* Keep content centered regardless of grid width */
+.s-main-inner {
+  max-width: 960px; /* tweak to taste */
+  margin-inline: auto;
+}
+
+/* ========== Mobile top bar ========== */
+/* hidden on desktop by default */
+.mobile-topbar {
+  display: none;
+}
+
+/* ========== Mobile sheet (overlay menu) ========== */
+.mobile-sheet {
+  position: fixed;
+  border-right: 1px solid var(--tag-color-bg);
+  background: rgba(0, 0, 0, 0.5);
+  display: none; /* default hidden */
+  justify-content: flex-end;
+  z-index: 1000;
+}
+.mobile-sheet.open {
+  /* add/remove this class in JS when opening */
+  display: flex;
+}
+.mobile-sheet-inner {
+  width: min(92vw, 520px);
+  height: 100vh;
+  background-color: var(--light-color-bg);
+  color: var(--dark-color-text);
+  padding: 16px;
+  overflow: auto;
+  border-left: 1px solid var(--tag-color-bg);
+}
+.mobile-sheet .title {
+  font-weight: 600;
+  margin: 12px 0;
+}
+.mobile-sheet .close {
+  position: sticky;
+  top: 0;
+  margin-left: auto;
+  font-size: 24px;
+  background: transparent;
+  border: 0;
+  color: #e5e7eb;
+}
+.mobile-sheet a {
+  display: block;
+  padding: 8px 0;
+}
+
+/* ========== Responsive: mobile ========== */
+@media (max-width: 1024px) {
+  /* one column layout */
+  .s-shell {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* hide both rails on mobile */
+  .s-rail,
+  .s-2-rail,
+  .s-spacer {
+    display: none !important;
+  }
+
+  /* show topbar on mobile */
+  .mobile-topbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 16px;
+    border-bottom: 1px solid var(--tag-color-bg);
+  }
+
+  /* main spans full width, still centered with inner wrapper */
+  .s-main {
+    grid-column: 1;
+    padding: 16px;
+  }
+  .s-main-inner {
+    max-width: 680px;
+  }
+}

@@ -1,5 +1,5 @@
-import React from "react";
-import AmsterdamTime from "../components/current-time";
+import DarkMode from "./theme-switch";
+import FontSwap from "./font-switch";
 import Modal from "./modal";
 import SearchApp from "../pages/api/search";
 import Image from "next/image";
@@ -38,8 +38,13 @@ export default function Header() {
 
   return (
     <header>
-      <AmsterdamTime />
       <div className="flex">
+        <button title="Dark mode ⌥+D" className="footer-button">
+          <DarkMode />
+        </button>
+        <button title="Font swap ⌥+S" className="footer-button">
+          <FontSwap />
+        </button>
         <Shorcut />
         <Commands />
 

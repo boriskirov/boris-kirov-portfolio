@@ -20,14 +20,16 @@ function Commands() {
       <div
         style={{
           position: "absolute",
-          top: "0",
+          top: "25%",
           left: "0",
-          width: "100%",
-          height: "100%",
+          width: "120%",
+          height: "125%",
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
           backgroundColor: "rgba(0, 0, 0, 0.5)",
+          border: "1px solid rgba(102, 102, 102, 0.5)",
+          borderRadius: "8px",
           zIndex: "2000",
         }}
       >

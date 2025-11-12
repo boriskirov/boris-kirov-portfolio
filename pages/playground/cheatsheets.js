@@ -3,8 +3,7 @@ import Motion from "../../components/motion";
 import MainWrapper from "../../components/mainWrapper";
 import Metadata from "../../components/metadata";
 import Main from "../../components/innerWrapper";
-import Link from "next/link";
-import FeedbackForm from "../../components/feedbackForm";
+
 import Cheatsheet from "../../components/Cheatsheet/cheatsheet";
 
 const MyStack = () => (
@@ -17,10 +16,6 @@ const MyStack = () => (
         name="Boris Kirov"
       />
       <Main>
-        <Link href="/playground" className="backButton">
-          Back
-        </Link>
-
         <h1 className="heading2Xl">Cheatsheets</h1>
         <p>
           Working with speed and efficiency is essential when you spend your day
@@ -28,11 +23,6 @@ const MyStack = () => (
           commands & shortcuts, so my day can be fun and productive.
         </p>
         <Cheatsheet />
-        <FeedbackForm
-          description={
-            "You have some interesting and helpful to share? Send it my way on Twitter."
-          }
-        />
       </Main>
     </MainWrapper>
   </Motion>

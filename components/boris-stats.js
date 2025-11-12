@@ -28,8 +28,8 @@ export default function Boris({}) {
           <h6> {boris.location.city}</h6>
         </div>
         <div className="metric-pill">
-          <small>Twitter</small>
-          <h6> {boris.twitter}</h6>
+          <small>Working at</small>
+          <h6> {boris.experience[0].company}</h6>
         </div>
       </div>
       <div>

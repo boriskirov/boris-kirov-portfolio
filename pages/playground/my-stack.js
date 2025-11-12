@@ -1,11 +1,9 @@
-import React from "react";
 import Motion from "../../components/motion";
 import MainWrapper from "../../components/mainWrapper";
 import Metadata from "../../components/metadata";
 import Main from "../../components/innerWrapper";
-import Link from "next/link";
+
 import Toolbox from "../../components/Toolbox/toolbox";
-import FeedbackForm from "../../components/feedbackForm";
 
 const MyStack = () => (
   <Motion>
@@ -17,10 +15,6 @@ const MyStack = () => (
         name="Boris Kirov"
       />
       <Main>
-        <Link href="/playground" className="backButton">
-          Back
-        </Link>
-
         <h1 className="heading2Xl">Toolbox</h1>
         <p>
           List of tools & software I use daily to support my interest and hunger
@@ -28,11 +22,6 @@ const MyStack = () => (
           as I try to experiment with new solutions and methods.
         </p>
         <Toolbox />
-        <FeedbackForm
-          description={
-            "You have some interesting and helpful tools to test? Send them my way on Twitter."
-          }
-        />
       </Main>
     </MainWrapper>
   </Motion>

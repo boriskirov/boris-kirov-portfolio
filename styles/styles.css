@@ -1,11 +1,11 @@
+@import url("https://rsms.me/inter/inter.css");
+@supports (font-variation-settings: normal) {
+}
+
 *,
 *::after,
 *::before {
   box-sizing: border-box;
-}
-
-@import url("https://rsms.me/inter/inter.css");
-@supports (font-variation-settings: normal) {
 }
 
 :root {
@@ -78,7 +78,7 @@ footer {
   width: 100%;
   height: 32px;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
   margin: var(--space-large) 0;
 }
@@ -195,9 +195,16 @@ video {
   padding: var(--space-large);
 }
 
+.side-button {
+  width: 32px;
+  height: 24px;
+  padding-right: 12px;
+}
+
 .metric-logo,
 .footer-button,
-.icon {
+.icon,
+.side-button {
   filter: invert(100%);
 }
 
@@ -274,7 +281,7 @@ li.footerLi:last-child {
 }
 
 .mainWrapper {
-  min-height: 100vh;
+  min-height: 50vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -285,9 +292,9 @@ li.footerLi:last-child {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  max-width: 840px;
+  max-width: 1080px;
   width: 100%;
-  padding: 10vw 0;
+  padding: 10vw 5vw;
 }
 
 .contentWrapper {
@@ -426,8 +433,8 @@ a.ApiCard:focus {
   margin: var(--space-medium) 0 0 0;
   background-color: var(--card-color-bg);
   display: flex;
+  flex-direction: column;
   align-items: center;
-  flex-direction: row;
   justify-content: space-between;
   border-radius: var(--border-radius-small);
   border: 1px solid var(--tag-color-bg);
@@ -497,8 +504,6 @@ details[open] summary {
   padding: var(--space-small) var(--space-medium);
 }
 
-// Metric
-
 .metric {
   background-color: var(--card-color-bg);
   word-break: keep-all;
@@ -528,8 +533,6 @@ details[open] summary {
 .metric-pill {
   width: 33%;
 }
-
-// Timeline
 
 .timeline {
   display: flex;
@@ -570,8 +573,6 @@ details[open] summary {
 .timeline-opacity-half {
   opacity: 0.5;
 }
-
-// NPM Stats
 
 .npm-downloads {
   padding: 0 var(--space-large);
@@ -645,8 +646,8 @@ details[open] summary {
 
 .modal-content {
   background-color: var(--light-color-bg);
-  width: 50%;
-  height: 70%;
+  width: 100%;
+  height: 100%;
   overflow-y: auto;
   padding: var(--space-xlarge);
   display: flex;

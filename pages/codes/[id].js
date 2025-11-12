@@ -3,7 +3,6 @@ import MainWrapper from "../../components/mainWrapper";
 import Main from "../../components/innerWrapper";
 import Metadata from "../../components/metadata";
 import { getAllCodeIds, getCodeData } from "../../lib/codes";
-import FeedbackForm from "../../components/feedbackForm";
 
 export async function getStaticProps({ params }) {
   const codeData = await getCodeData(params.id);
@@ -32,19 +31,11 @@ export default function Code({ codeData }) {
         name="Boris Kirov"
       />
       <Main>
-        <Link href="/writings" className="backButton">
-          Back
-        </Link>{" "}
         <h1 className="blogTitle">{codeData.title}</h1>
         <small>{codeData.type}</small>
         <div
           dangerouslySetInnerHTML={{ __html: codeData.contentHtml }}
           className="contentWrapper"
-        />
-        <FeedbackForm
-          description={
-            "You want to share or reach out regarding something I wrote? Send it my way on Twitter."
-          }
         />
       </Main>
     </MainWrapper>

@@ -16,7 +16,7 @@ const Playground = () => (
         image="https://www.boriskirov.me/meta-tag-playground.png"
         name="Boris Kirov"
       />
-
+      {/* 
       <Main>
         <Link href="/" className="backButton">
           Back
@@ -102,7 +102,7 @@ const Playground = () => (
             target=""
           />
         </div>
-      </Main>
+      </Main> */}
     </MainWrapper>
   </Motion>
 );

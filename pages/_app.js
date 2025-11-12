@@ -6,26 +6,36 @@ import "../styles/equalizer.css";
 import "../styles/colors-schema.css";
 import "../styles/toast.css";
 import "../styles/search.css";
+import "../styles/nav.css";
 import Script from "next/script";
+import SideNav from "../components/SideNav";
+import MobileNav from "../components/MobileNav";
 
 const MyApp = ({ Component, pageProps }) => {
   return (
     <>
-      <Script
-        src="https://www.googletagmanager.com/gtag/js?id=${process.env.GA_MEASUREMENT_ID}"
-        strategy="afterInteractive"
-      />
-      <Script id="google-analytics" strategy="afterInteractive">
-        {`
+      <div className="s-shell">
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=${process.env.GA_MEASUREMENT_ID}"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
           window.dataLayer = window.dataLayer || [];
           function gtag(){window.dataLayer.push(arguments);}
           gtag('js', new Date());
 
           gtag('config', '${process.env.GA_MEASUREMENT_ID}');
         `}
-      </Script>
-
-      <Component {...pageProps} />
+        </Script>
+        {/* side rails stay as-is for desktop */}
+        <SideNav />
+        {/* mobile menu */}
+        <MobileNav />
+        <main className="layout s-main">
+          <Component {...pageProps} />
+        </main>
+      </div>
     </>
   );
 };

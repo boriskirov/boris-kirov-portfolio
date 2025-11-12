@@ -5,9 +5,17 @@ module.exports = {
     defaultLocale: "en",
   },
   images: {
-    domains: [
-      "i.scdn.co", // Spotify Album Art
-      "pbs.twimg.com",
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "i.scdn.co",
+        pathname: "**",
+      },
+      {
+        protocol: "https",
+        hostname: "pbs.twimg.com",
+        pathname: "**",
+      },
     ],
   },
 };
