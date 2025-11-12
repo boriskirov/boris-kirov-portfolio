@@ -76,7 +76,7 @@ const Dashboard = ({ data }) => (
           <GithubMap />
         </div> */}
         {/* <Npmstats /> */}
-        <StravaStats />
+        {/* <StravaStats /> */}
         <Highlights />
       </Main>
     </MainWrapper>
