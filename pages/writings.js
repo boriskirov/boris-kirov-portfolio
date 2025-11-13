@@ -35,18 +35,14 @@ export default function Writings({ allPostsData, allCasesData, allCodesData }) {
           image="https://www.boriskirov.me/meta-tag-writings.png"
           name="Boris Kirov"
         />
-        {/* <Main>
-          <Link href="/" className="backButton">
-            Back
-          </Link>
-          <h1 className="heading2Xl">Writings</h1>
-          <p>
-            My small space where I try to think out loud about everything
-            related to design, software and technology. You'll find case
-            studies, tutorials and blog posts here.
-          </p>
-          <div className="contentWrapper">
-            {allPostsData.map(({ id, type, description, title }) => (
+        <div className="contentWrapper dot-grid">
+          {/* <h4>Writings</h4>
+            <p>
+              My small space where I try to think out loud about everything
+              related to design, software and technology. You'll find case
+              studies, tutorials and blog posts here.
+            </p> */}
+          {/* {allPostsData.map(({ id, type, description, title }) => (
               <Card
                 key={Card.title}
                 link={`/posts/${id}`}
@@ -87,9 +83,8 @@ export default function Writings({ allPostsData, allCasesData, allCodesData }) {
                 type={type}
                 target=""
               />
-            ))}
-          </div>
-        </Main> */}
+            ))} */}
+        </div>
       </MainWrapper>
     </Motion>
   );

@@ -16,6 +16,7 @@ const Playground = () => (
         image="https://www.boriskirov.me/meta-tag-playground.png"
         name="Boris Kirov"
       />
+      <div className="contentWrapper dot-grid"></div>
       {/* 
       <Main>
         <Link href="/" className="backButton">

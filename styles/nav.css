@@ -70,11 +70,11 @@
   font-size: 14px;
 }
 .s-link:hover {
-  color: var(--white-2);
+  color: var(--white-color-text);
   background-color: var(--card-color-hover);
 }
 .s-link.is-active {
-  color: var(--white-2);
+  color: var(--white-color-text);
   background-color: var(--card-color-hover);
 }
 
@@ -140,6 +140,21 @@
 .mobile-sheet a {
   display: block;
   padding: 8px 0;
+}
+
+.m-link {
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.m-link-button {
+  padding: 8px 0;
+  display: block;
+  margin-left: var(--space-xsmall);
+  border-radius: 8px;
+  background-color: transparent;
+  text-decoration: none;
+  color: inherit;
 }
 
 /* ========== Responsive: mobile ========== */

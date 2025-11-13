@@ -110,6 +110,7 @@ a:focus {
 
 p {
   margin: 0;
+  font-size: 1rem;
 }
 
 h4 {
@@ -678,6 +679,14 @@ details[open] summary {
   flex-direction: row;
   border: 1px solid var(--tag-color-bg);
   max-width: 498px;
+}
+
+.dot-grid {
+  background-image: radial-gradient(circle, #ffffff30 1px, transparent 1px);
+  background-size: 16px 16px;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
 }
 
 @media (max-width: 834px) {

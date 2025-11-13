@@ -107,9 +107,10 @@ export default function MobileNav() {
                       aria-controls={`mob-sec-${item.id}`}
                     >
                       <span>{item.label}</span>
-                      <span className={`chev ${isExpanded ? "open" : ""}`}>
-                        ▾
-                      </span>
+                      {/* <span className={`chev ${isExpanded ? "open" : ""}`}>
+                        {" "}
+                        ▼
+                      </span> */}
                     </button>
 
                     {isExpanded && (

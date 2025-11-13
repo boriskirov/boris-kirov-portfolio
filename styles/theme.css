@@ -17,7 +17,10 @@
 }
 
 .dark body,
-.dark .modal-content {
+.dark .modal-content,
+.dark .s-link,
+.dark .s-link.is-active,
+.dark .s-link:hover {
   background-color: var(--dark-color-bg);
   color: var(--light-color-text);
 }
