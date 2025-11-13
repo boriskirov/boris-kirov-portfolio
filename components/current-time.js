@@ -11,7 +11,7 @@ export default function AmsterdamTime() {
     hour12: false,
   }).format();
   return (
-    <div>
+    <div className="current-time">
       <small>{TimeFomatter} • 🇳🇱 Amsterdam</small>
     </div>
   );
