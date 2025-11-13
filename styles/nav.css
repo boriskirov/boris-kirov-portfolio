@@ -159,6 +159,9 @@
 
 /* ========== Responsive: mobile ========== */
 @media (max-width: 1024px) {
+  .site-header {
+    display: none !important;
+  }
   /* one column layout */
   .s-shell {
     display: flex;

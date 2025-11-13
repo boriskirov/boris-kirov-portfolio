@@ -7,6 +7,7 @@ import "../styles/colors-schema.css";
 import "../styles/toast.css";
 import "../styles/search.css";
 import "../styles/nav.css";
+import "../styles/glow.css";
 import Script from "next/script";
 import SideNav from "../components/SideNav";
 import MobileNav from "../components/MobileNav";

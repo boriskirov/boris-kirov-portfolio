@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import { NAV } from "../lib/nav";
 import Image from "next/image";
+import Header from "./header";
 
 export default function MobileNav() {
   const [isOpen, setIsOpen] = useState(false);
@@ -55,6 +56,7 @@ export default function MobileNav() {
         >
           <Image src={"/home.svg"} alt={"Home"} width={24} height={24} />
         </button>
+        <Header />
       </div>
 
       {/* Keep the sheet mounted; visibility controlled by .open class in CSS */}

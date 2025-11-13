@@ -689,6 +689,12 @@ details[open] summary {
   margin: 0;
 }
 
+@media (max-width: 1024px) {
+  .mainWrapper {
+    justify-content: center;
+  }
+}
+
 @media (max-width: 834px) {
   header {
     padding: 5vw 24px;

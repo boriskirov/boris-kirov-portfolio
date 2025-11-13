@@ -11,6 +11,7 @@ import { getSortedPostsData } from "../lib/posts";
 
 import { getSortedCasesData } from "../lib/cases";
 import { getSortedCodesData } from "../lib/codes";
+import Glow from "../components/glow";
 
 export async function getStaticProps() {
   const allPostsData = getSortedPostsData();
@@ -36,6 +37,7 @@ export default function Writings({ allPostsData, allCasesData, allCodesData }) {
           name="Boris Kirov"
         />
         <div className="contentWrapper dot-grid">
+          <Glow />
           {/* <h4>Writings</h4>
             <p>
               My small space where I try to think out loud about everything

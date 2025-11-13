@@ -6,6 +6,7 @@ import Link from "next/link";
 import MainWrapper from "../components/mainWrapper";
 import Main from "../components/innerWrapper";
 import Card from "../components/card";
+import Glow from "../components/glow";
 
 const Playground = () => (
   <Motion>
@@ -16,7 +17,9 @@ const Playground = () => (
         image="https://www.boriskirov.me/meta-tag-playground.png"
         name="Boris Kirov"
       />
-      <div className="contentWrapper dot-grid"></div>
+      <div className="contentWrapper dot-grid">
+        <Glow />
+      </div>
       {/* 
       <Main>
         <Link href="/" className="backButton">
