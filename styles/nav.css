@@ -44,7 +44,8 @@
 .s-subtitle {
   font-weight: 600;
   font-size: 16px;
-  margin: 12px;
+  padding: 16px;
+  border-bottom: 1px solid var(--card-color-hover);
 }
 
 /* ========== Lists / links ========== */
