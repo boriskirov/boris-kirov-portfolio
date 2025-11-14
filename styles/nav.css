@@ -27,7 +27,7 @@
   height: 100dvh;
   overflow: auto;
   border-right: 1px solid var(--tag-color-bg);
-  background: rgba(42, 42, 42, 0.5);
+  background: var(--card-color-bg);
 }
 
 /* (Optional: spacer no longer needed; keep for legacy, hidden) */

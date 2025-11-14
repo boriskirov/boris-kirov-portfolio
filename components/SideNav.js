@@ -6,6 +6,7 @@ import { useMemo } from "react";
 import { NAV } from "../lib/nav";
 import AmsterdamTime from "./current-time";
 import Image from "next/image";
+import ExternalLinkIcon from "../public/bike.svg";
 
 const SECONDARY_PREFIXES = ["/posts", "/cases", "/codes"];
 
@@ -97,6 +98,17 @@ export default function SideNav() {
                       rel={isExternal ? "noopener noreferrer" : undefined}
                     >
                       <span>{c.label}</span>
+                      {isExternal && (
+                        <span
+                          style={{
+                            marginLeft: "6px",
+                            opacity: 0.6,
+                            fontSize: "11px",
+                          }}
+                        >
+                          ↗
+                        </span>
+                      )}
                     </Link>
                   </li>
                 );
