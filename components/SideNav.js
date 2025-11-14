@@ -6,7 +6,7 @@ import { useMemo } from "react";
 import { NAV } from "../lib/nav";
 import AmsterdamTime from "./current-time";
 import Image from "next/image";
-import ExternalLinkIcon from "../public/bike.svg";
+import data from "./Footer/footer-data";
 
 const SECONDARY_PREFIXES = ["/posts", "/cases", "/codes"];
 
@@ -74,7 +74,32 @@ export default function SideNav() {
               </ul>
             </nav>
           </div>
-          <AmsterdamTime />
+          <div className="flex-column">
+            <ul className="s-list">
+              {data.map((footer) => (
+                <li key={footer.name}>
+                  <Link
+                    rel="noopener noreferrer"
+                    href={footer.url}
+                    target="_blank"
+                    className="s-link"
+                    style={{ width: "100%" }}
+                  >
+                    <Image
+                      src={footer.icon}
+                      alt={footer.name}
+                      width={24}
+                      height={24}
+                      className="side-button"
+                    />
+                    <span>{footer.name}</span>
+                  </Link>
+                </li>
+              ))}
+            </ul>
+            <hr />
+            <AmsterdamTime />
+          </div>
         </div>
       </aside>
 

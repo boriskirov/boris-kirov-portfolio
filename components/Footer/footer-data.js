@@ -1,23 +1,18 @@
 const FooterList = [
   {
-    name: "Polywork",
-    url: "https://www.polywork.com/boriskirov",
-  },
-  {
     name: "GitHub",
     url: "https://github.com/boriskirov",
+    icon: "../github.svg",
   },
   {
     name: "Figma",
     url: "https://www.figma.com/@boriskirov",
-  },
-  {
-    name: "Twitter",
-    url: "https://www.Twitter.com/sboriskirov",
+    icon: "/figma.svg",
   },
   {
     name: "LinkedIn",
     url: "https://www.linkedin.com/in/boris-kirov-b6b110a4/",
+    icon: "/linkedin.svg",
   },
 ];
 
