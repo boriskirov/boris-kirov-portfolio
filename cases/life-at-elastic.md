@@ -5,6 +5,8 @@ date: "2025-11-24"
 type: "Changelog"
 ---
 
+![Life at Elastic](../../elastic-hero.png)
+
 Elastic is a search company and as a designer there, I'm leading and contributing with design value for big product and engineering efforts. My focus remains in Observability, but I collaborate often with Security, Search and Platform to get things done. Over time my expertise, experience and product knowledge, along with technical understanding became extremely valuable in the preparation of early stage projects, which often are wrapped in ambiguity, and I'm responsible to prepare them for release. I have been involved to bring and collaborate on many solutions to users, such as:
 
 - APM (Application performance monitoring)
