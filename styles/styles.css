@@ -688,7 +688,7 @@ details[open] summary {
 }
 
 .dot-grid {
-  background-image: radial-gradient(circle, #ffffff30 1px, transparent 1px);
+  /* background-image: radial-gradient(circle, #ffffff30 1px, transparent 1px); */
   background-size: 16px 16px;
   height: 100vh;
   padding: 0;

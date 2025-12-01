@@ -7,6 +7,7 @@ import MainWrapper from "../components/mainWrapper";
 import Main from "../components/innerWrapper";
 import Card from "../components/card";
 import Glow from "../components/glow";
+import ComputeParticles from "../components/ComputeParticles";
 
 const Playground = () => (
   <Motion>
@@ -18,7 +19,8 @@ const Playground = () => (
         name="Boris Kirov"
       />
       <div className="contentWrapper dot-grid">
-        <Glow />
+        {/* <Glow /> */}
+        <ComputeParticles />
       </div>
       {/* 
       <Main>
