@@ -8,17 +8,22 @@ export default function BillboardParticles({ className }) {
 
   useEffect(() => {
     let camera, scene, renderer, material;
+    let geometry, sprite, particles;
     let mouseX = 0,
       mouseY = 0;
     let windowHalfX = window.innerWidth / 2;
     let windowHalfY = window.innerHeight / 2;
     let animationId;
-    let geometry, sprite;
 
-    // for levitation
-    let lastPointerMoveTime = performance.now();
+    // levitation
     let lastFrameTime = performance.now();
-    const levitationSpeed = 2; // units per second (in world space) – very subtle
+    const levitationSpeed = 22; // units per second upward
+
+    // cursor → world
+    const raycaster = new THREE.Raycaster();
+    const pointer = new THREE.Vector2();
+    const cursorWorld = new THREE.Vector3();
+    let hasCursor = false;
 
     const canvas = canvasRef.current;
     if (!canvas) return;
@@ -41,7 +46,7 @@ export default function BillboardParticles({ className }) {
       geometry = new THREE.BufferGeometry();
       const vertices = [];
 
-      // --- Sprite: small, white center fading to light blue, slightly glowy ---
+      // Sprite: small, white → light blue, glowy
       const spriteCanvas = document.createElement("canvas");
       spriteCanvas.width = spriteCanvas.height = 64;
       const ctx = spriteCanvas.getContext("2d");
@@ -62,7 +67,6 @@ export default function BillboardParticles({ className }) {
       sprite = new THREE.CanvasTexture(spriteCanvas);
       sprite.colorSpace = THREE.SRGBColorSpace;
 
-      // particles positions
       const count = 10000;
       for (let i = 0; i < count; i++) {
         const x = 2000 * Math.random() - 1000;
@@ -76,7 +80,7 @@ export default function BillboardParticles({ className }) {
         new THREE.Float32BufferAttribute(vertices, 3)
       );
 
-      // --- Material: smaller size, light blue-ish, additive glow ---
+      // Material: small, pale blue, additive glow
       material = new THREE.PointsMaterial({
         size: 12,
         sizeAttenuation: true,
@@ -88,8 +92,15 @@ export default function BillboardParticles({ className }) {
       });
       material.color.set("#dbeafe");
 
-      const particles = new THREE.Points(geometry, material);
+      particles = new THREE.Points(geometry, material);
       scene.add(particles);
+
+      // Invisible plane for raycasting (at z = 0)
+      const planeGeo = new THREE.PlaneGeometry(4000, 4000);
+      const planeMat = new THREE.MeshBasicMaterial({ visible: false });
+      const interactionPlane = new THREE.Mesh(planeGeo, planeMat);
+      interactionPlane.position.z = 0;
+      scene.add(interactionPlane);
 
       // Renderer
       renderer = new THREE.WebGLRenderer({
@@ -102,7 +113,9 @@ export default function BillboardParticles({ className }) {
 
       // Events
       document.body.style.touchAction = "none";
-      document.body.addEventListener("pointermove", onPointerMove);
+      document.body.addEventListener("pointermove", (event) =>
+        onPointerMove(event, interactionPlane)
+      );
       window.addEventListener("resize", onWindowResize);
 
       // Start loop
@@ -120,13 +133,23 @@ export default function BillboardParticles({ className }) {
       renderer.setSize(window.innerWidth, window.innerHeight);
     }
 
-    function onPointerMove(event) {
+    function onPointerMove(event, interactionPlane) {
       if (event.isPrimary === false) return;
 
       mouseX = event.clientX - windowHalfX;
       mouseY = event.clientY - windowHalfY;
 
-      lastPointerMoveTime = performance.now(); // reset idle timer
+      // update cursorWorld via raycast
+      pointer.set(
+        (event.clientX / window.innerWidth) * 2 - 1,
+        -(event.clientY / window.innerHeight) * 2 + 1
+      );
+      raycaster.setFromCamera(pointer, camera);
+      const intersects = raycaster.intersectObject(interactionPlane);
+      if (intersects.length > 0) {
+        cursorWorld.copy(intersects[0].point);
+        hasCursor = true;
+      }
     }
 
     function animate() {
@@ -139,28 +162,51 @@ export default function BillboardParticles({ className }) {
       const delta = (now - lastFrameTime) / 1000; // seconds
       lastFrameTime = now;
 
-      // camera reacts to cursor as before
+      // camera parallax based on cursor
       camera.position.x += (mouseX - camera.position.x) * 0.05;
       camera.position.y += (-mouseY - camera.position.y) * 0.05;
       camera.lookAt(scene.position);
 
-      // --- Levitation: if cursor idle for a bit, slowly float particles upwards ---
-      const idleTime = now - lastPointerMoveTime;
-      const idleThreshold = 400; // ms before levitation kicks in
+      // positions
+      const posAttr = geometry.getAttribute("position");
+      const posArray = posAttr.array;
 
-      if (idleTime > idleThreshold) {
-        const posAttr = geometry.getAttribute("position");
-        const posArray = posAttr.array;
-
-        const dy = levitationSpeed * delta; // small step up this frame
-
-        // move all particles up a tiny bit
-        for (let i = 1; i < posArray.length; i += 3) {
-          posArray[i] += dy;
-        }
-
-        posAttr.needsUpdate = true;
+      // 1) global levitation (slow upward drift + wrap)
+      const dy = levitationSpeed * delta;
+      for (let i = 1; i < posArray.length; i += 3) {
+        posArray[i] += dy;
+        if (posArray[i] > 1000) posArray[i] = -1000; // wrap around
       }
+
+      // 2) attraction: particles near cursor move slightly toward it
+      if (hasCursor) {
+        const radius = 400;
+        const radiusSq = radius * radius;
+        const strength = 0.25; // how strongly they’re pulled
+
+        for (let i = 0; i < posArray.length; i += 3) {
+          const x = posArray[i];
+          const y = posArray[i + 1];
+          const z = posArray[i + 2];
+
+          const dx = cursorWorld.x - x;
+          const dyA = cursorWorld.y - y;
+          const dz = cursorWorld.z - z;
+
+          const distSq = dx * dx + dyA * dyA + dz * dz;
+          if (distSq > 0 && distSq < radiusSq) {
+            const dist = Math.sqrt(distSq);
+            const falloff = 1 - dist / radius; // closer = stronger
+            const influence = strength * falloff * delta;
+
+            posArray[i] += (dx / dist) * influence;
+            posArray[i + 1] += (dyA / dist) * influence;
+            posArray[i + 2] += (dz / dist) * influence;
+          }
+        }
+      }
+
+      posAttr.needsUpdate = true;
 
       renderer.render(scene, camera);
     }
@@ -170,7 +216,8 @@ export default function BillboardParticles({ className }) {
     // Cleanup
     return () => {
       cancelAnimationFrame(animationId);
-      document.body.removeEventListener("pointermove", onPointerMove);
+      document.body.style.touchAction = "";
+      document.body.replaceWith(document.body.cloneNode(true)); // quick way to drop pointer listener
       window.removeEventListener("resize", onWindowResize);
 
       if (geometry) geometry.dispose();
