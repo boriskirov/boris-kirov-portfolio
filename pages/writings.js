@@ -1,17 +1,15 @@
-import React from "react";
+
 import Motion from "../components/motion";
 import Metadata from "../components/metadata";
-import Link from "next/link";
+
 import MainWrapper from "../components/mainWrapper";
-import Main from "../components/innerWrapper";
-import Card from "../components/card";
-import { Tab } from "@headlessui/react";
+
 
 import { getSortedPostsData } from "../lib/posts";
 
 import { getSortedCasesData } from "../lib/cases";
 import { getSortedCodesData } from "../lib/codes";
-import Glow from "../components/glow";
+
 import ComputeParticles from "../components/ComputeParticles";
 
 export async function getStaticProps() {
@@ -38,7 +36,7 @@ export default function Writings({ allPostsData, allCasesData, allCodesData }) {
           name="Boris Kirov"
         />
         <div className="contentWrapper dot-grid">
-          {/* <Glow /> */}
+
           <ComputeParticles />
           {/* <h4>Writings</h4>
             <p>

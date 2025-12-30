@@ -35,8 +35,16 @@ export default function Home() {
             {boris.firstName} {""} {boris.familyName}
           </h1>
           <p>
-            {boris.profession}. Demonstrating the value of design by getting
-            things done at{" "}
+            {boris.profession}.{" "}
+            <Link
+              href="https://boriskirov.photos"
+              className="external"
+              target="_blank"
+            >
+              Photographer
+            </Link>{" "}
+            . Visual Storyteller. Creative. Speaker. <br />I live in Amsterdam,
+            and currently getting things done at{" "}
             <Link
               href="https://elastic.co"
               className="external"
@@ -48,7 +56,9 @@ export default function Home() {
             <Link href="https://miro.com" className="external" target="_blank">
               {boris.experience[1].company}.
             </Link>{" "}
-            Always remotely.
+            <br />
+            <br />
+            <i>* Always remotely.</i>
           </p>
         </div>
         {/* <HomePageFooter /> */}
