@@ -160,7 +160,7 @@ blockquote {
   font-style: italic;
 }
 
-info {
+.info {
   margin-top: var(--space-small);
   text-align: center;
 }

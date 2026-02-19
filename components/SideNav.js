@@ -27,7 +27,7 @@ export default function SideNav() {
       // match any child's subtree
       if (
         item.children?.some(
-          (c) => pathname === c.href || pathname.startsWith(c.href + "/")
+          (c) => pathname === c.href || pathname.startsWith(c.href + "/"),
         )
       ) {
         return item;
@@ -43,15 +43,15 @@ export default function SideNav() {
     return (
       NAV.find((item) =>
         item.children?.some(
-          (c) => pathname === c.href || pathname.startsWith(c.href + "/")
-        )
+          (c) => pathname === c.href || pathname.startsWith(c.href + "/"),
+        ),
       ) || null
     );
   }, [activePrimary, pathname]);
 
   // 3) Force-open secondary for specific prefixes (e.g. direct deep links)
   const forceSecondary = SECONDARY_PREFIXES.some(
-    (p) => pathname === p || pathname.startsWith(p + "/")
+    (p) => pathname === p || pathname.startsWith(p + "/"),
   );
 
   return (
@@ -106,7 +106,6 @@ export default function SideNav() {
       {/* SECONDARY rail */}
       {(secondaryItem && secondaryItem.children?.length) || forceSecondary ? (
         <aside className="s-2-rail border-r" aria-label="Secondary">
-          <div className="s-subtitle">{secondaryItem?.label ?? "Explore"}</div>
           <nav>
             <ul className="s-list">
               {(secondaryItem?.children ?? []).map((c) => {

@@ -1,6 +1,6 @@
 ---
 title: Life at Elastic
-description: "Current changelog of projects I am working in Elastic"
+description: "The changelog of projects and initiatives I have contrbuted in in Elastic as Observability Design Lead"
 date: "2025-11-24"
 type: "Changelog"
 ---
@@ -13,9 +13,11 @@ Elastic is a search company and as a designer there, I'm leading and contributin
 - OpenTelemetry (OTel)
 - Universal Profiling
 - Synthetics
-- GenAI, AI Assistance, ML
+- GenAI, AI Assistance, Machine Learning
 - Logs
+- Infrastructure
 - Streams
+- Significant Events
 - Design system (EUI) and process design
 
 Of course being responsible of carrying early product ideas, through technical preview and general availability stages requires focus in execution too. My versatile skill set mix of product understanding, user's empathy and technical knowledge, allows me to effectively collaborate with product directors & managers, along with all levels of the engineering org.

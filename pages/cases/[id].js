@@ -32,7 +32,11 @@ export default function Case({ caseData }) {
       />
       <Main>
         <h1 className="blogTitle">{caseData.title}</h1>
-        <small>{caseData.type}</small>
+        <hr />
+        <p>{caseData.description}</p>
+        <div className="flex info">
+          <small>{caseData.type}</small> • <small>{caseData.date}</small>
+        </div>
         <div
           dangerouslySetInnerHTML={{ __html: caseData.contentHtml }}
           className="contentWrapper"
