@@ -11,6 +11,8 @@ import "../styles/glow.css";
 import Script from "next/script";
 import SideNav from "../components/SideNav";
 import MobileNav from "../components/MobileNav";
+import "../styles/nav-collapsible.css";
+import SideNavCollapsible from "../components/SideNavCollapsible";
 
 const MyApp = ({ Component, pageProps }) => {
   return (
@@ -30,7 +32,7 @@ const MyApp = ({ Component, pageProps }) => {
         `}
         </Script>
         {/* side rails stay as-is for desktop */}
-        <SideNav />
+        <SideNavCollapsible />
         {/* mobile menu */}
         <MobileNav />
         <main className="layout s-main">

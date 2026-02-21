@@ -1,0 +1,79 @@
+/* ========== Collapsible Side Nav Styles ========== */
+
+/* When collapsed, shrink the primary rail and adjust grid */
+.s-rail[data-collapsed="true"] {
+  grid-column: 1;
+  width: 80px;
+}
+
+/* Adjust shell grid when collapsed */
+.s-shell:has(.s-rail[data-collapsed="true"]) {
+  grid-template-columns: 80px 1fr;
+}
+
+.s-shell:has(.s-rail[data-collapsed="true"]):has(.s-2-rail) {
+  grid-template-columns: 80px 280px 1fr;
+}
+
+/* Hide text when collapsed, keep icons centered */
+.s-rail[data-collapsed="true"] .s-link {
+  justify-content: center;
+  padding: 8px;
+}
+
+.s-rail[data-collapsed="true"] .s-link span {
+  display: none;
+}
+
+/* Keep images centered */
+.s-rail[data-collapsed="true"] .side-button {
+  margin: 0;
+}
+
+/* Hide section subtitle when collapsed */
+.s-rail[data-collapsed="true"] .s-subtitle {
+  display: none;
+}
+
+/* Hide footer text labels when collapsed */
+.s-rail[data-collapsed="true"] .s-list:last-of-type .s-link span {
+  display: none;
+}
+
+/* Keep footer icons centered */
+.s-rail[data-collapsed="true"] .s-list:last-of-type .s-link {
+  justify-content: center;
+}
+
+/* Hide time when collapsed */
+.s-rail[data-collapsed="true"] div:has(> svg) {
+  display: none;
+}
+
+/* Smooth transition for collapse/expand */
+.s-rail {
+  transition: width 0.3s ease-in-out;
+}
+
+.s-rail[data-collapsed="true"] {
+  transition: width 0.3s ease-in-out;
+}
+
+/* Collapse button styling */
+.collapse-toggle-button {
+  transition: all 0.2s ease-in-out;
+}
+
+.collapse-toggle-button:hover {
+  background-color: var(--card-color-hover) !important;
+  border-color: var(--white-color-text) !important;
+}
+
+.collapse-toggle-button:active {
+  transform: scale(0.95);
+}
+
+/* Ensure proper spacing in collapsed header */
+.s-rail[data-collapsed="true"] .flex-column:first-child {
+  padding-right: 0;
+}
