@@ -1,13 +1,17 @@
 ---
 title: Life at Elastic
-description: "The changelog of projects and initiatives I have contrbuted in in Elastic as Observability Design Lead"
+description: "The changelog of projects and initiatives I have contrbuted in Elastic as Observability Design Lead"
 date: "2025-11-24"
 type: "Changelog"
 ---
 
 ![Life at Elastic](../../elastic-hero.png)
 
-Elastic is a search company and as a designer there, I'm leading and contributing with design value for the some of the biggest product and engineering efforts. My focus remains in Observability, but I collaborate often with Security, Search, Platform & Elasticsearch to get things done. Over time my expertise, experience and product knowledge, along with technical understanding became extremely valuable in both the preparation of early stage projects, but also in the final execution of things. Often wrapped in ambiguity, I'm responsible to prepare things for release, but also to align multi-level stakeholders. I have been involved in bringing many solutions to users, such as:
+At Elastic, a search company, I lead and contribute design expertise to some of the organization’s most significant product and engineering initiatives. While my core focus is Observability, I collaborate closely with Security, Search, Platform, and Elasticsearch to deliver cohesive, cross-functional outcomes.
+
+My blend of product knowledge, technical depth, and design leadership allows me to shape early-stage initiatives, navigate ambiguity, and drive execution through to successful release. I regularly align stakeholders across disciplines and organizational levels to ensure clarity, momentum, and impact.
+
+I have contributed to delivering numerous solutions to users, including:
 
 - APM (Application performance monitoring)
 - OpenTelemetry (OTel)
@@ -19,8 +23,6 @@ Elastic is a search company and as a designer there, I'm leading and contributin
 - Streams
 - Significant Events
 - Design system (EUI) and process design
-
-Of course being responsible of carrying early product ideas, through technical preview and general availability stages requires focus in execution too. My versatile skill set mix of product understanding, user's empathy and technical knowledge, allows me to effectively collaborate with product directors & managers, along with all levels of the engineering and product org, from leadership to individual contribution.
 
 ##### Changelog
 
