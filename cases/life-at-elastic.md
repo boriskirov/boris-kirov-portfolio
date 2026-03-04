@@ -26,8 +26,7 @@ I have contributed to delivering numerous solutions to users, including:
 
 ##### Changelog
 
-- ["Streams - Designing for the future of data"]() • 2024-2026 • Case study • Coming soon
-- ["Designing Log processing UX at Elastic Streams"]() • 2025 • Case study • Coming soon
+- ["Designing Log processing UX at Elastic Streams"](https://www.elastic.co/observability-labs) • 2025 • Blog post
 - ["Introducing Streams for Observability: Your first stop for investigations"](https://www.elastic.co/observability-labs/blog/elastic-observability-streams-ai-logs-investigations) • 28.10.2025
 - ["Elastic Redefines Observability with AI-Powered Streams"](https://ir.elastic.co/news/news-details/2025/Elastic-Redefines-Observability-with-AI-Powered-Streams/default.aspx) • 28.10.2025
 - ["Goodbye log swamp, hello Streams"](https://www.elastic.co/elasticsearch/streams) • 25.10.2025
