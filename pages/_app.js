@@ -13,6 +13,7 @@ import SideNav from "../components/SideNav";
 import MobileNav from "../components/MobileNav";
 import "../styles/nav-collapsible.css";
 import SideNavCollapsible from "../components/SideNavCollapsible";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const MyApp = ({ Component, pageProps }) => {
   return (
@@ -39,6 +40,7 @@ const MyApp = ({ Component, pageProps }) => {
           <Component {...pageProps} />
         </main>
       </div>
+      <SpeedInsights />
     </>
   );
 };
