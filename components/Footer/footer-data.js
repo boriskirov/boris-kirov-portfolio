@@ -1,18 +1,33 @@
 const FooterList = [
   {
+    name: "Resume 2026",
+    url: "/BorisKirov_Resume.pdf",
+    icon: "/resume.svg",
+    download: true,
+  },
+  {
+    name: "JSON me",
+    url: "/boris.json",
+    icon: "/json.svg",
+    targetBlank: true,
+  },
+  {
     name: "GitHub",
     url: "https://github.com/boriskirov",
-    icon: "../github.svg",
+    icon: "/github.svg",
+    targetBlank: true,
   },
   {
     name: "Figma",
     url: "https://www.figma.com/@boriskirov",
     icon: "/figma.svg",
+    targetBlank: true,
   },
   {
     name: "LinkedIn",
     url: "https://www.linkedin.com/in/boris-kirov-b6b110a4/",
     icon: "/linkedin.svg",
+    targetBlank: true,
   },
 ];
 

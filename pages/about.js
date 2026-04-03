@@ -1,10 +1,8 @@
 import React from "react";
 import Motion from "../components/motion";
 import Metadata from "../components/metadata";
-import Link from "next/link";
 import MainWrapper from "../components/mainWrapper";
 import Main from "../components/innerWrapper";
-import Footer from "../components/Footer/footer";
 
 import Image from "next/image";
 
@@ -47,7 +45,6 @@ const About = () => (
           </section>
         </div>
       </Main>
-      <Footer />
     </MainWrapper>
   </Motion>
 );

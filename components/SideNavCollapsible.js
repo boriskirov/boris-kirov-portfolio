@@ -96,22 +96,41 @@ export default function SideNavCollapsible() {
             <ul className="s-list">
               {data.map((footer) => (
                 <li key={footer.name}>
-                  <Link
-                    rel="noopener noreferrer"
-                    href={footer.url}
-                    target="_blank"
-                    className="s-link nav-link-fill"
-                    title={isCollapsed ? footer.name : ""}
-                  >
-                    <Image
-                      src={footer.icon}
-                      alt={footer.name}
-                      width={24}
-                      height={24}
-                      className="side-button"
-                    />
-                    {!isCollapsed && <span>{footer.name}</span>}
-                  </Link>
+                  {footer.targetBlank ? (
+                    <a
+                      href={footer.url}
+                      rel="noreferrer"
+                      target="_blank"
+                      download={footer.download || undefined}
+                      className="s-link nav-link-fill"
+                      title={isCollapsed ? footer.name : ""}
+                    >
+                      <Image
+                        src={footer.icon}
+                        alt={footer.name}
+                        width={24}
+                        height={24}
+                        className="side-button"
+                      />
+                      {!isCollapsed && <span>{footer.name}</span>}
+                    </a>
+                  ) : (
+                    <a
+                      href={footer.url}
+                      download={footer.download || undefined}
+                      className="s-link nav-link-fill"
+                      title={isCollapsed ? footer.name : ""}
+                    >
+                      <Image
+                        src={footer.icon}
+                        alt={footer.name}
+                        width={24}
+                        height={24}
+                        className="side-button"
+                      />
+                      {!isCollapsed && <span>{footer.name}</span>}
+                    </a>
+                  )}
                 </li>
               ))}
             </ul>
