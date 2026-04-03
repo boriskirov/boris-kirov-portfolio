@@ -8,7 +8,8 @@ export default function BillboardParticles({ className }) {
 
   useEffect(() => {
     let camera, scene, renderer, material;
-    let geometry, sprite, particles;
+    let geometry, sprite, particles, interactionPlane;
+    let interactionPlaneGeometry, interactionPlaneMaterial;
     let mouseX = 0,
       mouseY = 0;
     let windowHalfX = window.innerWidth / 2;
@@ -27,6 +28,11 @@ export default function BillboardParticles({ className }) {
 
     const canvas = canvasRef.current;
     if (!canvas) return;
+
+    const handlePointerMove = (event) => {
+      if (!interactionPlane || !camera) return;
+      onPointerMove(event, interactionPlane);
+    };
 
     function init() {
       // Camera
@@ -96,9 +102,12 @@ export default function BillboardParticles({ className }) {
       scene.add(particles);
 
       // Invisible plane for raycasting (at z = 0)
-      const planeGeo = new THREE.PlaneGeometry(4000, 4000);
-      const planeMat = new THREE.MeshBasicMaterial({ visible: false });
-      const interactionPlane = new THREE.Mesh(planeGeo, planeMat);
+      interactionPlaneGeometry = new THREE.PlaneGeometry(4000, 4000);
+      interactionPlaneMaterial = new THREE.MeshBasicMaterial({ visible: false });
+      interactionPlane = new THREE.Mesh(
+        interactionPlaneGeometry,
+        interactionPlaneMaterial
+      );
       interactionPlane.position.z = 0;
       scene.add(interactionPlane);
 
@@ -112,10 +121,7 @@ export default function BillboardParticles({ className }) {
       renderer.setSize(window.innerWidth, window.innerHeight);
 
       // Events
-      document.body.style.touchAction = "none";
-      document.body.addEventListener("pointermove", (event) =>
-        onPointerMove(event, interactionPlane)
-      );
+      window.addEventListener("pointermove", handlePointerMove);
       window.addEventListener("resize", onWindowResize);
 
       // Start loop
@@ -216,11 +222,14 @@ export default function BillboardParticles({ className }) {
     // Cleanup
     return () => {
       cancelAnimationFrame(animationId);
-      document.body.style.touchAction = "";
-      document.body.replaceWith(document.body.cloneNode(true)); // quick way to drop pointer listener
+      window.removeEventListener("pointermove", handlePointerMove);
       window.removeEventListener("resize", onWindowResize);
 
+      if (particles) scene?.remove(particles);
+      if (interactionPlane) scene?.remove(interactionPlane);
       if (geometry) geometry.dispose();
+      if (interactionPlaneGeometry) interactionPlaneGeometry.dispose();
+      if (interactionPlaneMaterial) interactionPlaneMaterial.dispose();
       if (material) material.dispose();
       if (sprite) sprite.dispose();
       if (renderer) renderer.dispose();
