@@ -77,7 +77,7 @@ export default function MobileNav() {
             <Image src={"/close.svg"} alt={"Home"} width={24} height={24} />
           </button>
 
-          <div className="block">
+          <div className="mobile-nav-section">
             <ul className="m-list">
               {NAV.map((item) => {
                 const isGroup = !!item.children?.length;

@@ -2,11 +2,7 @@ import React from "react";
 
 import Motion from "../components/motion";
 import Metadata from "../components/metadata";
-import Link from "next/link";
 import MainWrapper from "../components/mainWrapper";
-import Main from "../components/innerWrapper";
-import Card from "../components/card";
-import Glow from "../components/glow";
 import ComputeParticles from "../components/ComputeParticles";
 
 const Playground = () => (

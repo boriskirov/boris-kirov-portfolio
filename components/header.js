@@ -17,8 +17,6 @@ export default function Header() {
       // keyCode is not dependant on the combination changes that may happen with the primary key
       if (event.altKey === true && event.keyCode === 70) {
         setShowModal(true);
-        // console.log(event.altKey, event.key, event.keyCode);
-        log.debug(event.altKey, event.keyCode);
       }
       if (event.key === "Escape") {
         setShowModal(false);
@@ -39,37 +37,35 @@ export default function Header() {
   return (
     <header>
       <div className="flex">
-        <button title="Dark mode ⌥+D" className="footer-button">
+        <button type="button" title="Dark mode ⌥+D" className="footer-button">
           <DarkMode />
         </button>
-        <button title="Font swap ⌥+S" className="footer-button">
+        <button type="button" title="Font swap ⌥+S" className="footer-button">
           <FontSwap />
         </button>
         <Shorcut />
         <Commands />
+        <Motion>
+          <button
+            type="button"
+            className="footer-button"
+            title="Search with ⌥ + F"
+            onClick={() => setShowModal(true)}
+          >
+            <Image src="/search.svg" alt="Search" width={24} height={24} />
+          </button>
 
-        <div id="modal-root">
-          <Motion>
-            <a
-              className="footer-button"
-              title="Search with ⌥ + F"
-              onClick={() => setShowModal(true)}
-            >
-              <Image src="/search.svg" alt="Search" width={24} height={24} />
-            </a>
-
-            <Modal
-              onClose={() => setShowModal(false)}
-              show={showModal}
-              title="SEARCH"
-              body="      
-            Looking for something I've done in the past, just enter the keyword in
-            the search box."
-            >
-              <SearchApp />
-            </Modal>
-          </Motion>
-        </div>
+          <Modal
+            onClose={() => setShowModal(false)}
+            show={showModal}
+            title="SEARCH"
+            body="      
+          Looking for something I've done in the past, just enter the keyword in
+          the search box."
+          >
+            <SearchApp />
+          </Modal>
+        </Motion>
       </div>
     </header>
   );

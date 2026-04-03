@@ -3,22 +3,22 @@
 /* When collapsed, shrink the primary rail and adjust grid */
 .s-rail[data-collapsed="true"] {
   grid-column: 1;
-  width: 80px;
+  width: var(--rail-width-collapsed);
 }
 
 /* Adjust shell grid when collapsed */
 .s-shell:has(.s-rail[data-collapsed="true"]) {
-  grid-template-columns: 80px 1fr;
+  grid-template-columns: var(--rail-width-collapsed) 1fr;
 }
 
 .s-shell:has(.s-rail[data-collapsed="true"]):has(.s-2-rail) {
-  grid-template-columns: 80px 280px 1fr;
+  grid-template-columns: var(--rail-width-collapsed) var(--rail-width) 1fr;
 }
 
 /* Hide text when collapsed, keep icons centered */
 .s-rail[data-collapsed="true"] .s-link {
   justify-content: center;
-  padding: 8px;
+  padding: var(--space-small);
 }
 
 .s-rail[data-collapsed="true"] .s-link span {
@@ -61,6 +61,20 @@
 
 /* Collapse button styling */
 .collapse-toggle-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: var(--size-control);
+  height: var(--size-control);
+  margin: var(--space-small);
+  padding: var(--space-1-5) var(--space-small);
+  border: 1px solid var(--tag-color-bg);
+  border-radius: var(--border-radius-small);
+  background: transparent;
+  color: inherit;
+  cursor: pointer;
+  flex-shrink: 0;
+  font-size: var(--font-size-sm);
   transition: all 0.2s ease-in-out;
 }
 

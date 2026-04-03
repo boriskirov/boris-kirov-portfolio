@@ -58,23 +58,12 @@ export default function SideNavCollapsible() {
   return (
     <>
       {/* PRIMARY rail */}
-      <aside
-        className={`s-rail border-r ${isCollapsed ? "collapsed" : ""}`}
-        data-collapsed={isCollapsed}
-      >
+      <aside className="s-rail border-r" data-collapsed={isCollapsed}>
         <div className="side-nav-content">
           <div className="flex-column">
             {/* Collapse toggle button */}
-            <div
-              style={{
-                display: "flex",
-                justifyContent: "space-between",
-                alignItems: "center",
-                padding: "8px",
-                borderBottom: "1px solid var(--card-color-hover)",
-              }}
-            >
-              <div className="s-subtitle" style={{ margin: 0 }}>
+            <div className="nav-rail-header">
+              <div className="s-subtitle nav-rail-title">
                 {!isCollapsed && "Boris Kirov"}
               </div>
               <button
@@ -84,22 +73,6 @@ export default function SideNavCollapsible() {
                   isCollapsed ? "Expand navigation" : "Collapse navigation"
                 }
                 title={isCollapsed ? "Expand" : "Collapse"}
-                style={{
-                  background: "transparent",
-                  border: "1px solid var(--tag-color-bg)",
-                  borderRadius: "6px",
-                  padding: "6px 8px",
-                  cursor: "pointer",
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "center",
-                  color: "inherit",
-                  fontSize: "12px",
-                  width: "32px",
-                  height: "32px",
-                  flexShrink: 0,
-                  margin: "10px",
-                }}
               >
                 {isCollapsed ? "→" : "←"}
               </button>
@@ -127,8 +100,7 @@ export default function SideNavCollapsible() {
                     rel="noopener noreferrer"
                     href={footer.url}
                     target="_blank"
-                    className="s-link"
-                    style={{ width: "100%" }}
+                    className="s-link nav-link-fill"
                     title={isCollapsed ? footer.name : ""}
                   >
                     <Image
@@ -169,15 +141,7 @@ export default function SideNavCollapsible() {
                     >
                       <span>{c.label}</span>
                       {isExternal && (
-                        <span
-                          style={{
-                            marginLeft: "6px",
-                            opacity: 0.6,
-                            fontSize: "11px",
-                          }}
-                        >
-                          ↗
-                        </span>
+                        <span className="nav-external-indicator">↗</span>
                       )}
                     </Link>
                   </li>
@@ -195,8 +159,6 @@ export default function SideNavCollapsible() {
 }
 
 function PrimaryLink({ item, active, isCollapsed }) {
-  const router = useRouter();
-
   // if item has children, clicking the primary just opens its own page
   if (item.children) {
     return (

@@ -82,8 +82,7 @@ export default function SideNav() {
                     rel="noopener noreferrer"
                     href={footer.url}
                     target="_blank"
-                    className="s-link"
-                    style={{ width: "100%" }}
+                    className="s-link nav-link-fill"
                   >
                     <Image
                       src={footer.icon}
@@ -123,15 +122,7 @@ export default function SideNav() {
                     >
                       <span>{c.label}</span>
                       {isExternal && (
-                        <span
-                          style={{
-                            marginLeft: "6px",
-                            opacity: 0.6,
-                            fontSize: "11px",
-                          }}
-                        >
-                          ↗
-                        </span>
+                        <span className="nav-external-indicator">↗</span>
                       )}
                     </Link>
                   </li>
@@ -149,8 +140,6 @@ export default function SideNav() {
 }
 
 function PrimaryLink({ item, active }) {
-  const router = useRouter();
-
   // if item has children, clicking the primary just opens its own page
   if (item.children) {
     return (

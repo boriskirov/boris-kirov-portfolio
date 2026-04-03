@@ -15,54 +15,18 @@ form {
   margin: 0 var(--space-medium) 0 0;
 }
 
-.button {
-  margin: 0 0 0 var(--space-small);
-  border: 2px solid currentColor;
-  background-color: transparent;
-  color: currentColor;
+.sui-search-box__text-input {
   padding: 0 var(--space-large);
-  font-size: 12px;
+  width: 100%;
+  height: var(--size-control);
+  font-size: var(--font-size-sm);
   font-family: var(--font-family);
   border-radius: var(--border-radius-circle);
-  cursor: pointer;
-  display: flex;
-  align-items: center;
+  color: var(--dark-color-bg);
+  cursor: text;
+  display: block;
   background-color: var(--card-color-bg);
   border: 1px solid var(--card-color-bg);
-  transition: all 0.3s ease-in-out;
-  margin: 2px;
-  height: 32px;
-}
-
-.button:hover {
-  background-color: var(--card-color-hover);
-  cursor: pointer;
-}
-
-.button:active,
-.button:focus,
-.button:focus-visible {
-  background-color: var(--card-color-hover);
-  outline: none;
-}
-
-.sui-search-box__text-input {
-  padding: var(--space-large);
-  width: 100%;
-  height: 32px;
-  font-size: 12px;
-  font-family: var(--font-family);
-  border-radius: 0;
-  border: 2px solid currentColor;
-  background-color: var(--light-color-bg);
-  color: var(--dark-color-bg);
-  border-radius: var(--border-radius-circle);
-  cursor: text;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: var(--card-color-bg);
-  border: 2px solid var(--card-color-bg);
   transition: all 0.3s ease-in-out;
 }
 
@@ -102,7 +66,7 @@ em {
 }
 
 .sui-result__key {
-  font-size: 12px;
+  font-size: var(--font-size-sm);
   color: var(--tag-color-text);
   font-family: var(--font-family-code);
   display: none;
@@ -111,7 +75,7 @@ em {
 .sui-result__value,
 .sui-paging-info,
 .sui-paging-info > strong {
-  font-size: 16px;
+  font-size: var(--font-size-lg);
   font-family: var(--font-family);
   line-height: 22px;
 }

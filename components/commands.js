@@ -11,39 +11,26 @@ function Commands() {
       setIsBrowser(true);
     }, []);
 
-    const handleCloseClick = (e) => {
-      e.preventDefault();
+    const handleCloseClick = () => {
       onClose();
     };
 
     const modalContent = show ? (
-      <div
-        style={{
-          position: "absolute",
-          top: "25%",
-          left: "0",
-          width: "120%",
-          height: "125%",
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-          backgroundColor: "rgba(0, 0, 0, 0.5)",
-          border: "1px solid rgba(102, 102, 102, 0.5)",
-          borderRadius: "8px",
-          zIndex: "2000",
-        }}
-      >
-        <Shorcut />
+      <div className="modal-overlay">
         <div className="modal-content">
           <div className="modal-body">
-            <a href="#" onClick={handleCloseClick} className="footer-button">
+            <button
+              type="button"
+              onClick={handleCloseClick}
+              className="footer-button modal-close"
+            >
               <Image
                 src="/close.svg"
                 alt="close-button"
                 width={24}
                 height={24}
               />
-            </a>
+            </button>
             {title && <h3 className="headingM"> {title}</h3>}
             {body && <p>{body}</p>}
             <div className="modal-input">{children}</div>
@@ -53,10 +40,7 @@ function Commands() {
     ) : null;
 
     if (isBrowser) {
-      return ReactDOM.createPortal(
-        modalContent,
-        document.getElementById("modal-root")
-      );
+      return ReactDOM.createPortal(modalContent, document.body);
     } else {
       return null;
     }
@@ -69,7 +53,6 @@ function Commands() {
     const handleKeyPress = useCallback((event) => {
       // keyCode is not dependant on the combination changes that may happen with the primary key
       if (event.altKey === true && event.keyCode === 191) {
-        console.log(event.key, event.keyCode);
         setShowCommandModal(true);
       }
       if (event.key === "Escape") {
@@ -91,8 +74,9 @@ function Commands() {
   return (
     <div className="flex">
       <Shorcut />
-      <div id="modal-root">
-        <a
+      <div>
+        <button
+          type="button"
           title="Commands (⌥ + /)"
           className="footer-button"
           onClick={() => setShowCommandModal(true)}
@@ -103,7 +87,7 @@ function Commands() {
             width={24}
             height={24}
           />
-        </a>
+        </button>
 
         <Modal
           onClose={() => setShowCommandModal(false)}

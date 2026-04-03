@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import ReactDOM from "react-dom";
 import Image from "next/image";
-import Link from "next/link";
 
 const Modal = ({ show, onClose, children, title, body }) => {
   const [isBrowser, setIsBrowser] = useState(false);
@@ -10,38 +9,26 @@ const Modal = ({ show, onClose, children, title, body }) => {
     setIsBrowser(true);
   }, []);
 
-  const handleCloseClick = (e) => {
-    e.preventDefault();
+  const handleCloseClick = () => {
     onClose();
   };
 
   const modalContent = show ? (
-    <div
-      style={{
-        position: "absolute",
-        top: "25%",
-        left: "0",
-        width: "125%",
-        height: "125%",
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-        backgroundColor: "rgba(0, 0, 0, 0.5)",
-        border: "1px solid rgba(102, 102, 102, 0.5)",
-        borderRadius: "8px",
-        zIndex: "2000",
-      }}
-    >
+    <div className="modal-overlay">
       <div className="modal-content">
         <div className="modal-body">
-          <a href="#" onClick={handleCloseClick} className="footer-button">
+          <button
+            type="button"
+            onClick={handleCloseClick}
+            className="footer-button modal-close"
+          >
             <Image src="/close.svg" alt="close-button" width={24} height={24} />
-          </a>
+          </button>
           {title && <h1 className="heading2Xl">{title}</h1>}
           {body && <p>{body}</p>}
           <div className="modal-input">{children}</div>
         </div>
-        <div className="flexCentered">
+        <div className="modal-footer">
           <small>powered by Elastic </small>
           <Image
             className="icon"
@@ -56,10 +43,7 @@ const Modal = ({ show, onClose, children, title, body }) => {
   ) : null;
 
   if (isBrowser) {
-    return ReactDOM.createPortal(
-      modalContent,
-      document.getElementById("modal-root")
-    );
+    return ReactDOM.createPortal(modalContent, document.body);
   } else {
     return null;
   }
