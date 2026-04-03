@@ -27,7 +27,12 @@ const About = () => (
             width="0"
             height="0"
             sizes="100vw"
-            style={{ width: "100%", height: "auto" }}
+            style={{
+              width: "50%",
+              height: "auto",
+              margin: "0 auto",
+              paddingBottom: "2rem",
+            }}
           />
           <section>
             <p>

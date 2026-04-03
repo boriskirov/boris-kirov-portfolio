@@ -7,6 +7,7 @@ import { NAV } from "../lib/nav";
 import AmsterdamTime from "./current-time";
 import Image from "next/image";
 import data from "./Footer/footer-data";
+import { useEffect, useCallback } from "react";
 
 const SECONDARY_PREFIXES = ["/posts", "/cases", "/codes"];
 
@@ -55,10 +56,31 @@ export default function SideNavCollapsible() {
     (p) => pathname === p || pathname.startsWith(p + "/"),
   );
 
+  function Shortcut() {
+    // handle what happens on key press
+    const handleKeyPress = useCallback((event) => {
+      // keyCode is not dependant on the combination changes that may happen with the primary key
+      if (event.altKey === true && event.keyCode === 90) {
+        setIsCollapsed(!isCollapsed);
+      }
+    }, []);
+
+    useEffect(() => {
+      // attach the event listener
+      document.addEventListener("keydown", handleKeyPress);
+
+      // remove the event listener
+      return () => {
+        document.removeEventListener("keydown", handleKeyPress);
+      };
+    }, [handleKeyPress]);
+  }
+
   return (
     <>
       {/* PRIMARY rail */}
       <aside className="s-rail border-r" data-collapsed={isCollapsed}>
+        <Shortcut />
         <div className="side-nav-content">
           <div className="flex-column">
             {/* Collapse toggle button */}
@@ -72,7 +94,11 @@ export default function SideNavCollapsible() {
                 aria-label={
                   isCollapsed ? "Expand navigation" : "Collapse navigation"
                 }
-                title={isCollapsed ? "Expand" : "Collapse"}
+                title={
+                  isCollapsed
+                    ? "Expand sidebar (⌥ + Z)"
+                    : "Collapse sidebar (⌥ + Z)"
+                }
               >
                 {isCollapsed ? (
                   <Image
@@ -102,6 +128,7 @@ export default function SideNavCollapsible() {
                       item={item}
                       active={activePrimary?.id === item.id}
                       isCollapsed={isCollapsed}
+                      aria-label={item.label}
                     />
                   </li>
                 ))}

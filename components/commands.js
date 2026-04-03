@@ -108,11 +108,21 @@ function Commands() {
               </tr>
               <tr>
                 <td width="326" height="56">
+                  <p>Expand & Collapse sidebar</p>
+                </td>
+                <td width="225" align="right">
+                  <p>
+                    <kbd className="tag shortcut">⌥ + Z</kbd>
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td width="326" height="56">
                   <p>Change fonts</p>
                 </td>
                 <td width="225" align="right">
                   <p>
-                    <kbd className="tag shortcut">⌥ + s</kbd>
+                    <kbd className="tag shortcut">⌥ + S</kbd>
                   </p>
                 </td>
               </tr>
@@ -122,7 +132,7 @@ function Commands() {
                 </td>
                 <td width="225" align="right">
                   <p>
-                    <kbd className="tag shortcut">⌥ + f</kbd>
+                    <kbd className="tag shortcut">⌥ + F</kbd>
                   </p>
                 </td>
               </tr>
