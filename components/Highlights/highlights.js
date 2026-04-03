@@ -3,33 +3,46 @@ import Image from "next/image";
 
 const Highlights = () => (
   <div className="metric">
-    <div className="flex flex-center metric-header">
-      <Image
-        src="/sparkle.svg"
-        className="metric-logo"
-        width={24}
-        height={24}
-        alt="npm"
-      />
-      <h6>Highlights</h6>
-    </div>
-    <ul>
-      {HighlightsData.map((highlights) => {
-        return (
-          <div className="metric" key={highlights.title}>
+    <details className="highlights-accordion">
+      <summary className="highlights-summary">
+        <span className="flex flex-center highlights-summary-title">
+          <Image
+            src="/sparkle.svg"
+            className="metric-logo"
+            width={24}
+            height={24}
+            alt="Highlights"
+          />
+          <h6>Highlights</h6>
+        </span>
+        <span
+          className="highlights-badge"
+          aria-label={`${HighlightsData.length} highlights`}
+        >
+          {HighlightsData.length}
+        </span>
+      </summary>
+      <ul className="highlights-list list-style-none">
+        {HighlightsData.map((highlight) => (
+          <li className="metric highlights-item" key={highlight.url}>
             <div>
-              <div className="flex space-between">
-                <small>{highlights.project}</small>
-                <small>{highlights.date}</small>
+              <div className="flex space-between highlights-meta">
+                <small>{highlight.project}</small>
+                <small>{highlight.date}</small>
               </div>
-              <a href={highlights.url} target="_blank" rel="noreferrer">
-                <h6>{highlights.title}</h6>
+              <a
+                className="highlights-link"
+                href={highlight.url}
+                target="_blank"
+                rel="noreferrer"
+              >
+                <h6>{highlight.title}</h6>
               </a>
             </div>
-          </div>
-        );
-      })}
-    </ul>
+          </li>
+        ))}
+      </ul>
+    </details>
   </div>
 );
 
