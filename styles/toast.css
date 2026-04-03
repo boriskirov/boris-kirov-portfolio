@@ -2,8 +2,8 @@
   visibility: hidden;
   position: sticky;
   min-width: 96px;
-  background-color: var(--dark-color-bg);
-  color: var(--light-color-text);
+  background-color: var(--color-bg-contrast);
+  color: var(--color-text-contrast);
   text-align: center;
   border-radius: 12px;
   padding: var(--space-medium);

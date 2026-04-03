@@ -1,4 +1,3 @@
-import DarkMode from "./theme-switch";
 import FontSwap from "./font-switch";
 import Image from "next/image";
 import { motion } from "framer-motion";
@@ -57,10 +56,7 @@ const HomePageFooter = () => (
           />
         </div>
       </Link>
-      <button title="Dark mode ⌥+D" className="footer-button">
-        <DarkMode />
-      </button>
-      <button title="Font swap ⌥+S" className="footer-button">
+      <button type="button" title="Font swap ⌥+S" className="footer-button">
         <FontSwap />
       </button>
     </footer>

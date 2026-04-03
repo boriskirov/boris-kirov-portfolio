@@ -128,8 +128,8 @@
 .mobile-sheet-inner {
   width: min(92vw, var(--sheet-max));
   height: 100vh;
-  background-color: var(--light-color-bg);
-  color: var(--dark-color-text);
+  background-color: var(--color-bg);
+  color: var(--color-text);
   padding: var(--space-large);
   overflow: auto;
   border-left: 1px solid var(--tag-color-bg);

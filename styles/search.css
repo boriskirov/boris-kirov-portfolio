@@ -22,7 +22,7 @@ form {
   font-size: var(--font-size-sm);
   font-family: var(--font-family);
   border-radius: var(--border-radius-circle);
-  color: var(--dark-color-bg);
+  color: var(--color-bg-contrast);
   cursor: text;
   display: block;
   background-color: var(--card-color-bg);

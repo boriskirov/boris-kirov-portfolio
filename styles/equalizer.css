@@ -9,10 +9,6 @@ svg > rect {
   fill: var(--green-1);
 }
 
-.dark rect {
-  fill: var(--blue-2);
-}
-
 .bar {
   width: 18px;
   animation: equalize 4s 0s infinite;

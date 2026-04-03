@@ -3,23 +3,24 @@ import { useCallback, useEffect } from "react";
 
 export default function FontSwap() {
   const [mode, setMode] = React.useState("monospace"); // default monospace
+  const storageKey = "__font_mode__";
 
   React.useEffect(() => {
     if (typeof window === "undefined") return; // SSR guard
 
-    const theme = window.localStorage.getItem("__theme__");
+    const savedMode = window.localStorage.getItem(storageKey);
 
-    const initialTheme = theme || "monospace"; // default if none saved
-    setMode(initialTheme);
+    const initialMode = savedMode || "monospace"; // default if none saved
+    setMode(initialMode);
 
     document.documentElement.classList.toggle(
       "monospace",
-      initialTheme === "monospace"
+      initialMode === "monospace"
     );
 
     // if nothing saved before, persist the default
-    if (!theme) window.localStorage.setItem("__theme__", initialTheme);
-  }, []);
+    if (!savedMode) window.localStorage.setItem(storageKey, initialMode);
+  }, [storageKey]);
 
   const onClick = useCallback(() => {
     setMode((m) => {
@@ -31,12 +32,12 @@ export default function FontSwap() {
       );
 
       if (typeof window !== "undefined") {
-        window.localStorage.setItem("__theme__", newTheme);
+        window.localStorage.setItem(storageKey, newTheme);
       }
 
       return newTheme;
     });
-  }, []);
+  }, [storageKey]);
 
   function Shorcut() {
     const handleKeyPress = useCallback(

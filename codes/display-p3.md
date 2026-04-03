@@ -31,10 +31,10 @@ Here is the CSS simple snippet of how to add the display-p3 support for your web
 
 ```
 :root {
-  --dark-color-bg: rgb(19, 19, 19);
-  --light-color-text: rgb(226, 226, 226);
-  --light-color-bg: rgb(226, 226, 226);
-  --dark-color-text: rgb(5, 0, 56);
+  --color-bg: rgb(19, 19, 19);
+  --color-text: rgb(226, 226, 226);
+  --color-bg-contrast: rgb(226, 226, 226);
+  --color-text-contrast: rgb(5, 0, 56);
   --selection-color-bg: rgb(63, 83, 217);
   --selection-color-text: rgb(255, 215, 7);
   --link-color-text: rgb(63, 83, 217);
@@ -44,10 +44,10 @@ Here is the CSS simple snippet of how to add the display-p3 support for your web
 /* Display-P3 color, when supported. */
 @supports (color: color(display-p3 1 1 1)) {
   :root {
-    --light-color-bg: color(display-p3 0.845 0.858 1);
-    --dark-color-text: color(display-p3 0.001 0.019 0.09);
-    --dark-color-bg: color(display-p3 0.001 0.025 0.105);
-    --light-color-text: color(display-p3 0.84 0.978 1);
+    --color-bg-contrast: color(display-p3 0.845 0.858 1);
+    --color-text-contrast: color(display-p3 0.001 0.019 0.09);
+    --color-bg: color(display-p3 0.001 0.025 0.105);
+    --color-text: color(display-p3 0.84 0.978 1);
     --selection-color-bg: color(display-p3 0.255 0.147 0.98);
     --selection-color-text: color(display-p3 0.945 0.676 0.17);
     --link-color-text: color(display-p3 0.255 0.147 0.98);

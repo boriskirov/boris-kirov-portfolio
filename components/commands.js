@@ -108,16 +108,6 @@ function Commands() {
               </tr>
               <tr>
                 <td width="326" height="56">
-                  <p>Change theme</p>
-                </td>
-                <td width="225" align="right">
-                  <p>
-                    <kbd className="tag shortcut">⌥ + d</kbd>
-                  </p>
-                </td>
-              </tr>
-              <tr>
-                <td width="326" height="56">
                   <p>Change fonts</p>
                 </td>
                 <td width="225" align="right">
