@@ -18,11 +18,7 @@
 /* Hide text when collapsed, keep icons centered */
 .s-rail[data-collapsed="true"] .s-link {
   justify-content: center;
-  padding: var(--space-small);
-}
-
-.s-rail[data-collapsed="true"] .s-link span {
-  display: none;
+  gap: 0;
 }
 
 /* Keep images centered */
@@ -30,33 +26,12 @@
   margin: 0;
 }
 
-/* Hide section subtitle when collapsed */
-.s-rail[data-collapsed="true"] .s-subtitle {
+.s-rail[data-collapsed="true"] .nav-rail-title {
   display: none;
 }
 
-/* Hide footer text labels when collapsed */
-.s-rail[data-collapsed="true"] .s-list:last-of-type .s-link span {
+.s-rail[data-collapsed="true"] .s-link-label {
   display: none;
-}
-
-/* Keep footer icons centered */
-.s-rail[data-collapsed="true"] .s-list:last-of-type .s-link {
-  justify-content: center;
-}
-
-/* Hide time when collapsed */
-.s-rail[data-collapsed="true"] div:has(> svg) {
-  display: none;
-}
-
-/* Smooth transition for collapse/expand */
-.s-rail {
-  transition: width 0.3s ease-in-out;
-}
-
-.s-rail[data-collapsed="true"] {
-  transition: width 0.3s ease-in-out;
 }
 
 /* Collapse button styling */

@@ -57,7 +57,7 @@
   --content-max: 1080px;
   --content-max-narrow: 672px;
   --rail-width: 280px;
-  --rail-width-collapsed: 80px;
+  --rail-width-collapsed: 60px;
   --sheet-max: 520px;
 
   --font-size-sm: 12px;
@@ -788,8 +788,19 @@ details[open] summary {
 }
 
 .current-time {
+  display: flex;
+  align-items: center;
+  min-height: var(--size-control-lg);
   margin: var(--space-small);
-  padding: var(--space-medium);
+  padding: var(--space-small);
+}
+
+.current-time-collapsed {
+  justify-content: center;
+}
+
+.current-time-icon {
+  flex-shrink: 0;
 }
 
 @media (max-width: 1024px) {
@@ -856,5 +867,4 @@ details[open] summary {
     width: 100%;
     flex-direction: column;
   }
-
 }

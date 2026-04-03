@@ -64,7 +64,7 @@ export default function SideNavCollapsible() {
             {/* Collapse toggle button */}
             <div className="nav-rail-header">
               <div className="s-subtitle nav-rail-title">
-                {!isCollapsed && "Boris Kirov"}
+                <span className="nav-rail-title-text">Boris Kirov</span>
               </div>
               <button
                 onClick={() => setIsCollapsed(!isCollapsed)}
@@ -112,7 +112,7 @@ export default function SideNavCollapsible() {
                         height={24}
                         className="side-button"
                       />
-                      {!isCollapsed && <span>{footer.name}</span>}
+                      <span className="s-link-label">{footer.name}</span>
                     </a>
                   ) : (
                     <a
@@ -128,14 +128,14 @@ export default function SideNavCollapsible() {
                         height={24}
                         className="side-button"
                       />
-                      {!isCollapsed && <span>{footer.name}</span>}
+                      <span className="s-link-label">{footer.name}</span>
                     </a>
                   )}
                 </li>
               ))}
             </ul>
             <hr />
-            {!isCollapsed && <AmsterdamTime />}
+            <AmsterdamTime isCollapsed={isCollapsed} />
           </div>
         </div>
       </aside>
@@ -198,7 +198,7 @@ function PrimaryLink({ item, active, isCollapsed }) {
             className="side-button"
           />
         )}
-        {!isCollapsed && <span>{item.label}</span>}
+        <span className="s-link-label">{item.label}</span>
       </Link>
     );
   }
@@ -219,7 +219,7 @@ function PrimaryLink({ item, active, isCollapsed }) {
           className="side-button"
         />
       )}
-      {!isCollapsed && <span>{item.label}</span>}
+      <span className="s-link-label">{item.label}</span>
     </Link>
   );
 }
