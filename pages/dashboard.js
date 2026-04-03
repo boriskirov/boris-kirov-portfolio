@@ -7,29 +7,40 @@ import MainWrapper from "../components/mainWrapper";
 import Main from "../components/innerWrapper";
 import CurrentlyListening from "../components/currentlyListening";
 import GithubMap from "../components/githubmap";
+import RecentRepositories from "../components/recent-repositories";
 import Boris from "../components/boris-stats";
 import Highlights from "../components/Highlights/highlights";
-import { getGitHubActivity } from "../lib/github-activity";
+import {
+  getGitHubActivity,
+  getRecentlyContributedRepositories,
+} from "../lib/github-activity";
 import boris from "../public/boris.json";
 
-const Dashboard = ({ githubActivity }) => (
+const Dashboard = ({ githubActivity, recentRepositories }) => (
   <Motion>
     <MainWrapper>
       <Metadata
         title="Dashboard"
-        description="This is my personal dashboard with metrics and statistics from different platforms and tools."
+        description="Interesting and valuable insights about my work, contributions, activities and interests. A collection of metrics and statistics from different sources."
         image="https://www.boriskirov.me/meta-tag-dashboard.png"
         name="Boris Kirov"
       />
       <Main>
         <h1 className="heading2Xl">Dashboard</h1>
         <p>
-          This is my personal dashboard with metrics and statistics from
-          different platforms and tools.
+          Interesting and valuable insights about my work, contributions,
+          activities and interests. A collection of metrics and statistics from
+          different sources.
         </p>
         <hr />
         <Boris />
-        <CurrentlyListening />
+        <div className="metric borderless">
+          <div className="metric-header">
+            <h6>Recently contributed to</h6>
+          </div>
+          <RecentRepositories repositories={recentRepositories} />
+        </div>
+        {/* <CurrentlyListening /> */}
 
         <div className="metric">
           <div className="metric-header metric-header-split">
@@ -54,6 +65,7 @@ const Dashboard = ({ githubActivity }) => (
           </div>
           <GithubMap activity={githubActivity} />
         </div>
+
         <Highlights />
       </Main>
     </MainWrapper>
@@ -63,11 +75,15 @@ const Dashboard = ({ githubActivity }) => (
 export default Dashboard;
 
 export async function getStaticProps() {
-  const githubActivity = await getGitHubActivity();
+  const [githubActivity, recentRepositories] = await Promise.all([
+    getGitHubActivity(),
+    getRecentlyContributedRepositories(),
+  ]);
 
   return {
     props: {
       githubActivity,
+      recentRepositories,
     },
     revalidate: 3600,
   };

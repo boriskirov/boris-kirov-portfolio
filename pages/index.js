@@ -52,11 +52,7 @@ export default function Home() {
             >
               {boris.experience[0].company}
             </Link>
-            . <br />
-            Previously at{" "}
-            <Link href="https://miro.com" className="external" target="_blank">
-              {boris.experience[1].company}.
-            </Link>{" "}
+            .
             <br />
             <br />
             <i>* Always remotely.</i>

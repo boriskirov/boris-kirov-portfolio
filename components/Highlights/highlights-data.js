@@ -1,5 +1,11 @@
 const HighlightsData = [
-  
+  {
+    title: "Log Processing UX Design in Elastic Streams",
+    project: "Elastic",
+    date: "03.03.2026",
+    url: "https://www.elastic.co/observability-labs/blog/designing-log-processing-ux-for-streams",
+  },
+
   {
     title:
       "Introducing Streams for Observability: Your first stop for investigations",
@@ -8,15 +14,13 @@ const HighlightsData = [
     url: "https://www.elastic.co/observability-labs/blog/elastic-observability-streams-ai-logs-investigations",
   },
   {
-    title:
-      "Elastic Redefines Observability with AI-Powered Streams",
+    title: "Elastic Redefines Observability with AI-Powered Streams",
     project: "Elastic Streams",
     date: "28.10.2025",
     url: "https://ir.elastic.co/news/news-details/2025/Elastic-Redefines-Observability-with-AI-Powered-Streams/default.aspx",
   },
-    {
-    title:
-      "Goodbye log swamp, hello Streams",
+  {
+    title: "Goodbye log swamp, hello Streams",
     project: "Elastic Streams",
     date: "28.10.2025",
     url: "https://www.elastic.co/elasticsearch/streams",

@@ -40,6 +40,17 @@ function formatContributionTitle(count, date) {
   return `${contributionLabel} on ${formatActivityDate(date)}`;
 }
 
+function getActivityTypeIcon(type) {
+  const iconMap = {
+    pr: "/pr.svg",
+    commit: "/commit.svg",
+    issue: "/github.svg",
+    review: "/github.svg",
+  };
+
+  return iconMap[type] || "/github.svg";
+}
+
 export default function GithubMap({ activity }) {
   const weeks = activity?.calendar?.weeks ?? [];
   const items = activity?.items ?? [];
@@ -55,9 +66,12 @@ export default function GithubMap({ activity }) {
         <div className="github-graph-header">
           <span className="github-log-label">contributions.graph</span>
           {activity?.totalContributions ? (
-            <small className="github-graph-total">
-              {activity.totalContributions.toLocaleString()} contributions
-            </small>
+            <span
+              className="metric-badge"
+              aria-label={`${activity.totalContributions.toLocaleString()} contributions`}
+            >
+              {activity.totalContributions.toLocaleString()}
+            </span>
           ) : null}
         </div>
 
@@ -134,8 +148,15 @@ export default function GithubMap({ activity }) {
                     <span className="github-log-cell github-log-cell-type">
                       <span
                         className={`github-log-badge github-log-badge-${item.type}`}
+                        title={item.typeLabel}
                       >
-                        {item.typeLabel}
+                        <Image
+                          src={getActivityTypeIcon(item.type)}
+                          className="icon github-log-type-icon"
+                          width={18}
+                          height={18}
+                          alt={item.typeLabel}
+                        />
                       </span>
                     </span>
                     <small className="github-log-action">{item.label}</small>

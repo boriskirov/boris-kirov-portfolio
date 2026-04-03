@@ -2,6 +2,25 @@ import Image from "next/image";
 import boris from "../public/boris.json";
 
 export default function Boris({}) {
+  const profileMetrics = [
+    {
+      label: "Profession",
+      value: boris.profession,
+    },
+    {
+      label: "Location",
+      value: boris.location.city,
+    },
+    {
+      label: "Working at",
+      value: boris.currentCompany || boris.experience?.[0]?.company,
+    },
+    {
+      label: "Work mode",
+      value: boris.workMode,
+    },
+  ].filter((metric) => metric.value);
+
   return (
     <div className="metric">
       <div className="flex flex-center metric-header">
@@ -18,19 +37,13 @@ export default function Boris({}) {
           {boris.familyName}
         </h6>
       </div>
-      <div className="flex space-between">
-        <div className="metric-pill">
-          <small>Profession</small>
-          <h6>{boris.profession}</h6>
-        </div>
-        <div className="metric-pill">
-          <small>Location</small>
-          <h6> {boris.location.city}</h6>
-        </div>
-        <div className="metric-pill">
-          <small>Working at</small>
-          <h6> {boris.experience[0].company}</h6>
-        </div>
+      <div className="metric-pill-grid">
+        {profileMetrics.map((metric) => (
+          <div className="metric-pill" key={metric.label}>
+            <small>{metric.label}</small>
+            <h6>{metric.value}</h6>
+          </div>
+        ))}
       </div>
       <div>
         <br />

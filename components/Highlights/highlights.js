@@ -16,7 +16,7 @@ const Highlights = () => (
           <h6>Highlights</h6>
         </span>
         <span
-          className="highlights-badge"
+          className="metric-badge"
           aria-label={`${HighlightsData.length} highlights`}
         >
           {HighlightsData.length}
