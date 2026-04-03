@@ -1,3 +1,5 @@
+import boris from "../../public/boris.json";
+
 const FooterList = [
   {
     name: "Resume 2026",
@@ -13,7 +15,7 @@ const FooterList = [
   },
   {
     name: "GitHub",
-    url: "https://github.com/boriskirov",
+    url: boris.githubUrl,
     icon: "/github.svg",
     targetBlank: true,
   },

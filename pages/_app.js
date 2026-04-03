@@ -10,23 +10,30 @@ import MobileNav from "../components/MobileNav";
 import "../styles/nav-collapsible.css";
 import SideNavCollapsible from "../components/SideNavCollapsible";
 
+const gaMeasurementId =
+  process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID || process.env.GA_MEASUREMENT_ID;
+
 const MyApp = ({ Component, pageProps }) => {
   return (
     <>
       <div className="s-shell">
-        <Script
-          src="https://www.googletagmanager.com/gtag/js?id=${process.env.GA_MEASUREMENT_ID}"
-          strategy="afterInteractive"
-        />
-        <Script id="google-analytics" strategy="afterInteractive">
-          {`
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){window.dataLayer.push(arguments);}
-          gtag('js', new Date());
+        {gaMeasurementId ? (
+          <>
+            <Script
+              src={`https://www.googletagmanager.com/gtag/js?id=${gaMeasurementId}`}
+              strategy="afterInteractive"
+            />
+            <Script id="google-analytics" strategy="afterInteractive">
+              {`
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){window.dataLayer.push(arguments);}
+              gtag('js', new Date());
 
-          gtag('config', '${process.env.GA_MEASUREMENT_ID}');
-        `}
-        </Script>
+              gtag('config', '${gaMeasurementId}');
+            `}
+            </Script>
+          </>
+        ) : null}
         {/* side rails stay as-is for desktop */}
         <SideNavCollapsible />
         {/* mobile menu */}

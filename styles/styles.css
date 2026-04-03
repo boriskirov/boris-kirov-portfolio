@@ -25,6 +25,17 @@
   --tag-color-bg: rgba(84, 84, 84, 0.15);
   --tag-color-text: var(--color-text);
   --white-color-text: var(--color-text);
+  --text-color-muted: rgba(226, 226, 226, 0.72);
+  --text-color-subtle: rgba(226, 226, 226, 0.65);
+  --text-color-faint: rgba(226, 226, 226, 0.56);
+  --border-color-subtle: rgba(255, 255, 255, 0.04);
+  --scrollbar-color-track: var(--tag-color-bg);
+  --scrollbar-color-thumb: rgba(226, 226, 226, 0.2);
+  --scrollbar-color-thumb-hover: rgba(226, 226, 226, 0.32);
+  --accent-color-primary-muted: rgba(63, 83, 217, 0.2);
+  --accent-color-warning-muted: rgba(255, 207, 0, 0.2);
+  --accent-color-success-muted: rgba(52, 168, 83, 0.2);
+  --accent-color-neutral-muted: rgba(235, 235, 235, 0.08);
 
   --space-0: 0;
   --space-0-5: 2px;
@@ -532,12 +543,34 @@ details[open] summary {
   margin: var(--space-small) 0 var(--space-large) 0;
 }
 
+.metric-header-split {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-medium);
+  flex-wrap: wrap;
+}
+
+.metric-header-title {
+  min-width: 0;
+}
+
 .metric-header > * {
   margin: 0 var(--space-small) 0 0;
 }
 
+.metric-header-split > * {
+  margin-right: 0;
+}
+
 .metric-logo {
   width: var(--size-icon);
+  margin-right: var(--space-small);
+}
+
+.metric-header-link {
+  font-size: var(--font-size-sm);
+  white-space: nowrap;
 }
 
 .avatar {
@@ -547,6 +580,239 @@ details[open] summary {
 
 .metric-pill {
   width: 33%;
+}
+
+.github-activity {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-large);
+}
+
+.github-graph {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-medium);
+  width: 100%;
+}
+
+.github-graph-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-medium);
+  flex-wrap: wrap;
+}
+
+.github-graph-total {
+  color: var(--tag-color-text);
+  opacity: 0.7;
+}
+
+.github-graph-months {
+  display: grid;
+  gap: var(--space-1);
+  align-items: end;
+  width: 100%;
+}
+
+.github-graph-month {
+  min-width: 0;
+  min-height: 1em;
+  font-family: var(--font-family-code);
+  font-size: 10px;
+  color: var(--tag-color-text);
+  opacity: 0.65;
+}
+
+.github-graph-grid {
+  display: grid;
+  gap: var(--space-1);
+  width: 100%;
+}
+
+.github-graph-week {
+  display: grid;
+  gap: var(--space-1);
+}
+
+.github-graph-day {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1 / 1;
+  border-radius: 2px;
+  background-color: var(--tag-color-bg);
+  border: 1px solid var(--border-color-subtle);
+}
+
+.github-graph-fallback {
+  margin: 0;
+  width: max-content;
+  max-width: 100%;
+}
+
+.github-log-label {
+  font-family: var(--font-family-code);
+  font-size: var(--font-size-sm);
+  color: var(--text-color-subtle);
+}
+
+.github-log-panel {
+  border-top: 1px solid var(--tag-color-bg);
+}
+
+.github-log-scroll {
+  height: 250px;
+  overflow: auto;
+  scrollbar-width: thin;
+  scrollbar-color: var(--scrollbar-color-thumb) var(--scrollbar-color-track);
+}
+
+.github-log-scroll::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+.github-log-scroll::-webkit-scrollbar-track {
+  background: var(--scrollbar-color-track);
+}
+
+.github-log-scroll::-webkit-scrollbar-thumb {
+  background: var(--scrollbar-color-thumb);
+  border: 2px solid var(--color-bg);
+  border-radius: var(--radius-pill);
+}
+
+.github-log-scroll::-webkit-scrollbar-thumb:hover {
+  background: var(--scrollbar-color-thumb-hover);
+}
+
+.github-log-columns,
+.github-log-link {
+  display: grid;
+  grid-template-columns: 92px minmax(0, 1.8fr) minmax(160px, 1fr) 100px;
+  align-items: center;
+  gap: var(--space-large);
+  min-width: 720px;
+}
+
+.github-log-columns {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  padding: var(--space-medium) var(--space-small);
+  background: var(--color-bg);
+  border-bottom: 1px solid var(--tag-color-bg);
+}
+
+.github-log-column {
+  font-family: var(--font-family-code);
+  font-size: var(--font-size-sm);
+  color: var(--text-color-subtle);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.github-log-column-date,
+.github-log-cell-date {
+  text-align: left;
+}
+
+.github-log-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.github-log-item {
+  margin: 0;
+}
+
+.github-log-item + .github-log-item {
+  border-top: 1px solid var(--tag-color-bg);
+}
+
+.github-log-link {
+  margin: 0;
+  padding: var(--space-small) var(--space-small);
+  color: inherit;
+  text-decoration: none;
+}
+
+.github-log-link:hover,
+.github-log-link:focus {
+  color: inherit;
+  text-decoration: none;
+  background: var(--card-color-hover);
+}
+
+.github-log-cell {
+  display: flex;
+  align-items: center;
+  min-width: 0;
+}
+
+.github-log-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 60px;
+  height: 24px;
+  padding: 0 var(--space-small);
+  border-radius: var(--radius-pill);
+  font-family: var(--font-family-code);
+  font-size: var(--font-size-sm);
+  line-height: 1;
+  border: 1px solid var(--tag-color-bg);
+  background: var(--tag-color-bg);
+}
+
+.github-log-badge-pr {
+  background: var(--accent-color-primary-muted);
+}
+
+.github-log-badge-issue {
+  background: var(--accent-color-warning-muted);
+}
+
+.github-log-badge-review {
+  background: var(--accent-color-success-muted);
+}
+
+.github-log-badge-commit {
+  background: var(--accent-color-neutral-muted);
+}
+
+.github-log-action {
+  display: block;
+  min-width: 0;
+  font-size: var(--font-size-sm);
+  line-height: 1.4;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.github-log-repo {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-family: var(--font-family-code);
+  color: var(--text-color-muted);
+}
+
+.github-log-date {
+  display: block;
+  color: var(--text-color-faint);
+}
+
+.github-log-empty {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: calc(250px - 45px);
+  padding: var(--space-large);
 }
 
 .highlights-accordion {
@@ -580,7 +846,7 @@ details[open] summary {
   min-width: var(--size-control);
   height: var(--size-control);
   padding: 0 var(--space-medium);
-  border-radius: var(--border-radius-circle);
+  border-radius: var(--border-radius-small);
   background-color: var(--tag-color-bg);
   border: 1px solid var(--tag-color-bg);
   font-size: var(--font-size-sm);
@@ -866,5 +1132,9 @@ details[open] summary {
     display: flex;
     width: 100%;
     flex-direction: column;
+  }
+
+  .github-graph {
+    overflow-x: auto;
   }
 }

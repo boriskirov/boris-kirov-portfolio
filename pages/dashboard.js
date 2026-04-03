@@ -2,21 +2,17 @@ import React from "react";
 
 import Motion from "../components/motion";
 import Metadata from "../components/metadata";
-import Link from "next/link";
 import Image from "next/image";
 import MainWrapper from "../components/mainWrapper";
 import Main from "../components/innerWrapper";
-import StravaStats from "../components/stravaCard";
-
-import Figmastats from "../components/figmastats";
 import CurrentlyListening from "../components/currentlyListening";
 import GithubMap from "../components/githubmap";
-import Metric from "../components/metric";
 import Boris from "../components/boris-stats";
-
 import Highlights from "../components/Highlights/highlights";
+import { getGitHubActivity } from "../lib/github-activity";
+import boris from "../public/boris.json";
 
-const Dashboard = ({ data }) => (
+const Dashboard = ({ githubActivity }) => (
   <Motion>
     <MainWrapper>
       <Metadata
@@ -34,46 +30,30 @@ const Dashboard = ({ data }) => (
         <hr />
         <Boris />
         <CurrentlyListening />
-        {/* <Figmastats /> */}
 
         <div className="metric">
-          <div className="flex flex-center metric-header">
-            <Image
-              src="/github.svg"
-              className="metric-logo"
-              width={24}
-              height={24}
-              alt="npm"
-            />
-            <h6>Github contribution map</h6>
-          </div>
-          {/* <div className="flex space-between">
-            <div className="metric-pill">
-              <small>Repos</small>
-              <Metric metric={data.user.repositories.totalCount} />
-            </div>
-            <div className="metric-pill">
-              <small>PRs</small>
-              <Metric metric={data.user.pullRequests.totalCount} />
-            </div>
-            <div className="metric-pill">
-              <small>Contributions</small>
-              <Metric
-                metric={
-                  data.user.contributionsCollection.contributionCalendar
-                    .totalContributions
-                }
+          <div className="metric-header metric-header-split">
+            <div className="flex flex-center metric-header-title">
+              <Image
+                src="/github.svg"
+                className="metric-logo"
+                width={24}
+                height={24}
+                alt="GitHub"
               />
+              <h6>Shipped contributions</h6>
             </div>
-            <div className="metric-pill">
-              <small>Followers</small>
-              <Metric metric={data.user.followers.totalCount} />
-            </div>
-          </div> */}
-          <GithubMap />
+            <a
+              href={boris.githubUrl}
+              target="_blank"
+              rel="noreferrer"
+              className="metric-header-link"
+            >
+              Go to GitHub profile
+            </a>
+          </div>
+          <GithubMap activity={githubActivity} />
         </div>
-        {/* <Npmstats /> */}
-        {/* <StravaStats /> */}
         <Highlights />
       </Main>
     </MainWrapper>
@@ -81,3 +61,14 @@ const Dashboard = ({ data }) => (
 );
 
 export default Dashboard;
+
+export async function getStaticProps() {
+  const githubActivity = await getGitHubActivity();
+
+  return {
+    props: {
+      githubActivity,
+    },
+    revalidate: 3600,
+  };
+}
