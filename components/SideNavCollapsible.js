@@ -74,7 +74,23 @@ export default function SideNavCollapsible() {
                 }
                 title={isCollapsed ? "Expand" : "Collapse"}
               >
-                {isCollapsed ? "→" : "←"}
+                {isCollapsed ? (
+                  <Image
+                    src="/sidebar-collapse.svg"
+                    alt="Expand"
+                    width={24}
+                    height={24}
+                    className="side-button"
+                  />
+                ) : (
+                  <Image
+                    src="/sidebar-expand.svg"
+                    alt="Collapse"
+                    width={24}
+                    height={24}
+                    className="side-button"
+                  />
+                )}
               </button>
             </div>
 

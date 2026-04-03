@@ -55,7 +55,6 @@
 
 .collapse-toggle-button:hover {
   background-color: var(--card-color-hover) !important;
-  border-color: var(--white-color-text) !important;
 }
 
 .collapse-toggle-button:active {

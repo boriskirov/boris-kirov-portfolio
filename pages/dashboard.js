@@ -6,6 +6,7 @@ import Image from "next/image";
 import MainWrapper from "../components/mainWrapper";
 import Main from "../components/innerWrapper";
 import CurrentlyListening from "../components/currentlyListening";
+import HighlightsData from "../components/Highlights/highlights-data";
 import GithubMap from "../components/githubmap";
 import RecentRepositories from "../components/recent-repositories";
 import Boris from "../components/boris-stats";
@@ -33,7 +34,31 @@ const Dashboard = ({ githubActivity, recentRepositories }) => (
           different sources.
         </p>
         <hr />
-        <Boris />
+        <div className="flex">
+          <Boris />
+          <div className="metric">
+            <div className="flex flex-center metric-header">
+              {" "}
+              <Image
+                src="/star.svg"
+                className="metric-logo"
+                width={24}
+                height={24}
+                alt="GitHub"
+              />
+              <h6>{HighlightsData[0].title}</h6>
+            </div>
+            <a href={HighlightsData[0].url} target="_blank" rel="noreferrer">
+              <Image
+                src="/log-processing.png"
+                className="recent-project-image"
+                alt="GitHub"
+                width={256}
+                height={220}
+              />
+            </a>
+          </div>
+        </div>
         <div className="metric borderless">
           <div className="metric-header">
             <h6>Recently contributed to</h6>

@@ -37,13 +37,29 @@
     {
       "id": 0,
       "company": "Elastic",
-      "role": "Senior Product Designer",
+      "role": "Senior Product Designer - Streams & Significant Events",
       "work": "www.elastic.co",
-      "dates": "March 2022 - Present",
+      "dates": "Sep 2024 - Present",
       "website": "https://www.elastic.co/"
     },
     {
       "id": 1,
+      "company": "Elastic",
+      "role": "Senior Product Designer - AI, AI Assistant and ML",
+      "work": "www.elastic.co",
+      "dates": "Aug 2023 - Sep 2024",
+      "website": "https://www.elastic.co/"
+    },
+    {
+      "id": 2,
+      "company": "Elastic",
+      "role": "Senior Product Designer - APM, Profiling & Synthetics",
+      "work": "www.elastic.co",
+      "dates": "Mar 2022 - Aug 2023",
+      "website": "https://www.elastic.co/"
+    },
+    {
+      "id": 3,
       "company": "Miro",
       "role": "Product designer - Platform experience & Design systems",
       "work": "www.boriskirov.me/miro",
@@ -51,7 +67,7 @@
       "website": "https://www.miro.com/"
     },
     {
-      "id": 2,
+      "id": 4,
       "company": "Miro",
       "role": "Product designer - Developer experience & Marketplace",
       "work": "www.boriskirov.me/miro",
@@ -59,7 +75,7 @@
       "website": "https://www.miro.com/"
     },
     {
-      "id": 3,
+      "id": 5,
       "company": "INFO",
       "role": "Product designer",
       "work": "www.boriskirov.me/posts/great-wall-of-development",
@@ -67,7 +83,15 @@
       "website": "https://www.info.nl/"
     },
     {
-      "id": 4,
+      "id": 6,
+      "company": "SoftServe",
+      "role": "UX designer",
+      "work": "/",
+      "dates": "Dec 2018 - Feb 2019",
+      "website": "https://https://www.softserveinc.com/en-us/"
+    },
+    {
+      "id": 7,
       "company": "Despark",
       "role": "Digital Producer",
       "work": "www.boriskirov.me/posts/nda",

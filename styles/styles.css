@@ -278,6 +278,7 @@ video {
 
 .flex {
   display: flex;
+  gap: var(--space-large);
 }
 
 .flex-column {
@@ -323,7 +324,7 @@ video {
   justify-content: center;
   max-width: var(--content-max);
   width: 100%;
-  padding: 10vw 5vw;
+  padding: 5vw 0vw;
 }
 
 .contentWrapper {
@@ -561,17 +562,12 @@ details[open] summary {
   min-width: 0;
 }
 
-.metric-header > * {
-  margin: 0 var(--space-small) 0 0;
-}
-
 .metric-header-split > * {
   margin-right: 0;
 }
 
 .metric-logo {
   width: var(--size-icon);
-  margin-right: var(--space-small);
 }
 
 .metric-header-link {
@@ -712,6 +708,10 @@ a.recent-repo-card:active {
   height: 12px;
   color: var(--text-color-subtle);
   filter: invert(100%);
+}
+
+.recent-project-image {
+  object-fit: cover;
 }
 
 .github-activity {
@@ -1032,7 +1032,8 @@ a.recent-repo-card:active {
   height: 32px;
   background: var(--card-color-bg);
   border-radius: var(--border-radius-circle);
-  border: 1px solid var(--card-color-bg);
+  border: 1px solid var(--text-color-muted);
+  padding: var(--space-xxsmall);
 }
 
 .timeline-item {
@@ -1048,7 +1049,7 @@ a.recent-repo-card:active {
   left: 14px;
   width: 2px;
   height: 70px;
-  border-left: 2px dashed var(--blue-2);
+  border-left: 2px dashed var(--text-color-muted);
   content: "";
 }
 
