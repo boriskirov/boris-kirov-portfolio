@@ -1028,8 +1028,8 @@ a.recent-repo-card:active {
 }
 
 .timeline-icon {
-  width: 32px;
-  height: 32px;
+  width: 24px;
+  height: 24px;
   background: var(--card-color-bg);
   border-radius: var(--border-radius-circle);
   border: 1px solid var(--text-color-muted);

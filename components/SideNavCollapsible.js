@@ -14,7 +14,7 @@ const SECONDARY_PREFIXES = ["/posts", "/cases", "/codes"];
 export default function SideNavCollapsible() {
   const router = useRouter();
   const pathname = router.asPath || "/";
-  const [isCollapsed, setIsCollapsed] = useState(false);
+  const [isCollapsed, setIsCollapsed] = useState(true);
 
   // 1) Which primary is active?
   const activePrimary = useMemo(() => {

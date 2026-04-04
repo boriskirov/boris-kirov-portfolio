@@ -35,36 +35,46 @@ const Dashboard = ({ githubActivity, recentRepositories }) => (
         </p>
         <hr />
         <div className="flex">
-          <Boris />
-          <a
-            href={HighlightsData[0].url}
-            target="_blank"
-            rel="noreferrer"
-            className="metric recent-repo-card"
-          >
-            <div className="flex flex-center metric-header">
-              {" "}
+          <div className="metric borderless">
+            <div className="metric-header">
+              <h6>Metadata</h6>
+            </div>
+            <Boris />
+          </div>
+          <div className="metric borderless">
+            <div className="metric-header flex">
               <Image
                 src="/star.svg"
                 className="metric-logo"
                 width={16}
                 height={16}
-                alt="GitHub"
+                alt="Star"
               />
-              <h6>{HighlightsData[0].title}</h6>
-              <span className="recent-repo-card-external" aria-hidden="true">
-                ↗
-              </span>
+              <h6>Starred project or contribution</h6>
             </div>
+            <a
+              href={HighlightsData[0].url}
+              target="_blank"
+              rel="noreferrer"
+              className="metric recent-repo-card"
+            >
+              <div className="flex flex-center metric-header">
+                {" "}
+                <h6>{HighlightsData[0].title}</h6>
+                <span className="recent-repo-card-external" aria-hidden="true">
+                  ↗
+                </span>
+              </div>
 
-            <Image
-              src="/log-processing.png"
-              className="recent-project-image"
-              alt="GitHub"
-              width={256}
-              height={220}
-            />
-          </a>
+              <Image
+                src="/log-processing.png"
+                className="recent-project-image"
+                alt="GitHub"
+                width={256}
+                height={220}
+              />
+            </a>
+          </div>
         </div>
         <div className="metric borderless">
           <div className="metric-header">
