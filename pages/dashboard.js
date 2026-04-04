@@ -36,28 +36,35 @@ const Dashboard = ({ githubActivity, recentRepositories }) => (
         <hr />
         <div className="flex">
           <Boris />
-          <div className="metric">
+          <a
+            href={HighlightsData[0].url}
+            target="_blank"
+            rel="noreferrer"
+            className="metric recent-repo-card"
+          >
             <div className="flex flex-center metric-header">
               {" "}
               <Image
                 src="/star.svg"
                 className="metric-logo"
-                width={24}
-                height={24}
+                width={16}
+                height={16}
                 alt="GitHub"
               />
               <h6>{HighlightsData[0].title}</h6>
+              <span className="recent-repo-card-external" aria-hidden="true">
+                ↗
+              </span>
             </div>
-            <a href={HighlightsData[0].url} target="_blank" rel="noreferrer">
-              <Image
-                src="/log-processing.png"
-                className="recent-project-image"
-                alt="GitHub"
-                width={256}
-                height={220}
-              />
-            </a>
-          </div>
+
+            <Image
+              src="/log-processing.png"
+              className="recent-project-image"
+              alt="GitHub"
+              width={256}
+              height={220}
+            />
+          </a>
         </div>
         <div className="metric borderless">
           <div className="metric-header">

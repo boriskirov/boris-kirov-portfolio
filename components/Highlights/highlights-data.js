@@ -1,6 +1,6 @@
 const HighlightsData = [
   {
-    title: "Log Processing UX Design in Elastic Streams",
+    title: "Log Processing in Elastic Streams",
     project: "Elastic",
     date: "03.03.2026",
     url: "https://www.elastic.co/observability-labs/blog/designing-log-processing-ux-for-streams",
