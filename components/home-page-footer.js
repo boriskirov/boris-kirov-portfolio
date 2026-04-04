@@ -26,8 +26,8 @@ const HomePageFooter = () => (
           <Image
             src="/playground.svg"
             alt="Playground icon"
-            width={24}
-            height={24}
+            width={16}
+            height={16}
           />
         </div>
       </Link>
@@ -36,8 +36,8 @@ const HomePageFooter = () => (
           <Image
             src="/writings.svg"
             alt="Writings icons"
-            width={24}
-            height={24}
+            width={16}
+            height={16}
           />
         </div>
       </Link>

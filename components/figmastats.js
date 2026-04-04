@@ -17,8 +17,8 @@ const Figmastats = () => {
         <Image
           src="/figma.svg"
           className="metric-logo"
-          width={24}
-          height={24}
+          width={16}
+          height={16}
           alt="npm"
         />
         <h6>Plugin stats</h6>

@@ -15,16 +15,19 @@ const Npmstats = () => {
         <Image
           src="/npm.svg"
           className="metric-logo"
-          width={24}
-          height={24}
+          width={16}
+          height={16}
           alt="npm"
         />
-        <h6>Package Stats</h6>
+        <h6>NPM Download Stats</h6>
       </div>
       <div className="flex space-between">
         <div className="metric-pill">
           <small>Downloads</small>
           <Metric metric={totalDownloads} />
+        </div>
+        <div className="metric-pill">
+          <small>Packages</small>3
         </div>
       </div>
     </div>

@@ -16,6 +16,7 @@ import {
   getRecentlyContributedRepositories,
 } from "../lib/github-activity";
 import boris from "../public/boris.json";
+import Npmstats from "../components/npmstats";
 
 const Dashboard = ({ githubActivity, recentRepositories }) => (
   <Motion>
@@ -34,7 +35,7 @@ const Dashboard = ({ githubActivity, recentRepositories }) => (
           different sources.
         </p>
         <hr />
-        <div className="flex">
+        <div className="flex flex-column">
           <div className="metric borderless">
             <div className="metric-header">
               <h6>Metadata</h6>
@@ -107,7 +108,7 @@ const Dashboard = ({ githubActivity, recentRepositories }) => (
           </div>
           <GithubMap activity={githubActivity} />
         </div>
-
+        <Npmstats />
         <Highlights />
       </Main>
     </MainWrapper>

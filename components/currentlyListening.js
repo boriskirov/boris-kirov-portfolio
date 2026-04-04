@@ -22,16 +22,16 @@ export default function CurrentlyListening() {
             className="currentlyListeningImg"
             src={data?.albumImageUrl}
             alt={data?.album}
-            width={24}
-            height={24}
+            width={16}
+            height={16}
           />
         ) : (
           <Image
             className="currentlyListeningImg metric-logo"
             src="/spotify.svg"
             alt="Spotify logo"
-            width={24}
-            height={24}
+            width={16}
+            height={16}
           />
         )}
         <div className="currentlyListeningContent">
