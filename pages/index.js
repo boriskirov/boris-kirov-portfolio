@@ -1,13 +1,12 @@
-import React from "react";
 import Motion from "../components/motion";
 import Metadata from "../components/metadata";
-import Link from "next/link";
+
 import { useState, useEffect } from "react";
 import Header from "../components/header";
 import MainWrapper from "../components/mainWrapper";
-import boris from "../public/boris.json";
-import ChatMode from "../components/Chatmode";
-import WebMode from "../components/WebMode";
+
+import ChatMode from "../components/Chatmode.js";
+import WebMode from "../components/WebMode.js";
 import { useRouter } from "next/router";
 
 export default function Home() {
