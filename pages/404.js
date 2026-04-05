@@ -18,13 +18,15 @@ const Error = () => (
       />
       <Main>
         <div className="flex error">
-          <Image src="/sad-mac.svg" alt="404" width={124} height={124} />
-
-          <h1 className="heading2Xl">404</h1>
-
+          <Image src="/sad-mac.svg" alt="404" width={248} height={248} />
+          <h1>404</h1>
           <p>
             Sorry, this page doesn't exist, but you can check my{" "}
-            <Link href="/playground" as="/playground" className="internalPassage">
+            <Link
+              href="/playground"
+              as="/playground"
+              className="internalPassage"
+            >
               Playground
             </Link>
             .{" "}

@@ -1,35 +1,66 @@
 <svg width="357" height="474" viewBox="0 0 357 474" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M0 27.9487H27.9483V13.1836H329.052V27.9487H357V404.46H330.634V460.356H26.3663V404.46H0V27.9487Z" fill="white"/>
-<rect x="94" y="80" width="14.7651" height="14.7651" fill="black"/>
-<rect x="219" y="80" width="14.7651" height="14.7651" fill="black"/>
-<rect x="141" y="140" width="14.7651" height="14.7651" fill="black"/>
-<rect x="126" y="204" width="14.7651" height="14.7651" fill="black"/>
-<rect x="249" y="219" width="14.7651" height="14.7651" fill="black"/>
-<rect x="156" y="155" width="32" height="15" fill="black"/>
-<rect x="141" y="189" width="76" height="15" fill="black"/>
-<rect x="217" y="204" width="32" height="15" fill="black"/>
-<rect x="188" y="140" width="14.7651" height="14.7651" fill="black"/>
-<rect x="94" y="110" width="14.7651" height="14.7651" fill="black"/>
-<rect x="219" y="110" width="14.7651" height="14.7651" fill="black"/>
-<rect x="109" y="95" width="14.7651" height="14.7651" fill="black"/>
-<rect x="234" y="95" width="14.7651" height="14.7651" fill="black"/>
-<rect x="124" y="80" width="14.7651" height="14.7651" fill="black"/>
-<rect x="249" y="80" width="14.7651" height="14.7651" fill="black"/>
-<rect x="124" y="110" width="14.7651" height="14.7651" fill="black"/>
-<rect x="249" y="110" width="14.7651" height="14.7651" fill="black"/>
-<rect x="42.1855" y="57.4805" width="13.1832" height="200.911" fill="black"/>
-<rect y="27.9492" width="13.1832" height="376.511" fill="black"/>
-<rect x="343.816" y="27.9492" width="13.1832" height="376.511" fill="black"/>
-<rect x="13.1836" y="417.641" width="13.1831" height="330.634" transform="rotate(-90 13.1836 417.641)" fill="black"/>
-<rect x="13.1836" y="473.539" width="13.1831" height="330.634" transform="rotate(-90 13.1836 473.539)" fill="black"/>
-<rect x="26.3672" y="460.355" width="13.1832" height="42.7134" transform="rotate(180 26.3672 460.355)" fill="black"/>
-<rect x="343.816" y="460.355" width="13.1832" height="42.7134" transform="rotate(180 343.816 460.355)" fill="black"/>
-<rect x="27.9473" y="13.1836" width="13.1832" height="302.158" transform="rotate(-90 27.9473 13.1836)" fill="black"/>
-<rect x="13.1836" y="13.1836" width="14.7651" height="14.7651" fill="black"/>
-<rect x="329.053" y="13.1836" width="14.7651" height="14.7651" fill="black"/>
-<rect x="302.686" y="57.4805" width="13.1832" height="200.911" fill="black"/>
-<rect x="55.3691" y="57.4805" width="13.1832" height="247.316" transform="rotate(-90 55.3691 57.4805)" fill="black"/>
-<rect x="55.3691" y="271.574" width="13.1832" height="247.316" transform="rotate(-90 55.3691 271.574)" fill="black"/>
-<rect x="215.676" y="344.871" width="13.1832" height="87.0089" transform="rotate(-90 215.676 344.871)" fill="black"/>
-<rect x="42.1855" y="359.109" width="13.1832" height="27.421" transform="rotate(-90 42.1855 359.109)" fill="black"/>
+  <style>
+    @keyframes blink {
+      0%, 88%, 96%, 100% { opacity: 1; }
+      92%                 { opacity: 0; }
+    }
+
+    .left-eye  { animation: blink 1s ease-in-out infinite 0s;     }
+    .right-eye { animation: blink 1s ease-in-out infinite 0.08s;  }
+    .nose  { animation: blink 1s ease-in-out infinite 0s;     }
+    .mouth { animation: blink 1s ease-in-out infinite 0.08s;  }
+  </style>
+
+  <!-- ── Face body (white silhouette) ── -->
+  <path d="M0 27.9487H27.9483V13.1836H329.052V27.9487H357V404.46H330.634V460.356H26.3663V404.46H0V27.9487Z" fill="white"/>
+
+  <!-- ── Frame / border strokes ── -->
+  <rect x="42.1855"  y="57.4805"  width="13.1832" height="200.911" fill="black"/>
+  <rect x="0"        y="27.9492"  width="13.1832" height="376.511" fill="black"/>
+  <rect x="343.816"  y="27.9492"  width="13.1832" height="376.511" fill="black"/>
+  <rect x="13.1836"  y="417.641"  width="13.1831" height="330.634" transform="rotate(-90 13.1836 417.641)"  fill="black"/>
+  <rect x="13.1836"  y="473.539"  width="13.1831" height="330.634" transform="rotate(-90 13.1836 473.539)"  fill="black"/>
+  <rect x="26.3672"  y="460.355"  width="13.1832" height="42.7134"  transform="rotate(180 26.3672 460.355)"  fill="black"/>
+  <rect x="343.816"  y="460.355"  width="13.1832" height="42.7134"  transform="rotate(180 343.816 460.355)" fill="black"/>
+  <rect x="27.9473"  y="13.1836"  width="13.1832" height="302.158"  transform="rotate(-90 27.9473 13.1836)"  fill="black"/>
+  <rect x="13.1836"  y="13.1836"  width="14.7651" height="14.7651" fill="black"/>
+  <rect x="329.053"  y="13.1836"  width="14.7651" height="14.7651" fill="black"/>
+  <rect x="302.686"  y="57.4805"  width="13.1832" height="200.911" fill="black"/>
+  <rect x="55.3691"  y="57.4805"  width="13.1832" height="247.316"  transform="rotate(-90 55.3691 57.4805)"   fill="black"/>
+  <rect x="55.3691"  y="271.574"  width="13.1832" height="247.316"  transform="rotate(-90 55.3691 271.574)"   fill="black"/>
+  <rect x="215.676"  y="344.871"  width="13.1832" height="87.0089"  transform="rotate(-90 215.676 344.871)"  fill="black"/>
+  <rect x="42.1855"  y="359.109"  width="13.1832" height="27.421"   transform="rotate(-90 42.1855 359.109)"  fill="black"/>
+
+  <!-- ── Left eye (X) ── -->
+  <g class="left-eye">
+    <rect x="94"  y="80"  width="14.7651" height="14.7651" fill="black"/>
+    <rect x="124" y="80"  width="14.7651" height="14.7651" fill="black"/>
+    <rect x="109" y="95"  width="14.7651" height="14.7651" fill="black"/>
+    <rect x="94"  y="110" width="14.7651" height="14.7651" fill="black"/>
+    <rect x="124" y="110" width="14.7651" height="14.7651" fill="black"/>
+  </g>
+
+  <!-- ── Right eye (X) ── -->
+  <g class="right-eye">
+    <rect x="219" y="80"  width="14.7651" height="14.7651" fill="black"/>
+    <rect x="249" y="80"  width="14.7651" height="14.7651" fill="black"/>
+    <rect x="234" y="95"  width="14.7651" height="14.7651" fill="black"/>
+    <rect x="219" y="110" width="14.7651" height="14.7651" fill="black"/>
+    <rect x="249" y="110" width="14.7651" height="14.7651" fill="black"/>
+  </g>
+
+  <!-- ── Nose ── -->
+  <g class="nose">
+    <rect x="141" y="140" width="14.7651" height="14.7651" fill="black"/>
+    <rect x="188" y="140" width="14.7651" height="14.7651" fill="black"/>
+    <rect x="156" y="155" width="32"      height="15"      fill="black"/>
+  </g>
+
+  <!-- ── Mouth (frown) ── -->
+  <g class="mouth">
+    <rect x="141" y="189" width="76"      height="15"      fill="black"/>
+    <rect x="126" y="204" width="14.7651" height="14.7651" fill="black"/>
+    <rect x="217" y="204" width="32"      height="15"      fill="black"/>
+    <rect x="249" y="219" width="14.7651" height="14.7651" fill="black"/>
+  </g>
 </svg>
