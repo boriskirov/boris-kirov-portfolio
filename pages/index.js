@@ -5,7 +5,7 @@ import { useState, useEffect } from "react";
 import Header from "../components/header";
 import MainWrapper from "../components/mainWrapper";
 
-import ChatMode from "../components/Chatmode.js";
+import ChatMode from "../components/ChatMode.js";
 import WebMode from "../components/WebMode.js";
 import { useRouter } from "next/router";
 
