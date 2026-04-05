@@ -43,7 +43,11 @@
 .monospace b,
 .monospace i,
 .monospace strong,
-.monospace mark {
+.monospace mark,
+.monospace code,
+.monospace pre,
+.monospace blockquote,
+.monospace button {
   font-family: var(--font-family-monospace);
 }
 

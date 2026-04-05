@@ -1043,6 +1043,16 @@ a.recent-repo-card:active {
   align-items: flex-start;
 }
 
+.timeline-content {
+  background: var(--card-color-bg);
+  padding: var(--space-medium);
+  border-radius: var(--border-radius-small);
+  border: 1px solid var(--tag-color-bg);
+  margin-left: var(--space-medium);
+  gap: var(--space-medium);
+  display: flex;
+}
+
 .timeline-item::before {
   position: absolute;
   bottom: calc(100% - 104px);
@@ -1258,6 +1268,8 @@ a.recent-repo-card:active {
   header,
   .index-body-container {
     padding: 6vw var(--space-xlarge);
+    justify-content: center;
+    display: flex;
   }
 
   ol {

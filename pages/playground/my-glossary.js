@@ -26,7 +26,10 @@ const Glossary = () => (
           <section>
             <motion.details
               className="dic-card"
-              whileHover={{ scale: 1.015, transition: { duration: 0.23 } }}
+              whileHover={{
+                backgroundColor: "var(--card-color-hover)",
+                transition: { duration: 0.23 },
+              }}
             >
               <summary aria-haspopup="true" className="headingM">
                 Analytical thinking
@@ -41,7 +44,10 @@ const Glossary = () => (
 
             <motion.details
               className="dic-card"
-              whileHover={{ scale: 1.015, transition: { duration: 0.23 } }}
+              whileHover={{
+                backgroundColor: "var(--card-color-hover)",
+                transition: { duration: 0.23 },
+              }}
             >
               <summary aria-haspopup="true" className="headingM">
                 Bootstrapping
@@ -57,7 +63,10 @@ const Glossary = () => (
 
             <motion.details
               className="dic-card"
-              whileHover={{ scale: 1.015, transition: { duration: 0.23 } }}
+              whileHover={{
+                backgroundColor: "var(--card-color-hover)",
+                transition: { duration: 0.23 },
+              }}
             >
               <summary aria-haspopup="true" className="headingM">
                 Feedback loop
@@ -72,7 +81,10 @@ const Glossary = () => (
 
             <motion.details
               className="dic-card"
-              whileHover={{ scale: 1.015, transition: { duration: 0.23 } }}
+              whileHover={{
+                backgroundColor: "var(--card-color-hover)",
+                transition: { duration: 0.23 },
+              }}
             >
               <summary aria-haspopup="true" className="headingM">
                 Human Centered Design
@@ -91,7 +103,10 @@ const Glossary = () => (
 
             <motion.details
               className="dic-card"
-              whileHover={{ scale: 1.015, transition: { duration: 0.23 } }}
+              whileHover={{
+                backgroundColor: "var(--card-color-hover)",
+                transition: { duration: 0.23 },
+              }}
             >
               <summary aria-haspopup="true" className="headingM">
                 Modularity
@@ -108,7 +123,10 @@ const Glossary = () => (
 
             <motion.details
               className="dic-card"
-              whileHover={{ scale: 1.015, transition: { duration: 0.23 } }}
+              whileHover={{
+                backgroundColor: "var(--card-color-hover)",
+                transition: { duration: 0.23 },
+              }}
             >
               <summary aria-haspopup="true" className="headingM">
                 Nudge Theory
@@ -124,7 +142,10 @@ const Glossary = () => (
 
             <motion.details
               className="dic-card"
-              whileHover={{ scale: 1.015, transition: { duration: 0.23 } }}
+              whileHover={{
+                backgroundColor: "var(--card-color-hover)",
+                transition: { duration: 0.23 },
+              }}
             >
               <summary aria-haspopup="true" className="headingM">
                 Socratic method
@@ -140,7 +161,10 @@ const Glossary = () => (
 
             <motion.details
               className="dic-card"
-              whileHover={{ scale: 1.015, transition: { duration: 0.23 } }}
+              whileHover={{
+                backgroundColor: "var(--card-color-hover)",
+                transition: { duration: 0.23 },
+              }}
             >
               <summary aria-haspopup="true" className="headingM">
                 System Thinking
@@ -157,7 +181,10 @@ const Glossary = () => (
 
             <motion.details
               className="dic-card"
-              whileHover={{ scale: 1.015, transition: { duration: 0.23 } }}
+              whileHover={{
+                backgroundColor: "var(--card-color-hover)",
+                transition: { duration: 0.23 },
+              }}
             >
               <summary aria-haspopup="true" className="headingM">
                 Path of least resistance
@@ -173,7 +200,10 @@ const Glossary = () => (
 
             <motion.details
               className="dic-card"
-              whileHover={{ scale: 1.015, transition: { duration: 0.23 } }}
+              whileHover={{
+                backgroundColor: "var(--card-color-hover)",
+                transition: { duration: 0.23 },
+              }}
             >
               <summary aria-haspopup="true" className="headingM">
                 Pokayoke
@@ -190,7 +220,10 @@ const Glossary = () => (
 
             <motion.details
               className="dic-card"
-              whileHover={{ scale: 1.015, transition: { duration: 0.23 } }}
+              whileHover={{
+                backgroundColor: "var(--card-color-hover)",
+                transition: { duration: 0.23 },
+              }}
             >
               <summary aria-haspopup="true" className="headingM">
                 Principle Of Least Astonishment

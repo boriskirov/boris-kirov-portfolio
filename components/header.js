@@ -7,7 +7,7 @@ import { useCallback, useState, useEffect } from "react";
 
 import Commands from "./commands";
 
-export default function Header() {
+export default function Header({ mode, onToggle }) {
   const [showModal, setShowModal] = useState(false);
 
   function Shorcut() {
@@ -36,6 +36,14 @@ export default function Header() {
   return (
     <header>
       <div className="flex">
+        <button onClick={onToggle} className="footer-button" title="Agent mode">
+          <Image
+            src={mode === "portfolio" ? "/chat.svg" : "/web.svg"}
+            alt={mode === "portfolio" ? "Chat mode" : "Close"}
+            width={24}
+            height={24}
+          />
+        </button>
         <button type="button" title="Font swap ⌥+S" className="footer-button">
           <FontSwap />
         </button>

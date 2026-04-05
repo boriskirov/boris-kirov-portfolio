@@ -2,6 +2,13 @@ import boris from "../../public/boris.json";
 
 const FooterList = [
   {
+    id: "agent-mode",
+    name: "Agent mode",
+    url: "/?mode=chat",
+    icon: "/chat.svg",
+    targetBlank: false,
+  },
+  {
     name: "Resume 2026",
     url: "/BorisKirov_Resume.pdf",
     icon: "/resume.svg",

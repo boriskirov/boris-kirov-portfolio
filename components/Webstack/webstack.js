@@ -13,7 +13,7 @@ const WebStack = () => {
       {data.map((webstack) => (
         <motion.a
           whileHover={{
-            scale: 1.0105,
+            backgroundColor: "var(--card-color-hover)",
             transition: { duration: 0.23 },
           }}
           key={webstack.name}
