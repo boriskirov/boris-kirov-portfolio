@@ -1,4 +1,4 @@
-export default async (req, res) => {
+const handler = async (_req, res) => {
   const headers = {
     Accept: "application/json, text/plain, */*",
     "Content-Type": "application/json",
@@ -17,14 +17,14 @@ export default async (req, res) => {
       method: "post",
       headers: headers,
       body: body,
-    }
+    },
   );
 
   const reAuthJson = await reauthorizeResponse.json();
 
   const response = await fetch(
     "https://www.strava.com/api/v3/athletes/40093533/stats?access_token=" +
-      reAuthJson.access_token
+      reAuthJson.access_token,
   );
   const json = await response.json();
   const countRuns = json.all_run_totals;
@@ -37,3 +37,5 @@ export default async (req, res) => {
     countRides,
   });
 };
+
+export default handler;
