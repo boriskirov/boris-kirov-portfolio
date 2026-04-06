@@ -19,6 +19,10 @@ export default function Boris({}) {
       label: "Work mode",
       value: boris.workMode,
     },
+    {
+      label: "Contact",
+      value: boris.email,
+    },
   ].filter((metric) => metric.value);
 
   return (

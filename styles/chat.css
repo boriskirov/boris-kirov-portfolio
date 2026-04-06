@@ -2,17 +2,8 @@
   max-width: 920px;
   position: relative;
   justify-content: center;
-  padding: 50px;
-  background-image: radial-gradient(
-    var(--accent-color-warning-muted) 0.5px,
-    transparent 0
-  );
-  background-repeat: repeat;
-  background-position: -8.5px -8.5px;
-  background-size: 17px 17px;
   display: flex;
   flex-direction: column;
-  height: 80vh;
 }
 
 .chat-prompts {

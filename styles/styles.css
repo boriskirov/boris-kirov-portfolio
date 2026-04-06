@@ -99,6 +99,13 @@ body {
   line-height: 1.4;
   scroll-behavior: smooth;
   word-break: normal;
+  background-image: radial-gradient(
+    var(--accent-color-warning-muted) 0.5px,
+    transparent 0
+  );
+  background-repeat: repeat;
+  background-position: -8.5px -8.5px;
+  background-size: 17px 17px;
 }
 
 header,
@@ -415,8 +422,8 @@ a.ApiCard:focus {
 .stack-card-img {
   border-radius: var(--border-radius-small);
   aspect-ratio: 1/1;
-  width: 24px;
-  height: 24px;
+  width: 32px;
+  height: 32px;
 }
 
 .currentlyListeningImg {
@@ -452,14 +459,11 @@ a.ApiCard:focus {
   text-shadow: none;
   text-decoration: none;
   padding: var(--space-small) var(--space-large);
-  margin: var(--space-medium) 0 0 0;
-  background-color: var(--card-color-bg);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  border-radius: var(--border-radius-small);
-  border: 1px solid var(--tag-color-bg);
+  border-bottom: 1px solid var(--tag-color-bg);
 }
 
 .dic-card summary {
@@ -1037,7 +1041,7 @@ a.recent-repo-card:active {
 }
 
 .timeline-item {
-  margin: 0 0 48px 0px;
+  margin: 0 0 32px 0px;
   position: relative;
   display: inline-flex;
   align-items: flex-start;
@@ -1055,12 +1059,19 @@ a.recent-repo-card:active {
 
 .timeline-item::before {
   position: absolute;
-  bottom: calc(100% - 104px);
-  left: 14px;
+  bottom: calc(100% - 90px);
+  left: 11px;
   width: 2px;
   height: 70px;
   border-left: 2px dashed var(--text-color-muted);
   content: "";
+}
+
+.timeline-item:last-child::before {
+  position: absolute;
+  border-left: none;
+  height: 20px;
+  height: 0;
 }
 
 .timeline-info {

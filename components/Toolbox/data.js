@@ -1,15 +1,40 @@
 const ToolboxList = [
   {
-    name: "Miro",
-    url: "https://miro.com",
-    image: "/miro.png",
-    category: "Collaboration",
-  },
-  {
     name: "Figma",
     url: "https://Figma.com",
     image: "/figma.png",
     category: "Design",
+  },
+  {
+    name: "Github",
+    url: "https://github.com",
+    image: "/github.png",
+    category: "Collaboration",
+  },
+  {
+    name: "Terminal",
+    url: "https://support.apple.com/guide/terminal/welcome/mac",
+    image: "/terminal.png",
+    category: "Development",
+  },
+  {
+    name: "VScode",
+    url: "https://code.visualstudio.com/",
+    image: "/vscode.png",
+    category: "Development",
+  },
+  {
+    name: "Claude",
+    url: "https://claude.ai",
+    image: "/claude.png",
+    category: "Development",
+  },
+
+  {
+    name: "DuckDuckGo",
+    url: "https://duckduckgo.com/",
+    image: "/ddg.png",
+    category: "Security",
   },
   {
     name: "1.1.1.1.",
@@ -18,28 +43,29 @@ const ToolboxList = [
     category: "Security",
   },
   {
+    name: "slack",
+    url: "https://slack.com",
+    image: "/slack.png",
+    category: "Collaboration",
+  },
+  {
     name: "Things",
     url: "https://culturedcode.com/things/",
     image: "/things.png",
     category: "Productivity",
   },
   {
-    name: "Notion",
-    url: "https://notion.so",
-    image: "/notion.png",
-    category: "Writing",
+    name: "Vercel",
+    url: "https://vercel.com",
+    image: "/vercel.png",
+    category: "Development",
   },
+
   {
-    name: "Spotify",
-    url: "https://Spotify.com",
-    image: "/spotify.png",
-    category: "Productivity",
-  },
-  {
-    name: "Github",
-    url: "https://github.com",
-    image: "/github.png",
-    category: "Collaboration",
+    name: "Next.js",
+    url: "https://nextjs.org",
+    image: "/nextjs.png",
+    category: "Development",
   },
   {
     name: "VSCO",
@@ -72,28 +98,16 @@ const ToolboxList = [
     category: "Productivity",
   },
   {
-    name: "Next.js",
-    url: "https://nextjs.org",
-    image: "/nextjs.png",
-    category: "Development",
+    name: "Miro",
+    url: "https://miro.com",
+    image: "/miro.png",
+    category: "Collaboration",
   },
   {
-    name: "Vercel",
-    url: "https://vercel.com",
-    image: "/vercel.png",
-    category: "Development",
-  },
-  {
-    name: "Terminal",
-    url: "https://support.apple.com/guide/terminal/welcome/mac",
-    image: "/terminal.png",
-    category: "Development",
-  },
-  {
-    name: "VScode",
-    url: "https://code.visualstudio.com/",
-    image: "/vscode.png",
-    category: "Development",
+    name: "Notion",
+    url: "https://notion.so",
+    image: "/notion.png",
+    category: "Writing",
   },
   {
     name: "Firefox Dev Edition",
@@ -125,12 +139,7 @@ const ToolboxList = [
     image: "/muzzle.png",
     category: "Productivity",
   },
-  {
-    name: "DuckDuckGo",
-    url: "https://duckduckgo.com/",
-    image: "/ddg.png",
-    category: "Security",
-  },
+
   {
     name: "CleanShot",
     url: "https://cleanshot.com/",
@@ -153,6 +162,12 @@ const ToolboxList = [
     name: "rectangle",
     url: "https://rectangleapp.com/",
     image: "/rectangle.png",
+    category: "Productivity",
+  },
+  {
+    name: "Spotify",
+    url: "https://Spotify.com",
+    image: "/spotify.png",
     category: "Productivity",
   },
 ];

@@ -15,12 +15,14 @@ const Timeline = () => {
           />
           <div className="timeline-info">
             <span>
-              <strong>{boris.experience[0].role}</strong>
+              <h6>{boris.experience[0].role}</h6>
             </span>
-            <small className="timeline-opacity-half">
-              {boris.experience[0].company}
-            </small>
-            <small>{boris.experience[0].dates}</small>
+            <div className="flex">
+              <small className="timeline-opacity-half">
+                {boris.experience[0].company}
+              </small>
+              <small>• {boris.experience[0].dates}</small>
+            </div>
           </div>
         </li>
         <li className="timeline-item">
@@ -33,12 +35,14 @@ const Timeline = () => {
           />
           <div className="timeline-info">
             <span>
-              <strong>{boris.experience[1].role}</strong>
+              <h6>{boris.experience[1].role}</h6>
             </span>
-            <small className="timeline-opacity-half">
-              {boris.experience[1].company}
-            </small>
-            <small>{boris.experience[1].dates}</small>
+            <div className="flex">
+              <small className="timeline-opacity-half">
+                {boris.experience[1].company}
+              </small>
+              <small>• {boris.experience[1].dates}</small>
+            </div>
           </div>
         </li>
         <li className="timeline-item">
@@ -51,12 +55,14 @@ const Timeline = () => {
           />
           <div className="timeline-info">
             <span>
-              <strong>{boris.experience[2].role}</strong>
+              <h6>{boris.experience[2].role}</h6>
             </span>
-            <small className="timeline-opacity-half">
-              {boris.experience[2].company}
-            </small>
-            <small>{boris.experience[2].dates}</small>
+            <div className="flex">
+              <small className="timeline-opacity-half">
+                {boris.experience[2].company}
+              </small>
+              <small>• {boris.experience[2].dates}</small>
+            </div>
           </div>
         </li>
         <li className="timeline-item">
@@ -69,12 +75,14 @@ const Timeline = () => {
           />
           <div className="timeline-info">
             <span>
-              <strong>{boris.experience[3].role}</strong>
+              <h6>{boris.experience[3].role}</h6>
             </span>
-            <small className="timeline-opacity-half">
-              {boris.experience[3].company}
-            </small>
-            <small>{boris.experience[3].dates}</small>
+            <div className="flex">
+              <small className="timeline-opacity-half">
+                {boris.experience[3].company}
+              </small>
+              <small>• {boris.experience[3].dates}</small>
+            </div>
           </div>
         </li>
         <li className="timeline-item">
@@ -87,12 +95,14 @@ const Timeline = () => {
           />
           <div className="timeline-info">
             <span>
-              <strong>{boris.experience[4].role}</strong>
+              <h6>{boris.experience[4].role}</h6>
             </span>
-            <small className="timeline-opacity-half">
-              {boris.experience[4].company}
-            </small>
-            <small>{boris.experience[4].dates}</small>
+            <div className="flex">
+              <small className="timeline-opacity-half">
+                {boris.experience[4].company}
+              </small>
+              <small>• {boris.experience[4].dates}</small>
+            </div>
           </div>
         </li>
         <li className="timeline-item">
@@ -105,12 +115,14 @@ const Timeline = () => {
           />
           <div className="timeline-info">
             <span>
-              <strong>{boris.experience[5].role}</strong>
+              <h6>{boris.experience[5].role}</h6>
             </span>
-            <small className="timeline-opacity-half">
-              {boris.experience[5].company}
-            </small>
-            <small>{boris.experience[5].dates}</small>
+            <div className="flex">
+              <small className="timeline-opacity-half">
+                {boris.experience[5].company}
+              </small>
+              <small>• {boris.experience[5].dates}</small>
+            </div>
           </div>
         </li>
         <li className="timeline-item">
@@ -123,12 +135,14 @@ const Timeline = () => {
           />
           <div className="timeline-info">
             <span>
-              <strong>{boris.experience[6].role}</strong>
+              <h6>{boris.experience[6].role}</h6>
             </span>
-            <small className="timeline-opacity-half">
-              {boris.experience[6].company}
-            </small>
-            <small>{boris.experience[6].dates}</small>
+            <div className="flex">
+              <small className="timeline-opacity-half">
+                {boris.experience[6].company}
+              </small>
+              <small>• {boris.experience[6].dates}</small>
+            </div>
           </div>
         </li>
         <li className="timeline-item">
@@ -141,12 +155,14 @@ const Timeline = () => {
           />
           <div className="timeline-info">
             <span>
-              <strong>{boris.experience[3].role}</strong>
+              <h6>{boris.experience[7].role}</h6>
             </span>
-            <small className="timeline-opacity-half">
-              {boris.experience[3].company}
-            </small>
-            <small>{boris.experience[3].dates}</small>
+            <div className="flex">
+              <small className="timeline-opacity-half">
+                {boris.experience[7].company}
+              </small>
+              <small>• {boris.experience[7].dates}</small>
+            </div>
           </div>
         </li>
       </ul>

@@ -10,6 +10,7 @@ import Script from "next/script";
 import MobileNav from "../components/MobileNav";
 import "../styles/nav-collapsible.css";
 import SideNavCollapsible from "../components/SideNavCollapsible";
+import DotGlow from "../components/DotGlow";
 
 const gaMeasurementId =
   process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID || process.env.GA_MEASUREMENT_ID;
@@ -17,6 +18,7 @@ const gaMeasurementId =
 const MyApp = ({ Component, pageProps }) => {
   return (
     <>
+      <DotGlow />
       <div className="s-shell">
         {gaMeasurementId ? (
           <>

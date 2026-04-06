@@ -4,6 +4,7 @@ import SearchApp from "../pages/api/search";
 import Image from "next/image";
 import Motion from "./motion";
 import { useCallback, useState, useEffect } from "react";
+import { motion } from "framer-motion";
 
 import Commands from "./commands";
 
@@ -37,12 +38,20 @@ export default function Header({ mode, onToggle }) {
     <header>
       <div className="flex">
         <button onClick={onToggle} className="footer-button" title="Agent mode">
-          <Image
-            src={mode === "portfolio" ? "/chat.svg" : "/web.svg"}
-            alt={mode === "portfolio" ? "Chat mode" : "Close"}
-            width={24}
-            height={24}
-          />
+          <motion.div
+            key={mode}
+            initial={{ opacity: 0, rotate: -30, scale: 0.8 }}
+            animate={{ opacity: 1, rotate: 0, scale: 1 }}
+            exit={{ opacity: 0, rotate: 30, scale: 0.8 }}
+            transition={{ duration: 0.2 }}
+          >
+            <Image
+              src={mode === "portfolio" ? "/chat.svg" : "/web.svg"}
+              alt={mode === "portfolio" ? "Chat mode" : "Web mode"}
+              width={24}
+              height={24}
+            />
+          </motion.div>
         </button>
         <button type="button" title="Font swap ⌥+S" className="footer-button">
           <FontSwap />
