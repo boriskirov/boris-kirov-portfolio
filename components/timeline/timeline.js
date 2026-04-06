@@ -53,7 +53,9 @@ const Timeline = () => {
             <span>
               <strong>{boris.experience[2].role}</strong>
             </span>
-            <small>{boris.experience[2].company}</small>
+            <small className="timeline-opacity-half">
+              {boris.experience[2].company}
+            </small>
             <small>{boris.experience[2].dates}</small>
           </div>
         </li>

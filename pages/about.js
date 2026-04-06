@@ -46,7 +46,20 @@ const About = () => (
           </section>
 
           <section>
-            <Timeline />
+            <div className="metric">
+              <div className="metric-header flex">
+                <Image
+                  src="/steps.svg"
+                  className="metric-logo"
+                  width={16}
+                  height={16}
+                  alt="Star"
+                />
+                <h6>Career Timeline</h6>
+              </div>
+              <hr />
+              <Timeline />
+            </div>
           </section>
         </div>
       </Main>

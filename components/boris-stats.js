@@ -12,7 +12,7 @@ export default function Boris({}) {
       value: boris.location.city,
     },
     {
-      label: "Working at",
+      label: "Currently at",
       value: boris.currentCompany || boris.experience?.[0]?.company,
     },
     {

@@ -79,7 +79,7 @@ const Dashboard = ({ githubActivity, recentRepositories }) => (
         </div>
         <div className="metric borderless">
           <div className="metric-header">
-            <h6>Recently contributed to</h6>
+            <h6>Proud of contributing to</h6>
           </div>
           <RecentRepositories repositories={recentRepositories} />
         </div>
@@ -91,8 +91,8 @@ const Dashboard = ({ githubActivity, recentRepositories }) => (
               <Image
                 src="/github.svg"
                 className="metric-logo"
-                width={24}
-                height={24}
+                width={16}
+                height={16}
                 alt="GitHub"
               />
               <h6>Shipped contributions</h6>
