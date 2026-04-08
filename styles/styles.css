@@ -362,6 +362,13 @@ video {
   flex-direction: column;
   border-radius: var(--border-radius-small);
   border: 1px solid var(--tag-color-bg);
+  background: linear-gradient(
+    137deg,
+    rgba(36, 37, 39, 0.28) 4.87%,
+    rgba(20, 22, 26, 0.45) 75.88%
+  );
+  backdrop-filter: blur(20px);
+  box-shadow: inset 0 1px 1px 0 rgba(255, 255, 255, 0.15);
 }
 
 a.main-card:hover,
@@ -395,6 +402,13 @@ a.main-card:focus {
   justify-content: space-between;
   border-radius: var(--radius-md);
   border: 1px solid var(--tag-color-bg);
+  background: linear-gradient(
+    137deg,
+    rgba(36, 37, 39, 0.28) 4.87%,
+    rgba(20, 22, 26, 0.45) 75.88%
+  );
+  backdrop-filter: blur(20px);
+  box-shadow: inset 0 1px 1px 0 rgba(255, 255, 255, 0.15);
 }
 
 .stack-card > div,
@@ -536,18 +550,29 @@ details[open] summary {
 }
 
 .metric {
-  background-color: var(--card-color-bg);
   word-break: keep-all;
   border-radius: var(--border-radius-small);
   margin: var(--space-medium) 0 var(--space-medium) 0;
   padding: var(--space-large) var(--space-xlarge);
   border: 1px solid var(--tag-color-bg);
+  background: linear-gradient(
+    137deg,
+    rgba(36, 37, 39, 0.28) 4.87%,
+    rgba(20, 22, 26, 0.45) 75.88%
+  );
+  backdrop-filter: blur(20px);
+  box-shadow: inset 0 1px 1px 0 rgba(255, 255, 255, 0.15);
 }
 
 .metric.borderless {
   border: none;
   background-color: transparent;
   padding: var(--space-small) 0;
+  border: none;
+  background: transparent;
+  padding: var(--space-small) 0;
+  box-shadow: none;
+  backdrop-filter: none;
 }
 
 .metric-header {
@@ -615,14 +640,25 @@ details[open] summary {
   display: flex;
   flex-direction: column;
   gap: var(--space-large);
+  background: linear-gradient(
+    137deg,
+    rgba(36, 37, 39, 0.28) 4.87%,
+    rgba(20, 22, 26, 0.45) 75.88%
+  );
+  backdrop-filter: blur(20px);
+  box-shadow: inset 0 1px 1px 0 rgba(255, 255, 255, 0.15);
 }
 
 a.recent-repo-card:hover,
 a.recent-repo-card:focus,
-a.recent-repo-card:active {
+a.recent-repo-card:active,
+.highlights-item:hover,
+.highlights-item:focus,
+.highlights-item:active {
   color: inherit;
   text-decoration: none;
   background: var(--card-color-hover);
+  cursor: pointer;
 }
 
 .recent-repo-card-header {

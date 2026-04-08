@@ -94,6 +94,8 @@
 .s-link:hover {
   color: var(--white-color-text);
   background-color: var(--card-color-hover);
+  backdrop-filter: blur(20px);
+  box-shadow: inset 0 1px 1px 0 rgba(255, 255, 255, 0.15);
 }
 .s-link.is-active {
   color: var(--white-color-text);
