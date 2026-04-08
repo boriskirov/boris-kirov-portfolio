@@ -11,6 +11,7 @@ import MobileNav from "../components/MobileNav";
 import "../styles/nav-collapsible.css";
 import SideNavCollapsible from "../components/SideNavCollapsible";
 import DotGlow from "../components/DotGlow";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const gaMeasurementId =
   process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID || process.env.GA_MEASUREMENT_ID;
@@ -45,6 +46,7 @@ const MyApp = ({ Component, pageProps }) => {
           <Component {...pageProps} />
         </main>
       </div>
+      <SpeedInsights />
     </>
   );
 };
