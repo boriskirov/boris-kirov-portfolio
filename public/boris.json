@@ -5,9 +5,9 @@
   "country": "Bulgaria",
   "city": "Sofia",
   "email": "hey@boriskirov.me",
-  "shortIntro3rdPerson": "Boris Kirov is a Software designer developing skills through doing, and focused on creating better software, processes and communication between people and machines.",
-  "shortIntro": "I'm a Software designer developing skills through doing, and focused on creating better software, processes and communication between people and machines.",
-  "longIntro3rdPerson": "Boris Kirov is a Software designer who is developing skills through doing. His care for form and function makes him express himself with technology. The fascination for software, programs and communciation mixed with passion for constant experimentation in the realm of design and experience consistency keeps him busy and always hungry.",
+  "shortIntro3rdPerson": "Boris Kirov is a Design Engineer developing skills through doing, and focused on creating better software, processes and communication between people and machines.",
+  "shortIntro": "I'm a Design Engineer developing skills through doing, and focused on creating better software, processes and communication between people and machines.",
+  "longIntro3rdPerson": "Boris Kirov is a Design Engineer who is developing skills through doing. His care for form and function makes him express himself with technology. The fascination for software, programs and communciation mixed with passion for constant experimentation in the realm of design and experience consistency keeps him busy and always hungry.",
   "longIntro": "Today I’m designing products in Elastic. Before that I used to be the first design expert hired in Amsterdam at Miro during their `HyperGrowth` period of 2020-2022. I was responsible of bringing the Miro Platform to market. From 2022 I started working as a design and experience expert at Elastic with focus on Observability. But often my projects expand in a cross-solution way across the organisation. Over time my expertise, experience and product knowledge, along with technical understanding became extremely valuable in the preparation of early stage projects, which often are wrapped in ambiguity, and I'm responsible to prepare them for release. As of today my focus is on Streams and Significant events.",
   "education": [
     {
@@ -24,13 +24,13 @@
     "province": "Noord-Holland",
     "screenshot": "/location.png"
   },
-  "profession": "Software designer",
+  "profession": "Design Engineer",
   "yearsOfExperience": "12",
   "avatar": "https://pbs.twimg.com/profile_images/1507287646133010434/Cx1ufZpO_400x400.jpg",
   "website": "https://www.boriskirov.me",
   "linkedin": "https://www.linkedin.com/in/boris-kirov/",
   "github": "https://github.com/boriskirov",
-  "jobTitle": "Senior Product Designer",
+  "jobTitle": "Design Engineer",
   "currentCompany": "Elastic",
   "workMode": "Remote",
   "experience": [

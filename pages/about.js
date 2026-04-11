@@ -14,7 +14,7 @@ const About = () => (
     <MainWrapper>
       <Metadata
         title="About"
-        description="Technical designer interested in systems, front-end, open source and collaborative design."
+        description="Design Engineer interested in systems, open source and design."
         image="https://www.boriskirov.me/me.png"
         name="Boris Kirov"
       />
