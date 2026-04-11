@@ -42,7 +42,9 @@ const About = () => (
             </p>
           </section>
           <section>
-            <p>{boris.longIntro}</p>
+            {boris.longIntro.map((paragraph, index) => (
+              <p key={index}>{paragraph}</p>
+            ))}
           </section>
 
           <section>

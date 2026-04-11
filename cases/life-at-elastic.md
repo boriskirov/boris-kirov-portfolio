@@ -60,7 +60,9 @@ This approach has let me to position myself as a main contributor to many import
 
    • Created and contributed to [Flamegraph](https://elastic.github.io/elastic-charts/storybook/?path=/story/components-tooltip--flamegraph&globals=toggles.showHeader:true;toggles.showChartTitle:false;toggles.showChartDescription:false;toggles.showChartBoundary:false;theme:light) visualisation in [Elastic charts](https://github.com/elastic/elastic-charts)
 
-1. [AI Assistance and ML](https://www.elastic.co/docs/explore-analyze/ai-features) (Sep 2023 - Sep 2024)- After the successful integration of Profiling in Elastic, the next venture that found me was the collaboration the initiate the first AI Assistance experience in Observability. I was responsible to design the first prompt based interfaces across APM, Logs, Discover, Profiling. Later on this evolved in AI Assistant chat, development of the first skills and tools to start exploring root cause and incident management. The core and most important user case for observability. My involvement began as a small team of three developing the first prototypes and MVP concepts which few months later evolved into a full fledged team (something which would continue to happen in my career at Elastic quite often, participate and collaborate on MVP which often would lead into creating teams and investing in such strategic initiatives through the following fiscal year). AI Assistance and ML first MVP were build together with the amazingly smart individuals Sean Heelan (Teach Lead) and Dario Gieselaar (Principle Software Engineer II).
+   ![Life at Elastic](../../profiling.png)
+
+1. [AI Assistance and ML](https://www.elastic.co/docs/explore-analyze/ai-features) (Sep 2023 - Sep 2024)- After the successful integration of Profiling in Elastic, the next venture that found me was the collaboration the initiate the first AI Assistance experience in Observability. I was responsible to design the first prompt based interfaces across APM, Logs, Discover, Profiling. Later on this evolved in AI Assistant chat, development of the first skills and tools to start exploring root cause and incident management. The core and most important user case for observability. My involvement began as a small team of three developing the first prototypes and MVP concepts which few months later evolved into a full fledged team (something which would continue to happen in my career at Elastic quite often, participate and collaborate on MVP which often would lead into creating teams and investing in such strategic initiatives through the following fiscal year). AI Assistance and ML first MVP were build together with the amazingly smart individuals [Sean Heelan](https://sean.heelan.io/) (Teach Lead) and Dario Gieselaar (Principle Software Engineer II).
 
    • Craft pixel perfect designs for implementation for a cross solution use across Elastic Observability
 
@@ -68,5 +70,11 @@ This approach has let me to position myself as a main contributor to many import
 
    • Build the first shared AI library in Elastic together with [Ryan Keairns](https://ryankeairns.com/)
 
-1. Streams - WIP (Sep 2024 - Nov 2025)
-1. Significant events - WIP (Nov 2025 - Currrently)
+   • Introduced the first Interactive Chat Interface in Elastic to facilitate cohesive communication for SREs, where users can chat and visualize relevant telemetry data in one place. This interface also integrates proprietary data and runbooks, providing additional context
+
+   [Watch the Product Walkthrough](https://www.youtube.com/watch?v=n9Gbp5NFS8s)
+
+1. Streams & Significant events- WIP (Sep 2024 - Currently)
+
+![Life at Elastic](../../streams&sig.png)
+Ken Exner (CPO) & Luca Wintergerst (PM) presenting Streams and Significant events at ElasticON - project I led from pitch to shipped solution together with Patri Pascual (Designer).
