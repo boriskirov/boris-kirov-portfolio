@@ -21,6 +21,15 @@ export default function WebMode() {
         <Link href="https://elastic.co" className="external" target="_blank">
           {boris.experience[0].company}
         </Link>
+        . Before that I worked at{" "}
+        <Link href="https://miro.com" className="external" target="_blank">
+          {boris.experience[3].company}
+        </Link>
+        ,{" "}
+        <Link href="https://info.nl" className="external" target="_blank">
+          {boris.experience[5].company}
+        </Link>
+        , and {boris.experience[7].company}
         .
         <br />
         <br />
