@@ -5,7 +5,13 @@ const HighlightsData = [
     date: "03.03.2026",
     url: "https://www.elastic.co/observability-labs/blog/designing-log-processing-ux-for-streams",
   },
-
+  {
+    title:
+      "Elastic named a Leader in the IDC MarketScape: Worldwide Observability Platforms 2025 Vendor Assessment",
+    project: "Elastic",
+    date: "14.11.2025",
+    url: "https://www.elastic.co/blog/elastic-observability-idc-marketscape-leader-2025",
+  },
   {
     title:
       "Introducing Streams for Observability: Your first stop for investigations",

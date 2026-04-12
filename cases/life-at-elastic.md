@@ -32,7 +32,8 @@ I have contributed to delivering numerous solutions to users, including:
 
 ## Changelog
 
-- ["Designing Log processing UX at Elastic Streams"](https://www.elastic.co/observability-labs) • 2025 • Blog post
+- ["Designing Log processing UX at Elastic Streams"](https://www.elastic.co/observability-labs) • 2026 • Blog post
+- [Elastic named a Leader in the IDC MarketScape: Worldwide Observability Platforms 2025 Vendor Assessment](https://www.elastic.co/blog/elastic-observability-idc-marketscape-leader-2025)
 - ["Introducing Streams for Observability: Your first stop for investigations"](https://www.elastic.co/observability-labs/blog/elastic-observability-streams-ai-logs-investigations) • 28.10.2025
 - ["Elastic Redefines Observability with AI-Powered Streams"](https://ir.elastic.co/news/news-details/2025/Elastic-Redefines-Observability-with-AI-Powered-Streams/default.aspx) • 28.10.2025
 - ["Goodbye log swamp, hello Streams"](https://www.elastic.co/elasticsearch/streams) • 25.10.2025
@@ -42,6 +43,9 @@ I have contributed to delivering numerous solutions to users, including:
 - [Turbo-charging AI Ops with the Elastic Observability AI Assistant: ElasticON](https://www.youtube.com/watch?v=L_vYMzksZPs) • 12.09.2023
 - ["Elastic AI Assistant and Profiling GA"](https://www.elastic.co/blog/whats-new-elastic-observability-8-10-0) • 12.09.2023
 
+![Contributions](../../contributions-1.png)
+In 2025 Elastic was named a Leader in Worldwide Observability. I personally led from early stage until release, 3 of the main contributions for such an award, Streams, AI Assistant, and Universal Profiling.
+
 ---
 
 ## History
@@ -50,7 +54,7 @@ I joined Elastic in 2022, back then our team was spread across different sub-pro
 
 This approach has let me to position myself as a main contributor to many important and strategic initiatives in Elastic. Here are some of the main efforts that I contributed from a company standpoint after my first 1.5 years in Elastic as an APM contributor:
 
-1. [Profiling](https://www.elastic.co/observability/universal-profiling) (March - August 2023)- leading the responsibility to bring [Profiler](https://prodfiler.com/) after acquision from Elastic to integrate in Kibana and Elastic infrastructure. As a designer there my responsibility spanned from understanding the product, figuring out the most effective and smooth transitional way to bring a solution into a shared infrastructure. Also adapt the a startup company that was now part of a bigger company.
+1. [Profiling](https://www.elastic.co/observability/universal-profiling) (March - August 2023)- leading the responsibility to bring [Prodfiler](https://prodfiler.com/) after acquision from Elastic to integrate in Kibana and Elastic infrastructure. As a designer there my responsibility spanned from understanding the product, figuring out the most effective and smooth transitional way to bring a solution into a shared infrastructure. Also adapt the a startup company that was now part of a bigger company.
 
    • Took part in the offsite and in person decision making about how to bring the product in Elastic
 
@@ -62,7 +66,7 @@ This approach has let me to position myself as a main contributor to many import
 
    ![Life at Elastic](../../profiling.png)
 
-1. [AI Assistance and ML](https://www.elastic.co/docs/explore-analyze/ai-features) (Sep 2023 - Sep 2024)- After the successful integration of Profiling in Elastic, the next venture that found me was the collaboration the initiate the first AI Assistance experience in Observability. I was responsible to design the first prompt based interfaces across APM, Logs, Discover, Profiling. Later on this evolved in AI Assistant chat, development of the first skills and tools to start exploring root cause and incident management. The core and most important user case for observability. My involvement began as a small team of three developing the first prototypes and MVP concepts which few months later evolved into a full fledged team (something which would continue to happen in my career at Elastic quite often, participate and collaborate on MVP which often would lead into creating teams and investing in such strategic initiatives through the following fiscal year). AI Assistance and ML first MVP were build together with the amazingly smart individuals [Sean Heelan](https://sean.heelan.io/) (Teach Lead) and Dario Gieselaar (Principle Software Engineer II).
+2. [AI Assistance and ML](https://www.elastic.co/docs/explore-analyze/ai-features) (Sep 2023 - Sep 2024)- After the successful integration of Profiling in Elastic, the next venture that found me was the initiate for the first AI Assistance experience in Observability. I was responsible to design the first prompt based interfaces across APM, Logs, Discover, Profiling. Later on this evolved in AI Assistant chat, development of the first skills and tools to start exploring root cause and incident management. The core and most important user workflow for observability. My involvement began as a small team of three developing the first prototypes and MVP concepts which few months later evolved into a full fledged team (something which would continue to happen in my career at Elastic quite often, participate and collaborate on MVP which often would lead into creating team and big investment as a strategic initiative through the following fiscal year). AI Assistance and ML first MVP was build together with the amazingly smart individuals [Sean Heelan](https://sean.heelan.io/) (Teach Lead) and Dario Gieselaar (Principle Software Engineer II). Later on we formed a team which made this a GA feature.
 
    • Craft pixel perfect designs for implementation for a cross solution use across Elastic Observability
 
@@ -72,9 +76,10 @@ This approach has let me to position myself as a main contributor to many import
 
    • Introduced the first Interactive Chat Interface in Elastic to facilitate cohesive communication for SREs, where users can chat and visualize relevant telemetry data in one place. This interface also integrates proprietary data and runbooks, providing additional context
 
-   [Watch the Product Walkthrough](https://www.youtube.com/watch?v=n9Gbp5NFS8s)
+![Contributions](../../ai-assistant.png)
+[Watch the Product Walkthrough](https://www.youtube.com/watch?v=n9Gbp5NFS8s)
 
-1. Streams & Significant events- WIP (Sep 2024 - Currently)
+3. Streams & Significant events- WIP (Sep 2024 - Currently)
 
 ![Life at Elastic](../../streams&sig.png)
 Ken Exner (CPO) & Luca Wintergerst (PM) presenting Streams and Significant events at ElasticON - project I led from pitch to shipped solution together with Patri Pascual (Designer).
