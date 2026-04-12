@@ -48,10 +48,7 @@ export default function Home() {
         />
 
         {!isMobile && <Header mode={mode} onToggle={toggleMode} />}
-        <div
-          className="index-body-container"
-          style={{ width: mode === "portfolio" ? "672px" : "1080px" }}
-        >
+        <div className="index-body-container">
           {mode === "chat" ? <ChatMode /> : <WebMode />}
         </div>
       </MainWrapper>
