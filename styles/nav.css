@@ -102,6 +102,11 @@
   background-color: var(--card-color-hover);
 }
 
+.s-title {
+  margin: var(--space-2) 0;
+  padding: var(--space-small) var(--space-xlarge);
+}
+
 .nav-link-fill {
   width: 100%;
 }

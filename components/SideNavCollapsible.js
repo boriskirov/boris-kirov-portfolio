@@ -187,14 +187,14 @@ export default function SideNavCollapsible() {
       {(secondaryItem && secondaryItem.children?.length) || forceSecondary ? (
         <aside className="s-2-rail border-r" aria-label="Secondary">
           <nav>
+            <h4 className="s-title nav-rail-header">{secondaryItem?.label}</h4>
             <ul className="s-list">
-              {(secondaryItem?.children ?? []).map((c) => {
+              {(secondaryItem?.children ?? []).map((c, item) => {
                 const isExternal = /^https?:\/\//.test(c.href);
                 const active =
                   pathname === c.href || pathname.startsWith(c.href + "/");
-
                 return (
-                  <li key={c.href}>
+                  <li key={item.href}>
                     <Link
                       href={c.href}
                       className={`s-link ${active ? "is-active" : ""}`}
