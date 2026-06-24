@@ -1,5 +1,3 @@
-import React from "react";
-
 import AppSearchAPIConnector from "@elastic/search-ui-app-search-connector";
 import {
   SearchProvider,
@@ -17,6 +15,24 @@ const endpointBase =
   process.env.NEXT_PUBLIC_APP_SEARCH_ENDPOINT_BASE ||
   process.env.APP_SEARCH_ENDPOINT_BASE;
 
+const searchConfig = {
+  searchQuery: {
+    search_fields: {
+      title: {},
+      body_content: {},
+    },
+    result_fields: {
+      title: {
+        snippet: { size: 75, fallback: true },
+      },
+      body_content: {
+        snippet: { size: 240, fallback: true },
+      },
+      url: { raw: {} },
+    },
+  },
+};
+
 export default function SearchApp() {
   if (!searchKey || !engineName || !endpointBase) {
     return null;
@@ -29,38 +45,8 @@ export default function SearchApp() {
     cacheResponses: false,
   });
 
-  const configurationOptions = {
-    apiConnector: connector,
-    searchQuery: {
-      search_fields: {
-        // 1. Search by title of document.
-        title: {},
-        body_content: {},
-      },
-      // 2. Results: title of the document, with body content and url addded.
-      result_fields: {
-        title: {
-          // A snippet means that matching search terms will be highlighted via <em> tags.
-          snippet: {
-            size: 75, // Limit the snippet to 75 characters.
-            fallback: true, // Fallback to a "raw" result.
-          },
-        },
-        body_content: {
-          snippet: {
-            size: 240,
-            fallback: true,
-          },
-        },
-        url: {
-          raw: {},
-        },
-      },
-    },
-  };
-
   return (
-    <SearchProvider config={configurationOptions}>
+    <SearchProvider config={{ apiConnector: connector, ...searchConfig }}>
       <SearchBox
         inputProps={{ placeholder: "Search for something", autoFocus: "on" }}
       />

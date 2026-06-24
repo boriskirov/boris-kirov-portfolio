@@ -94,10 +94,8 @@ function LinkCard({ url }) {
 export default function ChatMode() {
   const [answer, setAnswer] = useState(null);
   const [loading, setLoading] = useState(false);
-  const [active, setActive] = useState(null);
 
   async function ask(question) {
-    setActive(question);
     setLoading(true);
     setAnswer(null);
 
@@ -136,7 +134,7 @@ export default function ChatMode() {
         }
       }, speed);
       return () => clearInterval(interval);
-    }, [text]);
+    }, [text, speed]);
 
     return { displayed, done };
   }

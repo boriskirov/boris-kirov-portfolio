@@ -1,13 +1,10 @@
-import Motion from "../components/motion";
-import Metadata from "../components/metadata";
-
 import { useState, useEffect } from "react";
-import Header from "../components/header";
-import MainWrapper from "../components/mainWrapper";
-
-import ChatMode from "../components/Chatmode.js";
-import WebMode from "../components/WebMode.js";
 import { useRouter } from "next/router";
+
+import Page from "../components/Page";
+import Header from "../components/Header";
+import ChatMode from "../components/ChatMode";
+import WebMode from "../components/WebMode";
 
 export default function Home() {
   const [isMobile, setIsMobile] = useState(false);
@@ -38,20 +35,16 @@ export default function Home() {
   }
 
   return (
-    <Motion>
-      <MainWrapper>
-        <Metadata
-          title="Boris Kirov"
-          description="Design Engineer interested in systems, open source and design."
-          image="https://www.boriskirov.me/main-meta-tag-image.png"
-          name="Boris Kirov"
-        />
-
-        {!isMobile && <Header mode={mode} onToggle={toggleMode} />}
-        <div className="index-body-container">
-          {mode === "chat" ? <ChatMode /> : <WebMode />}
-        </div>
-      </MainWrapper>
-    </Motion>
+    <Page
+      title="Boris Kirov"
+      description="Design Engineer interested in systems, open source and design."
+      image="https://www.boriskirov.me/main-meta-tag-image.png"
+      bare
+    >
+      {!isMobile && <Header mode={mode} onToggle={toggleMode} />}
+      <div className="index-body-container">
+        {mode === "chat" ? <ChatMode /> : <WebMode />}
+      </div>
+    </Page>
   );
 }

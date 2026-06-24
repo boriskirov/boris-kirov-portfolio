@@ -1,4 +1,4 @@
-import HighlightsData from "./highlights-data";
+import HighlightsData from "./data";
 import Image from "next/image";
 
 const Highlights = () => (

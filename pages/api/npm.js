@@ -1,14 +1,14 @@
 async function Npm(req, res) {
   const mirotone = await fetch(
-    "https://api.npmjs.org/downloads/point/2018-01-01:2030-01-31/mirotone"
+    "https://api.npmjs.org/downloads/point/2018-01-01:2030-01-31/mirotone",
   );
 
   const fluiditype = await fetch(
-    "https://api.npmjs.org/downloads/point/2018-01-01:2030-01-31/fluiditype"
+    "https://api.npmjs.org/downloads/point/2018-01-01:2030-01-31/fluiditype",
   );
 
   const boriskirov = await fetch(
-    "https://api.npmjs.org/downloads/point/2018-01-01:2030-01-31/boriskirov"
+    "https://api.npmjs.org/downloads/point/2018-01-01:2030-01-31/boriskirov",
   );
 
   const fluiditypeJson = await fluiditype.json();

@@ -1,38 +1,18 @@
-import FontSwap from "./font-switch";
-import Modal from "./modal";
-import SearchApp from "../pages/api/search";
+import { useState } from "react";
 import Image from "next/image";
-import Motion from "./motion";
-import { useCallback, useState, useEffect } from "react";
 import { motion } from "framer-motion";
-
-import Commands from "./commands";
+import { useShortcut } from "../lib/use-shortcut";
+import FontSwap from "./FontSwitch";
+import Modal from "./Modal";
+import SearchApp from "./SearchApp";
+import Motion from "./Motion";
+import Commands from "./Commands";
 
 export default function Header({ mode, onToggle }) {
   const [showModal, setShowModal] = useState(false);
 
-  function Shorcut() {
-    // handle what happens on key press
-    const handleKeyPress = useCallback((event) => {
-      // keyCode is not dependant on the combination changes that may happen with the primary key
-      if (event.altKey === true && event.keyCode === 70) {
-        setShowModal(true);
-      }
-      if (event.key === "Escape") {
-        setShowModal(false);
-      }
-    }, []);
-
-    useEffect(() => {
-      // attach the event listener
-      document.addEventListener("keydown", handleKeyPress);
-
-      // remove the event listener
-      return () => {
-        document.removeEventListener("keydown", handleKeyPress);
-      };
-    }, [handleKeyPress]);
-  }
+  useShortcut({ alt: true, keyCode: 70 }, () => setShowModal(true));
+  useShortcut({ key: "Escape" }, () => setShowModal(false));
 
   return (
     <header>
@@ -56,7 +36,6 @@ export default function Header({ mode, onToggle }) {
         <button type="button" title="Font swap ⌥+S" className="footer-button">
           <FontSwap />
         </button>
-        <Shorcut />
         <Commands />
         <Motion>
           <button

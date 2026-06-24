@@ -1,6 +1,6 @@
 import useSWR from "swr";
 import Image from "next/image";
-import Metric from "./metric";
+import Metric from "./Metric";
 
 const Npmstats = () => {
   const fetcher = (url) => fetch(url).then((r) => r.json());

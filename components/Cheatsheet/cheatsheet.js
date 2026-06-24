@@ -1,5 +1,5 @@
 import * as React from "react";
-import data from "./cheatsheet-data";
+import data from "./data";
 import Link from "next/link";
 
 const Cheatsheet = () => {

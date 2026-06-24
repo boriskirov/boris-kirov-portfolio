@@ -4,7 +4,7 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import { NAV } from "../lib/nav";
 import Image from "next/image";
-import Header from "./header";
+import Header from "./Header";
 
 export default function MobileNav() {
   const [isOpen, setIsOpen] = useState(false);
@@ -18,7 +18,7 @@ export default function MobileNav() {
         return item;
       if (
         item.children?.some(
-          (c) => pathname === c.href || pathname.startsWith(c.href + "/")
+          (c) => pathname === c.href || pathname.startsWith(c.href + "/"),
         )
       )
         return item;

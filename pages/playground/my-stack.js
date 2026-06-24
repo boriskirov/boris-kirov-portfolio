@@ -1,30 +1,20 @@
-import Motion from "../../components/motion";
-import MainWrapper from "../../components/mainWrapper";
-import Metadata from "../../components/metadata";
-import Main from "../../components/innerWrapper";
-
-import Toolbox from "../../components/Toolbox/toolbox";
+import Page from "../../components/Page";
+import Toolbox from "../../components/Toolbox/Toolbox";
 
 const MyStack = () => (
-  <Motion>
-    <MainWrapper>
-      <Metadata
-        title="Toolbox"
-        description="List of tools & software I use daily to support my interest and hunger on the journey of designing software."
-        image="https://www.boriskirov.me/meta-tag-toolbox.png"
-        name="Boris Kirov"
-      />
-      <Main>
-        <h1 className="heading2Xl">Toolbox</h1>
-        <p>
-          List of tools & software I use daily to support my interest and hunger
-          on the journey of designing software. The list can constantly change
-          as I try to experiment with new solutions and methods.
-        </p>
-        <Toolbox />
-      </Main>
-    </MainWrapper>
-  </Motion>
+  <Page
+    title="Toolbox"
+    description="List of tools & software I use daily to support my interest and hunger on the journey of designing software."
+    image="https://www.boriskirov.me/meta-tag-toolbox.png"
+  >
+    <h1 className="heading2Xl">Toolbox</h1>
+    <p>
+      List of tools & software I use daily to support my interest and hunger on
+      the journey of designing software. The list can constantly change as I try
+      to experiment with new solutions and methods.
+    </p>
+    <Toolbox />
+  </Page>
 );
 
 export default MyStack;

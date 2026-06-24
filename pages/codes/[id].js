@@ -1,43 +1,29 @@
-import Link from "next/dist/client/link";
-import MainWrapper from "../../components/mainWrapper";
-import Main from "../../components/innerWrapper";
-import Metadata from "../../components/metadata";
-import { getAllCodeIds, getCodeData } from "../../lib/codes";
+import Page from "../../components/Page";
+import { codes } from "../../lib/content";
 
 export async function getStaticProps({ params }) {
-  const codeData = await getCodeData(params.id);
-  return {
-    props: {
-      codeData,
-    },
-  };
+  const codeData = await codes.getById(params.id);
+  return { props: { codeData } };
 }
 
 export async function getStaticPaths() {
-  const paths = getAllCodeIds();
-  return {
-    paths,
-    fallback: false,
-  };
+  return { paths: codes.getAllIds(), fallback: false };
 }
 
 export default function Code({ codeData }) {
   return (
-    <MainWrapper>
-      <Metadata
-        title={codeData.title}
-        description={codeData.description}
-        image={codeData.image}
-        name="Boris Kirov"
+    <Page
+      title={codeData.title}
+      description={codeData.description}
+      image={codeData.image}
+      motion={false}
+    >
+      <h1 className="blogTitle">{codeData.title}</h1>
+      <small>{codeData.type}</small>
+      <div
+        dangerouslySetInnerHTML={{ __html: codeData.contentHtml }}
+        className="contentWrapper"
       />
-      <Main>
-        <h1 className="blogTitle">{codeData.title}</h1>
-        <small>{codeData.type}</small>
-        <div
-          dangerouslySetInnerHTML={{ __html: codeData.contentHtml }}
-          className="contentWrapper"
-        />
-      </Main>
-    </MainWrapper>
+    </Page>
   );
 }

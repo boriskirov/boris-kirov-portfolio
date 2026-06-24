@@ -2,51 +2,57 @@ import React, { useEffect, useState } from "react";
 import ReactDOM from "react-dom";
 import Image from "next/image";
 
-const Modal = ({ show, onClose, children, title, body }) => {
+const ElasticFooter = () => (
+  <div className="modal-footer">
+    <small>powered by Elastic </small>
+    <Image
+      className="icon"
+      src="/elastic.svg"
+      alt="Elastic logo"
+      width={18}
+      height={18}
+    />
+  </div>
+);
+
+const Modal = ({
+  show,
+  onClose,
+  children,
+  title,
+  body,
+  titleClassName = "heading2Xl",
+  TitleTag = "h1",
+  footer = <ElasticFooter />,
+}) => {
   const [isBrowser, setIsBrowser] = useState(false);
 
   useEffect(() => {
     setIsBrowser(true);
   }, []);
 
-  const handleCloseClick = () => {
-    onClose();
-  };
+  if (!isBrowser || !show) return null;
 
-  const modalContent = show ? (
+  return ReactDOM.createPortal(
     <div className="modal-overlay">
       <div className="modal-content">
         <div className="modal-body">
           <button
             type="button"
-            onClick={handleCloseClick}
+            onClick={onClose}
             className="footer-button modal-close"
           >
             <Image src="/close.svg" alt="close-button" width={24} height={24} />
           </button>
-          {title && <h1 className="heading2Xl">{title}</h1>}
+          {title && <TitleTag className={titleClassName}>{title}</TitleTag>}
           {body && <p>{body}</p>}
           <div className="modal-input">{children}</div>
         </div>
-        <div className="modal-footer">
-          <small>powered by Elastic </small>
-          <Image
-            className="icon"
-            src="/elastic.svg"
-            alt="Elastic logo"
-            width={18}
-            height={18}
-          />
-        </div>
+        {footer}
       </div>
-    </div>
-  ) : null;
-
-  if (isBrowser) {
-    return ReactDOM.createPortal(modalContent, document.body);
-  } else {
-    return null;
-  }
+    </div>,
+    document.body,
+  );
 };
 
 export default Modal;

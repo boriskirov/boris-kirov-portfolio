@@ -1,13 +1,11 @@
-"use client"; // harmless in pages router; ensures hooks run on client
-
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { useMemo, useState } from "react";
-import { NAV } from "../lib/nav";
-import AmsterdamTime from "./current-time";
 import Image from "next/image";
-import data from "./Footer/footer-data";
-import { useEffect, useCallback } from "react";
+import { NAV } from "../lib/nav";
+import { useShortcut } from "../lib/use-shortcut";
+import AmsterdamTime from "./CurrentTime";
+import data from "./Footer/data";
 
 const SECONDARY_PREFIXES = ["/posts", "/cases", "/codes"];
 
@@ -56,31 +54,12 @@ export default function SideNavCollapsible() {
     (p) => pathname === p || pathname.startsWith(p + "/"),
   );
 
-  function Shortcut() {
-    // handle what happens on key press
-    const handleKeyPress = useCallback((event) => {
-      // keyCode is not dependant on the combination changes that may happen with the primary key
-      if (event.altKey === true && event.keyCode === 90) {
-        setIsCollapsed(!isCollapsed);
-      }
-    }, []);
-
-    useEffect(() => {
-      // attach the event listener
-      document.addEventListener("keydown", handleKeyPress);
-
-      // remove the event listener
-      return () => {
-        document.removeEventListener("keydown", handleKeyPress);
-      };
-    }, [handleKeyPress]);
-  }
+  useShortcut({ alt: true, keyCode: 90 }, () => setIsCollapsed((c) => !c));
 
   return (
     <>
       {/* PRIMARY rail */}
       <aside className="s-rail border-r" data-collapsed={isCollapsed}>
-        <Shortcut />
         <div className="side-nav-content">
           <div className="flex-column">
             {/* Collapse toggle button */}
@@ -139,41 +118,24 @@ export default function SideNavCollapsible() {
             <ul className="s-list">
               {data.map((footer) => (
                 <li key={footer.name}>
-                  {footer.targetBlank ? (
-                    <a
-                      href={footer.url}
-                      rel="noreferrer"
-                      target="_blank"
-                      download={footer.download || undefined}
-                      className="s-link nav-link-fill"
-                      title={isCollapsed ? footer.name : ""}
-                    >
-                      <Image
-                        src={footer.icon}
-                        alt={footer.name}
-                        width={24}
-                        height={24}
-                        className="side-button"
-                      />
-                      <span className="s-link-label">{footer.name}</span>
-                    </a>
-                  ) : (
-                    <a
-                      href={footer.url}
-                      download={footer.download || undefined}
-                      className="s-link nav-link-fill"
-                      title={isCollapsed ? footer.name : ""}
-                    >
-                      <Image
-                        src={footer.icon}
-                        alt={footer.name}
-                        width={24}
-                        height={24}
-                        className="side-button"
-                      />
-                      <span className="s-link-label">{footer.name}</span>
-                    </a>
-                  )}
+                  <a
+                    href={footer.url}
+                    download={footer.download || undefined}
+                    className="s-link nav-link-fill"
+                    title={isCollapsed ? footer.name : ""}
+                    {...(footer.targetBlank
+                      ? { target: "_blank", rel: "noreferrer" }
+                      : null)}
+                  >
+                    <Image
+                      src={footer.icon}
+                      alt={footer.name}
+                      width={24}
+                      height={24}
+                      className="side-button"
+                    />
+                    <span className="s-link-label">{footer.name}</span>
+                  </a>
                 </li>
               ))}
             </ul>
@@ -189,12 +151,12 @@ export default function SideNavCollapsible() {
           <nav>
             <h4 className="s-title nav-rail-header">{secondaryItem?.label}</h4>
             <ul className="s-list">
-              {(secondaryItem?.children ?? []).map((c, item) => {
+              {(secondaryItem?.children ?? []).map((c) => {
                 const isExternal = /^https?:\/\//.test(c.href);
                 const active =
                   pathname === c.href || pathname.startsWith(c.href + "/");
                 return (
-                  <li key={item.href}>
+                  <li key={c.href}>
                     <Link
                       href={c.href}
                       className={`s-link ${active ? "is-active" : ""}`}

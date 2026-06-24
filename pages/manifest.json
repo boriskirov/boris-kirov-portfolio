@@ -9,8 +9,9 @@
   "orientation": "portrait-primary",
   "start_url": "/index.html",
   "icons": [
-  {
-    "src":"/favicon.png",
-    "sizes": "any"
-  }
+    {
+      "src": "/favicon.png",
+      "sizes": "any"
+    }
+  ]
 }

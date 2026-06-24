@@ -1,5 +1,3 @@
-"use client";
-
 import { useEffect, useRef } from "react";
 import * as THREE from "three";
 
@@ -40,7 +38,7 @@ export default function BillboardParticles({ className }) {
         55,
         window.innerWidth / window.innerHeight,
         2,
-        2000
+        2000,
       );
       camera.position.z = 1000;
 
@@ -83,7 +81,7 @@ export default function BillboardParticles({ className }) {
 
       geometry.setAttribute(
         "position",
-        new THREE.Float32BufferAttribute(vertices, 3)
+        new THREE.Float32BufferAttribute(vertices, 3),
       );
 
       // Material: small, pale blue, additive glow
@@ -103,10 +101,12 @@ export default function BillboardParticles({ className }) {
 
       // Invisible plane for raycasting (at z = 0)
       interactionPlaneGeometry = new THREE.PlaneGeometry(4000, 4000);
-      interactionPlaneMaterial = new THREE.MeshBasicMaterial({ visible: false });
+      interactionPlaneMaterial = new THREE.MeshBasicMaterial({
+        visible: false,
+      });
       interactionPlane = new THREE.Mesh(
         interactionPlaneGeometry,
-        interactionPlaneMaterial
+        interactionPlaneMaterial,
       );
       interactionPlane.position.z = 0;
       scene.add(interactionPlane);
@@ -148,7 +148,7 @@ export default function BillboardParticles({ className }) {
       // update cursorWorld via raycast
       pointer.set(
         (event.clientX / window.innerWidth) * 2 - 1,
-        -(event.clientY / window.innerHeight) * 2 + 1
+        -(event.clientY / window.innerHeight) * 2 + 1,
       );
       raycaster.setFromCamera(pointer, camera);
       const intersects = raycaster.intersectObject(interactionPlane);

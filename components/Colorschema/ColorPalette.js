@@ -1,6 +1,6 @@
 import React from "react";
 
-import ColorData from "../../components/Colorschema/color-schema-data";
+import ColorData from "./data";
 
 // This is a function which returns a function
 // the idea here that the first function will create a scope which will hold the value
