@@ -18,8 +18,6 @@
   min-width: 0;
   padding: var(--space-large);
   border-radius: var(--radius-md);
-  border: 1px solid var(--tag-color-bg);
-  background: var(--card-color-bg);
   color: inherit;
   text-decoration: none;
   display: flex;
@@ -27,32 +25,16 @@
   gap: var(--space-small);
   align-items: center;
   text-align: inherit;
-  background: linear-gradient(
-    137deg,
-    rgba(36, 37, 39, 0.28) 4.87%,
-    rgba(20, 22, 26, 0.45) 75.88%
-  );
-  backdrop-filter: blur(20px);
-  box-shadow: inset 0 1px 1px 0 rgba(255, 255, 255, 0.15);
 }
 
 .link-card {
-  border: 1px solid var(--tag-color-bg);
   border-radius: var(--radius-md);
   padding: var(--space-large);
-  background: var(--card-color-bg);
   display: flex;
   gap: var(--space-small);
   text-decoration: none;
   margin: var(--space-large) 0;
   justify-content: space-between;
-  background: linear-gradient(
-    137deg,
-    rgba(36, 37, 39, 0.28) 4.87%,
-    rgba(20, 22, 26, 0.45) 75.88%
-  );
-  backdrop-filter: blur(20px);
-  box-shadow: inset 0 1px 1px 0 rgba(255, 255, 255, 0.15);
 }
 
 .prompt-item img {
@@ -112,7 +94,6 @@
 .timeline-item-chat:last-child::before {
   position: absolute;
   border-left: none;
-  height: 20px;
   height: 0;
 }
 

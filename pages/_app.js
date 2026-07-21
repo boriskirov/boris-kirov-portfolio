@@ -1,14 +1,9 @@
 import Script from "next/script";
 
-import "../styles/font-switch.css";
 import "../styles/styles.css";
-import "../styles/equalizer.css";
-import "../styles/colors-schema.css";
-import "../styles/toast.css";
-import "../styles/search.css";
 import "../styles/nav.css";
-import "../styles/nav-collapsible.css";
 import "../styles/chat.css";
+import "../styles/search.css";
 
 import MobileNav from "../components/MobileNav";
 import SideNavCollapsible from "../components/SideNavCollapsible";
