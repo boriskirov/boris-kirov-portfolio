@@ -14,7 +14,7 @@ const NotFound = () => (
       <h1>404</h1>
       <p>
         Sorry, this page doesn't exist, but you can check my{" "}
-        <Link href="/playground" as="/playground" className="internalPassage">
+        <Link href="/playground" as="/playground" className="cursor-forward">
           Playground
         </Link>
         .{" "}

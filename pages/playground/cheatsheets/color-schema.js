@@ -9,7 +9,7 @@ const ColorPalette = () => (
     description="My personal color schema for creating visual schemas and architecture, inspired by the P3 color space. Feel free to explore and use it."
     image="https://www.boriskirov.me/meta-tag-color-palette.png"
   >
-    <h1 className="heading2Xl">Color schema</h1>
+    <h1 className="heading-2xl">Color schema</h1>
     <p>
       My personal color schema for creating visual schemas and architecture,
       inspired by the P3 color space.

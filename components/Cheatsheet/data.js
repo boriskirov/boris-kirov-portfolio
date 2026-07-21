@@ -6,7 +6,7 @@ const CheatsheetList = [
       "Git is a distributed revision control system, with a rich commands set. This is a repo with the ones I use daily.",
     category: "Cheatsheet",
     target: "_blank",
-    class: "external main-card",
+    external: true,
   },
   {
     name: "Figma",
@@ -15,7 +15,7 @@ const CheatsheetList = [
       "Figma is easy to use, but you can always go one step further. Shortcuts, tricks and plugin commands are listed in this repo.",
     category: "Cheatsheet",
     target: "_blank",
-    class: "external main-card",
+    external: true,
   },
   {
     name: "Shell",
@@ -24,7 +24,7 @@ const CheatsheetList = [
       "Shell allows other programs to work. Being confident in the CLI tools starts from understanding how the ''shell'' works.",
     category: "Cheatsheet",
     target: "_blank",
-    class: "external main-card",
+    external: true,
   },
   {
     name: "Vim",
@@ -33,7 +33,7 @@ const CheatsheetList = [
       "Vim is a free and open-source, screen-based text editor program for Unix. It's designed for use both from a command-line interface and as a standalone application in a graphical user interface",
     category: "Cheatsheet",
     target: "_blank",
-    class: "external main-card",
+    external: true,
   },
   {
     name: "Schema color palette",
@@ -42,7 +42,7 @@ const CheatsheetList = [
       "Inspired by the P3 color space, here you will find a simple palette of colors which I use for drawing schemas and other visual artifacts.",
     category: "Cheatsheet",
     target: "_self",
-    class: "main-card",
+    external: false,
   },
 ];
 

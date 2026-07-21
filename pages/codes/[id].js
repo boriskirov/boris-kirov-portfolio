@@ -18,7 +18,7 @@ export default function Code({ codeData }) {
       image={codeData.image}
       motion={false}
     >
-      <h1 className="blogTitle">{codeData.title}</h1>
+      <h1 className="blog-title">{codeData.title}</h1>
       <small>{codeData.type}</small>
       <div
         dangerouslySetInnerHTML={{ __html: codeData.contentHtml }}

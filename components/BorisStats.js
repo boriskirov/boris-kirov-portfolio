@@ -27,7 +27,7 @@ export default function Boris({}) {
 
   return (
     <div className="metric">
-      <div className="flex flex-center metric-header">
+      <div className="flex items-center metric-header">
         <Image
           src={boris.avatar}
           className="avatar"

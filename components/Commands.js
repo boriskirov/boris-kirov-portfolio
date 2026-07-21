@@ -39,7 +39,7 @@ function Commands() {
           title="Commands"
           body="List of commands that allow you to customise the experience on my personal space. You can also open a global search to look for specific things."
           TitleTag="h3"
-          titleClassName="headingM"
+          titleClassName="heading-md"
           footer={null}
         >
           <hr />

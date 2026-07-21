@@ -13,7 +13,7 @@ export default function Photography() {
         Back
       </Link>
 
-      <h1 className="heading2Xl">PHOTOGRAPHY</h1>
+      <h1 className="heading-2xl">PHOTOGRAPHY</h1>
       <p>
         I've been doing photography, videography and mixed media for 10 years.
         As a mixed media specialiast I've worked with different clients to

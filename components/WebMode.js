@@ -4,7 +4,7 @@ import boris from "../public/boris.json";
 export default function WebMode() {
   return (
     <div>
-      <h1 className="heading2Xl">
+      <h1 className="heading-2xl">
         {boris.firstName} {boris.familyName}
       </h1>
       <p>

@@ -11,7 +11,7 @@ const Npmstats = () => {
 
   return (
     <div className="metric">
-      <div className="flex flex-center metric-header">
+      <div className="flex items-center metric-header">
         <Image
           src="/npm.svg"
           className="metric-logo"
@@ -21,7 +21,7 @@ const Npmstats = () => {
         />
         <h6>NPM Download Stats</h6>
       </div>
-      <div className="flex space-between">
+      <div className="flex justify-between">
         <div className="metric-pill">
           <small>Downloads</small>
           <Metric metric={totalDownloads} />

@@ -19,14 +19,14 @@ const Dashboard = ({ githubActivity, recentRepositories }) => (
     description="Interesting and valuable insights about my work, contributions, activities and interests. A collection of metrics and statistics from different sources."
     image="https://www.boriskirov.me/meta-tag-dashboard.png"
   >
-    <h1 className="heading2Xl">Dashboard</h1>
+    <h1 className="heading-2xl">Dashboard</h1>
     <p>
       Interesting and valuable insights about my work, contributions, activities
       and interests. A collection of metrics and statistics from different
       sources.
     </p>
     <hr />
-    <div className="flex flex-column">
+    <div className="flex flex-col">
       <div className="metric borderless">
         <div className="metric-header">
           <h6>Metadata</h6>
@@ -50,7 +50,7 @@ const Dashboard = ({ githubActivity, recentRepositories }) => (
           rel="noreferrer"
           className="metric recent-repo-card"
         >
-          <div className="flex flex-center metric-header">
+          <div className="flex items-center metric-header">
             {" "}
             <h6>{HighlightsData[0].title}</h6>
             <span className="recent-repo-card-external" aria-hidden="true">
@@ -77,7 +77,7 @@ const Dashboard = ({ githubActivity, recentRepositories }) => (
 
     <div className="metric">
       <div className="metric-header metric-header-split">
-        <div className="flex flex-center metric-header-title">
+        <div className="flex items-center metric-header-title">
           <Image
             src="/github.svg"
             className="metric-logo"

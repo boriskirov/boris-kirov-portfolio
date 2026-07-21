@@ -5,7 +5,7 @@ const Highlights = () => (
   <div className="metric">
     <details className="highlights-accordion">
       <summary className="highlights-summary">
-        <span className="flex flex-center highlights-summary-title">
+        <span className="flex items-center highlights-summary-title">
           <Image
             src="/sparkle.svg"
             className="metric-logo"
@@ -22,11 +22,11 @@ const Highlights = () => (
           {HighlightsData.length}
         </span>
       </summary>
-      <ul className="highlights-list list-style-none">
+      <ul className="highlights-list list-none">
         {HighlightsData.map((highlight) => (
           <li className="metric highlights-item" key={highlight.url}>
             <div>
-              <div className="flex space-between highlights-meta">
+              <div className="flex justify-between highlights-meta">
                 <small>{highlight.project}</small>
                 <small>{highlight.date}</small>
               </div>

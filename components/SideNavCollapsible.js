@@ -61,7 +61,7 @@ export default function SideNavCollapsible() {
       {/* PRIMARY rail */}
       <aside className="s-rail border-r" data-collapsed={isCollapsed}>
         <div className="side-nav-content">
-          <div className="flex-column">
+          <div className="flex-col">
             {/* Collapse toggle button */}
             <div className="nav-rail-header">
               <div className="s-subtitle nav-rail-title">
@@ -114,7 +114,7 @@ export default function SideNavCollapsible() {
               </ul>
             </nav>
           </div>
-          <div className="flex-column">
+          <div className="flex-col">
             <ul className="s-list">
               {data.map((footer) => (
                 <li key={footer.name}>

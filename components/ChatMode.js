@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
+import Card from "./Card";
 
 const PROMPTS = [
   { label: "Boris's experience?", icon: "/about.svg" },
@@ -74,8 +75,8 @@ function LinkCard({ url }) {
   const display = url.replace(/^https?:\/\//, "");
 
   return (
-    <a href={url} target="_blank" rel="noreferrer" className="link-card">
-      <div className="flex flex-center">
+    <Card as="a" href={url} target="_blank" rel="noreferrer">
+      <div className="flex items-center">
         <Image
           src="/web.svg"
           alt="Link"
@@ -83,10 +84,10 @@ function LinkCard({ url }) {
           height={24}
           className="side-button"
         />
-        <span className="link-card-url">{display}</span>
+        <span>{display}</span>
       </div>
-      <span className="link-card-icon">↗</span>
-    </a>
+      <span>↗</span>
+    </Card>
   );
 }
 
@@ -162,8 +163,8 @@ export default function ChatMode() {
 
   return (
     <div className="chat-mode">
-      <div className="flex flex-center">
-        <div className="flex flex-center">
+      <div className="flex items-center">
+        <div className="flex items-center">
           <Image
             src="/sparkle.svg"
             width={16}
@@ -183,14 +184,14 @@ export default function ChatMode() {
       <hr />
       <div className="chat-prompts">
         {PROMPTS.map((prompt) => (
-          <button
+          <Card
+            as="button"
             key={prompt.label}
             onClick={() => ask(prompt.label)}
-            className="prompt-item"
           >
             <Image src={prompt.icon} alt="" width={16} height={16} />
             {prompt.label}
-          </button>
+          </Card>
         ))}
       </div>
       {loading && (

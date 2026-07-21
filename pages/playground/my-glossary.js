@@ -71,7 +71,7 @@ const Glossary = () => (
     description="This is my personal resource that lists the methods, practices and ways of working I follow in design."
     image="https://www.boriskirov.me/meta-tag-glossary.png"
   >
-    <h1 className="heading2Xl">Glossary</h1>
+    <h1 className="heading-2xl">Glossary</h1>
     <p>
       This is my personal resource that lists the methods, practices and ways of
       working I follow in design.
@@ -84,7 +84,7 @@ const Glossary = () => (
             className="dic-card"
             whileHover={hoverAnimation}
           >
-            <summary aria-haspopup="true" className="headingM">
+            <summary aria-haspopup="true" className="heading-md">
               {term}
             </summary>
             <span>{definition}</span>

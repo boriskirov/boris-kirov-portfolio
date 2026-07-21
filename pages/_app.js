@@ -1,6 +1,10 @@
 import Script from "next/script";
 
-import "../styles/styles.css";
+// Order matters: tokens → base → utilities → components, then feature stylesheets.
+import "../styles/tokens.css";
+import "../styles/base.css";
+import "../styles/utilities.css";
+import "../styles/components.css";
 import "../styles/nav.css";
 import "../styles/chat.css";
 import "../styles/search.css";

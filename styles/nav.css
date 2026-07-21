@@ -92,18 +92,18 @@
   font-size: var(--font-size-md);
 }
 .s-link:hover {
-  color: var(--white-color-text);
+  color: var(--color-text);
   background-color: var(--card-color-hover);
   backdrop-filter: blur(20px);
   box-shadow: inset 0 1px 1px 0 rgba(255, 255, 255, 0.15);
 }
 .s-link.is-active {
-  color: var(--white-color-text);
+  color: var(--color-text);
   background-color: var(--card-color-hover);
 }
 
 .s-title {
-  margin: var(--space-2) 0;
+  margin: var(--space-small) 0;
   padding: var(--space-small) var(--space-xlarge);
 }
 
@@ -232,7 +232,7 @@
 }
 
 .m-sublink.is-active {
-  color: var(--white-color-text);
+  color: var(--color-text);
 }
 
 /* ========== Collapsible side nav ========== */
@@ -264,7 +264,7 @@
   display: none;
 }
 
-.s-rail[data-collapsed="true"] .flex-column:first-child {
+.s-rail[data-collapsed="true"] .flex-col:first-child {
   padding-right: 0;
 }
 
@@ -275,7 +275,7 @@
   width: var(--size-control);
   height: var(--size-control);
   margin: var(--space-small);
-  padding: var(--space-1-5) var(--space-small);
+  padding: var(--space-small);
   border: 1px solid var(--tag-color-bg);
   border-radius: var(--border-radius-small);
   background: transparent;

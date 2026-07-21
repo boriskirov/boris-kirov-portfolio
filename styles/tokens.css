@@ -1,0 +1,110 @@
+/* =========================================================================
+ * TOKENS
+ * Single source of truth for design values. Fonts, colors, spacing,
+ * radii, sizes, font sizes/weights, and the palette. Consumed by base,
+ * utilities, and components stylesheets — never referenced directly by JSX.
+ * ========================================================================= */
+
+@import url("https://rsms.me/inter/inter.css");
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&display=swap");
+
+:root {
+  /* Fonts */
+  --font-family: "Inter", sans-serif;
+  --font-family-monospace: "Inconsolata", monospace;
+  --font-family-code: var(--font-family-monospace);
+
+  /* Base colors */
+  --color-bg: rgb(19, 19, 19);
+  --color-text: rgb(226, 226, 226);
+  --color-bg-contrast: rgb(235, 235, 235);
+  --color-text-contrast: rgb(1, 1, 9);
+
+  /* Surface & tag colors */
+  --card-color-bg: rgba(36, 36, 36, 0.15);
+  --card-color-hover: rgba(142, 142, 142, 0.15);
+  --tag-color-bg: rgba(84, 84, 84, 0.15);
+  --tag-color-text: var(--color-text);
+
+  /* Text tones */
+  --text-color-muted: rgba(226, 226, 226, 0.72);
+  --text-color-subtle: rgba(226, 226, 226, 0.65);
+  --text-color-faint: rgba(226, 226, 226, 0.56);
+
+  /* Borders */
+  --border-color-subtle: rgba(255, 255, 255, 0.04);
+
+  /* Links & selection */
+  --link-color-text: rgb(63, 83, 217);
+  --link-color-bg: rgb(255, 207, 0);
+  --selection-color-bg: rgb(63, 83, 217);
+  --selection-color-text: rgb(255, 215, 7);
+
+  /* Overlays */
+  --overlay-color: rgba(0, 0, 0, 0.5);
+  --overlay-border-color: rgba(102, 102, 102, 0.5);
+
+  /* Scrollbar */
+  --scrollbar-color-track: var(--tag-color-bg);
+  --scrollbar-color-thumb: rgba(226, 226, 226, 0.2);
+  --scrollbar-color-thumb-hover: rgba(226, 226, 226, 0.32);
+
+  /* Accents (muted for badges) */
+  --accent-color-primary-muted: rgba(63, 83, 217, 0.2);
+  --accent-color-warning-muted: rgba(255, 207, 0, 0.2);
+  --accent-color-success-muted: rgba(52, 168, 83, 0.2);
+  --accent-color-neutral-muted: rgba(235, 235, 235, 0.08);
+
+  /* Spacing (canonical named scale) */
+  --space-xxsmall: 2px;
+  --space-xsmall: 4px;
+  --space-small: 8px;
+  --space-medium: 12px;
+  --space-large: 16px;
+  --space-xlarge: 24px;
+  --space-xxlarge: 32px;
+  --space-xxxlarge: 48px;
+
+  /* Border radius */
+  --border-radius-small: 8px;
+  --border-radius-medium: 12px;
+  --border-radius-circle: 999px;
+
+  /* Sizes */
+  --size-icon: 24px;
+  --size-control: 32px;
+  --size-control-lg: 40px;
+  --content-max: 1080px;
+  --content-max-narrow: 672px;
+  --rail-width: 280px;
+  --rail-width-collapsed: 60px;
+  --sheet-max: 520px;
+
+  /* Font sizes */
+  --font-size-sm: 12px;
+  --font-size-md: 14px;
+  --font-size-lg: 16px;
+  --font-size-2xl: 24px;
+
+  /* Font weights */
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+
+  /* Palette (used by color-schema page; --green-1 also used elsewhere) */
+  --green-1: #6bf4c8;
+  --green-2: #5debac;
+  --green-3: #66ed7f;
+  --yellow: #ffd253;
+  --orange: #ff7253;
+  --red-1: #f0696a;
+  --red-2: #f06a8b;
+  --pink: #ff9cb4;
+  --purple: #b66afe;
+  --aqua: #6ac9f5;
+  --blue-1: #62acfe;
+  --blue-2: #686afe;
+  --dark-1: #00091b;
+  --dark-2: #011438;
+  --white-1: #fefefe;
+  --white-2: #f2f2f2;
+}

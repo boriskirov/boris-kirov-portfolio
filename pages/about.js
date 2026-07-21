@@ -10,7 +10,7 @@ const About = () => (
     description="Design Engineer interested in systems, open source and design."
     image="https://www.boriskirov.me/me.png"
   >
-    <h1 className="heading2Xl">Здрасти,</h1>
+    <h1 className="heading-2xl">Здрасти,</h1>
     <div className="contentWrapper">
       <Image
         src="/me.png"

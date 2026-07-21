@@ -18,7 +18,7 @@ export default function Case({ caseData }) {
       image={caseData.image}
       motion={false}
     >
-      <h1 className="blogTitle">{caseData.title}</h1>
+      <h1 className="blog-title">{caseData.title}</h1>
       <hr />
       <p>{caseData.description}</p>
       <div className="flex info">

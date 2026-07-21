@@ -21,7 +21,7 @@ const Modal = ({
   children,
   title,
   body,
-  titleClassName = "heading2Xl",
+  titleClassName = "heading-2xl",
   TitleTag = "h1",
   footer = <ElasticFooter />,
 }) => {
