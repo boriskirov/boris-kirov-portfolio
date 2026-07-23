@@ -17,7 +17,7 @@ export default function Writings() {
     <Page
       title="Writings"
       description="My small space where I try to think out loud about everything related to design, software and technology. You'll find case studies, tutorials and blog posts here."
-      image="https://www.boriskirov.me/meta-tag-writings.png"
+      image="/meta-tag-writings.png"
       bare
     >
       <div className="contentWrapper dot-grid">

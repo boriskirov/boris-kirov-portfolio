@@ -9,8 +9,8 @@ const FooterList = [
     targetBlank: false,
   },
   {
-    name: "Resume 2026",
-    url: "/BorisKirov_Resume.pdf",
+    name: boris.resume.label,
+    url: boris.resume.url,
     icon: "/resume.svg",
     download: true,
   },
@@ -22,19 +22,19 @@ const FooterList = [
   },
   {
     name: "GitHub",
-    url: boris.githubUrl,
+    url: boris.github,
     icon: "/github.svg",
     targetBlank: true,
   },
   {
     name: "Figma",
-    url: "https://www.figma.com/@boriskirov",
+    url: boris.social.figma,
     icon: "/figma.svg",
     targetBlank: true,
   },
   {
     name: "LinkedIn",
-    url: "https://www.linkedin.com/in/boris-kirov-b6b110a4/",
+    url: boris.linkedin,
     icon: "/linkedin.svg",
     targetBlank: true,
   },

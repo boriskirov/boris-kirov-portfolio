@@ -69,7 +69,7 @@ const Glossary = () => (
   <Page
     title="Glossary"
     description="This is my personal resource that lists the methods, practices and ways of working I follow in design."
-    image="https://www.boriskirov.me/meta-tag-glossary.png"
+    image="/meta-tag-glossary.png"
   >
     <h1 className="heading-2xl">Glossary</h1>
     <p>

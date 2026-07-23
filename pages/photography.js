@@ -7,7 +7,7 @@ export default function Photography() {
     <Page
       title="Photography"
       description="My small visual space for photography and prints."
-      image="https://www.boriskirov.me/meta-tag-photography.png"
+      image="/meta-tag-photography.png"
     >
       <Link href="/" className="backButton">
         Back

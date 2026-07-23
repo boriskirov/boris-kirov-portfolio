@@ -4,8 +4,9 @@ import { useMemo, useState } from "react";
 import Image from "next/image";
 import { NAV } from "../lib/nav";
 import { useShortcut } from "../lib/use-shortcut";
-import AmsterdamTime from "./CurrentTime";
+import LocalTime from "./CurrentTime";
 import data from "./Footer/data";
+import boris from "../public/boris.json";
 
 const SECONDARY_PREFIXES = ["/posts", "/cases", "/codes"];
 
@@ -65,7 +66,9 @@ export default function SideNavCollapsible() {
             {/* Collapse toggle button */}
             <div className="nav-rail-header">
               <div className="s-subtitle nav-rail-title">
-                <span className="nav-rail-title-text">Boris Kirov</span>
+                <span className="nav-rail-title-text">
+                  {boris.firstName} {boris.familyName}
+                </span>
               </div>
               <button
                 onClick={() => setIsCollapsed(!isCollapsed)}
@@ -140,7 +143,7 @@ export default function SideNavCollapsible() {
               ))}
             </ul>
             <hr />
-            <AmsterdamTime isCollapsed={isCollapsed} />
+            <LocalTime isCollapsed={isCollapsed} />
           </div>
         </div>
       </aside>

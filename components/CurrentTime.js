@@ -1,18 +1,21 @@
 import React from "react";
 import Image from "next/image";
+import boris from "../public/boris.json";
 
-export default function AmsterdamTime({ isCollapsed = false }) {
-  const now = new Date();
-  const fullFormatter = new Intl.DateTimeFormat("en-GB", {
-    timeZone: "Europe/Amsterdam",
-    hour: "numeric",
-    minute: "numeric",
-    weekday: "long",
-    day: "numeric",
-    month: "short",
-    hour12: false,
-  });
-  const fullValue = `${fullFormatter.format(now)} • 🇳🇱 Amsterdam`;
+const formatter = new Intl.DateTimeFormat("en-GB", {
+  timeZone: boris.location.timezone,
+  hour: "numeric",
+  minute: "numeric",
+  weekday: "long",
+  day: "numeric",
+  month: "short",
+  hour12: false,
+});
+
+export default function LocalTime({ isCollapsed = false }) {
+  const fullValue = `${formatter.format(new Date())} • ${boris.location.flag} ${
+    boris.location.city
+  }`;
 
   return (
     <div

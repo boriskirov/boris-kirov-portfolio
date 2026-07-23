@@ -5,7 +5,7 @@ const Cheatsheets = () => (
   <Page
     title="Cheatsheets"
     description="List of commands and shortcuts to keep my day fun and productive. "
-    image="https://www.boriskirov.me/meta-tag-cheatsheets.png"
+    image="/meta-tag-cheatsheets.png"
   >
     <h1 className="heading-2xl">Cheatsheets</h1>
     <p>

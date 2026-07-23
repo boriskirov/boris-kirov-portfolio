@@ -17,7 +17,7 @@ const Dashboard = ({ githubActivity, recentRepositories }) => (
   <Page
     title="Dashboard"
     description="Interesting and valuable insights about my work, contributions, activities and interests. A collection of metrics and statistics from different sources."
-    image="https://www.boriskirov.me/meta-tag-dashboard.png"
+    image="/meta-tag-dashboard.png"
   >
     <h1 className="heading-2xl">Dashboard</h1>
     <p>
@@ -88,7 +88,7 @@ const Dashboard = ({ githubActivity, recentRepositories }) => (
           <h6>Shipped contributions</h6>
         </div>
         <a
-          href={boris.githubUrl}
+          href={boris.github}
           target="_blank"
           rel="noreferrer"
           className="metric-header-link"

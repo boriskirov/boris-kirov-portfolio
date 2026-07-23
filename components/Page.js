@@ -14,7 +14,7 @@ export default function Page({
   title,
   description,
   image,
-  name = "Boris Kirov",
+  name,
   bare = false,
   motion = true,
   children,

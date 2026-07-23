@@ -5,6 +5,7 @@ import Page from "../components/Page";
 import Header from "../components/Header";
 import ChatMode from "../components/ChatMode";
 import WebMode from "../components/WebMode";
+import boris from "../public/boris.json";
 
 export default function Home() {
   const [isMobile, setIsMobile] = useState(false);
@@ -36,9 +37,8 @@ export default function Home() {
 
   return (
     <Page
-      title="Boris Kirov"
-      description="Design Engineer interested in systems, open source and design."
-      image="https://www.boriskirov.me/main-meta-tag-image.png"
+      title={`${boris.firstName} ${boris.familyName}`}
+      image="/main-meta-tag-image.png"
       bare
     >
       {!isMobile && <Header mode={mode} onToggle={toggleMode} />}

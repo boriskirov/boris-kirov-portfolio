@@ -2,8 +2,10 @@
   "firstName": "Boris",
   "familyName": "Kirov",
   "nationality": "Bulgarian",
-  "country": "Bulgaria",
-  "city": "Sofia",
+  "origin": {
+    "city": "Sofia",
+    "country": "Bulgaria"
+  },
   "email": "hey@boriskirov.me",
   "shortIntro3rdPerson": "Boris Kirov is a Design Engineer developing skills through doing, and focused on creating better software, processes and communication between people and machines.",
   "shortIntro": "I'm a Design Engineer developing skills through doing, and focused on creating better software, processes and communication between people and machines.",
@@ -26,14 +28,33 @@
     "city": "Amsterdam",
     "country": "The Netherlands",
     "province": "Noord-Holland",
+    "timezone": "Europe/Amsterdam",
+    "flag": "🇳🇱",
     "screenshot": "/location.png"
   },
   "profession": "Design Engineer",
+  "roles": [
+    "Design Engineer",
+    "Photographer",
+    "Visual Storyteller",
+    "Technologist",
+    "Speaker"
+  ],
+  "resume": {
+    "label": "Resume 2026",
+    "url": "/BorisKirov_Resume.pdf"
+  },
+  "metaDescription": "Design Engineer interested in systems, open source and design.",
   "yearsOfExperience": "12",
   "avatar": "https://pbs.twimg.com/profile_images/1507287646133010434/Cx1ufZpO_400x400.jpg",
   "website": "https://www.boriskirov.me",
   "linkedin": "https://www.linkedin.com/in/boris-kirov/",
   "github": "https://github.com/boriskirov",
+  "social": {
+    "twitter": "@sboriskirov",
+    "figma": "https://www.figma.com/@boriskirov",
+    "photography": "https://boriskirov.photos"
+  },
   "jobTitle": "Design Engineer",
   "currentCompany": "Elastic",
   "workMode": "Remote",
@@ -82,7 +103,7 @@
       "id": 5,
       "company": "INFO",
       "role": "Product designer",
-      "work": "www.boriskirov.me/posts/great-wall-of-development",
+      "work": "www.boriskirov.me/cases/great-wall-of-development",
       "dates": "Feb 2019 - May 2020",
       "website": "https://www.info.nl/"
     },
@@ -92,33 +113,16 @@
       "role": "UX designer",
       "work": "/",
       "dates": "Dec 2018 - Feb 2019",
-      "website": "https://https://www.softserveinc.com/en-us/"
+      "website": "https://www.softserveinc.com/en-us/",
+      "featuredInIntro": false
     },
     {
       "id": 7,
       "company": "Despark",
       "role": "Digital Producer",
-      "work": "www.boriskirov.me/posts/nda",
+      "work": "www.boriskirov.me/cases/nda",
       "dates": "Aug 2016 - Dec 2018",
       "website": "https://www.despark.com/"
     }
-  ],
-  "colorSchema": {
-    "green": "#6bf4c8",
-    "green-2": "#5debac",
-    "green-3": "#66ed7f",
-    "yellow": "#ffd253",
-    "orange": "#ff7253",
-    "red": "#f0696a",
-    "pink": "#f06a8b",
-    "pink-2": "#ff9cb4",
-    "purple": "#b66afe",
-    "blue": "#6ac9f5",
-    "blue-2": "#62acfe",
-    "blue-3": "#686afe",
-    "black": "#00091b",
-    "indigo": "#011438",
-    "white": "#fefefe",
-    "white-2": "#f2f2f2"
-  }
+  ]
 }

@@ -5,11 +5,7 @@ import Timeline from "../components/Timeline/Timeline";
 import boris from "../public/boris.json";
 
 const About = () => (
-  <Page
-    title="About"
-    description="Design Engineer interested in systems, open source and design."
-    image="https://www.boriskirov.me/me.png"
-  >
+  <Page title="About" image="/me.png">
     <h1 className="heading-2xl">Здрасти,</h1>
     <div className="contentWrapper">
       <Image

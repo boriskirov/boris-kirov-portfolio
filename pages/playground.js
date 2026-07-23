@@ -5,7 +5,7 @@ const Playground = () => (
   <Page
     title="Playground"
     description="My playground, the place where I explore the functional, visual and collaborative side of design."
-    image="https://www.boriskirov.me/meta-tag-playground.png"
+    image="/meta-tag-playground.png"
     bare
   >
     <div className="contentWrapper dot-grid">
