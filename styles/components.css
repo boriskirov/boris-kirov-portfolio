@@ -700,23 +700,30 @@ a.recent-repo-card:active {
   opacity: 1;
 }
 
-/* --- Toolbar / footer icon button ------------------------------------ */
+/* --- Toolbar / footer icon button ------------------------------------
+ * Visually aligned with `.s-link` (sidenav row): same 40px control size,
+ * same 8px rounded rect, same rich hover treatment. Kept square via
+ * fixed width since these are icon-only. Icons inside are inverted
+ * individually via `.icon`, not via the container. */
 .footer-button {
-  padding: var(--space-small);
-  border-radius: var(--border-radius-circle);
-  cursor: pointer;
   display: flex;
-  flex-direction: column;
   align-items: center;
+  justify-content: center;
+  min-height: var(--size-control-md);
+  width: var(--size-control-md);
+  padding: var(--space-small);
+  border-radius: var(--border-radius-small);
+  background: transparent;
+  color: inherit;
+  cursor: pointer;
   transition: all 0.3s ease-in-out;
   margin: var(--space-xxsmall);
-  width: var(--size-control-lg);
-  background: transparent;
 }
 .footer-button:hover,
 .footer-button:focus-visible {
   background-color: var(--card-color-hover);
-  cursor: pointer;
+  backdrop-filter: blur(20px);
+  box-shadow: inset 0 1px 1px 0 rgba(255, 255, 255, 0.15);
 }
 
 /* --- Modal ----------------------------------------------------------- */
@@ -790,25 +797,8 @@ a.recent-repo-card:active {
   flex-shrink: 0;
 }
 
-/* --- Font switch ----------------------------------------------------- */
-.font-toggle {
-  background-image: url("/sans-serif-icon.svg");
-  background-repeat: no-repeat;
-  width: var(--size-icon);
-  height: var(--size-icon);
-  border: none;
-  background-color: transparent;
-  cursor: pointer;
-  transition: all 0.75s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  outline: none;
-}
-.font-toggle:focus-visible {
-  outline: none;
-  box-shadow: 0 0 0 4px var(--link-color-text);
-}
-.monospace .font-toggle {
-  background-image: url("/monospace-icon.svg");
-}
+/* --- Font switch (⌥+S) — no visible affordance, only the .monospace
+ * root class swap defined below. See components/FontSwitch.js. */
 .monospace html,
 .monospace body,
 .monospace h1,

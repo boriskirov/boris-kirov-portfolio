@@ -42,7 +42,13 @@ const Modal = ({
             onClick={onClose}
             className="footer-button modal-close"
           >
-            <Image src="/close.svg" alt="close-button" width={24} height={24} />
+            <Image
+              src="/close.svg"
+              alt="close-button"
+              width={18}
+              height={18}
+              className="icon"
+            />
           </button>
           {title && <TitleTag className={titleClassName}>{title}</TitleTag>}
           {body && <p>{body}</p>}

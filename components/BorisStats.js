@@ -31,8 +31,8 @@ export default function Boris({}) {
         <Image
           src={boris.avatar}
           className="avatar"
-          width={24}
-          height={24}
+          width={18}
+          height={18}
           alt="avatar"
         />
         <h6>

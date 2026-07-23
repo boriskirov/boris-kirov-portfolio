@@ -38,8 +38,8 @@ const Dashboard = ({ githubActivity, recentRepositories }) => (
           <Image
             src="/star.svg"
             className="metric-logo"
-            width={16}
-            height={16}
+            width={18}
+            height={18}
             alt="Star"
           />
           <h6>Starred project or contribution</h6>
@@ -81,8 +81,8 @@ const Dashboard = ({ githubActivity, recentRepositories }) => (
           <Image
             src="/github.svg"
             className="metric-logo"
-            width={16}
-            height={16}
+            width={18}
+            height={18}
             alt="GitHub"
           />
           <h6>Shipped contributions</h6>

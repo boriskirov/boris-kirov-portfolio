@@ -42,8 +42,8 @@ function Timeline({ jobs, summary }) {
           <Image
             src="/steps.svg"
             className="metric-logo"
-            width={16}
-            height={16}
+            width={18}
+            height={18}
             alt="Star"
           />
           <h6>Career Timeline</h6>
@@ -80,8 +80,8 @@ function LinkCard({ url }) {
         <Image
           src="/web.svg"
           alt="Link"
-          width={24}
-          height={24}
+          width={18}
+          height={18}
           className="side-button"
         />
         <span>{display}</span>
@@ -167,8 +167,8 @@ export default function ChatMode() {
         <div className="flex items-center">
           <Image
             src="/sparkle.svg"
-            width={16}
-            height={16}
+            width={18}
+            height={18}
             alt="Chat"
             className="side-button"
           />
@@ -189,7 +189,7 @@ export default function ChatMode() {
             key={prompt.label}
             onClick={() => ask(prompt.label)}
           >
-            <Image src={prompt.icon} alt="" width={16} height={16} />
+            <Image src={prompt.icon} alt="" width={18} height={18} />
             {prompt.label}
           </Card>
         ))}

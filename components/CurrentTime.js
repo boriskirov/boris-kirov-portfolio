@@ -27,8 +27,8 @@ export default function LocalTime({ isCollapsed = false }) {
         <Image
           src="/clock.svg"
           alt=""
-          width={16}
-          height={16}
+          width={18}
+          height={18}
           className="current-time-icon icon"
           aria-hidden="true"
         />

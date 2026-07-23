@@ -4,7 +4,14 @@ import { useShortcut } from "../lib/use-shortcut";
 const STORAGE_KEY = "__font_mode__";
 const DEFAULT_MODE = "monospace";
 
-export default function FontSwap() {
+/**
+ * Registers the ⌥+S keyboard shortcut that toggles the document root
+ * between `monospace` (Inconsolata) and `sans-serif` (Inter), persisting
+ * the choice in `localStorage`. Mount once at the app level so the
+ * shortcut is available on every route without any visible affordance —
+ * users discover it through the Commands modal (`⌥ + /`).
+ */
+export function useFontToggle() {
   const modeRef = useRef(DEFAULT_MODE);
 
   useEffect(() => {
@@ -22,7 +29,7 @@ export default function FontSwap() {
     if (!savedMode) window.localStorage.setItem(STORAGE_KEY, initialMode);
   }, []);
 
-  const onClick = useCallback(() => {
+  const toggle = useCallback(() => {
     const newTheme =
       modeRef.current === "sans-serif" ? "monospace" : "sans-serif";
     modeRef.current = newTheme;
@@ -37,14 +44,5 @@ export default function FontSwap() {
     }
   }, []);
 
-  useShortcut({ alt: true, keyCode: 83 }, onClick);
-
-  return (
-    <a
-      role="button"
-      aria-label="Font toggle"
-      className="font-toggle"
-      onClick={onClick}
-    />
-  );
+  useShortcut({ alt: true, keyCode: 83 }, toggle);
 }

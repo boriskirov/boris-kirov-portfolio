@@ -37,8 +37,8 @@
 }
 .chat-prompts .card img {
   filter: invert(100%);
-  width: 16px;
-  height: 16px;
+  width: var(--size-icon);
+  height: var(--size-icon);
 }
 
 .link-cards {

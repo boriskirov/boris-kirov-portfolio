@@ -86,16 +86,16 @@ export default function SideNavCollapsible() {
                   <Image
                     src="/sidebar-collapse.svg"
                     alt="Expand"
-                    width={24}
-                    height={24}
+                    width={18}
+                    height={18}
                     className="side-button"
                   />
                 ) : (
                   <Image
                     src="/sidebar-expand.svg"
                     alt="Collapse"
-                    width={24}
-                    height={24}
+                    width={18}
+                    height={18}
                     className="side-button"
                   />
                 )}
@@ -133,8 +133,8 @@ export default function SideNavCollapsible() {
                     <Image
                       src={footer.icon}
                       alt={footer.name}
-                      width={24}
-                      height={24}
+                      width={18}
+                      height={18}
                       className="side-button"
                     />
                     <span className="s-link-label">{footer.name}</span>
@@ -201,8 +201,8 @@ function PrimaryLink({ item, active, isCollapsed }) {
           <Image
             src={item.icon}
             alt={item.description}
-            width={24}
-            height={24}
+            width={18}
+            height={18}
             className="side-button"
           />
         )}
@@ -222,8 +222,8 @@ function PrimaryLink({ item, active, isCollapsed }) {
         <Image
           src={item.icon}
           alt={item.description}
-          width={24}
-          height={24}
+          width={18}
+          height={18}
           className="side-button"
         />
       )}

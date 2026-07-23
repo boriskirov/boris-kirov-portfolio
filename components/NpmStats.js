@@ -15,8 +15,8 @@ const Npmstats = () => {
         <Image
           src="/npm.svg"
           className="metric-logo"
-          width={16}
-          height={16}
+          width={18}
+          height={18}
           alt="npm"
         />
         <h6>NPM Download Stats</h6>

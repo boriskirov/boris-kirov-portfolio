@@ -166,17 +166,16 @@
   list-style: none;
 }
 
-/* Filter (image inversion for icons on dark bg) */
+/* Filter (image inversion for icons on dark bg). Applied to the icon
+ * itself, not to any container — otherwise container hover backgrounds
+ * would also flip through the invert. */
 .icon,
 .side-button,
-.metric-logo,
-.footer-button {
+.metric-logo {
   filter: invert(100%);
 }
-.side-button {
-  width: 32px;
-  height: 18px;
-}
+.side-button,
 .metric-logo {
   width: var(--size-icon);
+  height: var(--size-icon);
 }

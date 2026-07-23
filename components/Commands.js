@@ -28,8 +28,9 @@ function Commands() {
           <Image
             src="/commands.svg"
             alt="Commands icon"
-            width={24}
-            height={24}
+            width={18}
+            height={18}
+            className="icon"
           />
         </button>
 

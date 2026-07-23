@@ -9,8 +9,8 @@ const Highlights = () => (
           <Image
             src="/sparkle.svg"
             className="metric-logo"
-            width={16}
-            height={16}
+            width={18}
+            height={18}
             alt="Highlights"
           />
           <h6>Highlights</h6>

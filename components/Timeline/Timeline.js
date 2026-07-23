@@ -8,8 +8,8 @@ const Timeline = () => {
         <li className="timeline-item">
           <Image
             src="/elastic.png"
-            width={24}
-            height={24}
+            width={18}
+            height={18}
             className="timeline-icon"
             alt="Timeline icon"
           />
@@ -28,8 +28,8 @@ const Timeline = () => {
         <li className="timeline-item">
           <Image
             src="/elastic.png"
-            width={24}
-            height={24}
+            width={18}
+            height={18}
             className="timeline-icon"
             alt="Timeline icon"
           />
@@ -48,8 +48,8 @@ const Timeline = () => {
         <li className="timeline-item">
           <Image
             src="/elastic.png"
-            width={24}
-            height={24}
+            width={18}
+            height={18}
             className="timeline-icon"
             alt="Timeline icon"
           />
@@ -68,8 +68,8 @@ const Timeline = () => {
         <li className="timeline-item">
           <Image
             src="/miro.png"
-            width={24}
-            height={24}
+            width={18}
+            height={18}
             className="timeline-icon"
             alt="Timeline icon"
           />
@@ -88,8 +88,8 @@ const Timeline = () => {
         <li className="timeline-item">
           <Image
             src="/miro.png"
-            width={24}
-            height={24}
+            width={18}
+            height={18}
             className="timeline-icon"
             alt="Timeline icon"
           />
@@ -108,8 +108,8 @@ const Timeline = () => {
         <li className="timeline-item">
           <Image
             src="/info.jpg"
-            width={24}
-            height={24}
+            width={18}
+            height={18}
             className="timeline-icon"
             alt="Timeline icon"
           />
@@ -128,8 +128,8 @@ const Timeline = () => {
         <li className="timeline-item">
           <Image
             src="/softserve.jpg"
-            width={24}
-            height={24}
+            width={18}
+            height={18}
             className="timeline-icon"
             alt="Timeline icon"
           />
@@ -148,8 +148,8 @@ const Timeline = () => {
         <li className="timeline-item">
           <Image
             src="/despark.jpg"
-            width={24}
-            height={24}
+            width={18}
+            height={18}
             className="timeline-icon"
             alt="Timeline icon"
           />

@@ -38,8 +38,8 @@ const About = () => (
             <Image
               src="/steps.svg"
               className="metric-logo"
-              width={16}
-              height={16}
+              width={18}
+              height={18}
               alt="Star"
             />
             <h6>Career Timeline</h6>

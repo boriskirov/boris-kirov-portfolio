@@ -4,10 +4,12 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "prebuild": "node scripts/build-llms.mjs",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "format": "prettier --write ."
+    "format": "prettier --write .",
+    "build:llms": "node scripts/build-llms.mjs"
   },
   "dependencies": {
     "@elastic/react-search-ui": "^1.21.5",

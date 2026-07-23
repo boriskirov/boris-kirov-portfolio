@@ -54,7 +54,13 @@ export default function MobileNav() {
           aria-controls="mobile-nav-sheet"
           className="footer-button"
         >
-          <Image src={"/home.svg"} alt={"Home"} width={24} height={24} />
+          <Image
+            src={"/home.svg"}
+            alt={"Home"}
+            width={18}
+            height={18}
+            className="icon"
+          />
         </button>
         <Header />
       </div>
@@ -74,7 +80,13 @@ export default function MobileNav() {
             aria-label="Close"
             type="button"
           >
-            <Image src={"/close.svg"} alt={"Home"} width={24} height={24} />
+            <Image
+              src={"/close.svg"}
+              alt={"Close"}
+              width={18}
+              height={18}
+              className="icon"
+            />
           </button>
 
           <div className="mobile-nav-section">

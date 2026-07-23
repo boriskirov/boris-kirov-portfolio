@@ -1,0 +1,37 @@
+# Boris Kirov
+
+> Design Engineer interested in systems, open source and design.
+> Based in Amsterdam, The Netherlands. Always remote.
+
+## About
+
+- [About](https://www.boriskirov.me/about): bio, career timeline, education, contact.
+
+## Case studies
+
+- [Implementing system thinking](https://www.boriskirov.me/cases/nda): Case study story of the experience being a single designer in a developer focused product about media analysis and annotations.
+- [Internal tools and methods for gaining empathy](https://www.boriskirov.me/cases/tools-methods-for-gaining-empathy): Through this case study blog post I'll guide you through the internal tools and methods you can use, to feed your ideas with qualitative and quantitative backup.
+- [Life at Elastic](https://www.boriskirov.me/cases/life-at-elastic): The changelog of projects and initiatives I have contrbuted in Elastic as Observability Design Lead
+- [Life at Miro](https://www.boriskirov.me/cases/life-at-miro): Working as a leading platform designer for Miro on topics like frameworks, core, developer experience, app experience and design system & accesibility during their hypergrowht of 2020-2022.
+- [Low friction, low cost blogging system](https://www.boriskirov.me/cases/frictionless-newsletter-system): How to build a low-friction, low-cost blogging system with NextJS, Notion & MailerLite
+- [The Great Wall of Development](https://www.boriskirov.me/cases/great-wall-of-development): Case study story about how to integrate design changes in the normal product development cycle, while actually improving speed, communication and inbetween discipline collaborations.
+- [Working with Tripscout](https://www.boriskirov.me/cases/tripscout): Applying knowledge about architecture, information hierarchy, patterns, systems and animation with the amazing people at Tripscout.
+
+## Blog posts
+
+- [24 Things I learned as a Product Designer](https://www.boriskirov.me/posts/24-I-learned-as-a-product-designer): My thoughts on the switch from multi-client to dedicated inhouse designer after 365 days.
+- [Defining a design system](https://www.boriskirov.me/posts/defining-design-system): Exploration article about the connection of systems, systems in the human body and systems that we use everyday to design better software.
+- [Improving impatience](https://www.boriskirov.me/posts/improving-impatience): Sharing the experience of no phone policy for 6 months, while working on mobile apps as a UX designer.
+- [The history of the web browser](https://www.boriskirov.me/posts/history-browser): The web browser today is an amazingly powerful piece of software, limiting in its own ways but still powerful enough to bear things like progressive apps, this post is trying to understand how did it came to that point and why.
+
+## Design & code
+
+- [Display-P3 color uplift](https://www.boriskirov.me/codes/display-p3): Improving the colors with the P3 gamut is easy. But the question is why? Well there a few reason of going in that direction.
+- [My glossary](https://www.boriskirov.me/playground/my-glossary): design methods and practices I follow.
+- [My stack](https://www.boriskirov.me/playground/my-stack): tools and software I use daily.
+- [Cheatsheets](https://www.boriskirov.me/playground/cheatsheets): commands and shortcuts.
+
+## Optional
+
+- [Photography](https://www.boriskirov.me/photography): mixed media, videography, prints.
+- [Dashboard](https://www.boriskirov.me/dashboard): live GitHub activity, highlights, npm packages.
