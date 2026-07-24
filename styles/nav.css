@@ -158,7 +158,7 @@
   display: flex;
 }
 .mobile-sheet-inner {
-  width: min(92vw, var(--sheet-max));
+  width: 100%;
   height: 100vh;
   background-color: var(--color-bg);
   color: var(--color-text);
@@ -177,7 +177,8 @@
   color: inherit;
 }
 .mobile-sheet a {
-  display: block;
+  display: flex;
+  align-items: center;
 }
 
 .mobile-nav-section {
@@ -195,33 +196,54 @@
   margin-top: var(--space-small);
 }
 
+/* One rule for both leaves (`<Link>`) and group summaries (`<summary>`).
+ * Layout: [arrow slot | icon | label] left-aligned in a 32px row.
+ * The 24px `padding-left` reserves space for the chevron that the
+ * site-wide `details summary` rule paints in the arrow slot; leaves
+ * fill it with empty space so icons align across the whole list. */
 .m-link {
+  display: flex;
+  align-items: center;
+  gap: var(--space-small);
+  min-height: var(--size-control);
+  padding-left: var(--space-xlarge);
+  width: 100%;
   text-decoration: none;
   font-size: var(--font-size-lg);
 }
 
-.m-link-button {
-  width: 100%;
-  padding: var(--space-small) 0;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-left: 0;
-  border-radius: var(--border-radius-small);
-  background-color: transparent;
-  text-decoration: none;
-  color: inherit;
-  font-family: inherit;
-  text-align: left;
-}
-
+/* Tree-view children under an expanded accordion.
+ *   ::before  vertical trunk (full height on middle items, cut at the
+ *             elbow on the last item to form an "L" ending)
+ *   ::after   horizontal branch to each child's label
+ * Indented to sit under the parent icon column. */
 .m-sublist {
-  margin-top: var(--space-small);
-  padding-left: var(--space-large);
+  margin: var(--space-small) 0 0 var(--space-xlarge);
 }
-
-.m-sublist > li + li {
-  margin-top: var(--space-small);
+.m-sublist > li {
+  position: relative;
+  padding-left: var(--space-xlarge);
+}
+.m-sublist > li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background: var(--text-color-faint);
+}
+.m-sublist > li:last-child::before {
+  bottom: 50%;
+}
+.m-sublist > li::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: var(--space-medium);
+  height: 1px;
+  background: var(--text-color-faint);
 }
 
 .m-sublink {

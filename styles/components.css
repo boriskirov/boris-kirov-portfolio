@@ -363,7 +363,7 @@ a.recent-repo-card:active {
   padding: 0 var(--space-small);
   border: 1px solid var(--tag-color-bg);
   border-radius: var(--border-radius-circle);
-  color: var(--text-color-muted);
+  color: var(--color-text);
   font-family: var(--font-family-code);
   font-size: var(--font-size-sm);
   line-height: 1;
@@ -376,7 +376,7 @@ a.recent-repo-card:active {
 }
 .recent-repo-card-description {
   margin: 0;
-  color: var(--text-color-muted);
+  color: var(--color-text);
 }
 .recent-repo-card-meta {
   display: flex;
@@ -390,7 +390,7 @@ a.recent-repo-card:active {
   display: inline-flex;
   align-items: center;
   gap: var(--space-small);
-  color: var(--text-color-muted);
+  color: var(--color-text);
 }
 .recent-repo-card-language-dot {
   width: 6px;
@@ -602,7 +602,7 @@ a.recent-repo-card:active {
   text-overflow: ellipsis;
   white-space: nowrap;
   font-family: var(--font-family-code);
-  color: var(--text-color-muted);
+  color: var(--color-text);
 }
 .github-log-date {
   display: block;
@@ -628,7 +628,7 @@ a.recent-repo-card:active {
   height: var(--size-icon);
   background: var(--card-color-bg);
   border-radius: var(--border-radius-circle);
-  border: 1px solid var(--text-color-muted);
+  border: 1px solid var(--tag-color-bg);
   padding: var(--space-xxsmall);
 }
 .timeline-item {
@@ -652,7 +652,7 @@ a.recent-repo-card:active {
   left: 11px;
   width: 2px;
   height: 70px;
-  border-left: 2px dashed var(--text-color-muted);
+  border-left: 2px dashed var(--tag-color-bg);
   content: "";
 }
 .timeline-item:last-child::before {
@@ -900,7 +900,6 @@ a.recent-repo-card:active {
   header,
   .index-body-container {
     padding: 6vw var(--space-xlarge);
-    justify-content: center;
     display: flex;
   }
   ol {

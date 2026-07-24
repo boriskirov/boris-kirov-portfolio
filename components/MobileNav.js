@@ -104,39 +104,52 @@ export default function MobileNav() {
                         onClick={() => setIsOpen(false)}
                         className="m-link"
                       >
+                        {item.icon && (
+                          <Image
+                            src={item.icon}
+                            alt=""
+                            width={18}
+                            height={18}
+                            className="icon"
+                          />
+                        )}
                         {item.label}
                       </Link>
                     </li>
                   );
                 }
 
-                // Primary GROUP: toggle expand; do NOT close the drawer
+                // Primary GROUP: native <details> accordion. The React
+                // `expanded` set is the source of truth; `onToggle` syncs
+                // state when the user clicks the summary. The chevron is
+                // supplied by the site-wide `details summary` rule in
+                // base.css (right-chevron closed → down-chevron open).
                 return (
                   <li key={item.id}>
-                    <button
-                      type="button"
-                      className="m-link m-link-button"
-                      onClick={() => toggle(item.id)}
-                      aria-expanded={isExpanded}
-                      aria-controls={`mob-sec-${item.id}`}
+                    <details
+                      open={isExpanded}
+                      onToggle={(e) => {
+                        if (e.currentTarget.open !== isExpanded) {
+                          toggle(item.id);
+                        }
+                      }}
                     >
-                      <span>{item.label}</span>
-                      {/* <span className={`chev ${isExpanded ? "open" : ""}`}>
-                        {" "}
-                        ▼
-                      </span> */}
-                    </button>
-
-                    {isExpanded && (
+                      <summary
+                        className="m-link m-link-button"
+                        aria-controls={`mob-sec-${item.id}`}
+                      >
+                        {item.icon && (
+                          <Image
+                            src={item.icon}
+                            alt=""
+                            width={18}
+                            height={18}
+                            className="icon"
+                          />
+                        )}
+                        {item.label}
+                      </summary>
                       <ul id={`mob-sec-${item.id}`} className="m-sublist">
-                        {/* Small leaf for the section root (Overview) — does NOT close */}
-                        <li>
-                          <Link href={item.href} className="m-sublink">
-                            Overview
-                          </Link>
-                        </li>
-
-                        {/* Children: CLOSE drawer only on leaf click */}
                         {item.children.map((c) => {
                           const isExternal = /^https?:\/\//.test(c.href);
                           const active =
@@ -161,7 +174,7 @@ export default function MobileNav() {
                           );
                         })}
                       </ul>
-                    )}
+                    </details>
                   </li>
                 );
               })}

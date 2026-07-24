@@ -132,7 +132,7 @@
   font-weight: var(--font-weight-semibold);
 }
 .text-muted {
-  color: var(--text-color-muted);
+  color: var(--color-text);
 }
 .text-subtle {
   color: var(--text-color-subtle);
@@ -166,16 +166,15 @@
   list-style: none;
 }
 
-/* Filter (image inversion for icons on dark bg). Applied to the icon
- * itself, not to any container — otherwise container hover backgrounds
- * would also flip through the invert. */
+/* Icon-shape classes. Explicit width/height overrides the global
+ * `img { width: 100% }` in base.css, which otherwise stretches every
+ * <Image className="icon"> to fill its parent. `flex-shrink: 0` keeps
+ * them from squashing inside flex rows (nav items, chat prompts, etc.). */
 .icon,
-.side-button,
-.metric-logo {
-  filter: invert(100%);
-}
 .side-button,
 .metric-logo {
   width: var(--size-icon);
   height: var(--size-icon);
+  flex-shrink: 0;
+  filter: invert(100%);
 }

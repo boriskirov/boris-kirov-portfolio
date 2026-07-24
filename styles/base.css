@@ -108,7 +108,6 @@ ol {
   margin: var(--space-small) 0px 0px var(--space-xlarge);
 }
 li {
-  margin-bottom: var(--space-small);
   margin-left: var(--space-medium);
 }
 li a {
